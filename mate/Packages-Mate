@@ -1,0 +1,181 @@
+### Manjaro Packages
+
+## Xorg
+mhwd
+
+## Xorg Packages
+inxi
+libdnet
+mesa-demos
+>x86_64 lib32-mesa-demos
+netkit-bsd-finger
+uriparser
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+
+## Artwork
+#nitrux-icon-theme
+manjaro-artwork
+xcursor-menda
+menda-themes
+menda-themes-dark
+menda-circle-icon-theme
+menda-square-icon-theme
+libgnomeui
+gconf
+gnome-themes-standard
+
+## MATE Main Packages
+mate     
+mate-extra
+mintmenu
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+
+## Graphical Installer
+thus
+
+## Applications
+lightdm-gtk3-greeter
+lightdm-gtk-greeter-settings
+brasero
+flashplugin
+firefox
+gksu
+blueman
+gparted
+gnome-vfs
+gvfs
+gvfs-afc
+gvfs-afp
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+mtpfs
+android-tools
+android-udev
+hexchat
+isousb
+libdvdcss
+gnome-keyring
+manjaro-settings-manager
+manjaro-welcome
+manjaro-documentation
+#mdm-themes
+thunderbird-firetray
+thunderbird
+deluge
+pygtk
+librsvg
+python2-mako
+udiskie
+udisks
+udisks2
+vlc
+npapi-vlc-git
+guayadeque
+poppler-glib
+gufw
+accountsservice
+catfish
+p7zip
+mlocate
+pidgin
+open-fuse-iso
+yelp
+libappindicator-gtk2
+libappindicator-gtk3
+
+## Games
+steam
+steam-native
+
+## Java
+icedtea-web
+jdk8-openjdk
+jre8-openjdk
+jre8-openjdk-headless
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+#pa-applet
+pulseaudio-ctl
+python-pyqt4
+
+## Package management
+pamac
+
+## Fonts
+ttf-dejavu
+cantarell-fonts
+ttf-droid
+ttf-inconsolata
+ttf-liberation
+adobe-source-sans-pro-fonts
+
+## Office
+#abiword
+#gnumeric
+#libreoffice-installer
+libreoffice-still-en-US
+#libreoffice-still-base
+libreoffice-still-calc
+#libreoffice-still-draw
+libreoffice-still-gnome
+libreoffice-still-impress
+libreoffice-still-math
+#libreoffice-still-postgresql-connector
+libreoffice-still-writer
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+>i686 gcc
+>x86_64 gcc-multilib
+libtool
+m4
+make
+patch
+subversion
+yaourt
+base-devel
+
+## Printing
+manjaro-printer
