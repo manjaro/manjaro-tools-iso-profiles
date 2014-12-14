@@ -237,4 +237,5 @@ telepathy-farstream
 telepathy-glib
 
 ## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
+qt4
 sni-qt
