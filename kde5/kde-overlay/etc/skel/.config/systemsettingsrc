@@ -1,0 +1,10 @@
+[KPropertiesDialog]
+Height 720=435
+Width 1280=405
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAG6AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Window-Maximized 599x1280=true
+Window-Maximized 720x1280=true

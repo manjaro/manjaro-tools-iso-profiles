@@ -1,0 +1,240 @@
+### Manjaro Packages
+
+## Xorg
+mhwd
+
+## Xorg Packages
+inxi
+libdnet
+mesa-demos
+>x86_64 lib32-mesa-demos
+netkit-bsd-finger
+uriparser
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+
+## Artwork
+plasma-workspace-wallpapers
+breeze
+breeze-kde4
+oxygen
+oxygen-kde4
+oxygen-icons
+gnome-icon-theme
+menda-plasma-next
+
+## Conn. Packages
+udiskie
+udisks
+udisks2
+cdrdao
+cdrkit
+cdrtools
+normalize
+transcode
+emovix
+dvd+rw-tools
+virtualgl
+kio-mtp
+mtpfs
+gvfs-smb
+gvfs-mtp
+gvfs-afc
+gvfs
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+
+## Graphical installer
+calamares
+thus
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+phonon-qt5-gstreamer
+phonon-qt4-gstreamer
+pulseaudio-ctl
+qt-gstreamer
+cantata-kde-svn
+mpd
+python-pyqt4
+libcanberra
+libcanberra-pulse
+libcanberra-gstreamer
+>x86_64 lib32-libcanberra
+>x86_64 lib32-libcanberra-pulse
+
+## Devel Packages
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+git
+libtool
+m4
+make
+patch
+patchutils
+svn
+yaourt
+openssh
+samba
+
+## Applications
+qbittorrent-qt5-git
+imagewriter
+firefox-kde
+flashplugin
+google-talkplugin
+ntfsprogs
+manjaro-settings-manager
+manjaro-welcome
+open-fuse-iso
+simple-scan
+vlc
+npapi-vlc-git
+qterminal-git
+android-tools
+android-udev
+>x86_64 lib32-libxft
+wpsoffice
+wpsoffice-common
+krita-git
+gsl   #dep. of krita-git
+
+## Games
+steam
+steam-native
+
+## Font
+ttf-liberation
+ttf-droid
+ttf-inconsolata
+
+## Package management
+octopi-frameworks-git
+ssx
+pacmanxg4-bin
+
+# Qt
+qt5
+
+## GTK
+oxygen-gtk2
+oxygen-gtk3
+kde-gtk-config-frameworks
+menda-themes
+menda-themes-dark
+qtcurve-gtk2
+
+## Java
+jdk7-openjdk
+icedtea-web
+
+## Printing
+manjaro-printer
+
+## Office
+#libreoffice-fresh
+#calligra-meta
+
+## Plasma 5
+kf5
+kf5-aids
+sddm
+sddm-kcm
+plasma-desktop
+plasma-nm
+frameworkintegration
+bluedevil-frameworks
+kscreen-frameworks
+plasma-workspace-wallpapers
+trojita-qt5-git
+partitionmanager
+yakuake-frameworks-git
+konversation-frameworks-git
+konsole-git
+kmix-git
+kdeconnect-frameworks-git
+k3b-frameworks-git
+libmusicbrainz5
+kcalc-frameworks-git
+kate-git
+gwenview-git
+dolphin-frameworks-git
+ark-frameworks-git
+okular-frameworks-git
+ksnapshot-frameworks-git
+print-manager-frameworks 
+kscreen-frameworks
+kdeplasma-addons-frameworks
+kcm-touchpad-frameworks
+bluedevil-frameworks
+kfind-frameworks-git
+qca-qt5-git
+audiothumbs-frameworks-git
+kget-frameworks-git
+skanlite-frameworks-git
+akonadi-git
+
+## Telepathy
+kaccounts-integration-git
+libkpeople-frameworks-git
+signon-kwallet-extension-frameworks-git
+signon-plugin-oauth2-qt5
+signon-ui-qt5
+telepathy-kde-accounts-kcm-git
+telepathy-kde-approver-git
+telepathy-kde-auth-handler-git
+telepathy-kde-common-internals-git
+telepathy-kde-contact-list-git
+telepathy-kde-contact-runner-git
+telepathy-kde-desktop-applets-git
+telepathy-kde-filetransfer-handler-git
+telepathy-kde-integration-module-git
+telepathy-kde-send-file-git
+telepathy-kde-text-ui-git
+telepathy-qt4
+telepathy-qt5
+telepathy-gabble
+telepathy-haze
+telepathy-idle
+telepathy-rakia
+telepathy-salut
+telepathy-mission-control
+python2-telepathy
+telepathy-farstream
+telepathy-glib
+
+## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
+sni-qt
