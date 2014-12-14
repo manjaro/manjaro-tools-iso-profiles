@@ -1,0 +1,3 @@
+{
+      "name": "manjaro-tools-iso-profiles", "files": [ { "directory": "", "filters": ["*", "-*.xz", "*.*"], "recursive": 1 } ]
+}
