@@ -82,7 +82,9 @@ phonon-qt5-gstreamer
 phonon-qt4-gstreamer
 pulseaudio-ctl
 qt-gstreamer
-cantata-kde-svn
+cantata-svn
+taglib-extras
+perl-uri
 mpd
 python-pyqt4
 libcanberra
