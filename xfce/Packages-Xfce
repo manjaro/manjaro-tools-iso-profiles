@@ -1,0 +1,212 @@
+### Manjaro Packages
+
+## XFCE Main Packages
+ffmpegthumbnailer
+gconf # fix qt-theme
+gnome-keyring # fix wlan segfault
+gufw # firewall
+#mdm-themes
+accountsservice
+lightdm-gtk3-greeter
+lightdm-gtk-greeter-settings
+light-locker-xfce
+manjaro-settings-manager
+menulibre
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+orage
+#plank
+poppler-glib
+polkit-gnome
+thunar-archive-plugin
+thunar-media-tags-plugin
+thus
+xcursor-simpleandsoft
+xcursor-vanilla-dmz-aa
+xcursor-menda
+xfce4
+libgsf       # support ODF and
+libopenraw   # RAW thumbnailing
+#xscreensaver
+
+## XFCE Extra Packages
+xfce4-artwork
+xfce4-battery-plugin
+xfce4-clipman-plugin
+xfce4-cpufreq-plugin
+xfce4-cpugraph-plugin
+#xfce4-datetime-plugin
+xfce4-dict
+xfce4-diskperf-plugin
+xfce4-fsguard-plugin
+xfce4-genmon-plugin
+xfce4-mailwatch-plugin
+xfce4-mount-plugin
+xfce4-mpc-plugin
+xfce4-netload-plugin
+xfce4-notes-plugin
+xfce4-notifyd
+xfce4-quicklauncher-plugin
+xfce4-screenshooter
+xfce4-sensors-plugin
+xfce4-smartbookmark-plugin
+xfce4-systemload-plugin
+xfce4-taskmanager
+xfce4-time-out-plugin
+xfce4-timer-plugin
+xfce4-verve-plugin
+xfce4-wavelan-plugin
+xfce4-weather-plugin
+xfce4-whiskermenu-plugin
+xfce4-xkb-plugin
+
+## Applications
+catfish # needed for desktop search
+engrampa-thunar
+firefox
+galculator-gtk2
+gimp
+gksu
+gnome-vfs
+gparted
+guayadeque
+gvfs
+gvfs-afc
+gvfs-afp
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+hexchat
+manjaro-welcome
+#midori
+mlocate
+mousepad
+#parole
+pidgin
+#evince
+#raktpdf
+qpdfview
+thunderbird
+viewnior
+vlc
+xfburn
+#xnoise
+yelp
+open-fuse-iso
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+blueman
+
+## Xorg Packages
+inxi
+libdnet
+mesa-demos
+>x86_64 lib32-mesa-demos
+netkit-bsd-finger
+uriparser
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+xorg-xkill
+
+## Artwork
+menda-circle-icon-theme
+menda-square-icon-theme
+faenza-green-icon-theme
+gtk-theme-ceti
+menda-themes
+menda-themes-dark
+gnome-themes-standard
+manjaro-artwork
+#lxdm-manjaro-theme
+xfce-theme-greenbird
+plymouth-theme-manjaro-elegant
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+pa-applet
+pulseaudio-ctl
+
+## Package management
+#octopi
+#octopi-notifier
+lxsession
+pamac
+
+## Games
+steam
+steam-native
+
+## Fonts
+ttf-dejavu
+#adobe-source-sans-pro-fonts
+cantarell-fonts
+ttf-droid
+
+## Java
+icedtea-web
+
+## Printing
+manjaro-printer
+
+## Office
+#abiword
+#gnumeric
+#libreoffice-installer
+libreoffice-still-en-US
+#libreoffice-still-base
+libreoffice-still-calc
+#libreoffice-still-draw
+libreoffice-still-gnome
+libreoffice-still-impress
+libreoffice-still-math
+#libreoffice-still-postgresql-connector
+libreoffice-still-writer
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+>i686 gcc
+>x86_64 gcc-multilib
+libtool
+m4
+make
+patch
+subversion
+yaourt
