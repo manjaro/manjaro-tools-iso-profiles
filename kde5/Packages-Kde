@@ -82,7 +82,9 @@ phonon-qt5-gstreamer
 phonon-qt4-gstreamer
 pulseaudio-ctl
 qt-gstreamer
-cantata-kde-svn
+cantata-svn
+taglib-extras
+perl-uri
 mpd
 python-pyqt4
 libcanberra
@@ -129,8 +131,8 @@ android-udev
 >x86_64 lib32-libxft
 wpsoffice
 wpsoffice-common
-krita-git
-gsl   #dep. of krita-git
+krita-frameworks-git
+gsl   #dep. of krita-frameworks-git
 
 ## Games
 steam
@@ -206,10 +208,13 @@ audiothumbs-frameworks-git
 kget-frameworks-git
 skanlite-frameworks-git
 akonadi-git
+kdepimlibs-git
 
 ## Telepathy
+kcontacts-git
+kaccounts-providers-git
 kaccounts-integration-git
-libkpeople-frameworks-git
+libkpeople-git
 signon-kwallet-extension-frameworks-git
 signon-plugin-oauth2-qt5
 signon-ui-qt5
@@ -237,4 +242,5 @@ telepathy-farstream
 telepathy-glib
 
 ## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
+qt4
 sni-qt
