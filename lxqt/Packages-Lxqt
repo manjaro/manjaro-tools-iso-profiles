@@ -1,0 +1,164 @@
+# 1) stricly identical to the Net-Edition, except for Network-Manager
+# ===================================================================
+## Xorg Packages
+inxi
+libdnet
+mesa-demos
+>x86_64 lib32-mesa-demos
+netkit-bsd-finger
+uriparser
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+
+## Basic packages
+dconf
+desktop-file-utils
+
+## Packages for Sound and Audio
+manjaro-alsa
+
+## Artwork
+manjaro-artwork
+
+## Base Packages
+gtk2
+
+## Network
+#netctl
+#networkmanager
+#networkmanager-dispatcher-ntpd
+#openresolv
+# =============================================================================
+
+
+# 2) lxqt main packages
+# =====================
+#sddm				# default login manager (Qt5) of lxqt
+lightdm-gtk3-greeter
+lightdm-gtk-greeter-settings
+
+openbox				# default window manager (GTK2) of lxqt
+
+cmst				# connection manager (Qt) GUI --> sudo systemctl enable connman
+
+liblxqt				#
+liblxqt-mount			# these are all dependencies and libraries for the following lxqt packages
+libqtxdg			#
+libsysstat			#
+
+lximage-qt			# default lxqt picture viewer and screenshot tool
+
+lxqt-about			# lxqt "about" dialog - not required
+system-tools-backends
+liboobs
+lxqt-admin			# offers additional setting options - not required
+lxqt-common
+lxqt-config
+lxqt-globalkeys
+lxqt-notificationd		# lxqt notification system - not required
+lxqt-openssh-askpass		# offers additional ssh password save options - not required
+lxqt-panel
+lxqt-policykit
+lxqt-powermanagement
+lxqt-qtplugin
+lxqt-runner			# lxqt runner / quicklaunch menu (similar to synapse) - not required
+lxqt-session
+
+pcmanfm-qt			# default lxqt file manager
+
+qterminal			# recommended terminal for lxqt - a lighter alternative: lxterminal
+qtermwidget
+
+
+# 3) System-packages (most of them coming from xfce)
+# ==================================================
+thus				# GUI installer of manjaro
+#calamares			# new GUI installer of manjaro - test for manjaro 0.9
+
+manjaro-settings-manager
+
+gvfs				# for mounting file other systems
+gvfs-afc			# enables support for external media (e.g. USB sticks)
+
+
+# 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
+# ===========================================================================
+gksu				# (GTK2) GUI for su and sudo - there is no alternative for it in lxqt
+gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
+
+leafpad				# default lxde text editor - very lightweight - heavier alternative: notepadqq
+
+lxappearance 			# appearance settings of GTK2 themes - there is no alternative for it in lxqt
+
+obconf				# openbox appearance settings - needed for window title and border configuration
+   
+
+
+# 5) Icons, theming, etc...
+# =========================
+#oxygen-icons			# default icon theme of lxqt - pretty heavy
+
+menda-themes-dark 		# new manjaro GTK2 theme
+menda-circle-icon-theme 	# new manjaro icon theme - much lighter
+menda-lxqt-panel 		# new manjaro theme for lxqt/panel
+xcursor-menda			# menda mouse cursor theme - this needs to be activated
+#sddm-menda-theme		# sddm theme
+
+#infinality-bundle		# to improve text rendering
+freetype2-infinality-ultimate
+fontconfig-infinality-ultimate
+
+
+
+# 6) Minimal set of tools
+# =======================
+mpv				# replace mplayer/mplayer2
+qpdfview			# pdf reader
+vi				# CLI text editor
+
+xarchiver			# GUI frontend for many archive file formats
+
+octopi				# Qt5 package manager
+octopi-notifier
+
+qupzilla			# internet browser (Qt5)
+flashplugin			# flash support for internet browser
+
+qtfind				# add a file search to pcmanfm-qt (qt5)
+xscreensaver			# screensaver and power managment
+imagewriter			# usb burning application (qt4)
+gparted				# partitioning program (GTK2)
+
+
+
+# 7) AUR Access
+# =============
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+libconfig
+libtool
+m4
+make
+patch
+subversion
+git
+yaourt
+
