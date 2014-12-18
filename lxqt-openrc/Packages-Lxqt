@@ -1,5 +1,6 @@
 ### lxqt Packages
 
+###Openrc###
 alsa-utils-openrc
 consolekit-openrc
 dbus-openrc
@@ -7,38 +8,47 @@ connman-openrc
 displaymanager-openrc
 avahi-openrc
 
+###xorg###
 xdg-user-dirs
 xdg-utils
+xorg-xsetroot
 
+###misc###
 alsa-firmware
 
 iso-codes
 #calamares
 
+###lxqt###
 lxqt
-openbox
-obmenu-generator
 qterminal
 qupzilla
 cmst
 octopi
 qpdfview
 compton
+#juffed-qt5-git
+#compton-conf
 
+###gtk###
 gvfs
 gksu
 mousepad
 gnome-keyring
 xarchiver
 
+###DM###
 lxqt-lightdm-greeter
 accountsservice
 
+###Artwork###
 xcursor-menda
 menda-themes
 menda-square-icon-theme
 menda-lxqt-panel
 manjaro-artwork
 
-#juffed-qt5-git
+###Openbox###
+openbox
+obmenu-generator
 #obconf-qt-git
