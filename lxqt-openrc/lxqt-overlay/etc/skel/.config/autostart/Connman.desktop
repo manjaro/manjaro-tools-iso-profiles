@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=cmst -m -w 3
-Name=Connman
-Icon=cmst
-Type=Application
-Version=1.0
-X-LXQt-Need-Tray=true
