@@ -20,7 +20,7 @@
 
 #obmenu-generator -d &
 
-(sleep 2s && xset -dpms; xset s off) &
+#(sleep 2s && xset -dpms; xset s off) &
 
 #sed -i "s,_homedir_,${HOME}," ~/.config/obmenu-generator/schema.pl
 #sed -i "s,_homedir_,${HOME}," ~/.config/obmenu-generator/config.pl
@@ -49,3 +49,5 @@
 #/usr/bin/synclient TouchpadOff=1 &
 
 #(sleep 3s && obmenu-generator -d) &
+
+feh --bg-center /usr/share/wallpapers/Madera_Manjaro-FrankoM3.png
