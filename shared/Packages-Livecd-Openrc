@@ -1,3 +1,7 @@
-manjaro-tools-livecd-openrc 
-calamares
-lightdm
+manjaro-livecd-openrc
+manjaro-livecd-cli-installer
+
+#manjaro-livecd-skel-e
+#manjaro-livecd-skel-openbox
+#manjaro-livecd-skel-pekwm
+#manjaro-livecd-skel-xfce
