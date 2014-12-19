@@ -209,6 +209,7 @@ kget-frameworks-git
 skanlite-frameworks-git
 akonadi-git
 kdepimlibs-git
+kdialog-frameworks-git
 
 ## Telepathy
 kcontacts-git
