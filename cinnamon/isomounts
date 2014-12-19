@@ -10,9 +10,9 @@
 
 # ORDER MATTERS! Files take top-down precedence. Be careful
 
-#@ARCH@/pkgs-free-overlay.sqfs @ARCH@ / squashfs free
-#@ARCH@/pkgs-nonfree-overlay.sqfs @ARCH@ / squashfs nonfree
-@ARCH@/overlay-image.sqfs @ARCH@ / squashfs
+#@ARCH@/pkgs-free-image.sqfs @ARCH@ / squashfs free
+#@ARCH@/pkgs-nonfree-image.sqfs @ARCH@ / squashfs nonfree
+@ARCH@/livecd-image.sqfs @ARCH@ / squashfs
 #@ARCH@/lng-image.sqfs @ARCH@ / squashfs
 @ARCH@/pkgs-image.sqfs @ARCH@ / squashfs
 @ARCH@/cinnamon-image.sqfs @ARCH@ / squashfs
