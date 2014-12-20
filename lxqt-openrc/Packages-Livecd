@@ -1,7 +1,1 @@
-manjaro-livecd-openrc
-manjaro-livecd-cli-installer
-
-#manjaro-livecd-skel-openbox
-#manjaro-livecd-skel-e
-#manjaro-livecd-skel-pekwm
-#manjaro-livecd-skel-xfce
+../shared/Packages-Livecd-Openrc
