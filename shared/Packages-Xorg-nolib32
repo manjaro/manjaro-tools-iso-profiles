@@ -26,7 +26,6 @@ intel-dri
 bumblebee
 KERNEL-bbswitch
 primus
-virtualgl
 
 ## Proprietary Drivers
 >nonfree_uni catalyst-utils

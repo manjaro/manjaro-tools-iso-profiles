@@ -10,8 +10,6 @@
 
 # ORDER MATTERS! Files take top-down precedence. Be careful
 
-#@ARCH@/pkgs-free-image.sqfs @ARCH@ / squashfs free
-#@ARCH@/pkgs-nonfree-image.sqfs @ARCH@ / squashfs nonfree
 @ARCH@/livecd-image.sqfs @ARCH@ / squashfs
 @ARCH@/net-image.sqfs @ARCH@ / squashfs
 @ARCH@/pkgs-image.sqfs @ARCH@ / squashfs
