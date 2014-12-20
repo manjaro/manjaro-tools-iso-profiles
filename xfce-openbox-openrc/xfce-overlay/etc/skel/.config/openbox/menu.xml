@@ -115,11 +115,6 @@
 					<execute>sudo manjaro-settings-manager-gui</execute>
 				</action>
 			</item>
-			<item label="Task Manager">
-				<action name="Execute">
-					<execute>xfce4-taskmanager</execute>
-				</action>
-			</item>
 		</menu>
 		<menu id="38" label="Utilities">
 			<item label="Terminal">
