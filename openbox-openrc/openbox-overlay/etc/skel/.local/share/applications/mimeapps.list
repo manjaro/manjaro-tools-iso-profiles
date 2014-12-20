@@ -1,5 +1,0 @@
-[Added Associations]
-x-scheme-handler/http=exo-web-browser.desktop
-x-scheme-handler/https=exo-web-browser.desktop
-x-scheme-handler/mailto=exo-mail-reader.desktop
-
