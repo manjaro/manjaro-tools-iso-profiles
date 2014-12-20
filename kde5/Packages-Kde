@@ -158,6 +158,8 @@ kde-gtk-config-frameworks
 menda-themes
 menda-themes-dark
 qtcurve-gtk2
+libappindicator-gtk2
+libappindicator-gtk3
 
 ## Java
 jdk7-openjdk
