@@ -1,1 +1,1 @@
-../../../shared/overlay-livecd/etc/pam.d/
+../../../shared/overlay-livecd/etc/pam.d
