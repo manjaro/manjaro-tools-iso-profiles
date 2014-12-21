@@ -2,10 +2,10 @@
 bash
 bzip2
 coreutils
-cronie
-cryptsetup
-device-mapper
-dhcpcd
+cronie-openrc
+cryptsetup-openrc
+device-mapper-openrc
+dhcpcd-openrc
 diffutils
 e2fsprogs
 file
@@ -22,17 +22,16 @@ inetutils
 iproute2
 iputils
 jfsutils
-keyboardctl
 less
 licenses
 locale-info
 logrotate
-lvm2
+lvm2-openrc
 man-db
 man-pages
 manjaro-hotfixes
 manjaro-system
-mdadm
+mdadm-openrc
 mesa
 mhwd
 mhwd-db
@@ -48,7 +47,11 @@ s-nail
 sed
 shadow
 sysfsutils
-#systemd-sysvcompat
+
+eudev-base
+
+metalog-openrc
+
 tar
 texinfo
 usbutils
@@ -61,24 +64,12 @@ xfsprogs
 linux-firmware
 lsb-release
 haveged-openrc # needed for pacman-init
-metalog-openrc # logger (syslog-ng alternative)
 manjaro-firmware
 manjaro-release
 memtest86+
 
 ## Kernel
 KERNEL
-
-## OpenRC
-sysvinit
-openrc-core
-openrc-base
-openrc-desktop
-openrc-systemdcompat
-
-## Eudev
-eudev
-eudev-base
 
 ## Extra Base Packages
 grub
@@ -88,8 +79,7 @@ pkg-config
 squashfs-tools
 sudo
 syslinux
-xdg-utils
-xdg-user-dirs
+nfs-utils-openrc
 
 ## Compression Codecs
 arj
@@ -129,7 +119,7 @@ nfs-utils
 ntfs-3g
 
 ## Fonts
-#terminus-font
+terminus-font
 ttf-bitstream-vera
 ttf-dejavu
 ttf-inconsolata
@@ -151,21 +141,17 @@ KERNEL-ndiswrapper
 ndiswrapper-utils
 rp-pppoe
 usb_modeswitch
-wpa_actiond
-wpa_supplicant
+wpa_supplicant-openrc
 zd1211-firmware
 
 ## Laptop power management
-acpid
-cpupower
+acpid-openrc
+cpupower-openrc
 ethtool
 hdparm
 sdparm
 smartmontools
-#tlp # conflicts with pm-utils
-laptop-mode-tools
 wireless_tools
-xorg-xset
 
 ## ucode for new cpus
 intel-ucode
