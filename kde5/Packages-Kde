@@ -116,6 +116,9 @@ samba
 qbittorrent-qt5-git
 imagewriter
 firefox-kde
+thunderbird-kde
+thunderbird-firetray-appind-git
+firefox-firetray-appind-git
 flashplugin
 google-talkplugin
 ntfsprogs
@@ -183,7 +186,6 @@ frameworkintegration
 bluedevil-frameworks
 kscreen-frameworks
 plasma-workspace-wallpapers
-trojita-qt5-git
 partitionmanager
 yakuake-frameworks-git
 konversation-frameworks-git
