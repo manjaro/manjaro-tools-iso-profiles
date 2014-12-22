@@ -76,8 +76,7 @@ pkg-config
 squashfs-tools
 sudo
 syslinux
-xdg-utils
-xdg-user-dirs
+
 
 ## Compression Codecs
 arj
@@ -152,7 +151,6 @@ sdparm
 smartmontools
 tlp
 wireless_tools
-xorg-xset
 
 ## ucode for new cpus
 intel-ucode
