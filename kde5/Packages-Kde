@@ -54,16 +54,13 @@ gvfs-smb
 gvfs-mtp
 gvfs-afc
 gvfs
+kdeconnect-frameworks-git
 
 ## Network
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-
-## Graphical installer
-calamares
-thus
 
 ## Packages for Sound and Audio
 gst-libav
@@ -94,13 +91,15 @@ libcanberra-gstreamer
 >x86_64 lib32-libcanberra-pulse
 
 ## Devel Packages
+base-devel
 autoconf
 automake
 binutils
 bison
 fakeroot
 flex
-gcc
+>x86_64 gcc-multilib
+>i686 gcc
 git
 libtool
 m4
@@ -112,13 +111,18 @@ yaourt
 openssh
 samba
 
+## Font
+ttf-liberation
+ttf-droid
+ttf-inconsolata
+
 ## Applications
 qbittorrent-qt5-git
 imagewriter
 firefox-kde
 thunderbird-kde
-thunderbird-firetray-appind-git
-firefox-firetray-appind-git
+thunderbird-firetray-appind
+firefox-firetray-appind
 flashplugin
 google-talkplugin
 ntfsprogs
@@ -141,15 +145,14 @@ gsl   #dep. of krita-frameworks-git
 steam
 steam-native
 
-## Font
-ttf-liberation
-ttf-droid
-ttf-inconsolata
-
 ## Package management
 octopi-frameworks-git
 ssx
 pacmanxg4-bin
+
+## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
+qt4
+sni-qt
 
 # Qt
 qt5
@@ -165,7 +168,7 @@ libappindicator-gtk2
 libappindicator-gtk3
 
 ## Java
-jdk7-openjdk
+jdk8-openjdk
 icedtea-web
 
 ## Printing
@@ -191,11 +194,11 @@ yakuake-frameworks-git
 konversation-frameworks-git
 konsole-git
 kmix-git
-kdeconnect-frameworks-git
 k3b-frameworks-git
 libmusicbrainz5
 kcalc-frameworks-git
 kate-git
+ktexteditor-git
 gwenview-git
 dolphin-frameworks-git
 ark-frameworks-git
@@ -211,9 +214,10 @@ qca-qt5-git
 audiothumbs-frameworks-git
 kget-frameworks-git
 skanlite-frameworks-git
-akonadi-git
-kdepimlibs-git
 kdialog-frameworks-git
+attica-git
+kactivities-git
+plasma-framework-git
 
 ## Telepathy
 kcontacts-git
@@ -246,6 +250,18 @@ python2-telepathy
 telepathy-farstream
 telepathy-glib
 
-## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
-qt4
-sni-qt
+kdepimlibs-git
+akonadi-calendar-git
+akonadi-git
+extra-cmake-modules-git
+kalarmcal-git
+kcalcore-git
+kcalutils-git
+kholidays-git
+kidentitymanagement-git
+kldap-git
+kmailtransport-git
+kmbox-git
+kmime-git
+kpimtextedit-git
+ktnef-git
