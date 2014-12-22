@@ -167,36 +167,36 @@ sddm
 sddm-kcm
 plasma-next
 
-# bluedevil-frameworks
-# kscreen-frameworks
-# partitionmanager
-# yakuake-frameworks-git
-# konversation-frameworks-git
-# konsole-git
-# kmix-git
-# kdeconnect-frameworks-git
-# k3b-frameworks-git
-# libmusicbrainz5
-# kcalc-frameworks-git
-# kate-git
-# gwenview-git
-# dolphin-frameworks-git
-# ark-frameworks-git
-# okular-frameworks-git
-# ksnapshot-frameworks-git
-# print-manager-frameworks 
-# kscreen-frameworks
-# kdeplasma-addons-frameworks
-# kcm-touchpad-frameworks
-# bluedevil-frameworks
-# kfind-frameworks-git
-# qca-qt5-git
-# audiothumbs-frameworks-git
-# kget-frameworks-git
-# skanlite-frameworks-git
-# akonadi-git
-# kdepimlibs-git
-# kdialog-frameworks-git
+bluedevil-frameworks
+kscreen-frameworks
+partitionmanager
+yakuake-frameworks-git
+konversation-frameworks-git
+konsole-git
+kmix-git
+kdeconnect-frameworks-git
+k3b-frameworks-git
+libmusicbrainz5
+kcalc-frameworks-git
+kate-git
+gwenview-git
+dolphin-frameworks-git
+ark-frameworks-git
+okular-frameworks-git
+ksnapshot-frameworks-git
+print-manager-frameworks 
+kscreen-frameworks
+kdeplasma-addons-frameworks
+kcm-touchpad-frameworks
+bluedevil-frameworks
+kfind-frameworks-git
+qca-qt5-git
+audiothumbs-frameworks-git
+kget-frameworks-git
+skanlite-frameworks-git
+akonadi-git
+kdepimlibs-git
+kdialog-frameworks-git
 
 # xdg-utils
 xdg-user-dirs

@@ -11,7 +11,7 @@
 # ORDER MATTERS! Files take top-down precedence. Be careful
 
 @ARCH@/livecd-image.sqfs @ARCH@ / squashfs
-@ARCH@/lng-image.sqfs @ARCH@ / squashfs
+#@ARCH@/lng-image.sqfs @ARCH@ / squashfs
 @ARCH@/pkgs-image.sqfs @ARCH@ / squashfs
 @ARCH@/kf5-image.sqfs @ARCH@ / squashfs
 @ARCH@/root-image.sqfs @ARCH@ / squashfs
