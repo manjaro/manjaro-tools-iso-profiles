@@ -65,14 +65,14 @@ networkmanager-dispatcher-ntpd
 libdvdcss
 manjaro-alsa
 manjaro-pulse
-phonon-qt5-gstreamer
+phonon-qt5-vlc
 # phonon-qt4-gstreamer
 pulseaudio-ctl
 # qt-gstreamer
 cantata-svn
 taglib-extras
 perl-uri
-mpd
+#mpd
 # python-pyqt4
 # libcanberra
 # libcanberra-pulse
@@ -80,24 +80,24 @@ mpd
 # >x86_64 lib32-libcanberra
 # >x86_64 lib32-libcanberra-pulse
 
-## Devel Packages
-# autoconf
-# automake
-# binutils
-# bison
-# fakeroot
-# flex
-# gcc
-# git
-# libtool
-# m4
-# make
-# patch
-# patchutils
-# svn
-# yaourt
-# openssh
-# samba
+# Devel Packages
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+git
+libtool
+m4
+make
+patch
+patchutils
+svn
+yaourt
+openssh
+samba
 
 ## Applications
 # qbittorrent-qt5-git
@@ -108,13 +108,13 @@ mpd
 # firefox-firetray-appind-git
 # flashplugin
 # google-talkplugin
-# ntfsprogs
-# manjaro-settings-manager
-# manjaro-welcome
-# open-fuse-iso
+ntfsprogs
+manjaro-settings-manager
+manjaro-welcome
+open-fuse-iso
 # simple-scan
 # vlc
-# npapi-vlc-git
+npapi-vlc-git
 # qterminal-git
 # android-tools
 # android-udev
@@ -203,35 +203,35 @@ xdg-user-dirs
 xorg-xset
 
 ## Telepathy
-# kcontacts-git
-# kaccounts-providers-git
-# kaccounts-integration-git
-# libkpeople-git
-# signon-kwallet-extension-frameworks-git
-# signon-plugin-oauth2-qt5
-# signon-ui-qt5
-# telepathy-kde-accounts-kcm-git
-# telepathy-kde-approver-git
-# telepathy-kde-auth-handler-git
-# telepathy-kde-common-internals-git
-# telepathy-kde-contact-list-git
-# telepathy-kde-contact-runner-git
-# telepathy-kde-desktop-applets-git
-# telepathy-kde-filetransfer-handler-git
-# telepathy-kde-integration-module-git
-# telepathy-kde-send-file-git
-# telepathy-kde-text-ui-git
-# telepathy-qt4
-# telepathy-qt5
-# telepathy-gabble
-# telepathy-haze
-# telepathy-idle
-# telepathy-rakia
-# telepathy-salut
-# telepathy-mission-control
-# python2-telepathy
-# telepathy-farstream
-# telepathy-glib
+kcontacts-git
+kaccounts-providers-git
+kaccounts-integration-git
+libkpeople-git
+signon-kwallet-extension-frameworks-git
+signon-plugin-oauth2-qt5
+signon-ui-qt5
+telepathy-kde-accounts-kcm-git
+telepathy-kde-approver-git
+telepathy-kde-auth-handler-git
+telepathy-kde-common-internals-git
+telepathy-kde-contact-list-git
+telepathy-kde-contact-runner-git
+telepathy-kde-desktop-applets-git
+telepathy-kde-filetransfer-handler-git
+telepathy-kde-integration-module-git
+telepathy-kde-send-file-git
+telepathy-kde-text-ui-git
+telepathy-qt4
+telepathy-qt5
+telepathy-gabble
+telepathy-haze
+telepathy-idle
+telepathy-rakia
+telepathy-salut
+telepathy-mission-control
+python2-telepathy
+telepathy-farstream
+telepathy-glib
 
 ## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
 # sni-qt

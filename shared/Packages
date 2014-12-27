@@ -22,7 +22,7 @@ inetutils
 iproute2
 iputils
 jfsutils
-keyboardctl
+#keyboardctl
 less
 licenses
 locale-info
