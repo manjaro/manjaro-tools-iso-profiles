@@ -10,7 +10,7 @@
 
 # ORDER MATTERS! Files take top-down precedence. Be careful
 
-@ARCH@/livecd.sqfs @ARCH@ / squashfs
+@ARCH@/livecd-image.sqfs @ARCH@ / squashfs
 #@ARCH@/lng-image.sqfs @ARCH@ / squashfs
 @ARCH@/pkgs-image.sqfs @ARCH@ / squashfs
 @ARCH@/xfce-image.sqfs @ARCH@ / squashfs
