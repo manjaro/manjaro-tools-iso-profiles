@@ -12,8 +12,7 @@ file
 filesystem
 findutils
 gawk
->i686 gcc-libs
->x86_64 gcc-libs-multilib
+gcc-libs
 gettext
 glibc
 grep
@@ -74,6 +73,13 @@ sysvinit
 openrc-core
 openrc-base
 openrc-desktop
+openrc-systemdcompat
+modules-load-openrc
+
+# Extra services
+openssh-openrc
+ntp-openrc
+tmpwatch
 
 ## Eudev
 eudev
@@ -128,7 +134,7 @@ nfs-utils
 ntfs-3g
 
 ## Fonts
-terminus-font
+#terminus-font
 ttf-bitstream-vera
 ttf-dejavu
 ttf-inconsolata
@@ -168,3 +174,6 @@ xorg-xset
 
 ## ucode for new cpus
 intel-ucode
+
+## Documentation
+manjaro-documentation
