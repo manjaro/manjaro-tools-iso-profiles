@@ -13,7 +13,7 @@
 		</item>
 		<item label="Web Browser">
 			<action name="Execute">
-				<command>midori</command>
+				<command>firefox</command>
 			</action>
 		</item>
 		<separator/>
@@ -68,7 +68,7 @@
 		<menu id="8" label="Network">
 			<item label="Web Browser">
 				<action name="Execute">
-					<execute>midori</execute>
+					<execute>firefox</execute>
 				</action>
 			</item>
 			<item label="IRC">
@@ -108,6 +108,11 @@
 			<item label="Manjaro Settings Manager">
 				<action name="Execute">
 					<execute>gksudo manjaro-settings-manager-gui</execute>
+				</action>
+			</item>
+			<item label="Time Settings">
+				<action name="Execute">
+					<execute>gksudo timeset-gui</execute>
 				</action>
 			</item>
 		</menu>
