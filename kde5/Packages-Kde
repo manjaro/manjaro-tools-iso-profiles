@@ -1,8 +1,6 @@
 ### Manjaro Packages
-
 ## Xorg
 #mhwd
-
 ## Xorg Packages
 inxi
 libdnet
@@ -25,22 +23,19 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
-
 ## Artwork
 plasma-workspace-wallpapers
-breeze
-breeze-kde4
+breeze-git
+breeze-kde4-git
 oxygen
 oxygen-kde4
 oxygen-icons
 gnome-icon-theme
-
 ## Network
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
-#openresolv
-
+openresolv
 ## Packages for Sound and Audio
 gst-libav
 gst-plugins-bad
@@ -84,33 +79,30 @@ libcanberra-pulse
 libcanberra-gstreamer
 >x86_64 lib32-libcanberra
 >x86_64 lib32-libcanberra-pulse
-
 ## Devel Packages
-# base-devel
-# autoconf
-# automake
-# binutils
-# bison
-# fakeroot
-# flex
-# >x86_64 gcc-multilib
-# >i686 gcc
-# git
-# libtool
-# m4
-# make
-# patch
-# patchutils
-# svn
+base-devel
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+>x86_64 gcc-multilib
+>i686 gcc
+git
+libtool
+m4
+make
+patch
+patchutils
+svn
 yaourt
 openssh
 samba
-
 ## Font
 ttf-liberation
 ttf-droid
 ttf-inconsolata
-
 ## Applications
 imagewriter
 firefox-kde
@@ -119,6 +111,7 @@ thunderbird-firetray-appind
 firefox-firetray-appind
 flashplugin
 flareget
+ntfsprogs
 manjaro-settings-manager
 manjaro-welcome
 open-fuse-iso
@@ -129,24 +122,19 @@ android-udev
 >x86_64 lib32-libxft
 wpsoffice
 wpsoffice-common
-gsl   #dep. of krita-frameworks-git
-
+gsl #dep. of krita-frameworks-git
 ## Games
 steam
 steam-native
-
 ## Package management
 octopi-frameworks-git
 ssx
 pacmanxg4-bin
-
 ## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
 sni-qt
-
 # Qt
 qt4
 qt5
-
 ## GTK
 oxygen-gtk2
 oxygen-gtk3
@@ -155,23 +143,18 @@ menda-themes-dark
 qtcurve-gtk2
 libappindicator-gtk2
 libappindicator-gtk3
-
 ## Java
 jdk8-openjdk
 icedtea-web
-
 ## Printing
 manjaro-printer
-
 ## Office
 #libreoffice-fresh
 #calligra-meta
-
 ## Plasma 5
 sddm-git
 sddm-kcm-git
 kdebase-runtime
-
 meteo-qt-git
 akonadi-calendar-git
 akonadi-git
@@ -318,12 +301,12 @@ networkmanager-qt-git
 libmm-qt-git
 plasma-workspace-git
 plasma-workspace-units-git
-polkit-kde-frameworks-git
+polkit-kde-git
 powerdevil-git
 print-manager-frameworks-git
 prison-frameworks-git
 qbittorrent-qt5-git
-qca-qt5
+qca-qt5-git
 qtermwidget
 qterminal
 samba-mounter-frameworks-git
@@ -344,9 +327,6 @@ yakuake-frameworks-git
 npapi-vlc-git
 google-talkplugin
 octopi-frameworks-git
-
-
-
 ## Telepathy
 kcontacts-git
 kaccounts-providers-git
@@ -377,9 +357,13 @@ telepathy-mission-control
 python2-telepathy
 telepathy-farstream
 telepathy-glib
-
-
 # Partition
 gparted
+# jfsutils
 f2fs-tools
+# btrfs-progs
 exfat-utils
+# ntfs-3g
+# reiserfsprogs
+# xfsprogs
+# nilfs-utils
