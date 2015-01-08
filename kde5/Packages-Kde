@@ -1,7 +1,7 @@
 ### Manjaro Packages
 
 ## Xorg
-mhwd
+#mhwd
 
 ## Xorg Packages
 inxi
@@ -39,7 +39,7 @@ gnome-icon-theme
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
-openresolv
+#openresolv
 
 ## Packages for Sound and Audio
 gst-libav
@@ -86,22 +86,22 @@ libcanberra-gstreamer
 >x86_64 lib32-libcanberra-pulse
 
 ## Devel Packages
-base-devel
-autoconf
-automake
-binutils
-bison
-fakeroot
-flex
->x86_64 gcc-multilib
->i686 gcc
-git
-libtool
-m4
-make
-patch
-patchutils
-svn
+# base-devel
+# autoconf
+# automake
+# binutils
+# bison
+# fakeroot
+# flex
+# >x86_64 gcc-multilib
+# >i686 gcc
+# git
+# libtool
+# m4
+# make
+# patch
+# patchutils
+# svn
 yaourt
 openssh
 samba
@@ -119,7 +119,6 @@ thunderbird-firetray-appind
 firefox-firetray-appind
 flashplugin
 flareget
-ntfsprogs
 manjaro-settings-manager
 manjaro-welcome
 open-fuse-iso
@@ -382,11 +381,5 @@ telepathy-glib
 
 # Partition
 gparted
-jfsutils
 f2fs-tools
-btrfs-progs
 exfat-utils
-ntfs-3g
-reiserfsprogs
-xfsprogs
-nilfs-utils
