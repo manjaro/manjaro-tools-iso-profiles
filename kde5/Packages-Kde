@@ -28,8 +28,8 @@ xorg-xinit
 
 ## Artwork
 plasma-workspace-wallpapers
-breeze
-breeze-kde4
+breeze-git
+breeze-kde4-git
 oxygen
 oxygen-kde4
 oxygen-icons
@@ -319,12 +319,12 @@ networkmanager-qt-git
 libmm-qt-git
 plasma-workspace-git
 plasma-workspace-units-git
-polkit-kde-frameworks-git
+polkit-kde-git
 powerdevil-git
 print-manager-frameworks-git
 prison-frameworks-git
 qbittorrent-qt5-git
-qca-qt5
+qca-qt5-git
 qtermwidget
 qterminal
 samba-mounter-frameworks-git
