@@ -85,9 +85,6 @@ qtermwidget
 
 # 3) System-packages (most of them coming from xfce)
 # ==================================================
-thus				# GUI installer of manjaro
-#calamares			# new GUI installer of manjaro - test for manjaro 0.9
-
 manjaro-settings-manager
 
 gvfs				# for mounting file other systems
@@ -145,7 +142,6 @@ qarma-git			# zenity Qt5
 qisousb				# write an ISO on an USB stick
 qtfind				# add a file search to pcmanfm-qt (qt5)
 #xscreensaver			# screensaver and power managment
-gparted				# partitioning program (GTK2)
 
 
 
