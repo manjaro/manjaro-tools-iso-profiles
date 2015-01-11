@@ -3,18 +3,13 @@
 ## Minmal XFCE Desktop Packages
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
->i686 gnome-vfs
+gnome-vfs
 gvfs # to fix trash in thunar
 menulibre
 network-manager-applet
-accountsservice
-lightdm-gtk3-greeter
-lightdm-gtk-greeter-settings
-light-locker-xfce
 #numlockx
 xcursor-simpleandsoft
 xcursor-vanilla-dmz-aa
-xcursor-menda
 xfce4-panel
 xfce4-session
 xfce4-terminal
@@ -29,6 +24,7 @@ xfce4-battery-plugin
 xfce4-clipman-plugin
 xfce4-power-manager
 xfce4-whiskermenu-plugin
+xfce4-xkb-plugin
 
 ## Audio Packages
 manjaro-alsa
@@ -38,13 +34,16 @@ pa-applet
 pulseaudio-ctl
 
 ## Applications
+accountsservice
 gksu
-gparted
 gst-libav
 libreoffice-installer
 lxsession
+lightdm-gtk3-greeter
+lightdm-gtk-greeter-settings
+light-locker-xfce
 manjaro-settings-manager
-manjaro-welcome
+#manjaro-welcome
 midori
 mousepad
 pamac
@@ -53,9 +52,7 @@ polkit-gnome # for gparted
 qpdfview
 >i686 sylpheed
 >i686 xnoise
-
-## Installer
-thus
+open-fuse-iso
 
 ## Network
 netctl
@@ -85,16 +82,21 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
-xorg-xkill
 
 ## Artwork
 menda-circle-icon-theme
+#menda-square-icon-theme
+#faenza-green-icon-theme
 menda-themes
-gnome-themes-standard
 manjaro-artwork
-xfce-theme-greenbird
+xcursor-menda
+>i686 xfce-theme-greenbird
 plymouth-theme-manjaro-elegant
 
 ## Fonts
 ttf-dejavu
-adobe-source-sans-pro-fonts
+cantarell-fonts
+ttf-droid
+
+## Documentation
+#manjaro-documentation

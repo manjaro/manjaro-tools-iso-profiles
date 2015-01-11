@@ -14,7 +14,6 @@ findutils
 gawk
 >i686 gcc-libs
 >x86_64 gcc-libs-multilib
-gcc-libs
 gettext
 glibc
 grep
@@ -23,7 +22,7 @@ inetutils
 iproute2
 iputils
 jfsutils
-keyboardctl
+keyboardctl #depreciated
 less
 licenses
 locale-info
@@ -62,9 +61,15 @@ xfsprogs
 linux-firmware
 lsb-release
 haveged # needed for pacman-init
+intel-ucode
 manjaro-firmware
 manjaro-release
 memtest86+
+
+## EFI support (only x86_64)
+>x86_64 gummiboot
+>x86_64 prebootloader
+>x86_64 refind-efi
 
 ## Kernel
 KERNEL
@@ -104,11 +109,6 @@ pv
 tcpdump
 wget
 
-## EFI support (only x86_64)
->x86_64 gummiboot
->x86_64 prebootloader
->x86_64 refind-efi
-
 ## Network
 b43-fwcutter
 dhclient
@@ -138,6 +138,3 @@ smartmontools
 tlp
 wireless_tools
 xorg-xset
-
-## ucode for new cpus
-intel-ucode
