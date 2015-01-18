@@ -22,7 +22,6 @@ inetutils
 iproute2
 iputils
 jfsutils
-keyboardctl #depreciated
 less
 licenses
 locale-info

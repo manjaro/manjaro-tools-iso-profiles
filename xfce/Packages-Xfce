@@ -23,7 +23,6 @@ poppler-glib
 polkit-gnome
 thunar-archive-plugin
 thunar-media-tags-plugin
-thus
 xcursor-simpleandsoft
 xcursor-vanilla-dmz-aa
 xcursor-menda
@@ -80,7 +79,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 hexchat
-manjaro-welcome
+#manjaro-welcome
 #midori
 mlocate
 mousepad
