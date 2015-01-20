@@ -30,13 +30,10 @@ xfce4-mixer
 volumeicon-gtk2
 
 ## Network
-openresolv
+openresolv-openrc
 wicd-openrc
 bluez-openrc # required for bluetooth
 blueman
-
-# Extra services
-ntp-openrc
 
 ## Openbox
 openbox
@@ -72,7 +69,7 @@ leafpad
 qpdfview
 xarchiver
 thunar
-midori
+firefox
 lxsession # contains lxpolit
 gparted
 viewnior
@@ -99,6 +96,7 @@ catfish # for thunar search
 downgrade
 menulibre
 xchat
+timeset-gui # MSM does not work with OpenRC
 
 ## Artwork, icons
 manjaro-artwork
