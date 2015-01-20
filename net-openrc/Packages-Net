@@ -2,7 +2,7 @@
 inxi
 libdnet
 mesa-demos
->x86_64 lib32-mesa-demos
+#>x86_64 lib32-mesa-demos
 netkit-bsd-finger
 uriparser
 xf86-input-acecad
@@ -38,4 +38,4 @@ gtk2
 #netctl	# systemd only
 networkmanager-openrc
 networkmanager-dispatcher-ntpd
-openresolv
+openresolv-openrc
