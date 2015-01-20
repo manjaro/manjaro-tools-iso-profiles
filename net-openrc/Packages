@@ -80,6 +80,7 @@ modules-load-openrc
 openssh-openrc
 ntp-openrc
 tmpwatch
+keyboardctl
 
 ## Eudev
 eudev
