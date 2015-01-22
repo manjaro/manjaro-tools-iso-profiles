@@ -2,28 +2,24 @@
 Config Revision=10
 Days Meta Infos=30
 Last Session=
+Modified Notification=false
+Recent File List Entry Count=10
+Restore Window Configuration=true
 Save Meta Infos=true
 Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
 Show Tab Bar=true
+Startup Session=manual
 
-[KFileDialog Settings]
-Recent Files[$e]=/usr/share/kservices5/plasma-lookandfeel-org.kde.menda,/usr/share/kservices5/plasma-lookandfeel-org.kde.menda.desktop.desktop
-Recent URLs[$e]=/usr/share/kservices5/,/usr/share/kservices5/
-
-[KTextEditor::Search]
-Search History=#,bree,breeze,menda
+[Konsole]
+AutoSyncronize=true
+SetEditor=false
 
 [MainWindow]
-Height 480=423
-Height 599=423
-State=AAAA/wAAAAD9AAAAAAAABQAAAAHgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABQAAAAJuAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1280=765
-Width 640=765
-Window-Maximized 571x1280=true
-Window-Maximized 599x1280=true
+Window-Maximized 720x1280=true
 
 [filetree]
 editShade=182,230,143

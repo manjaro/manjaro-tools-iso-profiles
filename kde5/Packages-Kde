@@ -34,27 +34,24 @@ oxygen
 oxygen-kde4
 oxygen-icons
 gnome-icon-theme
-menda-plasma-next
+menda-square-icon-theme
+menda-circle-icon-theme
+menda-git
+menda-kde4-git
+menda-plasma-desktop-git
+menda-plasma-look-and-feel-git
+xcursor-menda-git
+sddm-menda-theme-git
 
-## Conn. Packages
-udiskie
-udisks
-udisks2
-cdrdao
-cdrkit
-cdrtools
-normalize
-transcode
-emovix
-dvd+rw-tools
-virtualgl
-kio-mtp
-mtpfs
-gvfs-smb
-gvfs-mtp
-gvfs-afc
-gvfs
-kdeconnect-frameworks-git
+## GTK
+oxygen-gtk2
+oxygen-gtk3
+menda-themes
+menda-themes-dark
+qtcurve-gtk2
+libappindicator-gtk2
+libappindicator-gtk3
+libappindicator-sharp
 
 ## Network
 netctl
@@ -62,7 +59,7 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 
-## Packages for Sound and Audio
+## Packages for Sound/Audio/Video
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -72,6 +69,15 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
+cdrdao
+cdrkit
+dvdauthor
+normalize
+transcode
+emovix
+ffmpeg
+dvd+rw-tools
+virtualgl
 libdvdcss
 manjaro-alsa
 manjaro-pulse
@@ -79,7 +85,6 @@ phonon-qt5-gstreamer
 phonon-qt4-gstreamer
 pulseaudio-ctl
 qt-gstreamer
-cantata-svn
 taglib-extras
 perl-uri
 mpd
@@ -89,6 +94,21 @@ libcanberra-pulse
 libcanberra-gstreamer
 >x86_64 lib32-libcanberra
 >x86_64 lib32-libcanberra-pulse
+vlc
+cantata
+
+## Connect Packages
+udiskie
+udisks
+udisks2
+mtpfs
+gvfs-smb
+gvfs-mtp
+gvfs-afc
+gvfs
+open-fuse-iso
+android-tools
+android-udev
 
 ## Devel Packages
 base-devel
@@ -116,56 +136,22 @@ ttf-liberation
 ttf-droid
 ttf-inconsolata
 
-## Applications
-qbittorrent-qt5-git
-imagewriter
-firefox-kde
-thunderbird-kde
-thunderbird-firetray-appind
-firefox-firetray-appind
-flashplugin
-google-talkplugin
-ntfsprogs
-manjaro-settings-manager
-manjaro-welcome
-open-fuse-iso
-simple-scan
-vlc
-npapi-vlc-git
-qterminal-git
-android-tools
-android-udev
->x86_64 lib32-libxft
-wpsoffice
-wpsoffice-common
-krita-frameworks-git
-gsl   #dep. of krita-frameworks-git
-
 ## Games
 steam
 steam-native
 
 ## Package management
-octopi-frameworks-git
+octopi
+octopi-notifier-frameworks
 ssx
 pacmanxg4-bin
 
 ## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
-qt4
 sni-qt
 
 # Qt
+qt4
 qt5
-
-## GTK
-oxygen-gtk2
-oxygen-gtk3
-kde-gtk-config-frameworks
-menda-themes
-menda-themes-dark
-qtcurve-gtk2
-libappindicator-gtk2
-libappindicator-gtk3
 
 ## Java
 jdk8-openjdk
@@ -177,67 +163,197 @@ manjaro-printer
 ## Office
 #libreoffice-fresh
 #calligra-meta
+wpsoffice
+wpsoffice-common
 
-## Plasma 5
-kf5
-kf5-aids
+## Login
 sddm
 sddm-kcm
+
+## Applications
+imagewriter
+firefox-kde
+firefox-firetray
+flashplugin
+flareget
+manjaro-settings-manager
+manjaro-welcome
+simple-scan
+>x86_64 lib32-libxft
+meteo-qt
+qtermwidget
+qterminal
+spideroak
+p7zip
+
+## KDE4
+kdebase-runtime
+
+## Plasma 5 Manjaro Repo Packages
 plasma-desktop
+plasma-framework
 plasma-nm
+networkmanager-qt
+libmm-qt
+plasma-workspace
+attica-qt5
+baloo-frameworks
+baloo-widgets-frameworks
 frameworkintegration
-bluedevil-frameworks
-kscreen-frameworks
-plasma-workspace-wallpapers
-partitionmanager
-yakuake-frameworks-git
-konversation-frameworks-git
-konsole-git
-kmix-git
-k3b-frameworks-git
-libmusicbrainz5
-kcalc-frameworks-git
-kate-git
-ktexteditor-git
-gwenview-git
-dolphin-frameworks-git
-ark-frameworks-git
-okular-frameworks-git
-ksnapshot-frameworks-git
-print-manager-frameworks 
-kscreen-frameworks
+kactivities-frameworks
+kapidox
+karchive
+kauth
+kbookmarks
+kcmutils
+kcodecs
+kcompletion
+kconfig
+kconfigwidgets
+kcoreaddons
+kcrash
+kdbusaddons
+kde-cli-tools
+kdeclarative
+kded
+kdelibs4support
 kdeplasma-addons-frameworks
-kcm-touchpad-frameworks
+kdesignerplugin
+kdesu
+kdewebkit
+kdnssd
+kdoctools
+kemoticons
+kfilemetadata5
+kglobalaccel
+kguiaddons
+khotkeys
+khtml
+ki18n
+kiconthemes
+kidletime
+kimageformats
+kinfocenter
+kinit
+kio-extras
+kio
+kitemmodels
+kitemviews
+kjobwidgets
+kjs
+kjsembed
+kmediaplayer
+kmenuedit
+kmix
+knewstuff
+knotifications
+knotifyconfig
+kpackage
+kparts
+kplotting
+kpty
+kross
+krunner
+kservice
+ksysguard
+libksysguard
+ktexteditor
+ktextwidgets
+kunitconversion
+kwallet
+kwayland
+kwidgetsaddons
+kwin
+kwindowsystem
+kwrited
+kxmlgui
+milou
+polkit-kde-frameworks
+powerdevil
+print-manager-frameworks
+solid
+sonnet
+systemsettings
+threadweaver
+
+akonadi
+akonadi-calendar
+ark-frameworks
+audiothumbs-frameworks
 bluedevil-frameworks
-kfind-frameworks-git
-qca-qt5-git
-audiothumbs-frameworks-git
-kget-frameworks-git
-skanlite-frameworks-git
-kdialog-frameworks-git
-attica-git
-kactivities-git
-plasma-framework-git
+dolphin-frameworks
+filelight-frameworks
+gwenview
+k3b-frameworks
+kalarmcal
+kate
+kcalc-frameworks
+kcalcore
+kcalutils
+kcm-touchpad-frameworks
+kde-gtk-config-frameworks
+kdeconnect-frameworks
+kdecoration
+kdepasswd-frameworks
+kdepimlibs-frameworks
+kdepim-frameworks
+kdepim-runtime-frameworks
+kde-root-action-servicemenus-frameworks
+kdialog-frameworks
+keditbookmarks-frameworks
+kfind-frameworks
+kholidays
+kidentitymanagement
+kldap
+kmailtransport
+kmbox
+kmime
+konq-plugins-frameworks
+konqueror-frameworks
+konsole
+konversation-frameworks
+kpimtextedit
+kscreen-frameworks
+ksnapshot
+ktnef
+libbluedevil-frameworks
+libkcddb-frameworks
+libkdcraw-frameworks
+libkexiv2-frameworks
+libkipi-frameworks
+libkonq-frameworks
+libksane-frameworks
+libkscreen-frameworks
+npapi-vlc
+plasma-workspace-units
+prison-frameworks
+qbittorrent-qt5
+qca-qt5
+samba-mounter-frameworks
+skanlite-frameworks
+yakuake-frameworks
+
+
 
 ## Telepathy
-kcontacts-git
-kaccounts-providers-git
-kaccounts-integration-git
-libkpeople-git
-signon-kwallet-extension-frameworks-git
+kcontacts
+kaccounts-providers
+kaccounts-integration
+libkpeople-frameworks
+signon-kwallet-extension-frameworks
 signon-plugin-oauth2-qt5
 signon-ui-qt5
-telepathy-kde-accounts-kcm-git
-telepathy-kde-approver-git
-telepathy-kde-auth-handler-git
-telepathy-kde-common-internals-git
-telepathy-kde-contact-list-git
-telepathy-kde-contact-runner-git
-telepathy-kde-desktop-applets-git
-telepathy-kde-filetransfer-handler-git
-telepathy-kde-integration-module-git
-telepathy-kde-send-file-git
-telepathy-kde-text-ui-git
+telepathy-kde-accounts-kcm-frameworks
+telepathy-kde-approver-frameworks
+telepathy-kde-auth-handler-frameworks
+telepathy-kde-common-internals-frameworks
+telepathy-kde-contact-list-frameworks
+telepathy-kde-contact-runner-frameworks
+telepathy-kde-desktop-applets-frameworks
+telepathy-kde-filetransfer-handler-frameworks
+telepathy-kde-integration-module-frameworks
+telepathy-kde-send-file-frameworks
+telepathy-kde-text-ui-frameworks
 telepathy-qt4
 telepathy-qt5
 telepathy-gabble
@@ -250,18 +366,15 @@ python2-telepathy
 telepathy-farstream
 telepathy-glib
 
-kdepimlibs-git
-akonadi-calendar-git
-akonadi-git
-extra-cmake-modules-git
-kalarmcal-git
-kcalcore-git
-kcalutils-git
-kholidays-git
-kidentitymanagement-git
-kldap-git
-kmailtransport-git
-kmbox-git
-kmime-git
-kpimtextedit-git
-ktnef-git
+
+# Partition
+partitionmanager
+gparted
+jfsutils
+f2fs-tools
+btrfs-progs
+exfat-utils
+ntfs-3g
+reiserfsprogs
+xfsprogs
+nilfs-utils

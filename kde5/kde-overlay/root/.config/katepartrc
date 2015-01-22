@@ -27,7 +27,7 @@ Swap File Mode=1
 Swap Sync Interval=15
 Tab Handling=2
 Tab Width=8
-Word Wrap=false
+Word Wrap=true
 Word Wrap Column=80
 
 [Editor]
@@ -56,7 +56,7 @@ Icon Bar=false
 Input Mode=0
 Keyword Completion=true
 Line Modification=false
-Line Numbers=false
+Line Numbers=true
 Maximum Search History Size=100
 Persistent Selection=false
 Scroll Bar Marks=false
@@ -65,7 +65,7 @@ Scroll Bar Mini Map All=false
 Scroll Bar Mini Map Width=60
 Scroll Past End=false
 Search/Replace Flags=140
-Show Scrollbars=0
+Show Scrollbars=1
 Smart Copy Cut=false
 Vi Input Mode Steal Keys=false
 Vi Relative Line Numbers=false

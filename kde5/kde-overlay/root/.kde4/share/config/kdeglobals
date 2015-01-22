@@ -130,14 +130,9 @@ DisabledValue=1
 Size=32
 
 [General]
-BrowserApplication[$e]=firefox.desktop
 ColorScheme=menda
 Name=menda
-XftAntialias=true
-XftHintStyle=hintmedium
-XftSubPixel=none
 desktopFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
-fixed=Droid Sans Mono,10,-1,5,50,0,0,0,0,0
 font=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 menuFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
@@ -152,7 +147,7 @@ Theme=Menda-Circle
 [KDE]
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
-contrast=4
+contrast=7
 
 [MainToolbarIcons]
 ActiveColor=169,156,255
