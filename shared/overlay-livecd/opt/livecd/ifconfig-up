@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# enable network (workaround for lightdm)
+if [[ -e "/usr/bin/lightdm" ]]; then
+     for eth in $(ifconfig | grep ': ' | cut -d: -f1); do
+         ifconfig $eth up
+     done
+fi
