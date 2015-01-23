@@ -8,5 +8,7 @@ DefaultProfile=Shell.profile
 Favorites=Shell.profile
 
 [MainWindow]
-State=AAAA/wAAAAD9AAAAAAAAAoAAAAG/AAAABAAAAAQAAAAIAAAACPwAAAAA
+Height 720=318
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAHDAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+Width 1280=742
