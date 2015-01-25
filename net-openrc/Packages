@@ -12,8 +12,7 @@ file
 filesystem
 findutils
 gawk
->i686 gcc-libs
->x86_64 gcc-libs-multilib
+gcc-libs
 gettext
 glibc
 grep
@@ -80,8 +79,11 @@ modules-load-openrc
 openssh-openrc
 ntp-openrc
 tmpwatch
+<<<<<<< HEAD
 mlocate
 keyboardctl
+=======
+>>>>>>> master
 
 ## Eudev
 eudev
