@@ -2,8 +2,11 @@
 panelVisibility=0
 
 [PlasmaViews][Panel 1][Horizontal1280]
-length=1216
-maxLength=1216
-minLength=1216
+length=1281
+maxLength=1281
+minLength=1281
 panelVisibility=0
-thickness=45
+thickness=41
+
+[PlasmaViews][Panel 1][Horizontal1920]
+thickness=34

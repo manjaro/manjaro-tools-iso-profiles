@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=ifconfig-up
+Comment=Re-enable network connection
+Exec=/opt/livecd/ifconfig-up
+StartupNotify=false
+Terminal=false
+Hidden=false
+

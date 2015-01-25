@@ -129,13 +129,25 @@ DisabledSemiTransparent=true
 DisabledValue=1
 Size=32
 
+[General]
+ColorScheme=menda
+Name=menda
+desktopFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
+font=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
+menuFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
+shadeSortColumn=true
+smallestReadableFont=Oxygen-Sans,8,-1,5,50,0,0,0,0,0
+taskbarFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
+toolBarFont=Oxygen-Sans,9,-1,5,50,0,0,0,0,0
+widgetStyle=menda
+
 [Icons]
 Theme=Menda-Circle
 
 [KDE]
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
-contrast=4
+contrast=7
 
 [MainToolbarIcons]
 ActiveColor=169,156,255
