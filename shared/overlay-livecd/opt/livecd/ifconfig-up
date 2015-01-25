@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# enable network (workaround for lightdm)
-if [[ -e "/usr/bin/lightdm" ]]; then
-     for eth in $(cat /tmp/ifconfig.devices); do
-         sudo ifconfig $eth up
-     done
-fi
