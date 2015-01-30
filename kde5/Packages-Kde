@@ -35,12 +35,12 @@ oxygen-icons
 gnome-icon-theme
 menda-square-icon-theme
 menda-circle-icon-theme
-menda-git
-menda-kde4-git
-menda-plasma-desktop-git
-menda-plasma-look-and-feel-git
-xcursor-menda-git
-sddm-menda-theme-git
+menda
+menda-kde4
+menda-plasma-desktop
+menda-plasma-look-and-feel
+xcursor-menda
+sddm-menda-theme
 
 ## GTK
 oxygen-gtk2
@@ -224,7 +224,6 @@ kdnssd
 kdoctools
 kemoticons
 kfilemetadata5
-kglobalaccel
 kguiaddons
 khotkeys
 khtml
