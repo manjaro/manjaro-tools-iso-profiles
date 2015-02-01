@@ -113,7 +113,7 @@ menda-themes-dark 		# new manjaro GTK2 theme
 azenis-icon-theme
 menda-lxqt-panel 		# new manjaro theme for lxqt/panel
 xcursor-menda			# menda mouse cursor theme - this needs to be activated
-#sddm-menda-theme		# sddm theme --> this theme uses the kde5 wallpaper --> bad
+sddm-menda-theme		# sddm theme --> this theme uses the kde5 wallpaper --> bad
 
 #infinality-bundle		# to improve text rendering
 freetype2-infinality-ultimate
