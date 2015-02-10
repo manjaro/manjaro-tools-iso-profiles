@@ -45,9 +45,9 @@ gtk2
 
 # 2) lxqt main packages
 # =====================
-#sddm				# default login manager (Qt5) of lxqt
-lightdm-gtk3-greeter
-lightdm-gtk-greeter-settings
+#sddm				# default login manager (Qt5) of lxqt  --> enter in "displaymanager" file
+#lightdm-gtk3-greeter
+#lightdm-gtk-greeter-settings
 
 openbox				# default window manager (GTK2) of lxqt
 
@@ -93,7 +93,7 @@ gvfs-afc			# enables support for external media (e.g. USB sticks)
 # 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
 # ===========================================================================
 gksu				# (GTK2) GUI for su and sudo - there is no alternative for it in lxqt
-gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
+#gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
 
 leafpad				# default lxde text editor - very lightweight - heavier alternative: notepadqq
 lxtask				# LXDE task manager - qt4 alternative: qps
@@ -113,7 +113,7 @@ menda-themes-dark 		# new manjaro GTK2 theme
 azenis-icon-theme
 menda-lxqt-panel 		# new manjaro theme for lxqt/panel
 xcursor-menda			# menda mouse cursor theme - this needs to be activated
-#sddm-menda-theme		# sddm theme
+sddm-menda-theme		# sddm theme --> this theme uses the kde5 wallpaper --> bad
 
 #infinality-bundle		# to improve text rendering
 freetype2-infinality-ultimate
@@ -132,15 +132,15 @@ xarchiver			# GUI frontend for many archive file formats
 octopi				# Qt5 package manager
 octopi-notifier-qt5
 
-firefox			
-#>i686 qupzilla			# internet browser (Qt5)
+>x86_64 firefox			
+>i686 qupzilla			# internet browser (Qt5)
 flashplugin			# flash support for internet browser
 
 #libreoffice-installer		# GUI installer for LibreOffice
 qarma-git			# zenity Qt5
 qisousb				# write an ISO on an USB stick
 qtfind				# add a file search to pcmanfm-qt (qt5)
-#xscreensaver			# screensaver and power managment
+xscreensaver			# screensaver and power managment
 
 
 
