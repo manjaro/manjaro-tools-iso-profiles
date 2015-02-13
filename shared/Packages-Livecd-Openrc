@@ -1,5 +1,5 @@
 manjaro-livecd-openrc
 manjaro-livecd-cli-installer
 
-thus
-calamares
+#thus				# GUI installer of manjaro
+calamares			# new GUI installer of manjaro - test for manjaro 0.9

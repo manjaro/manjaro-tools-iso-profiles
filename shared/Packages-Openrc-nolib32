@@ -93,12 +93,12 @@ rsync
 lsof
 
 ## needed by cli-installer
-dialog
-dmidecode
-gptfdisk
-parted
-pv
-tcpdump
+# dialog
+# dmidecode
+# gptfdisk
+# parted
+# pv
+# tcpdump
 wget
 
 ## efi support (only x86_64)
@@ -146,7 +146,7 @@ zd1211-firmware
 acpid-openrc
 cpupower-openrc
 ethtool
-hdparm
+hdparm-openrc
 sdparm
 smartmontools
 wireless_tools
