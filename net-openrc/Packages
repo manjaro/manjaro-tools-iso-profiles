@@ -81,7 +81,6 @@ ntp-openrc
 tmpwatch
 mlocate
 keyboardctl
-keyboardctl
 
 ## Eudev
 eudev
