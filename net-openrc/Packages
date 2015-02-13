@@ -79,15 +79,9 @@ modules-load-openrc
 openssh-openrc
 ntp-openrc
 tmpwatch
-<<<<<<< HEAD
-<<<<<<< HEAD
 mlocate
 keyboardctl
-=======
->>>>>>> master
-=======
 keyboardctl
->>>>>>> e44e0230c940c1dfebdfdbeb460cfcab586ba287
 
 ## Eudev
 eudev

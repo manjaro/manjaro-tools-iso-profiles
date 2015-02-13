@@ -92,12 +92,12 @@ rsync
 lsof
 
 ## needed by cli-installer
-dialog
-dmidecode
-gptfdisk
-parted
-pv
-tcpdump
+# dialog
+# dmidecode
+# gptfdisk
+# parted
+# pv
+# tcpdump
 wget
 
 ## efi support (only x86_64)
