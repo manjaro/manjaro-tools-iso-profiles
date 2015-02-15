@@ -37,6 +37,7 @@ pulseaudio-ctl
 accountsservice
 gksu
 gst-libav
+gparted
 libreoffice-installer
 lxsession
 lightdm-gtk3-greeter
