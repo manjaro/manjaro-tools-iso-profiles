@@ -55,7 +55,7 @@
     <property name="snap_width" type="int" value="10"/>
     <property name="theme" type="string" value="Menda"/>
     <property name="title_alignment" type="string" value="center"/>
-    <property name="title_font" type="string" value="Source Sans Pro 10"/>
+    <property name="title_font" type="string" value="Cantarell 11"/>
     <property name="title_horizontal_offset" type="int" value="0"/>
     <property name="title_shadow_active" type="string" value="false"/>
     <property name="title_shadow_inactive" type="string" value="false"/>
@@ -78,5 +78,10 @@
       <value type="string" value="Workspace 4"/>
     </property>
     <property name="tile_on_move" type="bool" value="true"/>
+    <property name="titleless_maximize" type="bool" value="false"/>
+    <property name="cycle_preview" type="bool" value="true"/>
+    <property name="cycle_tabwin_mode" type="int" value="0"/>
+    <property name="sync_to_vblank" type="bool" value="true"/>
+    <property name="zoom_desktop" type="bool" value="true"/>
   </property>
 </channel>
