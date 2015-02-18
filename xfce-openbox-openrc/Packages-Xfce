@@ -1,7 +1,7 @@
 ## Xorg Packages
 inxi
 libdnet
-#>x86_64 lib32-mesa-demos
+mesa-demos # used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -41,7 +41,7 @@ obmenu
 obkey
 tint2
 lxrandr
-xcompmgr
+compton
 
 ## Xfce
 xfce4-panel
@@ -95,7 +95,12 @@ catfish # for thunar search
 downgrade
 menulibre
 xchat
-timeset-gui # MSM does not work with OpenRC
+timeset-gui # MSM time module does not work with OpenRC
+parole
+mpg123 # for parole
+gst-libav # for parole
+sakis3g # usb mobile broadband
+zenity # for sakis3g
 
 ## Artwork, icons
 manjaro-artwork
