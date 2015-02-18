@@ -12,7 +12,8 @@ file
 filesystem
 findutils
 gawk
-gcc-libs
+>i686 gcc-libs
+>x86_64 gcc-libs-multilib
 gettext
 glibc
 grep
@@ -59,7 +60,7 @@ xfsprogs
 linux-firmware
 lsb-release
 haveged-openrc # needed for pacman-init
-metalog-openrc # logger (syslog-ng alternative)
+syslog-ng-openrc # logger
 manjaro-firmware
 manjaro-release
 memtest86+
@@ -135,7 +136,7 @@ nfs-utils
 ntfs-3g
 
 ## Fonts
-#terminus-font
+terminus-font
 ttf-bitstream-vera
 ttf-dejavu
 ttf-inconsolata
@@ -169,7 +170,6 @@ hdparm
 sdparm
 smartmontools
 #tlp # conflicts with pm-utils
-laptop-mode-tools
 wireless_tools
 xorg-xset
 
