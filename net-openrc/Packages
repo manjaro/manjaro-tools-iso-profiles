@@ -12,7 +12,8 @@ file
 filesystem
 findutils
 gawk
-gcc-libs
+>i686 gcc-libs
+>x86_64 gcc-libs-multilib
 gettext
 glibc
 grep
@@ -21,6 +22,7 @@ inetutils
 iproute2
 iputils
 jfsutils
+keyboardctl
 less
 licenses
 locale-info
@@ -169,7 +171,7 @@ hdparm
 sdparm
 smartmontools
 #tlp # conflicts with pm-utils
-laptop-mode-tools
+#laptop-mode-tools #lots of complaints
 wireless_tools
 xorg-xset
 
