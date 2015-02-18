@@ -22,7 +22,6 @@ inetutils
 iproute2
 iputils
 jfsutils
-keyboardctl
 less
 licenses
 locale-info
@@ -137,7 +136,7 @@ nfs-utils
 ntfs-3g
 
 ## Fonts
-#terminus-font
+terminus-font
 ttf-bitstream-vera
 ttf-dejavu
 ttf-inconsolata
@@ -171,7 +170,6 @@ hdparm
 sdparm
 smartmontools
 #tlp # conflicts with pm-utils
-#laptop-mode-tools #lots of complaints
 wireless_tools
 xorg-xset
 
