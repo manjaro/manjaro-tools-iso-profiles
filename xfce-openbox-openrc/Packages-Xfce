@@ -21,14 +21,6 @@ xorg-xinit
 xorg-xset
 xdg-utils
 
-## Fonts
-terminus-font
-ttf-bitstream-vera
-ttf-dejavu
-ttf-inconsolata
-ttf-indic-otf
-ttf-liberation
-
 ## Basic packages
 dconf
 desktop-file-utils
