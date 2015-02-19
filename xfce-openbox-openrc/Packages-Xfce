@@ -21,6 +21,14 @@ xorg-xinit
 xorg-xset
 xdg-utils
 
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+
 ## Basic packages
 dconf
 desktop-file-utils
@@ -81,28 +89,29 @@ galculator-gtk2
 nitrogen
 
 ## More Apps
-gconf # fix qt-theme
-gnome-keyring # fix wlan segfault
-gvfs # to fix trash in thunar
-udisks2 # removable disk management
+gconf			# fix qt-theme
+gnome-keyring		# fix wlan segfault
+gvfs			# to fix trash in thunar
+udisks2			# removable disk management
 manjaro-settings-manager
+keyboardctl		# for manjaro-settings-manager
 octopi
 octopi-notifier-qt5
-gksu # required for octopi
+gksu			# required for octopi
 libreoffice-installer
 thunar-archive-plugin
 htop
-tumbler # for thumbnails
-catfish # for thunar search
+tumbler			# for thumbnails
+catfish			# for thunar search
 downgrade
 menulibre
 xchat
-timeset-gui # MSM time module does not work with OpenRC
+timeset-gui	# MSM time module does not work with OpenRC
 parole
-mpg123 # for parole
-gst-libav # for parole
-#sakis3g # usb mobile broadband
-zenity # for sakis3g
+mpg123			# for parole
+gst-libav		# for parole
+#sakis3g		# usb mobile broadband
+zenity			# for sakis3g
 
 ## Artwork, icons
 manjaro-artwork

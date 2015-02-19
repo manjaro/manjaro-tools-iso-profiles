@@ -21,6 +21,15 @@ xorg-xinit
 xorg-xset
 xdg-utils
 xterm
+keyboardctl
+
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
 
 ## Basic packages
 dconf
