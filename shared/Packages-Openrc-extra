@@ -170,7 +170,6 @@ sdparm
 smartmontools
 #tlp # conflicts with pm-utils
 wireless_tools
-xorg-xset
 
 ## ucode for new cpus
 intel-ucode
