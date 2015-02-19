@@ -95,7 +95,6 @@ pkg-config
 squashfs-tools
 sudo
 syslinux
-xdg-utils
 xdg-user-dirs
 
 ## Compression Codecs

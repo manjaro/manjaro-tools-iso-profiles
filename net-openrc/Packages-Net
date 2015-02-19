@@ -18,6 +18,7 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xdg-utils
 xterm
 
 ## Basic packages
