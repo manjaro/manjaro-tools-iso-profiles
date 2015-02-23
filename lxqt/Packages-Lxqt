@@ -1,5 +1,5 @@
-# 1) stricly identical to the Net-Edition, except for Network-Manager
-# ===================================================================
+# 1) stricly identical to the Net-Edition
+# =======================================
 ## Xorg Packages
 inxi
 libdnet
@@ -36,22 +36,20 @@ manjaro-artwork
 gtk2
 
 ## Network
-#netctl
-#networkmanager
-#networkmanager-dispatcher-ntpd
-#openresolv
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
 # =============================================================================
 
 
 # 2) lxqt main packages
 # =====================
-#sddm				# default login manager (Qt5) of lxqt  --> enter in "displaymanager" file
-#lightdm-gtk3-greeter
-#lightdm-gtk-greeter-settings
+#sddm				# default login manager (Qt5) of lxqt
+lightdm-gtk3-greeter
+lightdm-gtk-greeter-settings
 
 openbox				# default window manager (GTK2) of lxqt
-
-cmst				# connection manager (Qt) GUI --> sudo systemctl enable connman
 
 liblxqt				#
 liblxqt-mount			# these are all dependencies and libraries for the following lxqt packages
@@ -64,14 +62,14 @@ lxqt-about			# lxqt "about" dialog - not required
 system-tools-backends
 liboobs
 lxqt-admin			# offers additional setting options - not required
-lxqt-common
+repoarch/lxqt-common            # !!!!!!!!!!!!!!!!!!!!!!!!!!!
 lxqt-config
 lxqt-globalkeys
 lxqt-notificationd		# lxqt notification system - not required
 lxqt-openssh-askpass		# offers additional ssh password save options - not required
 lxqt-panel
 lxqt-policykit
-lxqt-powermanagement
+#lxqt-powermanagement
 lxqt-qtplugin
 lxqt-runner			# lxqt runner / quicklaunch menu (similar to synapse) - not required
 lxqt-session
@@ -84,6 +82,9 @@ qtermwidget
 
 # 3) System-packages (most of them coming from xfce)
 # ==================================================
+
+>x86_64 manjaro-pulse
+#>x86_64 manjaro-printer        # removed, qt4 !
 manjaro-settings-manager
 
 gvfs				# for mounting file other systems
@@ -92,11 +93,13 @@ gvfs-afc			# enables support for external media (e.g. USB sticks)
 
 # 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
 # ===========================================================================
+network-manager-applet
 gksu				# (GTK2) GUI for su and sudo - there is no alternative for it in lxqt
-#gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
+gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
 
+hexchat                         # (GTK2) graphical IRC (chat) client
 leafpad				# default lxde text editor - very lightweight - heavier alternative: notepadqq
-lxtask				# LXDE task manager - qt4 alternative: qps
+#lxtask				# LXDE task manager - qt4 alternative: qps
 
 lxappearance 			# appearance settings of GTK2 themes - there is no alternative for it in lxqt
 
@@ -110,10 +113,10 @@ obconf				# openbox appearance settings - needed for window title and border con
 
 menda-themes-dark 		# new manjaro GTK2 theme
 #menda-circle-icon-theme 	# new manjaro icon theme - much lighter
-azenis-icon-theme
+azenis-green-icon-theme
 menda-lxqt-panel 		# new manjaro theme for lxqt/panel
 xcursor-menda			# menda mouse cursor theme - this needs to be activated
-sddm-menda-theme		# sddm theme --> this theme uses the kde5 wallpaper --> bad
+#sddm-menda-theme		# sddm theme
 
 #infinality-bundle		# to improve text rendering
 freetype2-infinality-ultimate
@@ -123,6 +126,9 @@ fontconfig-infinality-ultimate
 
 # 6) Minimal set of tools
 # =======================
+libchardet                      # for bomi...
+bomi                            # multimedia player cmplayer-like
+lxtask                          # task manager
 mpv				# replace mplayer/mplayer2
 qpdfview			# pdf reader
 vi				# CLI text editor
@@ -132,15 +138,21 @@ xarchiver			# GUI frontend for many archive file formats
 octopi				# Qt5 package manager
 octopi-notifier-qt5
 
->x86_64 firefox			
->i686 qupzilla			# internet browser (Qt5)
+#baka-mplayer                   # multimedia player
+mpd                             # server-side application for playing music
+cantata                         # Qt5 client for the music player daemon (MPD)
+firefox			
+#>i686 qupzilla			# internet browser (Qt5)
 flashplugin			# flash support for internet browser
-
-#libreoffice-installer		# GUI installer for LibreOffice
+gparted				# partitioning program (GTK2)
+>x86_64 libreoffice-installer	# GUI installer for LibreOffice
+>x86_64 pinta                   # drawing/editing program
 qarma-git			# zenity Qt5
+transmission-qt                 # bittorrent client Qt5
 qisousb				# write an ISO on an USB stick
 qtfind				# add a file search to pcmanfm-qt (qt5)
-xscreensaver			# screensaver and power managment
+rfkill
+#xscreensaver			# screensaver and power managment
 
 
 
