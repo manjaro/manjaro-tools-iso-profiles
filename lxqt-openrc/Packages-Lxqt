@@ -4,7 +4,8 @@
 alsa-utils-openrc
 consolekit-openrc
 dbus-openrc
-connman-openrc
+#connman-openrc
+networkmanager-openrc
 displaymanager-openrc
 avahi-openrc
 ntp-openrc
@@ -12,6 +13,14 @@ ntp-openrc
 ###xorg###
 xdg-user-dirs
 xdg-utils
+
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
 
 ###misc###
 alsa-firmware
@@ -22,7 +31,7 @@ iso-codes
 lxqt
 qterminal
 qupzilla
-cmst
+#cmst
 octopi
 octopi-notifier-qt5
 qpdfview
@@ -36,6 +45,7 @@ gksu
 mousepad
 gnome-keyring
 xarchiver
+network-manager-applet
 
 ###DM###
 lxqt-lightdm-greeter
