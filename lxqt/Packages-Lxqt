@@ -69,7 +69,7 @@ lxqt-notificationd		# lxqt notification system - not required
 lxqt-openssh-askpass		# offers additional ssh password save options - not required
 lxqt-panel
 lxqt-policykit
-#lxqt-powermanagement
+lxqt-powermanagement
 lxqt-qtplugin
 lxqt-runner			# lxqt runner / quicklaunch menu (similar to synapse) - not required
 lxqt-session
