@@ -40,14 +40,13 @@ compton
 kdesu
 kde-cli-tools
 kate
-ark
 
 ###gtk###
 #gvfs
 #gksu
 #mousepad
 #gnome-keyring
-#xarchiver
+xarchiver
 network-manager-applet
 
 ###DM###
