@@ -60,7 +60,7 @@ if ${use_color} ; then
 			eval $(dircolors -b /etc/DIR_COLORS)
 		fi
 	fi
-
+	
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;34m\] \W \033[01;31m\]]\$\[\033[00m\] '
 	else
