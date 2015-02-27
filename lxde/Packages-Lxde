@@ -114,15 +114,7 @@ pa-applet
 
 ## Office
 #libreoffice-installer
-libreoffice-still-en-US
-libreoffice-still-base
-libreoffice-still-calc
-libreoffice-still-draw
-libreoffice-still-gnome
-libreoffice-still-impress
-libreoffice-still-math
-libreoffice-still-postgresql-connector
-libreoffice-still-writer
+libreoffice-still
 gnumeric
 
 ## Printing
