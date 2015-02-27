@@ -137,6 +137,9 @@ xarchiver			# GUI frontend for many archive file formats
 
 octopi				# Qt5 package manager
 octopi-notifier-qt5
+octopi-cachecleaner
+octopi-pacmanhelper
+octopi-repoeditor
 
 #baka-mplayer                   # multimedia player
 mpd                             # server-side application for playing music
