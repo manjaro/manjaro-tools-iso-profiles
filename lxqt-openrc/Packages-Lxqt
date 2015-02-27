@@ -37,15 +37,15 @@ qpdfview
 compton
 #juffed-qt5-git
 #compton-conf
-kdesu
-kde-cli-tools
-kate
+#kdesu
+#kde-cli-tools
+#kate
 
 ###gtk###
-#gvfs
-#gksu
-#mousepad
-#gnome-keyring
+gvfs
+gksu
+mousepad
+gnome-keyring
 xarchiver
 network-manager-applet
 
