@@ -1,0 +1,17 @@
+#!/usr/bin/openrc-run
+# Copyright 2014 Aaditya Bagga (aaditya_gnulinux@zoho.com)
+# Distributed under the terms of the GNU General Public License v2
+
+description="Pacman initialization script"
+
+depend() {
+	use net
+	need haveged gnupg-mount
+}
+
+start() {
+	ebegin "Running pacman initialization"
+	/usr/bin/pacman-key --init >> /var/log/rc.log
+	/usr/bin/pacman-key --populate archlinux manjaro --nocolor >> /var/log/rc.log
+	eend $?
+}

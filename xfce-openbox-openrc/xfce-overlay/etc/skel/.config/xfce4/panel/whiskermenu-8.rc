@@ -17,3 +17,5 @@ command-logout=xfce4-session-logout
 show-command-logout=true
 command-menueditor=menulibre
 show-command-menueditor=true
+command-profile=manjaro-settings-manager-gui
+show-command-profile=true

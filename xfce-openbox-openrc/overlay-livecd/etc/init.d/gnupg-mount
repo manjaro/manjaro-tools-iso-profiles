@@ -1,0 +1,23 @@
+#!/usr/bin/openrc-run
+# Copyright 2015 artoo (flower_of_life@gmx.net)
+# Distributed under the terms of the GNU General Public License v2
+
+target_dir=/etc/pacman.d/gnupg
+description="Temporary ${target_dir} directory"
+
+depend() {
+	before pacman-init
+}
+
+start() {
+	ebegin "Mounting temporary gnupg directory"
+	[[ ! -d ${target_dir} ]] && mkdir -p ${target_dir}
+	mount -t tmpfs -o size=10M,mode=0755 tmpfs ${target_dir}
+	eend $?
+}
+
+stop(){
+	ebegin "Unmounting temporary gnupg directory"
+	umount -l ${target_dir}
+	eend $?
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/openrc-run
+# Copyright 2014 Aaditya Bagga (aaditya_gnulinux@zoho.com)
+# Distributed under the terms of the GNU General Public License v2
+
+description="LiveMedia Config Script"
+
+depend() {
+    need localmount
+}
+
+start() {
+	ebegin "Starting livecd script"
+	# run the livecd script
+	/usr/bin/livecd
+	eend $?
+}

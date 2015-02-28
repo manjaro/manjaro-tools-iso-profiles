@@ -1,7 +1,7 @@
 ## Xorg Packages
 inxi
 libdnet
-mesa-demos # used by inxi
+mesa-demos		# used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -33,7 +33,7 @@ volumeicon-gtk2
 ## Network
 openresolv-openrc
 wicd-openrc
-bluez-openrc # required for bluetooth
+bluez-openrc		# required for bluetooth
 blueman
 
 ## Openbox
@@ -56,22 +56,21 @@ xfce4-settings
 xfce4-notifyd
 xfce4-screenshooter
 xfce4-taskmanager
-xfce4-power-manager-upower0
+xfce4-power-manager-upower
 xfce4-whiskermenu-plugin
-#xfce4-clipman-plugin
+xfce4-clipman-plugin
 xfce4-xkb-plugin
 
 ## Basic Apps
 lxdm-consolekit
 wicd-gtk
 python2-notify
-clipit
 leafpad
 qpdfview
 xarchiver
 thunar
 firefox
-lxsession # contains lxpolit
+lxsession		# contains lxpolit
 gparted
 viewnior
 dmenu
@@ -98,7 +97,7 @@ catfish			# for thunar search
 downgrade
 menulibre
 xchat
-timeset-gui	# MSM time module does not work with OpenRC
+timeset-gui		# MSM time module does not work with OpenRC
 parole
 mpg123			# for parole
 gst-libav		# for parole
@@ -109,6 +108,7 @@ zenity			# for sakis3g
 manjaro-artwork
 menda-themes
 numix-manjaro-themes
+adwaita-manjaro-themes
 xfce-theme-greenbird
 faenza-green-icon-theme
 xcursor-vanilla-dmz-aa
