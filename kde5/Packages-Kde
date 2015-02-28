@@ -132,6 +132,8 @@ steam-native
 ## Package management
 octopi
 octopi-notifier-frameworks
+octopi-cachecleaner
+octopi-repoeditor
 
 ## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
 sni-qt

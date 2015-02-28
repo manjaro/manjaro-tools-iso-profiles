@@ -33,6 +33,8 @@ qterminal
 qupzilla
 octopi
 octopi-notifier-qt5
+octopi-cachecleaner
+octopi-repoeditor
 qpdfview
 compton
 #juffed-qt5-git

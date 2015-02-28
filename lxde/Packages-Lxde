@@ -85,7 +85,9 @@ imagewriter
 
 ## Package management
 octopi
-octopi-notifier
+octopi-notifier-qt4
+octopi-cachecleaner
+octopi-repoeditor
 
 ## Fonts
 adobe-source-sans-pro-fonts
