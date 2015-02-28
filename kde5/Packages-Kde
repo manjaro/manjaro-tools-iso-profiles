@@ -41,6 +41,7 @@ menda-plasma-desktop
 menda-plasma-look-and-feel
 xcursor-menda
 sddm-menda-theme
+plymouth-theme-manjaro-elegant
 
 ## GTK
 oxygen-gtk2
