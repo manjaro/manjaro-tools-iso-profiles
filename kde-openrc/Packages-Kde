@@ -34,7 +34,10 @@ kdegraphics-okular
 kdebase-konqueror
 partitionmanager
 kwrite
+octopi
 octopi-notifier-frameworks
+octopi-cachecleaner
+octopi-repoeditor
 print-manager
 manjaro-settings-manager
 manjaro-welcome
