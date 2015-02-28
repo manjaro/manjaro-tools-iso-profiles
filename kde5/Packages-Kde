@@ -125,7 +125,9 @@ samba
 ttf-droid
 
 ## Games
-steam-manjaro
+#steam-manjaro (currently in unstable)
+steam
+steam-native
 
 ## Package management
 octopi
@@ -157,6 +159,7 @@ sddm-kcm
 imagewriter
 firefox-kde
 firefox-firetray
+thunderbird-kde
 flashplugin
 manjaro-settings-manager
 manjaro-welcome
