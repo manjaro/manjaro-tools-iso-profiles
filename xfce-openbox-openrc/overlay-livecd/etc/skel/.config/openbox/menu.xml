@@ -30,9 +30,9 @@
 			</item>
 		</menu>
 		<menu id="5" label="Editors">
-			<item label="Leafpad">
+			<item label="Mousepad">
 				<action name="Execute">
-					<execute>leafpad</execute>
+					<execute>mousepad</execute>
 				</action>
 			</item>
 		</menu>
@@ -162,7 +162,7 @@
 		<menu id="40" label="OpenBox">
 			<item label="Edit Autostart">
 				<action name="Execute">
-					<execute>leafpad ~/.config/openbox/autostart</execute>
+					<execute>mousepad ~/.config/openbox/autostart</execute>
 				</action>
 			</item>
 			<item label="Openbox Configuration Manager">

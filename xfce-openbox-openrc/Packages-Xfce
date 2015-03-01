@@ -60,19 +60,19 @@ xfce4-power-manager-upower
 xfce4-whiskermenu-plugin
 xfce4-clipman-plugin
 xfce4-xkb-plugin
+mousepad
+ristretto
 
 ## Basic Apps
 lxdm-consolekit
 wicd-gtk
 python2-notify
-leafpad
 qpdfview
 xarchiver
 thunar
 firefox
 lxsession		# contains lxpolit
 gparted
-viewnior
 dmenu
 conky
 lxappearance
