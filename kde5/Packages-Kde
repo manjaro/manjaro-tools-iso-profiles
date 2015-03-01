@@ -1,7 +1,6 @@
 ### Manjaro Packages
 
 ## Xorg Packages
-inxi
 libdnet
 mesa-demos
 >x86_64 lib32-mesa-demos
@@ -59,15 +58,7 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-cdrdao
-cdrkit
-dvdauthor
-normalize
-transcode
-emovix
 ffmpeg
-dvd+rw-tools
-virtualgl
 libdvdcss
 manjaro-alsa
 manjaro-pulse
@@ -75,17 +66,13 @@ phonon-qt5-gstreamer
 phonon-qt4-gstreamer
 pulseaudio-ctl
 qt-gstreamer
-taglib-extras
 perl-uri
-mpd
 python-pyqt4
 libcanberra
 libcanberra-pulse
 libcanberra-gstreamer
 >x86_64 lib32-libcanberra
 >x86_64 lib32-libcanberra-pulse
-vlc
-cantata
 
 ## Connect Packages
 udiskie
@@ -150,14 +137,14 @@ kscreen-frameworks
 ksshaskpass
 ksysguard
 kwin
-kwrited                                                                                                                                                            
-milou                                                                                                                                                              
-oxygen                                                                                                                                                             
-oxygen-cursors                                                                                                                                                     
-plasma-desktop                                                                                                                                                     
-plasma-nm                                                                                                                                                          
-plasma-workspace                                                                                                                                                   
-plasma-workspace-wallpapers                                                                                                                                        
+kwrited
+milou
+oxygen
+oxygen-cursors
+plasma-desktop
+plasma-nm
+plasma-workspace
+plasma-workspace-wallpapers
 powerdevil                                                                                                                                                         
 systemsettings
 baloo-frameworks  # optional plasma-desktop
@@ -187,17 +174,38 @@ konversation
 kmix
 gwenview
 print-manager
+skanlite
+
+## Thumbnailers and terminal for dolphin
+icoutils                     # thumbnailers for MS files
+kdegraphics-svgpart          # thumbailers for SVG files
+kdegraphics-thumbnailers     # thumbnailers for various graphics files
+kdemultimedia-ffmpegthumbs   # thumbnailers for video files
+kdemultimedia-mplayerthumbs  # thumbnailers for video files
+kdesdk-thumbnailers          # thumbnailers for development files
+konsolepart4                 # open terminal in context menu 
+
+## Optional dependencies for k3b
+cdparanoia    # for cd ripping support
+cdrdao        # for disk-at-once (DAO) mode support
+dvd+rw-tools  # for dvd burning support
+emovix        # for bootable multimedia cd/dvd support
+transcode     # for advanced mpeg conversion support
+vcdimager     # for vcd burning support 
 
 ## Applications
+cantata  # client for mpd
 imagewriter
+inxi
 firefox-kde
 thunderbird-kde
 flashplugin
 manjaro-settings-manager
 manjaro-welcome
-skanlite
+mpd
 >x86_64 lib32-libxft
 p7zip
+vlc
 
 ## Office
 #libreoffice-fresh
