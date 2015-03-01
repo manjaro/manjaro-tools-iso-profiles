@@ -160,18 +160,20 @@ menda-kde4
 sni-qt
 
 ## KDE Applications
+k3b
 kate
 kdebase-dolphin
 kdebase-kfind
 kdegraphics-ksnapshot
+kdegraphics-okular
 kdepim-kalarm
 kdeutils-ark
-k3b
 kdeutils-kcalc
 kdeconnect
 konsole
 konversation
 kmix
+kwrite
 gwenview
 print-manager
 skanlite
