@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# /etc/local.start: Local multi-user startup script.
+#
+
+# Legacy sysvinit rc.local support
+if [ -e /etc/rc.local ]; then
+	# Execute it
+	/etc/rc.local
+fi

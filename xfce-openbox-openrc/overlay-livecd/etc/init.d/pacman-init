@@ -6,10 +6,12 @@ description="Pacman initialization script"
 
 depend() {
 	use net
-	need haveged
+	need haveged gnupg-mount
 }
 
 start() {
-	/usr/bin/pacman-key --init
-	/usr/bin/pacman-key --populate archlinux manjaro
+	ebegin "Running pacman initialization"
+	/usr/bin/pacman-key --init >> /var/log/rc.log
+	/usr/bin/pacman-key --populate archlinux manjaro --nocolor >> /var/log/rc.log
+	eend $?
 }

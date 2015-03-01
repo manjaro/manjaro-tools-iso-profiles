@@ -30,13 +30,18 @@
 			</item>
 		</menu>
 		<menu id="5" label="Editors">
-			<item label="Leafpad">
+			<item label="Mousepad">
 				<action name="Execute">
-					<execute>leafpad</execute>
+					<execute>mousepad</execute>
 				</action>
 			</item>
 		</menu>
 		<menu id="6" label="Graphics">
+			<item label="Gcolor2">
+				<action name="Execute">
+					<execute>gcolor2</execute>
+				</action>
+			</item>
 			<item label="Viewnior">
 				<action name="Execute">
 					<execute>viewnior</execute>
@@ -44,14 +49,14 @@
 			</item>
 		</menu>
 		<menu id="7" label="Multimedia">
-			<item label="Alsamixer">
-				<action name="Execute">
-					<execute>xfce4-terminal -e alsamixer</execute>
-				</action>
-			</item>
-			<item label="Mixer Gui">
+			<item label="Audio Mixer">
 				<action name="Execute">
 					<execute>xfce4-mixer</execute>
+				</action>
+			</item>
+			<item label="Parole Media Player">
+				<action name="Execute">
+					<execute>parole</execute>
 				</action>
 			</item>
 		</menu>
@@ -98,6 +103,11 @@
 			<item label="Manjaro Settings Manager">
 				<action name="Execute">
 					<execute>sudo manjaro-settings-manager-gui</execute>
+				</action>
+			</item>
+			<item label="Power Manager Settings">
+				<action name="Execute">
+					<execute>xfce4-power-manager-settings</execute>
 				</action>
 			</item>
 			<item label="Time Settings">
@@ -152,7 +162,7 @@
 		<menu id="40" label="OpenBox">
 			<item label="Edit Autostart">
 				<action name="Execute">
-					<execute>leafpad ~/.config/openbox/autostart</execute>
+					<execute>mousepad ~/.config/openbox/autostart</execute>
 				</action>
 			</item>
 			<item label="Openbox Configuration Manager">

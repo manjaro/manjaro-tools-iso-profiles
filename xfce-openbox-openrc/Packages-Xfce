@@ -1,7 +1,7 @@
 ## Xorg Packages
 inxi
 libdnet
-#>x86_64 lib32-mesa-demos
+mesa-demos		# used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -18,6 +18,8 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xorg-xset
+xdg-utils
 
 ## Basic packages
 dconf
@@ -31,7 +33,7 @@ volumeicon-gtk2
 ## Network
 openresolv-openrc
 wicd-openrc
-bluez-openrc # required for bluetooth
+bluez-openrc		# required for bluetooth
 blueman
 
 ## Openbox
@@ -41,7 +43,7 @@ obmenu
 obkey
 tint2
 lxrandr
-xcompmgr
+compton
 
 ## Xfce
 xfce4-panel
@@ -54,56 +56,64 @@ xfce4-settings
 xfce4-notifyd
 xfce4-screenshooter
 xfce4-taskmanager
-xfce4-power-manager-upower0
+xfce4-power-manager-upower
 xfce4-whiskermenu-plugin
-#xfce4-clipman-plugin
+xfce4-clipman-plugin
 xfce4-xkb-plugin
+mousepad
+ristretto
 
 ## Basic Apps
 lxdm-consolekit
 wicd-gtk
 python2-notify
-clipit
-leafpad
 qpdfview
 xarchiver
 thunar
 firefox
-lxsession # contains lxpolit
+lxsession		# contains lxpolit
 gparted
-viewnior
 dmenu
 conky
 lxappearance
-galculator-gtk2
+galculator
 nitrogen
+clipit
 
 ## More Apps
-gconf # fix qt-theme
-gnome-keyring # fix wlan segfault
-gvfs # to fix trash in thunar
-udisks2 # removable disk management
+gconf			# fix qt-theme
+gnome-keyring		# fix wlan segfault
+gvfs			# to fix trash in thunar
+udisks2			# removable disk management
 manjaro-settings-manager
+keyboardctl		# for manjaro-settings-manager
 octopi
 octopi-notifier-qt5
-gksu # required for octopi
+octopi-cachecleaner
+gksu			# required for octopi
 libreoffice-installer
 thunar-archive-plugin
 htop
-tumbler # for thumbnails
-catfish # for thunar search
+tumbler			# for thumbnails
+catfish			# for thunar search
 downgrade
 menulibre
 xchat
-timeset-gui # MSM does not work with OpenRC
+timeset-gui		# MSM time module does not work with OpenRC
+parole
+mpg123			# for parole
+gst-libav		# for parole
+sakis3g			# usb mobile broadband
+zenity			# for sakis3g
+gcolor2
 
 ## Artwork, icons
 manjaro-artwork
 menda-themes
 numix-manjaro-themes
-xfce-theme-greenbird
-faenza-green-icon-theme
+elementary-icon-theme
 xcursor-vanilla-dmz-aa
+xfce-theme-greenbird	# for lxdm
 
 ## Fonts
 ttf-droid
