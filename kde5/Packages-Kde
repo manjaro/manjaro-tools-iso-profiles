@@ -1,8 +1,5 @@
 ### Manjaro Packages
 
-## Xorg
-mhwd
-
 ## Xorg Packages
 inxi
 libdnet
@@ -25,18 +22,11 @@ xorg-twm
 xorg-utils
 xorg-xinit
 
-## Artwork
-plasma-workspace-wallpapers
-breeze
-breeze-kde4
-oxygen
-oxygen-kde4
-oxygen-icons
+## Themes
 gnome-icon-theme
 menda-square-icon-theme
 menda-circle-icon-theme
 menda
-menda-kde4
 menda-plasma-desktop
 menda-plasma-look-and-feel
 xcursor-menda
@@ -123,6 +113,7 @@ samba
 
 ## Font
 ttf-droid
+ttf-oxygen  # oficial KDE font
 
 ## Games
 #steam-manjaro (currently in unstable)
@@ -135,13 +126,6 @@ octopi-notifier-frameworks
 octopi-cachecleaner
 octopi-repoeditor
 
-## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
-sni-qt
-
-# Qt
-qt4
-qt5
-
 ## Java
 jdk8-openjdk
 icedtea-web
@@ -149,29 +133,47 @@ icedtea-web
 ## Printing
 manjaro-printer
 
-## Office
-#libreoffice-fresh
-calligra-meta
-
-## Login
+## Display manager
 sddm
 sddm-kcm
 
-## Applications
-imagewriter
-firefox-kde
-firefox-firetray
-thunderbird-kde
-flashplugin
-manjaro-settings-manager
-manjaro-welcome
-simple-scan
->x86_64 lib32-libxft
-qtermwidget
-qterminal
-p7zip
+## Plasma5 
+bluedevil-frameworks
+breeze
+drkonqi
+kde-gtk-config-frameworks
+kdeplasma-addons-frameworks
+kinfocenter
+kio-extras
+kmenuedit
+kscreen-frameworks
+ksshaskpass
+ksysguard
+kwin
+kwrited                                                                                                                                                            
+milou                                                                                                                                                              
+oxygen                                                                                                                                                             
+oxygen-cursors                                                                                                                                                     
+plasma-desktop                                                                                                                                                     
+plasma-nm                                                                                                                                                          
+plasma-workspace                                                                                                                                                   
+plasma-workspace-wallpapers                                                                                                                                        
+powerdevil                                                                                                                                                         
+systemsettings
+baloo-frameworks  # optional plasma-desktop
+kcm-touchpad-frameworks
+polkit-kde-frameworks
 
-## KDE4
+## Support for KDE4 applications theming
+breeze-kde4
+oxygen-kde4
+menda-kde4
+
+## A Qt plugin that enables tray icons in qt4 applications
+sni-qt
+
+## KDE Applications
+kate
 kdebase-dolphin
 kdebase-kfind
 kdegraphics-ksnapshot
@@ -180,101 +182,30 @@ kdeutils-ark
 k3b
 kdeutils-kcalc
 kdeconnect
-konversation
-
-## KDE5
-plasma-desktop
-plasma-framework
-plasma-nm
-networkmanager-qt
-libmm-qt
-plasma-workspace
-attica-qt5
-baloo-frameworks
-frameworkintegration
-kactivities-frameworks
-kapidox
-karchive
-kauth
-kbookmarks
-kcmutils
-kcodecs
-kcompletion
-kconfig
-kconfigwidgets
-kcoreaddons
-kcrash
-kdbusaddons
-kde-cli-tools
-kdeclarative
-kded
-kdelibs4support
-kdeplasma-addons-frameworks
-kdesignerplugin
-kdesu
-kdewebkit
-kdnssd
-kdoctools
-kemoticons
-kfilemetadata5
-kguiaddons
-khotkeys
-khtml
-ki18n
-kiconthemes
-kidletime
-kimageformats
-kinfocenter
-kinit
-kio-extras
-kio
-kitemmodels
-kitemviews
-kjobwidgets
-kjs
-kjsembed
-kmediaplayer
-kmenuedit
-kmix
-knewstuff
-knotifications
-knotifyconfig
-kpackage
-kparts
-kplotting
-kpty
-kross
-krunner
-kservice
-ksysguard
-libksysguard
-ktexteditor
-ktextwidgets
-kunitconversion
-kwallet
-kwayland
-kwidgetsaddons
-kwin
-kwindowsystem
-kwrited
-kxmlgui
-milou
-polkit-kde-frameworks
-powerdevil
-solid
-sonnet
-systemsettings
-threadweaver
-akonadi
-bluedevil-frameworks
-gwenview
 konsole
-kate
-kcm-touchpad-frameworks
-kde-gtk-config-frameworks
-kdecoration
-kscreen-frameworks
-qca-qt5
+konversation
+kmix
+gwenview
+print-manager
+
+## Applications
+imagewriter
+firefox-kde
+thunderbird-kde
+flashplugin
+manjaro-settings-manager
+manjaro-welcome
+skanlite
+>x86_64 lib32-libxft
+p7zip
+
+## Office
+#libreoffice-fresh
+calligra-meta
+
+## KDE Frameworks
+kimageformats
+kmediaplayer
 
 
 ## Telepathy
