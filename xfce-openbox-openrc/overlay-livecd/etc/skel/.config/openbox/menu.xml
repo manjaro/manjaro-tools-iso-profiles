@@ -104,6 +104,7 @@
 				<action name="Execute">
 					<execute>xfce4-power-manager-settings</execute>
 				</action>
+			</item>
 			<item label="Time Settings">
 				<action name="Execute">
 					<execute>gksudo timeset-gui</execute>
