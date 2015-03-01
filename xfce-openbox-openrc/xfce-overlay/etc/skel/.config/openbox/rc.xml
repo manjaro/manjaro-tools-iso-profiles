@@ -36,7 +36,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Numix-Manjaro</name>
+    <name>Menda</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -294,6 +294,11 @@
     </keybind>
     <keybind key="C-A-r">
       <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>xfce4-screenshooter</command>
+      </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
