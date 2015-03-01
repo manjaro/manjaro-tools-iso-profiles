@@ -89,6 +89,7 @@ manjaro-settings-manager
 keyboardctl		# for manjaro-settings-manager
 octopi
 octopi-notifier-qt5
+octopi-cachecleaner
 gksu			# required for octopi
 libreoffice-installer
 thunar-archive-plugin

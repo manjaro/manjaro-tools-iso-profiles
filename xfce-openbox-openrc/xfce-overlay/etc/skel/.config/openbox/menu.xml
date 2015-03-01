@@ -109,6 +109,7 @@
 				<action name="Execute">
 					<execute>xfce4-power-manager-settings</execute>
 				</action>
+			</item>
 			<item label="Manjaro Settings Manager">
 				<action name="Execute">
 					<execute>gksudo manjaro-settings-manager-gui</execute>
