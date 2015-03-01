@@ -78,6 +78,7 @@ conky
 lxappearance
 galculator-gtk2
 nitrogen
+clipit
 
 ## More Apps
 gconf			# fix qt-theme
@@ -101,8 +102,9 @@ timeset-gui		# MSM time module does not work with OpenRC
 parole
 mpg123			# for parole
 gst-libav		# for parole
-#sakis3g		# usb mobile broadband
+sakis3g			# usb mobile broadband
 zenity			# for sakis3g
+gcolor2
 
 ## Artwork, icons
 manjaro-artwork
