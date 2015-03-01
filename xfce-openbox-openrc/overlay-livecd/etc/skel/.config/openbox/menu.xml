@@ -37,6 +37,11 @@
 			</item>
 		</menu>
 		<menu id="6" label="Graphics">
+			<item label="Gcolor2">
+				<action name="Execute">
+					<execute>gcolor2</execute>
+				</action>
+			</item>
 			<item label="Viewnior">
 				<action name="Execute">
 					<execute>viewnior</execute>
