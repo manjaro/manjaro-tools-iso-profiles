@@ -113,6 +113,7 @@ menda-themes
 numix-manjaro-themes
 elementary-icon-theme
 xcursor-vanilla-dmz-aa
+xfce-theme-greenbird	# for lxdm
 
 ## Fonts
 ttf-droid
