@@ -151,7 +151,9 @@ open-fuse-iso
 
 ## Package management
 octopi
-octopi-notifier
+octopi-notifier-qt5
+octopi-cachecleaner
+octopi-repoeditor
 
 ## GTK
 oxygen-gtk2

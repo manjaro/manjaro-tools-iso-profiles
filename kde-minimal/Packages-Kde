@@ -1,0 +1,54 @@
+# xorg
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+xdg-user-dirs
+xdg-utils
+
+# Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+
+# plasma5
+phonon-qt5-vlc
+plasma
+konsole
+kate
+kdebase-dolphin
+kdegraphics-okular
+kdebase-konqueror
+partitionmanager
+kwrite
+octopi
+octopi-notifier-frameworks
+octopi-cachecleaner
+octopi-repoeditor
+print-manager
+manjaro-settings-manager
+manjaro-welcome
+manjaro-alsa
+
+# artwork
+plymouth-theme-manjaro-elegant
+menda-themes
+menda-themes-dark
+menda-square-icon-theme
+xcursor-menda
+sddm-menda-theme
+

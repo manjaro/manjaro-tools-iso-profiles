@@ -31,13 +31,17 @@ iso-codes
 lxqt
 qterminal
 qupzilla
-#cmst
 octopi
 octopi-notifier-qt5
+octopi-cachecleaner
+octopi-repoeditor
 qpdfview
 compton
 #juffed-qt5-git
 #compton-conf
+#kdesu
+#kde-cli-tools
+#kate
 
 ###gtk###
 gvfs
@@ -79,3 +83,5 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+
+manjaro-settings-manager

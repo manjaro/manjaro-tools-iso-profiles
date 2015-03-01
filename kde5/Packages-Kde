@@ -41,6 +41,7 @@ menda-plasma-desktop
 menda-plasma-look-and-feel
 xcursor-menda
 sddm-menda-theme
+plymouth-theme-manjaro-elegant
 
 ## GTK
 oxygen-gtk2
@@ -111,19 +112,9 @@ android-udev
 
 ## Devel Packages
 base-devel
-autoconf
-automake
-binutils
-bison
-fakeroot
-flex
 >x86_64 gcc-multilib
 >i686 gcc
 git
-libtool
-m4
-make
-patch
 patchutils
 svn
 yaourt
@@ -131,19 +122,18 @@ openssh
 samba
 
 ## Font
-ttf-liberation
 ttf-droid
-ttf-inconsolata
 
 ## Games
+#steam-manjaro (currently in unstable)
 steam
 steam-native
 
 ## Package management
 octopi
 octopi-notifier-frameworks
-ssx
-pacmanxg4-bin
+octopi-cachecleaner
+octopi-repoeditor
 
 ## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
 sni-qt
@@ -161,9 +151,7 @@ manjaro-printer
 
 ## Office
 #libreoffice-fresh
-#calligra-meta
-wpsoffice
-wpsoffice-common
+calligra-meta
 
 ## Login
 sddm
@@ -173,22 +161,28 @@ sddm-kcm
 imagewriter
 firefox-kde
 firefox-firetray
+thunderbird-kde
 flashplugin
-flareget
 manjaro-settings-manager
 manjaro-welcome
 simple-scan
 >x86_64 lib32-libxft
-meteo-qt
 qtermwidget
 qterminal
-spideroak
 p7zip
 
 ## KDE4
-kdebase-runtime
+kdebase-dolphin
+kdebase-kfind
+kdegraphics-ksnapshot
+kdepim-kalarm
+kdeutils-ark
+k3b
+kdeutils-kcalc
+kdeconnect
+konversation
 
-## Plasma 5 Manjaro Repo Packages
+## KDE5
 plasma-desktop
 plasma-framework
 plasma-nm
@@ -197,7 +191,6 @@ libmm-qt
 plasma-workspace
 attica-qt5
 baloo-frameworks
-baloo-widgets-frameworks
 frameworkintegration
 kactivities-frameworks
 kapidox
@@ -268,90 +261,23 @@ kxmlgui
 milou
 polkit-kde-frameworks
 powerdevil
-print-manager-frameworks
 solid
 sonnet
 systemsettings
 threadweaver
-
 akonadi
-akonadi-calendar
-ark-frameworks
-audiothumbs-frameworks
 bluedevil-frameworks
-dolphin-frameworks
-filelight-frameworks
 gwenview
-k3b-frameworks
-kalarmcal
+konsole
 kate
-kcalc-frameworks
-kcalcore
-kcalutils
 kcm-touchpad-frameworks
 kde-gtk-config-frameworks
-kdeconnect-frameworks
 kdecoration
-kdepasswd-frameworks
-kdepimlibs-frameworks
-kdepim-frameworks
-kdepim-runtime-frameworks
-kde-root-action-servicemenus-frameworks
-kdialog-frameworks
-keditbookmarks-frameworks
-kfind-frameworks
-kholidays
-kidentitymanagement
-kldap
-kmailtransport
-kmbox
-kmime
-konq-plugins-frameworks
-konqueror-frameworks
-konsole
-konversation-frameworks
-kpimtextedit
 kscreen-frameworks
-ksnapshot
-ktnef
-libbluedevil-frameworks
-libkcddb-frameworks
-libkdcraw-frameworks
-libkexiv2-frameworks
-libkipi-frameworks
-libkonq-frameworks
-libksane-frameworks
-libkscreen-frameworks
-npapi-vlc
-plasma-workspace-units
-prison-frameworks
-qbittorrent-qt5
 qca-qt5
-samba-mounter-frameworks
-skanlite-frameworks
-yakuake-frameworks
-
 
 
 ## Telepathy
-kcontacts
-kaccounts-providers
-kaccounts-integration
-libkpeople-frameworks
-signon-kwallet-extension-frameworks
-signon-plugin-oauth2-qt5
-signon-ui-qt5
-telepathy-kde-accounts-kcm-frameworks
-telepathy-kde-approver-frameworks
-telepathy-kde-auth-handler-frameworks
-telepathy-kde-common-internals-frameworks
-telepathy-kde-contact-list-frameworks
-telepathy-kde-contact-runner-frameworks
-telepathy-kde-desktop-applets-frameworks
-telepathy-kde-filetransfer-handler-frameworks
-telepathy-kde-integration-module-frameworks
-telepathy-kde-send-file-frameworks
-telepathy-kde-text-ui-frameworks
 telepathy-qt4
 telepathy-qt5
 telepathy-gabble
@@ -368,11 +294,3 @@ telepathy-glib
 # Partition
 partitionmanager
 gparted
-jfsutils
-f2fs-tools
-btrfs-progs
-exfat-utils
-ntfs-3g
-reiserfsprogs
-xfsprogs
-nilfs-utils
