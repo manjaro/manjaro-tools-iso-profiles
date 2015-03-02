@@ -30,7 +30,7 @@
     <property name="placement_ratio" type="int" value="20"/>
     <property name="placement_mode" type="string" value="center"/>
     <property name="popup_opacity" type="int" value="100"/>
-    <property name="mousewheel_rollup" type="bool" value="true"/>
+    <property name="mousewheel_rollup" type="bool" value="false"/>
     <property name="prevent_focus_stealing" type="bool" value="false"/>
     <property name="raise_delay" type="int" value="250"/>
     <property name="raise_on_click" type="bool" value="true"/>
