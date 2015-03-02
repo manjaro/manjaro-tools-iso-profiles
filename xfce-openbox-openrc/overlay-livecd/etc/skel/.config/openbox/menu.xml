@@ -42,9 +42,9 @@
 					<execute>gcolor2</execute>
 				</action>
 			</item>
-			<item label="Viewnior">
+			<item label="Ristretto">
 				<action name="Execute">
-					<execute>viewnior</execute>
+					<execute>ristretto</execute>
 				</action>
 			</item>
 		</menu>
