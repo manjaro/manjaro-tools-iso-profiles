@@ -1,5 +1,8 @@
-gtk-theme-name="Menda"
-gtk-icon-theme-name="elementary"
+# DO NOT EDIT! This file will be overwritten by LXAppearance.
+# Any customization should be done in ~/.gtkrc-2.0.mine instead.
+
+gtk-theme-name="Numix-Manjaro"
+gtk-icon-theme-name="gnome"
 gtk-font-name="Sans 11"
 gtk-cursor-theme-name="Vanilla-DMZ-AA"
 gtk-cursor-theme-size=0

@@ -13,9 +13,7 @@
         <value type="int" value="7"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
-        <value type="int" value="9"/>
         <value type="int" value="6"/>
-        <value type="int" value="1"/>
         <value type="int" value="10"/>
         <value type="int" value="2"/>
       </property>
@@ -27,8 +25,7 @@
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-2" type="string" value="showdesktop"/>
-    <property name="plugin-4" type="string" value="pager"/>
+    <property name="plugin-2" type="string" value="showdesktop"/>    <property name="plugin-4" type="string" value="pager"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="thunar"/>
@@ -54,11 +51,7 @@
     <property name="plugin-5" type="string" value="clock"/>
     <property name="plugin-10" type="string" value="mixer">
       <property name="command" type="string" value="xfce4-mixer"/>
-      <property name="track" type="string" value="Master"/>
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
-    <property name="plugin-1" type="string" value="power-manager-plugin"/>
-    <property name="plugin-9" type="string" value="xfce4-clipman-plugin"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>

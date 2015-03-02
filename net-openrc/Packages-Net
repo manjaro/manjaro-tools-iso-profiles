@@ -1,7 +1,8 @@
 ## Xorg Packages
 inxi
 libdnet
-mesa-demos # used by inxi
+mesa-demos
+#>x86_64 lib32-mesa-demos
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -18,10 +19,6 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
-xorg-xset
-xdg-utils
-xterm
-keyboardctl
 
 ## Basic packages
 dconf
