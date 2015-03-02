@@ -13,5 +13,5 @@ DEFAULT_SESSION=xfce4-session
 case $1 in
   xfce) exec ck-launch-session xfce4-session ;;
   openbox) exec ck-launch-session openbox-session ;;
-  *) exec dbus-launch  $DEFAULT_SESSION ;;
+  *) exec ck-launch-session $DEFAULT_SESSION ;;
 esac
