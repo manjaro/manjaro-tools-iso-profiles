@@ -168,6 +168,7 @@ kdegraphics-ksnapshot
 kdegraphics-okular
 kdepim-kalarm
 kdeutils-ark
+kdeutils-filelight
 kdeutils-kcalc
 kdeconnect
 kdenlive
@@ -217,6 +218,7 @@ mpd
 p7zip
 thunderbird-kde
 vlc
+yakuake
 
 ## Office
 #libreoffice-fresh
@@ -237,19 +239,6 @@ calligra-words
 ## KDE Frameworks
 kimageformats
 kmediaplayer
-
-## Telepathy
-telepathy-qt4
-telepathy-qt5
-telepathy-gabble
-telepathy-haze
-telepathy-idle
-telepathy-rakia
-telepathy-salut
-telepathy-mission-control
-python2-telepathy
-telepathy-farstream
-telepathy-glib
 
 # Partition
 partitionmanager
