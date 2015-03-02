@@ -103,9 +103,9 @@ ttf-droid
 ttf-oxygen  # oficial KDE font
 
 ## Games
-#steam-manjaro (currently in unstable)
-steam
-steam-native
+steam-manjaro  # (currently in unstable)
+#steam
+#steam-native
 
 ## Package management
 octopi
@@ -208,13 +208,14 @@ cantata  # client for mpd
 imagewriter
 inxi
 firefox-kde
-thunderbird-kde
 flashplugin
+kcmsystemd
 manjaro-settings-manager
 manjaro-welcome
 mpd
 >x86_64 lib32-libxft
 p7zip
+thunderbird-kde
 vlc
 
 ## Office
