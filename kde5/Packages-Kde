@@ -147,7 +147,7 @@ plasma-workspace
 plasma-workspace-wallpapers
 powerdevil                                                                                                                                                         
 systemsettings
-baloo-frameworks  # optional plasma-desktop
+baloo-frameworks  # optional for plasma-desktop
 kcm-touchpad-frameworks
 polkit-kde-frameworks
 
@@ -170,6 +170,7 @@ kdepim-kalarm
 kdeutils-ark
 kdeutils-kcalc
 kdeconnect
+kdenlive
 konsole
 konversation
 kmix
@@ -195,6 +196,13 @@ emovix        # for bootable multimedia cd/dvd support
 transcode     # for advanced mpeg conversion support
 vcdimager     # for vcd burning support 
 
+## Optional dependencies for kdenlive
+cdrkit           # for creation of DVD ISO images
+dvdauthor        # for creation of DVD
+dvgrab           # for firewire capture
+recordmydesktop  # for screen capture
+xine-lib         # for DVD preview 
+
 ## Applications
 cantata  # client for mpd
 imagewriter
@@ -211,12 +219,23 @@ vlc
 
 ## Office
 #libreoffice-fresh
-calligra-meta
+calligra-braindump
+calligra-extras
+calligra-filters
+calligra-flow
+calligra-handbook
+calligra-karbon
+calligra-kexi
+calligra-krita
+calligra-plan
+calligra-plugins
+calligra-sheets
+calligra-stage
+calligra-words
 
 ## KDE Frameworks
 kimageformats
 kmediaplayer
-
 
 ## Telepathy
 telepathy-qt4
@@ -230,7 +249,6 @@ telepathy-mission-control
 python2-telepathy
 telepathy-farstream
 telepathy-glib
-
 
 # Partition
 partitionmanager
