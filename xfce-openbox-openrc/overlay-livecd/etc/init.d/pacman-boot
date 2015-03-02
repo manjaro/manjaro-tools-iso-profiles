@@ -9,6 +9,7 @@ depend() {
 
 start() {
 	ebegin "Sync pacman"
-	/usr/bin/pacman-boot >> /var/log/rc.log &
+	/usr/bin/pacman-boot &
 	eend $?
 }
+

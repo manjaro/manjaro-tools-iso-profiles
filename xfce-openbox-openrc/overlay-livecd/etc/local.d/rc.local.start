@@ -2,12 +2,9 @@
 #
 # /etc/rc.local: Local multi-user startup script.
 #
-
+/usr/bin/pacman-boot &  # Setup pacman databases
 # Source /etc/conf.d/xdm if it exists
 [ -e /etc/conf.d/xdm ] && . /etc/conf.d/xdm
-
-# Some hackery for (re)starting lxdm
 if [ "$DISPLAYMANAGER" == "lxdm" ]; then
-	# Restart xdm as lxdm does not get started correctly the first time
-	rc-service xdm restart
+	rc-service xdm restart  # Restart xdm as lxdm does not get started correctly the first time, does not happen with lightdm
 fi

@@ -36,7 +36,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Menda</name>
+    <name>Numix-Manjaro</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -287,6 +287,11 @@
         <command>xfce4-appfinder --collapsed</command>
       </action>
     </keybind>
+    <keybind key="W-d">
+      <action name="Execute">
+        <command>dmenu_run -fn &quot;-*-*-r-*-*-*-110-*-*-*-*-iso8859-*&quot;</command>
+      </action>
+    </keybind>
     <keybind key="W-l">
       <action name="Execute">
         <command>cb-exit</command>
@@ -294,11 +299,6 @@
     </keybind>
     <keybind key="C-A-r">
       <action name="Reconfigure"/>
-    </keybind>
-    <keybind key="Print">
-      <action name="Execute">
-        <command>xfce4-screenshooter</command>
-      </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
