@@ -1,2 +1,0 @@
-Do not link the efi_shell folder of the efi shell files in any profile!
-They are copied when building the iso.

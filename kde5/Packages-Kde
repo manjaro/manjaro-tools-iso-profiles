@@ -1,10 +1,6 @@
 ### Manjaro Packages
 
-## Xorg
-mhwd
-
 ## Xorg Packages
-inxi
 libdnet
 mesa-demos
 >x86_64 lib32-mesa-demos
@@ -25,18 +21,11 @@ xorg-twm
 xorg-utils
 xorg-xinit
 
-## Artwork
-plasma-workspace-wallpapers
-breeze
-breeze-kde4
-oxygen
-oxygen-kde4
-oxygen-icons
+## Themes
 gnome-icon-theme
 menda-square-icon-theme
 menda-circle-icon-theme
 menda
-menda-kde4
 menda-plasma-desktop
 menda-plasma-look-and-feel
 xcursor-menda
@@ -69,15 +58,7 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-cdrdao
-cdrkit
-dvdauthor
-normalize
-transcode
-emovix
 ffmpeg
-dvd+rw-tools
-virtualgl
 libdvdcss
 manjaro-alsa
 manjaro-pulse
@@ -85,17 +66,13 @@ phonon-qt5-gstreamer
 phonon-qt4-gstreamer
 pulseaudio-ctl
 qt-gstreamer
-taglib-extras
 perl-uri
-mpd
 python-pyqt4
 libcanberra
 libcanberra-pulse
 libcanberra-gstreamer
 >x86_64 lib32-libcanberra
 >x86_64 lib32-libcanberra-pulse
-vlc
-cantata
 
 ## Connect Packages
 udiskie
@@ -123,6 +100,7 @@ samba
 
 ## Font
 ttf-droid
+ttf-oxygen  # oficial KDE font
 
 ## Games
 #steam-manjaro (currently in unstable)
@@ -135,13 +113,6 @@ octopi-notifier-frameworks
 octopi-cachecleaner
 octopi-repoeditor
 
-## A Qt plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)
-sni-qt
-
-# Qt
-qt4
-qt5
-
 ## Java
 jdk8-openjdk
 icedtea-web
@@ -149,133 +120,122 @@ icedtea-web
 ## Printing
 manjaro-printer
 
-## Office
-#libreoffice-fresh
-calligra-meta
-
-## Login
+## Display manager
 sddm
 sddm-kcm
 
+## Plasma5 
+bluedevil-frameworks
+breeze
+drkonqi
+kde-gtk-config-frameworks
+kdeplasma-addons-frameworks
+kinfocenter
+kio-extras
+kmenuedit
+kscreen-frameworks
+ksshaskpass
+ksysguard
+kwin
+kwrited
+milou
+oxygen
+oxygen-cursors
+plasma-desktop
+plasma-nm
+plasma-workspace
+plasma-workspace-wallpapers
+powerdevil                                                                                                                                                         
+systemsettings
+baloo-frameworks  # optional for plasma-desktop
+kcm-touchpad-frameworks
+polkit-kde-frameworks
+
+## Support for KDE4 applications theming
+breeze-kde4
+oxygen-kde4
+menda-kde4
+
+## A Qt plugin that enables tray icons in qt4 applications
+sni-qt
+
+## KDE Applications
+k3b
+kate
+kdebase-dolphin
+kdebase-kfind
+kdegraphics-ksnapshot
+kdegraphics-okular
+kdepim-kalarm
+kdeutils-ark
+kdeutils-kcalc
+kdeconnect
+kdenlive
+konsole
+konversation
+kmix
+kwrite
+gwenview
+print-manager
+skanlite
+
+## Thumbnailers and terminal for dolphin
+icoutils                     # thumbnailers for MS files
+kdegraphics-svgpart          # thumbailers for SVG files
+kdegraphics-thumbnailers     # thumbnailers for various graphics files
+kdemultimedia-ffmpegthumbs   # thumbnailers for video files
+kdemultimedia-mplayerthumbs  # thumbnailers for video files
+kdesdk-thumbnailers          # thumbnailers for development files
+konsolepart4                 # open terminal in context menu 
+
+## Optional dependencies for k3b
+cdparanoia    # for cd ripping support
+cdrdao        # for disk-at-once (DAO) mode support
+dvd+rw-tools  # for dvd burning support
+emovix        # for bootable multimedia cd/dvd support
+transcode     # for advanced mpeg conversion support
+vcdimager     # for vcd burning support 
+
+## Optional dependencies for kdenlive
+cdrkit           # for creation of DVD ISO images
+dvdauthor        # for creation of DVD
+dvgrab           # for firewire capture
+recordmydesktop  # for screen capture
+xine-lib         # for DVD preview 
+
 ## Applications
+cantata  # client for mpd
 imagewriter
+inxi
 firefox-kde
-firefox-firetray
 thunderbird-kde
 flashplugin
 manjaro-settings-manager
 manjaro-welcome
-simple-scan
+mpd
 >x86_64 lib32-libxft
-qtermwidget
-qterminal
 p7zip
+vlc
 
-## KDE4
-kdebase-dolphin
-kdebase-kfind
-kdegraphics-ksnapshot
-kdepim-kalarm
-kdeutils-ark
-k3b
-kdeutils-kcalc
-kdeconnect
-konversation
+## Office
+#libreoffice-fresh
+calligra-braindump
+calligra-extras
+calligra-filters
+calligra-flow
+calligra-handbook
+calligra-karbon
+calligra-kexi
+calligra-krita
+calligra-plan
+calligra-plugins
+calligra-sheets
+calligra-stage
+calligra-words
 
-## KDE5
-plasma-desktop
-plasma-framework
-plasma-nm
-networkmanager-qt
-libmm-qt
-plasma-workspace
-attica-qt5
-baloo-frameworks
-frameworkintegration
-kactivities-frameworks
-kapidox
-karchive
-kauth
-kbookmarks
-kcmutils
-kcodecs
-kcompletion
-kconfig
-kconfigwidgets
-kcoreaddons
-kcrash
-kdbusaddons
-kde-cli-tools
-kdeclarative
-kded
-kdelibs4support
-kdeplasma-addons-frameworks
-kdesignerplugin
-kdesu
-kdewebkit
-kdnssd
-kdoctools
-kemoticons
-kfilemetadata5
-kguiaddons
-khotkeys
-khtml
-ki18n
-kiconthemes
-kidletime
+## KDE Frameworks
 kimageformats
-kinfocenter
-kinit
-kio-extras
-kio
-kitemmodels
-kitemviews
-kjobwidgets
-kjs
-kjsembed
 kmediaplayer
-kmenuedit
-kmix
-knewstuff
-knotifications
-knotifyconfig
-kpackage
-kparts
-kplotting
-kpty
-kross
-krunner
-kservice
-ksysguard
-libksysguard
-ktexteditor
-ktextwidgets
-kunitconversion
-kwallet
-kwayland
-kwidgetsaddons
-kwin
-kwindowsystem
-kwrited
-kxmlgui
-milou
-polkit-kde-frameworks
-powerdevil
-solid
-sonnet
-systemsettings
-threadweaver
-akonadi
-bluedevil-frameworks
-gwenview
-konsole
-kate
-kcm-touchpad-frameworks
-kde-gtk-config-frameworks
-kdecoration
-kscreen-frameworks
-qca-qt5
-
 
 ## Telepathy
 telepathy-qt4
@@ -289,7 +249,6 @@ telepathy-mission-control
 python2-telepathy
 telepathy-farstream
 telepathy-glib
-
 
 # Partition
 partitionmanager
