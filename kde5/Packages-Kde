@@ -228,20 +228,20 @@ vlc
 yakuake
 
 ## Office
-#libreoffice-fresh
+libreoffice-fresh
 calligra-braindump
-calligra-extras
-calligra-filters
-calligra-flow
-calligra-handbook
-calligra-karbon
-calligra-kexi
+#calligra-extras
+#calligra-filters
+#calligra-flow
+#calligra-handbook
+#calligra-karbon
+#calligra-kexi
 calligra-krita
-calligra-plan
-calligra-plugins
-calligra-sheets
-calligra-stage
-calligra-words
+#calligra-plan
+#calligra-plugins
+#calligra-sheets
+#calligra-stage
+#calligra-words
 
 ## KDE Frameworks
 kmediaplayer 
