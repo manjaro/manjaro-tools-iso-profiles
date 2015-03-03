@@ -23,7 +23,6 @@ xorg-xinit
 
 ## Themes
 gnome-icon-theme
-menda-square-icon-theme
 menda-circle-icon-theme
 menda
 menda-plasma-desktop
@@ -160,6 +159,7 @@ menda-kde4
 sni-qt
 
 ## KDE Applications
+digikam
 k3b
 kate
 kdebase-dolphin
@@ -204,6 +204,13 @@ dvgrab           # for firewire capture
 recordmydesktop  # for screen capture
 xine-lib         # for DVD preview 
 
+## Optional dependencies for gwenview
+kimageformats     # support for dds, xcf, exr, psd, and more image formats
+qt5-imageformats  # support for tiff, webp, and more image formats
+
+## Oprtion dependency for digikam
+kipi-plugins  # more tools and plugins 
+ 
 ## Applications
 cantata  # client for mpd
 imagewriter
@@ -221,24 +228,23 @@ vlc
 yakuake
 
 ## Office
-#libreoffice-fresh
+libreoffice-fresh
 calligra-braindump
-calligra-extras
-calligra-filters
-calligra-flow
-calligra-handbook
-calligra-karbon
-calligra-kexi
+#calligra-extras
+#calligra-filters
+#calligra-flow
+#calligra-handbook
+#calligra-karbon
+#calligra-kexi
 calligra-krita
-calligra-plan
-calligra-plugins
-calligra-sheets
-calligra-stage
-calligra-words
+#calligra-plan
+#calligra-plugins
+#calligra-sheets
+#calligra-stage
+#calligra-words
 
 ## KDE Frameworks
-kimageformats
-kmediaplayer
+kmediaplayer 
 
 # Partition
 partitionmanager
