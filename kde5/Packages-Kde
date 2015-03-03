@@ -23,7 +23,6 @@ xorg-xinit
 
 ## Themes
 gnome-icon-theme
-menda-square-icon-theme
 menda-circle-icon-theme
 menda
 menda-plasma-desktop
@@ -160,6 +159,7 @@ menda-kde4
 sni-qt
 
 ## KDE Applications
+digikam
 k3b
 kate
 kdebase-dolphin
@@ -208,6 +208,9 @@ xine-lib         # for DVD preview
 kimageformats     # support for dds, xcf, exr, psd, and more image formats
 qt5-imageformats  # support for tiff, webp, and more image formats
 
+## Oprtion dependency for digikam
+kipi-plugins  # more tools and plugins 
+ 
 ## Applications
 cantata  # client for mpd
 imagewriter
