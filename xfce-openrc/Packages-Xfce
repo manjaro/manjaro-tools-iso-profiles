@@ -114,6 +114,7 @@ numix-manjaro-themes
 elementary-icon-theme
 xcursor-vanilla-dmz-aa
 xfce-theme-greenbird	# for lxdm
+gnome-themes-standard	# general theme
 
 ## Fonts
 ttf-droid
