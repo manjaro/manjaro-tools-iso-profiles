@@ -31,6 +31,7 @@ manjaro-alsa
 
 ## Artwork
 manjaro-artwork
+ttf-droid
 
 ## Base Packages
 gtk2
@@ -76,8 +77,10 @@ lxqt-session
 
 pcmanfm-qt			# default lxqt file manager
 
-qterminal			# recommended terminal for lxqt - a lighter alternative: lxterminal
+#qterminal			# recommended terminal for lxqt - a lighter alternative: lxterminal
 qtermwidget
+rxvt-unicode-patched
+urxvt-perls
 
 
 # 3) System-packages (most of them coming from xfce)
