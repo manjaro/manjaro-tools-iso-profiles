@@ -21,34 +21,13 @@ xorg-twm
 xorg-utils
 xorg-xinit
 
-## Themes
-gnome-icon-theme
-menda-square-icon-theme
-menda-circle-icon-theme
-menda
-menda-plasma-desktop
-menda-plasma-look-and-feel
-xcursor-menda
-sddm-menda-theme
-plymouth-theme-manjaro-elegant
-
-## GTK
-oxygen-gtk2
-oxygen-gtk3
-menda-themes
-menda-themes-dark
-qtcurve-gtk2
-libappindicator-gtk2
-libappindicator-gtk3
-libappindicator-sharp
-
 ## Network
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 
-## Packages for Sound/Audio/Video
+## Libraries for Sound/Audio/Video
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -103,9 +82,7 @@ ttf-droid
 ttf-oxygen  # oficial KDE font
 
 ## Games
-#steam-manjaro (currently in unstable)
-steam
-steam-native
+steam-manjaro
 
 ## Package management
 octopi
@@ -151,15 +128,30 @@ baloo-frameworks  # optional for plasma-desktop
 kcm-touchpad-frameworks
 polkit-kde-frameworks
 
+## Themes
+plasma5-themes-menda
+gnome-icon-theme
+sddm-menda-theme
+plymouth-theme-manjaro-elegant
+
+## GTK Themes
+oxygen-gtk2
+oxygen-gtk3
+menda-themes
+menda-themes-dark
+
 ## Support for KDE4 applications theming
 breeze-kde4
 oxygen-kde4
-menda-kde4
 
-## A Qt plugin that enables tray icons in qt4 applications
-sni-qt
+## Better Systray support
+sni-qt  # A Qt plugin that enables tray icons in qt4 applications
+libappindicator-gtk2
+libappindicator-gtk3
+libappindicator-sharp
 
 ## KDE Applications
+digikam
 k3b
 kate
 kdebase-dolphin
@@ -168,7 +160,9 @@ kdegraphics-ksnapshot
 kdegraphics-okular
 kdepim-kalarm
 kdeutils-ark
+kdeutils-filelight
 kdeutils-kcalc
+kdeutils-kwalletmanager
 kdeconnect
 kdenlive
 konsole
@@ -203,52 +197,47 @@ dvgrab           # for firewire capture
 recordmydesktop  # for screen capture
 xine-lib         # for DVD preview 
 
+## Optional dependencies for gwenview
+kimageformats     # support for dds, xcf, exr, psd, and more image formats
+qt5-imageformats  # support for tiff, webp, and more image formats
+
+## Optional dependency for digikam
+kipi-plugins  # more tools and plugins 
+ 
 ## Applications
 cantata  # client for mpd
 imagewriter
 inxi
 firefox-kde
-thunderbird-kde
 flashplugin
+kcmsystemd
 manjaro-settings-manager
 manjaro-welcome
 mpd
 >x86_64 lib32-libxft
 p7zip
+thunderbird-kde
 vlc
+yakuake
 
 ## Office
-#libreoffice-fresh
+libreoffice-fresh
 calligra-braindump
-calligra-extras
-calligra-filters
-calligra-flow
-calligra-handbook
+#calligra-extras
+#calligra-filters
+#calligra-flow
+#calligra-handbook
 calligra-karbon
-calligra-kexi
+#calligra-kexi
 calligra-krita
-calligra-plan
-calligra-plugins
-calligra-sheets
-calligra-stage
-calligra-words
+#calligra-plan
+#calligra-plugins
+#calligra-sheets
+#calligra-stage
+#calligra-words
 
 ## KDE Frameworks
-kimageformats
-kmediaplayer
-
-## Telepathy
-telepathy-qt4
-telepathy-qt5
-telepathy-gabble
-telepathy-haze
-telepathy-idle
-telepathy-rakia
-telepathy-salut
-telepathy-mission-control
-python2-telepathy
-telepathy-farstream
-telepathy-glib
+kmediaplayer 
 
 # Partition
 partitionmanager

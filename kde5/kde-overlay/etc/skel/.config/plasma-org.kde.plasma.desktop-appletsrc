@@ -8,7 +8,7 @@ MidButton;NoModifier=org.kde.paste
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
-activityId=34787141-b4fe-419d-bd32-c1adfa83cd97
+activityId=
 formfactor=2
 immutability=1
 lastScreen=0
@@ -16,39 +16,26 @@ location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
-[Containments][1][Applets][14][Configuration][General]
-maxStripes=1
-showOnlyCurrentActivity=false
-showOnlyCurrentDesktop=true
-showToolTips=false
-
-[Containments][1][Applets][16]
+[Containments][1][Applets][15]
 immutability=1
 plugin=org.kde.plasma.icontasks
 
-[Containments][1][Applets][16][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+[Containments][1][Applets][15][Configuration][General]
+launchers=file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox
 
-[Containments][1][Applets][16][Configuration][General]
-maxStripes=1
-showOnlyCurrentActivity=false
-showOnlyCurrentDesktop=true
-showToolTips=false
-
-[Containments][1][Applets][18]
+[Containments][1][Applets][16]
 immutability=1
-plugin=org.kde.plasma.kicker
+plugin=org.kde.plasma.showdesktop
 
-[Containments][1][Applets][18][Configuration][ConfigDialog]
-DialogHeight=508
-DialogWidth=720
+[Containments][1][Applets][2]
+immutability=1
+plugin=org.kde.plasma.kickoff
 
-[Containments][1][Applets][18][Configuration][General]
-customButtonImage=file:///usr/share/icons/start-here.svg
-favoriteApps=systemsettings.desktop,manjaro-settings-manager.desktop,org.kde.konsole.desktop,org.kde.dolphin.desktop,firefox.desktop
-recentApps=systemsettings.desktop,org.kde.konsole.desktop,kdesystemsettings.desktop
-useCustomButtonImage=true
+[Containments][1][Applets][2][Configuration][Shortcuts]
+global=Alt+F1
+
+[Containments][1][Applets][2][Shortcuts]
+global=Alt+F1
 
 [Containments][1][Applets][3]
 immutability=1
@@ -58,17 +45,13 @@ plugin=org.kde.plasma.pager
 immutability=1
 plugin=org.kde.plasma.systemtray
 
-[Containments][1][Applets][5][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
 [Containments][1][Applets][5][Configuration][Containments][8]
 formfactor=2
 location=4
 
 [Containments][1][Applets][5][Configuration][Containments][8][Applets][10]
 immutability=1
-plugin=org.kde.plasma.clipboard
+plugin=org.kde.plasma.notifications
 
 [Containments][1][Applets][5][Configuration][Containments][8][Applets][11]
 immutability=1
@@ -76,84 +59,32 @@ plugin=org.kde.plasma.devicenotifier
 
 [Containments][1][Applets][5][Configuration][Containments][8][Applets][12]
 immutability=1
-plugin=org.kde.plasma.notifications
+plugin=org.kde.plasma.clipboard
 
 [Containments][1][Applets][5][Configuration][Containments][8][Applets][13]
 immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][1][Applets][5][Configuration][Containments][8][Applets][14]
+immutability=1
 plugin=org.kde.plasma.networkmanagement
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][27]
-immutability=1
-plugin=org.kde.kdeconnect
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][28]
-immutability=1
-plugin=org.kde.plasma.katesessions
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][29]
-immutability=1
-plugin=org.kde.plasma.printmanager
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][30]
-immutability=1
-plugin=touchpad
-
-[Containments][1][Applets][5][Configuration][Containments][8][Applets][31]
-immutability=1
-plugin=org.kde.ktp-contactlist
 
 [Containments][1][Applets][5][Configuration][Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.battery
 
-[Containments][1][Applets][5][Configuration][General]
-extraItems=org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.ktp-contactlist,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement
-hiddenItems=,org.kde.plasma.clipboard
-shownItems=,octopi-notifier,org.kde.plasma.notifications,Konversation,kmix,manjaro-settings-manager-daemon
-
 [Containments][1][Applets][6]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
-[Containments][1][Applets][6][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][1][ConfigDialog]
-DialogHeight=83
-DialogWidth=1920
-
 [Containments][1][General]
-AppletOrder=18;3;16;5;6
+AppletOrder=2;16;15;3;5;6
 
-[Containments][25]
-activityId=34dd8e7b-f4c0-4a1a-8bf1-4d015b576950
+[Containments][7]
+activityId=
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
-
-[Containments][25][ConfigDialog]
-DialogHeight=648
-DialogWidth=720
-
-[Containments][25][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Menda/contents/images/1920x1080.png
-SlidePaths=
-height=1080
-width=1920
-
-[Containments][26]
-activityId=34dd8e7b-f4c0-4a1a-8bf1-4d015b576950
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.desktopcontainment
-wallpaperplugin=org.kde.image
-
-[Containments][26][Wallpaper][org.kde.image][General]
-height=720
-width=1280
