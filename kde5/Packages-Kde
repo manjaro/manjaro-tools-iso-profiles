@@ -21,33 +21,13 @@ xorg-twm
 xorg-utils
 xorg-xinit
 
-## Themes
-gnome-icon-theme
-menda-circle-icon-theme
-menda
-menda-plasma-desktop
-menda-plasma-look-and-feel
-xcursor-menda
-sddm-menda-theme
-plymouth-theme-manjaro-elegant
-
-## GTK
-oxygen-gtk2
-oxygen-gtk3
-menda-themes
-menda-themes-dark
-qtcurve-gtk2
-libappindicator-gtk2
-libappindicator-gtk3
-libappindicator-sharp
-
 ## Network
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 
-## Packages for Sound/Audio/Video
+## Libraries for Sound/Audio/Video
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -102,9 +82,7 @@ ttf-droid
 ttf-oxygen  # oficial KDE font
 
 ## Games
-steam-manjaro  # (currently in unstable)
-#steam
-#steam-native
+steam-manjaro
 
 ## Package management
 octopi
@@ -150,13 +128,27 @@ baloo-frameworks  # optional for plasma-desktop
 kcm-touchpad-frameworks
 polkit-kde-frameworks
 
+## Themes
+plasma5-themes-menda
+gnome-icon-theme
+sddm-menda-theme
+plymouth-theme-manjaro-elegant
+
+## GTK Themes
+oxygen-gtk2
+oxygen-gtk3
+menda-themes
+menda-themes-dark
+
 ## Support for KDE4 applications theming
 breeze-kde4
 oxygen-kde4
-menda-kde4
 
-## A Qt plugin that enables tray icons in qt4 applications
-sni-qt
+## Better Systray support
+sni-qt  # A Qt plugin that enables tray icons in qt4 applications
+libappindicator-gtk2
+libappindicator-gtk3
+libappindicator-sharp
 
 ## KDE Applications
 digikam
@@ -209,7 +201,7 @@ xine-lib         # for DVD preview
 kimageformats     # support for dds, xcf, exr, psd, and more image formats
 qt5-imageformats  # support for tiff, webp, and more image formats
 
-## Oprtion dependency for digikam
+## Optional dependency for digikam
 kipi-plugins  # more tools and plugins 
  
 ## Applications
@@ -235,7 +227,7 @@ calligra-braindump
 #calligra-filters
 #calligra-flow
 #calligra-handbook
-#calligra-karbon
+calligra-karbon
 #calligra-kexi
 calligra-krita
 #calligra-plan
