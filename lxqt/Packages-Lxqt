@@ -31,7 +31,6 @@ manjaro-alsa
 
 ## Artwork
 manjaro-artwork
-ttf-droid
 
 ## Base Packages
 gtk2
@@ -118,6 +117,8 @@ menda-themes-dark 		# new manjaro GTK2 theme
 #menda-circle-icon-theme 	# new manjaro icon theme - much lighter
 azenis-green-icon-theme
 menda-lxqt-panel 		# new manjaro theme for lxqt/panel
+speedcrunch-git                 # calculator qt5
+ttf-droid
 xcursor-menda			# menda mouse cursor theme - this needs to be activated
 #sddm-menda-theme		# sddm theme
 
