@@ -23,7 +23,6 @@ iputils
 jfsutils
 less
 licenses
-locale-info
 logrotate
 lvm2-openrc
 man-db
