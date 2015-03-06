@@ -20,6 +20,7 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+>x86_64 lib32-libxft
 
 ## Network
 netctl
@@ -45,7 +46,6 @@ phonon-qt5-gstreamer
 phonon-qt4-gstreamer
 pulseaudio-ctl
 qt-gstreamer
-perl-uri
 python-pyqt4
 libcanberra
 libcanberra-pulse
@@ -160,6 +160,7 @@ kdebase-kfind
 kdegraphics-ksnapshot
 kdegraphics-okular
 kdepim-kalarm
+kdepim-kleopatra
 kdeutils-ark
 kdeutils-filelight
 kdeutils-kcalc
@@ -206,7 +207,7 @@ qt5-imageformats  # support for tiff, webp, and more image formats
 kipi-plugins  # more tools and plugins 
  
 ## Applications
-cantata  # client for mpd
+cantata
 imagewriter
 inxi
 firefox-kde
@@ -214,15 +215,17 @@ flashplugin
 kcmsystemd
 manjaro-settings-manager
 manjaro-welcome
-mpd
->x86_64 lib32-libxft
 p7zip
 thunderbird-kde
 vlc
 yakuake
 
+## Optional dependencis for cantata
+mpd       # playback
+perl-uri  # dynamic playlist 
+
 ## Office
-libreoffice-fresh
+libreoffice-still
 calligra-braindump
 #calligra-extras
 #calligra-filters
