@@ -47,7 +47,7 @@ compton
 
 ## Xfce
 xfce4-panel
-xfce4-session-consolekit
+xfce4-session-consolekit	# xfce4-session
 xfce4-terminal
 xfdesktop
 xfwm4
