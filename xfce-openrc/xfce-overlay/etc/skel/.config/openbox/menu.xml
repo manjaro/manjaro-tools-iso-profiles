@@ -97,7 +97,7 @@
 		<menu id="37" label="System">
 			<item label="GParted">
 				<action name="Execute">
-					<execute>gksudo gparted</execute>
+					<execute>gparted_polkit</execute>
 				</action>
 			</item>
 			<item label="Htop">
@@ -148,9 +148,9 @@
 					<execute>nitrogen /usr/share/backgrounds</execute>
 				</action>
 			</item>
-			<item label="Configure Lxdm">
+			<item label="Configure Lightdm">
 				<action name="Execute">
-					<execute>gksudo lxdm-config</execute>
+					<execute>lightdm-gtk-greeter-settings-pkexec</execute>
 				</action>
 			</item>
 			<item label="Customize Look and Feel">

@@ -65,7 +65,9 @@ mousepad
 ristretto
 
 ## Basic Apps
-lxdm-consolekit
+lightdm-gtk2-greeter
+lightdm-gtk-greeter-settings
+light-locker		# requires lightdm
 wicd-gtk
 python2-notify
 qpdfview
@@ -111,15 +113,12 @@ gcolor2
 ## Artwork, icons
 manjaro-artwork
 menda-themes
-numix-manjaro-themes
 elementary-icon-theme
 xcursor-vanilla-dmz-aa
-xfce-theme-greenbird	# for lxdm
 gnome-themes-standard	# general theme
 
 ## Fonts
 ttf-droid
-adobe-source-sans-pro-fonts
 
 ## AUR Access
 autoconf
