@@ -24,6 +24,7 @@ xdg-utils
 ## Basic packages
 dconf
 desktop-file-utils
+tlp-pmu
 
 ## Audio Packages
 manjaro-alsa

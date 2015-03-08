@@ -167,7 +167,6 @@ ethtool
 hdparm-openrc			# hdparm
 sdparm
 smartmontools
-tlp-pmu
 wireless_tools
 
 ## ucode for new cpus
