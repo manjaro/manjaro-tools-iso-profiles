@@ -25,6 +25,8 @@ xorg-xinit
 ## Basic packages
 dconf
 desktop-file-utils
+xdg-utils              # xdg not included in Packages ???
+xdg-user-dirs
 
 ## Packages for Sound and Audio
 manjaro-alsa
