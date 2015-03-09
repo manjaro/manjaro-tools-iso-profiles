@@ -5,7 +5,7 @@ BrowserApplication=firefox
 [KDE]
 ChangeCursor=true
 contrast=5
-LookAndFeelPackage=org.kde.menda.desktop
+LookAndFeelPackage=org.kde.maia.desktop
 
 [Paths]
 Trash=$HOME/Desktop/Trash/
