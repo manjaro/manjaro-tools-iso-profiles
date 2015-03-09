@@ -38,9 +38,9 @@ accountsservice
 gksu
 gst-libav
 gparted
-libreoffice-installer
+#libreoffice-installer
 lxsession
-lightdm-gtk3-greeter
+lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 light-locker
 manjaro-settings-manager
@@ -60,7 +60,7 @@ netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-blueman
+>i686 blueman
 
 ## Xorg Packages
 inxi
