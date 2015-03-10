@@ -120,13 +120,13 @@ menda-themes-dark 		# new manjaro GTK2 theme
 azenis-green-icon-theme
 menda-lxqt-panel 		# new manjaro theme for lxqt/panel
 speedcrunch-git                 # calculator qt5
-ttf-droid
+ttf-droid-ib                    # care !!! infinality version
 xcursor-menda			# menda mouse cursor theme - this needs to be activated
 #sddm-menda-theme		# sddm theme
 
-#infinality-bundle		# to improve text rendering
-freetype2-infinality-ultimate
-fontconfig-infinality-ultimate
+infinality-bundle		# to improve text rendering
+#freetype2-infinality-ultimate
+#fontconfig-infinality-ultimate
 
 
 
