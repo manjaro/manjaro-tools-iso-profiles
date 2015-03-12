@@ -5,18 +5,19 @@
 ! Perl extensions loaded
 URxvt.perl-ext-common: clipboard,tabbed
 
+! Colors
+URxvt.foreground: [80]#f2f2f2
+URxvt.background: [80]#101010
+URxvt.color10:    #8cbc65
+URxvt.color12:    #0071ff
+
 ! Scrollbar
 URxvt.saveLines: 10000
 URxvt.scrollBar: true
 URxvt.scrollBar_right: true
-URxvt.scrollColor: #c2dd5a
+URxvt.scrollColor: #8cbc65
 URxvt.scrollBar_floating: true
 URxvt.scrollstyle: plain
-
-! Colors
-URxvt.foreground: [80]#f2f2f2
-URxvt.background: [80]#101010
-URxvt.color12:    #0071ff
 
 ! Fonts
 URxvt.font: xft:Monospace:size=11
@@ -24,11 +25,10 @@ URxvt.font: xft:Monospace:size=11
 ! True transparency (works only with a compositor enabled)
 URxvt.depth: 32
 
-
 ! Color of the tab bar
-URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-fg: 10
 URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 2
+URxvt.tabbed.tab-fg: 10
 URxvt.tabbed.tab-bg: 0
 
 

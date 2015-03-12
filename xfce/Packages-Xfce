@@ -7,7 +7,7 @@ gnome-keyring # fix wlan segfault
 gufw # firewall
 #mdm-themes
 accountsservice
-lightdm-gtk3-greeter
+lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 light-locker
 manjaro-settings-manager
@@ -135,7 +135,6 @@ menda-themes
 menda-themes-dark
 gnome-themes-standard
 manjaro-artwork
-#lxdm-manjaro-theme
 xfce-theme-greenbird
 plymouth-theme-manjaro-elegant
 

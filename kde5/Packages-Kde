@@ -130,16 +130,14 @@ polkit-kde-frameworks
 
 ## Themes
 plasma5-themes-maia
-plasma5-themes-menda
 gnome-icon-theme
-sddm-menda-theme
+sddm-maia-theme
 plymouth-theme-manjaro-elegant
 
 ## GTK Themes
 oxygen-gtk2
 oxygen-gtk3
-menda-themes
-menda-themes-dark
+gnome-themes-standard # Adwaita theme
 
 ## Support for KDE4 applications theming
 breeze-kde4
