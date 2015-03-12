@@ -163,6 +163,7 @@ kdeutils-ark
 kdeutils-filelight
 kdeutils-kcalc
 kdeutils-kwalletmanager
+kde-servicemenus-rootactions
 kdeconnect
 kdenlive
 konsole
@@ -203,7 +204,8 @@ qt5-imageformats  # support for tiff, webp, and more image formats
 
 ## Optional dependency for digikam
 kipi-plugins  # more tools and plugins 
- 
+libkgeomap    # Geolocalize tool
+
 ## Applications
 cantata
 imagewriter
