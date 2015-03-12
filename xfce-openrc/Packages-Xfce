@@ -65,7 +65,7 @@ mousepad
 ristretto
 
 ## Basic Apps
-lightdm-gtk2-greeter
+lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 light-locker		# requires lightdm
 wicd-gtk
