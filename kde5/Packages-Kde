@@ -212,7 +212,7 @@ firefox-kde
 flashplugin
 kcmsystemd
 manjaro-settings-manager
-manjaro-welcome
+# manjaro-welcome # not yet ready
 p7zip
 thunderbird-kde
 vlc
