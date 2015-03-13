@@ -42,7 +42,7 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 light-locker
 manjaro-settings-manager
-#manjaro-welcome
+# manjaro-welcome # not yet ready
 midori
 mousepad
 pamac
