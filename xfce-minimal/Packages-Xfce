@@ -38,8 +38,6 @@ accountsservice
 gksu
 gst-libav
 gparted
-#libreoffice-installer
-lxsession
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 light-locker
@@ -49,7 +47,6 @@ midori
 mousepad
 pamac
 >i686 parole
-polkit-gnome # for gparted
 qpdfview
 >i686 sylpheed
 >i686 xnoise

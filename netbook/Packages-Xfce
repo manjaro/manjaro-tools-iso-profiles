@@ -99,7 +99,6 @@ manjaro-alsa
 libdvdcss
 
 ## Package management
-lxpolkit
 pamac
 
 ## Fonts
