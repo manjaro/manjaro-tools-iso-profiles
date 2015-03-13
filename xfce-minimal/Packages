@@ -98,15 +98,6 @@ nilfs-utils
 nfs-utils
 ntfs-3g
 
-## Needed by cli-installer
-# dialog
-# dmidecode
-# gptfdisk
-# parted
-# pv
-# tcpdump
-wget
-
 ## Network
 b43-fwcutter
 dhclient
