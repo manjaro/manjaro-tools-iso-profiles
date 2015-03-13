@@ -118,7 +118,7 @@ xcursor-vanilla-dmz-aa
 gnome-themes-standard	# general theme
 
 ## Fonts
-ttf-droid
+ttf-droid		# default font
 
 ## AUR Access
 autoconf
