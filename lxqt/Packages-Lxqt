@@ -43,7 +43,7 @@ netctl
 #networkmanager-dispatcher-ntpd
 openresolv
 connman
-repoarch/cmst
+cmst
 # =============================================================================
 
 
