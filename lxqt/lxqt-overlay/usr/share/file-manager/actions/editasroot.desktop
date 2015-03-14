@@ -2,6 +2,7 @@
 Type=Action
 Name=Edit as Root
 Name[fr]=Editer en tant que root
+Name[de]=Bearbeiten als root
 Icon=dialog-password
 Profiles=profile-editasroot
 
