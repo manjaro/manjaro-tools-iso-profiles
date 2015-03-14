@@ -39,17 +39,20 @@ gtk2
 
 ## Network
 netctl
-networkmanager
-networkmanager-dispatcher-ntpd
+#networkmanager
+#networkmanager-dispatcher-ntpd
 openresolv
+connman
+repoarch/cmst
 # =============================================================================
 
 
 # 2) lxqt main packages
 # =====================
 #sddm				# default login manager (Qt5) of lxqt
-lightdm-gtk3-greeter
-lightdm-gtk-greeter-settings
+#lightdm-gtk3-greeter
+#lightdm-gtk-greeter-settings
+lxqt-lightdm-greeter
 
 openbox				# default window manager (GTK2) of lxqt
 
@@ -80,7 +83,7 @@ pcmanfm-qt			# default lxqt file manager
 
 #qterminal			# recommended terminal for lxqt - a lighter alternative: lxterminal
 qtermwidget
-rxvt-unicode-patched
+rxvt-unicode-patched            # BUG : when solved, to be replaced
 urxvt-perls
 
 
@@ -97,9 +100,9 @@ gvfs-afc			# enables support for external media (e.g. USB sticks)
 
 # 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
 # ===========================================================================
-network-manager-applet
+#network-manager-applet
 gksu				# (GTK2) GUI for su and sudo - there is no alternative for it in lxqt
-gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
+#gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
 
 hexchat                         # (GTK2) graphical IRC (chat) client
 leafpad				# default lxde text editor - very lightweight - heavier alternative: notepadqq
@@ -132,8 +135,9 @@ infinality-bundle		# to improve text rendering
 
 # 6) Minimal set of tools
 # =======================
-libchardet                      # for bomi...
-bomi                            # multimedia player cmplayer-like
+#baka-mplayer
+>x86_64 libchardet              # for bomi...
+>x86_64 bomi                    # multimedia player cmplayer-like
 lxtask                          # task manager
 mpv				# replace mplayer/mplayer2
 qpdfview			# pdf reader
@@ -172,7 +176,8 @@ binutils
 bison
 fakeroot
 flex
-gcc
+>i686 gcc
+>x86_64 gcc-multilib
 libconfig
 libtool
 m4
