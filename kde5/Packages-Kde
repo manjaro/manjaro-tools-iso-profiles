@@ -143,8 +143,9 @@ gnome-themes-standard # Adwaita theme
 breeze-kde4
 oxygen-kde4
 
-## Better Systray support
+## Better systray/notifications support
 sni-qt  # A Qt plugin that enables tray icons in qt4 applications
+>x86_64 lib32-sni-qt
 libappindicator-gtk2
 libappindicator-gtk3
 libappindicator-sharp
