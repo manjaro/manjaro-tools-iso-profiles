@@ -196,6 +196,11 @@
 			</item>
 		</menu>
 		<separator/>
+		<item label="Lock Screen">
+			<action name="Execute">
+				<execute>light-locker-command -l</execute>
+			</action>
+		</item>
 		<item label="Logout">
 			<action name="Execute">
 				<command>cb-exit</command>

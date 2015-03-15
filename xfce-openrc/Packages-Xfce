@@ -67,7 +67,7 @@ ristretto
 ## Basic Apps
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-light-locker		# requires lightdm
+light-locker-upower	# requires lightdm
 wicd-gtk
 python2-notify
 qpdfview
