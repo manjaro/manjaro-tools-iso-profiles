@@ -70,6 +70,7 @@ KERNEL
 ## OpenRC
 sysvinit
 consolekit
+polkit-consolekit
 openrc-core
 openrc-base
 openrc-desktop
@@ -83,8 +84,9 @@ tmpwatch
 mlocate
 
 ## Eudev
-eudev
-eudev-base
+eudev-openrc
+eudev-systemdcompat
+upower-pm-utils
 
 ## Extra Base Packages
 grub
