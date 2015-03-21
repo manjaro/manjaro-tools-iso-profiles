@@ -94,7 +94,6 @@ octopi
 octopi-notifier-qt5
 octopi-cachecleaner
 gksu			# required for octopi
-libreoffice-installer
 thunar-archive-plugin
 htop
 tumbler			# for thumbnails

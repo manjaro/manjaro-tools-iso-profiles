@@ -88,11 +88,6 @@
 					<execute>qpdfview</execute>
 				</action>
 			</item>
-			<item label="LibreOffice Installer">
-				<action name="Execute">
-					<execute>/opt/libreoffice-installer/libreoffice-installer</execute>
-				</action>
-			</item>
 		</menu>
 		<menu id="37" label="System">
 			<item label="GParted">
