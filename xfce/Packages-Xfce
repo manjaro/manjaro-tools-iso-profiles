@@ -172,7 +172,7 @@ ttf-droid
 icedtea-web
 
 ## Printing
-manjaro-printer
+#manjaro-printer # disabled for now
 
 ## Office
 #abiword
