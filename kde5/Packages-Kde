@@ -95,7 +95,7 @@ jdk8-openjdk
 icedtea-web
 
 ## Printing
-manjaro-printer
+#manjaro-printer # disabled for now
 
 ## Display manager
 sddm
