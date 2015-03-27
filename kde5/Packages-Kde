@@ -220,6 +220,8 @@ p7zip
 thunderbird-kde
 vlc
 yakuake
+screenfetch
+virtualgl
 
 ## Optional dependencis for cantata
 mpd       # playback
