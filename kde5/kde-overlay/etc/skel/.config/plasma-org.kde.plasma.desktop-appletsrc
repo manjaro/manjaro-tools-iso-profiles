@@ -20,12 +20,33 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.icontasks
 
-[Containments][1][Applets][15][Configuration][General]
-launchers=file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox
-
 [Containments][1][Applets][16]
 immutability=1
 plugin=org.kde.plasma.showdesktop
+
+[Containments][1][Applets][18]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][1][Applets][18][Configuration][General]
+applicationName=Dolphin
+genericName=File Manager
+iconName=system-file-manager
+url=file:///usr/share/applications/kde4/dolphin.desktop
+
+[Containments][1][Applets][19]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][1][Applets][19][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][1][Applets][19][Configuration][General]
+applicationName=Firefox
+genericName=Web Browser
+iconName=firefox
+url=file:///usr/share/applications/firefox.desktop
 
 [Containments][1][Applets][2]
 immutability=1
@@ -40,6 +61,10 @@ global=Alt+F1
 [Containments][1][Applets][3]
 immutability=1
 plugin=org.kde.plasma.pager
+
+[Containments][1][Applets][32]
+immutability=1
+plugin=org.kde.plasma.trash
 
 [Containments][1][Applets][5]
 immutability=1
@@ -77,14 +102,135 @@ plugin=org.kde.plasma.battery
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
-[Containments][1][General]
-AppletOrder=2;16;15;3;5;6
+[Containments][1][ConfigDialog]
+DialogHeight=81
+DialogWidth=1366
 
-[Containments][7]
+[Containments][1][General]
+AppletOrder=2;16;18;19;15;3;32;5;6
+
+[Containments][20]
 activityId=
+formfactor=2
+immutability=1
+lastScreen=0
+location=3
+plugin=org.kde.panel
+wallpaperplugin=org.kde.image
+
+[Containments][20][Applets][21][Configuration][General]
+favoriteApps=firefox.desktop,systemsettings.desktop,org.kde.kate.desktop
+
+[Containments][20][Applets][22]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][22][Configuration][General]
+applicationName=System Settings
+genericName=System Settings
+iconName=preferences-system
+url=/usr/share/applications/systemsettings.desktop
+
+[Containments][20][Applets][23]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][23][Configuration][General]
+applicationName=Manjaro Settings Manager
+iconName=preferences-desktop
+url=/usr/share/applications/manjaro-settings-manager.desktop
+
+[Containments][20][Applets][24]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][24][Configuration][General]
+applicationName=Dolphin
+genericName=File Manager
+iconName=system-file-manager
+url=/usr/share/applications/kde4/dolphin.desktop
+
+[Containments][20][Applets][25]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][25][Configuration][General]
+applicationName=Konsole
+genericName=Terminal
+iconName=utilities-terminal
+url=/usr/share/applications/org.kde.konsole.desktop
+
+[Containments][20][Applets][26]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][26][Configuration][General]
+applicationName=Octopi
+genericName=Add/Remove Software
+iconName=octopi
+url=/usr/share/applications/octopi.desktop
+
+[Containments][20][Applets][27]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][27][Configuration][General]
+applicationName=LibreOffice
+genericName=Office
+iconName=libreoffice-startcenter
+url=/usr/share/applications/libreoffice-startcenter.desktop
+
+[Containments][20][Applets][28]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][28][Configuration][General]
+applicationName=Firefox
+genericName=Web Browser
+iconName=firefox
+url=/usr/share/applications/firefox.desktop
+
+[Containments][20][Applets][29]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][29][Configuration][General]
+applicationName=Konversation
+genericName=IRC Client
+iconName=konversation
+url=/usr/share/applications/kde4/konversation.desktop
+
+[Containments][20][Applets][30]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][20][Applets][30][Configuration][General]
+applicationName=Kate
+genericName=Advanced Text Editor
+iconName=kate
+url=/usr/share/applications/org.kde.kate.desktop
+
+[Containments][20][ConfigDialog]
+DialogHeight=81
+DialogWidth=1366
+
+[Containments][20][General]
+AppletOrder=22;23;26;30;27;29;28;24;25
+
+[Containments][31]
+activityId=d536d43c-4f4d-4c4e-98f9-4ceea9110be8
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
+
+[Containments][31][General]
+ToolBoxButtonState=topright
+ToolBoxButtonX=1340
+ToolBoxButtonY=1
+
+[Containments][31][Wallpaper][org.kde.image][General]
+height=768
+width=1366

@@ -1,0 +1,10 @@
+[PlasmaViews][Panel 1][Horizontal1366]
+thickness=42
+
+[PlasmaViews][Panel 20][Horizontal1366]
+length=257
+maxLength=257
+minLength=257
+offset=32
+panelVisibility=2
+thickness=30

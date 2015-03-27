@@ -1,2 +1,6 @@
+[Compositing]
+Backend=XRender
+OpenGLIsUnsafe=false
+
 [Desktops]
 Number=2

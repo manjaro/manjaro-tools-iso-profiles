@@ -131,7 +131,7 @@ Size=32
 
 [General]
 ColorScheme=Maia
-Name=maia
+Name=Maia
 font=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 menuFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
@@ -143,8 +143,10 @@ widgetStyle=breeze
 Theme=maia
 
 [KDE]
+ShowDeleteCommand=false
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
+SingleClick=true
 contrast=7
 
 [MainToolbarIcons]
@@ -184,6 +186,9 @@ DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
 Size=32
+
+[PreviewSettings]
+MaximumRemoteSize=0
 
 [SmallIcons]
 ActiveColor=169,156,255

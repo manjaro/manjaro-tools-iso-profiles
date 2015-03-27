@@ -1,0 +1,23 @@
+[
+    {
+        "enabled": true,
+        "id": "66bb4463cdb3c04be1cdbfde6831f368",
+        "metadata": {
+            "fullname": "xrandr-VBOX monitor-50333014",
+            "name": "VGA-0"
+        },
+        "mode": {
+            "refresh": 59.999359130859375,
+            "size": {
+                "height": 768,
+                "width": 1366
+            }
+        },
+        "pos": {
+            "x": 0,
+            "y": 0
+        },
+        "primary": true,
+        "rotation": 1
+    }
+]

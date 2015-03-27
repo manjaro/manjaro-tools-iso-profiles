@@ -1,7 +1,30 @@
-[General]
-EditableUrl=false
-ShowCopyMoveMenu=true
-ShowFullPath=true
+[CompactMode]
+FontWeight=50
 
 [DetailsMode]
 ExpandableFolders=true
+FontWeight=50
+
+[General]
+ShowCopyMoveMenu=true
+ShowFullPath=true
+ShowSpaceInfo=true
+Version=200
+ViewPropsTimestamp=2015,3,24,20,13,10
+
+[IconsMode]
+FontWeight=50
+IconSize=64
+
+[MainWindow]
+Height 768=430
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAABa/wCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAABDAAABawAAAFABAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAB7wAAAWsAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1366=680
+
+[PreviewSettings]
+Plugins=directorythumbnail,imagethumbnail,jpegthumbnail
+
+[SettingsDialog]
+Height 768=397
+Width 1366=512
