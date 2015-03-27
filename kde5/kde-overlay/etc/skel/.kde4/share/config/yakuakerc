@@ -1,18 +1,5 @@
-[$Version]
-update_info=yakuake.upd:2.9.9-startupnotification
-
-[Colors]
-CurrentPalette=Forty Colors
-
-[Desktop Entry]
-DefaultProfile=Shell.profile
-
 [Dialogs]
 FirstRun=false
 
-[Favorite Profiles]
-Favorites=Shell.profile
-
-[Window]
-KeepOpen=false
-Width=80
+[Desktop Entry]
+DefaultProfile=Shell.profile

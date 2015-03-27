@@ -143,10 +143,8 @@ widgetStyle=breeze
 Theme=maia
 
 [KDE]
-ShowDeleteCommand=false
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
-SingleClick=true
 contrast=7
 
 [MainToolbarIcons]
@@ -186,9 +184,6 @@ DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
 Size=32
-
-[PreviewSettings]
-MaximumRemoteSize=0
 
 [SmallIcons]
 ActiveColor=169,156,255
