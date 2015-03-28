@@ -220,6 +220,7 @@ vlc
 yakuake
 screenfetch
 virtualgl
+kio-mtp
 
 ## Optional dependencis for cantata
 mpd       # playback
