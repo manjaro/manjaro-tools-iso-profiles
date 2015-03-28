@@ -66,10 +66,22 @@ open-fuse-iso
 android-tools
 android-udev
 
-## Devel Packages
-base-devel
+## AUR Support/Development
+# Missing base-devel packages
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
 >x86_64 gcc-multilib
 >i686 gcc
+libtool
+m4
+make
+patch
+>x86_64 lib32-flex
+# Extra packages for AUR support
 git
 patchutils
 svn
