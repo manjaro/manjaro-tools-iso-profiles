@@ -217,3 +217,7 @@ lastScreen=0
 location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
+
+[Containments][32][General]
+ToolBoxButtonState=right
+ToolBoxButtonX=100%
