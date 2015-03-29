@@ -148,7 +148,7 @@ plymouth-theme-manjaro-elegant
 
 ## GTK Themes
 gnome-themes-standard # Adwaita theme
-#gtk-theme-orion # replaces gtk-oxygen
+gtk-theme-orion # replaces gtk-oxygen
 
 ## Support for KDE4 applications theming
 breeze-kde4
