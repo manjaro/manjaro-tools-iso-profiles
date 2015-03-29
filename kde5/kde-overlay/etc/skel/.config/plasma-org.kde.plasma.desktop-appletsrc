@@ -218,6 +218,6 @@ location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
-[Containments][32][General]
-ToolBoxButtonState=right
+[Containments][33][General]
+ToolBoxButtonState=topright
 ToolBoxButtonX=100%
