@@ -38,10 +38,6 @@ url=file:///usr/share/applications/kde4/dolphin.desktop
 immutability=1
 plugin=org.kde.plasma.icon
 
-[Containments][1][Applets][19][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
 [Containments][1][Applets][19][Configuration][General]
 applicationName=Firefox
 genericName=Web Browser
