@@ -21,7 +21,6 @@ xorg-xinit
 xorg-xset
 xdg-utils
 xterm
-keyboardctl
 
 ## Basic packages
 dconf

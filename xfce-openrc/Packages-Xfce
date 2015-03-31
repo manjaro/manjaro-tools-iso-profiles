@@ -90,7 +90,6 @@ gnome-keyring		# fix wlan segfault
 gvfs			# to fix trash in thunar
 udisks2			# removable disk management
 manjaro-settings-manager
-keyboardctl		# for manjaro-settings-manager
 octopi
 octopi-notifier-qt5
 octopi-cachecleaner
