@@ -78,7 +78,7 @@
 			</item>
 			<item label="IRC Client">
 				<action name="Execute">
-					<execute>xchat</execute>
+					<execute>hexchat</execute>
 				</action>
 			</item>
 		</menu>
