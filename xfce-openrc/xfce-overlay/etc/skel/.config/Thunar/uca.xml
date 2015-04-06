@@ -37,4 +37,13 @@
 	<patterns>*</patterns>
 	<directories/>
 </action>
+<action>
+	<icon>application-x-cd-image</icon>
+	<name>Mount ISO</name>
+	<unique-id>1428310552256164-3</unique-id>
+	<command>mount-iso %f</command>
+	<description></description>
+	<patterns>*.iso;*.ISO</patterns>
+	<other-files/>
+</action>
 </actions>
