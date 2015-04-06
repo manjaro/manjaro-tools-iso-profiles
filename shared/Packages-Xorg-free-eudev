@@ -45,7 +45,6 @@ pangox-compat
 
 ## Xorg x86_64 Packages
 >x86_64 lib32-libxvmc
->x86_64 lib32-eudev-systemdcompat	# to avoid lib32-systemd
 >x86_64 lib32-mesa
 
 ## VMWare Support
