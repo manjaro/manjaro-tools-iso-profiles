@@ -32,6 +32,7 @@ manjaro-hotfixes
 manjaro-system
 mdadm
 mesa
+>x86_64 lib32-mesa
 mhwd
 mhwd-db
 nano
