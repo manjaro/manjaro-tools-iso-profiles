@@ -1,9 +1,33 @@
 ## Xorg Drivers
-
->free_uni xorg-drivers
+>free_uni xf86-video-apm
+>free_uni xf86-video-ark
 >free_uni xf86-video-ati
+>free_uni xf86-video-chips
+>free_uni xf86-video-dummy
+>free_uni xf86-video-fbdev
+>free_uni xf86-video-glint
+>free_uni xf86-video-i128
+>free_uni xf86-video-i740
 xf86-video-intel
+>free_uni xf86-video-mach64
+>free_uni xf86-video-neomagic
 >free_uni xf86-video-nouveau
+>free_uni xf86-video-nv
+>free_uni xf86-video-openchrome
+>free_uni xf86-video-r128
+>free_uni xf86-video-rendition
+>free_uni xf86-video-s3
+>free_uni xf86-video-s3virge
+>free_uni xf86-video-savage
+>free_uni xf86-video-siliconmotion
+>free_uni xf86-video-sis
+>free_uni xf86-video-sisusb
+>free_uni xf86-video-tdfx
+>free_uni xf86-video-trident
+>free_uni xf86-video-tseng
+>free_uni xf86-video-vesa
+>free_uni xf86-video-vmware
+>free_uni xf86-video-voodoo
 
 ## Bumblebee Support
 bumblebee
@@ -47,11 +71,4 @@ pangox-compat
 
 ## VMWare Support
 open-vm-tools
-
-## Cleanup Xorg packages
->cleanup xf86-input-evdev*
->cleanup xf86-input-joystick*
->cleanup xf86-input-keyboard*
->cleanup xf86-input-mouse*
->cleanup xf86-input-synaptics*
->cleanup xf86-input-void*
+xf86-input-vmmouse
