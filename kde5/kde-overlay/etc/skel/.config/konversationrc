@@ -1,10 +1,5 @@
-[Aliases]
-AliasList=sayclip /exec sayclip,sysinfo /exec sysinfo,mail /exec mail,gauge /exec gauge,uptime /exec uptime,tinyurl /exec tinyurl,bug /exec bug,cmd /exec cmd,fortune /exec fortune,media /exec media,audio /exec media audio,video /exec media video
-
 [Appearance]
-ChannelSplitterSizes=355,139
 ShowModeButtons=true
-TopicSplitterSizes=28,401
 
 [Autoreplace List]
 Direction0=o
@@ -27,26 +22,14 @@ Button6=Part,/PART %c Leaving...%n
 Button7=Quit,/QUIT Leaving...%n
 
 [Channel 0]
+EnableNotifications=true
 Name=#manjaro
 Password=
 
 [Channel 1]
-Name=#manjaro-talk
-Password=
-
-[Channel 2]
-EnableNotifications=true
-Name=#manjaro
-Password=
-
-[Channel 3]
 EnableNotifications=true
 Name=#manjaro-talk
 Password=
-
-[DCC Settings]
-IPv4FallbackIface=0
-PanelSplitter=AAAA/wAAAAEAAAACAAAASgAAAOkB/////wEAAAACAA==
 
 [General Options]
 ShowRealNames=true
@@ -77,10 +60,6 @@ Realname=manjaro-kde5
 ReturnMessage=
 SaslAccount=
 ShowAwayMessage=false
-
-[MainWindow]
-State=AAAA/wAAAAD9AAAAAAAAAoAAAAGHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
-ToolBarsMovable=Disabled
 
 [Notification Messages]
 ChannelListNoServerSelected=1
@@ -117,7 +96,7 @@ Server=chat.freenode.net
 [ServerGroup 0]
 AutoConnect=false
 AutoJoinChannels=Channel 0,Channel 1
-ChannelHistory=Channel 2,Channel 3
+ChannelHistory=Channel 0,Channel 1
 ConnectCommands=
 EnableNotifications=true
 Expanded=false
