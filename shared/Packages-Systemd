@@ -61,8 +61,6 @@ haveged # needed for pacman-init
 manjaro-firmware
 manjaro-release
 memtest86+
-mesa
->x86_64 lib32-mesa
 
 ## Kernel
 KERNEL
