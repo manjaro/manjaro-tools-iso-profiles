@@ -2,7 +2,6 @@
 bash
 bzip2
 coreutils
-cronie
 cryptsetup
 device-mapper
 dhcpcd
@@ -31,7 +30,6 @@ man-pages
 manjaro-hotfixes
 manjaro-system
 mdadm
-mesa
 mhwd
 mhwd-db
 nano
@@ -56,12 +54,14 @@ which
 xfsprogs
 
 ## Base Packages
+cronie
 linux-firmware
 lsb-release
 haveged # needed for pacman-init
 manjaro-firmware
 manjaro-release
 memtest86+
+>x86_64 lib32-mesa  # Optional dependency for mhwd
 
 ## Kernel
 KERNEL
@@ -74,7 +74,6 @@ pkg-config
 squashfs-tools
 sudo
 syslinux
-
 
 ## Compression Codecs
 arj

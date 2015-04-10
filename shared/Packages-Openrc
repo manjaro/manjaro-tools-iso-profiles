@@ -31,7 +31,6 @@ man-pages
 manjaro-hotfixes
 manjaro-system
 mdadm-openrc
-mesa
 mhwd
 mhwd-db
 nano
@@ -66,6 +65,7 @@ haveged-openrc # needed for pacman-init
 manjaro-firmware
 manjaro-release
 memtest86+
+>x86_64 lib32-mesa  # Optional dependency for mhwd
 
 ## Kernel
 KERNEL

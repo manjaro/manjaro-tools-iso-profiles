@@ -42,7 +42,7 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 light-locker
 manjaro-settings-manager
-# manjaro-welcome # not yet ready
+#manjaro-welcome # not yet ready
 midori
 mousepad
 pamac
@@ -81,9 +81,10 @@ xorg-utils
 xorg-xinit
 
 ## Artwork
+#faenza-green-icon-theme
+#maia-icon-theme
 menda-circle-icon-theme
 #menda-square-icon-theme
-#faenza-green-icon-theme
 menda-themes
 manjaro-artwork
 xcursor-menda

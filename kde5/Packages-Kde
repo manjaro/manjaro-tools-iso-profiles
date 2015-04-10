@@ -10,6 +10,7 @@ virtualgl
 >x86_64 lib32-virtualgl
 xf86-input-acecad
 xf86-input-aiptek
+xf86-input-elographics
 xf86-input-evdev
 xf86-input-joystick
 xf86-input-keyboard
@@ -169,6 +170,8 @@ digikam
 k3b
 kate
 kdebase-dolphin
+kdebase-kdepasswd
+kdebase-keditbookmarks
 kdebase-kfind
 kdegraphics-ksnapshot
 kdegraphics-okular
