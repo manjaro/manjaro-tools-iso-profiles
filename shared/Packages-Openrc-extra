@@ -172,7 +172,7 @@ smartmontools
 wireless_tools
 
 ## ucode for new cpus
-intel-ucode
+#intel-ucode			# causes problem with multiboot
 
 ## Documentation
 manjaro-documentation

@@ -115,6 +115,7 @@ menda-themes
 elementary-icon-theme
 xcursor-vanilla-dmz-aa
 gnome-themes-standard	# general theme
+xfce-theme-greenbird	# system theme
 
 ## Fonts
 ttf-droid		# default font
