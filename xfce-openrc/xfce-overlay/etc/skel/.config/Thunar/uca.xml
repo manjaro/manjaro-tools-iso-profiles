@@ -14,7 +14,7 @@
 	<name>Thunar Root</name>
 	<unique-id>1367866030392883-2</unique-id>
 	<command>pkexec thunar %f</command>
-	<description>Thunar Root</description>
+	<description></description>
 	<patterns>*</patterns>
 	<directories/>
 </action>
@@ -33,7 +33,7 @@
 	<name>Search</name>
 	<unique-id>1367866030392913-3</unique-id>
 	<command>catfish %f</command>
-	<description>find files and folders</description>
+	<description>Find files and folders</description>
 	<patterns>*</patterns>
 	<directories/>
 </action>
