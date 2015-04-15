@@ -17,5 +17,6 @@
       <property name="show-removable" type="bool" value="true"/>
     </property>
     <property name="icon-size" type="uint" value="36"/>
+    <property name="tooltip-size" type="double" value="96.000000"/>
   </property>
 </channel>
