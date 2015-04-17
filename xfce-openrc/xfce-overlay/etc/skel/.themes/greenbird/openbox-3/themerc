@@ -14,10 +14,10 @@ menu.title.bg.color: 					        #DEDEDE
 menu.title.text.color: 					        #2F2F2F
 menu.title.text.justify: 				        center
 			
-menu.border.width: 					        2
-menu.border.color:					        #DEDEDE
+menu.border.width: 					        1
+menu.border.color:					        #979797
 
-menu.overlap.x: 					        -2
+menu.overlap.x: 					        -1
 menu.overlap.y:						        0
 
 !!------------------------------------------------------------------------
@@ -41,9 +41,9 @@ menu.items.active.text.color: 				        #FFFFFF
 
 menu.separator.width:						1
 
-menu.separator.padding.width:					5
-menu.separator.padding.height:					5
-menu.separator.color:                   		        #DEDEDE
+menu.separator.padding.width:					2
+menu.separator.padding.height:					2
+menu.separator.color:                   		        #979797
 
 !!------------------------------------------------------------------------
 
@@ -121,7 +121,7 @@ window.inactive.grip.bg.color:                                  #DEDEDE
 
 window.active.border.color:                                     #393939
 
-window.active.title.bg: flat solid
+window.active.title.bg:						flat solid
 window.active.title.bg.color:                                   #CECECE
 window.active.title.separator.color:                            #CECECE
 window.active.text.justify:                                     center
@@ -207,17 +207,3 @@ osd.hilight.bg.color:                                           #9BC264
 
 osd.unhilight.bg:                                               flat solid
 osd.unhilight.bg.color:                                         #888888
-
-osd.button.unpressed.bg:                                        flat border
-osd.button.unpressed.bg.color:                                  #303030
-osd.button.unpressed.*.border.color:                            #242424
-
-osd.button.pressed.bg:                                          flat border
-osd.button.pressed.bg.color:                                    #2a2a2a
-osd.button.pressed.*.border.color:                              #242424
-
-osd.button.focused.bg:                                          flat solid border
-osd.button.focused.bg.color:                                    #303030
-osd.button.focused.*.border.color:                              #1e1e1e
-
-osd.button.focused.box.color:                                   #d64937

@@ -52,7 +52,7 @@
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -61,7 +61,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
