@@ -6,8 +6,8 @@
 URxvt.perl-ext-common: clipboard,tabbed
 
 ! Colors
-URxvt.foreground: [80]#f2f2f2
-URxvt.background: [80]#101010
+URxvt.foreground: #f2f2f2
+URxvt.background: #2B2B2C
 URxvt.color10:    #8cbc65
 URxvt.color12:    #0071ff
 
@@ -36,3 +36,34 @@ URxvt.tabbed.tab-bg: 0
 URxvt.iso14755: False
 URxvt.keysym.Control-Shift-C: perl:clipboard:copy
 URxvt.keysym.Control-Shift-V: perl:clipboard:paste
+
+
+! Xterm settings
+XTerm*termName: xterm-256color
+XTerm*locale: true
+XTerm*metaSendsEscape: true
+XTerm*saveLines: 4096
+XTerm*VT100.geometry: 80x22
+XTerm*foreground: #F2F2F2
+XTerm*background: #2B2B2C
+XTerm*color10:    #8cbc65
+XTerm*color12:    #0071ff
+XTerm*faceName: Monospace
+XTerm*faceSize: 11
+XTerm*scrollBar: true
+XTerm*rightScrollBar: true
+
+! UXTerm settings
+UXTerm*termName: xterm-256color
+UXTerm*locale: true
+UXTerm*metaSendsEscape: true
+UXTerm*saveLines: 4096
+UXTerm*VT100.geometry: 80x22
+UXTerm*foreground: #F2F2F2
+UXTerm*background: #2B2B2C
+UXTerm*color10:    #8cbc65
+UXTerm*color12:    #0071ff
+UXTerm*faceName: Monospace
+UXTerm*faceSize: 11
+UXTerm*scrollBar: true
+UXTerm*rightScrollBar: true
