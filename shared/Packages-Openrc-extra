@@ -34,7 +34,6 @@ mdadm-openrc		# mdadm
 mesa
 mhwd
 mhwd-db
->x86_64 lib32-mesa	# Optional dependency for mhwd
 nano
 pacman
 pciutils
