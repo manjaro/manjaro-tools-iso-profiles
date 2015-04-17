@@ -1,12 +1,16 @@
 ### Manjaro Packages
 
-## Xorg Packages
+## Xorg and Other Packages
 libdnet
+>x86_64 lib32-libxft
 mesa-demos
 >x86_64 lib32-mesa-demos
 uriparser
+virtualgl
+>x86_64 lib32-virtualgl
 xf86-input-acecad
 xf86-input-aiptek
+xf86-input-elographics
 xf86-input-evdev
 xf86-input-joystick
 xf86-input-keyboard
@@ -20,7 +24,6 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
->x86_64 lib32-libxft
 
 ## Network
 netctl
@@ -29,6 +32,7 @@ networkmanager-dispatcher-ntpd
 openresolv
 
 ## Libraries for Sound/Audio/Video
+ffmpeg
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -38,20 +42,19 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-ffmpeg
+libcanberra
+>x86_64 lib32-libcanberra
+libcanberra-pulse
+>x86_64 lib32-libcanberra-pulse
+libcanberra-gstreamer
 libdvdcss
 manjaro-alsa
 manjaro-pulse
 phonon-qt5-gstreamer
 phonon-qt4-gstreamer
+python-pyqt4  # For pulseaudio gui
 pulseaudio-ctl
 qt-gstreamer
-python-pyqt4
-libcanberra
-libcanberra-pulse
-libcanberra-gstreamer
->x86_64 lib32-libcanberra
->x86_64 lib32-libcanberra-pulse
 
 ## Connect Packages
 udiskie
@@ -65,11 +68,24 @@ gvfs
 open-fuse-iso
 android-tools
 android-udev
+kio-mtp
 
-## Devel Packages
-base-devel
+## AUR Support/Development
+# Missing base-devel packages
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
 >x86_64 gcc-multilib
 >i686 gcc
+libtool
+m4
+make
+patch
+>x86_64 lib32-flex
+# Extra packages for AUR support
 git
 patchutils
 svn
@@ -135,9 +151,8 @@ sddm-maia-theme
 plymouth-theme-manjaro-elegant
 
 ## GTK Themes
-oxygen-gtk2
-oxygen-gtk3
 gnome-themes-standard # Adwaita theme
+gtk-theme-orion       # Similar to Breeze theme
 
 ## Support for KDE4 applications theming
 breeze-kde4
@@ -155,6 +170,8 @@ digikam
 k3b
 kate
 kdebase-dolphin
+kdebase-kdepasswd
+kdebase-keditbookmarks
 kdebase-kfind
 kdegraphics-ksnapshot
 kdegraphics-okular
@@ -217,6 +234,7 @@ kcmsystemd
 manjaro-settings-manager
 # manjaro-welcome # not yet ready
 p7zip
+screenfetch
 thunderbird-kde
 vlc
 yakuake

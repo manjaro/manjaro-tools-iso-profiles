@@ -1,8 +1,7 @@
 ## Xorg Packages
 inxi
 libdnet
-mesa-demos
-#>x86_64 lib32-mesa-demos
+mesa-demos # used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -19,19 +18,31 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xorg-xset
+xdg-utils
+xterm
+
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+ttf-droid
 
 ## Basic packages
 dconf
 desktop-file-utils
+
+## Base Packages
+gtk2
 
 ## Packages for Sound and Audio
 manjaro-alsa
 
 ## Artwork
 manjaro-artwork
-
-## Base Packages
-gtk2
 
 ## Network
 #netctl	# systemd only
