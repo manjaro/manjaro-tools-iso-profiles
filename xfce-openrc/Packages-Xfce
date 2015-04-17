@@ -124,7 +124,7 @@ menda-themes
 elementary-icon-theme
 xcursor-vanilla-dmz-aa
 gnome-themes-standard	# general theme
-xfce-theme-greenbird	# system theme
+xfce-theme-greenbird
 
 ## AUR Access
 autoconf
