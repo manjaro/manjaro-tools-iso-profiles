@@ -22,18 +22,27 @@ xorg-xset
 xdg-utils
 xterm
 
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+ttf-droid
+
 ## Basic packages
 dconf
 desktop-file-utils
+
+## Base Packages
+gtk2
 
 ## Packages for Sound and Audio
 manjaro-alsa
 
 ## Artwork
 manjaro-artwork
-
-## Base Packages
-gtk2
 
 ## Network
 #netctl	# systemd only

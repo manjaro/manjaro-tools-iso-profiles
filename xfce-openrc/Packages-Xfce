@@ -22,6 +22,15 @@ xorg-xinit
 xorg-xset
 xdg-utils
 
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+ttf-droid		# default font
+
 ## Basic packages
 dconf
 desktop-file-utils
@@ -116,9 +125,6 @@ elementary-icon-theme
 xcursor-vanilla-dmz-aa
 gnome-themes-standard	# general theme
 xfce-theme-greenbird	# system theme
-
-## Fonts
-ttf-droid		# default font
 
 ## AUR Access
 autoconf
