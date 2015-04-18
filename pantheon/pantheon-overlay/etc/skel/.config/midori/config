@@ -1,0 +1,27 @@
+[settings]
+default-encoding=ISO-8859-1
+default-font-family=Droid Sans
+enable-developer-extras=true
+enable-spell-checking=true
+enable-site-specific-quirks=true
+enable-webgl=true
+enable-javascript=true
+default-charset=ISO-8859-1
+last-window-width=1000
+last-window-height=574
+last-panel-position=220
+last-panel-page=2
+last-window-state=MIDORI_WINDOW_MAXIMIZED
+location-entry-search=https://www.google.com/search?q=%s
+show-statusbar=false
+toolbar-items=Back,Forward,ReloadStop,BookmarkAdd,Location,CompactMenu,
+homepage=http://start.elementaryos.org/
+tabhome=about:dial
+download-folder=/home/ste74/Scaricati
+text-editor=scratch-text-editor %F
+first-party-cookies-only=false
+toolbar-style=MIDORI_TOOLBAR_ICONS
+user-agent=Mozilla/5.0 (X11; Linux) AppleWebKit/538.15 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/538.15 Midori/0.5
+
+[extensions]
+libformhistory.so=true
