@@ -69,7 +69,7 @@
     <property name="wrap_cycle" type="bool" value="true"/>
     <property name="wrap_layout" type="bool" value="true"/>
     <property name="wrap_resistance" type="int" value="10"/>
-    <property name="wrap_windows" type="bool" value="true"/>
+    <property name="wrap_windows" type="bool" value="false"/>
     <property name="wrap_workspaces" type="bool" value="false"/>
     <property name="workspace_names" type="array">
       <value type="string" value="Workspace 1"/>
@@ -83,5 +83,6 @@
     <property name="cycle_preview" type="bool" value="false"/>
     <property name="cycle_tabwin_mode" type="int" value="0"/>
     <property name="zoom_desktop" type="bool" value="true"/>
+    <property name="horiz_scroll_opacity" type="bool" value="false"/>
   </property>
 </channel>
