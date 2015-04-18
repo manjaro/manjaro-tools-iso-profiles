@@ -157,7 +157,7 @@ firefox
 #>i686 qupzilla			# internet browser (Qt5)
 flashplugin			# flash support for internet browser
 gparted				# partitioning program (GTK2)
->x86_64 libreoffice-installer	# GUI installer for LibreOffice
+#>x86_64 libreoffice-installer	# GUI installer for LibreOffice --> this is outdated and causes problems
 >x86_64 pinta                   # drawing/editing program
 qarma-git			# zenity Qt5
 transmission-qt                 # bittorrent client Qt5
