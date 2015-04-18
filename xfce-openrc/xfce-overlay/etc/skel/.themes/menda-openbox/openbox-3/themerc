@@ -99,31 +99,23 @@ window.active.button.disabled.image.color: #777777
 
 window.inactive.button.disabled.bg:          Solid Flat
 window.inactive.button.disabled.bg.color:    #1E1E1E
-window.inactive.button.disabled.image.color: #2d2d2d
+window.inactive.button.disabled.image.color: #5e5e5e
 
 window.active.button.pressed.bg:          Solid Flat
 window.active.button.pressed.bg.color:    #1E1E1E
-window.active.button.pressed.image.color: #ffffff
+window.active.button.pressed.image.color: #b0b0b0
 
 window.inactive.button.pressed.bg:          Solid Flat
 window.inactive.button.pressed.bg.color:    #1E1E1E
-window.inactive.button.pressed.image.color: #b0b0b0
+window.inactive.button.pressed.image.color: #5e5e5e
 
 window.active.button.hover.bg:          Solid Flat
 window.active.button.hover.bg.color:    #1E1E1E
-window.active.button.hover.image.color: #ffffff
-
-window.inactive.button.hover.bg:          Solid Flat
-window.inactive.button.hover.bg.color:    #1E1E1E
-window.inactive.button.hover.image.color: #b0b0b0
+window.active.button.hover.image.color: #EEEEEE
 
 window.active.button.toggled.hover.bg:          Solid Flat
 window.active.button.toggled.hover.bg.color:    #1E1E1E
-window.active.button.toggled.hover.image.color: #ffffff
-
-window.inactive.button.toggled.hover.bg:          Solid Flat
-window.inactive.button.toggled.hover.bg.color:    #1E1E1E
-window.inactive.button.toggled.hover.image.color: #b0b0b0
+window.active.button.toggled.hover.image.color: #EEEEEE
 
 window.handle.width: 0
 # window.active.handle.bg: Solid Flat
