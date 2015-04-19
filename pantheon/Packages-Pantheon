@@ -24,7 +24,7 @@ elementary-wallpapers-bzr
 elementary-dpms-helper-bzr #need for use switchboard-plug
 gtk-theme-elementary-bzr
 geary
-indicator-pantheon-session-bzr
+#indicator-pantheon-session-bzr #not work in systemd
 lightdm-pantheon-greeter-bzr
 maya-calendar-bzr
 midori-granite-bzr
@@ -41,7 +41,7 @@ scratch-text-editor-bzr
 snap-photobooth-bzr
 switchboard-bzr
 indicator-session-systemd #from Aur for patch indicator session pantheon
-pantheon-notify-bzr #from Aur
+#pantheon-notify-bzr #from Aur
 
 ##Plugin for switchboard
 switchboard-plug-default-applications-bzr
