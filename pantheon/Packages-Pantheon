@@ -1,6 +1,7 @@
 ### Manjaro Packages
 
-## XFCE
+## All file for any DE
+gconf-editor
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gnome-vfs
@@ -20,6 +21,7 @@ eidete-bzr
 elementary-icon-theme-bzr
 elementary-scan-bzr
 elementary-wallpapers-bzr
+elementary-dpms-helper-bzr #need for use switchboard-plug
 gtk-theme-elementary-bzr
 geary
 indicator-pantheon-session-bzr
@@ -38,6 +40,18 @@ plank-theme-pantheon-bzr
 scratch-text-editor-bzr
 snap-photobooth-bzr
 switchboard-bzr
+indicator-session-systemd #from Aur for patch indicator session pantheon
+pantheon-notify-bzr #from Aur
+
+##Plugin for switchboard
+switchboard-plug-default-applications-bzr
+switchboard-plug-power-bzr
+switchboard-plug-elementary-tweaks-bzr
+switchboard-plug-pantheon-shell-bzr
+switchboard-plug-keyboard-bzr
+switchboard-plug-about-bzr
+
+##Font
 ttf-opensans
 #ttf-raleway-font-family
 ttf-dejavu
