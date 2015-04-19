@@ -1,3 +1,0 @@
-[State]
-timestamp=1429464782
-converted=geoclue;folks.convert;mutter-schemas.convert;nm-applet.convert;gsettings-desktop-schemas.convert;gvfs-dns-sd.convert;evolution-data-server.convert;gnome-session.convert;indicator-session.convert;org.gnome.crypto.pgp.convert;gnome-settings-daemon.convert;org.gnome.crypto.pgp_keyservers.convert;org.gnome.crypto.cache.convert;libgnomekbd.convert;gnome-user-share.convert;wm-schemas.convert;
