@@ -20,12 +20,29 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.icontasks
 
-[Containments][1][Applets][15][Configuration][General]
-launchers=file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox
-
 [Containments][1][Applets][16]
 immutability=1
 plugin=org.kde.plasma.showdesktop
+
+[Containments][1][Applets][18]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][1][Applets][18][Configuration][General]
+applicationName=Dolphin
+genericName=File Manager
+iconName=system-file-manager
+url=file:///usr/share/applications/kde4/dolphin.desktop
+
+[Containments][1][Applets][19]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][1][Applets][19][Configuration][General]
+applicationName=Firefox
+genericName=Web Browser
+iconName=firefox
+url=file:///usr/share/applications/firefox.desktop
 
 [Containments][1][Applets][2]
 immutability=1
@@ -40,6 +57,10 @@ global=Alt+F1
 [Containments][1][Applets][3]
 immutability=1
 plugin=org.kde.plasma.pager
+
+[Containments][1][Applets][32]
+immutability=1
+plugin=org.kde.plasma.trash
 
 [Containments][1][Applets][5]
 immutability=1
@@ -77,14 +98,38 @@ plugin=org.kde.plasma.battery
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
-[Containments][1][General]
-AppletOrder=2;16;15;3;5;6
+[Containments][1][ConfigDialog]
+DialogHeight=81
 
-[Containments][7]
-activityId=
+[Containments][1][General]
+AppletOrder=2;16;18;19;15;3;32;5;6
+
+[Containments][33]
+activityId=aadc2224-b656-435d-84d5-8595a19fff6c
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
+
+[Containments][33][Applets][34]
+activityId=
+formfactor=0
+immutability=1
+lastScreen=-1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=
+
+[Containments][33][Applets][34][Configuration]
+activityId=
+formfactor=0
+immutability=1
+lastScreen=-1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=
+
+[Containments][33][General]
+ItemsGeometries=Applet-34:32,37,571,411,0;

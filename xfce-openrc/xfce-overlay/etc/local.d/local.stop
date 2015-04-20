@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# /etc/local.d/local.stop: Local shutdown script.
+#
+
+# Legacy sysvinit rc.local.shutdown support
+[ -x /etc/rc.local.shutdown ] && /etc/rc.local.shutdown

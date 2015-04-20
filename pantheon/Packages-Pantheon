@@ -1,0 +1,149 @@
+### Manjaro Packages
+
+## All file for any DE
+gconf-editor
+gconf # fix qt-theme
+gnome-keyring # fix wlan segfault
+gnome-vfs
+gvfs # to fix trash in thunar
+menulibre
+network-manager-applet
+#numlockx
+#xcursor-simpleandsoft
+#xcursor-vanilla-dmz-aa
+
+##Pantheon files
+pantheon-session-bzr
+audience-bzr
+contractor-bzr
+#dexter-contacts-bzr
+eidete-bzr
+elementary-icon-theme-bzr
+elementary-scan-bzr
+elementary-wallpapers-bzr
+elementary-dpms-helper-bzr #need for use switchboard-plug
+gtk-theme-elementary-bzr
+geary
+#indicator-pantheon-session-bzr #not work in systemd
+lightdm-pantheon-greeter-bzr
+maya-calendar-bzr
+midori-granite-bzr
+noise-bzr
+pantheon-backgrounds-bzr
+pantheon-calculator-bzr
+pantheon-default-settings-bzr
+pantheon-files-bzr
+#pantheon-notify-bzr
+pantheon-print-bzr
+pantheon-terminal-bzr
+plank-theme-pantheon-bzr
+scratch-text-editor-bzr
+snap-photobooth-bzr
+switchboard-bzr
+indicator-session-systemd #from Aur for patch indicator session pantheon
+#pantheon-notify-bzr #from Aur
+
+##Plugin for switchboard
+switchboard-plug-default-applications-bzr
+switchboard-plug-power-bzr
+switchboard-plug-elementary-tweaks-bzr
+switchboard-plug-pantheon-shell-bzr
+switchboard-plug-keyboard-bzr
+switchboard-plug-about-bzr
+
+##Font
+ttf-opensans
+#ttf-raleway-font-family
+ttf-dejavu
+ttf-droid
+ttf-freefont
+ttf-liberation
+
+## Audio Packages
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+pa-applet
+pulseaudio-ctl
+
+## Applications
+accountsservice
+gksu
+gst-libav
+gparted
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+light-locker
+manjaro-settings-manager
+#manjaro-welcome # not yet ready
+midori
+mousepad
+pamac
+>i686 parole
+qpdfview
+>i686 sylpheed
+>i686 xnoise
+open-fuse-iso
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+>i686 blueman
+
+## Xorg Packages
+inxi
+libdnet
+#>x86_64 lib32-mesa-demos
+uriparser
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+
+## Artwork
+#faenza-green-icon-theme
+#maia-icon-theme
+menda-circle-icon-theme
+#menda-square-icon-theme
+menda-themes
+manjaro-artwork
+xcursor-menda
+>i686 xfce-theme-greenbird
+plymouth-theme-manjaro-elegant
+
+## Fonts
+ttf-dejavu
+cantarell-fonts
+ttf-droid
+
+## Documentation
+#manjaro-documentation
+
+##Access AUR
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+libtool
+m4
+make
+patch
+subversion
+yaourt
+
