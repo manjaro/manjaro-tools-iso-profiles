@@ -121,7 +121,7 @@ tcpdump
 wget
 
 ## efi support (only x86_64)
-#>x86_64 gummiboot		# systemd only
+>x86_64 gummiboot
 >x86_64 prebootloader
 >x86_64 refind-efi
 
