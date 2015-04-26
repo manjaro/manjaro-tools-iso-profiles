@@ -28,14 +28,14 @@ window.inactive.border.color: #1E1E1E
 padding.width:  2
 padding.height: 2
 
-menu.border.width: 2
-menu.border.color: #111111
-menu.overlap.x: -2
+menu.border.width: 1
+menu.border.color: #1e1e1e
+menu.overlap.x: -1
 menu.overlap.y: 0
 
 menu.items.font: shadow=n
 menu.items.bg:                  Solid Flat
-menu.items.bg.color:            #121212
+menu.items.bg.color:            #1e1e1e
 menu.items.text.color:          #e7e7e7
 menu.items.disabled.text.color: #5e5e5e
 
