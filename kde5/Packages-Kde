@@ -167,8 +167,10 @@ libappindicator-sharp
 
 ## KDE Applications
 digikam
+filelight
 k3b
 kate
+kcalc
 kdebase-dolphin
 kdebase-kdepasswd
 kdebase-keditbookmarks
@@ -178,8 +180,6 @@ kdegraphics-okular
 kdepim-kalarm
 kdepim-kleopatra
 kdeutils-ark
-kdeutils-filelight
-kdeutils-kcalc
 kdeutils-kwalletmanager
 kde-servicemenus-rootactions
 kdeconnect

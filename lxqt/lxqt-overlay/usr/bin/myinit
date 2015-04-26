@@ -1,0 +1,5 @@
+#!/bin/bash
+nbthreads=$(cat /proc/cpuinfo | grep processor | wc -l)
+sed -i "/MAKEFLAGS=/s/.*/MAKEFLAGS=\"-j$nbthreads\"/" /etc/makepkg.conf
+rm -f /etc/systemd/system/multi-user.target.wants/myinit.service
+rm -f $0
