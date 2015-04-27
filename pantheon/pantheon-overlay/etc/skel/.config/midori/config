@@ -10,8 +10,6 @@ default-charset=ISO-8859-1
 last-window-width=1000
 last-window-height=574
 location-entry-search=https://www.google.com/search?q=%s
-clear-private-data=145
-clear-data=formhistory,web-cookies,web-cache,page-icons,
 show-statusbar=false
 toolbar-items=Back,Forward,ReloadStop,BookmarkAdd,Location,CompactMenu,
 homepage=http://manjaro.github.io/
