@@ -55,6 +55,10 @@ obkey
 tint2
 lxrandr
 compton
+nitrogen
+clipit
+conky
+lxappearance
 
 ## Xfce
 xfce4-panel
@@ -86,12 +90,7 @@ thunar
 firefox
 lxsession		# contains lxpolit
 gparted
-dmenu
-conky
-lxappearance
 galculator
-nitrogen
-clipit
 
 ## More Apps
 gconf			# fix qt-theme
