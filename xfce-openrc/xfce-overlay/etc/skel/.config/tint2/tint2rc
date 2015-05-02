@@ -6,8 +6,8 @@
 # ID 1
 rounded = 2
 border_width = 1
-background_color = #1E1E1E 100
-border_color = #1C1C1C 80
+background_color = #1A1A1A 100
+border_color = #1A1A1A 80
 
 # ID 2
 rounded = 2
@@ -84,9 +84,9 @@ tooltip = 1
 tooltip_padding = 2 2
 tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
-tooltip_background_id = 2
+tooltip_background_id = 1
 tooltip_font = Droid Sans 11
-tooltip_font_color = #1E1E1E 100
+tooltip_font_color = #E7E7E7 100
 
 # Mouse
 mouse_middle = close
