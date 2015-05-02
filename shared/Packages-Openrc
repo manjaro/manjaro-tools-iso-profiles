@@ -1,0 +1,158 @@
+## The actual 'base' group, minus netctl
+bash
+bzip2
+coreutils
+cronie-openrc
+cryptsetup-openrc
+device-mapper-openrc
+dhcpcd-openrc
+diffutils
+e2fsprogs
+file
+filesystem
+findutils
+gawk
+>i686 gcc-libs
+>x86_64 gcc-libs-multilib
+gettext
+glibc
+grep
+gzip
+inetutils
+iproute2
+iputils
+jfsutils
+less
+licenses
+logrotate
+lvm2-openrc
+man-db
+man-pages
+manjaro-hotfixes
+manjaro-system
+mdadm-openrc
+mhwd
+mhwd-db
+nano
+pacman
+pciutils
+pcmciautils
+perl
+procps-ng
+psmisc
+reiserfsprogs
+s-nail
+sed
+shadow
+sysfsutils
+
+eudev-base
+
+metalog-openrc
+
+tar
+texinfo
+usbutils
+util-linux
+which
+xfsprogs
+
+## Base Packages
+linux-firmware
+lsb-release
+haveged-openrc # needed for pacman-init
+manjaro-firmware
+manjaro-release
+memtest86+
+>x86_64 lib32-mesa  # Optional dependency for mhwd
+
+## Kernel
+KERNEL
+
+## Extra Base Packages
+grub
+mkinitcpio-nfs-utils
+os-prober
+pkg-config
+squashfs-tools
+sudo
+syslinux
+nfs-utils-openrc
+
+## Compression Codecs
+arj
+lzop
+unrar
+unzip
+xz
+zip
+
+## encrypt support
+ecryptfs-utils
+rsync
+lsof
+
+## needed by cli-installer
+# dialog
+# dmidecode
+# gptfdisk
+# parted
+# pv
+# tcpdump
+wget
+
+## efi support (only x86_64)
+>x86_64 gummiboot
+>x86_64 prebootloader
+>x86_64 refind-efi
+
+## Filesystem Packages
+btrfs-progs
+dmraid
+dosfstools
+ecryptfs-utils
+testdisk
+nilfs-utils
+nfs-utils
+ntfs-3g
+
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+
+## Network
+b43-fwcutter
+dhclient
+dnsmasq
+iptables
+ipw2100-fw
+ipw2200-fw
+iw
+mobile-broadband-provider-info
+modemmanager
+nbd
+KERNEL-ndiswrapper
+ndiswrapper-utils
+rp-pppoe
+usb_modeswitch
+wpa_supplicant-openrc
+zd1211-firmware
+
+## Laptop power management
+acpid-openrc
+cpupower-openrc
+ethtool
+hdparm
+sdparm
+smartmontools
+wireless_tools
+
+## ucode for new cpus
+intel-ucode
+
+## Documentation
+manjaro-documentation
