@@ -75,7 +75,6 @@ sudo
 syslinux
 
 ## Compression Codecs
-arj
 lzop
 unrar
 unzip
@@ -83,7 +82,6 @@ xz
 zip
 
 ## encrypt support
-ecryptfs-utils
 rsync
 lsof
 
