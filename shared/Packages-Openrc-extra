@@ -98,7 +98,6 @@ syslinux
 xdg-user-dirs
 
 ## Compression Codecs
-unarj
 lzop
 unrar
 unzip

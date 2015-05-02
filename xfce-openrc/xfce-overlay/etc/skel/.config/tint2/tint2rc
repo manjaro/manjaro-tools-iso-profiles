@@ -6,8 +6,14 @@
 # ID 1
 rounded = 2
 border_width = 1
-background_color = #121212 100
-border_color = #121212 80
+background_color = #1E1E1E 100
+border_color = #1C1C1C 80
+
+# ID 2
+rounded = 2
+border_width = 0
+background_color = #8CBC65 90
+border_color = #8CBC65 90
 
 # Panel
 panel_monitor = all
@@ -31,7 +37,6 @@ strut_policy = follow_size
 taskbar_mode = single_desktop
 taskbar_padding = 0 0 4
 taskbar_background_id = 1
-#taskbar_active_background_id = 0
 
 # Tasks
 urgent_nb_of_blink = 7
@@ -41,9 +46,9 @@ task_centered = 1
 task_maximum_size = 175 32
 task_padding = 6 3
 task_background_id = 0
-task_active_background_id = 1
-task_urgent_background_id = 0
-task_iconified_background_id = 0
+task_active_background_id = 2
+task_urgent_background_id = 2
+task_iconified_background_id = 1
 
 # Task Icons
 task_icon_asb = 100 0 0
@@ -54,8 +59,8 @@ task_iconified_icon_asb = 40 0 0
 # Fonts
 task_font = Droid Sans 10
 task_font_color = #D7D7D7 100
-task_active_font_color = #8CBC65 100
-task_urgent_font_color = #8CBC65 100
+task_active_font_color = #1E1E1E 100
+task_urgent_font_color = #1E1E1E 100
 task_iconified_font_color = #D7D7D7 100
 font_shadow = 0
 
@@ -79,9 +84,9 @@ tooltip = 1
 tooltip_padding = 2 2
 tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
-tooltip_background_id = 1
-tooltip_font = Droid Sans 10
-tooltip_font_color = #D7D7D7 100
+tooltip_background_id = 2
+tooltip_font = Droid Sans 11
+tooltip_font_color = #1E1E1E 100
 
 # Mouse
 mouse_middle = close
