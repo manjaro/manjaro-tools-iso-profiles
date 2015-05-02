@@ -79,7 +79,6 @@ xfce4-mixer
 ## Basic Apps
 lxsession		# contains lxpolit
 lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 light-locker-upower	# requires lightdm
 wicd-gtk
 python2-notify

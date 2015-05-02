@@ -105,11 +105,6 @@
 					<execute>octopi</execute>
 				</action>
 			</item>
-			<item label="Power Manager Settings">
-				<action name="Execute">
-					<execute>xfce4-power-manager-settings</execute>
-				</action>
-			</item>
 			<item label="Manjaro Settings Manager">
 				<action name="Execute">
 					<execute>gksudo manjaro-settings-manager-gui</execute>
@@ -143,11 +138,6 @@
 					<execute>nitrogen /usr/share/backgrounds</execute>
 				</action>
 			</item>
-			<item label="Configure Lightdm">
-				<action name="Execute">
-					<execute>lightdm-gtk-greeter-settings-pkexec</execute>
-				</action>
-			</item>
 			<item label="Customize Look and Feel">
 				<action name="Execute">
 					<execute>lxappearance</execute>
@@ -161,6 +151,11 @@
 			<item label="Panel Tint2">
 				<action name="Execute">
 					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="Power Manager Settings">
+				<action name="Execute">
+					<execute>xfce4-power-manager-settings</execute>
 				</action>
 			</item>
 		</menu>
