@@ -58,6 +58,7 @@ clipit
 conky
 lxappearance
 volumeicon-gtk2
+orage				# for calender
 
 ## Xfce
 xfce4-panel
@@ -115,6 +116,7 @@ gst-libav		# for parole
 sakis3g			# usb mobile broadband
 zenity			# for sakis3g
 gcolor2
+gst-plugins-base	# useful with firefox, parole
 
 ## Artwork, icons
 manjaro-artwork

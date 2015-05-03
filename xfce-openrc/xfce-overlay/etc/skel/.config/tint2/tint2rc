@@ -39,7 +39,7 @@ taskbar_padding = 0 0 4
 taskbar_background_id = 1
 
 # Tasks
-urgent_nb_of_blink = 7
+urgent_nb_of_blink = 8
 task_icon = 1
 task_text = 1
 task_centered = 1
@@ -78,6 +78,8 @@ time1_font = Sans 10
 clock_font_color = #DADADA 100
 clock_padding = 0 0
 clock_background_id = 1
+clock_tooltip = %A %d %B %Y
+clock_lclick_command = orage -t
 
 # Tooltips
 tooltip = 1

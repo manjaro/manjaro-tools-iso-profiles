@@ -28,6 +28,11 @@
 					<execute>galculator</execute>
 				</action>
 			</item>
+			<item label="Orage Calender">
+				<action name="Execute">
+					<execute>orage</execute>
+				</action>
+			</item>
 			<item label="Screenshot">
 				<action name="Execute">
 					<execute>xfce4-screenshooter</execute>

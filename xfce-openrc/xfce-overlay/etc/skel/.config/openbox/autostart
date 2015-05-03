@@ -15,3 +15,4 @@ tint2 &
 (sleep 4s; volumeicon) &
 #(sleep 5s; octopi-notifier) &		# started automatically
 #(sleep 5s; light-locker) &		# started automatically
+(sleep 6s; orage) &			# for calander
