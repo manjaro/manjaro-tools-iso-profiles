@@ -12,6 +12,7 @@ xf86-input-mouse
 xf86-input-synaptics
 xf86-input-void
 xf86-input-wacom
+xf86-video-vesa
 xinetd
 xorg-server
 xorg-server-utils
