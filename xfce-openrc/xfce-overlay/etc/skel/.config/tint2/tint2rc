@@ -79,7 +79,6 @@ clock_font_color = #DADADA 100
 clock_padding = 0 0
 clock_background_id = 1
 clock_tooltip = %A %d %B %Y
-clock_lclick_command = orage -t
 
 # Tooltips
 tooltip = 1
