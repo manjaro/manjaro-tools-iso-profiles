@@ -191,6 +191,7 @@ kwrite
 gwenview
 print-manager
 skanlite
+kdenetwork-kget
 
 ## Thumbnailers and terminal for dolphin
 icoutils                     # thumbnailers for MS files
