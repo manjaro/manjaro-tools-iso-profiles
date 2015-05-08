@@ -80,8 +80,8 @@ syslinux
 nfs-utils-openrc
 
 ## Compression Codecs
-arj
 lzop
+unarj
 unrar
 unzip
 xz
