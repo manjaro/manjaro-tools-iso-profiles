@@ -148,10 +148,9 @@ plasma-mediacenter
 plasma-nm
 plasma-workspace
 plasma-workspace-wallpapers
-powerdevil                                                                                                                                                         
+powerdevil
 systemsettings
 baloo-frameworks  # optional for plasma-desktop
-kcm-touchpad
 polkit-kde
 
 ## Themes
