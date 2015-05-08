@@ -111,22 +111,31 @@ jdk8-openjdk
 icedtea-web
 
 ## Printing
-#manjaro-printer # disabled for now
+cups
+cups-pdf
+cups-pk-helper
+ghostscript
+gsfonts
+hplip
+python-gobject # optional for hplip
+python-pyqt4   # optional for hplip
+splix
 
 ## Display manager
 sddm
 sddm-kcm
 
 ## Plasma5 
-bluedevil-frameworks
+bluedevil
 breeze
 drkonqi
-kde-gtk-config-frameworks
-kdeplasma-addons-frameworks
+kde-gtk-config
+kdeplasma-addons
+khelpcenter
 kinfocenter
 kio-extras
 kmenuedit
-kscreen-frameworks
+kscreen
 ksshaskpass
 ksysguard
 kwin
@@ -135,14 +144,15 @@ milou
 oxygen
 oxygen-cursors
 plasma-desktop
+plasma-mediacenter
 plasma-nm
 plasma-workspace
 plasma-workspace-wallpapers
 powerdevil                                                                                                                                                         
 systemsettings
 baloo-frameworks  # optional for plasma-desktop
-kcm-touchpad-frameworks
-polkit-kde-frameworks
+kcm-touchpad
+polkit-kde
 
 ## Themes
 plasma5-themes-maia
@@ -152,7 +162,6 @@ plymouth-theme-manjaro-elegant
 
 ## GTK Themes
 gnome-themes-standard # Adwaita theme
-gtk-theme-orion       # Similar to Breeze theme
 
 ## Support for KDE4 applications theming
 breeze-kde4
@@ -175,15 +184,16 @@ kdebase-dolphin
 kdebase-kdepasswd
 kdebase-keditbookmarks
 kdebase-kfind
+kdeconnect
 kdegraphics-ksnapshot
 kdegraphics-okular
+kdenetwork-kget
+kdenlive
 kdepim-kalarm
 kdepim-kleopatra
 kdeutils-ark
 kdeutils-kwalletmanager
 kde-servicemenus-rootactions
-kdeconnect
-kdenlive
 konsole
 konversation
 kmix
@@ -191,7 +201,6 @@ kwrite
 gwenview
 print-manager
 skanlite
-kdenetwork-kget
 
 ## Thumbnailers and terminal for dolphin
 icoutils                     # thumbnailers for MS files
