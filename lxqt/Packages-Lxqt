@@ -1,3 +1,4 @@
+
 # 1) stricly identical to the Net-Edition
 # =======================================
 ## Xorg Packages
@@ -38,9 +39,7 @@ manjaro-artwork
 gtk2
 
 ## Network
-netctl
-#networkmanager
-#networkmanager-dispatcher-ntpd
+#netctl
 openresolv
 connman
 cmst
@@ -49,13 +48,17 @@ cmst
 
 # 2) lxqt main packages
 # =====================
-#sddm				# default login manager (Qt5) of lxqt
+sddm				# default login manager (Qt5) of lxqt
 #lightdm-gtk3-greeter
 #lightdm-gtk-greeter-settings
-lxqt-lightdm-greeter
+#lxqt-lightdm-greeter
 
 openbox				# default window manager (GTK2) of lxqt
 
+compton                         # X compositor
+repoarch/compton-conf-git
+
+#keepassx-qt5-git                # passwords management
 liblxqt				#
 liblxqt-mount			# these are all dependencies and libraries for the following lxqt packages
 libqtxdg			#
@@ -96,11 +99,11 @@ manjaro-settings-manager
 
 gvfs				# for mounting file other systems
 gvfs-afc			# enables support for external media (e.g. USB sticks)
+gvfs-smb                        # SMB/CIFS (Windows client) backend for gvfs
 
 
 # 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
 # ===========================================================================
-#network-manager-applet
 gksu				# (GTK2) GUI for su and sudo - there is no alternative for it in lxqt
 #gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
 
@@ -118,18 +121,22 @@ obconf				# openbox appearance settings - needed for window title and border con
 # =========================
 #oxygen-icons			# default icon theme of lxqt - pretty heavy
 
-menda-themes-dark 		# new manjaro GTK2 theme
+#menda-themes-dark 		# new manjaro GTK2 theme
+#vertex-themes
+vertex-dark-lxqt                # light and green version of vertex-themes
 #menda-circle-icon-theme 	# new manjaro icon theme - much lighter
-azenis-green-icon-theme
-menda-lxqt-panel 		# new manjaro theme for lxqt/panel
+#azenis-green-icon-theme
+compass-icon-theme
+#>x86_64 db-silver-icons
+#menda-lxqt-panel 		# new manjaro theme for lxqt/panel
+mediterraneanlxqt
 speedcrunch-git                 # calculator qt5
 ttf-droid-ib                    # care !!! infinality version
 xcursor-menda			# menda mouse cursor theme - this needs to be activated
-#sddm-menda-theme		# sddm theme
 
-infinality-bundle		# to improve text rendering
-#freetype2-infinality-ultimate
-#fontconfig-infinality-ultimate
+#infinality-bundle		# to improve text rendering
+freetype2-infinality-ultimate
+fontconfig-infinality-ultimate
 
 
 
@@ -138,6 +145,7 @@ infinality-bundle		# to improve text rendering
 #baka-mplayer
 >x86_64 libchardet              # for bomi...
 >x86_64 bomi                    # multimedia player cmplayer-like
+claws-mail                      # E-mail client
 lxtask                          # task manager
 mpv				# replace mplayer/mplayer2
 qpdfview			# pdf reader
@@ -159,10 +167,14 @@ flashplugin			# flash support for internet browser
 gparted				# partitioning program (GTK2)
 #>x86_64 libreoffice-installer	# GUI installer for LibreOffice --> this is outdated and causes problems
 >x86_64 pinta                   # drawing/editing program
+meteo-qt                        # weather application
 qarma-git			# zenity Qt5
+qastools-qt5                    # alsa mixer
 transmission-qt                 # bittorrent client Qt5
 qisousb				# write an ISO on an USB stick
+qlipper-qt5-git                 # clipoard applet
 qtfind				# add a file search to pcmanfm-qt (qt5)
+redshift                        # adjusts the color temperature
 rfkill
 #xscreensaver			# screensaver and power managment
 

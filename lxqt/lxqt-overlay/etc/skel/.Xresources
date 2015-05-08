@@ -15,9 +15,10 @@ URxvt.color12:    #0071ff
 URxvt.saveLines: 10000
 URxvt.scrollBar: true
 URxvt.scrollBar_right: true
-URxvt.scrollColor: #8cbc65
+URxvt.scrollColor: #59595B
 URxvt.scrollBar_floating: true
 URxvt.scrollstyle: plain
+URxvt.thickness: 14
 
 ! Fonts
 URxvt.font: xft:Monospace:size=11

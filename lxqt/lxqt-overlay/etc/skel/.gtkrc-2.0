@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/manjaro/.gtkrc-2.0.mine"
-gtk-theme-name="Menda-Dark"
-gtk-icon-theme-name="Menda-Circle"
+gtk-theme-name="MediterraneanLight"
+gtk-icon-theme-name="Compass"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="Menda-Cursor"
 gtk-cursor-theme-size=0
