@@ -39,7 +39,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Menda-Dark</name>
+    <name>MediterraneanLight</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.

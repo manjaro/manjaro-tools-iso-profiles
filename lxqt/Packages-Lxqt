@@ -1,4 +1,3 @@
-keyboardctl	# TO REMOVE !!!!!!!!!!!!!!
 
 # 1) stricly identical to the Net-Edition
 # =======================================
@@ -59,7 +58,7 @@ openbox				# default window manager (GTK2) of lxqt
 compton                         # X compositor
 repoarch/compton-conf-git
 
-keepassx-qt5-git                # passwords management
+#keepassx-qt5-git                # passwords management
 liblxqt				#
 liblxqt-mount			# these are all dependencies and libraries for the following lxqt packages
 libqtxdg			#
@@ -122,13 +121,15 @@ obconf				# openbox appearance settings - needed for window title and border con
 # =========================
 #oxygen-icons			# default icon theme of lxqt - pretty heavy
 
-menda-themes-dark 		# new manjaro GTK2 theme
+#menda-themes-dark 		# new manjaro GTK2 theme
 #vertex-themes
 vertex-dark-lxqt                # light and green version of vertex-themes
 #menda-circle-icon-theme 	# new manjaro icon theme - much lighter
-azenis-green-icon-theme
+#azenis-green-icon-theme
+compass-icon-theme
 #>x86_64 db-silver-icons
-menda-lxqt-panel 		# new manjaro theme for lxqt/panel
+#menda-lxqt-panel 		# new manjaro theme for lxqt/panel
+mediterraneanlxqt
 speedcrunch-git                 # calculator qt5
 ttf-droid-ib                    # care !!! infinality version
 xcursor-menda			# menda mouse cursor theme - this needs to be activated
