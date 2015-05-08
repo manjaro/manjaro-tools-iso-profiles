@@ -76,6 +76,7 @@ syslinux
 
 ## Compression Codecs
 lzop
+unarj
 unrar
 unzip
 xz

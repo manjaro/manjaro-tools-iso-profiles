@@ -78,8 +78,8 @@ sudo
 syslinux
 
 ## Compression Codecs
-#arj
 lzop
+unarj
 unrar
 unzip
 xz

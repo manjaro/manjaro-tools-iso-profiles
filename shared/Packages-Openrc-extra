@@ -99,6 +99,7 @@ xdg-user-dirs
 
 ## Compression Codecs
 lzop
+unarj
 unrar
 unzip
 xz
