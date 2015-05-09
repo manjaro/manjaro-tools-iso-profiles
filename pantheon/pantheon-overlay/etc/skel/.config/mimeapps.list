@@ -1,0 +1,7 @@
+[Default Applications]
+inode/directory=shotwell-viewer.desktop
+x-scheme-handler/trash=pantheon-files.desktop
+
+[Added Associations]
+inode/directory=shotwell-viewer.desktop;pantheon-files.desktop;
+x-scheme-handler/trash=pantheon-files.desktop;
