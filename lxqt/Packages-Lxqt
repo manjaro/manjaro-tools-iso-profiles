@@ -130,6 +130,7 @@ compass-icon-theme
 #>x86_64 db-silver-icons
 #menda-lxqt-panel 		# new manjaro theme for lxqt/panel
 mediterraneanlxqt
+gtk-engine-murrine              # for mediterraneanlxqt
 speedcrunch-git                 # calculator qt5
 ttf-droid-ib                    # care !!! infinality version
 xcursor-menda			# menda mouse cursor theme - this needs to be activated
