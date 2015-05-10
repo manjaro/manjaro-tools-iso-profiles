@@ -25,7 +25,7 @@ dconf
 desktop-file-utils
 
 ## Packages for Sound and Audio
-# manjaro-alsa
+# manjaro-alsa	# containes 32bit libraries
 alsa-lib
 alsa-utils
 alsa-plugins
@@ -41,3 +41,22 @@ netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
+
+## AUR Access
+# autoconf
+# automake
+# binutils
+# # bison
+# fakeroot
+# # flex
+# gcc
+# # >i686 gcc
+# # >x86_64 gcc-multilib	# only needed for building 32bit libraries
+# libconfig
+# libtool
+# m4
+# make
+# patch
+# subversion
+# git
+# yaourt
