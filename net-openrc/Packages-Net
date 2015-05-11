@@ -1,7 +1,7 @@
 ## Xorg Packages
 inxi
 libdnet
-mesa-demos # used by inxi
+mesa-demos		# used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -35,6 +35,19 @@ ttf-droid
 ## Basic packages
 dconf
 desktop-file-utils
+tmpwatch		# cleaning /tmp
+mlocate			# locatedb
+ps_mem			# memory usage
+
+## Services
+openssh-openrc
+ntp-openrc
+
+## Network
+#netctl	# systemd only
+networkmanager-openrc
+networkmanager-dispatcher-ntpd
+openresolv-openrc
 
 ## Base Packages
 gtk2
@@ -44,9 +57,3 @@ manjaro-alsa
 
 ## Artwork
 manjaro-artwork
-
-## Network
-#netctl	# systemd only
-networkmanager-openrc
-networkmanager-dispatcher-ntpd
-openresolv-openrc

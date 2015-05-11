@@ -35,6 +35,9 @@ ttf-droid		# default font
 dconf
 desktop-file-utils
 tlp-pmu
+tmpwatch		# cleaning /tmp
+mlocate			# locatedb
+ps_mem			# memory usage
 
 ## Audio Packages
 manjaro-alsa
@@ -58,11 +61,11 @@ clipit
 conky
 lxappearance
 volumeicon-gtk2
-orage				# for calender
+orage			# for calender
 
 ## Xfce
 xfce4-panel
-xfce4-session-consolekit	# xfce4-session
+xfce4-session-consolekit # xfce4-session
 xfce4-terminal
 xfdesktop
 xfwm4
@@ -120,6 +123,8 @@ gst-plugins-base	# useful with firefox, parole
 
 ## Services
 cups-openrc
+openssh-openrc
+ntp-openrc
 
 ## Artwork, icons
 manjaro-artwork
