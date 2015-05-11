@@ -36,7 +36,6 @@ ttf-droid
 dconf
 desktop-file-utils
 tmpwatch		# cleaning /tmp
-mlocate			# locatedb
 ps_mem			# memory usage
 
 ## Services

@@ -90,6 +90,7 @@ squashfs-tools
 sudo
 syslinux
 xdg-user-dirs
+mlocate			# locatedb
 
 ## Compression Codecs
 lzop

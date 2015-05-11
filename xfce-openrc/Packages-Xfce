@@ -36,7 +36,6 @@ dconf
 desktop-file-utils
 tlp-pmu
 tmpwatch		# cleaning /tmp
-mlocate			# locatedb
 ps_mem			# memory usage
 
 ## Audio Packages
