@@ -110,9 +110,9 @@
 					<execute>octopi</execute>
 				</action>
 			</item>
-			<item label="Manjaro Settings Manager">
+			<item label="Manage Printing">
 				<action name="Execute">
-					<execute>gksudo manjaro-settings-manager-gui</execute>
+					<execute>xdg-open http://localhost:631/</execute>
 				</action>
 			</item>
 			<item label="Power Manager Settings">
@@ -156,6 +156,11 @@
 			<item label="Display Settings">
 				<action name="Execute">
 					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<item label="Manjaro Settings Manager">
+				<action name="Execute">
+					<execute>gksudo manjaro-settings-manager-gui</execute>
 				</action>
 			</item>
 			<item label="Panel Tint2">
