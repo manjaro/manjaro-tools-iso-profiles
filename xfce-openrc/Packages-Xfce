@@ -118,6 +118,9 @@ zenity			# for sakis3g
 gcolor2
 gst-plugins-base	# useful with firefox, parole
 
+## Services
+cups-openrc
+
 ## Artwork, icons
 manjaro-artwork
 menda-themes
