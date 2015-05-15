@@ -1,3 +1,4 @@
 {
-      "name": "manjaro-tools-iso-profiles", "files": [ { "directory": "", "filters": ["*", "-*.xz", "*.*"], "recursive": 1 } ]
+      "name": "manjaro-tools-iso-profiles"
+      , "files": [ { "git": 1 } ]
 }
