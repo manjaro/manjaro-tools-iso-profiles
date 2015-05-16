@@ -119,6 +119,8 @@ sakis3g			# usb mobile broadband
 zenity			# for sakis3g
 gcolor2
 gst-plugins-base	# useful with firefox, parole
+xfburn
+thunar-volman		# for usb auto-mounting
 
 ## Services
 cups-openrc
