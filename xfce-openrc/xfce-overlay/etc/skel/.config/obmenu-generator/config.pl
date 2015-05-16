@@ -82,8 +82,8 @@ our $CONFIG = {
                              icon_dirs_second        => undef,
                              keep_unknown_categories => 1,
                              skip_entry              => [
-                                {key => 'Name', re => qr/(?:about|compton|menu editor|default|session|desktop|panel|window manager|workspaces)/i},
-                                {key => 'Exec', re => qr/^xfce4.*settings/},
+                                {key => 'Name', re => qr/(?:about|compton|menu editor|default|session|desktop|window manager|workspaces)/i},
+                                {key => 'Exec', re => qr/xfce4.*settings|xfce4-panel|xfce4-session-*/},
                             ],
                              skip_filename_re        => undef,
                              skip_svg_icons          => 1,

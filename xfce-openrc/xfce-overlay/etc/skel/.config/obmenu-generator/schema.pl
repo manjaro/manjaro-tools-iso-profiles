@@ -68,9 +68,10 @@ our $SCHEMA = [
 
     ## Custom advanced settings
     {sep => undef},
-    {begin_cat => ['Advanced Settings', 'gnome-settings']},
+    {begin_cat => ['Configure', 'gnome-settings']},
 
         # Configuration files
+        {item      => ["nitrogen /usr/share/backgrounds", 'Change Desktop', nitorgen]},
         {item      => ["$editor ~/.conkyrc",              'Conky RC',    $editor]},
         {item      => ["$editor ~/.config/tint2/tint2rc", 'Tint2 Panel', $editor]},
 
@@ -98,11 +99,11 @@ our $SCHEMA = [
         {end_cat => undef},
 
         # Pacman category
-        {begin_cat => ['Pacman / Servers', 'package-manager-icon']},
-            {item      => ["gksu $editor /etc/makepkg.conf",        'Makepkg Config',    'start-here']},
-            {item      => ["gksu $editor /etc/pacman.conf",         'Pacman Config',     'start-here']},
-            {item      => ["gksu $editor /etc/pacman.d/mirrorlist", 'Pacman Mirrorlist', 'start-here']},
-        {end_cat => undef},
+        #{begin_cat => ['Pacman / Servers', 'package-manager-icon']},
+        #    {item      => ["gksu $editor /etc/makepkg.conf",        'Makepkg Config',    'start-here']},
+        #    {item      => ["gksu $editor /etc/pacman.conf",         'Pacman Config',     'start-here']},
+        #    {item      => ["gksu $editor /etc/pacman.d/mirrorlist", 'Pacman Mirrorlist', 'start-here']},
+        #{end_cat => undef},
     {end_cat => undef},
     {sep => undef},
 
