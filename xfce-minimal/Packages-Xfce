@@ -31,7 +31,9 @@ manjaro-alsa
 manjaro-pulse
 pavucontrol
 pa-applet
+pulseaudio-bluetooth
 pulseaudio-ctl
+pulseaudio-zeroconf
 
 ## Applications
 accountsservice
@@ -57,7 +59,7 @@ netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
->i686 blueman
+blueman
 
 ## Xorg Packages
 inxi

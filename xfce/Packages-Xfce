@@ -152,7 +152,9 @@ manjaro-alsa
 manjaro-pulse
 pavucontrol
 pa-applet
+pulseaudio-bluetooth
 pulseaudio-ctl
+pulseaudio-zeroconf
 
 ## Package management
 pamac

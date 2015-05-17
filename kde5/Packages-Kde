@@ -53,7 +53,9 @@ manjaro-pulse
 phonon-qt5-gstreamer
 phonon-qt4-gstreamer
 python-pyqt4  # For pulseaudio gui
+pulseaudio-bluetooth
 pulseaudio-ctl
+pulseaudio-zeroconf
 qt-gstreamer
 
 ## Connect Packages
