@@ -39,7 +39,9 @@ tmpwatch		# cleaning /tmp
 ps_mem			# memory usage
 
 ## Audio Packages
-manjaro-alsa
+#manjaro-alsa
+alsa-utils
+alsa-firmware
 
 ## Network
 openresolv-openrc
