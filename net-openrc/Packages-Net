@@ -52,9 +52,9 @@ openresolv-openrc
 gtk2
 
 ## Packages for Sound and Audio
-#manjaro-alsa
 alsa-utils
 alsa-firmware
+alsa-plugins
 
 ## Artwork
 manjaro-artwork
