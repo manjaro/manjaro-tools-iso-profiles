@@ -43,9 +43,7 @@ openssh-openrc
 ntp-openrc
 
 ## Network
-#netctl	# systemd only
 networkmanager-openrc
-networkmanager-dispatcher-ntpd
 openresolv-openrc
 
 ## Base Packages

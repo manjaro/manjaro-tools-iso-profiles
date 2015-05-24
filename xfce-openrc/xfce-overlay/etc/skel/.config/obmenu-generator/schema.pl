@@ -82,7 +82,7 @@ our $SCHEMA = [
             {item      => ["$editor ~/.config/openbox/rc.xml",    'Openbox RC',           'text-editor']},
             {item      => ["$editor ~/.config/openbox/menu.xml",  'Openbox Menu',         'text-editor']},
             {sep  => undef},
-            {item      => ['obmenu',  'Obmenu',         'obmenu']},
+            {item      => ['obmenu',  'Obmenu',         'menulibre']},
         {end_cat => undef},
 
         # obmenu-generator category
