@@ -75,21 +75,6 @@ our $SCHEMA = [
         {item      => ["$editor ~/.conkyrc",              'Conky RC',    'text-editor']},
         {item      => ["$editor ~/.config/tint2/tint2rc", 'Tint2 Panel', 'text-editor']},
 
-        # obmenu-generator category
-        {begin_cat => ['Obmenu-Generator', 'menu-editor']},
-            {item      => ["$editor ~/.config/obmenu-generator/schema.pl", 'Menu Schema', 'text-editor']},
-            {item      => ["$editor ~/.config/obmenu-generator/config.pl", 'Menu Config', 'text-editor']},
-
-            {sep  => undef},
-            {item => ['obmenu-generator -p',    'Generate a pipe menu',              'menu-editor']},
-            {item => ['obmenu-generator -s',    'Generate a static menu',            'menu-editor']},
-            {item => ['obmenu-generator -p -i', 'Generate a pipe menu with icons',   'menu-editor']},
-            {item => ['obmenu-generator -s -i', 'Generate a static menu with icons', 'menu-editor']},
-            {sep  => undef},
-
-            {item    => ['obmenu-generator -d', 'Refresh Icon Set', 'gtk-refresh']},
-        {end_cat => undef},
-
         # Openbox category
         {begin_cat => ['Openbox', 'openbox']},
             {item      => ['openbox --reconfigure',               'Reconfigure Openbox', 'openbox']},
@@ -98,6 +83,21 @@ our $SCHEMA = [
             {item      => ["$editor ~/.config/openbox/menu.xml",  'Openbox Menu',         'text-editor']},
             {sep  => undef},
             {item      => ['obmenu',  'Obmenu',         'obmenu']},
+        {end_cat => undef},
+
+        # obmenu-generator category
+        {begin_cat => ['Obmenu-Generator', 'menulibre']},
+            {item      => ["$editor ~/.config/obmenu-generator/schema.pl", 'Menu Schema', 'text-editor']},
+            {item      => ["$editor ~/.config/obmenu-generator/config.pl", 'Menu Config', 'text-editor']},
+
+            {sep  => undef},
+            {item => ['obmenu-generator -p',    'Generate a pipe menu',              'menulibre']},
+            {item => ['obmenu-generator -s',    'Generate a static menu',            'menulibre']},
+            {item => ['obmenu-generator -p -i', 'Generate a pipe menu with icons',   'menulibre']},
+            {item => ['obmenu-generator -s -i', 'Generate a static menu with icons', 'menulibre']},
+            {sep  => undef},
+
+            {item    => ['obmenu-generator -d', 'Refresh Icon Set', 'gtk-refresh']},
         {end_cat => undef},
 
         # Pacman category

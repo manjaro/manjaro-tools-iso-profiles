@@ -343,6 +343,34 @@
 					<execute>mousepad ~/.config/tint2/tint2rc</execute>
 				</action>
 			</item>
+			<menu id="Openbox" label="Openbox">
+				<item label="Reconfigure Openbox">
+					<action name="Execute">
+						<execute>openbox --reconfigure</execute>
+					</action>
+				</item>
+				<item label="Openbox Autostart">
+					<action name="Execute">
+						<execute>mousepad ~/.config/openbox/autostart</execute>
+					</action>
+				</item>
+				<item label="Openbox RC">
+					<action name="Execute">
+						<execute>mousepad ~/.config/openbox/rc.xml</execute>
+					</action>
+				</item>
+				<item label="Openbox Menu">
+					<action name="Execute">
+						<execute>mousepad ~/.config/openbox/menu.xml</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="Obmenu">
+					<action name="Execute">
+						<execute>obmenu</execute>
+					</action>
+				</item>
+			</menu>
 			<menu id="Obmenu-Generator" label="Obmenu-Generator">
 				<item label="Menu Schema">
 					<action name="Execute">
@@ -379,34 +407,6 @@
 				<item label="Refresh Icon Set">
 					<action name="Execute">
 						<execute>obmenu-generator -d</execute>
-					</action>
-				</item>
-			</menu>
-			<menu id="Openbox" label="Openbox">
-				<item label="Reconfigure Openbox">
-					<action name="Execute">
-						<execute>openbox --reconfigure</execute>
-					</action>
-				</item>
-				<item label="Openbox Autostart">
-					<action name="Execute">
-						<execute>mousepad ~/.config/openbox/autostart</execute>
-					</action>
-				</item>
-				<item label="Openbox RC">
-					<action name="Execute">
-						<execute>mousepad ~/.config/openbox/rc.xml</execute>
-					</action>
-				</item>
-				<item label="Openbox Menu">
-					<action name="Execute">
-						<execute>mousepad ~/.config/openbox/menu.xml</execute>
-					</action>
-				</item>
-				<separator/>
-				<item label="Obmenu">
-					<action name="Execute">
-						<execute>obmenu</execute>
 					</action>
 				</item>
 			</menu>
