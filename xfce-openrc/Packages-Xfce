@@ -63,6 +63,7 @@ conky
 lxappearance
 volumeicon-gtk2
 orage			# for calender
+obmenu-generator
 
 ## Xfce
 xfce4-panel
