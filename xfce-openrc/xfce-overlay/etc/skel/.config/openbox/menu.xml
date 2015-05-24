@@ -1,26 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openbox_menu>
-	<menu id="root-menu" label="Openbox">
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/">
+	<menu id="root-menu" label="Applications">
 		<item label="Terminal">
 			<action name="Execute">
-				<command>xfce4-terminal</command>
+				<execute>xfce4-terminal</execute>
 			</action>
 		</item>
 		<item label="File Manager">
 			<action name="Execute">
-				<command>thunar</command>
+				<execute>thunar</execute>
 			</action>
 		</item>
 		<item label="Web Browser">
 			<action name="Execute">
-				<command>firefox</command>
+				<execute>firefox</execute>
 			</action>
 		</item>
 		<separator/>
-		<menu id="3" label="Accessories">
+		<menu id="Accessories" label="Accessories">
 			<item label="Application Finder">
 				<action name="Execute">
 					<execute>xfce4-appfinder</execute>
+				</action>
+			</item>
+			<item label="Bulk Rename">
+				<action name="Execute">
+					<execute>/usr/lib/Thunar/ThunarBulkRename</execute>
+				</action>
+			</item>
+			<item label="Catfish File Search">
+				<action name="Execute">
+					<execute>catfish</execute>
+				</action>
+			</item>
+			<item label="ClipIt">
+				<action name="Execute">
+					<execute>clipit</execute>
+				</action>
+			</item>
+			<item label="Clipman">
+				<action name="Execute">
+					<execute>xfce4-clipman</execute>
+				</action>
+			</item>
+			<item label="File Manager">
+				<action name="Execute">
+					<execute>exo-open --launch FileManager</execute>
 				</action>
 			</item>
 			<item label="Galculator">
@@ -28,9 +53,24 @@
 					<execute>galculator</execute>
 				</action>
 			</item>
-			<item label="Orage Calender">
+			<item label="Mousepad">
 				<action name="Execute">
-					<execute>orage</execute>
+					<execute>mousepad</execute>
+				</action>
+			</item>
+			<item label="Orage Globaltime">
+				<action name="Execute">
+					<execute>globaltime</execute>
+				</action>
+			</item>
+			<item label="Root Terminal">
+				<action name="Execute">
+					<execute>gksu -l gnome-terminal</execute>
+				</action>
+			</item>
+			<item label="Run Program...">
+				<action name="Execute">
+					<execute>xfce4-appfinder --collapsed</execute>
 				</action>
 			</item>
 			<item label="Screenshot">
@@ -38,20 +78,33 @@
 					<execute>xfce4-screenshooter</execute>
 				</action>
 			</item>
+			<item label="Task Manager">
+				<action name="Execute">
+					<execute>xfce4-taskmanager</execute>
+				</action>
+			</item>
+			<item label="Terminal Emulator">
+				<action name="Execute">
+					<execute>exo-open --launch TerminalEmulator</execute>
+				</action>
+			</item>
+			<item label="Thunar File Manager">
+				<action name="Execute">
+					<execute>thunar</execute>
+				</action>
+			</item>
 			<item label="Xarchiver">
 				<action name="Execute">
 					<execute>xarchiver</execute>
 				</action>
 			</item>
-		</menu>
-		<menu id="5" label="Editors">
-			<item label="Mousepad">
+			<item label="Xfburn">
 				<action name="Execute">
-					<execute>mousepad</execute>
+					<execute>xfburn</execute>
 				</action>
 			</item>
 		</menu>
-		<menu id="6" label="Graphics">
+		<menu id="Graphics" label="Graphics">
 			<item label="Gcolor2">
 				<action name="Execute">
 					<execute>gcolor2</execute>
@@ -63,7 +116,7 @@
 				</action>
 			</item>
 		</menu>
-		<menu id="7" label="Multimedia">
+		<menu id="Multimedia" label="Multimedia">
 			<item label="Audio Mixer">
 				<action name="Execute">
 					<execute>xfce4-mixer</execute>
@@ -74,78 +127,80 @@
 					<execute>parole</execute>
 				</action>
 			</item>
-		</menu>
-		<menu id="8" label="Network">
-			<item label="IRC Client">
+			<item label="Qt V4L2 test Utility">
 				<action name="Execute">
-					<execute>hexchat</execute>
+					<execute>qv4l2</execute>
 				</action>
 			</item>
-			<item label="Web Browser">
+			<item label="Xfburn">
+				<action name="Execute">
+					<execute>xfburn</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="Network" label="Network">
+			<item label="Avahi SSH Server Browser">
+				<action name="Execute">
+					<execute>/usr/bin/bssh</execute>
+				</action>
+			</item>
+			<item label="Avahi VNC Server Browser">
+				<action name="Execute">
+					<execute>/usr/bin/bvnc</execute>
+				</action>
+			</item>
+			<item label="Firefox">
 				<action name="Execute">
 					<execute>firefox</execute>
 				</action>
 			</item>
-		</menu>
-		<menu id="9" label="Office">
-			<item label="Qpdfview">
+			<item label="HexChat">
 				<action name="Execute">
-					<execute>qpdfview</execute>
+					<execute>hexchat</execute>
+				</action>
+			</item>
+			<item label="Mail Reader">
+				<action name="Execute">
+					<execute>exo-open --launch MailReader</execute>
+				</action>
+			</item>
+			<item label="Web Browser">
+				<action name="Execute">
+					<execute>exo-open --launch WebBrowser</execute>
+				</action>
+			</item>
+			<item label="Wicd">
+				<action name="Execute">
+					<execute>/usr/bin/wicd-client</execute>
 				</action>
 			</item>
 		</menu>
-		<menu id="37" label="System">
-			<item label="GParted">
+		<menu id="Office" label="Office">
+			<item label="Orage Calendar">
 				<action name="Execute">
-					<execute>gparted_polkit</execute>
+					<execute>orage</execute>
 				</action>
 			</item>
-			<item label="Htop">
+			<item label="Orage Globaltime">
 				<action name="Execute">
-					<execute>xfce4-terminal -e htop</execute>
+					<execute>globaltime</execute>
 				</action>
 			</item>
-			<item label="Octopi">
+			<item label="qpdfview">
 				<action name="Execute">
-					<execute>octopi</execute>
-				</action>
-			</item>
-			<item label="Manage Printing">
-				<action name="Execute">
-					<execute>xdg-open http://localhost:631/</execute>
-				</action>
-			</item>
-			<item label="Power Manager Settings">
-				<action name="Execute">
-					<execute>xfce4-power-manager-settings</execute>
-				</action>
-			</item>
-			<item label="Time Settings">
-				<action name="Execute">
-					<execute>gksudo timeset-gui</execute>
+					<execute>qpdfview --unique</execute>
 				</action>
 			</item>
 		</menu>
-		<menu id="38" label="Utilities">
-			<item label="Terminal">
+		<menu id="Settings" label="Settings">
+			<item label="Bluetooth Adapters">
 				<action name="Execute">
-					<execute>xfce4-terminal</execute>
+					<execute>blueman-adapters</execute>
 				</action>
 			</item>
-			<item label="File Manager">
+			<item label="Bluetooth Manager">
 				<action name="Execute">
-					<command>thunar</command>
-					<startupnotify>
-						<enabled>yes</enabled>
-					</startupnotify>
-				</action>
-			</item>
-		</menu>
-		<separator/>
-		<menu id="36" label="Settings">
-			<item label="Change Desktop">
-				<action name="Execute">
-					<execute>nitrogen /usr/share/backgrounds</execute>
+					<execute>blueman-manager</execute>
 				</action>
 			</item>
 			<item label="Customize Look and Feel">
@@ -153,26 +208,24 @@
 					<execute>lxappearance</execute>
 				</action>
 			</item>
-			<item label="Display Settings">
+			<item label="File Manager">
 				<action name="Execute">
-					<execute>lxrandr</execute>
+					<execute>thunar-settings</execute>
 				</action>
 			</item>
 			<item label="Manjaro Settings Manager">
 				<action name="Execute">
-					<execute>gksudo manjaro-settings-manager-gui</execute>
+					<execute>manjaro-settings-manager -style=gtk</execute>
 				</action>
 			</item>
-			<item label="Panel Tint2">
+			<item label="Monitor Settings">
 				<action name="Execute">
-					<execute>tint2conf</execute>
+					<execute>lxrandr</execute>
 				</action>
 			</item>
-		</menu>
-		<menu id="40" label="OpenBox">
-			<item label="Edit Autostart">
+			<item label="Notifications">
 				<action name="Execute">
-					<execute>mousepad ~/.config/openbox/autostart</execute>
+					<execute>xfce4-notifyd-config</execute>
 				</action>
 			</item>
 			<item label="Openbox Configuration Manager">
@@ -180,30 +233,193 @@
 					<execute>obconf</execute>
 				</action>
 			</item>
-			<item label="Openbox Key Editor">
+			<item label="Orage preferences">
 				<action name="Execute">
-					<execute>obkey</execute>
+					<execute>orage -p</execute>
 				</action>
 			</item>
-			<item label="Openbox Menu Editor">
+			<item label="Panel tint2">
 				<action name="Execute">
-					<execute>obmenu</execute>
+					<execute>tint2conf</execute>
 				</action>
 			</item>
-			<separator/>
-			<item label="Reconfigure">
-				<action name="Reconfigure"/>
+			<item label="Preferred Applications">
+				<action name="Execute">
+					<execute>exo-preferred-applications</execute>
+				</action>
+			</item>
+			<item label="Privilege granting">
+				<action name="Execute">
+					<execute>gksu-properties</execute>
+				</action>
+			</item>
+			<item label="Removable Drives and Media">
+				<action name="Execute">
+					<execute>thunar-volman-settings</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="System" label="System">
+			<item label="Avahi Zeroconf Browser">
+				<action name="Execute">
+					<execute>/usr/bin/avahi-discover</execute>
+				</action>
+			</item>
+			<item label="Bulk Rename">
+				<action name="Execute">
+					<execute>/usr/lib/Thunar/ThunarBulkRename</execute>
+				</action>
+			</item>
+			<item label="GParted">
+				<action name="Execute">
+					<execute>/usr/bin/gparted_polkit</execute>
+				</action>
+			</item>
+			<item label="Htop">
+				<action name="Execute">
+					<execute>xterm -e 'htop'</execute>
+				</action>
+			</item>
+			<item label="Manage Printing">
+				<action name="Execute">
+					<execute>/usr/bin/xdg-open http://localhost:631/</execute>
+				</action>
+			</item>
+			<item label="Octopi CacheCleaner">
+				<action name="Execute">
+					<execute>octopi-cachecleaner</execute>
+				</action>
+			</item>
+			<item label="Octopi">
+				<action name="Execute">
+					<execute>octopi</execute>
+				</action>
+			</item>
+			<item label="Task Manager">
+				<action name="Execute">
+					<execute>xfce4-taskmanager</execute>
+				</action>
+			</item>
+			<item label="Thunar File Manager">
+				<action name="Execute">
+					<execute>thunar</execute>
+				</action>
+			</item>
+			<item label="Time Settings">
+				<action name="Execute">
+					<execute>gksudo timeset-gui</execute>
+				</action>
+			</item>
+			<item label="UXTerm">
+				<action name="Execute">
+					<execute>uxterm</execute>
+				</action>
+			</item>
+			<item label="Xfce Terminal">
+				<action name="Execute">
+					<execute>xfce4-terminal</execute>
+				</action>
+			</item>
+			<item label="XTerm">
+				<action name="Execute">
+					<execute>xterm</execute>
+				</action>
 			</item>
 		</menu>
 		<separator/>
-		<item label="Lock Screen">
+		<menu id="Configure" label="Configure">
+			<item label="Change Desktop">
+				<action name="Execute">
+					<execute>nitrogen /usr/share/backgrounds</execute>
+				</action>
+			</item>
+			<item label="Conky RC">
+				<action name="Execute">
+					<execute>mousepad ~/.conkyrc</execute>
+				</action>
+			</item>
+			<item label="Tint2 Panel">
+				<action name="Execute">
+					<execute>mousepad ~/.config/tint2/tint2rc</execute>
+				</action>
+			</item>
+			<menu id="Obmenu-Generator" label="Obmenu-Generator">
+				<item label="Menu Schema">
+					<action name="Execute">
+						<execute>mousepad ~/.config/obmenu-generator/schema.pl</execute>
+					</action>
+				</item>
+				<item label="Menu Config">
+					<action name="Execute">
+						<execute>mousepad ~/.config/obmenu-generator/config.pl</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="Generate a pipe menu">
+					<action name="Execute">
+						<execute>obmenu-generator -p</execute>
+					</action>
+				</item>
+				<item label="Generate a static menu">
+					<action name="Execute">
+						<execute>obmenu-generator -s</execute>
+					</action>
+				</item>
+				<item label="Generate a pipe menu with icons">
+					<action name="Execute">
+						<execute>obmenu-generator -p -i</execute>
+					</action>
+				</item>
+				<item label="Generate a static menu with icons">
+					<action name="Execute">
+						<execute>obmenu-generator -s -i</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="Refresh Icon Set">
+					<action name="Execute">
+						<execute>obmenu-generator -d</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="Openbox" label="Openbox">
+				<item label="Reconfigure Openbox">
+					<action name="Execute">
+						<execute>openbox --reconfigure</execute>
+					</action>
+				</item>
+				<item label="Openbox Autostart">
+					<action name="Execute">
+						<execute>mousepad ~/.config/openbox/autostart</execute>
+					</action>
+				</item>
+				<item label="Openbox RC">
+					<action name="Execute">
+						<execute>mousepad ~/.config/openbox/rc.xml</execute>
+					</action>
+				</item>
+				<item label="Openbox Menu">
+					<action name="Execute">
+						<execute>mousepad ~/.config/openbox/menu.xml</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="Obmenu">
+					<action name="Execute">
+						<execute>obmenu</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<separator/>
+		<item label="Lock">
 			<action name="Execute">
 				<execute>light-locker-command -l</execute>
 			</action>
 		</item>
-		<item label="Logout">
+		<item label="Exit">
 			<action name="Execute">
-				<command>cb-exit</command>
+				<execute>cb-exit</execute>
 			</action>
 		</item>
 	</menu>

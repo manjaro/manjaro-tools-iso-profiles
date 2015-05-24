@@ -71,14 +71,14 @@ our $SCHEMA = [
     {begin_cat => ['Configure', 'gnome-settings']},
 
         # Configuration files
-        {item      => ["nitrogen /usr/share/backgrounds", 'Change Desktop', nitorgen]},
-        {item      => ["$editor ~/.conkyrc",              'Conky RC',    $editor]},
-        {item      => ["$editor ~/.config/tint2/tint2rc", 'Tint2 Panel', $editor]},
+        {item      => ["nitrogen /usr/share/backgrounds", 'Change Desktop', 'nitrogen']},
+        {item      => ["$editor ~/.conkyrc",              'Conky RC',    'text-editor']},
+        {item      => ["$editor ~/.config/tint2/tint2rc", 'Tint2 Panel', 'text-editor']},
 
         # obmenu-generator category
         {begin_cat => ['Obmenu-Generator', 'menu-editor']},
-            {item      => ["$editor ~/.config/obmenu-generator/schema.pl", 'Menu Schema', $editor]},
-            {item      => ["$editor ~/.config/obmenu-generator/config.pl", 'Menu Config', $editor]},
+            {item      => ["$editor ~/.config/obmenu-generator/schema.pl", 'Menu Schema', 'text-editor']},
+            {item      => ["$editor ~/.config/obmenu-generator/config.pl", 'Menu Config', 'text-editor']},
 
             {sep  => undef},
             {item => ['obmenu-generator -p',    'Generate a pipe menu',              'menu-editor']},
@@ -93,9 +93,11 @@ our $SCHEMA = [
         # Openbox category
         {begin_cat => ['Openbox', 'openbox']},
             {item      => ['openbox --reconfigure',               'Reconfigure Openbox', 'openbox']},
-            {item      => ["$editor ~/.config/openbox/autostart", 'Openbox Autostart',    $editor]},
-            {item      => ["$editor ~/.config/openbox/rc.xml",    'Openbox RC',           $editor]},
-            {item      => ["$editor ~/.config/openbox/menu.xml",  'Openbox Menu',         $editor]},
+            {item      => ["$editor ~/.config/openbox/autostart", 'Openbox Autostart',    'text-editor']},
+            {item      => ["$editor ~/.config/openbox/rc.xml",    'Openbox RC',           'text-editor']},
+            {item      => ["$editor ~/.config/openbox/menu.xml",  'Openbox Menu',         'text-editor']},
+            {sep  => undef},
+            {item      => ['obmenu',  'Obmenu',         'obmenu']},
         {end_cat => undef},
 
         # Pacman category
@@ -107,9 +109,12 @@ our $SCHEMA = [
     {end_cat => undef},
     {sep => undef},
 
-    ## The xscreensaver lock command
+    ## The lock command
     {item => ['light-locker-command -l', 'Lock', 'lock']},
 
     # This options uses the default Openbox's action "Exit"
-    {item => ['cb-exit', 'Exit', 'lock']},
+    #{exit => ['Exit', 'exit']},
+
+    ## The exit command
+    {item => ['cb-exit', 'Exit', 'exit']},
 ]

@@ -53,7 +53,7 @@ blueman
 openbox
 obconf
 obmenu
-obkey
+obmenu-generator
 tint2
 lxrandr
 compton
