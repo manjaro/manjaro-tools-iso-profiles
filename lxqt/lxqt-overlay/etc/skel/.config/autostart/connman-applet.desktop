@@ -1,7 +1,6 @@
 [Desktop Entry]
-Exec=cmst
-Name=cmst
+Exec=/usr/bin/lxqt-connman-applet
+Name=connman-applet
 Type=Application
 Version=1.0
-Icon=cmst
 X-LXQt-Need-Tray=true

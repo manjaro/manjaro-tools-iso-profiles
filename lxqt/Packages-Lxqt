@@ -42,7 +42,8 @@ gtk2
 #netctl
 openresolv
 connman
-cmst
+#cmst
+lxqt-connman-applet
 # =============================================================================
 
 
@@ -123,7 +124,7 @@ obconf				# openbox appearance settings - needed for window title and border con
 
 #menda-themes-dark 		# new manjaro GTK2 theme
 #vertex-themes
-vertex-dark-lxqt                # light and green version of vertex-themes
+#vertex-dark-lxqt                # light and green version of vertex-themes
 #menda-circle-icon-theme 	# new manjaro icon theme - much lighter
 #azenis-green-icon-theme
 compass-icon-theme
@@ -148,6 +149,7 @@ fontconfig-infinality-ultimate
 >x86_64 bomi                    # multimedia player cmplayer-like
 claws-mail                      # E-mail client
 lxtask                          # task manager
+mhwd-chroot
 mpv				# replace mplayer/mplayer2
 qpdfview			# pdf reader
 vi				# CLI text editor
@@ -178,6 +180,7 @@ qtfind				# add a file search to pcmanfm-qt (qt5)
 redshift                        # adjusts the color temperature
 rfkill
 #xscreensaver			# screensaver and power managment
+xsensors                        # gui for lm_sensors
 
 
 
