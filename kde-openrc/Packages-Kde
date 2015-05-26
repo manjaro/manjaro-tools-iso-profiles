@@ -1,6 +1,7 @@
-# xorg
+## Xorg and Other Packages
 xf86-input-acecad
 xf86-input-aiptek
+xf86-input-elographics
 xf86-input-evdev
 xf86-input-joystick
 xf86-input-keyboard
@@ -25,20 +26,44 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 
-# plasma5
-plasma
+## Plasma5
+bluedevil
+breeze
+drkonqi
+kde-gtk-config
+kdeplasma-addons
+khelpcenter
+kinfocenter
+kio-extras
+kmenuedit
+kscreen
+ksshaskpass
+ksysguard
+kwin
+kwrited
+milou
+oxygen
+oxygen-cursors
+plasma-desktop
+plasma-nm
+plasma-workspace
+plasma-workspace-wallpapers
+powerdevil
+systemsettings
+
+## Aplications
 konsole
 kate
 kdebase-dolphin
 kdegraphics-okular
 kdebase-konqueror
-partitionmanager
+kmix
 kwrite
 octopi
 octopi-notifier-frameworks
 octopi-cachecleaner
 octopi-repoeditor
-print-manager
+partitionmanager
 manjaro-settings-manager
 manjaro-welcome
 phonon-qt5-vlc

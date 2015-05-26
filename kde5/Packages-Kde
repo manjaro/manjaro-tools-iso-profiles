@@ -127,7 +127,7 @@ splix
 sddm
 sddm-kcm
 
-## Plasma5 
+## Plasma5
 bluedevil
 breeze
 drkonqi
@@ -151,8 +151,6 @@ plasma-workspace
 plasma-workspace-wallpapers
 powerdevil
 systemsettings
-baloo-frameworks  # optional for plasma-desktop
-polkit-kde
 
 ## Themes
 plasma5-themes-maia
