@@ -18,13 +18,9 @@ xorg-xinit
 xdg-user-dirs
 xdg-utils
 
-# Fonts
-terminus-font
-ttf-bitstream-vera
-ttf-dejavu
-ttf-inconsolata
-ttf-indic-otf
-ttf-liberation
+## Display Manager
+sddm
+sddm-kcm
 
 ## Plasma5
 bluedevil
@@ -47,7 +43,6 @@ oxygen-cursors
 plasma-desktop
 plasma-nm
 plasma-workspace
-plasma-workspace-wallpapers
 powerdevil
 systemsettings
 
@@ -55,25 +50,22 @@ systemsettings
 phonon-qt5-vlc
 konsole
 kate
-kdebase-dolphin
-kdegraphics-okular
-kdebase-konqueror
+pcmanfm-qt
+qpdfview
+qupzilla
 kmix
 kwrite
 octopi
-octopi-notifier-frameworks
-octopi-cachecleaner
-octopi-repoeditor
 partitionmanager
 manjaro-settings-manager
 manjaro-welcome
 manjaro-alsa
 
-# artwork
+## Themes
+plasma5-themes-maia
+sddm-maia-theme
 plymouth-theme-manjaro-elegant
-menda-themes
-menda-themes-dark
-menda-square-icon-theme
-xcursor-menda
-sddm-menda-theme
+ttf-oxygen
 
+## GTK Themes
+gnome-themes-standard # Adwaita theme
