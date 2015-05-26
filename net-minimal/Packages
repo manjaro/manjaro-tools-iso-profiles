@@ -112,12 +112,12 @@ nfs-utils
 ntfs-3g
 
 ## Fonts
-# terminus-font
-# ttf-bitstream-vera
-# ttf-dejavu
-# ttf-inconsolata
-# ttf-indic-otf
-# ttf-liberation
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
 
 ## Network
 b43-fwcutter
