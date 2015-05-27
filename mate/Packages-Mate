@@ -40,6 +40,7 @@ mate
 mate-extra
 
 ## Network
+blueman
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
@@ -75,7 +76,6 @@ brasero
 flashplugin
 firefox
 gksu
-blueman
 gparted
 gnome-vfs
 hexchat
