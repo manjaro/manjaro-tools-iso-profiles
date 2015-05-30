@@ -2,6 +2,6 @@ manjaro-livecd-openrc
 manjaro-livecd-cli-installer
 
 #calamares			# new GUI installer of manjaro - test for manjaro 0.9
-#thus
+thus
 #gparted
-thus-dev
+#thus-dev
