@@ -1,6 +1,7 @@
-# xorg
+## Xorg and Other Packages
 xf86-input-acecad
 xf86-input-aiptek
+xf86-input-elographics
 xf86-input-evdev
 xf86-input-joystick
 xf86-input-keyboard
@@ -17,38 +18,53 @@ xorg-xinit
 xdg-user-dirs
 xdg-utils
 
-# Fonts
-terminus-font
-ttf-bitstream-vera
-ttf-dejavu
-ttf-inconsolata
-ttf-indic-otf
-ttf-liberation
+## Display Manager
+sddm
+sddm-kcm
 
-# plasma5
-phonon-qt5-vlc
-plasma
+## Plasma5
+bluedevil
+breeze
+drkonqi
+kde-gtk-config
+kdeplasma-addons
+khelpcenter
+kinfocenter
+kio-extras
+kmenuedit
+kscreen
+ksshaskpass
+ksysguard
+kwin
+kwrited
+milou
+oxygen
+oxygen-cursors
+plasma-desktop
+plasma-nm
+plasma-workspace
+powerdevil
+systemsettings
+
+## Aplications
 konsole
 kate
-kdebase-dolphin
-kdegraphics-okular
-kdebase-konqueror
-partitionmanager
+pcmanfm-qt
+qpdfview
+qupzilla
+kmix
 kwrite
 octopi
-octopi-notifier-frameworks
-octopi-cachecleaner
-octopi-repoeditor
-print-manager
+partitionmanager
 manjaro-settings-manager
 manjaro-welcome
 manjaro-alsa
 
-# artwork
+## Themes
+plasma5-themes-maia
+sddm-maia-theme
 plymouth-theme-manjaro-elegant
-menda-themes
-menda-themes-dark
-menda-square-icon-theme
-xcursor-menda
-sddm-menda-theme
+ttf-oxygen
 
+## GTK Themes
+gnome-themes-standard # Adwaita theme

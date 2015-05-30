@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 gtk-theme-name="Menda"
-gtk-icon-theme-name="Menda-Square"
+gtk-icon-theme-name="Menda-Circle"
 gtk-font-name="DejaVu Sans 11"
 gtk-cursor-theme-name="Menda-Cursor"
 gtk-cursor-theme-size=0

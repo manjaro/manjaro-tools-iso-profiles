@@ -1,16 +1,16 @@
 ### Manjaro Packages
 
-## Xorg
-mhwd
-
-## Xorg Packages
-inxi
+## Xorg and Other Packages
 libdnet
+>x86_64 lib32-libxft
 mesa-demos
 >x86_64 lib32-mesa-demos
 uriparser
+virtualgl
+>x86_64 lib32-virtualgl
 xf86-input-acecad
 xf86-input-aiptek
+xf86-input-elographics
 xf86-input-evdev
 xf86-input-joystick
 xf86-input-keyboard
@@ -26,23 +26,21 @@ xorg-utils
 xorg-xinit
 
 ## Artwork
-#nitrux-icon-theme
-manjaro-artwork
 xcursor-menda
 menda-themes
 menda-themes-dark
 menda-circle-icon-theme
-menda-square-icon-theme
 libgnomeui
 gconf
 gnome-themes-standard
+plymouth-theme-manjaro-elegant
 
 ## MATE Main Packages
 mate     
 mate-extra
-mintmenu
 
 ## Network
+blueman
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
@@ -53,47 +51,44 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 
-## Graphical Installer
-thus
-
-## Applications
-lightdm-gtk3-greeter
-lightdm-gtk-greeter-settings
-brasero
-flashplugin
-firefox
-gksu
-blueman
-gparted
-gnome-vfs
+## Connect Packages
+udiskie
+udisks
+udisks2
+mtpfs
 gvfs
 gvfs-afc
 gvfs-afp
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
-mtpfs
+open-fuse-iso
 android-tools
 android-udev
+
+## Display Manager
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+
+## Applications
+brasero
+flashplugin
+firefox
+gksu
+gparted
+gnome-vfs
 hexchat
 isousb
-libdvdcss
 gnome-keyring
 manjaro-settings-manager
 manjaro-welcome
-manjaro-documentation
-#mdm-themes
-thunderbird-firetray
 thunderbird
 deluge
 pygtk
 librsvg
 python2-mako
-udiskie
-udisks
-udisks2
 vlc
-npapi-vlc-git
 guayadeque
 poppler-glib
 gufw
@@ -102,20 +97,16 @@ catfish
 p7zip
 mlocate
 pidgin
-open-fuse-iso
 yelp
 libappindicator-gtk2
 libappindicator-gtk3
 
 ## Games
-steam
-steam-native
+steam-manjaro
 
 ## Java
-icedtea-web
 jdk8-openjdk
-jre8-openjdk
-jre8-openjdk-headless
+icedtea-web
 
 ## Packages for Sound and Audio
 gst-libav
@@ -127,46 +118,56 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
+libdvdcss
 manjaro-alsa
 manjaro-pulse
 pavucontrol
-#pa-applet
+pulseaudio-bluetooth
 pulseaudio-ctl
+pulseaudio-zeroconf
 python-pyqt4
 
 ## Package management
 pamac
 
 ## Fonts
-ttf-dejavu
 cantarell-fonts
 ttf-droid
-ttf-inconsolata
-ttf-liberation
 adobe-source-sans-pro-fonts
 
 ## Office
-#abiword
-#gnumeric
-#libreoffice-installer
 libreoffice-still
 
-## AUR Access
+## AUR Support/Development
+# Missing base-devel packages
 autoconf
 automake
 binutils
 bison
 fakeroot
 flex
->i686 gcc
 >x86_64 gcc-multilib
+>i686 gcc
 libtool
 m4
 make
 patch
-subversion
+>x86_64 lib32-flex
+# Extra packages for AUR support
+git
+patchutils
+svn
 yaourt
-base-devel
+openssh
+samba
 
 ## Printing
-manjaro-printer
+cups
+cups-pdf
+cups-pk-helper
+ghostscript
+gsfonts
+hplip
+python-gobject # optional for hplip
+python-pyqt4   # optional for hplip
+splix
