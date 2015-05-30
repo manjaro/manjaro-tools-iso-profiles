@@ -9,4 +9,3 @@ TryExec=compton
 Exec=compton
 NoDisplay=true
 # Icon=xcompmgr
-# Thanks to quequotion for providing this file!

@@ -1,7 +1,7 @@
 ## Xorg Packages
 inxi
 libdnet
-mesa-demos # used by inxi
+mesa-demos		# used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -12,6 +12,7 @@ xf86-input-mouse
 xf86-input-synaptics
 xf86-input-void
 xf86-input-wacom
+xf86-video-vesa
 xinetd
 xorg-server
 xorg-server-utils
@@ -34,18 +35,24 @@ ttf-droid
 ## Basic packages
 dconf
 desktop-file-utils
+tmpwatch		# cleaning /tmp
+ps_mem			# memory usage
+
+## Services
+openssh-openrc
+ntp-openrc
+
+## Network
+networkmanager-openrc
+openresolv-openrc
 
 ## Base Packages
 gtk2
 
 ## Packages for Sound and Audio
-manjaro-alsa
+alsa-utils
+alsa-firmware
+alsa-plugins
 
 ## Artwork
 manjaro-artwork
-
-## Network
-#netctl	# systemd only
-networkmanager-openrc
-networkmanager-dispatcher-ntpd
-openresolv-openrc

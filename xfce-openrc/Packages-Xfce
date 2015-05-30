@@ -35,11 +35,13 @@ ttf-droid		# default font
 dconf
 desktop-file-utils
 tlp-pmu
+tmpwatch		# cleaning /tmp
+ps_mem			# memory usage
 
 ## Audio Packages
-manjaro-alsa
-xfce4-mixer
-volumeicon-gtk2
+alsa-utils
+alsa-firmware
+alsa-plugins
 
 ## Network
 openresolv-openrc
@@ -51,14 +53,20 @@ blueman
 openbox
 obconf
 obmenu
-obkey
+obmenu-generator
 tint2
 lxrandr
 compton
+nitrogen
+clipit
+conky
+lxappearance
+volumeicon-gtk2
+orage			# for calender
 
 ## Xfce
 xfce4-panel
-xfce4-session-consolekit	# xfce4-session
+xfce4-session-consolekit # xfce4-session
 xfce4-terminal
 xfdesktop
 xfwm4
@@ -71,31 +79,26 @@ xfce4-power-manager-upower
 xfce4-whiskermenu-plugin
 xfce4-clipman-plugin
 xfce4-xkb-plugin
-mousepad
-ristretto
+xfce4-mixer
 
 ## Basic Apps
+lxsession		# contains lxpolit
 lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 light-locker-upower	# requires lightdm
 wicd-gtk
 python2-notify
 qpdfview
 xarchiver
-thunar
-firefox
-lxsession		# contains lxpolit
+thunar			# file manager
+firefox			# web browser
+mousepad		# text editor
+viewnior		# image viewer
 gparted
-dmenu
-conky
-lxappearance
 galculator
-nitrogen
-clipit
 
 ## More Apps
-gconf			# fix qt-theme
-gnome-keyring		# fix wlan segfault
+gconf			# qt-theme fix
+gnome-keyring		# wlan segfault fix
 gvfs			# to fix trash in thunar
 udisks2			# removable disk management
 manjaro-settings-manager
@@ -117,6 +120,14 @@ gst-libav		# for parole
 sakis3g			# usb mobile broadband
 zenity			# for sakis3g
 gcolor2
+gst-plugins-base	# useful with firefox, parole
+xfburn
+thunar-volman		# for usb auto-mounting
+
+## Services
+cups-openrc
+openssh-openrc
+ntp-openrc
 
 ## Artwork, icons
 manjaro-artwork
@@ -124,7 +135,7 @@ menda-themes
 elementary-icon-theme
 xcursor-vanilla-dmz-aa
 gnome-themes-standard	# general theme
-xfce-theme-greenbird	# system theme
+xfce-theme-greenbird
 
 ## AUR Access
 autoconf

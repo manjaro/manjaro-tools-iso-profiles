@@ -1,0 +1,39 @@
+Hi,
+
+Here you can find information about some basic OpenRC commands,
+and links for further exploration.
+
+Adding services to startup
+--------------------------
+$ sudo rc-update add <service>
+
+Removing services from startup
+------------------------------
+$ sudo rc-update del <service>
+
+Starting a service
+------------------
+$ sudo rc-service sshd start
+
+Stopping a service
+------------------
+$ sudo rc-service sshd stop
+
+Checking status of enabled services
+-----------------------------------
+$ rc-status
+
+Examples
+--------
+$ sudo rc-update add sshd
+$ sudo rc-update del sshd
+$ sudo rc-update sshd start
+$ sudo rc-update sshd stop
+
+Links
+~~~~~
+Wiki:  https://wiki.manjaro.org/index.php?title=Openrc
+
+Forum: https://forum.manjaro.org/index.php?board=50.0
+
+IRC:   #manjaro-openrc on Freenode

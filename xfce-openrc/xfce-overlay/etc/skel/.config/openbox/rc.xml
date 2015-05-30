@@ -1,7 +1,8 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
-    <screen_edge_strength>20</screen_edge_strength>
+    <screen_edge_strength>30</screen_edge_strength>
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
@@ -37,7 +38,7 @@
   </placement>
   <theme>
     <name>menda-openbox</name>
-    <titleLayout>NLIMC</titleLayout>
+    <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -51,8 +52,8 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Sans</name>
-      <size>8</size>
+      <name>Droid Sans</name>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -60,8 +61,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Sans</name>
-      <size>8</size>
+      <name>Droid Sans</name>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -245,6 +246,28 @@
     </keybind>
     <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows"/>
+    </keybind>
+    <keybind key="W-Left">
+        <action name="UnmaximizeFull"/>
+        <action name="MaximizeVert"/>
+        <action name="MoveResizeTo">
+            <width>50%</width>
+        </action>
+        <action name="MoveToEdge"><direction>west</direction></action>
+    </keybind>
+    <keybind key="W-Right">
+        <action name="UnmaximizeFull"/>
+        <action name="MaximizeVert"/>
+        <action name="MoveResizeTo">
+            <width>50%</width>
+        </action>
+        <action name="MoveToEdge"><direction>east</direction></action>
+    </keybind>
+    <keybind key="W-Down">
+        <action name="Unmaximize"/>
+    </keybind>
+    <keybind key="W-Up">
+        <action name="Maximize"/>
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
@@ -583,11 +606,13 @@
       <mousebind action="Click" button="Up">
         <action name="GoToDesktop">
           <to>previous</to>
+          <wrap>no</wrap>
         </action>
       </mousebind>
       <mousebind action="Click" button="Down">
         <action name="GoToDesktop">
           <to>next</to>
+          <wrap>no</wrap>
         </action>
       </mousebind>
       <mousebind action="Click" button="A-Up">

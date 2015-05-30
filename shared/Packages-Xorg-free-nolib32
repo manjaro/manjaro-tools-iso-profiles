@@ -33,7 +33,6 @@ xf86-video-intel
 bumblebee
 primus
 KERNEL-bbswitch
->x86_64 lib32-primus
 
 ## Network Support
 KERNEL-broadcom-wl
@@ -49,10 +48,6 @@ libxaw
 libxpm
 libxvmc
 pangox-compat
-
-## Xorg x86_64 Packages
->x86_64 lib32-libxvmc
->x86_64 lib32-mesa	# Optional dependency for mhwd
 
 ## VMWare Support
 open-vm-tools
