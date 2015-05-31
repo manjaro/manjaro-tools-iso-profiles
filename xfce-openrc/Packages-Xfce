@@ -132,7 +132,7 @@ ntp-openrc
 ## Artwork, icons
 manjaro-artwork
 menda-themes
-elementary-icon-theme
+maia-xfce-icon-theme
 xcursor-vanilla-dmz-aa
 gnome-themes-standard	# general theme
 xfce-theme-greenbird
