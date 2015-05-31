@@ -27,8 +27,8 @@ Examples
 --------
 $ sudo rc-update add sshd
 $ sudo rc-update del sshd
-$ sudo rc-update sshd start
-$ sudo rc-update sshd stop
+$ sudo rc-service sshd start
+$ sudo rc-service sshd stop
 
 Links
 ~~~~~
