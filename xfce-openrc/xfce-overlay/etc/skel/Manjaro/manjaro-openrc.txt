@@ -13,11 +13,11 @@ $ sudo rc-update del <service>
 
 Starting a service
 ------------------
-$ sudo rc-service sshd start
+$ sudo rc-service <service> start
 
 Stopping a service
 ------------------
-$ sudo rc-service sshd stop
+$ sudo rc-service <service> stop
 
 Checking status of enabled services
 -----------------------------------
