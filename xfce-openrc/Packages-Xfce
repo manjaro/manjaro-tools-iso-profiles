@@ -105,13 +105,14 @@ galculator
 
 ## More Apps
 gconf			# qt-theme fix
-gnome-keyring		# wlan segfault fix
+gnome-keyring		# wlan segfault fix, networkmanager
 gvfs			# to fix trash in thunar
 udisks2			# removable disk management
 manjaro-settings-manager
-octopi
-octopi-notifier-qt5
-octopi-cachecleaner
+#octopi
+#octopi-notifier-qt5
+#octopi-cachecleaner
+pamac
 gksu			# required for octopi
 thunar-archive-plugin
 htop
