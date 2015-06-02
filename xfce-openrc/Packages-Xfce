@@ -43,10 +43,19 @@ alsa-utils
 alsa-firmware
 alsa-plugins
 
-## Network
+## Network and bluetooth
 openresolv-openrc
-wicd-openrc
-bluez-openrc		# required for bluetooth
+#wicd-openrc
+#wicd-gtk
+#python2-notify		# for wicd-gtk notifications
+#sakis3g			# usb mobile broadband
+#zenity			# for sakis3g
+networkmanager-consolekit
+networkmanager-openrc
+network-manager-applet
+networkmanager-openvpn
+openvpn-openrc		# with networkmanager-openvpn
+bluez-openrc		# bluetooth
 blueman
 
 ## Openbox
@@ -85,8 +94,6 @@ xfce4-mixer
 lxsession		# contains lxpolit
 lightdm-gtk-greeter
 light-locker-upower	# requires lightdm
-wicd-gtk
-python2-notify
 qpdfview
 xarchiver
 thunar			# file manager
@@ -117,8 +124,6 @@ timeset-gui		# MSM time module does not work with OpenRC
 parole
 mpg123			# for parole
 gst-libav		# for parole
-sakis3g			# usb mobile broadband
-zenity			# for sakis3g
 gcolor2
 gst-plugins-base	# useful with firefox, parole
 xfburn

@@ -43,7 +43,10 @@ openssh-openrc
 ntp-openrc
 
 ## Network
+networkmanager-consolekit
 networkmanager-openrc
+networkmanager-openvpn
+openvpn-openrc		# with networkmanager-openvpn
 openresolv-openrc
 
 ## Base Packages

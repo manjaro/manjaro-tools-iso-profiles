@@ -169,11 +169,6 @@
 					<execute>exo-open --launch WebBrowser</execute>
 				</action>
 			</item>
-			<item label="Wicd">
-				<action name="Execute">
-					<execute>/usr/bin/wicd-client</execute>
-				</action>
-			</item>
 		</menu>
 		<menu id="Office" label="Office">
 			<item label="Orage Calendar">
@@ -221,6 +216,11 @@
 			<item label="Monitor Settings">
 				<action name="Execute">
 					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<item label="Network Connections">
+				<action name="Execute">
+					<execute>nm-connection-editor</execute>
 				</action>
 			</item>
 			<item label="Notifications">
