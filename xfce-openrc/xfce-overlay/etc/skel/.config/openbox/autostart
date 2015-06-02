@@ -13,5 +13,5 @@ tint2 &
 #(sleep 3s; xfce4-power-manager) &	# started automatically
 (sleep 4s; clipit) &
 (sleep 4s; volumeicon) &
-#(sleep 5s; octopi-notifier) &		# started automatically
+#(sleep 5s; pamac-tray) &		# started automatically
 #(sleep 5s; light-locker) &		# started automatically
