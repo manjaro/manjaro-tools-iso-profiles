@@ -296,15 +296,6 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-o">
-      <action name="Execute">
-        <command>octopi</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Octopi</name>
-        </startupnotify>
-      </action>
-    </keybind>
     <keybind key="W-a">
       <action name="Execute">
         <command>xfce4-appfinder --collapsed</command>
