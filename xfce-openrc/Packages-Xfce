@@ -91,7 +91,8 @@ xfce4-xkb-plugin
 xfce4-mixer
 
 ## Basic Apps
-lxsession		# contains lxpolit
+#lxsession		# contains lxpolit
+polkit-gnome
 lightdm-gtk-greeter
 light-locker-upower	# requires lightdm
 qpdfview
