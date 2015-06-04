@@ -41,6 +41,7 @@ pcmanfm
 pinta
 pkgcacheclean
 pnmixer
+polkit-gnome
 qt4
 qt5-base
 qtchooser
@@ -113,6 +114,7 @@ xorg-utils
 xorg-xinit
 
 ## Artwork
+adwaita-icon-theme
 manjaro-artwork
 menda-circle-icon-theme
 menda-themes
