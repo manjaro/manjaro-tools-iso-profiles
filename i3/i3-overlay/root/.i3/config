@@ -244,8 +244,8 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id octopi-notifier
 exec --no-startup-id clipit
 exec --no-startup-id compton -b
-exec --no-startup-id ~/.conky/start_conky
-
+exec --no-startup-id ~/.conky/start_conky_grey
+# exec --no-startup-id ~/.conky/start_conky_green
 
 # Theme colors
 client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
