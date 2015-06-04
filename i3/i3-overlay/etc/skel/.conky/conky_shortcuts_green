@@ -24,7 +24,7 @@ color2 224a22
 
 alignment bottom_left
 gap_x 30
-gap_y 50
+gap_y 45
 
 TEXT
 ${color2}open new terminal - ${color}mod+Enter
