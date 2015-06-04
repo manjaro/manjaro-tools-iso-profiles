@@ -1,0 +1,4 @@
+#!/bin/sh
+# /usr/local/bin/lightdm-gtk-greeter-settings-root
+
+gksu lightdm-gtk-greeter-settings

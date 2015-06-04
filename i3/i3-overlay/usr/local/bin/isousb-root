@@ -1,0 +1,4 @@
+#!/bin/sh
+# /usr/local/bin/isousb-root
+
+gksu isousb

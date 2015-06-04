@@ -1,0 +1,4 @@
+#!/bin/sh
+# /usr/local/bin/manjaro-settings-manager-root
+
+gksu manjaro-settings-manager

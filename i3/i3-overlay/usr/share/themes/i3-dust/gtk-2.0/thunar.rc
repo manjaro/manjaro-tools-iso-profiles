@@ -1,0 +1,52 @@
+# ========================
+# THUNAR SPECIFIC SETTINGS
+# ========================
+
+style "thunar-location" {
+	ThunarLocationButtons::spacing = 0
+}
+
+style "thunar-handle" {
+	GtkPaned::handle-size = 1
+	engine "pixmap" {
+		image { function = HANDLE file = "/widgets/Others/handle.png" stretch = TRUE border = { 0, 0, 0, 0 } }
+	}
+}
+
+style "thunar-statusbar" {
+	bg[NORMAL] = "#013030"
+	fg[NORMAL] = "#ffffff"
+	engine "murrine" {
+		gradient_shades		= {2.0,0.9,0.8,0.7}
+	}
+}
+
+style "thunar-sidepane" {
+	GtkTreeView::odd_row_color = "#9f9a86"
+	GtkTreeView::even_row_color = "#9f9a86"
+	bg[NORMAL]			= "#bfbaa6"
+	bg[PRELIGHT]		= shade (0.8, "#484a4c")
+	bg[ACTIVE]			= "#484a4c"
+	bg[SELECTED]		= "#013030"
+	bg[INSENSITIVE]		= shade (0.65, "#484a4c")
+	fg[INSENSITIVE]		= "#c0c0c0"
+	fg[SELECTED]		= "#ffffff"
+	engine "murrine" {
+		#gradient_colors 	= {"#103030","#103030","#103030","#103030"}
+		gradient_shades		= {1.25,1.0,0.8,0.6}
+		focusstyle			= 2
+		lightborder_shade	= 0.0
+	}
+}
+
+style "thunar-frame" {
+	xthickness = 2
+	ythickness = 2
+}
+
+widget_class "*ThunarWindow*.<GtkScrolledWindow>" style "thunar-frame"
+widget_class "*ThunarLocationButtons*" style "thunar-location"
+widget_class "*ThunarShortcutsView*" style "thunar-sidepane"
+widget_class "*ThunarTreeView*" style "thunar-sidepane"
+widget_class "*ThunarWindow*.<GtkHPaned>" style "thunar-handle"
+widget_class "*ThunarStatusbar*" style "thunar-statusbar"

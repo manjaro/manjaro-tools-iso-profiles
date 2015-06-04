@@ -1,0 +1,8 @@
+#!/bin/bash
+
+conky -c ~/.conky/conky_shortcuts_grey
+conky -c ~/.conky/conky_lua_grey
+# conky -c ~/.conky/conky_shortcuts_green
+# conky -c ~/.conky/conky_lua_green
+
+exit
