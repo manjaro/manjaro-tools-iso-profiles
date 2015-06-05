@@ -164,7 +164,7 @@ for_window [title="Customize Look and Feel"] floating enable
 for_window [title="Qt Configuration"] floating enable
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [title="i3_help"] floating enable
-for_window [title="*Oracle*"] floating enable
+for_window [title="VirtualBox"] floating enable
 for_window [title="File Transfer*"] floating enable
 
 # reload the configuration file
