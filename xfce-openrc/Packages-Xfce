@@ -50,7 +50,7 @@ openresolv-openrc
 #python2-notify		# for wicd-gtk notifications
 #sakis3g			# usb mobile broadband
 #zenity			# for sakis3g
-networkmanager-consolekit
+networkmanager-consolekit=1.0.2
 networkmanager-openrc
 network-manager-applet
 networkmanager-openvpn
