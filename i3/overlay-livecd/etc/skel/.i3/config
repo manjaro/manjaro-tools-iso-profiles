@@ -38,22 +38,17 @@ bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
 bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
 # Start Applications
-bindsym $mod+i exec gksu thus
 bindsym $mod+F1 exec thunderbird
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F4 exec libreoffice
-bindsym $mod+F12 exec mscore
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton
 bindsym $mod+Ctrl+m exec pavucontrol
-bindsym Print exec xfce4-screenshooter -f
-bindsym $mod+Print exec xfce4-screenshooter -w
-bindsym $mod+Shift+Print exec xfce4-screenshooter -r
-# bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
-# bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
-# bindsym $mod+Shift+Print exec notify-send 'selection will be saved in ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
+bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
+bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
+bindsym $mod+Shift+Print exec notify-send 'selection will be saved in ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Shift+h exec mousepad i3_help
 bindsym $mod+Ctrl+x exec xkill
 
@@ -102,20 +97,12 @@ bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-bindsym button3 floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
-
-# move the currently focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-bindsym $mod+minus scratchpad show
 
 # Workspace names
 # set $ws1 1:
@@ -158,14 +145,10 @@ bindsym $mod+Shift+7 move container to workspace number 7; workspace 7
 bindsym $mod+Shift+8 move container to workspace number 8; workspace 8
 
 # Open applications on specific workspaces
-assign [class="Thunderbird"] 1
-assign [class="Pale moon"] 2
-# assign [class="Vlc"] 3
-# assign [class="Octopi"] 3
-# assign [class="Thunar"] 3
+# assign [class="Thunderbird"] 1
+# assign [class="Pale moon"] 2
 # assign [class="Pcmanfm"] 3
-assign [class="MuseScore"] 4
-assign [class="Skype"] 5
+# assign [class="Skype"] 5
 
 # Open specific applications in floating mode
 for_window [class="Pamac-manager"] floating enable
@@ -175,7 +158,7 @@ for_window [title="Manjaro Welcome"] floating enable
 for_window [title="Manjaro Installer"] floating enable
 for_window [title="Manjaro Settings"] floating enable
 for_window [title="MuseScore: Play Panel"] floating enable
-for_window [title="Skype"] floating enable
+for_window [class="(?i)skype"] floating enable
 for_window [title="Volume Control"] floating enable
 for_window [title="Customise Look and Feel"] floating enable
 for_window [title="Customize Look and Feel"] floating enable
@@ -248,24 +231,23 @@ bar {
 		focused_workspace #FFFFFF #2ECC71 #000000
 		active_workspace #222222 #A4A28D #FFFFFF
 		inactive_workspace #A4A28D #222222 #DDDDDD
-		urgent_workspace #2ECC71 #900000 #FFFFFF
+		urgent_workspace #FFFFFF #900000 #FFFFFF
 	}
 }
 
 # Autostart applications
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id light-locker
 exec --no-startup-id pulseaudio
 exec --no-startup-id nm-applet
 exec --no-startup-id pa-applet
-exec --no-startup-id light-locker
+exec --no-startup-id xfce4-power-manager
 exec --no-startup-id octopi-notifier
 exec --no-startup-id clipit
-exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton -b
-exec --no-startup-id ~/.conky/start_conky_grey_live
-# exec --no-startup-id ~/.conky/start_conky_green_live
-exec --no-startup-id skype
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id dropbox
+exec --no-startup-id ~/.conky/start_conky_grey
+# exec --no-startup-id ~/.conky/start_conky_green
 
 # Theme colors
 client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
