@@ -77,9 +77,9 @@ openrc-systemdcompat
 modules-load-openrc
 
 ## Eudev
+eudev
 eudev-openrc
 eudev-systemdcompat
-upower-pm-utils
 
 ## Extra Base Packages
 grub

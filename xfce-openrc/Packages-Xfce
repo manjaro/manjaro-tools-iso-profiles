@@ -1,7 +1,5 @@
 ## Xorg Packages
-inxi
 libdnet
-mesa-demos		# used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -36,7 +34,8 @@ dconf
 desktop-file-utils
 tlp-pmu
 tmpwatch		# cleaning /tmp
-ps_mem			# memory usage
+inxi
+mesa-demos		# used by inxi
 
 ## Audio Packages
 alsa-utils
@@ -45,12 +44,7 @@ alsa-plugins
 
 ## Network and bluetooth
 openresolv-openrc
-#wicd-openrc
-#wicd-gtk
-#python2-notify		# for wicd-gtk notifications
-#sakis3g			# usb mobile broadband
-#zenity			# for sakis3g
-networkmanager-consolekit=1.0.2
+networkmanager-consolekit
 networkmanager-openrc
 network-manager-applet
 networkmanager-openvpn
@@ -75,7 +69,7 @@ orage			# for calender
 
 ## Xfce
 xfce4-panel
-xfce4-session-consolekit # xfce4-session
+xfce4-session
 xfce4-terminal
 xfdesktop
 xfwm4
@@ -91,7 +85,7 @@ xfce4-xkb-plugin
 xfce4-mixer
 
 ## Basic Apps
-lxsession		# contains lxpolit
+upower-pm-utils
 lightdm-gtk-greeter
 light-locker-upower	# requires lightdm
 qpdfview
@@ -109,9 +103,6 @@ gnome-keyring		# wlan segfault fix, networkmanager
 gvfs			# to fix trash in thunar
 udisks2			# removable disk management
 manjaro-settings-manager
-#octopi
-#octopi-notifier-qt5
-#octopi-cachecleaner
 pamac
 gksu			# required for octopi
 thunar-archive-plugin

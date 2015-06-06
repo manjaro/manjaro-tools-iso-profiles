@@ -1,10 +1,9 @@
 ## Polkit agent
-#/usr/bin/lxpolkit &	# started automatically
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-## Panel and desktop
+## Background and panel
 nitrogen --restore &
 tint2 &
-#xfce4-panel &		# alternative to tint2
 
 ## Startup
 (sleep 1s; conky) &
