@@ -6,6 +6,7 @@ automake # for building AUR packages
 binutils # for building AUR packages
 clipit
 compton
+conky-lua
 dmenu
 fakeroot # for building AUR packages
 ffmpeg
@@ -30,6 +31,8 @@ light-locker
 lxappearance
 m4 # for building AUR packages
 make # for building AUR packages
+mhwd-chroot
+mygtkmenu
 network-manager-applet
 nitrogen
 octopi
@@ -56,12 +59,6 @@ xfce4-notifyd
 xfce4-power-manager
 xorg-xkill
 yaourt
-
-## AUR Packages
-local-repo/conky-lua
-local-repo/mhwd-chroot
-local-repo/mygtkmenu
-local-repo/xcursor-chameleon-pearl
 
 ## Audio Packages
 manjaro-alsa
@@ -119,9 +116,10 @@ manjaro-artwork
 menda-circle-icon-theme
 menda-themes
 menda-themes-dark
-xfce-theme-greenbird
-xcursor-menda
 plymouth-theme-manjaro-elegant
+xcursor-chameleon-pearl
+xcursor-menda
+xfce-theme-greenbird
 
 ## Fonts
 cantarell-fonts
