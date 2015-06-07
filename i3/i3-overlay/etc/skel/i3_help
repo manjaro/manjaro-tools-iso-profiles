@@ -1,4 +1,4 @@
-Welcome to manjaro i3x!
+Welcome to manjaro i3!
 
 For the graphical installer start Thus with dmenu (mod+d)
 or for CLI run '$ sudo setup' in a terminal window (mod+Enter)
@@ -17,9 +17,9 @@ Application Shortcuts:
 ~~~~~~~~~~~~~~~~~~~~~~
 Thunderbird - mod+F1 (not installed by default)
 Webbrowser Palemoon - mod+F2
-Filemanager Spacefm - mod+F3
+Filemanager Pcmanfm - mod+F3
 Filmanager as root - mod+Shift+F3
-xkill - mod+Ctrl+x
+xkill - mod+Ctrl+q
 Sound mixer Pavucontrol - mod+Ctrl+m
 Screenshot of whole screen - Print
 Screenshot of focused container - mod+Print
@@ -38,24 +38,36 @@ toggle fullscreen - mod+f
 tile vertically - mod+v
 tile horizontally - mod+h
 
+switch to workspace number 1-8 - mod+1-8
+navigate between workapaces - mod+Ctrl+Right,Left
+
 resize container - mod+r and arrowkeys or j,k,l,ö
 (exit resize mode with Enter or Esc)
 
-
-switch to workspace number 1-8 - mod+1-8
-navigate between workapaces - mod+Ctrl+Right,Left
+move floating window - mod+Shift+arrowkeys or j,k,l,ö
 
 send focused container to workspace number 1-8 - mod+Ctrl+1-8
 
 move to workspace 1-8 with focused container - mod+Shift+1-8
+
+workspace back-and-forth - mod+b
+move container to workspace back-and-forth - mod+Shift+b
+
+move focused container to scratchpad - mod+Shift+-
+show (next) scratchpad window - mod+-
 
 Change desktop layout:
 stacking - mod+s
 tabbed - mod+w
 tiling / toggle split - mod+e
 
-reload the configuration file - mod+Shift+m
-restart i3 inplace - mod+Shift+m (preserves your layout/session, can be used to upgrade i3)
+Change window borders:
+none - mod+u
+2 pixels - mod+y
+normal - mod+n
+
+reload the configuration file - mod+Shift+c
+restart i3 inplace - mod+Shift+r (preserves your layout/session, can be used to upgrade i3)
 
 lock screen | switch user - mod+9
 exit session - mod+0 and choose (l)ock, (e)xit, (Shift+s)uspend, (h)ibernate, (r)eboot, (s)hutdown
@@ -73,8 +85,8 @@ update=sudo pacman-mirrors -g && sudo pacman -Syyu && yaourt -Syua && sudo pkgca
 fixit=sudo rm -f /var/lib/pacman/db.lck && sudo pacman -Syyu && yaourt -Syua && sudo pkgcacheclean && sudo pacman-optimize && sync
 upgrade=sudo pacman -Syu && yaourt -Syua
 con=nano ~/.i3/config
-greet=gksu lightdm-gtk-greeter-settings
 comp=nano .config/compton.conf
+greet=gksu lightdm-gtk-greeter-settings
 root=gksu spacefm
 
 HAVE FUN ! 8^} oberon

@@ -23,6 +23,7 @@ gtk-xfce-engine
 gvfs # trash support and mounting volumes
 gvfs-mtp # for mounting Samsung phones
 htop
+i3-themes
 i3-wm
 i3status
 libconfig # for building AUR packages
