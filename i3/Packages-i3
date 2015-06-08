@@ -114,10 +114,8 @@ xorg-xinit
 adwaita-icon-theme
 i3-theme-dark
 i3-theme-dust
-manjaro-artwork
+# manjaro-artwork
 menda-circle-icon-theme
-menda-themes
-menda-themes-dark
 plymouth-theme-manjaro-elegant
 xcursor-chameleon-pearl
 xcursor-menda
