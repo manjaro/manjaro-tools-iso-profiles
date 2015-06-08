@@ -75,3 +75,19 @@ ${color2}${goto 100}Lan
 ${color}${goto 125}${voffset 11}${downspeed wlp2s0}
 ${color}${goto 125}${upspeed wlp2s0}
 ${color2}${goto 125}Wlan
+${voffset 10}${color2}${font Caviar Dreams:size=8}uptime: ${color}${uptime_short}
+${voffset 15}${color2}${font Caviar Dreams:size=8}processes${offset 6}${color} $running_processes / $processes${goto 126}${color2}CPU${goto 167}RAM${font Caviar Dreams:size=8}
+${voffset 7}${top name 1} ${goto 115}${color}${top cpu 1}%
+${color2}${top name 2} ${goto 115}${color}${top cpu 2}%
+${color2}${top name 3} ${goto 115}${color}${top cpu 3}%
+${color2}${top name 4} ${goto 115}${color}${top cpu 4}%
+# ${color2}${top_io name 1} ${goto 153}${color}${top_io io_read 1}/s
+# ${color2}${goto 153}${top_io io_write 1}/s
+${voffset 7}${color2}${top_mem name 1}${alignr}${color}${top_mem mem_res 1}
+${color2}${top_mem name 2}${alignr}${color}${top_mem mem_res 2}
+${color2}${top_mem name 3}${alignr}${color}${top_mem mem_res 3}
+${color2}${top_mem name 4}${alignr}${color}${top_mem mem_res 4}${font}
+${voffset 15}${color2}${font Caviar Dreams:size=8}${alignr}${exec whoami}@${nodename}
+# ${color2}${font Caviar Dreams:size=8}${alignr}${color}${pre_exec cat /etc/issue.net}  $machine
+${color2}${font Caviar Dreams:size=8}${alignr}kernel: ${color}${kernel}
+
