@@ -23,8 +23,6 @@ gtk-xfce-engine
 gvfs # trash support and mounting volumes
 gvfs-mtp # for mounting Samsung phones
 htop
-i3-theme-dark
-i3-theme-dust
 i3-wm
 i3status
 libconfig # for building AUR packages
@@ -114,6 +112,8 @@ xorg-xinit
 
 ## Artwork
 adwaita-icon-theme
+i3-theme-dark
+i3-theme-dust
 manjaro-artwork
 menda-circle-icon-theme
 menda-themes
