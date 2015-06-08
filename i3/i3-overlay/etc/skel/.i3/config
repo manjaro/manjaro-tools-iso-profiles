@@ -224,6 +224,8 @@ bindsym $mod+9 exec --no-startup-id light-locker-command -l
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	status_command i3status
+#	wheel_up_cmd nop
+#	wheel_down_cmd nop
 		colors {
 		separator #2ECC71
 		background #222222
