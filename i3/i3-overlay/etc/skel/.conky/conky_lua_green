@@ -1,0 +1,77 @@
+# Conky settings #
+background yes
+update_interval 1
+
+cpu_avg_samples 2
+net_avg_samples 2
+
+override_utf8_locale yes
+
+double_buffer yes
+no_buffers yes
+
+text_buffer_size 2048
+#imlib_cache_size 0
+
+temperature_unit celsius
+
+# Window specifications #
+
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+
+border_inner_margin 0
+border_outer_margin 0
+
+minimum_size 200 50
+maximum_width 200
+
+alignment tr
+gap_x 25
+gap_y 15
+
+# Graphics settings #
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+# Text settings #
+use_xft yes
+xftfont Caviar Dreams:size=8
+xftalpha 0.5
+
+uppercase no
+
+default_color FFFFFF
+color2 224a22
+
+# Lua Load  #
+lua_load ~/.conky/clock_rings_green.lua
+lua_draw_hook_pre clock_rings
+
+TEXT
+${voffset 8}${color2}${font Caviar Dreams:size=16}${time %A}${font}${voffset -8}${alignr 50}${color}${font Caviar Dreams:size=38}${time %e}${font}
+${color}${voffset -30}${color}${font Caviar Dreams:size=18}${time %b}${font}${voffset -3} ${color}${font Caviar Dreams:size=20}${time %Y}${font}${color2}${hr}
+${voffset 160}${font Caviar Dreams:size=10}${alignr}Wien${font}
+# for the four letter city code use the search funcion on http://weather.noaa.gov/
+${font Caviar Dreams:size=12}${color}${alignr}${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ LOWW temperature temperature 15} °C${font}
+${voffset 5}${font Caviar Dreams:size=10}${color2}${alignr}Detroit${font}
+${font Caviar Dreams:size=12}${color}${alignr}${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KDET temperature temperature 15} °C${font}
+${voffset -17}${image ~/.conky/logo_green.png -p 69,116 -s 60x74}
+${font Caviar Dreams:size=8}${color}${goto 25}${voffset -37}${cpu cpu0}%
+${goto 25}${color2}CPU
+${color}${goto 50}${voffset 23}${mem}
+${color2}${goto 50}RAM
+# ${color}${goto 75}${voffset 23}${swapperc}%
+# ${color2}${goto 75}Swap
+${color}${goto 75}${voffset 24}${fs_used_perc /}%
+${color2}${goto 75}Disk
+${color}${goto 100}${voffset 24}${downspeed enp3s0}
+${color}${goto 100}${upspeed enp3s0}
+${color2}${goto 100}Lan
+${color}${goto 125}${voffset 11}${downspeed wlp2s0}
+${color}${goto 125}${upspeed wlp2s0}
+${color2}${goto 125}Wlan

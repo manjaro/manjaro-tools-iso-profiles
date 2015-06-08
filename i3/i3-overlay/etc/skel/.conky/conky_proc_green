@@ -1,0 +1,66 @@
+# Conky settings #
+background yes
+update_interval 1
+
+cpu_avg_samples 2
+net_avg_samples 2
+
+override_utf8_locale yes
+
+double_buffer yes
+no_buffers yes
+
+text_buffer_size 2048
+#imlib_cache_size 0
+
+temperature_unit celsius
+
+# Window specifications #
+
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+
+border_inner_margin 0
+border_outer_margin 0
+
+minimum_size 200 50
+maximum_width 200
+
+alignment br
+gap_x 25
+gap_y 45
+
+# Graphics settings #
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+# Text settings #
+use_xft yes
+xftfont Caviar Dreams:size=8
+xftalpha 0.5
+
+uppercase no
+
+default_color FFFFFF
+color2 224a22
+
+TEXT
+${voffset 10}${color2}${font Caviar Dreams:size=8}uptime: ${color}${uptime_short}
+${voffset 15}${color2}${font Caviar Dreams:size=8}processes${offset 6}${color} $running_processes / $processes${goto 126}${color2}CPU${goto 167}RAM${font Caviar Dreams:size=8}
+${voffset 7}${top name 1} ${goto 115}${color}${top cpu 1}%
+${color2}${top name 2} ${goto 115}${color}${top cpu 2}%
+${color2}${top name 3} ${goto 115}${color}${top cpu 3}%
+${color2}${top name 4} ${goto 115}${color}${top cpu 4}%
+# ${color2}${top_io name 1} ${goto 153}${color}${top_io io_read 1}/s
+# ${color2}${goto 153}${top_io io_write 1}/s
+${voffset 7}${color2}${top_mem name 1}${alignr}${color}${top_mem mem_res 1}
+${color2}${top_mem name 2}${alignr}${color}${top_mem mem_res 2}
+${color2}${top_mem name 3}${alignr}${color}${top_mem mem_res 3}
+${color2}${top_mem name 4}${alignr}${color}${top_mem mem_res 4}${font}
+${voffset 15}${color2}${font Caviar Dreams:size=8}${alignr}${exec whoami}@${nodename}
+# ${color2}${font Caviar Dreams:size=8}${alignr}${color}${pre_exec cat /etc/issue.net}  $machine
+${color2}${font Caviar Dreams:size=8}${alignr}kernel: ${color}${kernel}
