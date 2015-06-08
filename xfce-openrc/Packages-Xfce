@@ -32,9 +32,9 @@ ttf-droid		# default font
 ## Basic packages
 dconf
 desktop-file-utils
-tlp-pmu
 tmpwatch		# cleaning /tmp
-inxi
+ps_mem			# memory usage
+inxi			# system info
 mesa-demos		# used by inxi
 
 ## Audio Packages
@@ -84,8 +84,11 @@ xfce4-clipman-plugin
 xfce4-xkb-plugin
 xfce4-mixer
 
-## Basic Apps
+## Base packages
+tlp-pmu			# TLP
 upower-pm-utils
+
+## Basic Apps
 lightdm-gtk-greeter
 light-locker-upower	# requires lightdm
 qpdfview

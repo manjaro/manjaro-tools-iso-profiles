@@ -91,6 +91,7 @@ sudo
 syslinux
 xdg-user-dirs
 mlocate			# locatedb
+manjaro-tools-base
 
 ## Compression Codecs
 lzop
