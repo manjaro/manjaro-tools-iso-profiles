@@ -2,17 +2,22 @@
 bash
 bzip2
 coreutils
-cryptsetup
-device-mapper
-dhcpcd
+>openrc cronie-openrc
+>systemd cronie
+>openrc cryptsetup-openrc
+>systemd cryptsetup
+>openrc device-mapper-openrc
+>systemd device-mapper
+>openrc dhcpcd-openrc
+>systemd dhcpcd
 diffutils
 e2fsprogs
 file
 filesystem
 findutils
 gawk
->i686 gcc-libs
->x86_64 gcc-libs-multilib
+gcc-libs
+>multilib gcc-libs-multilib
 gettext
 glibc
 grep
@@ -24,12 +29,14 @@ jfsutils
 less
 licenses
 logrotate
-lvm2
+>openrc lvm2-openrc
+>systemd lvm2
 man-db
 man-pages
 manjaro-hotfixes
 manjaro-system
-mdadm
+>openrc mdadm-openrc
+>systemd mdadm
 mhwd
 mhwd-db
 nano
@@ -44,7 +51,9 @@ s-nail
 sed
 shadow
 sysfsutils
-systemd-sysvcompat
+>openrc eudev-base
+>openrc syslog-ng-openrc
+>systemd syslog-ng
 tar
 texinfo
 usbutils
@@ -53,18 +62,17 @@ which
 xfsprogs
 
 ## Base Packages
-cronie
 linux-firmware
 lsb-release
-haveged # needed for pacman-init
+>openrc haveged-openrc
+>systemd haveged
 manjaro-firmware
 manjaro-release
 memtest86+
->x86_64 lib32-mesa  # Optional dependency for mhwd
+>multilib lib32-mesa  # Optional dependency for mhwd
 
 ## Kernel
 KERNEL
-
 ## Extra Base Packages
 grub
 mkinitcpio-nfs-utils
@@ -73,6 +81,8 @@ pkg-config
 squashfs-tools
 sudo
 syslinux
+>openrc nfs-utils-openrc
+>systemd nfs-utils
 
 ## Compression Codecs
 lzop
@@ -83,7 +93,9 @@ xz
 zip
 
 ## encrypt support
-rsync
+ecryptfs-utils
+>openrc rsync-openrc
+>systemd rsync
 lsof
 
 ## needed by cli-installer
@@ -105,7 +117,6 @@ btrfs-progs
 dmraid
 dosfstools
 ecryptfs-utils
-exfat-utils
 testdisk
 nilfs-utils
 nfs-utils
@@ -134,18 +145,20 @@ KERNEL-ndiswrapper
 ndiswrapper-utils
 rp-pppoe
 usb_modeswitch
-wpa_actiond
-wpa_supplicant
+>openrc wpa_supplicant-openrc
+>systemd wpa_supplicant
 zd1211-firmware
 
 ## Laptop power management
-acpid
-cpupower
+>openrc acpid-openrc
+>systemd acpid
+>openrc cpupower-openrc
+>systemd cpupower
 ethtool
-hdparm
+>openrc hdparm-openrc
+>systemd hdparm
 sdparm
 smartmontools
-tlp
 wireless_tools
 
 ## ucode for new cpus
