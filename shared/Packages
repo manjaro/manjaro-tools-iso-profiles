@@ -51,9 +51,9 @@ s-nail
 sed
 shadow
 sysfsutils
->openrc eudev-base
->openrc syslog-ng-openrc
->systemd syslog-ng
+>openrc eudev-openrc
+>openrc eudev-systemdcompat
+>systemd systemd-sysvcompat
 tar
 texinfo
 usbutils
