@@ -41,14 +41,14 @@ KERNEL-rt3562sta
 KERNEL-r8168
 
 ## Proprietary Drivers
->nonfree catalyst-utils
->nonfree KERNEL-catalyst
->nonfree nvidia-utils
->nonfree KERNEL-nvidia
->nonfree nvidia-340xx-utils
->nonfree KERNEL-nvidia-340xx
->nonfree nvidia-304xx-utils
->nonfree KERNEL-nvidia-304xx
+>nonfree_default catalyst-utils
+>nonfree_default KERNEL-catalyst
+>nonfree_default nvidia-utils
+>nonfree_default KERNEL-nvidia
+>nonfree_default nvidia-340xx-utils
+>nonfree_default KERNEL-nvidia-340xx
+>nonfree_default nvidia-304xx-utils
+>nonfree_default KERNEL-nvidia-304xx
 >nonfree_multilib lib32-catalyst-utils
 >nonfree_multilib lib32-nvidia-utils
 >nonfree_multilib lib32-nvidia-304xx-utils
