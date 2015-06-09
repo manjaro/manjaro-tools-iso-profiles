@@ -1,0 +1,7 @@
+## start the green conkies ##
+#!/bin/bash
+
+conky -c ~/.conky/conky_shortcuts_green
+conky -c ~/.conky/conky_lua_green
+
+exit
