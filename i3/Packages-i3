@@ -19,7 +19,6 @@ git # for building AUR packages
 gnome-keyring # fix wlan segfault
 gnome-vfs
 gpicview
-gtk-xfce-engine
 gvfs # trash support and mounting volumes
 gvfs-mtp # for mounting Samsung phones
 htop
@@ -111,16 +110,13 @@ xorg-utils
 xorg-xinit
 
 ## Artwork
-adwaita-icon-theme
 i3-theme-dark
 i3-theme-dust
 # manjaro-artwork
-menda-circle-icon-theme
+maia-icon-theme
 menda-themes-dark
 plymouth-theme-manjaro-elegant
 xcursor-chameleon-pearl
-xcursor-menda
-xfce-theme-greenbird
 
 ## Fonts
 cantarell-fonts
