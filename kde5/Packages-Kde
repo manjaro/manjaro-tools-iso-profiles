@@ -2,6 +2,7 @@
 
 ## Xorg and Other Packages
 libdnet
+libxft
 >x86_64 lib32-libxft
 mesa-demos
 >x86_64 lib32-mesa-demos
