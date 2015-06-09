@@ -51,8 +51,7 @@ s-nail
 sed
 shadow
 sysfsutils
->openrc eudev-openrc
->openrc eudev-systemdcompat
+>openrc eudev-base
 >systemd systemd-sysvcompat
 tar
 texinfo
