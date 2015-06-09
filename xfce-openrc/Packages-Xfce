@@ -89,8 +89,9 @@ tlp-pmu			# TLP
 upower-pm-utils
 
 ## Basic Apps
+lightdm
 lightdm-gtk-greeter
-light-locker-upower	# requires lightdm
+light-locker-consolekit	# requires lightdm
 qpdfview
 xarchiver
 thunar			# file manager
