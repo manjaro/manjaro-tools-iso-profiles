@@ -30,6 +30,7 @@ light-locker
 lxappearance
 m4 # for building AUR packages
 make # for building AUR packages
+manjaro-printer
 mhwd-chroot
 mygtkmenu
 network-manager-applet
