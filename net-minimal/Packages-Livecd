@@ -1,1 +1,8 @@
-../shared/Packages-Livecd
+>openrc manjaro-livecd-openrc
+>systemd manjaro-livecd-systemd
+manjaro-livecd-cli-installer
+
+#calamares			# new GUI installer of manjaro - test for manjaro 0.9
+#thus
+#gparted
+#thus-dev
