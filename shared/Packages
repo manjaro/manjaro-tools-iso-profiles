@@ -159,6 +159,7 @@ ethtool
 sdparm
 smartmontools
 wireless_tools
+>systemd tlp
 
 ## ucode for new cpus
 intel-ucode
