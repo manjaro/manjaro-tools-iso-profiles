@@ -158,6 +158,7 @@ ethtool
 >openrc hdparm-openrc
 >systemd hdparm
 sdparm
+>systemd tlp
 smartmontools
 wireless_tools
 
