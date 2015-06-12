@@ -1,5 +1,5 @@
 ## Polkit agent
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/bin/lxpolkit &			# started automatically
 
 ## Background and panel
 nitrogen --restore &
