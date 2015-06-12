@@ -19,11 +19,9 @@ git # for building AUR packages
 gnome-keyring # fix wlan segfault
 gnome-vfs
 gpicview
-gtk-xfce-engine
 gvfs # trash support and mounting volumes
 gvfs-mtp # for mounting Samsung phones
 htop
-i3-themes
 i3-wm
 i3status
 libconfig # for building AUR packages
@@ -32,6 +30,7 @@ light-locker
 lxappearance
 m4 # for building AUR packages
 make # for building AUR packages
+manjaro-printer
 mhwd-chroot
 mygtkmenu
 network-manager-applet
@@ -112,15 +111,13 @@ xorg-utils
 xorg-xinit
 
 ## Artwork
-adwaita-icon-theme
-manjaro-artwork
-menda-circle-icon-theme
-menda-themes
+i3-theme-dark
+i3-theme-dust
+# manjaro-artwork
+maia-icon-theme
 menda-themes-dark
 plymouth-theme-manjaro-elegant
 xcursor-chameleon-pearl
-xcursor-menda
-xfce-theme-greenbird
 
 ## Fonts
 cantarell-fonts

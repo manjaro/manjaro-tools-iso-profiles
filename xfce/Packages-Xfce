@@ -5,7 +5,6 @@ ffmpegthumbnailer
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gufw # firewall
-#mdm-themes
 accountsservice
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
@@ -77,6 +76,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 hexchat
+inxi
 manjaro-welcome
 #midori
 mlocate
@@ -101,14 +101,16 @@ networkmanager-dispatcher-ntpd
 openresolv
 blueman
 
-## Xorg Packages
-inxi
+## Xorg and Other Packages
 libdnet
+libxft
+>x86_64 lib32-libxft
 mesa-demos
 >x86_64 lib32-mesa-demos
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
+xf86-input-elographics
 xf86-input-evdev
 xf86-input-joystick
 xf86-input-keyboard
@@ -159,8 +161,7 @@ pulseaudio-zeroconf
 pamac
 
 ## Games
-steam
-steam-native
+steam-manjaro
 
 ## Fonts
 ttf-dejavu
@@ -172,12 +173,11 @@ ttf-droid
 icedtea-web
 
 ## Printing
-#manjaro-printer # disabled for now
+manjaro-printer
 
 ## Office
 #abiword
 #gnumeric
-#libreoffice-installer
 libreoffice-still
 
 ## AUR Access
