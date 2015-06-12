@@ -1,7 +1,5 @@
 ## Xorg Packages
-inxi
 libdnet
-mesa-demos		# used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -37,13 +35,18 @@ dconf
 desktop-file-utils
 tmpwatch		# cleaning /tmp
 ps_mem			# memory usage
+inxi
+mesa-demos		# used by inxi
 
 ## Services
 openssh-openrc
 ntp-openrc
 
 ## Network
+networkmanager-consolekit
 networkmanager-openrc
+networkmanager-openvpn
+openvpn-openrc		# with networkmanager-openvpn
 openresolv-openrc
 
 ## Base Packages

@@ -169,11 +169,6 @@
 					<execute>exo-open --launch WebBrowser</execute>
 				</action>
 			</item>
-			<item label="Wicd">
-				<action name="Execute">
-					<execute>/usr/bin/wicd-client</execute>
-				</action>
-			</item>
 		</menu>
 		<menu id="Office" label="Office">
 			<item label="Orage Calendar">
@@ -223,6 +218,11 @@
 					<execute>lxrandr</execute>
 				</action>
 			</item>
+			<item label="Network Connections">
+				<action name="Execute">
+					<execute>nm-connection-editor</execute>
+				</action>
+			</item>
 			<item label="Notifications">
 				<action name="Execute">
 					<execute>xfce4-notifyd-config</execute>
@@ -260,6 +260,11 @@
 			</item>
 		</menu>
 		<menu id="System" label="System">
+			<item label="Add/Remove Software">
+				<action name="Execute">
+					<execute>pamac-manager</execute>
+				</action>
+			</item>
 			<item label="Avahi Zeroconf Browser">
 				<action name="Execute">
 					<execute>/usr/bin/avahi-discover</execute>
@@ -285,14 +290,9 @@
 					<execute>/usr/bin/xdg-open http://localhost:631/</execute>
 				</action>
 			</item>
-			<item label="Octopi CacheCleaner">
+			<item label="Software Update">
 				<action name="Execute">
-					<execute>octopi-cachecleaner</execute>
-				</action>
-			</item>
-			<item label="Octopi">
-				<action name="Execute">
-					<execute>octopi</execute>
+					<execute>pamac-updater</execute>
 				</action>
 			</item>
 			<item label="Task Manager">
@@ -310,19 +310,9 @@
 					<execute>gksudo timeset-gui</execute>
 				</action>
 			</item>
-			<item label="UXTerm">
-				<action name="Execute">
-					<execute>uxterm</execute>
-				</action>
-			</item>
 			<item label="Xfce Terminal">
 				<action name="Execute">
 					<execute>xfce4-terminal</execute>
-				</action>
-			</item>
-			<item label="XTerm">
-				<action name="Execute">
-					<execute>xterm</execute>
 				</action>
 			</item>
 		</menu>
