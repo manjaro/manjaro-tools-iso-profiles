@@ -1,8 +1,5 @@
 ## Xorg Packages
-inxi
 libdnet
-mesa-demos
->x86_64 lib32-mesa-demos
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -13,28 +10,52 @@ xf86-input-mouse
 xf86-input-synaptics
 xf86-input-void
 xf86-input-wacom
+xf86-video-vesa
 xinetd
 xorg-server
 xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xorg-xset
+xdg-utils
+xterm
+
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+ttf-droid
 
 ## Basic packages
 dconf
 desktop-file-utils
+tmpwatch		# cleaning /tmp
+ps_mem			# memory usage
+inxi
+mesa-demos		# used by inxi
 
-## Packages for Sound and Audio
-manjaro-alsa
+## Services
+openssh-openrc
+ntp-openrc
 
-## Artwork
-manjaro-artwork
+## Network
+networkmanager-consolekit
+networkmanager-openrc
+networkmanager-openvpn
+openvpn-openrc		# with networkmanager-openvpn
+openresolv-openrc
 
 ## Base Packages
 gtk2
 
-## Network
-netctl
-networkmanager
-networkmanager-dispatcher-ntpd
-openresolv
+## Packages for Sound and Audio
+alsa-utils
+alsa-firmware
+alsa-plugins
+
+## Artwork
+manjaro-artwork
