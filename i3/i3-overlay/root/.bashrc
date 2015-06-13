@@ -36,7 +36,7 @@ alias con='nano ~/.i3/config'
 alias greet='gksu lightdm-gtk-greeter-settings'
 alias comp='nano .config/compton.conf'
 alias men='mousepad ~/.i3/mygtkmenu.conf'
-alias root='gksu spacefm'
+alias root='gksu pcmanfm'
 alias xflock='light-locker-command -l'
 
 # ex - archive extractor
