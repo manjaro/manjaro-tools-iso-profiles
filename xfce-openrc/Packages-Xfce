@@ -1,7 +1,5 @@
 ## Xorg Packages
-inxi
 libdnet
-mesa-demos		# used by inxi
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -34,19 +32,24 @@ ttf-droid		# default font
 ## Basic packages
 dconf
 desktop-file-utils
-tlp-pmu
 tmpwatch		# cleaning /tmp
 ps_mem			# memory usage
+inxi			# system info
+mesa-demos		# used by inxi
 
 ## Audio Packages
 alsa-utils
 alsa-firmware
 alsa-plugins
 
-## Network
+## Network and bluetooth
 openresolv-openrc
-wicd-openrc
-bluez-openrc		# required for bluetooth
+networkmanager-consolekit
+networkmanager-openrc
+network-manager-applet
+networkmanager-openvpn
+openvpn-openrc		# with networkmanager-openvpn
+bluez-openrc		# bluetooth
 blueman
 
 ## Openbox
@@ -66,7 +69,7 @@ orage			# for calender
 
 ## Xfce
 xfce4-panel
-xfce4-session-consolekit # xfce4-session
+xfce4-session
 xfce4-terminal
 xfdesktop
 xfwm4
@@ -81,12 +84,14 @@ xfce4-clipman-plugin
 xfce4-xkb-plugin
 xfce4-mixer
 
+## Base packages
+tlp-pmu			# TLP
+upower-pm-utils
+
 ## Basic Apps
-lxsession		# contains lxpolit
+lightdm
 lightdm-gtk-greeter
-light-locker-upower	# requires lightdm
-wicd-gtk
-python2-notify
+light-locker-consolekit	# requires lightdm
 qpdfview
 xarchiver
 thunar			# file manager
@@ -98,13 +103,11 @@ galculator
 
 ## More Apps
 gconf			# qt-theme fix
-gnome-keyring		# wlan segfault fix
+gnome-keyring		# wlan segfault fix, networkmanager
 gvfs			# to fix trash in thunar
 udisks2			# removable disk management
 manjaro-settings-manager
-octopi
-octopi-notifier-qt5
-octopi-cachecleaner
+pamac
 gksu			# required for octopi
 thunar-archive-plugin
 htop
@@ -117,8 +120,6 @@ timeset-gui		# MSM time module does not work with OpenRC
 parole
 mpg123			# for parole
 gst-libav		# for parole
-sakis3g			# usb mobile broadband
-zenity			# for sakis3g
 gcolor2
 gst-plugins-base	# useful with firefox, parole
 xfburn
@@ -132,10 +133,11 @@ ntp-openrc
 ## Artwork, icons
 manjaro-artwork
 menda-themes
-elementary-icon-theme
+maia-xfce-icon-theme
 xcursor-vanilla-dmz-aa
 gnome-themes-standard	# general theme
 xfce-theme-greenbird
+numix-manjaro-themes
 
 ## AUR Access
 autoconf

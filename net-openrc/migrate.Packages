@@ -77,9 +77,8 @@ openrc-systemdcompat
 modules-load-openrc
 
 ## Eudev
-eudev-openrc
+eudev
 eudev-systemdcompat
-upower-pm-utils
 
 ## Extra Base Packages
 grub
@@ -91,6 +90,7 @@ sudo
 syslinux
 xdg-user-dirs
 mlocate			# locatedb
+manjaro-tools-base
 
 ## Compression Codecs
 lzop

@@ -10,7 +10,7 @@
 	<directories/>
 </action>
 <action>
-	<icon>stock_folder</icon>
+	<icon>Thunar</icon>
 	<name>Thunar Root</name>
 	<unique-id>1367866030392883-2</unique-id>
 	<command>pkexec thunar %f</command>

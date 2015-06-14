@@ -154,6 +154,7 @@ bindsym $mod+Shift+8 move container to workspace number 8; workspace 8
 for_window [class="Pamac-manager"] floating enable
 for_window [class="octopi"] floating enable
 for_window [title="Manjaro Settings"] floating enable
+for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Nitrogen"] floating enable
 for_window [class="(?i)skype"] floating enable
 for_window [class="Pavucontrol"] floating enable

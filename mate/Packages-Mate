@@ -36,8 +36,9 @@ gnome-themes-standard
 plymouth-theme-manjaro-elegant
 
 ## MATE Main Packages
-mate     
-mate-extra
+mate-gtk3
+mate-extra-gtk3
+galculator-gtk2
 
 ## Network
 blueman
@@ -162,12 +163,4 @@ openssh
 samba
 
 ## Printing
-cups
-cups-pdf
-cups-pk-helper
-ghostscript
-gsfonts
-hplip
-python-gobject # optional for hplip
-python-pyqt4   # optional for hplip
-splix
+manjaro-printer

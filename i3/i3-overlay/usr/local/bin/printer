@@ -1,0 +1,6 @@
+#!/bin/sh
+# printer installation
+
+system-config-printer
+
+exit 0

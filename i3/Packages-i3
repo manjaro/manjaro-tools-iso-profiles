@@ -1,96 +1,71 @@
 ### Manjaro Packages
 
 ## i3 Packages
-autoconf # for building AUR packages
-automake # for building AUR packages
-binutils # for building AUR packages
-clipit
+accountsservice
 compton
 conky-lua
 dmenu
-fakeroot # for building AUR packages
 ffmpeg
-flac
-flashplugin
->i686 gcc # for building AUR packages
->x86_64 gcc-multilib # for building AUR packages
+ffmpegthumbnailer
 gconf # fix qt-theme
-git # for building AUR packages
 gnome-keyring # fix wlan segfault
-gnome-vfs
-gpicview
-gvfs # trash support and mounting volumes
-gvfs-mtp # for mounting Samsung phones
+gufw # firewall
 htop
 i3-wm
 i3status
-libconfig # for building AUR packages
-libtool # for building AUR packages
 light-locker
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 lxappearance
-m4 # for building AUR packages
-make # for building AUR packages
+manjaro-settings-manager
 mhwd-chroot
 mygtkmenu
 network-manager-applet
-nitrogen
-octopi
-octopi-notifier-qt4
-octopi-pacmanhelper
-palemoon
-patch # for building AUR packages
-pcmanfm
-pinta
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
 pkgcacheclean
 pnmixer
 polkit-gnome
-qt4
-qt5-base
-qtchooser
 screenfetch
 scrot
-subversion # for building AUR packages
 rxvt-unicode
 rxvt-unicode-terminfo
 urxvt-perls
 xarchiver # archive management
 xfce4-notifyd
 xfce4-power-manager
-xorg-xkill
-yaourt
-
-## Audio Packages
-manjaro-alsa
-manjaro-pulse
-pavucontrol
-pa-applet
-pulseaudio-ctl
-pulseaudio-bluetooth
-pulseaudio-ctl
-pulseaudio-zeroconf
 
 ## Applications
-accountsservice
+clipit
 gksu
-gst-libav
+gnome-vfs
 gparted
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-light-locker
-manjaro-settings-manager
+gpicview
+gvfs # trash support and mounting volumes
+gvfs-afc
+gvfs-afp
+gvfs-gphoto2
+gvfs-mtp # for mounting Samsung phones
+gvfs-smb
+inxi
 mousepad
+nitrogen
+palemoon
+pcmanfm
+pinta
 qpdfview
 open-fuse-iso
+vlc
 
 ## Network
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-# wicd-gtk ?
 
 ## Xorg Packages
-inxi
 libdnet
 uriparser
 xf86-input-acecad
@@ -108,18 +83,67 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xorg-xkill
 
 ## Artwork
 i3-theme-dark
 i3-theme-dust
 # manjaro-artwork
 maia-icon-theme
-menda-themes-dark
 plymouth-theme-manjaro-elegant
 xcursor-chameleon-pearl
+xfce-theme-greenbird
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+flac
+flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+pa-applet
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+## Package management
+octopi
+octopi-notifier-qt4
+octopi-pacmanhelper
 
 ## Fonts
 cantarell-fonts
 terminus-font
 ttf-dejavu
 ttf-droid
+
+## Java
+icedtea-web
+
+## Printing
+manjaro-printer
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+>i686 gcc
+>x86_64 gcc-multilib
+libtool
+m4
+make
+patch
+subversion
+yaourt
