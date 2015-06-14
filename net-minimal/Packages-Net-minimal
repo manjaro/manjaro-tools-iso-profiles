@@ -2,7 +2,7 @@
 inxi
 libdnet
 mesa-demos
-# >x86_64 lib32-mesa-demos
+>multilib lib32-mesa-demos
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -49,9 +49,6 @@ openresolv
 # # bison
 # fakeroot
 # # flex
-# gcc
-# # >i686 gcc
-# # >x86_64 gcc-multilib	# only needed for building 32bit libraries
 # libconfig
 # libtool
 # m4
