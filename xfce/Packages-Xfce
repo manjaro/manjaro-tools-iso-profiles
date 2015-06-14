@@ -104,9 +104,9 @@ blueman
 ## Xorg and Other Packages
 libdnet
 libxft
->x86_64 lib32-libxft
+>multilib lib32-libxft
 mesa-demos
->x86_64 lib32-mesa-demos
+>multilib lib32-mesa-demos
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -125,6 +125,7 @@ xorg-twm
 xorg-utils
 xorg-xinit
 xorg-xkill
+xdg-user-dirs
 
 ## Artwork
 menda-circle-icon-theme
@@ -187,8 +188,8 @@ binutils
 bison
 fakeroot
 flex
->i686 gcc
->x86_64 gcc-multilib
+gcc
+>multilib gcc-multilib
 libtool
 m4
 make

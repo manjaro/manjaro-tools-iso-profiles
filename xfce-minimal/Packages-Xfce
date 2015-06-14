@@ -64,7 +64,7 @@ blueman
 ## Xorg Packages
 inxi
 libdnet
-#>x86_64 lib32-mesa-demos
+>multilib lib32-mesa-demos
 uriparser
 xf86-input-acecad
 xf86-input-aiptek
@@ -81,6 +81,7 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xdg-user-dirs
 
 ## Artwork
 #faenza-green-icon-theme
