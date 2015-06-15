@@ -78,6 +78,8 @@ exit i3 - mod+Shift+e (logs you out of your Xsession)
 ***************************************************************************************************
 All i3 settings, can be edited in ~/.i3/config
 
+'printer' from dmenu or a terminal will open the printer-settings 
+
 ***************************************************************************************************
 These custom bash aliases (terminal shortcuts) have been included:
 
