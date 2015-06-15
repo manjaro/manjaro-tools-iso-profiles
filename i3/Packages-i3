@@ -84,6 +84,7 @@ xorg-twm
 xorg-utils
 xorg-xinit
 xorg-xkill
+xdg-user-dirs
 
 ## Artwork
 i3-theme-dark

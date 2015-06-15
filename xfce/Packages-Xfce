@@ -125,6 +125,7 @@ xorg-twm
 xorg-utils
 xorg-xinit
 xorg-xkill
+xdg-user-dirs
 
 ## Artwork
 menda-circle-icon-theme

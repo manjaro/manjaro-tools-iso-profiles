@@ -18,6 +18,7 @@ xorg-twm
 xorg-utils
 xorg-xinit
 xorg-xset
+xdg-user-dirs
 xdg-utils
 xterm
 

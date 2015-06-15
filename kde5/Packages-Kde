@@ -25,6 +25,7 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xdg-user-dirs
 
 ## Network
 netctl
