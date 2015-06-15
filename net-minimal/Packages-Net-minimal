@@ -43,18 +43,22 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 
-## AUR Access
+## minimal AUR Access
 # autoconf
 # automake
 # binutils
-# # bison
 # fakeroot
-# # flex
 # libconfig
 # libtool
 # m4
 # make
 # patch
 # subversion
+# gcc
+# >multilib gcc-multilib
 # git
+# yaourt
+
+## full AUR Access
+# base-devel
 # yaourt
