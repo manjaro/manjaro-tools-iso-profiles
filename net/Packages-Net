@@ -26,7 +26,10 @@ dconf
 desktop-file-utils
 
 ## Packages for Sound and Audio
-manjaro-alsa
+alsa-lib
+alsa-utils
+alsa-plugins
+>multilib manjaro-alsa
 
 ## Artwork
 manjaro-artwork

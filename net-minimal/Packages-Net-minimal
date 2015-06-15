@@ -29,7 +29,7 @@ desktop-file-utils
 alsa-lib
 alsa-utils
 alsa-plugins
->multilib manjaro-alsa			# containes 32bit libraries
+>multilib manjaro-alsa
 
 ## Artwork
 # manjaro-artwork
