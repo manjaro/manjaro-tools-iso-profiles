@@ -157,6 +157,7 @@ for_window [title="Manjaro Settings"] floating enable
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Nitrogen"] floating enable
 for_window [class="(?i)skype"] floating enable
+for_window [class="GParted"] floating enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable
