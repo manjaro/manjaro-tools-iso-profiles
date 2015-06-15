@@ -3,12 +3,12 @@
 ## Xorg and Other Packages
 libdnet
 libxft
->x86_64 lib32-libxft
+>multilib lib32-libxft
 mesa-demos
->x86_64 lib32-mesa-demos
+>multilib lib32-mesa-demos
 uriparser
 virtualgl
->x86_64 lib32-virtualgl
+>multilib lib32-virtualgl
 xf86-input-acecad
 xf86-input-aiptek
 xf86-input-elographics
@@ -44,9 +44,9 @@ gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
 libcanberra
->x86_64 lib32-libcanberra
+>multilib lib32-libcanberra
 libcanberra-pulse
->x86_64 lib32-libcanberra-pulse
+>multilib lib32-libcanberra-pulse
 libcanberra-gstreamer
 libdvdcss
 manjaro-alsa
@@ -81,13 +81,13 @@ binutils
 bison
 fakeroot
 flex
->x86_64 gcc-multilib
->i686 gcc
+gcc
+>multilib gcc-multilib
 libtool
 m4
 make
 patch
->x86_64 lib32-flex
+>multilib lib32-flex
 # Extra packages for AUR support
 git
 patchutils
@@ -168,7 +168,7 @@ oxygen-kde4
 
 ## Better systray/notifications support
 sni-qt  # A Qt plugin that enables tray icons in qt4 applications
->x86_64 lib32-sni-qt
+>multilib lib32-sni-qt
 libappindicator-gtk2
 libappindicator-gtk3
 libappindicator-sharp
@@ -208,7 +208,7 @@ kdegraphics-thumbnailers     # thumbnailers for various graphics files
 kdemultimedia-ffmpegthumbs   # thumbnailers for video files
 kdemultimedia-mplayerthumbs  # thumbnailers for video files
 kdesdk-thumbnailers          # thumbnailers for development files
-konsolepart4                 # open terminal in context menu 
+konsolepart4                 # open terminal in context menu
 
 ## Optional dependencies for k3b
 cdparanoia    # for cd ripping support
@@ -216,21 +216,21 @@ cdrdao        # for disk-at-once (DAO) mode support
 dvd+rw-tools  # for dvd burning support
 emovix        # for bootable multimedia cd/dvd support
 transcode     # for advanced mpeg conversion support
-vcdimager     # for vcd burning support 
+vcdimager     # for vcd burning support
 
 ## Optional dependencies for kdenlive
 cdrkit           # for creation of DVD ISO images
 dvdauthor        # for creation of DVD
 dvgrab           # for firewire capture
 recordmydesktop  # for screen capture
-xine-lib         # for DVD preview 
+xine-lib         # for DVD preview
 
 ## Optional dependencies for gwenview
 kimageformats     # support for dds, xcf, exr, psd, and more image formats
 qt5-imageformats  # support for tiff, webp, and more image formats
 
 ## Optional dependency for digikam
-kipi-plugins  # more tools and plugins 
+kipi-plugins  # more tools and plugins
 libkgeomap    # Geolocalize tool
 
 ## Applications
@@ -250,7 +250,7 @@ yakuake
 
 ## Optional dependencis for cantata
 mpd       # playback
-perl-uri  # dynamic playlist 
+perl-uri  # dynamic playlist
 
 ## Office
 libreoffice-still
@@ -269,7 +269,7 @@ calligra-krita
 #calligra-words
 
 ## KDE Frameworks
-kmediaplayer 
+kmediaplayer
 
 # Partition
 partitionmanager
