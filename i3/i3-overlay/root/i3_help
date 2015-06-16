@@ -1,52 +1,49 @@
 List of shortcuts and aliases:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 default mod-key - <Super> (Windows-key)
-open new terminal window - mod+Enter
-kill focused container - mod+Shift+x kill
+open new terminal window - mod+<Enter>
+kill focused container - mod+<Shift>+q
 open dmenu - mod+d
 gtk-menu - mod+q or F1
 
 Application Shortcuts:
 ~~~~~~~~~~~~~~~~~~~~~~
-Thunderbird - mod+F1 (not installed by default)
 Webbrowser Palemoon - mod+F2
 Filemanager Pcmanfm - mod+F3
-Filmanager as root - mod+Shift+F3
-xkill - mod+Ctrl+q
-Sound mixer Pavucontrol - mod+Ctrl+m
-Screenshot of whole screen - Print
-Screenshot of focused container - mod+Print
-Screenshot of selection - mod+Shift+Print
+Filmanager as root - mod+<Shift>+F3
+xkill - mod+<Ctrl>+x
+Sound mixer Pavucontrol - mod+<Ctrl>+m
+Screenshot of whole screen - <Print>
+Screenshot of focused container - mod+<Print>
+Screenshot of selection - mod+<Shift>+<Print>
 Switch off transparency (kill compton) - mod+t
-Switch transparency back on - mod+Ctrl+t
+Switch transparency back on - mod+<Ctrl>+t
 
 Navigation:
 ~~~~~~~~~~~
 change focus - mod+arrowkeys or mod+j,k,l,ö
 change focus between tiling / floating windows - mod+space
-move focused container - mod+Shift+arrowkeys or mod+Shift+j,k,l,ö
+move focused container - mod+<Shift>+arrowkeys or mod+<Shift>+j,k,l,ö
 to move floating window with the mouse hold mod
-toggle floating - mod+Shift+Space
+toggle floating - mod+<Shift>+Space
 toggle fullscreen - mod+f
 tile vertically - mod+v
 tile horizontally - mod+h
 
 switch to workspace number 1-8 - mod+1-8
-navigate between workapaces - mod+Ctrl+Right,Left
+navigate between workapaces - mod+<Ctrl>+<Right>/<Left>
 
-resize container - mod+r and arrowkeys or j,k,l,ö
-(exit resize mode with Enter or Esc)
+resize container - mod+r followed by arrowkeys or j,k,l,ö
+(exit resize mode with <Enter> or <Esc>)
 
-move floating window - mod+Shift+arrowkeys or j,k,l,ö
+send focused container to workspace number 1-8 - mod+<Ctrl>+1-8
 
-send focused container to workspace number 1-8 - mod+Ctrl+1-8
-
-move to workspace 1-8 with focused container - mod+Shift+1-8
+move to workspace 1-8 with focused container - mod+<Shift>+1-8
 
 workspace back-and-forth - mod+b
-move container to workspace back-and-forth - mod+Shift+b
+move container to workspace back-and-forth - mod+<Shift>+b
 
-move focused container to scratchpad - mod+Shift+-
+move focused container to scratchpad - mod+<Shift>+-
 show (next) scratchpad window - mod+-
 
 Change desktop layout:
@@ -59,14 +56,14 @@ none - mod+u
 2 pixels - mod+y
 normal - mod+n
 
-reload the configuration file - mod+Shift+c
-restart i3 inplace - mod+Shift+r (preserves your layout/session, can be used to upgrade i3)
+reload the configuration file - mod+<Shift>+c
+restart i3 inplace - mod+<Shift>+r (preserves your layout/session, can be used to upgrade i3)
 
 lock screen | switch user - mod+9
-exit session - mod+0 and choose (l)ock, (e)xit, (Shift+s)uspend, (h)ibernate, (r)eboot, (s)hutdown
-(cancel with Enter or Esc)
+exit session - mod+0 and choose (l)ock, (e)xit, (s)uspend, (h)ibernate, (r)eboot, (<Shift>+s)hutdown
+(cancel with <Enter> or <Esc>)
 or
-exit i3 - mod+Shift+e (logs you out of your Xsession)
+exit i3 - mod+<Shift>+e (logs you out of your Xsession)
 
 ***************************************************************************************************
 All i3 settings, can be edited in ~/.i3/config

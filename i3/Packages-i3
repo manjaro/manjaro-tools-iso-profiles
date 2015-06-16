@@ -68,6 +68,7 @@ openresolv
 ## Xorg Packages
 libdnet
 uriparser
+xdg-user-dirs
 xf86-input-acecad
 xf86-input-aiptek
 xf86-input-evdev
