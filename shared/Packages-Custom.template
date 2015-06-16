@@ -20,3 +20,11 @@ xorg-twm
 xorg-utils
 xorg-xinit
 xdg-user-dirs
+
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
