@@ -1,16 +1,37 @@
 ### lxqt Packages
 
 ###Openrc###
-alsa-utils-openrc
-consolekit-openrc
-dbus-openrc
-#connman-openrc
-networkmanager-openrc
-displaymanager-openrc
-avahi-openrc
-ntp-openrc
+>openrc alsa-utils-openrc
+>systemd alsa-utils
+>openrc consolekit-openrc
+>openrc dbus-openrc
+>systemd dbus
+#>openrc connman-openrc
+#>systemd connman
+>openrc networkmanager-openrc
+>systemd networkmanager
+>openrc displaymanager-openrc
+>openrc avahi-openrc
+>systemd avahi
+>openrc ntp-openrc
+>systemd ntp
 
 ###xorg###
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
 xdg-user-dirs
 xdg-utils
 
@@ -66,21 +87,5 @@ openbox
 obmenu-generator
 #obconf-qt-git
 feh
-
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
 
 manjaro-settings-manager
