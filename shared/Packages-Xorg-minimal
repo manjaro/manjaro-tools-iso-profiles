@@ -45,10 +45,10 @@ KERNEL-r8168
 >nonfree_default KERNEL-catalyst
 >nonfree_default nvidia-utils
 >nonfree_default KERNEL-nvidia
->i686 nvidia-340xx-utils			# disabled on x86_64 to hit CD-size (should be nonfree_i686)
->i686 KERNEL-nvidia-340xx			# disabled on x86_64 to hit CD-size (should be nonfree_i686)
->i686 nvidia-304xx-utils			# disabled on x86_64 to hit CD-size (should be nonfree_i686)
->i686 KERNEL-nvidia-304xx			# disabled on x86_64 to hit CD-size (should be nonfree_i686)
+>nonfree_i686 nvidia-340xx-utils			# disabled on x86_64 to hit CD-size
+>nonfree_i686 KERNEL-nvidia-340xx			# disabled on x86_64 to hit CD-size
+>nonfree_i686 nvidia-304xx-utils			# disabled on x86_64 to hit CD-size
+>nonfree_i686 KERNEL-nvidia-304xx			# disabled on x86_64 to hit CD-size
 >nonfree_multilib lib32-catalyst-utils
 >nonfree_multilib lib32-nvidia-utils
 #>nonfree_multilib lib32-nvidia-304xx-utils	# disabled to hit CD-size
