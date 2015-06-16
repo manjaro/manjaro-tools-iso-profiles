@@ -49,7 +49,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Shift+Print exec notify-send 'selection will be saved in ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
-bindsym $mod+Shift+h exec mousepad i3_help
+bindsym $mod+Shift+h exec qpdfview i3_help.pdf
 bindsym $mod+Ctrl+x exec xkill
 
 # change focus
