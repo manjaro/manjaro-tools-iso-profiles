@@ -31,7 +31,7 @@ manjaro-alsa
 manjaro-pulse
 pavucontrol
 pa-applet
-pulseaudio-bluetooth
+>i686 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
 
@@ -59,7 +59,7 @@ netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-blueman
+>i686 blueman
 
 ## Xorg Packages
 inxi
@@ -98,6 +98,3 @@ plymouth-theme-manjaro-elegant
 ttf-dejavu
 cantarell-fonts
 ttf-droid
-
-## Documentation
-#manjaro-documentation
