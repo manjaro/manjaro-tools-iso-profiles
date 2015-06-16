@@ -166,6 +166,7 @@ for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [title="File Transfer*"] floating enable
 for_window [class="Clipgrab"] floating enable
 for_window [title="MuseScore: Play Panel"] floating enable
+for_window [class="Calamares"] floating enable border normal
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
