@@ -19,16 +19,17 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xdg-user-dirs
 
 ## Basic packages
 dconf
 desktop-file-utils
 
 ## Packages for Sound and Audio
-# manjaro-alsa	# containes 32bit libraries
 alsa-lib
 alsa-utils
 alsa-plugins
+>multilib manjaro-alsa
 
 ## Artwork
 # manjaro-artwork
@@ -42,18 +43,22 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 
-## AUR Access
+## minimal AUR Access
 # autoconf
 # automake
 # binutils
-# # bison
 # fakeroot
-# # flex
 # libconfig
 # libtool
 # m4
 # make
 # patch
 # subversion
+# gcc
+# >multilib gcc-multilib
 # git
+# yaourt
+
+## full AUR Access
+# base-devel
 # yaourt
