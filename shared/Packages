@@ -97,13 +97,6 @@ ecryptfs-utils
 >systemd rsync
 lsof
 
-## needed by cli-installer
-# dialog
-# dmidecode
-# gptfdisk
-# parted
-# pv
-# tcpdump
 wget
 
 ## efi support (only x86_64)
@@ -120,14 +113,6 @@ testdisk
 nilfs-utils
 nfs-utils
 ntfs-3g
-
-## Fonts
-terminus-font
-ttf-bitstream-vera
-ttf-dejavu
-ttf-inconsolata
-ttf-indic-otf
-ttf-liberation
 
 ## Network
 b43-fwcutter
