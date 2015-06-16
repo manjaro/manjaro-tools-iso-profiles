@@ -68,6 +68,7 @@ openresolv
 ## Xorg Packages
 libdnet
 uriparser
+xdg-user-dirs
 xf86-input-acecad
 xf86-input-aiptek
 xf86-input-evdev
@@ -84,7 +85,6 @@ xorg-twm
 xorg-utils
 xorg-xinit
 xorg-xkill
-xdg-user-dirs
 
 ## Artwork
 i3-theme-dark
