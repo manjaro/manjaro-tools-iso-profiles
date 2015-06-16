@@ -88,7 +88,7 @@ pkg-config
 squashfs-tools
 sudo
 syslinux
-xdg-user-dirs
+#xdg-user-dirs		# present in packages-net
 mlocate			# locatedb
 manjaro-tools-base
 
