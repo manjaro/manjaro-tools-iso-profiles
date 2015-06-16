@@ -1,3 +1,10 @@
+Welcome to manjaro i3!
+
+For the graphical installer start Thus with dmenu (mod+d)
+or for CLI run '$ sudo setup' in a terminal window (mod+Enter)
+
+Theming can be changed with lxappearance
+
 List of shortcuts and aliases:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 default mod-key - <Super> (Windows-key)
@@ -83,3 +90,5 @@ con=nano ~/.i3/config
 comp=nano .config/compton.conf
 greet=gksu lightdm-gtk-greeter-settings
 root=gksu pcmanfm
+
+HAVE FUN ! 8^} oberon

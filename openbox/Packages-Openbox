@@ -27,7 +27,7 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
-
+xdg-user-dirs
 
 ## Sound and Audio
 manjaro-alsa
