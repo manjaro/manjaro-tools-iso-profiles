@@ -16,37 +16,6 @@
 >openrc ntp-openrc
 >systemd ntp
 
-###xorg###
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-xdg-user-dirs
-xdg-utils
-
-## Fonts
-terminus-font
-ttf-bitstream-vera
-ttf-dejavu
-ttf-inconsolata
-ttf-indic-otf
-ttf-liberation
-
-###misc###
-alsa-firmware
-iso-codes
-
 ###lxqt###
 lxqt
 qterminal
@@ -64,8 +33,6 @@ kde-cli-tools
 kwrite
 #kate
 cmst
-
-###gtk###
 gvfs
 #gksu
 #mousepad

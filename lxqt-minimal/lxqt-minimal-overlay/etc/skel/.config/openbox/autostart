@@ -54,4 +54,4 @@
 (sleep 1s && lxqt-panel) &
 
 ## Background
-feh --bg-center /usr/share/wallpapers/Madera_Manjaro-FrankoM3.png
+feh --bg-center /usr/share/wallpapers/manjaro-lxqt-090.png

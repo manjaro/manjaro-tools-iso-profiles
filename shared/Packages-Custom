@@ -28,3 +28,7 @@ ttf-dejavu
 ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
+
+###misc###
+alsa-firmware
+iso-codes
