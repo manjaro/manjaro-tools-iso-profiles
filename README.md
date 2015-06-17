@@ -76,16 +76,25 @@ manjaro-tools-iso-profiles
 >openrc
 >systemd
 
->nonfree_default
->nonfree_multilib
-
->multilib
-
 >i686
 >x86_64
+>multilib
+
+>nonfree_default
+>nonfree_i686
+>nonfree_x86_64
+>nonfree_multilib
 ~~~
 
 The package lists have been unified and simplified, now supporting init specific package selection.
+
+The Packages-Your_Desktop in the profile in joined with shared/Packages-Custom, requiring manjaro-tools from the devel branch currently.
+
+
+########* Example:
+
+Packages-Lxqt-minimal is joined at build with shared/Packages-Custom
+
 
 Please review your lists if you use a custom package list and adopt to the changes!
 Profiles that use a custom Package list have been set to use symlinks to shared.
