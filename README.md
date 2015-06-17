@@ -86,15 +86,35 @@ manjaro-tools-iso-profiles
 >nonfree_multilib
 ~~~
 
-The package lists have been unified and simplified, now supporting init specific package selection.
+######* Packages
+* Contains root image packages
+* ideally no xorg
 
-The Packages-Your_Desktop in the profile in joined with shared/Packages-Custom, requiring manjaro-tools from the devel branch currently.
+######* Packages-Custom/desktop
+* Contains the custom image packages
+* desktop environment packages go here
+* this file is joined at build time with shared/Packages-Custom to pull in shared desktop packages
 
+######* Packages-Xorg
+* Contains the Xorg package repo
 
-########* Example:
+######* Packages-Livecd
+* Contains packages you only want on livecd but not installed on the target system with installer
+* default files are in shared folder and can be symlinked or defined in a real file
 
-Packages-Lxqt-minimal is joined at build with shared/Packages-Custom
+###### optional custom pacman.conf in profile
 
+* for i686
+
+~~~
+pacman-default.conf
+~~~
+
+* for x86_64
+
+~~~
+pacman-multilib.conf
+~~~
 
 Please review your lists if you use a custom package list and adopt to the changes!
 Profiles that use a custom Package list have been set to use symlinks to shared.
