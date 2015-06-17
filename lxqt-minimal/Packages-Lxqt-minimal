@@ -6,9 +6,9 @@
 >openrc consolekit-openrc
 >openrc dbus-openrc
 >systemd dbus
-#>openrc connman-openrc
+>openrc connman-openrc
 #>systemd connman
->openrc networkmanager-openrc
+#>openrc networkmanager-openrc
 >systemd networkmanager
 >openrc displaymanager-openrc
 >openrc avahi-openrc
@@ -45,7 +45,6 @@ ttf-liberation
 
 ###misc###
 alsa-firmware
-
 iso-codes
 
 ###lxqt###
@@ -60,17 +59,19 @@ qpdfview
 compton
 #juffed-qt5-git
 #compton-conf
-#kdesu
-#kde-cli-tools
+kdesu
+kde-cli-tools
+kwrite
 #kate
+cmst
 
 ###gtk###
 gvfs
-gksu
-mousepad
-gnome-keyring
+#gksu
+#mousepad
+#gnome-keyring
 xarchiver
-network-manager-applet
+#network-manager-applet
 
 ###DM###
 lxqt-lightdm-greeter
@@ -81,6 +82,7 @@ xcursor-menda
 maia-icon-theme
 menda-lxqt-panel
 manjaro-artwork
+menda-themes
 
 ###Openbox###
 openbox
