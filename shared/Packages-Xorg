@@ -30,7 +30,8 @@ xf86-video-vmware
 xf86-video-voodoo
 
 ## Bumblebee Support
-bumblebee
+>systemd bumblebee
+>openrc bumblebee-openrc
 primus
 KERNEL-bbswitch
 >multilib lib32-primus
