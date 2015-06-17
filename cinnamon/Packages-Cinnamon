@@ -1,32 +1,6 @@
-### Manjaro Packages
-
-## Xorg
-mhwd
-
-## Xorg Packages
-inxi
-libdnet
-mesa-demos
->x86_64 lib32-mesa-demos
-uriparser
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-
-## Graphical installer
-thus
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## Artwork
 manjaro-artwork
@@ -55,21 +29,21 @@ jre7-openjdk
 #ffmpegthumbnailer
 file-roller
 medit
-#glade 
+#glade
 gnome-disk-utility
 gnome-keyring
 gnome-system-monitor
 #gnome-terminal
 terminator
 gnome-vfs
-#gtksourceview3 
+#gtksourceview3
 icon-naming-utils
 mousetweaks
-#mutter 
+#mutter
 python2-gnomecanvas
 python2-gnomevfs
-python2-libgnome 
-xdg-user-dirs-gtk   
+python2-libgnome
+xdg-user-dirs-gtk
 
 
 ## polkit
@@ -77,7 +51,7 @@ xdg-user-dirs-gtk
 polkit-gnome
 polkit
 gksu
- 
+
 
 ## Network
 netctl

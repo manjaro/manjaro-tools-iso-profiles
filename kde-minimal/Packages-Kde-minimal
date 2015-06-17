@@ -1,22 +1,6 @@
-## Xorg and Other Packages
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-xdg-user-dirs
-xdg-utils
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## Display Manager
 sddm
@@ -58,7 +42,7 @@ octopi
 partitionmanager
 manjaro-settings-manager
 manjaro-welcome
-manjaro-alsa
+#manjaro-alsa
 
 ## Themes
 plasma5-themes-maia

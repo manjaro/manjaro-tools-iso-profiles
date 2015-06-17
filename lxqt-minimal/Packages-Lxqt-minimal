@@ -1,29 +1,48 @@
-### lxqt Packages
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ###Openrc###
 >openrc alsa-utils-openrc
->systemd alsa-utils
 >openrc consolekit-openrc
 >openrc dbus-openrc
->systemd dbus
 >openrc connman-openrc
-#>systemd connman
 #>openrc networkmanager-openrc
->systemd networkmanager
 >openrc displaymanager-openrc
 >openrc avahi-openrc
->systemd avahi
 >openrc ntp-openrc
+>openrc upower-pm-utils
+
+>systemd alsa-utils
+>systemd dbus
+#>systemd connman
+>systemd networkmanager
+>systemd avahi
 >systemd ntp
 
 ###lxqt###
-lxqt
+lximage-qt
+lxqt-about
+lxqt-admin
+lxqt-config
+lxqt-notificationd
+lxqt-openssh-askpass
+lxqt-panel
+lxqt-policykit
+lxqt-powermanagement
+lxqt-qtplugin
+lxqt-runner
+lxqt-session
+openbox
+pcmanfm-qt
+
 qterminal
 qupzilla
 octopi
 octopi-notifier-qt5
 octopi-cachecleaner
 octopi-repoeditor
+phonon-qt5-vlc
 qpdfview
 compton
 #juffed-qt5-git

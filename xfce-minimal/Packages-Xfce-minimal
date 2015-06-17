@@ -1,4 +1,6 @@
-### Manjaro Packages
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## Minmal XFCE Desktop Packages
 gconf # fix qt-theme

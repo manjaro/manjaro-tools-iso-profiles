@@ -51,7 +51,7 @@ s-nail
 sed
 shadow
 sysfsutils
->openrc eudev-base
+>openrc eudev-systemdcompat
 >systemd systemd-sysvcompat
 tar
 texinfo
@@ -122,8 +122,6 @@ iptables
 ipw2100-fw
 ipw2200-fw
 iw
-mobile-broadband-provider-info
-modemmanager
 nbd
 KERNEL-ndiswrapper
 ndiswrapper-utils

@@ -1,3 +1,7 @@
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
+
 ## Basic packages
 dconf
 desktop-file-utils

@@ -1,29 +1,6 @@
-### Manjaro Packages
-
-## Xorg Packages
-inxi
-libdnet
-mesa-demos
->x86_64 lib32-mesa-demos
-uriparser
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-utils
-xorg-xinit
-
-## Graphical installer
-thus
-iso-codes
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## Artwork
 manjaro-artwork
@@ -132,10 +109,10 @@ binutils
 bison
 fakeroot
 flex
-gcc 
+gcc
 libtool
 m4
 make
 patch
-subversion 
+subversion
 yaourt

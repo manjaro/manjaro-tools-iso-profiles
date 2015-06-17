@@ -1,45 +1,16 @@
-## Xorg Packages
-libdnet
-uriparser
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xf86-video-vesa
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-xorg-xset
-xdg-utils
-
-## Fonts
-terminus-font
-ttf-bitstream-vera
-ttf-dejavu
-ttf-inconsolata
-ttf-indic-otf
-ttf-liberation
-ttf-droid		# default font
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## Basic packages
 dconf
 desktop-file-utils
 tmpwatch		# cleaning /tmp
 ps_mem			# memory usage
-inxi			# system info
-mesa-demos		# used by inxi
 
 ## Audio Packages
-alsa-utils
-alsa-firmware
+>openrc alsa-utils-openrc
+>systemd alsa-utils
 alsa-plugins
 
 ## Network and bluetooth

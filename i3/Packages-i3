@@ -1,4 +1,6 @@
-### Manjaro Packages
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## i3 Packages
 accountsservice
@@ -64,27 +66,6 @@ netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-
-## Xorg Packages
-libdnet
-uriparser
-xdg-user-dirs
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-xorg-xkill
 
 ## Artwork
 i3-theme-dark

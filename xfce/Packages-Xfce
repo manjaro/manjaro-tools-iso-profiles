@@ -1,4 +1,6 @@
-### Manjaro Packages
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## XFCE Main Packages
 ffmpegthumbnailer
@@ -76,7 +78,6 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 hexchat
-inxi
 manjaro-welcome
 #midori
 mlocate
@@ -100,32 +101,6 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 blueman
-
-## Xorg and Other Packages
-libdnet
-libxft
->multilib lib32-libxft
-mesa-demos
->multilib lib32-mesa-demos
-uriparser
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-xorg-xkill
-xdg-user-dirs
 
 ## Artwork
 menda-circle-icon-theme
