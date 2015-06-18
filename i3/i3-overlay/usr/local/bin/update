@@ -1,0 +1,12 @@
+#!/bin/sh
+# /usr/local/bin/update
+
+sudo pacman-mirrors -g -c Germany
+sudo pacman -Syyu
+yaourt -Syua
+sudo pkgcacheclean
+sudo pacman-optimize
+sync
+echo -e "\e[1;32myour system has been updated, cleaned and polished successfully\e[0m\n"
+
+exit 0
