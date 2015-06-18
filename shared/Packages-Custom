@@ -42,7 +42,7 @@ modemmanager
 >openrc ntp-openrc
 >openrc upower-pm-utils
 
-###Openrc###
+###Systemd###
 >systemd alsa-utils
 >systemd avahi
 >systemd ntp
