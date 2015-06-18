@@ -2,40 +2,10 @@
 ### THIS FILE WILL INCLUDE shared/Packages-Custom ###
 #####################################################
 
-###Openrc###
->openrc alsa-utils-openrc
->openrc consolekit-openrc
->openrc dbus-openrc
->openrc connman-openrc
-#>openrc networkmanager-openrc
->openrc displaymanager-openrc
->openrc avahi-openrc
->openrc ntp-openrc
->openrc upower-pm-utils
-
->systemd alsa-utils
->systemd dbus
-#>systemd connman
->systemd networkmanager
->systemd avahi
->systemd ntp
-
 ###lxqt###
-lximage-qt
-lxqt-about
-lxqt-admin
-lxqt-config
-lxqt-notificationd
-lxqt-openssh-askpass
-lxqt-panel
-lxqt-policykit
-lxqt-powermanagement
-lxqt-qtplugin
-lxqt-runner
-lxqt-session
-openbox
-pcmanfm-qt
+lxqt
 
+###apps###
 qterminal
 qupzilla
 octopi
@@ -45,21 +15,20 @@ octopi-repoeditor
 phonon-qt5-vlc
 qpdfview
 compton
-#juffed-qt5-git
 #compton-conf
-kdesu
-kde-cli-tools
 kwrite
-#kate
 cmst
 gvfs
-#gksu
+gksu
 #mousepad
 #gnome-keyring
 xarchiver
 #network-manager-applet
+#juffed-qt5-git
+#kdesu
+#kde-cli-tools
 
-###DM###
+###DisplayManager###
 lxqt-lightdm-greeter
 accountsservice
 
@@ -77,3 +46,24 @@ obmenu-generator
 feh
 
 manjaro-settings-manager
+
+#>systemd connman
+>openrc connman-openrc
+
+#>openrc networkmanager-openrc
+>systemd networkmanager
+
+#lximage-qt
+#lxqt-about
+#lxqt-admin
+#lxqt-config
+#lxqt-notificationd
+#lxqt-openssh-askpass
+#lxqt-panel
+#lxqt-policykit
+#lxqt-powermanagement
+#lxqt-qtplugin
+#lxqt-runner
+#lxqt-session
+#openbox
+#pcmanfm-qt

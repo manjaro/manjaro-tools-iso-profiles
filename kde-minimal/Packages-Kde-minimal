@@ -3,7 +3,8 @@
 #####################################################
 
 ## Display Manager
-sddm
+>systemd sddm
+>openrc sddm-consolekit
 sddm-kcm
 
 ## Plasma5
@@ -42,12 +43,12 @@ octopi
 partitionmanager
 manjaro-settings-manager
 manjaro-welcome
-#manjaro-alsa
+>multilib manjaro-alsa
 
 ## Themes
 plasma5-themes-maia
 sddm-maia-theme
-plymouth-theme-manjaro-elegant
+>systemd plymouth-theme-manjaro-elegant
 ttf-oxygen
 
 ## GTK Themes
