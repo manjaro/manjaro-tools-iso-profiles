@@ -34,6 +34,15 @@ alsa-firmware
 mobile-broadband-provider-info
 modemmanager
 
-## Packages for Sound and Audio
+###Openrc###
+>openrc alsa-utils-openrc
+>openrc consolekit-openrc
+>openrc displaymanager-openrc
+>openrc avahi-openrc
+>openrc ntp-openrc
+>openrc upower-pm-utils
+
+###Openrc###
 >systemd alsa-utils
->opeenrc alsa-utils-opeenrc
+>systemd avahi
+>systemd ntp
