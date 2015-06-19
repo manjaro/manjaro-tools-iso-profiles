@@ -8,7 +8,7 @@ coreutils
 >systemd cryptsetup
 >openrc device-mapper-openrc
 >systemd device-mapper
->openrc dhcpcd-openrc
+#>openrc dhcpcd-openrc
 >systemd dhcpcd
 diffutils
 e2fsprogs

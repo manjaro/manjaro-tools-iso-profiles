@@ -48,9 +48,9 @@ feh
 manjaro-settings-manager
 
 #>systemd connman
->openrc connman-openrc
+#>openrc connman-openrc
 
-#>openrc networkmanager-openrc
+>openrc networkmanager-openrc
 >systemd networkmanager
 
 #lximage-qt
