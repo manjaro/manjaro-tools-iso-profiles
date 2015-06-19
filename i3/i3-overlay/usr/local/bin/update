@@ -7,6 +7,6 @@ yaourt -Syua
 sudo pkgcacheclean
 sudo pacman-optimize
 sync
-echo -e "\e[1;32myour system has been updated, cleaned and polished successfully\e[0m\n"
+echo -e "\e[1;32mYour system has been updated, cleaned and polished successfully.\e[0m\n"
 
 exit 0
