@@ -23,6 +23,12 @@ manjaro-tools-iso-profiles
 # use nonfree xorg drivers
 # nonfree_xorg="true"
 
+# use plymouth; initcpio hook
+# plymouth="true"
+
+# use pxe boot; initcpio hook
+# pxe_boot="true"
+
 ################ install ################
 
 # unset defaults to given value
