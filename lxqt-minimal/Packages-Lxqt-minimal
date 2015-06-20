@@ -5,6 +5,9 @@
 ###lxqt###
 lxqt
 
+>openrc networkmanager-openrc
+>systemd networkmanager
+
 ###apps###
 qterminal
 qupzilla
@@ -15,18 +18,15 @@ octopi-repoeditor
 phonon-qt5-vlc
 qpdfview
 compton
-#compton-conf
 kwrite
-cmst
 gvfs
 gksu
-#mousepad
-#gnome-keyring
+gnome-keyring
 xarchiver
-#network-manager-applet
-#juffed-qt5-git
+network-manager-applet
 #kdesu
 #kde-cli-tools
+#compton-conf
 
 ###DisplayManager###
 lxqt-lightdm-greeter
@@ -46,24 +46,3 @@ obmenu-generator
 feh
 
 manjaro-settings-manager
-
-#>systemd connman
-#>openrc connman-openrc
-
->openrc networkmanager-openrc
->systemd networkmanager
-
-#lximage-qt
-#lxqt-about
-#lxqt-admin
-#lxqt-config
-#lxqt-notificationd
-#lxqt-openssh-askpass
-#lxqt-panel
-#lxqt-policykit
-#lxqt-powermanagement
-#lxqt-qtplugin
-#lxqt-runner
-#lxqt-session
-#openbox
-#pcmanfm-qt
