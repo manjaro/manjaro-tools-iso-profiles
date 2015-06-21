@@ -33,7 +33,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec dmenu_run -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#222222' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333'
+bindsym $mod+d exec dmenu_run -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333'
+# bindsym $mod+d exec j4-dmenu-desktop --dmenu="dmenu -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333' -i"
 bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
 bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
@@ -227,12 +228,12 @@ bar {
 #	wheel_down_cmd nop
 		colors {
 		separator #2ECC71
-		background #222222
+		background #000000
 		statusline #DDDDDD
 		focused_workspace #FFFFFF #2ECC71 #000000
-		active_workspace #222222 #A4A28D #FFFFFF
-		inactive_workspace #A4A28D #222222 #DDDDDD
-		urgent_workspace #FFFFFF #900000 #FFFFFF
+		active_workspace #000000 #A4A28D #FFFFFF
+		inactive_workspace #A4A28D #000000 #DDDDDD
+		urgent_workspace #2ECC71 #900000 #FFFFFF
 	}
 }
 
@@ -252,6 +253,6 @@ exec --no-startup-id .conky/start_conky_grey
 exec --no-startup-id qpdfview i3_help.pdf
 
 # Theme colors
-client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
+cclient.focused #2ECC71 #2ECC71 #000000 #FFFFFF
 client.unfocused #222222 #222222 #2ECC71 #222222
 client.urgent #274D01 #900000 #FFFFFF #900000
