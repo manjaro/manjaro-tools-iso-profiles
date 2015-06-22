@@ -46,3 +46,6 @@ modemmanager
 >systemd alsa-utils
 >systemd avahi
 >systemd ntp
+
+## Documentation
+#manjaro-documentation
