@@ -24,7 +24,7 @@ manjaro-tools-iso-profiles
 # nonfree_xorg="true"
 
 # use plymouth; initcpio hook
-# plymouth="true"
+# plymouth_boot="true"
 
 # use pxe boot; initcpio hook
 # pxe_boot="true"
