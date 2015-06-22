@@ -39,7 +39,7 @@ bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
 bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
 # Start Applications
-bindsym $mod+i exec calamares
+bindsym $mod+i exec gksu calamares
 bindsym $mod+F1 exec thunderbird
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
