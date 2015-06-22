@@ -254,6 +254,6 @@ exec --no-startup-id .conky/start_conky_grey
 exec --no-startup-id qpdfview i3_help.pdf
 
 # Theme colors
-cclient.focused #2ECC71 #2ECC71 #000000 #FFFFFF
+client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
 client.unfocused #222222 #222222 #2ECC71 #222222
 client.urgent #274D01 #900000 #FFFFFF #900000
