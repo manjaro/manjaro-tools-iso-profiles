@@ -3,7 +3,7 @@
 ## i3 Packages
 accountsservice
 compton
-conky-lua
+conky
 dmenu
 ffmpeg
 ffmpegthumbnailer
