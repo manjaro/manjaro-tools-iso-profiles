@@ -21,12 +21,12 @@ compton
 kwrite
 gvfs
 gksu
-gnome-keyring
 xarchiver
 network-manager-applet
 #kdesu
 #kde-cli-tools
 #compton-conf
+#gnome-keyring
 
 ###DisplayManager###
 lxqt-lightdm-greeter
@@ -35,7 +35,6 @@ accountsservice
 ###Artwork###
 xcursor-menda
 maia-icon-theme
-menda-lxqt-panel
 manjaro-artwork
 menda-themes
 
@@ -46,3 +45,4 @@ obmenu-generator
 feh
 
 manjaro-settings-manager
+manjaro-documentation
