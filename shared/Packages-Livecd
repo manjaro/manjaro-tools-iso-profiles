@@ -1,6 +1,7 @@
 >openrc manjaro-livecd-openrc
 >systemd manjaro-livecd-systemd
 manjaro-livecd-cli-installer
+manjaro-tools-base		# recovery chroot tools
 
 calamares			# new GUI installer of manjaro - test for manjaro 0.9
 #thus

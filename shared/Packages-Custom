@@ -19,6 +19,7 @@ xorg-twm
 xorg-utils
 xorg-xinit
 xdg-user-dirs
+xdg-utils
 
 ## Fonts
 terminus-font
