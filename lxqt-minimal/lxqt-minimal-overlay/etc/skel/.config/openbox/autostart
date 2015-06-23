@@ -22,25 +22,21 @@
 
 #(sleep 2s && xset -dpms; xset s off) &
 
-#sed -i "s,_homedir_,${HOME}," ~/.config/obmenu-generator/schema.pl
-#sed -i "s,_homedir_,${HOME}," ~/.config/obmenu-generator/config.pl
-
-
 ## Basic compositing effects
-#compton -CGb &
+compton -CGb &
 
 ## Background
 #nitrogen --restore &
 
 ## Panel
-#(sleep 1s && tint2) &
+(sleep 1s && tint2) &
 
 ## Startup
 #(sleep 1s && pnmixer) &
 #(sleep 3s && conky) &
 
 ## Optionally enable file manager in daemon mode for automounting
-# (sleep 1s && thunar --daemon) &
+(sleep 1s && pcmanfm-qt -d) &
 
 ## Optionally enable screensaver
 #(sleep 1s && xautolock -time 15 -locker 'xlock -mode blank') &
@@ -51,7 +47,7 @@
 #(sleep 3s && obmenu-generator -d) &
 
 ## Panel
-(sleep 1s && lxqt-panel) &
+#(sleep 1s && lxqt-panel) &
 
 ## Background
-feh --bg-center /usr/share/wallpapers/manjaro-lxqt-090.png
+#feh --bg-center /usr/share/wallpapers/manjaro-lxqt-090.png
