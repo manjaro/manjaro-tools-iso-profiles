@@ -90,7 +90,6 @@ tlp-pmu			# TLP
 upower-pm-utils
 
 ## Basic Apps
-lxsession
 lightdm
 lightdm-gtk-greeter
 light-locker-consolekit	# requires lightdm
