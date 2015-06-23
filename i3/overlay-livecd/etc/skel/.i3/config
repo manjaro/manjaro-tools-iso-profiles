@@ -54,6 +54,8 @@ bindsym $mod+Shift+Print exec notify-send 'selection will be saved in ~/Screensh
 bindsym $mod+Shift+h exec qpdfview i3_help.pdf
 bindsym $mod+Ctrl+x exec xkill
 
+# focus_follows_mouse no
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
