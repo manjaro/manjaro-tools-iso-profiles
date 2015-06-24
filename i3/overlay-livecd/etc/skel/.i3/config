@@ -231,7 +231,8 @@ bar {
 	status_command i3status
 #	wheel_up_cmd nop
 #	wheel_down_cmd nop
-		colors {
+	font pango:Cantarell,Icons 9
+	colors {
 		separator #2ECC71
 		background #000000
 		statusline #DDDDDD
