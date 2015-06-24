@@ -62,6 +62,7 @@ open-fuse-iso
 vlc
 
 ## Network
+crda
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
@@ -132,3 +133,4 @@ yaourt
 ## AUR-Packages
 
 # ttf-font-icons
+# dmenu-xft
