@@ -28,7 +28,7 @@ gap_y 45
 TEXT
 ${color2}open new terminal - ${color}mod+Enter
 ${color2}kill focused - ${color}mod+Shift+q
-${color2}dmenu - ${color}mod+d${color2}, gtkmenu - ${color}mod+q | F1
+${color2}dmenu - ${color}mod+d
 ${color2}switch to workspace 1-8 - ${color}mod+1-8
 ${color2}send to workspace 1-8 - ${color}mod+Ctrl+1-8
 ${color2}navigate workspaces - ${color}mod+Ctrl+arrowkeys

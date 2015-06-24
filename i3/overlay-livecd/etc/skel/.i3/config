@@ -33,12 +33,13 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec dmenu_run -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#222222' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333'
+bindsym $mod+d exec dmenu_run -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333'
+# bindsym $mod+d exec j4-dmenu-desktop --dmenu="dmenu -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333' -i"
 bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
 bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
 # Start Applications
-bindsym $mod+i exec thus
+bindsym $mod+i exec gksu calamares
 bindsym $mod+F1 exec thunderbird
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
@@ -50,8 +51,10 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Shift+Print exec notify-send 'selection will be saved in ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
-bindsym $mod+Shift+h exec mousepad i3_help
+bindsym $mod+Shift+h exec qpdfview i3_help.pdf
 bindsym $mod+Ctrl+x exec xkill
+
+# focus_follows_mouse no
 
 # change focus
 bindsym $mod+j focus left
@@ -152,11 +155,14 @@ bindsym $mod+Shift+8 move container to workspace number 8; workspace 8
 # assign [class="Skype"] 5
 
 # Open specific applications in floating mode
+for_window [class="Calamares"] floating enable border normal
 for_window [class="Pamac-manager"] floating enable
 for_window [class="octopi"] floating enable
 for_window [title="Manjaro Settings"] floating enable
+for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Nitrogen"] floating enable
 for_window [class="(?i)skype"] floating enable
+for_window [class="GParted"] floating enable border normal
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable
@@ -226,12 +232,12 @@ bar {
 #	wheel_down_cmd nop
 		colors {
 		separator #2ECC71
-		background #222222
+		background #000000
 		statusline #DDDDDD
 		focused_workspace #FFFFFF #2ECC71 #000000
-		active_workspace #222222 #A4A28D #FFFFFF
-		inactive_workspace #A4A28D #222222 #DDDDDD
-		urgent_workspace #FFFFFF #900000 #FFFFFF
+		active_workspace #000000 #A4A28D #FFFFFF
+		inactive_workspace #A4A28D #000000 #DDDDDD
+		urgent_workspace #2ECC71 #900000 #FFFFFF
 	}
 }
 
@@ -246,8 +252,9 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id octopi-notifier
 exec --no-startup-id clipit
 exec --no-startup-id compton -b
-exec --no-startup-id ~/.conky/start_conky_grey
-# exec --no-startup-id ~/.conky/start_conky_green
+exec --no-startup-id .conky/start_conky_grey
+# exec --no-startup-id .conky/start_conky_green
+exec --no-startup-id qpdfview i3_help.pdf
 
 # Theme colors
 client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
