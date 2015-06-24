@@ -47,6 +47,7 @@ bindsym $mod+F4 exec libreoffice
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton
 bindsym $mod+Ctrl+m exec pavucontrol
+bindsym $mod+Shift+d exec killall dunst && exec notify-send 'restart dunst'
 bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Shift+Print exec notify-send 'selection will be saved in ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'

@@ -29,8 +29,8 @@ minimum_size 200 50
 maximum_width 200
 
 alignment tr
-gap_x 20
-gap_y 7
+gap_x 25
+gap_y 13
 
 # Graphics settings #
 draw_shades no
