@@ -8,8 +8,8 @@
 # ID 1
 rounded = 3
 border_width = 1
-background_color = #090909 100
-border_color = #090909 80
+background_color = #090909 80
+border_color = #090909 70
 
 # Panel
 panel_monitor = all
@@ -28,6 +28,13 @@ autohide_show_timeout = 0.3
 autohide_hide_timeout = 2
 autohide_height = 5
 strut_policy = follow_size
+
+# Clock
+time1_format = %H:%M @ %A %d %B
+time1_font = Visitor TT1 BRK 8
+clock_font_color = #A7A7A7 76
+clock_padding = 2 2
+clock_background_id = 0
 
 # Taskbar
 taskbar_mode = multi_desktop

@@ -18,15 +18,10 @@
 ## Does this for each session (i.e. ease of use for addtional
 ## accounts where created.
 
-#obmenu-generator -d &
-
 #(sleep 2s && xset -dpms; xset s off) &
 
 ## Basic compositing effects
-compton -CGb &
-
-## Background
-#nitrogen --restore &
+(sleep 1s && compton -CGb) &
 
 ## Panel
 (sleep 1s && tint2) &
@@ -34,6 +29,8 @@ compton -CGb &
 ## Startup
 #(sleep 1s && pnmixer) &
 #(sleep 3s && conky) &
+(sleep 1s && nm-applet) &
+(sleep 1s && octopi-notifier) &
 
 ## Optionally enable file manager in daemon mode for automounting
 (sleep 1s && pcmanfm-qt -d) &
@@ -44,10 +41,5 @@ compton -CGb &
 ## Optionally disable touchpad
 #/usr/bin/synclient TouchpadOff=1 &
 
-#(sleep 3s && obmenu-generator -d) &
-
-## Panel
-#(sleep 1s && lxqt-panel) &
-
 ## Background
-#feh --bg-center /usr/share/wallpapers/manjaro-lxqt-090.png
+feh --bg-center /usr/share/wallpapers/manjaro-lxqt-090.png &

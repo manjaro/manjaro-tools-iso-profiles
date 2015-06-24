@@ -29,9 +29,9 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
     #          COMMAND                 LABEL                ICON
     {item => ['xdg-open .',        'File Manager',      'file-manager']},
-    {item => ['xterm',             'Terminal',          'terminal']},
+    {item => ['qterminal',             'Terminal',          'terminal']},
     {item => ['xdg-open http:',    'Web Browser',       'web-browser']},
-    {item => ['gmrun',             'Run command',       'system-run']},
+#     {item => ['gmrun',             'Run command',       'system-run']},
 #     {item => ['pidgin',            'Instant messaging', 'system-users']},
 
     {sep => 'Applications'},
@@ -74,7 +74,7 @@ our $SCHEMA = [
 
         # Configuration files
 #         {item      => ["$editor ~/.conkyrc",              'Conky RC',    $editor]},
-#         {item      => ["$editor ~/.config/tint2/tint2rc", 'Tint2 Panel', $editor]},
+        {item      => ["$editor ~/.config/tint2/tint2rc", 'Tint2 Panel', $editor]},
 
         # obmenu-generator category
         {begin_cat => ['Obmenu-Generator', 'menu-editor']},

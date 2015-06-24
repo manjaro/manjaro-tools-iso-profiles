@@ -7,6 +7,8 @@ lxqt
 
 >openrc networkmanager-openrc
 >systemd networkmanager
+>openrc syslog-ng-openrc
+>systemd syslog-ng
 
 ###apps###
 qterminal
@@ -15,7 +17,6 @@ octopi
 octopi-notifier-qt5
 octopi-cachecleaner
 octopi-repoeditor
-phonon-qt5-vlc
 qpdfview
 compton
 kwrite
@@ -23,6 +24,8 @@ gvfs
 gksu
 xarchiver
 network-manager-applet
+tint2
+lxtask
 #kdesu
 #kde-cli-tools
 #compton-conf
