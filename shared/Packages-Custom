@@ -20,6 +20,7 @@ xorg-utils
 xorg-xinit
 xdg-user-dirs
 xdg-utils
+xdg-su
 
 ## Fonts
 terminus-font
