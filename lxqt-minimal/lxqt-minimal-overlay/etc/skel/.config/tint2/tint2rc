@@ -34,7 +34,7 @@ time1_format = %H:%M @ %A %d %B
 time1_font = Visitor TT1 BRK 8
 clock_font_color = #A7A7A7 76
 clock_padding = 2 2
-clock_background_id = 0
+clock_background_id = 1
 
 # Taskbar
 taskbar_mode = multi_desktop
