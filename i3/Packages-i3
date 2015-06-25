@@ -6,7 +6,6 @@
 accountsservice
 compton
 conky
-dmenu
 dunst
 ffmpeg
 ffmpegthumbnailer
@@ -132,5 +131,5 @@ yaourt
 
 ## AUR-Packages
 
-# ttf-font-icons
-# dmenu-xft
+local-repo/dmenu-xft
+local-repo/ttf-font-icons
