@@ -1,16 +1,19 @@
-### Manjaro Packages
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## i3 Packages
 accountsservice
 compton
 conky
-dmenu
 dunst
 ffmpeg
 ffmpegthumbnailer
+flashplugin
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gufw # firewall
+hexchat
 htop
 i3-wm
 i3status
@@ -19,11 +22,6 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
-network-manager-applet
-networkmanager-openconnect
-networkmanager-openvpn
-networkmanager-pptp
-networkmanager-vpnc
 pkgcacheclean
 pnmixer
 polkit-gnome
@@ -59,31 +57,16 @@ open-fuse-iso
 vlc
 
 ## Network
+crda
 netctl
 networkmanager
+network-manager-applet
 networkmanager-dispatcher-ntpd
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
 openresolv
-
-## Xorg Packages
-libdnet
-uriparser
-xdg-user-dirs
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-xorg-xkill
 
 ## Artwork
 i3-theme-dark
@@ -93,7 +76,8 @@ maia-icon-theme
 xcursor-chameleon-pearl
 xfce-theme-greenbird
 
-## Packages for Sound and Audio
+## Audio Packages
+alsa-plugins
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -104,15 +88,9 @@ gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
 flac
-flashplugin
 libdvdcss
 manjaro-alsa
-manjaro-pulse
-pavucontrol
-pa-applet
-pulseaudio-bluetooth
-pulseaudio-ctl
-pulseaudio-zeroconf
+volumeicon
 
 ## Package management
 octopi
@@ -146,3 +124,8 @@ make
 patch
 subversion
 yaourt
+
+## AUR-Packages
+
+dmenu-xft
+ttf-font-icons

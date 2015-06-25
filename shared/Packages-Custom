@@ -1,0 +1,53 @@
+## Xorg Packages
+inxi
+mesa-demos
+>multilib lib32-mesa-demos
+uriparser
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+xdg-user-dirs
+xdg-utils
+xdg-su
+
+## Fonts
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+ttf-droid
+
+###misc###
+alsa-firmware
+mobile-broadband-provider-info
+modemmanager
+
+###Openrc###
+>openrc alsa-utils-openrc
+>openrc consolekit-openrc
+>openrc displaymanager-openrc
+>openrc avahi-openrc
+>openrc ntp-openrc
+>openrc upower-pm-utils
+
+###Systemd###
+>systemd alsa-utils
+>systemd avahi
+>systemd ntp
+
+## Documentation
+#manjaro-documentation
