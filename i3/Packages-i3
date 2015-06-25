@@ -9,6 +9,7 @@ conky
 dunst
 ffmpeg
 ffmpegthumbnailer
+flashplugin
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gufw # firewall
@@ -21,11 +22,6 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
-network-manager-applet
-networkmanager-openconnect
-networkmanager-openvpn
-networkmanager-pptp
-networkmanager-vpnc
 pkgcacheclean
 pnmixer
 polkit-gnome
@@ -64,7 +60,12 @@ vlc
 crda
 netctl
 networkmanager
+network-manager-applet
 networkmanager-dispatcher-ntpd
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
 openresolv
 
 ## Artwork
@@ -75,7 +76,8 @@ maia-icon-theme
 xcursor-chameleon-pearl
 xfce-theme-greenbird
 
-## Packages for Sound and Audio
+## Audio Packages
+alsa-plugins
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -86,15 +88,9 @@ gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
 flac
-flashplugin
 libdvdcss
 manjaro-alsa
-manjaro-pulse
-pavucontrol
-pa-applet
-pulseaudio-bluetooth
-pulseaudio-ctl
-pulseaudio-zeroconf
+volumeicon
 
 ## Package management
 octopi

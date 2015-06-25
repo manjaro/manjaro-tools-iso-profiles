@@ -156,23 +156,25 @@ bindsym $mod+Shift+8 move container to workspace number 8; workspace 8
 # assign [class="Skype"] 5
 
 # Open specific applications in floating mode
+for_window [title="alsamixer"] floating enable border pixel 2
 for_window [class="Calamares"] floating enable border normal
-for_window [class="Pamac-manager"] floating enable
-for_window [class="octopi"] floating enable
-for_window [title="Manjaro Settings"] floating enable
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Nitrogen"] floating enable
-for_window [class="(?i)skype"] floating enable
-for_window [class="GParted"] floating enable border normal
-for_window [class="Pavucontrol"] floating enable
-for_window [class="Lxappearance"] floating enable
-for_window [class="Qtconfig-qt4"] floating enable
-for_window [class="Lightdm-gtk-greeter-settings"] floating enable
-for_window [title="i3_help"] floating enable
-for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [title="File Transfer*"] floating enable
 for_window [class="Clipgrab"] floating enable
+for_window [title="File Transfer*"] floating enable
+for_window [class="Galculator"] floating enable border pixel 2
+for_window [class="GParted"] floating enable border normal
+for_window [title="i3_help"] floating enable
+for_window [class="Lightdm-gtk-greeter-settings"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [title="Manjaro Settings"] floating enabl
 for_window [title="MuseScore: Play Panel"] floating enable
+for_window [class="Nitrogen"] floating enable
+for_window [class="octopi"] floating enable
+for_window [class="Pamac-manager"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Qtconfig-qt4"] floating enable
+for_window [class="(?i)System-config-printer.py"] floating enable border normal
+for_window [class="Skype"] floating enable border normal
+for_window [class="(?i)virtualbox"] floating enable border normal
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -247,9 +249,8 @@ bar {
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id light-locker
-exec --no-startup-id pulseaudio
 exec --no-startup-id nm-applet
-exec --no-startup-id pa-applet
+exec --no-startup-id volumeicon
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id octopi-notifier
 exec --no-startup-id clipit
