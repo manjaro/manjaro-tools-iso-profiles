@@ -29,15 +29,13 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
-alias fixit='sudo rm -f /var/lib/pacman/db.lck && sudo pacman -Syyu && yaourt -Syua && sudo pkgcacheclean && sudo pacman-optimize && sync'
-alias update='sudo pacman-mirrors -g && sudo pacman -Syyu && yaourt -Syua && sudo pkgcacheclean && sudo pacman-optimize && sync'
-alias upgrade='sudo pacman -Syu && yaourt -Syua'
+alias fixit='sudo rm -f /var/lib/pacman/db.lck'
+alias upgrade='yaourt -Syua'
 alias con='nano ~/.i3/config'
-alias greet='gksu lightdm-gtk-greeter-settings'
 alias comp='nano .config/compton.conf'
 alias men='mousepad ~/.i3/mygtkmenu.conf'
-alias root='gksu pcmanfm'
 alias xflock='light-locker-command -l'
+alias printer='system-config-printer'
 
 # ex - archive extractor
 # usage: ex <file>

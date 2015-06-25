@@ -22,7 +22,7 @@ default_color white
 color2 888888
 
 alignment bottom_left
-gap_x 30
+gap_x 25
 gap_y 45
 
 TEXT
