@@ -127,5 +127,5 @@ yaourt
 
 ## AUR-Packages
 
-local-repo/dmenu-xft
-local-repo/ttf-font-icons
+dmenu-xft
+ttf-font-icons
