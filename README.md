@@ -68,12 +68,12 @@ manjaro-tools-iso-profiles
 # unset defaults to given values
 # names must match systemd service names
 # services in start_systemd array don't need to be listed here
-# start_systemd_live=('livecd' 'mhwd-live' 'pacman-init' 'pacman-boot')
+# start_systemd_live=('livecd' 'mhwd-live' 'pacman-init')
 
 # unset defaults to given values,
 # names must match openrc service names
 # services in start_openrc array don't need to be listed here
-# start_openrc_live=('livecd' 'mhwd-live' 'pacman-init' 'pacman-boot')
+# start_openrc_live=('livecd' 'mhwd-live' 'pacman-init')
 ~~~
 
 ######* New Packagelist tags
