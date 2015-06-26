@@ -1,4 +1,4 @@
-## The actual 'base' group, minus netctl
+## Base group minus netctl
 bash
 bzip2
 coreutils
@@ -60,7 +60,11 @@ util-linux
 which
 xfsprogs
 
-## Base Packages
+## Kernel
+KERNEL
+
+## Extra Base Packages
+grub
 linux-firmware
 lsb-release
 >openrc haveged-openrc
@@ -68,22 +72,20 @@ lsb-release
 manjaro-firmware
 manjaro-release
 memtest86+
->multilib lib32-mesa  # Optional dependency for mhwd
-
-## Kernel
-KERNEL
-## Extra Base Packages
-grub
 mkinitcpio-nfs-utils
+>multilib lib32-mesa  # Optional dependency for mhwd
 os-prober
 pkg-config
-squashfs-tools
 sudo
 syslinux
->openrc nfs-utils-openrc
->systemd nfs-utils
 
-## Compression Codecs
+## Misc applications
+lsof
+>openrc rsync-openrc
+>systemd rsync
+wget
+
+## Compression utils
 lzop
 unarj
 unrar
@@ -91,33 +93,35 @@ unzip
 xz
 zip
 
-## encrypt support
+## Encrypt support
 ecryptfs-utils
->openrc rsync-openrc
->systemd rsync
-lsof
 
-wget
-
-## efi support (only x86_64)
+## Efi support (only x86_64)
 >x86_64 gummiboot
 >x86_64 prebootloader
 >x86_64 refind-efi
 
-## Filesystem Packages
+## Storage and filesystem
 btrfs-progs
 dmraid
 dosfstools
 ecryptfs-utils
-testdisk
+>openrc hdparm-openrc
+>systemd hdparm
 nilfs-utils
-nfs-utils
+>openrc nfs-utils-openrc
+>systemd nfs-utils
 ntfs-3g
+sdparm
+squashfs-tools
+smartmontools
+testdisk
 
 ## Network
 b43-fwcutter
 dhclient
 dnsmasq
+ethtool
 iptables
 ipw2100-fw
 ipw2200-fw
@@ -127,21 +131,16 @@ KERNEL-ndiswrapper
 ndiswrapper-utils
 rp-pppoe
 usb_modeswitch
+wireless_tools
 >openrc wpa_supplicant-openrc
 >systemd wpa_supplicant
 zd1211-firmware
 
-## Laptop power management
+## Power management
 >openrc acpid-openrc
 >systemd acpid
 >openrc cpupower-openrc
 >systemd cpupower
-ethtool
->openrc hdparm-openrc
->systemd hdparm
-sdparm
-smartmontools
-wireless_tools
 >systemd tlp
 
 ## ucode for new cpus
