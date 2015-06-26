@@ -3,10 +3,10 @@
 #####################################################
 
 ## Network
-netctl
-networkmanager
+>systemd networkmanager
+>openrc networkmanager-openrc
 networkmanager-dispatcher-ntpd
-openresolv
+>systemd openresolv
 
 ## Libraries for Sound/Audio/Video
 ffmpeg
@@ -72,9 +72,9 @@ yaourt
 openssh
 samba
 
-## Font
-ttf-droid
+## Fonts
 ttf-oxygen  # oficial KDE font
+cantarell-fonts 
 
 ## Games
 steam-manjaro
@@ -101,7 +101,8 @@ python-pyqt4   # optional for hplip
 splix
 
 ## Display manager
-sddm
+>systemd sddm
+>openrc sddm-consolekit
 sddm-kcm
 
 ## Plasma5
@@ -133,7 +134,7 @@ systemsettings
 plasma5-themes-maia
 gnome-icon-theme
 sddm-maia-theme
-plymouth-theme-manjaro-elegant
+>systemd plymouth-theme-manjaro-elegant
 
 ## GTK Themes
 gnome-themes-standard # Adwaita theme
@@ -212,12 +213,11 @@ libkgeomap    # Geolocalize tool
 ## Applications
 cantata
 imagewriter
-inxi
 firefox-kde
 flashplugin
-kcmsystemd
+>systemd kcmsystemd
 manjaro-settings-manager
-manjaro-welcome # not yet ready
+manjaro-welcome
 p7zip
 screenfetch
 thunderbird-kde
