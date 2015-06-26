@@ -1,4 +1,6 @@
-### Manjaro Packages Pantheon
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
 
 ## All file for any DE
 dconf-editor
@@ -50,7 +52,7 @@ snap-photobooth-bzr
 switchboard-bzr
 indicator-session-systemd #from Aur for patch indicator session pantheon
 ido #from aur to most indicator applet
-indicator-datetime 
+indicator-datetime
 indicator-power #from Aur
 indicator-sound
 #network-manager-applet-ubuntu #from Aur
@@ -73,14 +75,6 @@ budgie-desktop
 libgee06 #from Aur (for slingscold)
 gnome-menus2 #from Aur (for slingscold)
 slingscold #from Aur for elementary experience
-
-##Font
-ttf-opensans
-#ttf-raleway-font-family
-ttf-dejavu
-ttf-droid
-ttf-freefont
-ttf-liberation
 
 ## Audio Packages
 manjaro-alsa
@@ -115,28 +109,6 @@ networkmanager-dispatcher-ntpd
 openresolv
 >i686 blueman
 
-## Xorg Packages
-inxi
-libdnet
-#>x86_64 lib32-mesa-demos
-uriparser
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-xdg-user-dirs
-
 ## Artwork
 #faenza-green-icon-theme
 #maia-icon-theme
@@ -146,14 +118,6 @@ manjaro-artwork
 xcursor-menda
 >i686 xfce-theme-greenbird
 plymouth-theme-manjaro-elegant
-
-## Fonts
-ttf-dejavu
-cantarell-fonts
-ttf-droid
-
-## Documentation
-#manjaro-documentation
 
 ##Access AUR
 autoconf

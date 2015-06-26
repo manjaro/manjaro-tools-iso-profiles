@@ -1,39 +1,40 @@
 ## Xorg Drivers
->free_uni xf86-video-apm
->free_uni xf86-video-ark
->free_uni xf86-video-ati
->free_uni xf86-video-chips
->free_uni xf86-video-dummy
->free_uni xf86-video-fbdev
->free_uni xf86-video-glint
->free_uni xf86-video-i128
->free_uni xf86-video-i740
+xf86-video-apm
+xf86-video-ark
+xf86-video-ati
+xf86-video-chips
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-glint
+xf86-video-i128
+xf86-video-i740
 xf86-video-intel
->free_uni xf86-video-mach64
->free_uni xf86-video-neomagic
->free_uni xf86-video-nouveau
->free_uni xf86-video-nv
->free_uni xf86-video-openchrome
->free_uni xf86-video-r128
->free_uni xf86-video-rendition
->free_uni xf86-video-s3
->free_uni xf86-video-s3virge
->free_uni xf86-video-savage
->free_uni xf86-video-siliconmotion
->free_uni xf86-video-sis
->free_uni xf86-video-sisusb
->free_uni xf86-video-tdfx
->free_uni xf86-video-trident
->free_uni xf86-video-tseng
->free_uni xf86-video-vesa
->free_uni xf86-video-vmware
->free_uni xf86-video-voodoo
+xf86-video-mach64
+xf86-video-neomagic
+xf86-video-nouveau
+xf86-video-nv
+xf86-video-openchrome
+xf86-video-r128
+xf86-video-rendition
+xf86-video-s3
+xf86-video-s3virge
+xf86-video-savage
+xf86-video-siliconmotion
+xf86-video-sis
+xf86-video-sisusb
+xf86-video-tdfx
+xf86-video-trident
+xf86-video-tseng
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo
 
 ## Bumblebee Support
-bumblebee
+>systemd bumblebee
+>openrc bumblebee-openrc
 primus
+>multilib lib32-primus
 KERNEL-bbswitch
->x86_64 lib32-primus
 
 ## Network Support
 KERNEL-broadcom-wl
@@ -41,24 +42,23 @@ KERNEL-rt3562sta
 KERNEL-r8168
 
 ## Proprietary Drivers
->nonfree_uni catalyst-utils
->nonfree_uni KERNEL-catalyst
->nonfree_uni nvidia-utils
->nonfree_uni KERNEL-nvidia
->nonfree_uni nvidia-340xx-utils
->nonfree_uni KERNEL-nvidia-340xx
->nonfree_uni nvidia-304xx-utils
->nonfree_uni KERNEL-nvidia-304xx
->nonfree_x64 lib32-catalyst-utils
->nonfree_x64 lib32-nvidia-utils
->nonfree_x64 lib32-nvidia-304xx-utils
->nonfree_x64 lib32-nvidia-340xx-utils
->nonfree_x64 lib32-gcc-libs
->nonfree_x64 lib32-zlib 
+>nonfree_default catalyst-utils
+>nonfree_default KERNEL-catalyst
+>nonfree_default nvidia-utils
+>nonfree_default KERNEL-nvidia
+>nonfree_default nvidia-340xx-utils
+>nonfree_default KERNEL-nvidia-340xx
+>nonfree_default nvidia-304xx-utils
+>nonfree_default KERNEL-nvidia-304xx
+>nonfree_multilib lib32-catalyst-utils
+>nonfree_multilib lib32-nvidia-utils
+>nonfree_multilib lib32-nvidia-304xx-utils
+>nonfree_multilib lib32-nvidia-340xx-utils
 
 ## Virtualbox Drivers
->free_uni virtualbox-guest-utils
->free_uni KERNEL-virtualbox-guest-modules
+>openrc virtualbox-guest-utils-openrc
+>systemd virtualbox-guest-utils
+KERNEL-virtualbox-guest-modules
 
 ## Xorg Packages
 libxaw
@@ -67,7 +67,7 @@ libxvmc
 pangox-compat
 
 ## Xorg x86_64 Packages
->x86_64 lib32-libxvmc
+>multilib lib32-libxvmc
 
 ## VMWare Support
 open-vm-tools

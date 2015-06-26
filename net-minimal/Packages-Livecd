@@ -1,8 +1,8 @@
-manjaro-livecd-systemd
+>openrc manjaro-livecd-openrc
+>systemd manjaro-livecd-systemd
 manjaro-livecd-cli-installer
 
 #calamares			# new GUI installer of manjaro - test for manjaro 0.9
 #thus
-#thus-dev
 #gparted
-#mhwd-chroot
+#thus-dev

@@ -1,9 +1,6 @@
 [$Version]
 update_info=kded.upd:kde3.0
 
-[Appmenu Style]
-Style=InApplication
-
 [ColorEffects:Disabled]
 Color=56,56,56
 ColorAmount=0
@@ -16,83 +13,83 @@ IntensityEffect=2
 [ColorEffects:Inactive]
 ChangeSelectionColor=true
 Color=112,111,110
-ColorAmount=0.025
-ColorEffect=2
+ColorAmount=-0.95
+ColorEffect=0
 ContrastAmount=0.1
-ContrastEffect=2
+ContrastEffect=0
 Enable=false
 IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
 BackgroundAlternate=224,223,222
-BackgroundNormal=223,220,217
-DecorationFocus=0,128,0
-DecorationHover=0,255,0
-ForegroundActive=146,76,157
-ForegroundInactive=137,136,135
-ForegroundLink=0,87,174
-ForegroundNegative=191,3,3
-ForegroundNeutral=176,128,0
-ForegroundNormal=34,31,30
-ForegroundPositive=0,110,40
-ForegroundVisited=100,74,155
+BackgroundNormal=247,247,247
+DecorationFocus=26,188,156
+DecorationHover=22,160,133
+ForegroundActive=155,89,182
+ForegroundInactive=182,186,186
+ForegroundLink=76,107,138
+ForegroundNegative=231,76,60
+ForegroundNeutral=230,126,34
+ForegroundNormal=41,47,52
+ForegroundPositive=52,152,219
+ForegroundVisited=91,44,112
 
 [Colors:Selection]
 BackgroundAlternate=62,138,204
-BackgroundNormal=0,128,0
-DecorationFocus=0,128,0
-DecorationHover=0,255,0
-ForegroundActive=108,36,119
-ForegroundInactive=199,226,248
-ForegroundLink=0,49,110
-ForegroundNegative=156,14,14
-ForegroundNeutral=255,221,0
+BackgroundNormal=26,188,156
+DecorationFocus=22,160,133
+DecorationHover=26,188,156
+ForegroundActive=96,55,113
+ForegroundInactive=222,222,222
+ForegroundLink=0,98,218
+ForegroundNegative=231,76,60
+ForegroundNeutral=230,126,34
 ForegroundNormal=255,255,255
-ForegroundPositive=128,255,128
-ForegroundVisited=69,40,134
+ForegroundPositive=52,152,219
+ForegroundVisited=91,44,112
 
 [Colors:Tooltip]
 BackgroundAlternate=196,224,255
-BackgroundNormal=0,192,0
-DecorationFocus=0,128,0
-DecorationHover=0,255,0
-ForegroundActive=255,128,224
-ForegroundInactive=137,136,135
-ForegroundLink=88,172,255
-ForegroundNegative=191,3,3
-ForegroundNeutral=176,128,0
-ForegroundNormal=0,0,0
-ForegroundPositive=0,110,40
-ForegroundVisited=150,111,232
+BackgroundNormal=41,47,52
+DecorationFocus=26,188,156
+DecorationHover=22,160,133
+ForegroundActive=155,89,182
+ForegroundInactive=230,230,230
+ForegroundLink=126,178,230
+ForegroundNegative=231,76,60
+ForegroundNeutral=230,126,34
+ForegroundNormal=247,247,247
+ForegroundPositive=52,152,219
+ForegroundVisited=91,44,112
 
 [Colors:View]
 BackgroundAlternate=248,247,246
 BackgroundNormal=255,255,255
-DecorationFocus=0,128,0
-DecorationHover=0,255,0
-ForegroundActive=146,76,157
-ForegroundInactive=137,136,135
-ForegroundLink=0,87,174
-ForegroundNegative=191,3,3
-ForegroundNeutral=176,128,0
-ForegroundNormal=31,28,27
-ForegroundPositive=0,110,40
-ForegroundVisited=100,74,155
+DecorationFocus=26,188,156
+DecorationHover=22,160,133
+ForegroundActive=155,89,182
+ForegroundInactive=182,186,186
+ForegroundLink=76,107,138
+ForegroundNegative=231,76,60
+ForegroundNeutral=230,126,34
+ForegroundNormal=41,47,52
+ForegroundPositive=52,152,219
+ForegroundVisited=91,44,112
 
 [Colors:Window]
 BackgroundAlternate=218,217,216
-BackgroundNormal=214,210,208
-DecorationFocus=0,128,0
-DecorationHover=0,255,0
-ForegroundActive=146,76,157
-ForegroundInactive=137,136,135
-ForegroundLink=0,87,174
-ForegroundNegative=191,3,3
-ForegroundNeutral=176,128,0
-ForegroundNormal=34,31,30
-ForegroundPositive=0,110,40
-ForegroundVisited=100,74,155
+BackgroundNormal=247,247,247
+DecorationFocus=22,160,133
+DecorationHover=26,188,156
+ForegroundActive=155,89,182
+ForegroundInactive=182,186,186
+ForegroundLink=76,107,138
+ForegroundNegative=231,76,60
+ForegroundNeutral=230,126,34
+ForegroundNormal=41,47,52
+ForegroundPositive=52,152,219
+ForegroundVisited=91,44,112
 
 [DesktopIcons]
 ActiveColor=169,156,255
@@ -111,7 +108,7 @@ DisabledColor2=0,0,0
 DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
-Size=48
+Size=32
 
 [DialogIcons]
 ActiveColor=169,156,255
@@ -133,41 +130,22 @@ DisabledValue=1
 Size=32
 
 [General]
-ColorScheme=OxyGreen
-XftHintStyle=hintmedium
-dbfile=/home/manjaro/.mozilla/firefox/9shb6xj3.default/places.sqlite
+ColorScheme=Maia
+Name=Maia
+font=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
+menuFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-widgetStyle=oxygen
+smallestReadableFont=Oxygen-Sans,8,-1,5,50,0,0,0,0,0
+toolBarFont=Oxygen-Sans,9,-1,5,50,0,0,0,0,0
+widgetStyle=breeze
 
 [Icons]
-Theme=FaenzaFlattr-Green
+Theme=maia
 
 [KDE]
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 contrast=7
-
-[KDE-Global GUI Settings]
-GraphicEffectsLevel=6
-
-[KFileDialog Settings]
-Automatically select filename extension=true
-Breadcrumb Navigation=true
-Decoration position=0
-LocationCombo Completionmode=5
-PathCombo Completionmode=5
-Previews=false
-Show Bookmarks=false
-Show Full Path=false
-Show Preview=false
-Show Speedbar=true
-Show hidden files=false
-Sort by=Name
-Sort directories first=true
-Sort reversed=false
-Speedbar Width=89
-View Style=Simple
-listViewIconSize=0
 
 [MainToolbarIcons]
 ActiveColor=169,156,255
@@ -250,9 +228,9 @@ DisabledValue=1
 Size=22
 
 [WM]
-activeBackground=0,128,0
-activeBlend=255,255,255
-activeForeground=255,255,255
-inactiveBackground=224,223,222
-inactiveBlend=75,71,67
-inactiveForeground=75,71,67
+activeBackground=41,47,52
+activeBlend=41,47,52
+activeForeground=247,247,247
+inactiveBackground=247,247,247
+inactiveBlend=247,247,247
+inactiveForeground=41,47,52

@@ -1,0 +1,55 @@
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
+
+## Display Manager
+>systemd sddm
+>openrc sddm-consolekit
+sddm-kcm
+
+## Plasma5
+bluedevil
+breeze
+drkonqi
+kde-gtk-config
+kdeplasma-addons
+khelpcenter
+kinfocenter
+kio-extras
+kmenuedit
+kscreen
+ksshaskpass
+ksysguard
+kwin
+kwrited
+milou
+oxygen
+oxygen-cursors
+plasma-desktop
+plasma-nm
+plasma-workspace
+powerdevil
+systemsettings
+
+## Aplications
+konsole
+kate
+pcmanfm-qt
+qpdfview
+qupzilla
+kmix
+kwrite
+octopi
+partitionmanager
+manjaro-settings-manager
+manjaro-welcome
+>multilib manjaro-alsa
+
+## Themes
+plasma5-themes-maia
+sddm-maia-theme
+>systemd plymouth-theme-manjaro-elegant
+ttf-oxygen
+
+## GTK Themes
+gnome-themes-standard # Adwaita theme

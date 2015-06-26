@@ -1,0 +1,52 @@
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
+
+###lxqt###
+lxqt
+
+>openrc networkmanager-openrc
+>systemd networkmanager
+>openrc syslog-ng-openrc
+>systemd syslog-ng
+
+###apps###
+qterminal
+qupzilla
+octopi
+octopi-notifier-qt5
+octopi-cachecleaner
+octopi-repoeditor
+qpdfview
+compton
+kwrite
+gvfs
+gksu
+xarchiver
+network-manager-applet
+tint2
+lxtask
+#kdesu
+#kde-cli-tools
+#compton-conf
+#gnome-keyring
+
+###DisplayManager###
+lxqt-lightdm-greeter
+accountsservice
+
+###Artwork###
+cantarell-fonts
+xcursor-menda
+maia-icon-theme
+manjaro-artwork
+menda-themes
+
+###Openbox###
+openbox
+obmenu-generator
+#obconf-qt-git
+feh
+
+manjaro-settings-manager
+manjaro-documentation

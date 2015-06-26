@@ -2,6 +2,6 @@
 #!/bin/bash
 
 conky -c ~/.conky/conky_shortcuts_green
-conky -c ~/.conky/conky_lua_green
+conky -c ~/.conky/conky_green
 
 exit

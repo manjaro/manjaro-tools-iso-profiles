@@ -1,5 +1,5 @@
 [Background]
-Color=0,0,0
+Color=44,44,44
 
 [BackgroundIntense]
 Color=0,0,0
@@ -60,5 +60,5 @@ Color=24,240,24
 
 [General]
 Description=Green on Black
-Opacity=0.9
+Opacity=1
 Wallpaper=
