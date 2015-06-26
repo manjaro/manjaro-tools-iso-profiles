@@ -84,6 +84,8 @@ steam-manjaro
 
 ## Java
 jdk8-openjdk
+jre8-openjdk-headless
+jre8-openjdk
 icedtea-web
 
 ## Packages for Sound and Audio
