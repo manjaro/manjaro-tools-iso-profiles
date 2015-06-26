@@ -39,3 +39,4 @@ OnlyShowIn=LXQt;
 TryExec=qlipper
 Type=Application
 X-LXQt-Need-Tray=true
+Hidden=true
