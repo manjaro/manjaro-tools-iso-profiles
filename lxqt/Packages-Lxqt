@@ -5,7 +5,6 @@
 ## Basic packages
 dconf
 desktop-file-utils
-xdg-utils              # xdg not included in Packages ???
 
 ## Packages for Sound and Audio
 #manjaro-alsa
@@ -17,11 +16,9 @@ manjaro-artwork
 gtk2
 
 ## Network
-#netctl
+networkmanager
+network-manager-applet-lite
 openresolv
-connman
-#cmst
-lxqt-connman-applet
 # =============================================================================
 
 
@@ -105,7 +102,8 @@ obconf				# openbox appearance settings - needed for window title and border con
 #vertex-dark-lxqt                # light and green version of vertex-themes
 #menda-circle-icon-theme 	# new manjaro icon theme - much lighter
 #azenis-green-icon-theme
-compass-icon-theme
+>x86_64 compass-icon-theme
+lateafternoon-icons
 #>x86_64 db-silver-icons
 #menda-lxqt-panel 		# new manjaro theme for lxqt/panel
 mediterraneanlxqt
@@ -125,7 +123,7 @@ fontconfig-infinality-ultimate
 #baka-mplayer
 >x86_64 libchardet              # for bomi...
 >x86_64 bomi                    # multimedia player cmplayer-like
-claws-mail                      # E-mail client
+>x86_64 claws-mail              # E-mail client
 lxtask                          # task manager
 mhwd-chroot
 mpv				# replace mplayer/mplayer2
@@ -148,7 +146,7 @@ flashplugin			# flash support for internet browser
 gparted				# partitioning program (GTK2)
 #>x86_64 libreoffice-installer	# GUI installer for LibreOffice --> this is outdated and causes problems
 >x86_64 pinta                   # drawing/editing program
-meteo-qt                        # weather application
+>x86_64 meteo-qt                # weather application
 qarma-git			# zenity Qt5
 qastools-qt5                    # alsa mixer
 transmission-qt                 # bittorrent client Qt5
@@ -156,6 +154,7 @@ qisousb				# write an ISO on an USB stick
 qlipper-qt5-git                 # clipoard applet
 qtfind				# add a file search to pcmanfm-qt (qt5)
 redshift                        # adjusts the color temperature
+redshiftconf                    # redshift configuration tool
 rfkill
 #xscreensaver			# screensaver and power managment
 xsensors                        # gui for lm_sensors
@@ -177,7 +176,7 @@ libtool
 m4
 make
 patch
-subversion
+>x86_64 subversion
 git
 yaourt
 
