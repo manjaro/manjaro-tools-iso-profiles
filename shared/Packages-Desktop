@@ -54,6 +54,3 @@ modemmanager
 >openrc ntp-openrc
 >systemd ntp
 >openrc upower-pm-utils
-
-## Documentation
-#manjaro-documentation
