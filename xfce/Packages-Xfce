@@ -146,6 +146,8 @@ cantarell-fonts
 ttf-droid
 
 ## Java
+jre8-openjdk
+jre8-openjdk-headless
 icedtea-web
 
 ## Printing
