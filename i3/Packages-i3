@@ -31,7 +31,7 @@ rxvt-unicode
 rxvt-unicode-terminfo
 urxvt-perls
 vi
-xarchiver # archive management
+xarchiver
 xfce4-power-manager
 
 ## Applications
@@ -46,7 +46,6 @@ gvfs-afp
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
-inxi
 mousepad
 nitrogen
 palemoon
@@ -57,15 +56,22 @@ open-fuse-iso
 vlc
 
 ## Network
-netctl
-networkmanager
+bluez-openrc
+blueman
+>systemd netctl
+>systemd networkmanager
+>openrc networkmanager-openrc
 network-manager-applet
 networkmanager-dispatcher-ntpd
 networkmanager-openconnect
 networkmanager-openvpn
+>openrc openvpn-openrc
 networkmanager-pptp
 networkmanager-vpnc
-openresolv
+>systemd openresolv
+>openrc openresolv-openrc
+>openrc syslog-ng-openrc
+>systemd syslog-ng
 
 ## Artwork
 i3-theme-dark
@@ -98,9 +104,6 @@ octopi-pacmanhelper
 
 ## Fonts
 cantarell-fonts
-terminus-font
-ttf-dejavu
-ttf-droid
 
 ## Java
 # jre8-openjdk
@@ -119,11 +122,13 @@ fakeroot
 flex
 >i686 gcc
 >x86_64 gcc-multilib
+git
+libconfig
 libtool
 m4
 make
 patch
-subversion
+>x86_64 subversion
 yaourt
 
 ## AUR-Packages
