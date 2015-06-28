@@ -93,9 +93,6 @@ unzip
 xz
 zip
 
-## Encrypt support
-ecryptfs-utils
-
 ## Efi support (only x86_64)
 >x86_64 gummiboot
 >x86_64 prebootloader
@@ -119,6 +116,7 @@ testdisk
 
 ## Network
 b43-fwcutter
+crda
 dhclient
 dnsmasq
 ethtool
