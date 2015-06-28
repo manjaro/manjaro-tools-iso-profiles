@@ -10,8 +10,19 @@ Xcursor.theme: Chameleon-Pearl-Regular-0.5
 Xcursor.size:  0
 URxvt.depth: 32
 URxvt.background: [60]#000000
-! urxvt*background: rgba:0000/0000/0200/c800
-URxvt*shading:                        30
+URxvt*scrollBar:                      false
+URxvt*mouseWheelScrollPage:           false
+URxvt*cursorBlink:                    true
+URxvt*background:                     black
+URxvt*foreground:                     white
+URxvt*saveLines:                      5000
+
+! for 'fake' transparency (without Compton) uncomment the following three lines
+! URxvt*inheritPixmap:                  true
+! URxvt*transparent:                    true
+! URxvt*shading:                        30
+
+! other possible settings:
 ! Rxvt.perl-ext-common: ...,clipboard
 ! URxvt.keysym.M-C-c:   perl:clipboard:copy
 ! URxvt.keysym.M-v:   perl:clipboard:paste
@@ -26,7 +37,6 @@ URxvt*shading:                        30
 ! URxvt*skipScroll:                     boolean
 ! URxvt*pastableTabs:                   boolean
 ! URxvt*scrollstyle:                    plain
-URxvt*scrollBar:                      false
 ! URxvt*scrollBar_right:                boolean
 ! URxvt*scrollBar_floating:             true
 ! URxvt*scrollBar_align:                mode
@@ -34,10 +44,7 @@ URxvt*scrollBar:                      false
 ! URxvt*scrollTtyOutput:                boolean
 ! URxvt*scrollTtyKeypress:              boolean
 ! URxvt*scrollWithBuffer:               boolean
-! URxvt*inheritPixmap:                  boolean
-! URxvt*transparent:                    true
 ! URxvt*tintColor:                      !7DA55
-! URxvt*shading:                        30
 ! URxvt*blurRadius:                     HxV
 ! URxvt*fading:                         number
 ! URxvt*fadeColor:                      color
@@ -46,14 +53,10 @@ URxvt*scrollBar:                      false
 ! URxvt*visualBell:                     boolean
 ! URxvt*mapAlert:                       boolean
 ! URxvt*meta8:                          boolean
-URxvt*mouseWheelScrollPage:           false
 ! URxvt*tripleclickwords:               boolean
 ! URxvt*insecure:                       boolean
 ! URxvt*cursorUnderline:                boolean
-URxvt*cursorBlink:                    true
 ! URxvt*pointerBlank:                   boolean
-URxvt*background:                     black
-URxvt*foreground:                     white
 ! URxvt*color0:                         color
 ! URxvt*color1:                         color
 ! URxvt*color2:                         color
@@ -96,7 +99,6 @@ URxvt*foreground:                     white
 ! URxvt*imFont:                         fontname
 ! URxvt*title:                          string
 ! URxvt*iconName:                       string
-! URxvt*saveLines:                      number
 ! URxvt*buffered:                       boolean
 ! URxvt*depth:                          number
 ! URxvt*visual:                         number

@@ -57,7 +57,6 @@ open-fuse-iso
 vlc
 
 ## Network
-crda
 netctl
 networkmanager
 network-manager-applet
