@@ -87,6 +87,8 @@ octopi-repoeditor
 
 ## Java
 jdk8-openjdk
+jre8-openjdk-headless
+jre8-openjdk
 icedtea-web
 
 ## Printing
@@ -246,6 +248,7 @@ calligra-krita
 
 ## KDE Frameworks
 kmediaplayer
+kactivities-frameworks
 
 # Partition
 partitionmanager

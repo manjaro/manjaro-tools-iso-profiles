@@ -1,6 +1,6 @@
 [Desktop Entry]
-Exec=/usr/bin/lxqt-connman-applet
-Name=connman-applet
+Exec=/usr/bin/nm-applet
+Name=network-manager-applet
 Type=Application
 Version=1.0
 X-LXQt-Need-Tray=true
