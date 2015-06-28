@@ -140,10 +140,8 @@ pamac
 steam-manjaro
 
 ## Fonts
-ttf-dejavu
 #adobe-source-sans-pro-fonts
 cantarell-fonts
-ttf-droid
 
 ## Java
 jre8-openjdk
