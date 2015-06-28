@@ -103,7 +103,9 @@ ttf-dejavu
 ttf-droid
 
 ## Java
-icedtea-web
+# jre8-openjdk
+# jre8-openjdk-headless
+# icedtea-web
 
 ## Printing
 manjaro-printer
