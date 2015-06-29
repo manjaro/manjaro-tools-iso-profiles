@@ -17,7 +17,8 @@ hexchat
 htop
 i3-wm
 i3status
-light-locker
+>systemd light-locker
+>openrc light-locker-consolekit
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
@@ -62,6 +63,7 @@ blueman
 >systemd networkmanager
 >openrc networkmanager-openrc
 network-manager-applet
+>openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
 networkmanager-openconnect
 networkmanager-openvpn
@@ -69,7 +71,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 >systemd openresolv
->openrc openresolv-openrc
+# >openrc openresolv-openrc
 >openrc syslog-ng-openrc
 >systemd syslog-ng
 
