@@ -105,6 +105,8 @@ steam
 steam-native
 
 ## Java
+jre8-openjdk
+jre8-openjdk-headless
 icedtea-web
 
 ## Printing
