@@ -1,6 +1,6 @@
-#####################################################
-### THIS FILE WILL INCLUDE shared/Packages-Custom ###
-#####################################################
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
 
 ## Network
 >systemd networkmanager
@@ -74,7 +74,7 @@ samba
 
 ## Fonts
 ttf-oxygen  # oficial KDE font
-cantarell-fonts 
+cantarell-fonts
 
 ## Games
 steam-manjaro
