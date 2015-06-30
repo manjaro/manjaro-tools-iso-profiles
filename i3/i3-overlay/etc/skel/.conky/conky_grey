@@ -73,8 +73,8 @@ ${goto 42}${color2}${top_mem name 5}${alignr}${color}${top_mem mem_res 5}
 # ${goto 42}${color2}${top_mem name 10}${alignr}${color}${top_mem mem_res 10}${font}
 # ${voffset 10}${color2}${font Caviar Dreams:size=8}${alignr}processes ${color}$running_processes / $processes
 #
-${voffset 10}${alignr}${color}${pre_exec awk -F= '/ID=/{printf $2" "} /RELEASE=/{printf $2" "} /NAME=/{print $2}' /etc/lsb-release}
-${voffset 0}${color2}${alignr}${exec whoami}@${nodename}
+${voffset 10}${alignr}${color}${execi 1200 awk -F= '/ID=/{printf $2" "} /RELEASE=/{printf $2" "} /NAME=/{print $2}' /etc/lsb-release}
+${voffset 0}${color2}${alignr}${execi 1200 whoami}@${nodename}
 ${alignr}${color2}${font Caviar Dreams:size=8}uptime: ${color}${uptime_short}
 ${voffset 10}${color2}${font Caviar Dreams:size=8}${alignr}kernel: ${color}${kernel}
 # ${color2}${font Caviar Dreams:size=8}${alignr}${color}${pre_exec cat /etc/issue.net}  $machine
