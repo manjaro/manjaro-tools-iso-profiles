@@ -15,10 +15,10 @@ gnome-keyring # fix wlan segfault
 gufw # firewall
 hexchat
 htop
+i3lock
 i3-wm
 i3status
->systemd light-locker
->openrc light-locker-consolekit
+imagemagick
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
@@ -33,6 +33,7 @@ rxvt-unicode-terminfo
 urxvt-perls
 vi
 xarchiver
+xautolock
 xfce4-power-manager
 
 ## Applications

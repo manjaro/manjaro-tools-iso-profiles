@@ -225,8 +225,8 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-# Lock screen with light-locker
-bindsym $mod+9 exec --no-startup-id light-locker-command -l
+# Lock screen
+bindsym $mod+9 exec --no-startup-id blurlock
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {

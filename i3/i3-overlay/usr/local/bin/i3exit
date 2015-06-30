@@ -6,7 +6,7 @@ lock() {
 
 case "$1" in
     lock)
-        light-locker-command -l
+        blurlock
         ;;
     logout)
         i3-msg exit
