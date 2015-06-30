@@ -1,22 +1,15 @@
 # Conky settings #
 background yes
 update_interval 1
-
 cpu_avg_samples 2
 net_avg_samples 2
-
 override_utf8_locale yes
-
 double_buffer yes
 no_buffers yes
-
 text_buffer_size 2048
-#imlib_cache_size 0
-
 temperature_unit celsius
 
 # Window specifications #
-
 own_window yes
 own_window_type override
 own_window_transparent yes
@@ -24,11 +17,10 @@ own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
 
 border_inner_margin 0
 border_outer_margin 0
-
 minimum_size 200 50
 maximum_width 200
 
-alignment tr
+alignment top_right
 gap_x 25
 gap_y 13
 
@@ -41,7 +33,7 @@ draw_graph_borders no
 # Text settings #
 use_xft yes
 xftfont Caviar Dreams:size=8
-xftalpha 0.5
+xftalpha 1
 
 uppercase no
 
@@ -49,7 +41,7 @@ default_color FFFFFF
 color2 888888
 
 TEXT
-${voffset 8}${color2}${font Caviar Dreams:size=16}${time %A}${font}${voffset -8}${alignr 50}${color}${font Caviar Dreams:size=38}${time %e}${font}
+${voffset 8}${color2}${font Caviar Dreams:size=16}${time %A}${font}${voffset -8}${alignr}${color}${font Caviar Dreams:size=38}${time %e}${font}
 ${color}${voffset -30}${color}${font Caviar Dreams:size=18}${time %b}${font}${voffset -3} ${color}${font Caviar Dreams:size=20}${time %Y}${font}${color2}${hr}
 # ${voffset 17}${color}${font Caviar Dreams:size=38}${alignc}${time %H}${font Caviar Dreams:size=28}${time h%M}
 #

@@ -49,7 +49,7 @@ default_color FFFFFF
 color2 224a22
 
 TEXT
-${voffset 8}${color2}${font Caviar Dreams:size=16}${time %A}${font}${voffset -8}${alignr 50}${color}${font Caviar Dreams:size=38}${time %e}${font}
+${voffset 8}${color2}${font Caviar Dreams:size=16}${time %A}${font}${voffset -8}${alignr}${color}${font Caviar Dreams:size=38}${time %e}${font}
 ${color}${voffset -30}${color}${font Caviar Dreams:size=18}${time %b}${font}${voffset -3} ${color}${font Caviar Dreams:size=20}${time %Y}${font}${color2}${hr}
 # ${voffset 17}${color}${font Caviar Dreams:size=38}${alignc}${time %H}${font Caviar Dreams:size=28}${time h%M}
 #
@@ -73,8 +73,8 @@ ${goto 42}${color2}${top_mem name 5}${alignr}${color}${top_mem mem_res 5}
 # ${goto 42}${color2}${top_mem name 10}${alignr}${color}${top_mem mem_res 10}${font}
 # ${voffset 10}${color2}${font Caviar Dreams:size=8}${alignr}processes ${color}$running_processes / $processes
 #
-${voffset 10}${alignr}${color}${execi 1200 awk -F= '/ID=/{printf $2" "} /RELEASE=/{printf $2" "} /NAME=/{print $2}' /etc/lsb-release}
-${voffset 0}${color2}${alignr}${execi 1200 whoami}@${nodename}
+${voffset 10}${alignr}${color}${pre_exec awk -F= '/ID=/{printf $2" "} /RELEASE=/{printf $2" "} /NAME=/{print $2}' /etc/lsb-release}
+${voffset 0}${color2}${alignr}${exec whoami}@${nodename}
 ${alignr}${color2}${font Caviar Dreams:size=8}uptime: ${color}${uptime_short}
 ${voffset 10}${color2}${font Caviar Dreams:size=8}${alignr}kernel: ${color}${kernel}
 # ${color2}${font Caviar Dreams:size=8}${alignr}${color}${pre_exec cat /etc/issue.net}  $machine
