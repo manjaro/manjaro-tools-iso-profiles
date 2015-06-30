@@ -14,6 +14,7 @@ parted
 tcpdump
 manjaro-tools-base
 manjaro-documentation
+vi
 
 ## Services
 openssh-openrc
