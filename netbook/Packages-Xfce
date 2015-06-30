@@ -1,6 +1,6 @@
-#####################################################
-### THIS FILE WILL INCLUDE shared/Packages-Custom ###
-#####################################################
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
 
 ## Netbook Edition packages
 xfwm4-manjaro-netbook
