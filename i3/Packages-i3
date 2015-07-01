@@ -59,7 +59,7 @@ open-fuse-iso
 vlc
 
 ## Network
-bluez-openrc
+>openrc bluez-openrc
 blueman
 >systemd netctl
 >systemd networkmanager
