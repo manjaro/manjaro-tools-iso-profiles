@@ -1,6 +1,0 @@
-wiki.manjaro.org:HSTS	0	16592	1465087619785,1,0
-services.addons.mozilla.org:HSTS	0	16592	1465086664083,1,0
-www.facebook.com:HSTS	0	16592	1449102649571,1,0
-avatars1.githubusercontent.com:HSTS	0	16592	1465108026345,1,0
-blocklist.addons.mozilla.org:HSTS	0	16592	1465086780980,1,0
-bugs.manjaro.org:HSTS	0	16592	1465087615575,1,0
