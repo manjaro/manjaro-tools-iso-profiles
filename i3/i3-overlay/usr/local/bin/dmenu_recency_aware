@@ -3,7 +3,8 @@
 # Originally based on code by Dieter Plaetinck.
 # Pretty much re-written by Mina Nagy (mnzaki)
 
-dmenu_cmd="dmenu $DMENU_OPTIONS"
+dmenu_format='-fn 'Cantarell-9' -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333''
+dmenu_cmd="dmenu $dmenu_format"
 terminal="urxvt -e"
 max_recent=199 # Number of recent commands to track
 
@@ -38,7 +39,7 @@ mv "$recent_cache.$$"  "$recent_cache"
 word0=${cmd%% *}
 match="^$word0$"
 get_type () {
-	while type=$(echo $known_types | xargs -n1 | $dmenu_cmd -p 'define type:' -fn 'Cantarell-9' -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333'); do
+	while type=$(echo $known_types | xargs -n1 | $dmenu_cmd -p 'define type:'); do
 		[[ $known_types =~ " $type " ]] || continue
 		echo "$word0" >> "$config_dir/$type"
 		break
