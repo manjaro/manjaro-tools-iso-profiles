@@ -3,8 +3,7 @@
 # Originally based on code by Dieter Plaetinck.
 # Pretty much re-written by Mina Nagy (mnzaki)
 
-dmenu_format='-fn 'Cantarell-9' -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333''
-dmenu_cmd="dmenu $dmenu_format"
+dmenu_cmd='dmenu -fn 'Cantarell-9' -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333''
 terminal="urxvt -e"
 max_recent=199 # Number of recent commands to track
 
@@ -34,6 +33,7 @@ fi
 echo "$cmd" > "$recent_cache.$$"
 grep -vx "$cmd" "$recent_cache" | head -n "$max_recent" >> "$recent_cache.$$"
 mv "$recent_cache.$$"  "$recent_cache"
+
 # Figure out how to run the command based on the command name, disregarding
 # arguments, if any.
 word0=${cmd%% *}
