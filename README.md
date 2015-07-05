@@ -96,13 +96,13 @@ manjaro-tools-iso-profiles
 * Contains root image packages
 * ideally no xorg
 
-######* Packages-Custom/desktop
+######* Packages-Custom/Desktop
 * Contains the custom image packages
 * desktop environment packages go here
-* this file is joined at build time with shared/Packages-Custom to pull in shared desktop packages
+* this file is joined at build time with shared/Packages-Desktop to pull in shared desktop packages
 
-######* Packages-Xorg
-* Contains the Xorg drivers package repo
+######* Packages-Mhwd
+* Contains the MHWD driver packages repo
 
 ######* Packages-Livecd
 * Contains packages you only want on livecd but not installed on the target system with installer

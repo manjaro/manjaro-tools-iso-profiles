@@ -6,16 +6,19 @@ lock() {
 
 case "$1" in
     lock)
-        light-locker-command -l
+        blurlock
         ;;
     logout)
         i3-msg exit
         ;;
+    switch_user)
+	blurlock && dm-tool switch-to-greeter
+	;;
     suspend)
-        light-locker-command -l && systemctl suspend
+	blurlock && systemctl suspend
         ;;
     hibernate)
-        light-locker-command -l && systemctl hibernate
+	blurlock && systemctl hibernate
         ;;
     reboot)
         systemctl reboot
@@ -24,7 +27,7 @@ case "$1" in
         systemctl poweroff
         ;;
     *)
-        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+        echo "Usage: $0 {lock|logout|switch_user|suspend|hibernate|reboot|shutdown}"
         exit 2
 esac
 

@@ -1,6 +1,6 @@
-#####################################################
-### THIS FILE WILL INCLUDE shared/Packages-Custom ###
-#####################################################
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
 
 ## gnome package group, minus epiphany, because we'll use firefox
 adwaita-icon-theme

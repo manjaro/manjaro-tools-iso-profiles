@@ -1,11 +1,12 @@
-#####################################################
-### THIS FILE WILL INCLUDE shared/Packages-Custom ###
-#####################################################
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
 
 ## i3 Packages
 accountsservice
 compton
 conky
+downgrade
 dunst
 ffmpeg
 ffmpegthumbnailer
@@ -15,9 +16,10 @@ gnome-keyring # fix wlan segfault
 gufw # firewall
 hexchat
 htop
+i3lock
 i3-wm
 i3status
-light-locker
+imagemagick
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
@@ -27,11 +29,13 @@ pnmixer
 polkit-gnome
 screenfetch
 scrot
+tree
 rxvt-unicode
 rxvt-unicode-terminfo
 urxvt-perls
 vi
 xarchiver
+xautolock
 xfce4-power-manager
 
 ## Applications
@@ -43,6 +47,7 @@ gpicview
 gvfs # trash support and mounting volumes
 gvfs-afc
 gvfs-afp
+gvfs-goa
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
@@ -56,12 +61,13 @@ open-fuse-iso
 vlc
 
 ## Network
-bluez-openrc
+>openrc bluez-openrc
 blueman
 >systemd netctl
 >systemd networkmanager
 >openrc networkmanager-openrc
 network-manager-applet
+>openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
 networkmanager-openconnect
 networkmanager-openvpn
@@ -69,7 +75,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 >systemd openresolv
->openrc openresolv-openrc
+# >openrc openresolv-openrc
 >openrc syslog-ng-openrc
 >systemd syslog-ng
 

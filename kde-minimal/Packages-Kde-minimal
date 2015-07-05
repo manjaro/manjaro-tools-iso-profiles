@@ -1,6 +1,6 @@
-#####################################################
-### THIS FILE WILL INCLUDE shared/Packages-Custom ###
-#####################################################
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
 
 ## Display Manager
 >systemd sddm
@@ -23,8 +23,6 @@ ksysguard
 kwin
 kwrited
 milou
-oxygen
-oxygen-cursors
 plasma-desktop
 plasma-nm
 plasma-workspace

@@ -47,10 +47,10 @@ mobile-broadband-provider-info
 modemmanager
 >openrc avahi-openrc
 >systemd avahi
+>systemd ntp
+>openrc ntp-openrc
 
 ## Misc
 >openrc consolekit-openrc
 >openrc displaymanager-openrc
->openrc ntp-openrc
->systemd ntp
 >openrc upower-pm-utils
