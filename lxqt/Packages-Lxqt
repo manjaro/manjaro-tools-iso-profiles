@@ -25,45 +25,28 @@ openresolv
 # 2) lxqt main packages
 # =====================
 sddm				# default login manager (Qt5) of lxqt
-#lightdm-gtk3-greeter
-#lightdm-gtk-greeter-settings
-#lxqt-lightdm-greeter
 
 openbox				# default window manager (GTK2) of lxqt
 
 compton                         # X compositor
-repoarch/compton-conf-git
+compton-conf-git                # compton configuration tool
 
-#keepassx-qt5-git                # passwords management
+#keepassx-qt5-git                # passwords managementdd
 liblxqt				#
-liblxqt-mount			# these are all dependencies and libraries for the following lxqt packages
+liblxqt-mount			# dependencies and libraries for the following lxqt packages
 libqtxdg			#
 libsysstat			#
 
-lximage-qt			# default lxqt picture viewer and screenshot tool
-
-lxqt-about			# lxqt "about" dialog - not required
+lxqt
 system-tools-backends
 liboobs
-lxqt-admin			# offers additional setting options - not required
-repoarch/lxqt-common            # !!!!!!!!!!!!!!!!!!!!!!!!!!!
-lxqt-config
+#repoarch/lxqt-common            # !!!!!!!!!!!!!!!!!!!!!!!!!!!
 lxqt-globalkeys
-lxqt-notificationd		# lxqt notification system - not required
-lxqt-openssh-askpass		# offers additional ssh password save options - not required
-lxqt-panel
-lxqt-policykit
-lxqt-powermanagement
-lxqt-qtplugin
-lxqt-runner			# lxqt runner / quicklaunch menu (similar to synapse) - not required
-lxqt-session
 
 pcmanfm-qt			# default lxqt file manager
 
-#qterminal			# recommended terminal for lxqt - a lighter alternative: lxterminal
+qterminal			# recommended terminal for lxqt
 qtermwidget
-rxvt-unicode-patched            # BUG : when solved, to be replaced
-urxvt-perls
 
 
 # 3) System-packages (most of them coming from xfce)
@@ -80,32 +63,22 @@ gvfs-smb                        # SMB/CIFS (Windows client) backend for gvfs
 
 # 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
 # ===========================================================================
-gksu				# (GTK2) GUI for su and sudo - there is no alternative for it in lxqt
+gksu				# (GTK2) GUI for su and sudo - no alternative for it in lxqt
 #gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
 
 hexchat                         # (GTK2) graphical IRC (chat) client
-leafpad				# default lxde text editor - very lightweight - heavier alternative: notepadqq
+leafpad				# default lxde text editor
 #lxtask				# LXDE task manager - qt4 alternative: qps
 
-lxappearance 			# appearance settings of GTK2 themes - there is no alternative for it in lxqt
-
-obconf				# openbox appearance settings - needed for window title and border configuration
+lxappearance 			# appearance settings of GTK2 themes
+obconf				# openbox appearance settings
 
 
 
 # 5) Icons, theming, etc...
 # =========================
-#oxygen-icons			# default icon theme of lxqt - pretty heavy
-
-#menda-themes-dark 		# new manjaro GTK2 theme
-#vertex-themes
-#vertex-dark-lxqt                # light and green version of vertex-themes
-#menda-circle-icon-theme 	# new manjaro icon theme - much lighter
-#azenis-green-icon-theme
->x86_64 compass-icon-theme
 lateafternoon-icons
 #>x86_64 db-silver-icons
-#menda-lxqt-panel 		# new manjaro theme for lxqt/panel
 mediterraneanlxqt
 gtk-engine-murrine              # for mediterraneanlxqt
 speedcrunch-git                 # calculator qt5
@@ -121,11 +94,13 @@ fontconfig-infinality-ultimate
 # 6) Minimal set of tools
 # =======================
 #baka-mplayer
->x86_64 libchardet              # for bomi...
->x86_64 bomi                    # multimedia player cmplayer-like
->x86_64 claws-mail              # E-mail client
-lxtask                          # task manager
+#>x86_64 libchardet              # for bomi...
+#>x86_64 bomi                    # multimedia player cmplayer-like
+#>x86_64 claws-mail              # E-mail client
+lxtask                           # task manager
 mhwd-chroot
+mpd                             # server-side application for playing music
+cantata                         # Qt5 client for the music player daemon (MPD)
 mpv				# replace mplayer/mplayer2
 qpdfview			# pdf reader
 vi				# CLI text editor
@@ -138,15 +113,13 @@ octopi-cachecleaner
 octopi-repoeditor
 
 #baka-mplayer                   # multimedia player
-mpd                             # server-side application for playing music
-cantata                         # Qt5 client for the music player daemon (MPD)
 firefox
 #>i686 qupzilla			# internet browser (Qt5)
 flashplugin			# flash support for internet browser
 gparted				# partitioning program (GTK2)
 #>x86_64 libreoffice-installer	# GUI installer for LibreOffice --> this is outdated and causes problems
->x86_64 pinta                   # drawing/editing program
->x86_64 meteo-qt                # weather application
+#>x86_64 pinta                   # drawing/editing program
+#>x86_64 meteo-qt                # weather application
 qarma-git			# zenity Qt5
 qastools-qt5                    # alsa mixer
 transmission-qt                 # bittorrent client Qt5
@@ -155,7 +128,7 @@ qlipper-qt5-git                 # clipoard applet
 qtfind				# add a file search to pcmanfm-qt (qt5)
 redshift                        # adjusts the color temperature
 redshiftconf                    # redshift configuration tool
-rfkill
+#rfkill
 #xscreensaver			# screensaver and power managment
 xsensors                        # gui for lm_sensors
 
@@ -169,14 +142,13 @@ binutils
 bison
 fakeroot
 flex
->i686 gcc
->x86_64 gcc-multilib
+gcc
 libconfig
 libtool
 m4
 make
 patch
->x86_64 subversion
+#subversion
 git
 yaourt
 
