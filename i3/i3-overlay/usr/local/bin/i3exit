@@ -15,16 +15,16 @@ case "$1" in
 	blurlock && dm-tool switch-to-greeter
 	;;
     suspend)
-	blurlock && systemctl suspend
+	lock && dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend
         ;;
     hibernate)
-	blurlock && systemctl hibernate
+        lock && dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Hibernate
         ;;
     reboot)
-        systemctl reboot
+        dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart
         ;;
     shutdown)
-        systemctl poweroff
+        dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop
         ;;
     *)
         echo "Usage: $0 {lock|logout|switch_user|suspend|hibernate|reboot|shutdown}"
