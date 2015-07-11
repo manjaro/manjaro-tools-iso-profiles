@@ -5,7 +5,7 @@ mmb_mute=false
 use_horizontal_slider=false
 show_sound_level=false
 use_transparent_background=false
-onclick=xterm -e 'alsamixer'
+onclick=xfce4-terminal -e 'alsamixer'
 theme=Blue Bar
 
 [Hotkeys]

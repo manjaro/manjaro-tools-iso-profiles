@@ -8,9 +8,18 @@ desktop-file-utils
 tmpwatch		# cleaning /tmp
 ps_mem			# memory usage
 
+## Previously in Packages
+gptfdisk
+parted
+tcpdump
+manjaro-tools-base
+manjaro-documentation
+vi
+
 ## Services
 openssh-openrc
-ntp-openrc
+#ntp-openrc		# in Packages-Desktop
+syslog-ng-openrc
 
 ## Network
 networkmanager-consolekit

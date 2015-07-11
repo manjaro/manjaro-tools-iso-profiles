@@ -8,6 +8,14 @@ desktop-file-utils
 tmpwatch		# cleaning /tmp
 ps_mem			# memory usage
 
+## Previously in Packages
+gptfdisk
+parted
+tcpdump
+manjaro-tools-base
+manjaro-documentation
+vi
+
 ## Audio Packages
 >openrc alsa-utils-openrc
 >systemd alsa-utils
@@ -57,13 +65,14 @@ xfce4-mixer
 
 ## Base packages
 tlp-pmu			# TLP
-upower-pm-utils
+#upower-pm-utils	# in Packages-Desktop
 
 ## Basic Apps
 lightdm
 lightdm-gtk-greeter
 light-locker-consolekit	# requires lightdm
 qpdfview
+libxkbcommon-x11	# for qpdfview
 xarchiver
 thunar			# file manager
 firefox			# web browser
@@ -99,7 +108,8 @@ thunar-volman		# for usb auto-mounting
 ## Services
 cups-openrc
 openssh-openrc
-ntp-openrc
+#ntp-openrc		# in Packages-Desktop
+syslog-ng-openrc
 
 ## Artwork, icons
 manjaro-artwork
