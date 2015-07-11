@@ -1,37 +1,28 @@
-background yes
-own_window yes
-own_window_transparent yes
-own_window_type override
-own_window_class Conky
-own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-double_buffer yes
-no_buffers yes
-update_interval 2
-draw_shades no
-draw_outline no
-draw_borders no
-
-use_xft yes
-xftalpha 1
-xftfont Caviar Dreams:size=8
-uppercase no
-stippled_borders 0
-border_width 1
-draw_graph_borders no
-default_color white
-color2 888888
-
-alignment bottom_left
-gap_x 25
-gap_y 45
-
-TEXT
+conky.config = {
+	alignment = 'bottom_left',
+	background = true,
+	color2 = '888888',
+	cpu_avg_samples = 2,
+	default_color = 'FFFFFF',
+	double_buffer = true,
+	font = 'Caviar Dreams:size=8',
+	gap_x = 25,
+	gap_y = 45,
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+}
+conky.text = [[
 ${color2}install manjaro-i3 - ${color}mod+i
 (or type 'sudo setup' in a terminal)
 
 ${color2}open new terminal - ${color}mod+Enter
 ${color2}kill focused - ${color}mod+Shift+q
-${color2}dmenu - ${color}mod+d${color2}, gtkmenu - ${color}mod+q | F1
+${color2}dmenu - ${color}mod+d
 ${color2}switch to workspace 1-8 - ${color}mod+1-8
 ${color2}send to workspace 1-8 - ${color}mod+Ctrl+1-8
 ${color2}navigate workspaces - ${color}mod+Ctrl+arrowkeys
@@ -42,4 +33,5 @@ ${color2}lock session - ${color}mod+9
 ${color2}exit session - ${color}mod+0
 
 ${color2}help - ${color}mod+Shift+h
-default mod=<Super>${font}
+default mod=<Super>
+]]
