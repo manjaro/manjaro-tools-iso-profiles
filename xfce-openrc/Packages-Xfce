@@ -72,7 +72,6 @@ lightdm
 lightdm-gtk-greeter
 light-locker-consolekit	# requires lightdm
 qpdfview
-libxkbcommon-x11	# for qpdfview
 xarchiver
 thunar			# file manager
 firefox			# web browser
