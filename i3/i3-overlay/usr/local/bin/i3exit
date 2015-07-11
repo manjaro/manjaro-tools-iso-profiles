@@ -12,20 +12,36 @@ case "$1" in
         i3-msg exit
         ;;
     switch_user)
-	blurlock && dm-tool switch-to-greeter
+	dm-tool switch-to-greeter
 	;;
     suspend)
-	lock && dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend
+	if [ $(cat /proc/1/comm) = "systemd" ]; then 
+	blurlock && systemctl suspend
+	else
+	blurlock && dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend
+	fi
         ;;
     hibernate)
-        lock && dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Hibernate
+	if [ $(cat /proc/1/comm) = "systemd" ]; then
+	blurlock && systemctl hibernate
+	else
+	blurlock && dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Hibernate
+	fi
         ;;
     reboot)
-        dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart
+	if [ $(cat /proc/1/comm) = "systemd" ]; then
+        systemctl reboot
+	else
+	dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart
+	fi
         ;;
     shutdown)
-        dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop
-        ;;
+	if [ $(cat /proc/1/comm) = "systemd" ]; then
+        systemctl poweroff
+        else
+	dbus-send --system --print-reply --type=method_call --reply-timeout=2000 --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop
+	fi
+	;;
     *)
         echo "Usage: $0 {lock|logout|switch_user|suspend|hibernate|reboot|shutdown}"
         exit 2

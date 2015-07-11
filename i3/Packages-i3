@@ -16,8 +16,6 @@ gnome-keyring # fix wlan segfault
 gufw # firewall
 hexchat
 htop
->systemd i3exit
->openrc i3exit-openrc
 i3lock
 i3-wm
 i3status
