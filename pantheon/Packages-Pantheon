@@ -17,15 +17,16 @@ gvfs # to fix trash in thunar
 file-roller
 p7zip
 ristretto
-#numlockx
+numlockx
 #xcursor-simpleandsoft
 #xcursor-vanilla-dmz-aa
 #shotwell
 tumbler
 ffmpegthumbnailer
-#lightdm-gtk-greeter
-#lightdm-gtk-greeter-settings
-sddm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+lightdm
+#sddm
 
 ##Deps
 ido
@@ -119,9 +120,7 @@ pulseaudio-ctl
 polkit-gnome
 gst-libav
 gparted
-#lightdm-gtk-greeter
-#lightdm-gtk-greeter-settings
-#light-locker
+light-locker
 manjaro-settings-manager
 manjaro-printer
 manjaro-welcome 
@@ -155,27 +154,6 @@ manjaro-alsa
 manjaro-pulse
 pavucontrol
 pulseaudio-ctl
-
-## Xorg Packages
-inxi
-libdnet
-#>x86_64 lib32-mesa-demos
-uriparser
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
 
 ## Documentation
 #manjaro-documentation

@@ -156,3 +156,4 @@ autologin-user=manjaro
 #width=1024
 #height=768
 #depth=8
+greeter-setup-script=/usr/bin/numlockx on
