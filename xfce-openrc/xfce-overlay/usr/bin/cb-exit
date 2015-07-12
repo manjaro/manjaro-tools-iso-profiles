@@ -27,14 +27,12 @@ class cb_exit:
 	def suspend_action(self,btn):
 		self.disable_buttons()
 		self.status.set_label("Suspending, please standby...")
-		os.system("light-locker-command -l")
 		os.system("dbus-send --system --dest=org.freedesktop.ConsoleKit --type=method_call --print-reply --reply-timeout=2000 /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Suspend boolean:true")
 		gtk.main_quit()
 
 	def hibernate_action(self,btn):
 		self.disable_buttons()
 		self.status.set_label("Hibernating, please standby...")
-		os.system("light-locker-command -l")
 		os.system("dbus-send --system --dest=org.freedesktop.ConsoleKit --type=method_call --print-reply --reply-timeout=2000 /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Hibernate boolean:true")
 		gtk.main_quit()
 
