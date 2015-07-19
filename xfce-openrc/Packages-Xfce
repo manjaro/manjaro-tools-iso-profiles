@@ -57,7 +57,7 @@ xfce4-settings
 xfce4-notifyd
 xfce4-screenshooter
 xfce4-taskmanager
-xfce4-power-manager-upower
+xfce4-power-manager
 xfce4-whiskermenu-plugin
 xfce4-clipman-plugin
 xfce4-xkb-plugin
@@ -65,12 +65,11 @@ xfce4-mixer
 
 ## Base packages
 tlp-pmu			# TLP
-#upower-pm-utils	# in Packages-Desktop
+pm-utils
 
 ## Basic Apps
 lightdm
 lightdm-gtk-greeter
-light-locker-consolekit	# requires lightdm
 qpdfview
 xarchiver
 thunar			# file manager
@@ -107,7 +106,6 @@ thunar-volman		# for usb auto-mounting
 ## Services
 cups-openrc
 openssh-openrc
-#ntp-openrc		# in Packages-Desktop
 syslog-ng-openrc
 
 ## Artwork, icons
