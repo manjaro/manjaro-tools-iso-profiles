@@ -53,7 +53,6 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-thus
 #lightdm-gtk-greeter   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
 #lightdm-gtk-greeter-settings   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
 
