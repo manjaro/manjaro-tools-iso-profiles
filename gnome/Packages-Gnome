@@ -5,6 +5,7 @@
 ## gnome package group, minus epiphany, because we'll use firefox
 adwaita-icon-theme
 baobab
+dconf-editor
 empathy
 eog
 #epiphany
@@ -18,9 +19,6 @@ gnome-desktop
 gnome-dictionary
 gnome-disk-utility
 gnome-font-viewer
-gnome-icon-theme
-gnome-icon-theme-extras
-gnome-icon-theme-symbolic
 gnome-keyring
 gnome-screenshot
 gnome-session
@@ -55,8 +53,7 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-thus
-#lightdm-gtk3-greeter   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
+#lightdm-gtk-greeter   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
 #lightdm-gtk-greeter-settings   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
 
 ## Applications
@@ -71,9 +68,12 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 manjaro-welcome
+open-fuse-iso
 
 ## Network
 netctl
+networkmanager
+networkmanager-dispatcher-ntpd
 openresolv
 blueman
 
@@ -95,14 +95,16 @@ flashplugin
 libdvdcss
 manjaro-alsa
 manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
 
 ## Package management
 pamac
 polkit-gnome
 
 ## Games
-steam
-steam-native
+steam-manjaro
 
 ## Java
 jre8-openjdk
@@ -125,8 +127,8 @@ binutils
 bison
 fakeroot
 flex
->i686 gcc
->x86_64 gcc-multilib
+gcc
+>multilib gcc-multilib
 libtool
 m4
 make
