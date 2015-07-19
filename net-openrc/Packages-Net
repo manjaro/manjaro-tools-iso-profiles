@@ -36,3 +36,6 @@ alsa-plugins
 
 ## Artwork
 manjaro-artwork
+
+## Image mounting assistant
+open-fuse-iso-term
