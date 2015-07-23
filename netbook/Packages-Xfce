@@ -3,14 +3,27 @@
 ######################################################
 
 ## Netbook Edition packages
+>i686 netbook-kernel-initialiser    ### (will get replaced by the netbook kernel after installation)
+manjaro-netbook-system
 xfwm4-manjaro-netbook
+faenza-manjaro-netbook-icon-theme
+xfce4-volumed
+nitrogen
+compton
+gpicview
+wmctrl
+dockbarx
+xfce4-dockbarx-plugin
+palemoon-bin
+gstreamer0.10-ffmpeg
+
+## xfce4 package group with omissions for Netbook Edition
 exo
 garcon
-gtk2-xfce-engine
-gtk3-xfce-engine
+gtk-xfce-engine
 thunar
 thunar-volman
-tumbler
+#tumbler
 xfce4-appfinder
 xfce4-mixer
 xfce4-panel
@@ -18,45 +31,103 @@ xfce4-power-manager
 xfce4-session
 xfce4-settings
 xfce4-terminal
-xfce4-volumed
-xfce4-notifyd
 xfconf
+#xfdesktop
+#xfwm4
 xfwm4-themes
-xfce4-taskmanager
-thunar-archive-plugin
-catfish
-gksu
-gvfs
-gvfs-smb
-gvfs-mtp
-gnome-keyring
-network-manager-applet
-manjaro-settings-manager
-nitrogen
-compton
-engrampa-thunar
-midori
-mousepad
-gpicview
-vlc
-audacious
-lightdm-gtk2-greeter
-lightdm-gtk-greeter-settings
-accountsservice
-thus
-manjaro-welcome
-wmctrl
-gparted
-evince
-xf86-video-modesetting
-dockbarx
-xfce4-dockbarx-plugin
-xfce4-screenshooter
 
-## From Rob's netbook repo
->i686 flashplugin-netbook
->i686 manjaro-netbook-initial
-python2-imaging-alt
+## XFCE Main Packages
+#ffmpegthumbnailer
+#gconf # fix qt-theme
+gnome-keyring # fix wlan segfault
+#gufw # firewall
+accountsservice
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+light-locker
+manjaro-settings-manager
+#menulibre
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+#orage
+#plank
+#poppler-glib
+thunar-archive-plugin
+#thunar-media-tags-plugin
+#xcursor-simpleandsoft
+#xcursor-vanilla-dmz-aa
+#xcursor-menda
+#xfce4
+#libgsf       # support ODF and
+#libopenraw   # RAW thumbnailing
+#xscreensaver
+
+## XFCE Extra Packages
+xfce4-artwork
+#xfce4-battery-plugin
+#xfce4-clipman-plugin
+#xfce4-cpufreq-plugin
+#xfce4-cpugraph-plugin
+#xfce4-datetime-plugin
+#xfce4-dict
+#xfce4-diskperf-plugin
+#xfce4-fsguard-plugin
+#xfce4-genmon-plugin
+#xfce4-mailwatch-plugin
+#xfce4-mount-plugin
+#xfce4-mpc-plugin
+#xfce4-netload-plugin
+#xfce4-notes-plugin
+xfce4-notifyd
+xfce4-screenshooter
+#xfce4-sensors-plugin
+#xfce4-smartbookmark-plugin
+#xfce4-systemload-plugin
+xfce4-taskmanager
+#xfce4-time-out-plugin
+#xfce4-timer-plugin
+#xfce4-verve-plugin
+#xfce4-wavelan-plugin
+#xfce4-weather-plugin
+#xfce4-whiskermenu-plugin
+#xfce4-xkb-plugin
+
+## Applications
+catfish # needed for desktop search
+engrampa-thunar
+#firefox
+#galculator-gtk2
+#gimp
+gksu
+#gnome-vfs
+gparted
+#guayadeque
+gvfs
+gvfs-afc
+gvfs-afp
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+hexchat
+manjaro-welcome
+#midori
+mlocate
+mousepad
+parole
+#pidgin
+#evince
+#raktpdf
+qpdfview
+#thunderbird
+#viewnior
+#vlc
+#xfburn
+#xnoise
+#yelp
+open-fuse-iso
 
 ## Network
 netctl
@@ -66,26 +137,58 @@ openresolv
 blueman
 
 ## Artwork
+#menda-circle-icon-theme
 faenza-green-icon-theme
 gtk-theme-ceti
-gtk-theme-menda
+menda-themes
+#menda-themes-dark
+gnome-themes-standard
 manjaro-artwork
+#xfce-theme-greenbird
 plymouth-theme-manjaro-elegant
 
 ## Packages for Sound and Audio
->x86_64 flashplugin
-manjaro-alsa
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+#flashplugin
 libdvdcss
+manjaro-alsa
+#manjaro-pulse
+#pavucontrol
+#pa-applet
+#pulseaudio-bluetooth
+#pulseaudio-ctl
+#pulseaudio-zeroconf
 
 ## Package management
 pamac
 
+## Games
+#steam-manjaro
+
 ## Fonts
-ttf-dejavu
-adobe-source-sans-pro-fonts
+#adobe-source-sans-pro-fonts
+cantarell-fonts
+
+## Java
+#jre8-openjdk
+#jre8-openjdk-headless
+#icedtea-web
 
 ## Printing
 #manjaro-printer
+
+## Office
+#abiword
+#gnumeric
+#libreoffice-still
 
 ## AUR Access
 autoconf
@@ -95,6 +198,7 @@ bison
 fakeroot
 flex
 gcc
+>multilib gcc-multilib
 libtool
 m4
 make
