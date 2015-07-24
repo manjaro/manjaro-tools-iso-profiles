@@ -6,6 +6,7 @@
 accountsservice
 compton
 conky
+dmenu-manjaro
 downgrade
 dunst
 ffmpeg
@@ -19,7 +20,7 @@ htop
 i3exit
 i3lock
 i3-wm
-i3status
+i3status-manjaro
 imagemagick
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
@@ -127,18 +128,13 @@ binutils
 bison
 fakeroot
 flex
->i686 gcc
->x86_64 gcc-multilib
+gcc
+>multilib gcc-multilib
 git
 libconfig
 libtool
 m4
 make
 patch
->x86_64 subversion
+subversion
 yaourt
-
-## AUR-Packages
-
-dmenu-xft
-ttf-font-icons

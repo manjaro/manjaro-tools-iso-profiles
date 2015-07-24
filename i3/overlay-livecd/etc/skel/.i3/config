@@ -39,7 +39,7 @@ bindsym $mod+d exec dmenu_recency_aware
 # bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
 # Start Applications
-bindsym $mod+i exec gksu calamares
+bindsym $mod+i exec gksu thus
 bindsym $mod+F1 exec thunderbird
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
@@ -174,6 +174,7 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
+for_window [class="Thus"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 
 # switch to workspace with urgent window automatically
