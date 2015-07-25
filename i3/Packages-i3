@@ -18,10 +18,8 @@ gufw # firewall
 hexchat
 htop
 i3exit
-i3lock
 i3-wm
 i3status-manjaro
-imagemagick
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
@@ -109,14 +107,6 @@ volumeicon
 octopi
 octopi-notifier-qt4
 octopi-pacmanhelper
-
-## Fonts
-cantarell-fonts
-
-## Java
-# jre8-openjdk
-# jre8-openjdk-headless
-# icedtea-web
 
 ## Printing
 manjaro-printer
