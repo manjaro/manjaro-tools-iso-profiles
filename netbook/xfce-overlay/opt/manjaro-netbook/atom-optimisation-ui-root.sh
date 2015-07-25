@@ -3,7 +3,7 @@
 cd /opt/manjaro-netbook/
 
 if [ "$(uname -m)" == "i686" ] && \
-   [ "$(grep -i 'Intel Atom' /proc/cpuinfo)" != "" ] && \
+   [ "$(grep Atom /proc/cpuinfo)" != "" ] && \
    zenity --question --title="Intel Atom optimisation" --text="We've detected that you have an Intel Atom CPU.\n\nWould you like to install the Atom-optimised kernel and web browser?\nIf unsure, click yes.\n\n<b>IMPORTANT:\nEnsure you have a working internet connection before proceeding.</b>\n\nA system update will be performed during this process."; then
    
       xfce4-terminal -e ./atom-optimisation-script.sh
