@@ -3,7 +3,6 @@
 ######################################################
 
 ## Netbook Edition packages
->i686 netbook-kernel-initialiser    ### (will get replaced by the netbook kernel after installation)
 manjaro-netbook-system
 xfwm4-manjaro-netbook
 faenza-manjaro-netbook-icon-theme
@@ -16,6 +15,7 @@ dockbarx
 xfce4-dockbarx-plugin
 palemoon-bin
 gstreamer0.10-ffmpeg
+zenity
 
 ## xfce4 package group with omissions for Netbook Edition
 exo
