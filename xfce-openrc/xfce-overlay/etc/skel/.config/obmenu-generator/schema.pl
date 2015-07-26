@@ -110,7 +110,7 @@ our $SCHEMA = [
     {sep => undef},
 
     ## The lock command
-    {item => ['light-locker-command -l', 'Lock', 'lock']},
+    {item => ['xflock4', 'Lock', 'lock']},
 
     # This options uses the default Openbox's action "Exit"
     #{exit => ['Exit', 'exit']},
