@@ -13,7 +13,7 @@
 	<icon>Thunar</icon>
 	<name>Thunar Root</name>
 	<unique-id>1367866030392883-2</unique-id>
-	<command>pkexec thunar %f</command>
+	<command>gksudo thunar</command>
 	<description></description>
 	<patterns>*</patterns>
 	<directories/>

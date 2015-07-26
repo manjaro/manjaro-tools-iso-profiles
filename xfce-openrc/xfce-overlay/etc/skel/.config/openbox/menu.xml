@@ -404,7 +404,7 @@
 		<separator/>
 		<item label="Lock">
 			<action name="Execute">
-				<execute>light-locker-command -l</execute>
+				<execute>xflock4</execute>
 			</action>
 		</item>
 		<item label="Exit">

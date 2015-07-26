@@ -18,7 +18,6 @@ vi
 
 ## Services
 openssh-openrc
-#ntp-openrc		# in Packages-Desktop
 syslog-ng-openrc
 
 ## Network
@@ -30,6 +29,7 @@ openresolv-openrc
 
 ## Base Packages
 gtk2
+pm-utils
 
 ## Packages for Sound and Audio
 alsa-plugins
