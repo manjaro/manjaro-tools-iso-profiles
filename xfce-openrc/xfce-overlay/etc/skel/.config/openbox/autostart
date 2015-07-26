@@ -8,9 +8,8 @@ tint2 &
 ## Startup
 (sleep 1s; conky) &
 (sleep 2s; compton) &
-#(sleep 3s; nm-applet) &		# started automatically
-#(sleep 3s; xfce4-power-manager) &	# started automatically
-(sleep 4s; xfce4-clipman) &
-(sleep 4s; volumeicon) &
+(sleep 3s; volumeicon) &
+#(sleep 4s; nm-applet) &		# started automatically
+#(sleep 4s; xfce4-power-manager) &	# started automatically
+#(sleep 5s; xfce4-clipman) &		# started automatically
 #(sleep 5s; pamac-tray) &		# started automatically
-#(sleep 5s; light-locker) &		# started automatically
