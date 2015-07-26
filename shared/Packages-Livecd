@@ -3,7 +3,8 @@
 manjaro-livecd-cli-installer
 manjaro-tools-base		# recovery chroot tools
 
-#calamares			# new GUI installer of manjaro - test for manjaro 0.9
+#calamares			# new GUI installer of manjaro
+#calamares-dev			# new GUI installer of manjaro - kpmcore
 thus
-#gparted
 #thus-dev
+#gparted

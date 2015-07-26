@@ -23,3 +23,6 @@ netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
+
+## Image mounting assistant
+open-fuse-iso-term

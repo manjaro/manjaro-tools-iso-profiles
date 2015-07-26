@@ -33,7 +33,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec dmenu_recency_aware
+bindsym $mod+d exec dmenu_recency
 # bindsym $mod+d exec j4-dmenu-desktop --dmenu="dmenu -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333' -i"
 # bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
 # bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
@@ -166,11 +166,12 @@ for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="manjaro-settings-manager-gui"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
-for_window [class="Nitrogen"] floating enable
+for_window [class="Nitrogen"] floating enable border normal
 for_window [class="octopi"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable
+for_window [class="Thus"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal

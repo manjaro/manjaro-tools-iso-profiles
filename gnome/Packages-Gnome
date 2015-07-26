@@ -58,8 +58,8 @@ networkmanager-vpnc
 
 ## Applications
 firefox
-#thunderbird
-gimp
+#thunderbird ### Gnome has Evolution
+#gimp ### it becomes default app for opening many image types rather than Gnome's image viewer, i cbf'd adding a bunch of mime type overrides. It could be argued that advanced image editing like GIMP's has no place being there OOTB anyway
 gksu
 gparted
 gvfs-afc
