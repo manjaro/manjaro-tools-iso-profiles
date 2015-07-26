@@ -142,3 +142,4 @@ zd1211-firmware
 >systemd tlp
 
 ## ucode for new cpus
+intel-ucode
