@@ -53,3 +53,4 @@ modemmanager
 ## Misc
 >openrc consolekit-openrc
 >openrc displaymanager-openrc
+>openrc upower-pm-utils
