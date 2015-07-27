@@ -101,6 +101,7 @@ gcolor2
 gst-plugins-base	# useful with firefox, parole
 xfburn
 thunar-volman		# for usb auto-mounting
+gvfs-mtp		# for mounting smartphones
 
 ## Services
 cups-openrc
