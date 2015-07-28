@@ -9,7 +9,7 @@ Xft.lcdfilter: lcddefault
 Xcursor.theme: Chameleon-Pearl-Regular-0.5
 Xcursor.size:  0
 URxvt.depth: 32
-URxvt.background: [60]#000000
+URxvt.background: [65]#000000
 URxvt*scrollBar:                      false
 URxvt*mouseWheelScrollPage:           false
 URxvt*cursorBlink:                    true
@@ -20,7 +20,7 @@ URxvt*saveLines:                      5000
 ! for 'fake' transparency (without Compton) uncomment the following three lines
 ! URxvt*inheritPixmap:                  true
 ! URxvt*transparent:                    true
-! URxvt*shading:                        30
+! URxvt*shading:                        138
 
 ! other possible settings:
 ! Rxvt.perl-ext-common: ...,clipboard
