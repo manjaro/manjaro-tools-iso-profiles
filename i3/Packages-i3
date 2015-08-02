@@ -53,7 +53,7 @@ gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 mousepad
 nitrogen
-palemoon
+palemoon-bin
 pcmanfm
 pinta
 qpdfview
