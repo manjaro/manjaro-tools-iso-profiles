@@ -33,6 +33,9 @@ ido
 libunity
 gtk-theme-elementary-bzr
 
+##Budgie Desktop
+budgie-desktop
+
 
 ##Pantheon Shell
 plank-bzr
@@ -123,7 +126,7 @@ gst-libav
 gparted
 light-locker
 manjaro-settings-manager
-manjaro-printer
+#manjaro-printer
 manjaro-welcome 
 #mousepad
 pamac
