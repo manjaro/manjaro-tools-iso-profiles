@@ -261,8 +261,6 @@ exec --no-startup-id octopi-notifier
 exec --no-startup-id clipit
 exec --no-startup-id compton -b
 exec --no-startup-id .conky/start_conky_grey
-# exec --no-startup-id .conky/start_conky_green
-# exec --no-startup-id qpdfview i3_help.pdf
 
 # Theme colors
 client.focused #2ECC71 #2ECC71 #000000 #FFFFFF
