@@ -12,6 +12,7 @@ video/ogg=vlc.desktop
 video/x-ogm+ogg=vlc.desktop
 video/x-theora+ogg=vlc.desktop
 application/x-cd-image=open-fuse-iso.desktop
+application/x-raw-disk-image=open-fuse-iso.desktop
 
 [Added Associations]
 application/pdf=qpdfview.desktop;

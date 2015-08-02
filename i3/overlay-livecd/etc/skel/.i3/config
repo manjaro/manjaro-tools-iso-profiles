@@ -33,13 +33,13 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec dmenu_recency_aware
+bindsym $mod+d exec --no-startup-id dmenu_recency
 # bindsym $mod+d exec j4-dmenu-desktop --dmenu="dmenu -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333' -i"
 # bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
 # bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
 # Start Applications
-bindsym $mod+i exec gksu calamares
+bindsym $mod+i exec gksu thus
 bindsym $mod+F1 exec thunderbird
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
@@ -167,13 +167,15 @@ for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="manjaro-settings-manager-gui"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
-for_window [class="Nitrogen"] floating enable
+for_window [class="Nitrogen"] floating enable border normal
 for_window [class="octopi"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
+for_window [class="Thus"] floating enable border normal
+for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 
 # switch to workspace with urgent window automatically
@@ -260,8 +262,6 @@ exec --no-startup-id octopi-notifier
 exec --no-startup-id clipit
 exec --no-startup-id compton -b
 exec --no-startup-id .conky/start_conky_grey
-# exec --no-startup-id .conky/start_conky_green
-# exec --no-startup-id qpdfview i3_help.pdf
 
 # Theme colors
 client.focused #2ECC71 #2ECC71 #000000 #FFFFFF

@@ -8,9 +8,17 @@ desktop-file-utils
 tmpwatch		# cleaning /tmp
 ps_mem			# memory usage
 
+## Previously in Packages
+gptfdisk
+parted
+tcpdump
+manjaro-tools-base
+manjaro-documentation
+vi
+
 ## Services
 openssh-openrc
-ntp-openrc
+syslog-ng-openrc
 
 ## Network
 networkmanager-consolekit
@@ -21,9 +29,13 @@ openresolv-openrc
 
 ## Base Packages
 gtk2
+pm-utils
 
 ## Packages for Sound and Audio
 alsa-plugins
 
 ## Artwork
 manjaro-artwork
+
+## Image mounting assistant
+open-fuse-iso-term

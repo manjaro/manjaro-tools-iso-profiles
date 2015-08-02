@@ -217,11 +217,12 @@ cantata
 imagewriter
 firefox-kde
 flashplugin
->systemd kcmsystemd
 manjaro-settings-manager
 manjaro-welcome
 p7zip
+qbittorrent
 screenfetch
+>systemd systemd-kcm
 thunderbird-kde
 vlc
 yakuake

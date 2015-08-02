@@ -5,7 +5,8 @@
 ## i3 Packages
 accountsservice
 compton
-conky
+conky-i3
+dmenu-manjaro
 downgrade
 dunst
 ffmpeg
@@ -16,12 +17,9 @@ gnome-keyring # fix wlan segfault
 gufw # firewall
 hexchat
 htop
->systemd i3exit
->openrc i3exit-openrc
-i3lock
+i3exit
 i3-wm
-i3status
-imagemagick
+i3status-manjaro
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
@@ -31,12 +29,13 @@ pnmixer
 polkit-gnome
 screenfetch
 scrot
+>openrc timeset-gui
 tree
 rxvt-unicode
 rxvt-unicode-terminfo
 urxvt-perls
 vi
-xarchiver
+xarchiver-gtk2
 xautolock
 xfce4-power-manager
 
@@ -55,7 +54,7 @@ gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 mousepad
 nitrogen
-palemoon
+palemoon-bin
 pcmanfm
 pinta
 qpdfview
@@ -110,14 +109,6 @@ octopi
 octopi-notifier-qt4
 octopi-pacmanhelper
 
-## Fonts
-cantarell-fonts
-
-## Java
-# jre8-openjdk
-# jre8-openjdk-headless
-# icedtea-web
-
 ## Printing
 manjaro-printer
 
@@ -128,18 +119,13 @@ binutils
 bison
 fakeroot
 flex
->i686 gcc
->x86_64 gcc-multilib
+gcc
+>multilib gcc-multilib
 git
 libconfig
 libtool
 m4
 make
 patch
->x86_64 subversion
+subversion
 yaourt
-
-## AUR-Packages
-
-dmenu-xft
-ttf-font-icons
