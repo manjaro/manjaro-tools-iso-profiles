@@ -29,6 +29,7 @@ pnmixer
 polkit-gnome
 screenfetch
 scrot
+>openrc timeset-gui
 tree
 rxvt-unicode
 rxvt-unicode-terminfo
