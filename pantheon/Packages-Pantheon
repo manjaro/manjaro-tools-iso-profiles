@@ -25,7 +25,7 @@ tumbler
 ffmpegthumbnailer
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-lightdm
+#lightdm-bzr
 #sddm
 
 ##Deps
@@ -36,20 +36,20 @@ gtk-theme-elementary-bzr
 
 ##Pantheon Shell
 plank-bzr
-mutter-manjaro-pantheon
-manjaro-gala-bzr
+mutter-pantheon-manjaro
+gala-bzr-manjaro
 #pantheon-default-settings
-pantheon-session-manjaro-bzr
-slingshot-launcher0-bzr
-wingpanel-0.4.x-bzr
-wingpanel-indicator-notifications0-bzr
+pantheon-session-bzr-manjaro
+slingshot-launcher-bzr-manjaro
+wingpanel-rewrite-x11-bzr-manjaro
+wingpanel-indicator-notifications-bzr-manjaro
 wingpanel-indicator-ayatana-bzr
-wingpanel-indicator-datetime0-bzr
-wingpanel-indicator-network0-bzr
-wingpanel-indicator-power0-bzr
-wingpanel-indicator-session0-bzr
-wingpanel-indicator-sound0-bzr
-wingpanel-indicator-launcher0-bzr
+wingpanel-indicator-datetime-bzr-manjaro
+wingpanel-indicator-network-bzr-manjaro
+wingpanel-indicator-power-bzr-manjaro
+wingpanel-indicator-session-bzr-manjaro
+wingpanel-indicator-sound-bzr-manjaro
+wingpanel-indicator-launcher-bzr-manjaro
 #pantheon-session-bzr
 pantheon-default-settings-bzr
 
@@ -71,6 +71,7 @@ geary-plank-bzr
 california 
 #midori-granite-bzr
 firefox
+icedtea-web
 noise-bzr
 pantheon-calculator-bzr
 pantheon-files-bzr
