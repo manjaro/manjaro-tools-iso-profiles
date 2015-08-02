@@ -1,14 +1,5 @@
 #!/bin/sh
 
-PROGRAM='/usr/bin/timeset-gui'
+gksu timeset-gui
 
-if   [ "$(which pkexec)" ]; then
-        pkexec "$PROGRAM" "$@"
-elif [ "$(which gksu)" ]; then
-        gksu "$PROGRAM" -- "$@"
-elif [ "$(which kdesu)" ]; then
-        kdesu "$PROGRAM" -- "$@"
-else
-        echo "error: no pkexec nor sudo frontend application found! Aborting..." 1>&2
-        exit 1
-fi
+exit
