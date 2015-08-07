@@ -23,19 +23,23 @@ numlockx
 #shotwell
 tumbler
 ffmpegthumbnailer
-lightdm-gtk-greeter
+#lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 #lightdm-bzr
 #sddm
+gnome-system-monitor
+hexchat
+gksu
+xfce4-screenshooter #snapshot program snap-photobooth problem
 
 ##Deps
 ido
 libunity
 gtk-theme-elementary-bzr
 
-##Budgie Desktop
+##Budgie Desktop - needed to use budgie-panel instead wingpanel
 budgie-desktop
-
+slingscold #instead slingshot-launcher
 
 ##Pantheon Shell
 plank-bzr
@@ -69,7 +73,7 @@ evince
 contractor-bzr
 elementary-scan-bzr
 geary-plank-bzr
-#lightdm-pantheon-greeter-bzr
+lightdm-pantheon-greeter-bzr
 #maya-calendar-bzr
 california 
 #midori-granite-bzr

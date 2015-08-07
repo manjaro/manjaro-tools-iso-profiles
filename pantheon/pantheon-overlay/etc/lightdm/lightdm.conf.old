@@ -1,4 +1,3 @@
- 
 #
 # General configuration
 #
@@ -21,13 +20,13 @@
 #start-default-seat=true
 #greeter-user=lightdm
 #minimum-display-number=0
-#minimum-vt=7
+minimum-vt=1
 #lock-memory=true
 #user-authority-in-system-dir=false
 #guest-account-script=guest-account
 #logind-check-graphical=false
 #log-directory=/var/log/lightdm
-#run-directory=/var/run/lightdm
+run-directory=/run/lightdm
 #cache-directory=/var/cache/lightdm
 #sessions-directory=/usr/share/lightdm/sessions:/usr/share/xsessions
 #remote-sessions-directory=/usr/share/lightdm/remote-sessions
@@ -36,15 +35,11 @@
 #
 # Seat defaults
 #
-# PLEASE NOTE: [SeatDefaults] section is deprecated and won't be supported in the future.
-#              Users are encouraged to update their lightdm.conf files, using [Seat:*] instead.
-#
 # type = Seat type (xlocal, xremote)
 # pam-service = PAM service to use for login
 # pam-autologin-service = PAM service to use for autologin
 # pam-greeter-service = PAM service to use for greeters
 # xserver-command = X server command to run (can also contain arguments e.g. X -special-option)
-# xmir-command = Xmir server command to run (can also contain arguments e.g. Xmir -special-option)
 # xserver-layout = Layout to pass to X server
 # xserver-config = Config file to pass to X server
 # xserver-allow-tcp = True if TCP/IP connections are allowed to this X server
@@ -80,13 +75,12 @@
 # autologin-in-background = True if autologin session should not be immediately activated
 # exit-on-failure = True if the daemon should exit if this seat fails
 #
-[Seat:*]
+[SeatDefaults]
 #type=xlocal
 #pam-service=lightdm
 #pam-autologin-service=lightdm-autologin
 #pam-greeter-service=lightdm-greeter
 #xserver-command=X
-#xmir-command=Xmir
 #xserver-layout=
 #xserver-config=
 #xserver-allow-tcp=false
@@ -98,16 +92,16 @@
 #xdmcp-key=
 #unity-compositor-command=unity-system-compositor
 #unity-compositor-timeout=60
-greeter-session=lightdm-pantheon-greeter
+#greeter-session=example-gtk-gnome
 #greeter-hide-users=false
 #greeter-allow-guest=true
 #greeter-show-manual-login=false
 #greeter-show-remote-login=true
-#user-session=default
+user-session=pantheon
 #allow-user-switching=true
 #allow-guest=true
 #guest-session=
-#session-wrapper=lightdm-session
+session-wrapper=/etc/lightdm/Xsession
 #greeter-wrapper=
 #guest-wrapper=
 #display-setup-script=
@@ -116,7 +110,7 @@ greeter-session=lightdm-pantheon-greeter
 #session-setup-script=
 #session-cleanup-script=
 #autologin-guest=false
-#autologin-user=
+autologin-user=manjaro
 #autologin-user-timeout=0
 #autologin-in-background=false
 #autologin-session=UNIMPLEMENTED
@@ -126,7 +120,7 @@ greeter-session=lightdm-pantheon-greeter
 # Seat configuration
 #
 # Each seat must start with "Seat:".
-# Uses settings from [Seat:*], any of these can be overriden by setting them in this section.
+# Uses settings from [SeatDefaults], any of these can be overriden by setting them in this section.
 #
 #[Seat:0]
 
@@ -162,3 +156,4 @@ greeter-session=lightdm-pantheon-greeter
 #width=1024
 #height=768
 #depth=8
+greeter-setup-script=/usr/bin/numlockx on

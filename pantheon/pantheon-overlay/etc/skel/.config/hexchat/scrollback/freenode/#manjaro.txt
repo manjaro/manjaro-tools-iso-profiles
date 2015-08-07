@@ -1,0 +1,19 @@
+T 1438631317 19*	Now talking on 22#manjaro
+T 1438631317 22*	Topic for 22#manjaro is: Welcome to official Manjaro Linux IRC channel |  http://www.manjaro.org/ - wiki.manjaro.org -http://bit.ly/manjaro-irc | other languages : #manjaro-fr #manjaro-de #manjaro-es #manjaro-br ##manjaro-it #manjaro-fi #manjaro-ru #manjaro-nl
+T 1438631317 22*	Topic for 22#manjaro set by 26ringo32!~ringo_man@unaffiliated/ringo32 (24Mon Apr 20 06:58:10 2015)
+T 1438631325 -18ChanServ-	[#manjaro] [6Topic of the day]   Rob Mccathy update issue ? (pacman keys) 4try sudo pacman -S manjaro-keyring
+T 1438631325 22*	Channel 22#manjaro url: 24www.manjaro.org/blog
+T 1438631369 24*	DiscipleOfDante has quit (Ping timeout: 252 seconds)
+T 1438631533 23*	folkarys (~pierre@ADijon-554-1-144-41.w92-148.abo.wanadoo.fr23) has joined
+T 1438631547 23*	cyberalex4life (~cyberalex@109.99.200.18723) has joined
+T 1438631582 24*	shariebeth has quit (Ping timeout: 272 seconds)
+T 1438631691 23*	Hazzard (~quassel@c-67-174-253-44.hsd1.ca.comcast.net23) has joined
+T 1438631734 23*	ahjolinna_ (~ahjolinna@mobile-access-5d6a10-25.dhcp.inet.fi23) has joined
+T 1438631899 24*	ahjolinna has quit (Ping timeout: 256 seconds)
+T 1438631910 23*	Manj-811-Xfce (~martyn@cpc22-brig17-2-0-cust147.3-3.cable.virginm.net23) has joined
+T 1438632007 24*	28ahjolinna_ is now known as 18ahjolinna
+T 1438632091 24*	28Manj-811-Xfce is now known as 18zzdtri
+T 1438632264 24*	peetaur2 has quit (Remote host closed the connection)
+T 1438632297 23*	esr_ (~esr@187.147.71.14423) has joined
+T 1438632319 23*	DiscipleOfDante (~discipleo@162.104.77.18523) has joined
+T 1438632357 Python interface unloaded
