@@ -5,7 +5,7 @@
 ## i3 Packages
 accountsservice
 compton
-conky
+conky-i3
 dmenu-manjaro
 downgrade
 dunst
@@ -15,6 +15,7 @@ flashplugin
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gufw # firewall
+>openrc ufw-openrc
 hexchat
 htop
 i3exit
@@ -29,6 +30,7 @@ pnmixer
 polkit-gnome
 screenfetch
 scrot
+>openrc timeset-gui
 tree
 rxvt-unicode
 rxvt-unicode-terminfo
