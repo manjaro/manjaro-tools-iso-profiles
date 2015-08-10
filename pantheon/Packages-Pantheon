@@ -23,7 +23,7 @@ numlockx
 #shotwell
 tumbler
 ffmpegthumbnailer
-#lightdm-gtk-greeter
+lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 #lightdm-bzr
 #sddm
@@ -73,7 +73,7 @@ evince
 contractor-bzr
 elementary-scan-bzr
 geary-plank-bzr
-lightdm-pantheon-greeter-bzr
+#lightdm-pantheon-greeter-bzr
 #maya-calendar-bzr
 california 
 #midori-granite-bzr
