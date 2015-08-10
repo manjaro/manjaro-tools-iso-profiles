@@ -15,6 +15,7 @@ flashplugin
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gufw # firewall
+>openrc ufw-openrc
 hexchat
 htop
 i3exit
