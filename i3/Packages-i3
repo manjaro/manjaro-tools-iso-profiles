@@ -49,10 +49,10 @@ gpicview
 gvfs # trash support and mounting volumes
 gvfs-afc
 gvfs-afp
-gvfs-goa
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
+libimobiledevice
 mousepad
 nitrogen
 palemoon-bin
