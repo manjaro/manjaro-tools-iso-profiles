@@ -100,6 +100,7 @@ switchboard-plug-about-bzr
 switchboard-plug-display-bzr
 #switchboard-plug-locale
 switchboard-plug-datetime-bzr
+switchboard-plug-network-bzr
 switchboard-plug-notifications-bzr
 switchboard-plug-online-accounts-bzr
 switchboard-plug-security-privacy-bzr
