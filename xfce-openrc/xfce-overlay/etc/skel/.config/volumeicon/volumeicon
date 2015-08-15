@@ -6,7 +6,7 @@ use_horizontal_slider=false
 show_sound_level=false
 use_transparent_background=false
 onclick=xfce4-terminal -e 'alsamixer'
-theme=Blue Bar
+theme=Default
 
 [Hotkeys]
 up_enabled=false

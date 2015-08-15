@@ -42,7 +42,7 @@ compton
 nitrogen
 conky
 lxappearance
-volumeicon-gtk2
+volumeicon
 orage			# for calender
 
 ## Xfce
@@ -96,9 +96,10 @@ hexchat
 timeset-gui		# MSM time module does not work with OpenRC
 parole
 mpg123			# for parole
-gst-libav		# for parole
+gst-libav		# for parole, h.264 video in firefox
 gcolor2
 gst-plugins-base	# useful with firefox, parole
+gst-plugins-good	# for parole, h.264 video in firefox
 xfburn
 thunar-volman		# for usb auto-mounting
 gvfs-mtp		# for mounting smartphones
