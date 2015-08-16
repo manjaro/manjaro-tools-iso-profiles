@@ -54,7 +54,6 @@ manjaro-pulse
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
-qt-gstreamer
 plasma-pa
 
 ## Themes
