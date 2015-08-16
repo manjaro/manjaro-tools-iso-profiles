@@ -1,0 +1,122 @@
+## Xorg Packages
+inxi
+libdnet
+mesa-demos
+# >x86_64 lib32-mesa-demos
+uriparser
+xf86-input-acecad
+xf86-input-aiptek
+xf86-input-evdev
+xf86-input-joystick
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+xinetd
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+
+## Basic packages
+dconf
+desktop-file-utils
+
+## Packages for Sound and Audio
+# manjaro-alsa	# containes 32bit libraries
+#alsa-lib
+#alsa-utils
+#alsa-plugins
+manjaro-pulse
+#pavucontrol
+pulseaudio-ctl
+
+## Artwork
+# manjaro-artwork
+## Base Packages
+# gtk2
+xcursor-breeze
+maia-icon-theme
+numix-manjaro-themes
+
+## Network
+#netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+networkmanager-dmenu ##AUR
+
+
+##Bspwm packages
+bspwm-git
+sxhkd-git
+nitrogen
+numlockx
+unclutter
+#xdo 
+xtitle
+sutils
+bc
+lm_sensors
+#zenity
+wmctrl
+xdotool
+wmutils
+xwinfo
+conky-cli
+#dmenu-xft-xy-widht-mouse ##Local package
+lemonbar-xft-clicky
+ttf-dejavusansmono-powerline-git
+ttf-ionicons
+nitrogen
+#xorg-fonts-100dpi
+lxappearance
+lemonpanel
+bspwm-scripts
+libnotify
+
+##Applications
+geany
+zsh
+zsh-completions
+rxvt-unicode
+urxvt-perls
+thermald
+#thunar
+spacefm-gtk2
+#pcmanfm
+#udisks
+#gvfs
+udevil
+#thunar-archive-plugin
+#thunar-volman
+#xfce4-settings
+chromium
+#chromium-pepper-flash-standalone ##AUR
+#chromium-widevine ##AUR
+#midori
+dunst
+command-not-found ##AUR
+ranger
+w3m
+sxiv
+sxiv-rifle ##AUR
+atool
+poppler
+yaourt-gui
+gksu
+xarchiver-gtk2
+xlogin
+bdf-zevv-peep ##AUR
+ps_mem
+htop
+compton
+mhwd-chroot
+gparted
+arandr
+
+## AUR Access
+# base-devel
+# yaourt
