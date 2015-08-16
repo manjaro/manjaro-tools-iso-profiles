@@ -56,7 +56,6 @@ pulseaudio-ctl
 pulseaudio-zeroconf
 qt-gstreamer
 plasma-pa
-kmix
 
 ## Themes
 plasma5-themes-maia
