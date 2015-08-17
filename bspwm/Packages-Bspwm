@@ -46,29 +46,27 @@ numix-manjaro-themes
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-networkmanager-dmenu ##AUR
+networkmanager-dmenu
 
 
 ##Bspwm packages
-bspwm-git
-sxhkd-git
+bspwm-git ##AUR
+sxhkd-git ##AUR
 nitrogen
 numlockx
 unclutter
-#xdo 
+xdo-git ##AUR
 xtitle
 sutils
 bc
 lm_sensors
-#zenity
 wmctrl
 xdotool
 wmutils
 xwinfo
 conky-cli
-#dmenu-xft-xy-widht-mouse ##Local package
 lemonbar-xft-clicky
-ttf-dejavusansmono-powerline-git
+ttf-dejavusansmono-powerline-git #$AUR
 ttf-ionicons
 nitrogen
 #xorg-fonts-100dpi
@@ -84,21 +82,14 @@ zsh-completions
 rxvt-unicode
 urxvt-perls
 thermald
-#thunar
 spacefm-gtk2
-#pcmanfm
-#udisks
-#gvfs
 udevil
-#thunar-archive-plugin
-#thunar-volman
-#xfce4-settings
 chromium
 #chromium-pepper-flash-standalone ##AUR
 #chromium-widevine ##AUR
 #midori
 dunst
-command-not-found ##AUR
+command-not-found
 ranger
 w3m
 sxiv
@@ -109,7 +100,7 @@ yaourt-gui
 gksu
 xarchiver-gtk2
 xlogin
-bdf-zevv-peep ##AUR
+bdf-zevv-peep
 ps_mem
 htop
 compton
