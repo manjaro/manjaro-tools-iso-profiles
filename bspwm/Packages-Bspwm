@@ -50,12 +50,12 @@ networkmanager-dmenu
 
 
 ##Bspwm packages
-bspwm-git ##AUR
-sxhkd-git ##AUR
+bspwm ##Git version from AUR adds leaf_monocle functionality
+sxhkd ##Git version from AUR is needed for clickpasser scripts to work
 nitrogen
 numlockx
 unclutter
-xdo-git ##AUR
+xdo
 xtitle
 sutils
 bc
@@ -66,10 +66,9 @@ wmutils
 xwinfo
 conky-cli
 lemonbar-xft-clicky
-ttf-dejavusansmono-powerline-git #$AUR
+ttf-dejavusansmono-powerline
 ttf-ionicons
 nitrogen
-#xorg-fonts-100dpi
 lxappearance
 lemonpanel
 bspwm-scripts
@@ -87,13 +86,12 @@ udevil
 chromium
 #chromium-pepper-flash-standalone ##AUR
 #chromium-widevine ##AUR
-#midori
 dunst
 command-not-found
 ranger
 w3m
 sxiv
-sxiv-rifle ##AUR
+sxiv-rifle
 atool
 poppler
 yaourt-gui
