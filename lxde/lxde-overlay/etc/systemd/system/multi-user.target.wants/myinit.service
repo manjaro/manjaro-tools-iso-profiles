@@ -1,0 +1,8 @@
+[Unit]
+Description=Init task
+
+[Service]
+ExecStart=/usr/bin/myinit
+
+[Install]
+WantedBy=multi-user.target

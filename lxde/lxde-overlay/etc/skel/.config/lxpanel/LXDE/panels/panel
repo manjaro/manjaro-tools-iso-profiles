@@ -35,7 +35,7 @@ Plugin {
 Plugin {
     type = menu
     Config {
-        image=/usr/share/icons/manjaro-lxde-logo.png
+        image=/usr/share/backgrounds/manjaro-logo.png
         system {
         }
         separator {

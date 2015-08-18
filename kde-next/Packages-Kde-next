@@ -1,0 +1,66 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## Display Manager
+>systemd sddm
+>openrc sddm-consolekit
+sddm-kcm
+
+## Plasma5
+bluedevil
+breeze
+drkonqi
+kde-gtk-config
+kdeplasma-addons
+khelpcenter
+kinfocenter
+kio-extras
+kmenuedit
+kscreen
+ksshaskpass
+ksysguard
+kwayland-integration
+kwin
+kwrited
+milou
+plasma-desktop
+plasma-nm
+plasma-workspace
+powerdevil
+systemsettings
+user-manager
+
+## Applications
+ark
+konsole
+kate
+dragon
+dolphin-plugins
+qpdfview
+qupzilla
+kwrite
+octopi
+octopi-notifier-frameworks
+octopi-repoeditor
+octopi-cachecleaner
+partitionmanager
+manjaro-settings-manager
+manjaro-welcome
+
+## Audio
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+plasma-pa
+
+## Themes
+plasma5-themes-maia
+sddm-maia-theme
+>systemd plymouth-theme-manjaro-elegant
+ttf-oxygen
+
+## GTK Themes
+gnome-themes-standard # Adwaita theme

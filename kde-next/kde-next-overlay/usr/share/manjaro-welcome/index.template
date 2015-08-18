@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/index.css" rel="stylesheet" media="screen">
+        <link href="css/common.css" rel="stylesheet" media="screen">
+        <link href="css/fonts.css" rel="stylesheet" media="screen">
+    </head>
+    
+    <!--Designed by Joshua Strot-->
+    
+    <body class="backdrop">
+        <div id="header">
+            <img id="logo" src="img/logo.png" />
+            <div id="header-text">manjaro</div>
+            <div id="codename">KDE-Next</div><div id="version">2015.08</div>
+            <div id="arch">64-bit</div>
+        </div>
+        <div class="manjaro-desc">Welcome to Manjaro, and thank you for joining our community!</div>
+        <div class="manjaro-desc">We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback.</div>
+        <div id="contents">
+            <span class="cont-container">
+                <div class="cont-header">Documentation</div>
+                <a class="cont-item" href="readme.html">
+                    <img class="cont-png" src="img/icons/readme.png"/>
+                    <div class="cont-text">Read Me</div>
+                </a>
+                <a class="cont-item" href="features.html">
+                    <img class="cont-png" src="img/icons/newfeatures.png"/>
+                    <div class="cont-text">Release Info</div>
+                </a>
+                <a class="cont-item" href="cmd://link?http://wiki.manjaro.org">
+                    <img class="cont-png" src="img/icons/wiki.png"/>
+                    <div class="cont-text">Wiki</div>
+                </a>
+            </span>
+            <span class="cont-container">
+                <div class="cont-header">Support</div>
+                <a class="cont-item" href="cmd://link?http://forum.manjaro.org">
+                    <img class="cont-png" src="img/icons/forums.png"/>
+                    <div class="cont-text">Forums</div>
+                </a>
+                <a class="cont-item" href="cmd://link?http://manjaro.org/irc-channel/">
+                    <img class="cont-png" src="img/icons/chatroom.png"/>
+                    <div class="cont-text">Chat Room</div>
+                </a>
+                <a class="cont-item" href="cmd://link?http://lists.manjaro.org/cgi-bin/mailman/listinfo">
+                    <img class="cont-png" src="img/icons/mailinglists.png"/>
+                    <div class="cont-text">Mailing Lists</div>
+                </a>
+            </span>
+            <span class="cont-container">
+                <div class="cont-header">Project</div>
+                <a class="cont-item" href="involved.html">
+                    <img class="cont-png" src="img/icons/getinvolved.png"/>
+                    <div class="cont-text">Get Involved</div>
+                </a>
+                <a class="cont-item" id="install" href="cmd://install">
+                    <img class="cont-png" src="img/icons/installmanjaro.png"/>
+                    <div class="cont-text">Install Manjaro</div>
+                </a>
+                <a class="cont-item" id="install-cli" href="cmd://install-cli">
+                    <img class="cont-png" src="img/icons/installmanjarocli.png"/>
+                    <div class="cont-text">Install Manjaro (cli)</div>
+                </a>
+                <a class="cont-item" id="buildmanjaro"  href="cmd://link?https://github.com/manjaro/">
+                    <img class="cont-png" src="img/icons/buildmanjaro.png"/>
+                    <div class="cont-text">Build Manjaro</div>
+                </a>
+                <a class="cont-item" id="donations" href="cmd://link?https://manjaro.github.io/donate/">
+                    <img class="cont-png" src="img/icons/mailinglists.png"/>
+                    <div class="cont-text">Donations</div>
+                </a>
+            </span>
+        </div>
+        <div id="password" style="margin-top: 210px; text-align:center; font-family:'droid_sansregular';">NOTE: The username and password for the Live Environment are both 'manjaro'.</div>
+        
+        <footer>
+            <div id="social-media">
+                <a href="cmd://link?https://plus.google.com/118244873957924966264"><img class="social-media-img" src=img/social-google.png /></a>
+                <a href="cmd://link?https://www.facebook.com/ManjaroLinux"><img class="social-media-img" src=img/social-facebook.png /></a>
+                <a href="cmd://link?https://twitter.com/ManjaroLinux"><img class="social-media-img" src=img/social-twitter.png /></a>
+                <a href="cmd://link?https://www.reddit.com/r/ManjaroLinux"><img class="social-media-img" src=img/social-reddit.png /></a>
+            </div>
+            <a id="close" href="cmd://close">Close</a>
+            <div id="checkbox">
+                <a href="cmd://toggle-startup"><i id="autostart" class="icon-check"></i> Show this dialog on startup?</a>
+            </div>
+        </footer>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/welcome.js"></script>
+</html>

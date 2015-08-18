@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/extras.css" rel="stylesheet" media="screen">
+        <link href="css/common.css" rel="stylesheet" media="screen">
+        <link href="css/fonts.css" rel="stylesheet" media="screen">
+    </head>
+    
+    <!--Designed by Joshua Strot-->
+    
+    <body>
+        <div id="header">
+            <img id="logo" src="img/logo.png" />
+            <div id="header-text">manjaro</div>
+            <div id="codename">KDE-Next</div><div id="version">2015.08</div>
+            <div id="arch">64-bit</div>
+        </div>
+        <div id="navigation">
+            <a href="./index.html">
+                <img src="img/icons/home.png" />
+                <div>Back</div>
+            </a>
+        </div>
+        <div id="content">
+            <h2 id="content-header">Read Me</h2>
+            <h2 class="content-subheader">Handling hardware</h2>
+            <p class="paragraph">Manjaro not only supports the use of multiple kernels (selectable from the advanced options at the boot screen), but allows easy access to the very latest bleeding edge kernels as well. This is undertaken through use of the Kernel module in Manjaro's graphical Settings Manager, or via the command line with the MHWD-kernel (Manjaro Hardware Detection) command.</p>
+            <p class="paragraph">These Manjaro tools will automatically update a newly installed kernel including any modules currently in use with your existing kernel. For example, if you were to update from kernel 3.16 to 3.18, mhwd-kernel would automatically include the 3.18 builds of any and all modules presently used in 3.16. How about that!</p>
+            <p class="paragraph">You can configure your hardware through the Hardware Detection module in the Settings Manager or alternatively with the MHWD cli-application. With these tools you can install for example graphical drivers, free and propritary.</p>
+            <h2 class="content-subheader">Getting help</h2>
+            <p class="paragraph">Although Manjaro is designed to work as much "out of the box" as possible, we don't claim it's perfect. There can be times when things go wrong, you might have questions and a desire to learn more or just want to personalise it to suit your tastes. This page provides details of some available resources to help you!</p>
+            <h3 class="subparagraph">Search the web</h3>
+            <p class="paragraph">Perhaps the first place to look for generic Linux help is by using your favourite search engine. Just include words like 'Linux', 'Manjaro' or 'Arch' in your search query.</p>
+            <p class="paragraph">As Manjaro is based on Arch Linux, guides and tips designed for Arch usually apply to Manjaro too.</p>
+            <h3 class="subparagraph">Look in the forums</h3>
+            <p class="paragraph">For specific help with Manjaro we have a dedicated online forum where you can search for topics, or create one yourself! This is probably the next best place to go for collaboration, discussion and assistance. Ask for help, post your thoughts, or outline some suggestions. Don't be shy!</p>
+            <p class="paragraph">The Manjaro forum is divided into sub-forums for different topics and environments, please post your query in the appropriate place!</p>
+            <h3 class="subparagraph">Join us on IRC (Internet Relay Chat)</h3>
+            <p class="paragraph">Another option is to join us on IRC by joining our #manjaro channel on the chat.freenode.net servers.
+            <h3 class="subparagraph">Sign up to a mailing list</h3>
+            <p class="paragraph">Another way to get help is to email questions to a Manjaro mailing list (you can also search the history for past discussions). Simply sign up to the list you prefer and follow the instructions. There is a list dedicated to several topics, just take a look!</p>
+            <h2 class="content-subheader">Other resources</h2>
+            <ul class="list">
+                <li><a href="cmd://link?http://forum.manjarolinux.de//" class="success-link">Manjaro Germany</a> - Official, support for our german community.</li>
+                <li><a href="cmd://link?https://aur.archlinux.org/" class="success-link">AUR Repository</a> - Extra software not in the regular repositories, built from source.</li>
+                <li><a href="cmd://link?http://wiki.manjaro.org/" class="success-link">Manjaro Wiki</a> - Official wiki for Manjaro.</li>
+                <li><a href="cmd://link?http://wiki.archlinux.org/" class="success-link">Arch Wiki</a> - Official wiki for Arch.</li>
+                <li><a href="cmd://link?http://manjaro.org/irc-channel/" class="success-link">IRC Chat</a> - Live talk and help by users for users.</li>
+            </ul>
+            <h2 class="content-subheader">Suggestions</h2>
+            <p class="paragraph">Got a suggestion on how we can make Manjaro better? Found something you want included, or want to help out? Please let us know, by posting your suggestion on the forum or drop by on IRC.</p>
+            <p class="paragraph">Thank you!</p>
+            <p class="paragraph">We hope you enjoy using Manjaro!</p>
+        </div>
+        
+        <footer>
+            <div id="social-media">
+                <a href="cmd://link?https://plus.google.com/118244873957924966264"><img class="social-media-img" src=img/social-google.png /></a>
+                <a href="cmd://link?https://www.facebook.com/ManjaroLinux"><img class="social-media-img" src=img/social-facebook.png /></a>
+                <a href="cmd://link?https://twitter.com/ManjaroLinux"><img class="social-media-img" src=img/social-twitter.png /></a>
+                <a href="cmd://link?https://www.reddit.com/r/ManjaroLinux"><img class="social-media-img" src=img/social-reddit.png /></a>
+            </div>
+            <a id="close" href="cmd://close">Close</a>
+            <div id="checkbox">
+                <a href="cmd://toggle-startup"><i id="autostart" class="icon-check"></i> Show this dialog on startup?</a>
+            </div>
+        </footer>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/addons.js"></script>
+</html>

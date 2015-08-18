@@ -68,11 +68,13 @@ plank-theme-pantheon-bzr
 >systemd plymouth-theme-manjaro-elegant
 
 ##Pantheon Apps
-audience-bzr
+#audience-bzr # problem if window is not a full screen 
+mvp # instaed audience
 evince
 contractor-bzr
 elementary-scan-bzr
-geary-plank-bzr
+#geary-plank-bzr #not work error with a library
+geary
 #lightdm-pantheon-greeter-bzr
 #maya-calendar-bzr
 california 
