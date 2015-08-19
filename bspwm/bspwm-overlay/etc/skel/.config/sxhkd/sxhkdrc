@@ -116,13 +116,32 @@ super + Tab
 	
 # Select windows (move focus)
 super + {a,s,w,d}
-	bspc window -f {left,down,up,right} || bspc window -f {prev, prev, next, next}
-
+    bspc config pointer_follows_monitor true; \
+    bspc config pointer_follows_focus true; \
+    dir={left,down,up,right}; \
+        if ! bspc window -f $dir; then \
+    bspc monitor -f $dir; \
+    fi; \
+    bspc config pointer_follows_monitor false; \
+    bspc config pointer_follows_focus false
 super + {h,j,k,l}
-	bspc window -f {left,down,up,right} || bspc window -f {prev, prev, next, next}	
-
+    bspc config pointer_follows_monitor true; \
+    bspc config pointer_follows_focus true; \
+    dir={left,down,up,right}; \
+        if ! bspc window -f $dir; then \
+    bspc monitor -f $dir; \
+    fi; \
+    bspc config pointer_follows_monitor false; \
+    bspc config pointer_follows_focus false
 super + {Left,Down,Up,Right}
-	bspc window -f {left,down,up,right} || bspc window -f {prev, prev, next, next}
+    bspc config pointer_follows_monitor true; \
+    bspc config pointer_follows_focus true; \
+    dir={left,down,up,right}; \
+        if ! bspc window -f $dir; then \
+    bspc monitor -f $dir; \
+    fi; \
+    bspc config pointer_follows_monitor false; \
+    bspc config pointer_follows_focus false
 	
 # Move tiled windows. Moving a tiled window to preselected one moves into preselection instead. 
 super + shift + {a,s,w,d}
