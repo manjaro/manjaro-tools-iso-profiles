@@ -4,9 +4,12 @@
 
 ## Artwork
 manjaro-artwork
+manjaro-documentation
+gtk-engine-murrine	# only to avoid a warning
 
 ## LXDE Main Packages
-faenza-green-icon-theme
+#faenza-green-icon-theme
+shadow-icon-theme
 gamin
 gksu
 gnome-keyring
@@ -18,12 +21,13 @@ gvfs-mtp
 libgnome
 lxde
 manjaro-settings-manager
+mediterraneanlxqt
 network-manager-applet
 python2-xdg
 xcursor-simpleandsoft
 xcursor-vanilla-dmz-aa
 xscreensaver
-manjaro-welcome
+#manjaro-welcome
 
 ## Network
 netctl
@@ -32,46 +36,52 @@ networkmanager-dispatcher-ntpd
 openresolv
 
 ## Applications
-catfish
-evince
+#catfish
+#evince
 file-roller
-fwbuilder
+#fwbuilder
 galculator
 gedit
 gparted
-gimp
-lxmed
-midori
-mlocate
-#pidgin
-smplayer
-simple-scan
-sylpheed
-openssh
 hexchat
+isousb
+#lxmed
+midori-bzr
+mlocate
+openssh
+qpdfview
+smplayer
+#simple-scan
+synapse
+sylpheed
+transmission-gtk
 udiskie
 udisks
 udisks2
+vi
 cdrdao
 dvd+rw-tools
 virtualgl
-imagewriter
 
 ## Package management
-octopi
-octopi-notifier-qt4
-octopi-cachecleaner
-octopi-repoeditor
+#octopi
+#octopi-notifier-qt4
+#octopi-cachecleaner
+#octopi-repoeditor
+pamac
 
 ## Fonts
-adobe-source-sans-pro-fonts
+freetype2-infinality-ultimate
+fontconfig-infinality-ultimate
+ttf-droid
 
 ## Extra Applications
 #blueman
-icedtea-web
+#icedtea-web
 notification-daemon
-vinagre
+#vinagre
 lm_sensors
+xsensors
 
 ## Packages for Sound and Audio
 gst-libav
@@ -81,7 +91,7 @@ gst-plugins-ugly
 gstreamer0.10-bad-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-flashplugin
+#flashplugin
 libdvdcss
 manjaro-alsa
 manjaro-pulse
@@ -90,11 +100,12 @@ pa-applet
 
 ## Office
 #libreoffice-installer
-libreoffice-still
-gnumeric
+#libreoffice-still
+abiword-3.x-gtk2
+#gnumeric
 
 ## Printing
-manjaro-printer
+#manjaro-printer
 
 ## AUR Access
 autoconf
@@ -108,6 +119,5 @@ libtool
 m4
 make
 patch
-subversion
-svn
+#subversion
 yaourt
