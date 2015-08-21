@@ -33,6 +33,7 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
+networkmanager-openrc
 openresolv
 bluez
 blueman
