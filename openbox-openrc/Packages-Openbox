@@ -112,6 +112,8 @@ xfce4-power-manager
 gsimplecal
 xfburn
 manjaro-settings-manager
+mksh
+zsh
 
 ## Fonts
 adobe-source-sans-pro-fonts
