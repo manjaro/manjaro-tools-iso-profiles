@@ -1,0 +1,136 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## fluxbox Packages
+accountsservice
+cbatticon
+compton
+ffmpeg
+ffmpegthumbnailer
+fluxbox
+gconf # fix qt-theme
+gufw # firewall
+i3lock
+>openrc ufw-openrc
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+lxappearance
+manjaro-settings-manager
+oblogout
+pkgcacheclean
+polkit-gnome
+screenfetch
+scrot
+>openrc timeset-gui
+tree
+wbar
+vi
+xfce4-notifyd
+
+## Applications
+abiword
+#catfish
+claws-mail
+clipit
+downgrade
+#engrampa-thunar
+flashplugin
+galculator
+gksu
+gnome-vfs
+gparted
+gpicview
+gnumeric
+gvfs # trash support and mounting volumes
+gvfs-afc
+gvfs-afp
+gvfs-gphoto2
+gvfs-mtp # for mounting Samsung phones
+gvfs-smb
+hexchat
+htop
+libimobiledevice
+lxmusic
+lxterminal
+mousepad
+nitrogen
+palemoon-bin
+pcmanfm
+pinta
+#thunar
+#thunar-archive-plugin
+#thunar-media-tags-plugin
+qpdfview
+vlc
+
+## Network
+>openrc bluez-openrc
+blueman
+>systemd netctl
+>systemd networkmanager
+>openrc networkmanager-openrc
+network-manager-applet
+>openrc networkmanager-consolekit
+networkmanager-dispatcher-ntpd
+networkmanager-openconnect
+networkmanager-openvpn
+>openrc openvpn-openrc
+networkmanager-pptp
+networkmanager-vpnc
+>systemd openresolv
+# >openrc openresolv-openrc
+>openrc syslog-ng-openrc
+>systemd syslog-ng
+
+## Artwork
+awoken-icon-theme
+cantarell-fonts
+menda-circle-icon-theme
+menda-themes-dark
+xcursor-chameleon-pearl
+xfce-theme-greenbird
+
+## Audio Packages
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+pa-applet
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+## Package management
+pamac
+
+## Printing
+manjaro-printer
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+>multilib gcc-multilib
+git
+libconfig
+libtool
+m4
+make
+patch
+subversion
+yaourt
