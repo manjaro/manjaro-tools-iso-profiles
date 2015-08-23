@@ -57,6 +57,7 @@ manjaro-settings-manager
 lightdm-gtk-greeter   
 lightdm-gtk-greeter-settings
 numlockx
+network-manager-applet 
 
 ## Applications
 firefox
