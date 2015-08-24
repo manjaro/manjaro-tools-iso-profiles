@@ -157,7 +157,6 @@ digikam
 dolphin
 filelight
 k3b
-kalarm
 kate
 kcalc
 kdebase-kdepasswd
@@ -168,7 +167,6 @@ kdegraphics-ksnapshot
 kdegraphics-okular
 kdenetwork-kget
 kdenlive
-kleopatra
 kde-servicemenus-rootactions
 konsole
 konversation
@@ -178,6 +176,19 @@ kwrite
 gwenview
 print-manager
 skanlite
+# KDE PIM
+akonadiconsole
+akregator
+blogilo
+kaddressbook
+kalarm
+kleopatra
+kmail
+knotes
+konsolekalendar
+kontact
+korganizer
+ktnef
 
 ## Optional dependencies for k3b
 cdparanoia    # for cd ripping support
@@ -213,7 +224,6 @@ p7zip
 qbittorrent
 screenfetch
 >systemd systemd-kcm
-thunderbird-kde
 vlc
 yakuake
 
