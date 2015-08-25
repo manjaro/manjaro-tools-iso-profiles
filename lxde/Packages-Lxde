@@ -9,24 +9,45 @@ gtk-engine-murrine	# only to avoid a warning
 
 ## LXDE Main Packages
 #faenza-green-icon-theme
-shadow-icon-theme
+gnome-icon-theme
+#shadow-icon-theme
+vibrantly-green
 gamin
 gksu
 gnome-keyring
 gvfs
 gvfs-afc
-gvfs-gphoto2
-gvfs-smb
-gvfs-mtp
+#gvfs-gphoto2
+#gvfs-smb
+#gvfs-mtp
 libgnome
-lxde
+######## Groupe Lxde
+# lxde
+gpicview
+lxappearance
+lxappearance-obconf
+lxde-common
+#lxde-icon-theme
+lxdm
+lxinput
+lxlauncher
+lxmenu-data
+lxmusic
+lxpanel
+lxrandr
+lxsession
+lxtask
+lxterminal
+openbox
+pcmanfm
+########
 manjaro-settings-manager
 mediterraneanlxqt
 network-manager-applet
-python2-xdg
+#python2-xdg
 xcursor-simpleandsoft
 xcursor-vanilla-dmz-aa
-xscreensaver
+#xscreensaver
 #manjaro-welcome
 
 ## Network
@@ -41,16 +62,20 @@ openresolv
 file-roller
 #fwbuilder
 galculator
-gedit
+#gedit
 gparted
 hexchat
 isousb
 #lxmed
-midori-bzr
+#midori-bzr
 mlocate
+mousepad
+mpv
 openssh
+packsize
+palemoon-bin
 qpdfview
-smplayer
+#smplayer
 #simple-scan
 synapse
 sylpheed
@@ -78,6 +103,8 @@ ttf-droid
 ## Extra Applications
 #blueman
 #icedtea-web
+mtpaint
+gifsicle	# for mtpaint
 notification-daemon
 #vinagre
 lm_sensors
@@ -91,7 +118,7 @@ gst-plugins-ugly
 gstreamer0.10-bad-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-#flashplugin
+flashplugin
 libdvdcss
 manjaro-alsa
 manjaro-pulse
@@ -99,7 +126,6 @@ pavucontrol
 pa-applet
 
 ## Office
-#libreoffice-installer
 #libreoffice-still
 abiword-3.x-gtk2
 #gnumeric

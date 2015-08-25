@@ -82,7 +82,7 @@ Plugin {
             id=/usr/share/applications/hexchat.desktop
         }
         Button {
-            id=/usr/share/applications/midori.desktop
+            id=/usr/share/applications/palemoon.desktop
         }
     }
 }
