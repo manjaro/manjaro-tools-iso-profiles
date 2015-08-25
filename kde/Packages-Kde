@@ -112,6 +112,7 @@ breeze
 drkonqi
 kde-gtk-config
 kdeplasma-addons
+kgamma5
 khelpcenter
 kinfocenter
 kio-extras
@@ -119,6 +120,8 @@ kmenuedit
 kscreen
 ksshaskpass
 ksysguard
+kwallet-pam
+kwayland-integration
 kwin
 kwrited
 milou
@@ -126,10 +129,12 @@ oxygen
 oxygen-cursors
 plasma-desktop
 plasma-nm
+plasma-pa
 plasma-workspace
 plasma-workspace-wallpapers
 powerdevil
 systemsettings
+user-manager
 
 ## Themes
 plasma5-themes-maia
@@ -170,7 +175,6 @@ kdenlive
 kde-servicemenus-rootactions
 konsole
 konversation
-kmix
 kwalletmanager
 kwrite
 gwenview
@@ -203,7 +207,7 @@ cdrkit           # for creation of DVD ISO images
 dvdauthor        # for creation of DVD
 dvgrab           # for firewire capture
 recordmydesktop  # for screen capture
-xine-ui         # for DVD preview
+xine-ui          # for DVD preview
 
 ## Optional dependencies for gwenview
 kimageformats     # support for dds, xcf, exr, psd, and more image formats
