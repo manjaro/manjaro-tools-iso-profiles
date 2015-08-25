@@ -25,6 +25,7 @@ kwrited
 milou
 plasma-desktop
 plasma-nm
+plasma-pa
 plasma-workspace
 powerdevil
 systemsettings
@@ -35,7 +36,6 @@ konsole
 kate
 qpdfview
 qupzilla
-kmix
 kwrite
 octopi
 partitionmanager
