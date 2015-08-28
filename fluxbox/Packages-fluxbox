@@ -73,10 +73,10 @@ blueman
 network-manager-applet
 >openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
-networkmanager-openconnect
+>systemd networkmanager-openconnect
 networkmanager-openvpn
 >openrc openvpn-openrc
-networkmanager-pptp
+>systemd networkmanager-pptp
 networkmanager-vpnc
 >systemd openresolv
 # >openrc openresolv-openrc
