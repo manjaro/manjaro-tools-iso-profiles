@@ -6,19 +6,20 @@
 accountsservice
 cbatticon
 compton
+>openrc cgmanager-openrc
 ffmpeg
 ffmpegthumbnailer
 fluxbox
 gconf # fix qt-theme
+gnome-keyring # fix wlan segfault
 gufw # firewall
-i3lock
 >openrc ufw-openrc
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
 oblogout
-pkgcacheclean
+>openrc pm-utils # for suspend/hibernate
 polkit-gnome
 screenfetch
 scrot
@@ -30,11 +31,9 @@ xfce4-notifyd
 
 ## Applications
 abiword
-#catfish
 claws-mail
 clipit
 downgrade
-#engrampa-thunar
 flashplugin
 galculator
 gksu
@@ -58,9 +57,6 @@ nitrogen
 palemoon-bin
 pcmanfm
 pinta
-#thunar
-#thunar-archive-plugin
-#thunar-media-tags-plugin
 qpdfview
 vlc
 
@@ -86,9 +82,11 @@ networkmanager-vpnc
 ## Artwork
 awoken-icon-theme
 cantarell-fonts
+fluxbox-theme-manjaro
 menda-circle-icon-theme
 menda-themes-dark
 xcursor-chameleon-pearl
+xcursor-menda
 xfce-theme-greenbird
 
 ## Audio Packages
