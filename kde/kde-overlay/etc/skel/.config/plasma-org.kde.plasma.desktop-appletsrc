@@ -32,7 +32,7 @@ plugin=org.kde.plasma.icon
 applicationName=Dolphin
 genericName=File Manager
 iconName=system-file-manager
-url=file:///usr/share/applications/dolphin.desktop
+url=file:///usr/share/applications/org.kde.dolphin.desktop
 
 [Containments][1][Applets][19]
 immutability=1
