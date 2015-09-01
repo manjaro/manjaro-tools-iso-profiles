@@ -18,7 +18,7 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
-oblogout
+oblogout-manjaro
 >openrc pm-utils # for suspend/hibernate
 polkit-gnome
 screenfetch
@@ -114,6 +114,7 @@ pamac
 
 ## Printing
 manjaro-printer
+>openrc cups-openrc
 
 ## AUR Access
 autoconf

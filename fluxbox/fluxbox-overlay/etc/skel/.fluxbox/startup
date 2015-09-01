@@ -14,7 +14,7 @@ pamac-tray &
 (sleep 5s && wbar) &
 
 # exec is for starting Fluxbox itself, do not put an ampersand (&) after this or Fluxbox will exit immediately.
-exec /usr/bin/fluxbox
+# exec /usr/bin/fluxbox
 
 # or if you want to keep a log, uncomment the below command and comment out the above command:
-# exec /usr/bin/fluxbox -log ~/.fluxbox/log
+exec /usr/bin/fluxbox -log ~/.fluxbox/log

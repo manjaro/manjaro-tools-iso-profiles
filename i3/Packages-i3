@@ -111,6 +111,7 @@ octopi-pacmanhelper
 
 ## Printing
 manjaro-printer
+>openrc cups-openrc
 
 ## AUR Access
 autoconf
