@@ -2,63 +2,63 @@
 Color=44,44,44
 
 [BackgroundIntense]
-Color=0,0,0
+Color=44,44,44
 
 [Color0]
-Color=0,0,0
+Color=63,63,63
 
 [Color0Intense]
-Color=104,104,104
+Color=112,144,128
 
 [Color1]
-Color=250,75,75
+Color=112,80,80
 
 [Color1Intense]
-Color=255,84,84
+Color=220,163,163
 
 [Color2]
-Color=24,178,24
+Color=96,180,138
 
 [Color2Intense]
-Color=84,255,84
+Color=114,213,163
 
 [Color3]
-Color=178,104,24
+Color=223,175,143
 
 [Color3Intense]
-Color=255,255,84
+Color=240,223,175
 
 [Color4]
-Color=24,24,178
+Color=52,152,219
 
 [Color4Intense]
-Color=84,84,255
+Color=126,178,230
 
 [Color5]
-Color=225,30,225
+Color=91,44,112
 
 [Color5Intense]
-Color=255,84,255
+Color=155,89,182
 
 [Color6]
-Color=24,178,178
+Color=140,208,211
 
 [Color6Intense]
-Color=84,255,255
+Color=147,224,227
 
 [Color7]
-Color=178,178,178
+Color=220,220,204
 
 [Color7Intense]
 Color=255,255,255
 
 [Foreground]
-Color=24,240,24
+Color=26,188,156
 
 [ForegroundIntense]
-Color=24,240,24
+Color=26,188,156
 
 [General]
-Description=Green on Black
+Description=Maia
 Opacity=1
 Wallpaper=
