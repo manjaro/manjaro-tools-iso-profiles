@@ -224,7 +224,8 @@ cantata
 imagewriter
 firefox-kde
 flashplugin
-manjaro-settings-manager
+#manjaro-settings-manager
+kcm-msm
 manjaro-welcome
 p7zip
 qbittorrent

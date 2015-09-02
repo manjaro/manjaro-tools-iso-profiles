@@ -30,7 +30,7 @@ plasma-workspace
 powerdevil
 systemsettings
 
-## Aplications
+## Applications
 dolphin
 konsole
 kate
@@ -39,7 +39,8 @@ qupzilla
 kwrite
 octopi
 partitionmanager
-manjaro-settings-manager
+#manjaro-settings-manager
+kcm-msm
 manjaro-welcome
 >multilib manjaro-alsa
 
