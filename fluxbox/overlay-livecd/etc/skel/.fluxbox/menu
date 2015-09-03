@@ -1,7 +1,7 @@
 [begin] (Application Menu)
 [encoding] {UTF-8}
 
-  [exec] (Graphical Installer) {thus} 
+  [exec] (Graphical Installer) {gksu thus} 
   [exec] (CLI Installer) {sudo lxterminal -e /usr/bin/setup} 
 
 [separator]

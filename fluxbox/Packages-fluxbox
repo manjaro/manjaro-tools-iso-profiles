@@ -7,8 +7,6 @@ accountsservice
 cbatticon
 compton
 >openrc cgmanager-openrc
-ffmpeg
-ffmpegthumbnailer
 fluxbox
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
@@ -22,11 +20,8 @@ oblogout-manjaro
 >openrc pm-utils # for suspend/hibernate
 polkit-gnome
 screenfetch
-scrot
 >openrc timeset-gui
-tree
 wbar
-vi
 xfce4-notifyd
 
 ## Applications
@@ -34,6 +29,8 @@ abiword
 claws-mail
 clipit
 downgrade
+ffmpeg
+ffmpegthumbnailer
 flashplugin
 galculator
 gksu
@@ -52,12 +49,16 @@ htop
 libimobiledevice
 lxmusic
 lxterminal
+manjaro-welcome
 mousepad
 nitrogen
 palemoon-bin
 pcmanfm
 pinta
 qpdfview
+scrot
+tree
+vi
 vlc
 
 ## Network
