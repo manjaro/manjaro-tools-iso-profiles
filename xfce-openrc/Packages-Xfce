@@ -65,6 +65,7 @@ xfce4-mixer
 ## Base packages
 tlp-pmu			# TLP
 pm-utils
+cgmanager-openrc	# For ConsoleKit2
 
 ## Basic Apps
 lightdm
