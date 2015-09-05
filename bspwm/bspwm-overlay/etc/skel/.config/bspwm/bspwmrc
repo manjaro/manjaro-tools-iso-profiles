@@ -1,10 +1,14 @@
 #! /bin/sh
 export BSPWM_SCRIPTS_DIR="$HOME/scripts"
 gap=15
+PANEL_HEIGHT=30
+export gap
+export PANEL_HEIGHT
 
-#This creates negative padding eaual to window gap so that gaps are shown only between windows and not on desktop edges.
+#This creates negative padding equal to window gap so that gaps are shown only between windows and not on desktop edges.
+#Leaves padding for top panel on first monitor only.
 bspc config window_gap $gap;
-bspc config top_padding $(($PANEL_HEIGHT-gap))
+bspc config top_padding -$gap &&bspc config -m $(bspc query -M | awk NR==1) top_padding $(($PANEL_HEIGHT-$gap))
 bspc config left_padding -$gap
 bspc config right_padding -$gap
 bspc config bottom_padding -$gap
@@ -18,6 +22,9 @@ bspc config apply_floating_atom    true
 bspc config history_aware_focus    true
 #bspc config ignore_ewmh_focus      true
 #bspc config initial_polarity second_child
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+
 
 ##Color settings
 bspc config normal_frame_opacity 1.0
@@ -53,7 +60,7 @@ bspc rule -a Gmrun floating=true center=true
 bspc rule -a Lxterminal floating=true center=true sticky=true
 #bspc rule -a urxvt floating=true center=true
 bspc rule -a Viewnior floating=true center=true
-bspc rule -a Feh floating=true center=true
+bspc rule -a Feh center=true
 bspc rule -a File-roller floating=true center=true
 bspc rule -a floaterm floating=true center=true
 #bspc rule -a Skype pseudo_tiled=on
@@ -71,6 +78,7 @@ bspc rule -a Google-chrome-unstable private=on
 bspc rule -a Google-chrome-stable private=on
 bspc rule -a Chromium private=on
 bspc rule -a Firefox private=on
+bspc rule -a Midori private=on
 bspc rule -a gnome-pie border=off manage=off
 #bspc rule -a Firefox desktop=I
 #bspc rule -a Calibre desktop=II
@@ -91,3 +99,9 @@ bspc rule -a tint2 border=off manage=off
 bspc config external_rules_command ~/.config/bspwm/pseudo_automatic_mode
 ##Adjust new window: splits biggest windows to keep windows about the same size
 #bspc config external_rules_command ~/.config/bspwm/adjust-new-window
+
+##Autostart apps
+#Deybindings daemon
+sxhkd &
+#Source autostartfile
+. $HOME/.config/bspwm/autostart
