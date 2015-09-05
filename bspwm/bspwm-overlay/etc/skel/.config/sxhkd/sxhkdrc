@@ -114,8 +114,8 @@ alt + {_,shift + }Tab
 super + Tab
 	WindowSelector
 	
-# Select windows (move focus)
-super + {a,s,w,d}
+#Focus windows by direction, works with multihead
+super +  {a,s,w,d}
     bspc config pointer_follows_monitor true; \
     bspc config pointer_follows_focus true; \
     dir={left,down,up,right}; \
@@ -124,7 +124,8 @@ super + {a,s,w,d}
     fi; \
     bspc config pointer_follows_monitor false; \
     bspc config pointer_follows_focus false
-super + {h,j,k,l}
+
+super +  {h,j,k,l}
     bspc config pointer_follows_monitor true; \
     bspc config pointer_follows_focus true; \
     dir={left,down,up,right}; \
@@ -133,7 +134,8 @@ super + {h,j,k,l}
     fi; \
     bspc config pointer_follows_monitor false; \
     bspc config pointer_follows_focus false
-super + {Left,Down,Up,Right}
+
+super +  {Left,Down,Up,Right}
     bspc config pointer_follows_monitor true; \
     bspc config pointer_follows_focus true; \
     dir={left,down,up,right}; \
@@ -142,21 +144,23 @@ super + {Left,Down,Up,Right}
     fi; \
     bspc config pointer_follows_monitor false; \
     bspc config pointer_follows_focus false
-	
-# Move tiled windows. Moving a tiled window to preselected one moves into preselection instead. 
+        	
+# Move tiled windows. Moving a tiled window to 
+# preselected one moves into preselection instead. 
+# Moving out of the screen should move the window to next monitor if possible
 super + shift + {a,s,w,d}
 	bspc config pointer_follows_focus true; \
-	swapOrMoveIn.sh {left,down,up,right}; \
+	swapOrMoveIn.sh {left,down,up,right} || bspc window -m $dir && bspc monitor -f {left,down,up,right}; \
 	bspc config pointer_follows_focus false
 
 super + shift + {h,j,k,l}
 	bspc config pointer_follows_focus true; \
-	swapOrMoveIn.sh {left,down,up,right}; \
+	swapOrMoveIn.sh {left,down,up,right} || bspc window -m $dir && bspc monitor -f {left,down,up,right}; \
 	bspc config pointer_follows_focus false
 	
 super + shift + {Left,Down,Up,Right}
 	bspc config pointer_follows_focus true; \
-	swapOrMoveIn.sh {left,down,up,right}; \
+	swapOrMoveIn.sh {left,down,up,right} || bspc window -m $dir && bspc monitor -f {left,down,up,right}; \
 	bspc config pointer_follows_focus false
 
 #resize windows
@@ -222,10 +226,12 @@ super + button{1-3}
 super + @button{1-3}
 	bspc pointer -u
 # Needed to focus windows by clicking, if you wish to disable 
-# focus_follows_mouse behavior (required to use menu of xfdesktop and whiskermenu)
+# focus_follows_mouse behavior (required to use menu of xfdesktop, whiskermenu or click java apps)
 ~button1
 	bspc pointer -g focus
-
+## Alternative that allows clicking otherwise problematic stuff
+#button1
+#	bspc pointer -g focus &&clickpasser 1
 ### Add or remove desktops by scrolling
 super + ctrl + button5
     bspcp dsktp rm
@@ -234,10 +240,12 @@ super + ctrl + button4
     bspcp dsktp add
 
 # Spawn applications popup menu and manually tile selected 
-# app where your mouse was when you opened the menu
+# app where your mouse was when you opened the menu. Smartsplit only chooses
+# biggest dimension of the window, MouseLaunch only cares which edge is closer.
 # mod5 is alt_gr (first key right from space) on most keyboards. 
 mod5 + @button1
-    MouseLaunch
+#    MouseLaunch
+	smartsplit &&dboxmenu
 
 # Spawn window manipulation menu
 # Mod1 is alt
@@ -247,9 +255,9 @@ mod1 + @button1
 # These two are needed if you want to use xfdesktops menus while 
 # focus_follows_pointer is on
 #@button3
-#	clickpasser3.sh
+#	clickpasser 3
 #@button2
-#	clickpasser2.sh	
+#	clickpasser 2
 
 #
 # Touchpad "gestures" (depend on your touchpad driver, very likely to be unavailable)
@@ -291,7 +299,7 @@ super + r
 	finder
 
 super + shift + b
-	chromium 
+	midori 
     		
 super + e
 	spacefm
@@ -317,6 +325,9 @@ XF86AudioLowerVolume
 
 XF86AudioMute
 	volume mute
+
+XF86Sleep
+	systemctl suspend
 
 # make sxhkd reload its configuration files:
 super + shift + Escape
