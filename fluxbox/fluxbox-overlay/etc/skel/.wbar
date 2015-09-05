@@ -1,0 +1,48 @@
+i: /usr/share/pixmaps/wbar/nodock.png
+c: wbar --vbar --nofont --pos left --grow --isize 32 --nanim 5 --zoomf 1.200000
+t: /usr/share/fonts/TTF/DejaVuSans/10
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/system-file-manager2.png
+c: pcmanfm
+t: Pcmanfm
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/terminal2.png
+c: lxterminal
+t: Terminal
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/categories/applications-internet2.png
+c: palemoon
+t: Webbrowser
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/evolution2.png
+c: claws-mail
+t: Mail
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/abiword.png
+c: abiword
+t: Abiword
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/pinta.png
+c: pinta
+t: Pinta
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/galculator.png
+c: galculator
+t: Calculator
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/categories/applications-office.png
+c: gnumeric
+t: Spreadsheet
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/multimedia-audio-player.png
+c: lxmusic
+t: LXMusic
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/mimetypes/video-x-generic2.png
+c: vlc
+t: VLC
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/system-shutdown-panel.png
+c: oblogout
+t: Oblogout
+

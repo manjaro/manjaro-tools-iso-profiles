@@ -1,0 +1,136 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## fluxbox Packages
+accountsservice
+cbatticon
+compton
+>openrc cgmanager-openrc
+fluxbox
+gconf # fix qt-theme
+gnome-keyring # fix wlan segfault
+gufw # firewall
+>openrc ufw-openrc
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+lxappearance
+manjaro-settings-manager
+oblogout-manjaro
+>openrc pm-utils # for suspend/hibernate
+polkit-gnome
+screenfetch
+>openrc timeset-gui
+wbar
+xfce4-notifyd
+
+## Applications
+abiword
+claws-mail
+clipit
+downgrade
+ffmpeg
+ffmpegthumbnailer
+flashplugin
+galculator
+gksu
+gnome-vfs
+gparted
+gpicview
+gnumeric
+gvfs # trash support and mounting volumes
+gvfs-afc
+gvfs-afp
+gvfs-gphoto2
+gvfs-mtp # for mounting Samsung phones
+gvfs-smb
+hexchat
+htop
+libimobiledevice
+lxmusic
+lxterminal
+manjaro-welcome
+mousepad
+nitrogen
+palemoon-bin
+pcmanfm
+pinta
+qpdfview
+scrot
+tree
+vi
+vlc
+
+## Network
+>openrc bluez-openrc
+blueman
+>systemd netctl
+>systemd networkmanager
+>openrc networkmanager-openrc
+network-manager-applet
+>openrc networkmanager-consolekit
+networkmanager-dispatcher-ntpd
+>systemd networkmanager-openconnect
+networkmanager-openvpn
+>openrc openvpn-openrc
+>systemd networkmanager-pptp
+networkmanager-vpnc
+>systemd openresolv
+# >openrc openresolv-openrc
+>openrc syslog-ng-openrc
+>systemd syslog-ng
+
+## Artwork
+awoken-icon-theme
+cantarell-fonts
+fluxbox-theme-manjaro
+menda-circle-icon-theme
+menda-themes-dark
+xcursor-chameleon-pearl
+xcursor-menda
+xfce-theme-greenbird
+
+## Audio Packages
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+pa-applet
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+## Package management
+pamac
+
+## Printing
+manjaro-printer
+>openrc cups-openrc
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+>multilib gcc-multilib
+git
+libconfig
+libtool
+m4
+make
+patch
+subversion
+yaourt

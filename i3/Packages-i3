@@ -26,7 +26,6 @@ lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
 pkgcacheclean
-pnmixer
 polkit-gnome
 screenfetch
 scrot
@@ -71,10 +70,10 @@ blueman
 network-manager-applet
 >openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
-networkmanager-openconnect
+>systemd networkmanager-openconnect
 networkmanager-openvpn
 >openrc openvpn-openrc
-networkmanager-pptp
+>systemd networkmanager-pptp
 networkmanager-vpnc
 >systemd openresolv
 # >openrc openresolv-openrc
@@ -112,6 +111,7 @@ octopi-pacmanhelper
 
 ## Printing
 manjaro-printer
+>openrc cups-openrc
 
 ## AUR Access
 autoconf
