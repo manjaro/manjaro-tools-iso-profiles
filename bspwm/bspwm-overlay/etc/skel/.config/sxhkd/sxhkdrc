@@ -78,14 +78,6 @@ alt + ctrl + {h,j,k,l}
 alt + ctrl + {Left,Down,Up,Right}
 	bspc window -p {left,down,up,right}
 
-# Split window horizontally
-super + h
-	bspc window -p down
-
-# Split window vertically 
-super + v
-	bspc window -p right
-
 # Set splitting ratio of windows
 alt + ctrl + {1-9}
 	bspc window -r 0.{1-9}
