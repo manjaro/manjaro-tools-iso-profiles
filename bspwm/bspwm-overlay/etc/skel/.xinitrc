@@ -33,7 +33,7 @@ session=${1:-bspwm}
 
 case $session in
     awesome           ) exec awesome;;
-    bspwm             ) exec bspwm-session;;
+    bspwm             ) exec bspwm;;
     catwm             ) exec catwm;;
     cinnamon          ) exec cinnamon-session;;
     dwm               ) exec dwm;;
