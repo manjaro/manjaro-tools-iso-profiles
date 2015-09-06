@@ -1,6 +1,10 @@
-######################################################
-### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
-######################################################
+ 
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Custom ###
+#####################################################
+
+ 
+### Manjaro Packages Pantheon
 
 ## All file for any DE
 dconf-editor
@@ -10,71 +14,110 @@ gnome-keyring # fix wlan segfault
 gnome-control-center # for switchboard plug : some plug not work fine
 gnome-vfs
 gvfs # to fix trash in thunar
-menulibre
-network-manager-applet
-xarchiver
+file-roller
 p7zip
-#numlockx
+ristretto
+numlockx
 #xcursor-simpleandsoft
 #xcursor-vanilla-dmz-aa
-imagewriter
-gimp
-brasero
-shotwell
+#shotwell
+tumbler
+ffmpegthumbnailer
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+#lightdm-bzr
+#sddm
+gnome-system-monitor
+hexchat
+gksu
+xfce4-screenshooter #snapshot program snap-photobooth problem
 
-##Pantheon files
-pantheon-session-bzr
-audience-bzr
-contractor-bzr
-#dexter-contacts-bzr
-eidete-bzr
-elementary-icon-theme-bzr
-elementary-scan-bzr
-elementary-wallpapers-bzr
-elementary-dpms-helper-bzr #need for use switchboard-plug
+##Deps
+ido
+libunity
 gtk-theme-elementary-bzr
-geary
-#indicator-pantheon-session-bzr #not work in systemd
-lightdm-pantheon-greeter-bzr
-maya-calendar-bzr
-midori-granite-bzr
-noise-bzr
-pantheon-backgrounds-bzr
-pantheon-calculator-bzr
+
+##Budgie Desktop - needed to use budgie-panel instead wingpanel
+budgie-desktop
+slingscold #instead slingshot-launcher
+
+##Pantheon Shell
+plank-bzr
+mutter-pantheon-manjaro
+gala-bzr-manjaro
+#pantheon-default-settings
+pantheon-session-bzr-manjaro
+slingshot-launcher-bzr-manjaro
+wingpanel-rewrite-x11-bzr-manjaro
+wingpanel-indicator-notifications-bzr-manjaro
+wingpanel-indicator-ayatana-bzr
+wingpanel-indicator-datetime-bzr-manjaro
+wingpanel-indicator-network-bzr-manjaro
+wingpanel-indicator-power-bzr-manjaro
+wingpanel-indicator-session-bzr-manjaro
+wingpanel-indicator-sound-bzr-manjaro
+wingpanel-indicator-launcher-bzr-manjaro
+#pantheon-session-bzr
 pantheon-default-settings-bzr
+
+##Art Stuff
+elementary-icon-theme-bzr
+pantheon-backgrounds-bzr
+elementary-add-icon-theme-git #from aur for most icon
+plank-theme-pantheon-bzr
+>systemd plymouth-theme-manjaro-elegant
+
+##Pantheon Apps
+#audience-bzr # problem if window is not a full screen 
+mvp # instaed audience
+evince
+contractor-bzr
+elementary-scan-bzr
+#geary-plank-bzr #not work error with a library
+geary
+#lightdm-pantheon-greeter-bzr
+#maya-calendar-bzr
+california 
+#midori-granite-bzr
+firefox
+icedtea-web
+noise-bzr
+pantheon-calculator-bzr
 pantheon-files-bzr
-#pantheon-notify-bzr
 pantheon-print-bzr
 pantheon-terminal-bzr
-plank-theme-pantheon-bzr
 scratch-text-editor-bzr
 snap-photobooth-bzr
-switchboard-bzr
-indicator-session-systemd #from Aur for patch indicator session pantheon
-ido #from aur to most indicator applet
-indicator-datetime
-indicator-power #from Aur
-indicator-sound
-#network-manager-applet-ubuntu #from Aur
-#gnome-panel #aur
-#gnome-applet #aur
+pantheon-photos-bzr #replace shotwell
 
-##Plugin for switchboard
+
+##Switchboard
+switchboard-bzr
 switchboard-plug-default-applications-bzr
 switchboard-plug-power-bzr
 switchboard-plug-elementary-tweaks-bzr
 switchboard-plug-pantheon-shell-bzr
-#switchboard-plug-keyboard-bzr #not work at the moment
+switchboard-plug-keyboard-bzr #not work at the moment
 switchboard-plug-about-bzr
-switchboard-plug-startup-applications-bzr
 switchboard-plug-display-bzr
-switchboard-plug-locale
+#switchboard-plug-locale
+switchboard-plug-datetime-bzr
+switchboard-plug-network-bzr
+switchboard-plug-notifications-bzr
+switchboard-plug-online-accounts-bzr
+switchboard-plug-security-privacy-bzr
+switchboard-plug-display-bzr
+elementary-dpms-helper-bzr #need for use switchboard-plug
 
-#Budgie-desktop for switch wingpanel to bridge-panel
-budgie-desktop
-libgee06 #from Aur (for slingscold)
-gnome-menus2 #from Aur (for slingscold)
-slingscold #from Aur for elementary experience
+##Font
+ttf-opensans
+#ttf-raleway-font-family
+ttf-dejavu
+ttf-droid
+ttf-freefont
+ttf-liberation
+cantarell-fonts
+
 
 ## Audio Packages
 manjaro-alsa
@@ -84,22 +127,19 @@ pa-applet
 pulseaudio-ctl
 
 ## Applications
-accountsservice
-gksu
+#accountsservice
+polkit-gnome
 gst-libav
 gparted
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 light-locker
 manjaro-settings-manager
-#manjaro-welcome # not yet ready
-midori
-mousepad
+#manjaro-printer
+manjaro-welcome 
+#mousepad
 pamac
->i686 parole
-qpdfview
->i686 sylpheed
->i686 xnoise
+#>i686 parole
+#>i686 sylpheed
+#>i686 xnoise
 open-fuse-iso
 
 ## Network
@@ -109,15 +149,25 @@ networkmanager-dispatcher-ntpd
 openresolv
 >i686 blueman
 
-## Artwork
-#faenza-green-icon-theme
-#maia-icon-theme
-menda-circle-icon-theme
-menda-themes
-manjaro-artwork
-xcursor-menda
->i686 xfce-theme-greenbird
-plymouth-theme-manjaro-elegant
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+pulseaudio-ctl
+
+## Documentation
+#manjaro-documentation
 
 ##Access AUR
 autoconf

@@ -1,0 +1,78 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=hexchat) (class=Hexchat)
+  [Dimensions]	{40% 33%}
+  [Position]	(UPPERLEFT)	{34% 36%}
+  [Close]	{yes}
+[end]
+[app] (name=lxterminal) (class=Lxterminal)
+  [Position]	(UPPERLEFT)	{17% 20%}
+  [Close]	{yes}
+[end]
+[app] (name=pcmanfm) (class=Pcmanfm)
+  [Dimensions]	{54% 68%}
+  [Position]	(UPPERLEFT)	{22% 19%}
+  [Close]	{yes}
+[end]
+[app] (name=lxmusic) (class=Lxmusic)
+  [Position]	(UPPERLEFT)	{26% 32%}
+  [Close]	{yes}
+[end]
+[app] (name=Pinta) (class=Pinta)
+  [Fullscreen]	{no}
+  [Close]	{yes}
+[end]
+[app] (name=Navigator) (class=Pale moon) (role=browser)
+  [Position]	(UPPERLEFT)	{5% 0%}
+  [Close]	{yes}
+[end]
+[app] (name=abiword) (class=Abiword) (role=topLevelWindow)
+  [Position]	(UPPERLEFT)	{5% 0%}
+  [Close]	{yes}
+[end]
+[app] (name=gnumeric) (class=Gnumeric)
+  [Position]	(UPPERLEFT)	{25% 0%}
+  [Close]	{yes}
+[end]
+[app] (name=galculator) (class=Galculator)
+  [Position]	(UPPERLEFT)	{35% 37%}
+  [Close]	{yes}
+[end]
+[app] (name=vlc) (class=Vlc) (role=vlc-main)
+  [Position]	(UPPERLEFT)	{19% 13%}
+  [Close]	{yes}
+[end]
+[app] (name=mousepad) (class=Mousepad)
+  [Dimensions]	{50% 88%}
+  [Position]	(UPPERLEFT)	{46% 5%}
+  [Close]	{yes}
+[end]
+[app] (name=pamac-manager) (class=Pamac-manager)
+  [Position]	(UPPERLEFT)	{5% 0%}
+  [Close]	{yes}
+[end]
+[app] (name=gpartedbin) (class=GParted)
+  [Position]	(UPPERLEFT)	{12% 11%}
+  [Close]	{yes}
+[end]
+[app] (name=lxappearance) (class=Lxappearance)
+  [Dimensions]	{61% 74%}
+  [Position]	(UPPERLEFT)	{21% 14%}
+  [Close]	{yes}
+[end]
+[app] (name=nitrogen) (class=Nitrogen)
+  [Position]	(UPPERLEFT)	{45% 0%}
+  [Close]	{yes}
+[end]
+[app] (name=pavucontrol) (class=Pavucontrol)
+  [Dimensions]	{73% 64%}
+  [Position]	(UPPERLEFT)	{15% 30%}
+  [Close]	{yes}
+[end]
+[app] (name=system-config-printer.py) (class=System-config-printer.py)
+  [Dimensions]	{53% 51%}
+  [Position]	(UPPERLEFT)	{27% 30%}
+  [Close]	{yes}
+[end]

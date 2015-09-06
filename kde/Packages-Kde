@@ -7,6 +7,8 @@
 >openrc networkmanager-openrc
 networkmanager-dispatcher-ntpd
 >systemd openresolv
+openssh
+samba
 
 ## Libraries for Sound/Audio/Video
 ffmpeg
@@ -47,7 +49,6 @@ gvfs
 open-fuse-iso
 android-tools
 android-udev
-kio-mtp
 
 ## AUR Support/Development
 # Missing base-devel packages
@@ -69,8 +70,6 @@ git
 patchutils
 svn
 yaourt
-openssh
-samba
 
 ## Fonts
 ttf-oxygen  # oficial KDE font
@@ -113,6 +112,7 @@ breeze
 drkonqi
 kde-gtk-config
 kdeplasma-addons
+kgamma5
 khelpcenter
 kinfocenter
 kio-extras
@@ -120,6 +120,8 @@ kmenuedit
 kscreen
 ksshaskpass
 ksysguard
+kwallet-pam
+kwayland-integration
 kwin
 kwrited
 milou
@@ -127,10 +129,12 @@ oxygen
 oxygen-cursors
 plasma-desktop
 plasma-nm
+plasma-pa
 plasma-workspace
 plasma-workspace-wallpapers
 powerdevil
 systemsettings
+user-manager
 
 ## Themes
 plasma5-themes-maia
@@ -153,12 +157,15 @@ libappindicator-gtk3
 libappindicator-sharp
 
 ## KDE Applications
+ark
 digikam
+dolphin
+dolphin-plugins
+ffmpegthumbs
 filelight
 k3b
 kate
 kcalc
-kdebase-dolphin
 kdebase-kdepasswd
 kdebase-keditbookmarks
 kdebase-kfind
@@ -167,27 +174,27 @@ kdegraphics-ksnapshot
 kdegraphics-okular
 kdenetwork-kget
 kdenlive
-kdepim-kalarm
-kdepim-kleopatra
-kdeutils-ark
-kdeutils-kwalletmanager
 kde-servicemenus-rootactions
 konsole
 konversation
-kmix
+kwalletmanager
 kwrite
 gwenview
 print-manager
 skanlite
-
-## Thumbnailers and terminal for dolphin
-icoutils                     # thumbnailers for MS files
-kdegraphics-svgpart          # thumbailers for SVG files
-kdegraphics-thumbnailers     # thumbnailers for various graphics files
-kdemultimedia-ffmpegthumbs   # thumbnailers for video files
-kdemultimedia-mplayerthumbs  # thumbnailers for video files
-kdesdk-thumbnailers          # thumbnailers for development files
-konsolepart4                 # open terminal in context menu
+# KDE PIM
+akonadiconsole
+akregator
+blogilo
+kaddressbook
+kalarm
+kleopatra
+kmail
+knotes
+konsolekalendar
+kontact
+korganizer
+ktnef
 
 ## Optional dependencies for k3b
 cdparanoia    # for cd ripping support
@@ -202,7 +209,7 @@ cdrkit           # for creation of DVD ISO images
 dvdauthor        # for creation of DVD
 dvgrab           # for firewire capture
 recordmydesktop  # for screen capture
-xine-lib         # for DVD preview
+xine-ui          # for DVD preview
 
 ## Optional dependencies for gwenview
 kimageformats     # support for dds, xcf, exr, psd, and more image formats
@@ -217,13 +224,13 @@ cantata
 imagewriter
 firefox-kde
 flashplugin
-manjaro-settings-manager
+#manjaro-settings-manager
+kcm-msm
 manjaro-welcome
 p7zip
 qbittorrent
 screenfetch
 >systemd systemd-kcm
-thunderbird-kde
 vlc
 yakuake
 
@@ -252,5 +259,4 @@ kmediaplayer
 kactivities-frameworks
 
 # Partition
-partitionmanager
 gparted

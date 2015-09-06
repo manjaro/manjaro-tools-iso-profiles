@@ -35,7 +35,7 @@ Plugin {
 Plugin {
     type = menu
     Config {
-        image=/usr/share/icons/manjaro-lxde-logo.png
+        image=/usr/share/backgrounds/manjaro-logo.png
         system {
         }
         separator {
@@ -82,7 +82,7 @@ Plugin {
             id=/usr/share/applications/hexchat.desktop
         }
         Button {
-            id=/usr/share/applications/midori.desktop
+            id=/usr/share/applications/palemoon.desktop
         }
     }
 }

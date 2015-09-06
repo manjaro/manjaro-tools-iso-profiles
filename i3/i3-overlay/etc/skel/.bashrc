@@ -63,5 +63,3 @@ ex ()
 
 # prompt
 PS1='[\u@\h \W]\$ '
-
-# export PATH=$PATH:/home/bernhard/scripts

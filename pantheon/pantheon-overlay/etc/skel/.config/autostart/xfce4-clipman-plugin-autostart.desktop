@@ -2,3 +2,4 @@
 Hidden=false
 TryExec=xfce4-clipman
 Exec=xfce4-clipman
+X-GNOME-Autostart-enabled=false

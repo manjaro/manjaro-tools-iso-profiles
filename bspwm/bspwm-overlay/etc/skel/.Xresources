@@ -1,0 +1,120 @@
+! Custom part
+! -----------
+
+! Perl extensions loaded
+URxvt.perl-ext-common: clipboard
+
+! Colors
+URxvt.foreground: #99CC99
+URxvt.background: #000000
+URxvt.color10:    #8cbc65
+URxvt.color12:    #0071ff
+
+! Scrollbar
+URxvt.saveLines: 10000
+URxvt.scrollBar: false
+URxvt.scrollBar_right: true
+URxvt.scrollColor: #59595B
+URxvt.scrollBar_floating: false
+URxvt.scrollstyle: plain
+URxvt.scrollTtyOutput: False
+URxvt.scrollWithBuffer: False
+URxvt.thickness: 14
+
+! Fonts
+! URxvt.font: xft:Monospace:size=12
+urxvt*font:        -xos4-terminus-medium-*-*-*-18-*-*-*-*-*-*-*
+urxvt*boldFont:    -xos4-terminus-bold-*-*-*-18-*-*-*-*-*-*-*
+
+! Classic copy/paste by Shift-Ctrl-c|v
+URxvt.iso14755: False
+URxvt.keysym.Control-Shift-C: perl:clipboard:copy
+URxvt.keysym.Control-Shift-V: perl:clipboard:paste
+
+! Fade when inactive
+URxvt*fading: 20
+
+! Xterm settings
+XTerm*termName: xterm-256color
+XTerm*selectToClipboard: true
+XTerm*locale: true
+XTerm*metaSendsEscape: true
+XTerm*saveLines: 4096
+XTerm*VT100.geometry: 80x22
+XTerm*foreground: #F2F2F2
+XTerm*background: #2B2B2C
+XTerm*color10:    #8cbc65
+XTerm*color12:    #0071ff
+XTerm*faceName: Monospace
+XTerm*faceSize: 11
+XTerm*scrollBar: true
+XTerm*rightScrollBar: true
+
+! UXTerm settings
+UXTerm*termName: xterm-256color
+UXTerm*locale: true
+UXTerm*metaSendsEscape: true
+UXTerm*saveLines: 4096
+UXTerm*VT100.geometry: 80x22
+UXTerm*foreground: #F2F2F2
+UXTerm*background: #2B2B2C
+UXTerm*color10:    #8cbc65
+UXTerm*color12:    #0071ff
+UXTerm*faceName: Monospace
+UXTerm*faceSize: 11
+UXTerm*scrollBar: true
+UXTerm*rightScrollBar: true
+! Colors -----------------------------------------------------------
+
+! black
+*color0:  #2E3436
+*color8:  #555753
+! red
+*color1:  #a40000
+*color9:  #EF2929
+! green
+*color2:  #4E9A06
+*color10: #8AE234
+! yellow
+*color3:  #C4A000
+*color11: #FCE94F
+! blue
+*color4:  #3465A4
+*color12: #729FCF
+! purple
+*color5:  #75507B
+*color13: #AD7FA8
+! orange (replaces cyan)
+*color6:  #ce5c00
+*color14: #fcaf3e
+! white
+*color7:  #babdb9
+*color15: #EEEEEC
+
+rofi.opacity: 85
+rofi.width: 500
+rofi.lines: 15
+rofi.columns: 1
+rofi.font: Terminus bold 10
+rofi.bw: 2
+rofi.padding: 2
+rofi.yoffset: 0
+rofi.xoffset: -2
+rofi.fixed-num-lines: true 
+rofi.hmode: false
+rofi.terminal: terminal
+rofi.ssh-set-title: true
+rofi.key: F12
+rofi.rkey: mod1+F2
+rofi.skey: mod1+F3
+rofi.location: 0
+
+rofi.fg:   #99CC99
+rofi.bg:   #000000
+rofi.hlfg: #000000
+rofi.hlbg: #99CC99
+rofi.bc:   #99CC99
+rofi.disable-history: false 
+rofi.levenshtein-sort: true 
+rofi.switchers: window,run
+Xcursor.theme: breeze
