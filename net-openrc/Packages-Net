@@ -19,6 +19,7 @@ vi
 ## Services
 openssh-openrc
 syslog-ng-openrc
+json-c			# for syslog-ng
 
 ## Network
 networkmanager-consolekit

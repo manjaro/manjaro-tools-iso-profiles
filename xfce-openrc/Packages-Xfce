@@ -109,6 +109,7 @@ gvfs-mtp		# for mounting smartphones
 cups-openrc
 openssh-openrc
 syslog-ng-openrc
+json-c			# for syslog-ng
 
 ## Artwork, icons
 manjaro-artwork
