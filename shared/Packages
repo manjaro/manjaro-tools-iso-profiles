@@ -94,7 +94,6 @@ xz
 zip
 
 ## Efi support (only x86_64)
->x86_64 gummiboot
 >x86_64 prebootloader
 >x86_64 refind-efi
 

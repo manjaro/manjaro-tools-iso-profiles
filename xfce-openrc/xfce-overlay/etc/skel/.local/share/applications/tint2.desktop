@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Tint2 panel
+Comment=Lightweight panel
+Exec=tint2
+Icon=taskbar
+Terminal=false
+Categories=System;
+Path=
+StartupNotify=false
+NoDisplay=true

@@ -19,6 +19,7 @@ vi
 ## Services
 openssh-openrc
 syslog-ng-openrc
+json-c			# for syslog-ng
 
 ## Network
 networkmanager-consolekit
@@ -30,6 +31,7 @@ openresolv-openrc
 ## Base Packages
 gtk2
 pm-utils
+cgmanager-openrc	# For ConsoleKit2
 
 ## Packages for Sound and Audio
 alsa-plugins

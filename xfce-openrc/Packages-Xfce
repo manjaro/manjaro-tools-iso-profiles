@@ -42,7 +42,7 @@ compton
 nitrogen
 conky
 lxappearance
-volumeicon-gtk2
+volumeicon
 orage			# for calender
 
 ## Xfce
@@ -65,6 +65,7 @@ xfce4-mixer
 ## Base packages
 tlp-pmu			# TLP
 pm-utils
+cgmanager-openrc	# For ConsoleKit2
 
 ## Basic Apps
 lightdm
@@ -96,16 +97,19 @@ hexchat
 timeset-gui		# MSM time module does not work with OpenRC
 parole
 mpg123			# for parole
-gst-libav		# for parole
+gst-libav		# for parole, h.264 video in firefox
 gcolor2
 gst-plugins-base	# useful with firefox, parole
+gst-plugins-good	# for parole, h.264 video in firefox
 xfburn
 thunar-volman		# for usb auto-mounting
+gvfs-mtp		# for mounting smartphones
 
 ## Services
 cups-openrc
 openssh-openrc
 syslog-ng-openrc
+json-c			# for syslog-ng
 
 ## Artwork, icons
 manjaro-artwork
