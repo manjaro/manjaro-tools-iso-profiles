@@ -246,10 +246,10 @@ mod1 + @button1
 
 # These two are needed if you want to use xfdesktops menus while 
 # focus_follows_pointer is on
-#@button3
-#	clickpasser 3
-#@button2
-#	clickpasser 2
+@button3
+	clickpasser 3
+@button2
+	clickpasser 2
 
 #
 # Touchpad "gestures" (depend on your touchpad driver, very likely to be unavailable)

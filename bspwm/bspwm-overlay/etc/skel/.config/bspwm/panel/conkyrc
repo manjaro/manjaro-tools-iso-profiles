@@ -7,7 +7,6 @@ short_units         yes
 pad_percents         2
 times_in_seconds true
 if_up_strictness address
-#use_spacer left
 
 TEXT
 
@@ -40,5 +39,4 @@ $endif\
 # $alignr${hwmon temp 1}°C  \
 ##Clock
  ${time %H:%M} \
-#   
 

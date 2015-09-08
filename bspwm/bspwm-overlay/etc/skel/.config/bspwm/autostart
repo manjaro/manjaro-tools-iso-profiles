@@ -24,10 +24,8 @@ xset +fp /usr/share/fonts/misc &
 xset +fp ~/.fonts &
 xset fp rehash &
 fc-cache -fv &
-##Daemon mode for filemanager makes mounting volumes easier. Udevil makes it unnecessary for spacefm.
-#run_once thunar --daemon &
-#run_once spacefm -d &
-#run_once pcmanfm -d &
+##Automount removable media
+run_once devmon &
 ##powersaving options
 xset s off &
 xset s noblank &

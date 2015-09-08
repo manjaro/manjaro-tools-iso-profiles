@@ -38,7 +38,7 @@ pulseaudio-ctl
 ## Base Packages
 # gtk2
 xcursor-breeze
-breeze-icon-theme
+menda-circle-icon-theme
 
 ## Network
 #netctl
@@ -65,7 +65,7 @@ wmutils
 xwinfo
 conky-cli
 lemonbar-xft-clicky
-ttf-dejavusansmono-powerline
+ttf-dejavu-sans-mono-powerline
 ttf-ionicons
 lxappearance-gtk3
 lemonpanel
@@ -82,7 +82,7 @@ urxvt-perls
 thermald
 spacefm
 udevil
-midori-gtk3
+midori
 dunst
 command-not-found
 ranger
@@ -101,6 +101,8 @@ compton
 mhwd-chroot
 gnome-disk-utility
 xdg-utils
+perl-file-mimeinfo
+
 
 ## AUR Access
 # base-devel
