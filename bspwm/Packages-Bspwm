@@ -38,8 +38,7 @@ pulseaudio-ctl
 ## Base Packages
 # gtk2
 xcursor-breeze
-maia-icon-theme
-numix-manjaro-themes
+menda-circle-icon-theme
 
 ## Network
 #netctl
@@ -52,7 +51,7 @@ networkmanager-dmenu
 ##Bspwm packages
 bspwm ##Git version from AUR adds leaf_monocle functionality
 sxhkd ##Git version from AUR is needed for clickpasser scripts to work
-nitrogen
+feh
 numlockx
 unclutter
 xdo
@@ -66,26 +65,24 @@ wmutils
 xwinfo
 conky-cli
 lemonbar-xft-clicky
-ttf-dejavusansmono-powerline
+ttf-dejavu-sans-mono-powerline
 ttf-ionicons
-nitrogen
-lxappearance
+lxappearance-gtk3
 lemonpanel
 bspwm-scripts
 libnotify
 
 ##Applications
-geany
+gedit
 zsh
 zsh-completions
+#zsh-history-substring-search
 rxvt-unicode
 urxvt-perls
 thermald
-spacefm-gtk2
+spacefm
 udevil
-chromium
-#chromium-pepper-flash-standalone ##AUR
-#chromium-widevine ##AUR
+midori
 dunst
 command-not-found
 ranger
@@ -95,16 +92,17 @@ sxiv-rifle
 atool
 poppler
 yaourt-gui
-gksu
-xarchiver-gtk2
+file-roller
 xlogin
 bdf-zevv-peep
 ps_mem
 htop
 compton
 mhwd-chroot
-gparted
-arandr
+gnome-disk-utility
+xdg-utils
+perl-file-mimeinfo
+
 
 ## AUR Access
 # base-devel

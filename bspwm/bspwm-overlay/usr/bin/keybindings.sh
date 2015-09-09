@@ -28,8 +28,6 @@
                               |  or preselection if there is one
 		Super + ctrl + Enter          |- Preselect where the next window will be opened
 		Ctrl + space                  |- Preselect where the next window will be opened
-		Super + v                     |- Split/preselect window vertically
-		Super + h                     |- Split/preselect window horizontally
 		Super + b                     |- Balance windows
 		Super + i                     |- Make window sticky
 		Super + t                     |- Toggle tiling/floating

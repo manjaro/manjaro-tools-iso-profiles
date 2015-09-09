@@ -7,14 +7,13 @@ short_units         yes
 pad_percents         2
 times_in_seconds true
 if_up_strictness address
-#use_spacer left
 
 TEXT
 
 ${exec sleep 3}
 C\
 #Battery stuff for possible BAT1
-%{A:nmcli_dmenu:}${if_up wlp1s0} $else  $endif %{A} \
+%{A:nmcli_dmenu:}${execi 4800 update-notifier}${if_up wlp1s0} $else  $endif %{A} \
 %{A:dbright:}\
 ${if_existing /sys/class/power_supply/BAT1/present 1}\
 	${if_match "${acpiacadapter}" == "off-line"}\
@@ -33,12 +32,11 @@ ${if_existing /sys/class/power_supply/BAT1/present 1}\
 	$endif\
 $endif\
 %{A} \
-%{A2:xfce4-terminal --hide-menubar -e ranger:}%{A:xfce4-terminal -e htop:} ${memperc}% %{A}%{A}\
+%{A2:terminal -e ranger:}%{A:terminal -e htop:} ${memperc}% %{A}%{A}\
 ##Cpu usage
  $cpu% \
 ##Temperature
 # $alignr${hwmon temp 1}°C  \
 ##Clock
  ${time %H:%M} \
-#   
 
