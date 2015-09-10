@@ -30,11 +30,10 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
-alias upgrade='yaourt -Syua'
+alias update='yaourt -Syua'
 alias con='nano ~/.i3/config'
 alias comp='nano .config/compton.conf'
-alias men='mousepad ~/.i3/mygtkmenu.conf'
-alias xflock='light-locker-command -l'
+alias xflock='blurlock'
 alias printer='system-config-printer'
 
 # ex - archive extractor

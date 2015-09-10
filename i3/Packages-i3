@@ -4,6 +4,7 @@
 
 ## i3 Packages
 accountsservice
+>openrc cgmanager-openrc
 compton
 conky-i3
 dmenu-manjaro
@@ -52,6 +53,8 @@ gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 libimobiledevice
+manjaro-welcome
+mhwd-chroot
 mousepad
 nitrogen
 palemoon-bin
@@ -105,9 +108,10 @@ manjaro-alsa
 volumeicon
 
 ## Package management
-octopi
-octopi-notifier-qt4
-octopi-pacmanhelper
+# octopi
+# octopi-notifier-qt4
+# octopi-pacmanhelper
+pamac
 
 ## Printing
 manjaro-printer
