@@ -76,7 +76,7 @@ libnotify
 gedit
 zsh
 zsh-completions
-#zsh-history-substring-search
+zsh-history-substring-search
 rxvt-unicode
 urxvt-perls
 thermald
@@ -101,7 +101,7 @@ compton
 mhwd-chroot
 gnome-disk-utility
 xdg-utils
-perl-file-mimeinfo
+#perl-file-mimeinfo
 
 
 ## AUR Access
