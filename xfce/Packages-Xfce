@@ -30,6 +30,8 @@ xfce4
 libgsf       # support ODF and
 libopenraw   # RAW thumbnailing
 #xscreensaver
+git
+openssh
 
 ## XFCE Extra Packages
 xfce4-artwork
