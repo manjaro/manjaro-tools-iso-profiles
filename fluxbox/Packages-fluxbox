@@ -6,7 +6,6 @@
 accountsservice
 cbatticon
 compton
->openrc cgmanager-openrc
 fluxbox
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault

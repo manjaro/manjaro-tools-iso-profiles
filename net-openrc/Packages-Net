@@ -31,7 +31,6 @@ openresolv-openrc
 ## Base Packages
 gtk2
 pm-utils
-cgmanager-openrc	# For ConsoleKit2
 
 ## Packages for Sound and Audio
 alsa-plugins

@@ -4,7 +4,6 @@
 
 ## i3 Packages
 accountsservice
->openrc cgmanager-openrc
 compton
 conky-i3
 dmenu-manjaro
