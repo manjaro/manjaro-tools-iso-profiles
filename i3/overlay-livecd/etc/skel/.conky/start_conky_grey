@@ -1,7 +1,7 @@
 ## start the grey conkies ##
 #!/bin/bash
 
-conky -c ~/.conky/conky_shortcuts_grey
-conky -c ~/.conky/conky_grey
+conky -c ~/.conky/conky_shortcuts_grey &&
+conky -c /usr/share/conky/conky_grey &&
 
-exit
+exit 0

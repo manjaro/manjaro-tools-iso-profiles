@@ -1,3 +1,4 @@
+smbclient-stub
 ######################################################
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
@@ -17,7 +18,7 @@ gtk2
 
 ## Network
 networkmanager
-network-manager-applet-lite
+network-manager-applet
 openresolv
 # =============================================================================
 
@@ -26,7 +27,7 @@ openresolv
 # =====================
 sddm				# default login manager (Qt5) of lxqt
 
-openbox				# default window manager (GTK2) of lxqt
+#openbox				# default window manager (GTK2) of lxqt
 
 compton                         # X compositor
 compton-conf-git                # compton configuration tool
@@ -38,14 +39,15 @@ libqtxdg			#
 libsysstat			#
 
 lxqt
+lxterminal
+screengrab-git                  # replace screenshot tool of lxqt
 system-tools-backends
 liboobs
-#repoarch/lxqt-common            # !!!!!!!!!!!!!!!!!!!!!!!!!!!
 lxqt-globalkeys
 
 pcmanfm-qt			# default lxqt file manager
 
-qterminal			# recommended terminal for lxqt
+#qterminal			# recommended terminal for lxqt
 qtermwidget
 
 
@@ -55,16 +57,17 @@ qtermwidget
 >x86_64 manjaro-pulse
 #>x86_64 manjaro-printer        # removed, qt4 !
 manjaro-settings-manager
+#manjaro-settings-manager
 
 gvfs				# for mounting file other systems
 gvfs-afc			# enables support for external media (e.g. USB sticks)
-gvfs-smb                        # SMB/CIFS (Windows client) backend for gvfs
+#gvfs-smb                        # SMB/CIFS (Windows client) backend for gvfs
 
 
 # 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
 # ===========================================================================
 gksu				# (GTK2) GUI for su and sudo - no alternative for it in lxqt
-#gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
+gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
 
 hexchat                         # (GTK2) graphical IRC (chat) client
 leafpad				# default lxde text editor
@@ -77,13 +80,14 @@ obconf				# openbox appearance settings
 
 # 5) Icons, theming, etc...
 # =========================
-lateafternoon-icons
+#lateafternoon-icons
+breeze-lxqt
 #>x86_64 db-silver-icons
 mediterraneanlxqt
 gtk-engine-murrine              # for mediterraneanlxqt
 speedcrunch-git                 # calculator qt5
 ttf-droid-ib                    # care !!! infinality version
-xcursor-menda			# menda mouse cursor theme - this needs to be activated
+#xcursor-menda			# menda mouse cursor theme - this needs to be activated
 
 #infinality-bundle		# to improve text rendering
 freetype2-infinality-ultimate
@@ -93,26 +97,23 @@ fontconfig-infinality-ultimate
 
 # 6) Minimal set of tools
 # =======================
+abiword-3.x-gtk2
 #baka-mplayer
-#>x86_64 libchardet              # for bomi...
-#>x86_64 bomi                    # multimedia player cmplayer-like
-#>x86_64 claws-mail              # E-mail client
 lxtask                           # task manager
 mhwd-chroot
-mpd                             # server-side application for playing music
-cantata                         # Qt5 client for the music player daemon (MPD)
-mpv				# replace mplayer/mplayer2
+#mpd                             # server-side application for playing music
+#cantata                         # Qt5 client for the music player daemon (MPD)
+mpv-light			# replace mplayer/mplayer2
 qpdfview			# pdf reader
 vi				# CLI text editor
 
-xarchiver			# GUI frontend for many archive file formats
+xarchiver-gtk2			# GUI frontend for many archive file formats
 
 octopi				# Qt5 package manager
 octopi-notifier-qt5
-octopi-cachecleaner
-octopi-repoeditor
+#octopi-cachecleaner
+#octopi-repoeditor
 
-#baka-mplayer                   # multimedia player
 firefox
 #>i686 qupzilla			# internet browser (Qt5)
 flashplugin			# flash support for internet browser
@@ -120,6 +121,7 @@ gparted				# partitioning program (GTK2)
 #>x86_64 libreoffice-installer	# GUI installer for LibreOffice --> this is outdated and causes problems
 #>x86_64 pinta                   # drawing/editing program
 #>x86_64 meteo-qt                # weather application
+packsize
 qarma-git			# zenity Qt5
 qastools-qt5                    # alsa mixer
 transmission-qt                 # bittorrent client Qt5
@@ -128,7 +130,6 @@ qlipper-qt5-git                 # clipoard applet
 qtfind				# add a file search to pcmanfm-qt (qt5)
 redshift                        # adjusts the color temperature
 redshiftconf                    # redshift configuration tool
-#rfkill
 #xscreensaver			# screensaver and power managment
 xsensors                        # gui for lm_sensors
 

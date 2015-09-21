@@ -25,21 +25,22 @@ kwrited
 milou
 plasma-desktop
 plasma-nm
+plasma-pa
 plasma-workspace
 powerdevil
 systemsettings
 
-## Aplications
+## Applications
 dolphin
 konsole
 kate
 qpdfview
 qupzilla
-kmix
 kwrite
 octopi
 partitionmanager
-manjaro-settings-manager
+#manjaro-settings-manager
+kcm-msm
 manjaro-welcome
 >multilib manjaro-alsa
 

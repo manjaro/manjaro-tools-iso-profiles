@@ -7,7 +7,7 @@ notification_type=1
 
 [StatusIcon]
 stepsize=5
-onclick=xterm -e 'alsamixer'
+onclick=urxvt -e 'alsamixer'
 theme=White Gnome
 use_panel_specific_icons=true
 lmb_slider=true

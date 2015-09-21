@@ -4,6 +4,7 @@
 
 ## i3 Packages
 accountsservice
+>openrc cgmanager-openrc
 compton
 conky-i3
 dmenu-manjaro
@@ -26,7 +27,6 @@ lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
 pkgcacheclean
-pnmixer
 polkit-gnome
 screenfetch
 scrot
@@ -52,7 +52,9 @@ gvfs-afp
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
-libimobiledevice
+libgpod # iPhone/Pod connectivity
+manjaro-welcome
+mhwd-chroot
 mousepad
 nitrogen
 palemoon-bin
@@ -60,6 +62,7 @@ pcmanfm
 pinta
 qpdfview
 open-fuse-iso
+sbxkb
 vlc
 
 ## Network
@@ -71,10 +74,10 @@ blueman
 network-manager-applet
 >openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
-networkmanager-openconnect
+>systemd networkmanager-openconnect
 networkmanager-openvpn
 >openrc openvpn-openrc
-networkmanager-pptp
+>systemd networkmanager-pptp
 networkmanager-vpnc
 >systemd openresolv
 # >openrc openresolv-openrc
@@ -106,12 +109,14 @@ manjaro-alsa
 volumeicon
 
 ## Package management
-octopi
-octopi-notifier-qt4
-octopi-pacmanhelper
+# octopi
+# octopi-notifier-qt4
+# octopi-pacmanhelper
+pamac
 
 ## Printing
 manjaro-printer
+>openrc cups-openrc
 
 ## AUR Access
 autoconf

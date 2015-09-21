@@ -1,0 +1,7 @@
+#!/bin/sh
+eval checkupdates > /tmp/pacmanupdates
+eval yaourt -Qua | grep "aur" > /tmp/aurupdates
+if [[ "$(wc -l /tmp/pacmanupdates | awk '{print $1}')" -gt "0" ]];
+then
+notify-send "you have $(wc -l /tmp/pacmanupdates | awk '{print $1}') + $(wc -l /tmp/aurupdates | awk '{print $1}') updates" "$(cat /tmp/pacmanupdates) \n $(cat /tmp/aurupdates | awk '{print $1}')"
+fi

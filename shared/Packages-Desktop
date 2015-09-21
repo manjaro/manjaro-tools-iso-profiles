@@ -47,10 +47,10 @@ mobile-broadband-provider-info
 modemmanager
 >openrc avahi-openrc
 >systemd avahi
+nss-mdns # NSS support for mDNS (optdepend for avahi)
 >systemd ntp
 >openrc ntp-openrc
 
 ## Misc
 >openrc consolekit-openrc
 >openrc displaymanager-openrc
->openrc upower-pm-utils

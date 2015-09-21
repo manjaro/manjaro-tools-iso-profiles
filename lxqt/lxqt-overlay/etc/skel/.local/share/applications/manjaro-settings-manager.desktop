@@ -14,4 +14,5 @@ Icon=preferences-desktop
 Terminal=false
 Type=Application
 Categories=Settings;DesktopSettings;X-LXDE-Settings;X-KDE-Settings;
-#NotShowIn=XFCE;GNOME;Unity;
+NotShowIn=XFCE;GNOME;Unity;LXQt
+NoDisplay=true
