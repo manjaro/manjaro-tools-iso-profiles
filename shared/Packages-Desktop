@@ -54,3 +54,4 @@ nss-mdns # NSS support for mDNS (optdepend for avahi)
 ## Misc
 >openrc consolekit-openrc
 >openrc displaymanager-openrc
+>openrc upower-pm-utils
