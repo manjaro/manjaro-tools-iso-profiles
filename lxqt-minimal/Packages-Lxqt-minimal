@@ -9,6 +9,7 @@ lxqt
 >systemd networkmanager
 >openrc syslog-ng-openrc
 >systemd syslog-ng
+>openrc cgmanager-openrc
 
 ###apps###
 qterminal
