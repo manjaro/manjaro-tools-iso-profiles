@@ -52,7 +52,7 @@ gvfs-afp
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
-libimobiledevice
+libgpod # iPhone/Pod connectivity
 manjaro-welcome
 mhwd-chroot
 mousepad
@@ -62,6 +62,7 @@ pcmanfm
 pinta
 qpdfview
 open-fuse-iso
+sbxkb
 vlc
 
 ## Network

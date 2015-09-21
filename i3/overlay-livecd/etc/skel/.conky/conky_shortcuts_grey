@@ -17,8 +17,8 @@ conky.config = {
 	use_xft = true,
 }
 conky.text = [[
-${color2}install manjaro-i3 - ${color}mod+i
-${color2}or type ${color}sudo setup ${color2}in a terminal
+${color2}install manjaro-i3 - ${color}mod+i ${color2}(GUI)
+or type ${color}sudo setup ${color2}in a terminal (CLI)
 
 open new terminal - ${color}mod+Enter
 ${color2}kill focused - ${color}mod+Shift+q

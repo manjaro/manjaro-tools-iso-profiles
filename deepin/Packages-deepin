@@ -44,15 +44,15 @@ manjaro-settings-manager
 ## Applications
 
 ## deepin-extra
-deepin-extra
+#deepin-extra
 ## deepin-game-center
 #deepin-movie
-#deepin-music
-#deepin-pygtk
-#deepin-screenshot
+deepin-music
+deepin-pygtk
+deepin-screenshot
 ## deepin-social-sharing
-#deepin-terminal
-#deepin-vte
+deepin-terminal
+deepin-vte
 
 firefox
 gnome-vfs
