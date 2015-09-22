@@ -27,6 +27,7 @@ lxappearance
 manjaro-settings-manager
 pkgcacheclean
 polkit-gnome
+>openrc pm-utils
 screenfetch
 scrot
 >openrc timeset-gui

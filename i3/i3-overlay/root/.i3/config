@@ -38,6 +38,10 @@ bindsym $mod+d exec --no-startup-id dmenu_recency
 # bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
 # bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
+# Screen brightness controls
+# bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && exec notify-send 'brightness up'
+# bindsym XF86MonBrightnessDown exec xbacklight -dec 10 && exec notify-send 'brightness down'
+
 # Start Applications
 bindsym $mod+F1 exec thunderbird
 bindsym $mod+F2 exec palemoon
