@@ -32,7 +32,7 @@ ${if_existing /sys/class/power_supply/BAT1/present 1}\
 	$endif\
 $endif\
 %{A} \
-%{A2:terminal -e ranger:}%{A:terminal -e htop:} ${memperc}% %{A}%{A}\
+%{A2:smartsplit && terminal -e ranger:}%{A:smartsplit && terminal -e htop:} ${memperc}% %{A}%{A}\
 ##Cpu usage
  $cpu% \
 ##Temperature
