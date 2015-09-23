@@ -24,7 +24,6 @@ nemo-preview
 nemo-python
 nemo-share
 
-jre7-openjdk
 ## GNOME related stuf
 #ffmpegthumbnailer
 file-roller
@@ -45,13 +44,10 @@ python2-gnomevfs
 python2-libgnome
 xdg-user-dirs-gtk
 
-
 ## polkit
-
 polkit-gnome
 polkit
 gksu
-
 
 ## Network
 netctl
@@ -59,7 +55,9 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 net-tools
+
 ## Extra
+jre8-openjdk
 icedtea-web
 vlc
 guayadeque
@@ -107,7 +105,6 @@ hexchat
 exfat-utils
 fuse-exfat
 nss
-nss-mdns
 
 ## Package management
 pamac
@@ -136,7 +133,6 @@ pulseaudio-ctl
 manjaro-printer
 
 ## Office
-#libreoffice-installer
 libreoffice-still
 zim
 

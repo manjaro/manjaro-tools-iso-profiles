@@ -6,7 +6,6 @@
 accountsservice
 cbatticon
 compton
->openrc cgmanager-openrc
 fluxbox
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
@@ -46,7 +45,7 @@ gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 hexchat
 htop
-libimobiledevice
+libgpod # iPhone/Pod connectivity
 lxmusic
 lxterminal
 manjaro-welcome
@@ -56,10 +55,12 @@ palemoon-bin
 pcmanfm
 pinta
 qpdfview
+sbxkb
 scrot
 tree
 vi
 vlc
+xarchiver
 
 ## Network
 >openrc bluez-openrc

@@ -30,9 +30,9 @@
 	[exec] (Texteditor) {mousepad}
 	[exec] (Package Management) {pamac-manager}
 	[exec] (GParted) {gksu gparted}
-	[exec] (Screenshot - full screen) {scrot -e 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved in ~/Screenshots'}
-	[exec] (Screenshot - active window) {scrot -ue 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved in ~/Screenshots'}
-	[exec] (Screenshot - select area) {notify-send 'selection will be saved in ~/Screenshots' & scrot -se 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved in ~/Screenshots'}
+	[exec] (Screenshot - full screen) {scrot -e 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved to ~/Screenshots'}
+	[exec] (Screenshot - active window) {scrot -ue 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved to ~/Screenshots'}
+	[exec] (Screenshot - select area) {notify-send 'selection will be saved to ~/Screenshots' & scrot -se 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved in ~/Screenshots'}
 	[end]
 
 [separator]
