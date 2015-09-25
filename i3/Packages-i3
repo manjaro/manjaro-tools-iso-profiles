@@ -30,7 +30,9 @@ polkit-gnome
 >openrc pm-utils
 screenfetch
 scrot
+>openrc timeset
 >openrc timeset-gui
+>openrc ntp-openrc
 tree
 rxvt-unicode
 rxvt-unicode-terminfo
