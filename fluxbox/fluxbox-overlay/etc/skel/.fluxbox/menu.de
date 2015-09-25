@@ -36,6 +36,7 @@
 	[exec] (Erscheinungsbild) {lxappearance} 
 	[exec] (Hintergrund) {nitrogen} 
 	[exec] (wbar) {wbar-config}
+	[exec] (Benachrichtigungen) {xfce4-notifyd-config}
 	[exec] (Mixer) {pavucontrol}
 	[exec] (Drucker) {system-config-printer}
 	[exec] (lightDM-gtk-greeter) {gksu lightdm-gtk-greeter-settings}

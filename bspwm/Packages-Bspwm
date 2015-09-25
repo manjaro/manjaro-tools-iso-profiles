@@ -49,8 +49,8 @@ networkmanager-dmenu
 
 
 ##Bspwm packages
-bspwm ##Git version from AUR adds leaf_monocle functionality
-sxhkd ##Git version from AUR is needed for clickpasser scripts to work
+bspwm-git ##Git version from AUR adds leaf_monocle functionality
+sxhkd-git ##Git version from AUR is needed for clickpasser scripts to work
 feh
 numlockx
 unclutter
@@ -76,7 +76,7 @@ libnotify
 gedit
 zsh
 zsh-completions
-#zsh-history-substring-search
+zsh-history-substring-search
 rxvt-unicode
 urxvt-perls
 thermald
@@ -101,7 +101,7 @@ compton
 mhwd-chroot
 gnome-disk-utility
 xdg-utils
-perl-file-mimeinfo
+#perl-file-mimeinfo
 
 
 ## AUR Access

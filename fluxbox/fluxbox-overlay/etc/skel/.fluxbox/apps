@@ -76,3 +76,7 @@
   [Position]	(UPPERLEFT)	{27% 30%}
   [Close]	{yes}
 [end]
+[app] (name=xfce4-notifyd-config) (class=Xfce4-notifyd-config)
+  [Position]	(UPPERLEFT)	{49% 18%}
+  [Close]	{yes}
+[end]

@@ -38,6 +38,10 @@ bindsym $mod+d exec --no-startup-id dmenu_recency
 # bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
 # bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
+# Screen brightness controls
+# bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && exec notify-send 'brightness up'
+# bindsym XF86MonBrightnessDown exec xbacklight -dec 10 && exec notify-send 'brightness down'
+
 # Start Applications
 bindsym $mod+i exec gksu calamares
 bindsym $mod+F1 exec thunderbird
@@ -52,7 +56,7 @@ bindsym $mod+Shift+d exec killall dunst && exec notify-send 'restart dunst'
 bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to ~/Screenshots'
 bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved to ~/Screenshots'
 bindsym $mod+Shift+Print exec notify-send 'selection will be saved to ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
-bindsym $mod+Shift+h exec qpdfview i3_help.pdf
+bindsym $mod+Shift+h exec qpdfview i3_help_live.pdf
 bindsym $mod+Ctrl+x exec xkill
 
 # focus_follows_mouse no

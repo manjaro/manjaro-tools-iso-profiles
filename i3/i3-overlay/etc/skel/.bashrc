@@ -33,7 +33,9 @@ alias fixit='sudo rm -f /var/lib/pacman/db.lck'
 alias update='yaourt -Syua'
 alias con='nano ~/.i3/config'
 alias comp='nano .config/compton.conf'
-alias xflock='blurlock'
+alias inst='sudo pacman -S'
+alias mirrors='sudo pacman-mirrors -g'
+alias timeset='gksu timeset-gui'
 alias printer='system-config-printer'
 
 # ex - archive extractor

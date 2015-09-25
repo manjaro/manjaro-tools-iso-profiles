@@ -2,7 +2,7 @@
 
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #Uncomment for history-substring search
-#source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 TERM=xterm
 case $TERM in
   xterm*)
@@ -62,15 +62,15 @@ bindkey '^[[7~' beginning-of-line                   # Home key
 bindkey '^[[8~' end-of-line                         # End key
 bindkey '^[[2~' overwrite-mode                      # Insert key
 bindkey '^[[3~' delete-char                         # Delete key
-## Comment these two lines out if you want history-substring-search
-bindkey '^[[A'  up-line-or-history                  # Up key
-bindkey '^[[B'  down-line-or-history                # Down key
+## Comment out these two lines out if you want history-substring-search
+#bindkey '^[[A'  up-line-or-history                  # Up key
+#bindkey '^[[B'  down-line-or-history                # Down key
 # Histrory substring navigation 
-#zmodload zsh/terminfo
-#bindkey "$terminfo[kcuu1]" history-substring-search-up   # Up key
-#bindkey "$terminfo[kcud1]" history-substring-search-down # Down key
-#bindkey '^[[A' history-substring-search-up			# Up key
-#bindkey '^[[B' history-substring-search-down		# Down key
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up   # Up key
+bindkey "$terminfo[kcud1]" history-substring-search-down # Down key
+bindkey '^[[A' history-substring-search-up			# Up key
+bindkey '^[[B' history-substring-search-down		# Down key
 bindkey '^[[C'  forward-char                        # Right key
 bindkey '^[[D'  backward-char                       # Left key
 bindkey '^[[5~' history-beginning-search-backward   # Page up key
