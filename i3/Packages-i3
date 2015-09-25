@@ -25,7 +25,7 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
-pkgcacheclean
+# pkgcacheclean
 polkit-gnome
 >openrc pm-utils
 screenfetch

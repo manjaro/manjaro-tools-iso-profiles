@@ -1,4 +1,4 @@
 #!/bin/sh
-# enabling xfce4-power-manger to lock the screen in i3
+# enabling screenlock by xfce4-power-manger
 
 blurlock
