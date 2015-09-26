@@ -31,7 +31,6 @@ polkit-gnome
 screenfetch
 scrot
 >openrc timeset
->openrc timeset-gui
 >openrc ntp-openrc
 tree
 rxvt-unicode

@@ -35,7 +35,6 @@ alias con='nano ~/.i3/config'
 alias comp='nano .config/compton.conf'
 alias inst='sudo pacman -S'
 alias mirrors='sudo pacman-mirrors -g'
-alias timeset='gksu timeset-gui'
 alias printer='system-config-printer'
 
 # ex - archive extractor
