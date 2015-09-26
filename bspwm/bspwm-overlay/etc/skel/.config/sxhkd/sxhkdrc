@@ -272,7 +272,7 @@ super + space
 	dmouse
 
 super + p
-	dmouse
+	dmenu_recent -h PANEL_HEIGHT
 		
 ## 'terminal' is a wrapper script for urxvt	
 ctrl + alt + t
