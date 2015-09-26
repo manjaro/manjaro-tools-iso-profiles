@@ -55,9 +55,12 @@ KERNEL-broadcom-wl
 KERNEL-rt3562sta
 KERNEL-r8168
 
-# Proprietary Drivers (nvidia only)
+# Proprietary Drivers (catalyst and nvidia only)
+>nonfree_default catalyst-utils
+>nonfree_default KERNEL-catalyst
 >nonfree_default nvidia-utils
 >nonfree_default KERNEL-nvidia
+>nonfree_multilib lib32-catalyst-utils
 >nonfree_multilib lib32-nvidia-utils
 
 # Virtualbox Drivers

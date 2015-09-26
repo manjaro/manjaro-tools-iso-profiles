@@ -8,6 +8,7 @@ gnome-keyring # fix wlan segfault
 gnome-vfs
 gvfs # to fix trash in thunar
 menulibre
+mugshot
 network-manager-applet
 #numlockx
 xcursor-simpleandsoft
