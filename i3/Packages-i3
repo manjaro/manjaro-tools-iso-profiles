@@ -25,12 +25,14 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
-pkgcacheclean
+# pkgcacheclean
 polkit-gnome
 >openrc pm-utils
 screenfetch
 scrot
+>openrc timeset
 >openrc timeset-gui
+>openrc ntp-openrc
 tree
 rxvt-unicode
 rxvt-unicode-terminfo
@@ -126,7 +128,6 @@ bison
 fakeroot
 flex
 gcc
->multilib gcc-multilib
 git
 libconfig
 libtool

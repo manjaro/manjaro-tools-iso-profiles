@@ -1,5 +1,0 @@
-#!/bin/sh
-
-gksu timeset-gui
-
-exit

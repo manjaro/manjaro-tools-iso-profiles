@@ -1,4 +1,0 @@
-#!/bin/sh
-# /usr/local/bin/pcmanfm-root
-
-gksu pcmanfm

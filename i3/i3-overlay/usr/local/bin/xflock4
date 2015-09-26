@@ -1,0 +1,4 @@
+#!/bin/sh
+# enabling screenlock by xfce4-power-manger
+
+blurlock
