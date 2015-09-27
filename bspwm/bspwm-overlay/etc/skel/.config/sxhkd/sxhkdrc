@@ -93,6 +93,11 @@ super + Return
 # go (Shift=move) to desktop 
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,window -d} ^{1-9,10}
+## Alternative: bring desktop to current monitor and hten focus it
+#super + shift + {1-9,0}
+#     summondesktop.sh {1-9,10}
+#super + {1-9,0}
+#    bspc desktop -f ^{1-9,10} 
 
 # Select previous / next desktop
 super + {m,n}
@@ -331,7 +336,7 @@ super + shift + r
 #edit this file
 alt + ctrl + space
 	geany ~/.config/sxhkd/sxhkdrc
-# Toggle compoiting
+# Toggle compositing
 super + ctrl + space
 	{pkill compton ,\
 	compton -b }

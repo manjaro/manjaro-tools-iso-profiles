@@ -1,7 +1,7 @@
 #! /bin/sh
 export BSPWM_SCRIPTS_DIR="$HOME/scripts"
 gap=15
-PANEL_HEIGHT=30
+PANEL_HEIGHT=25
 export gap
 export PANEL_HEIGHT
 
