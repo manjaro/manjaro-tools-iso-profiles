@@ -12,7 +12,7 @@ thus
 
 ### Driver set for fast live-session bootup (optional)
 
-# Xorg Drivers
+## Xorg Drivers
 xf86-video-apm
 xf86-video-ark
 xf86-video-ati
@@ -43,37 +43,38 @@ xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
 
-# Bumblebee Support
+## Bumblebee Support
 >systemd bumblebee
 >openrc bumblebee-openrc
 primus
 >multilib lib32-primus
 KERNEL-bbswitch
 
-# Network Support
+## Network Support
 KERNEL-broadcom-wl
 KERNEL-rt3562sta
 KERNEL-r8168
 
-# Proprietary Drivers (catalyst and nvidia only)
->nonfree_default catalyst-utils
->nonfree_default KERNEL-catalyst
->nonfree_default nvidia-utils
->nonfree_default KERNEL-nvidia
->nonfree_multilib lib32-catalyst-utils
->nonfree_multilib lib32-nvidia-utils
+## Proprietary Drivers (catalyst and nvidia only)
+# by default disabled
+#>nonfree_default catalyst-utils
+#>nonfree_default KERNEL-catalyst
+#>nonfree_default nvidia-utils
+#>nonfree_default KERNEL-nvidia
+#>nonfree_multilib lib32-catalyst-utils
+#>nonfree_multilib lib32-nvidia-utils
 
-# Virtualbox Drivers
+## Virtualbox Drivers
 >openrc virtualbox-guest-utils-openrc
 >systemd virtualbox-guest-utils
 KERNEL-virtualbox-guest-modules
 
-# Xorg Packages
+## Xorg Packages
 libxvmc
 
-# Xorg x86_64 Packages
+## Xorg x86_64 Packages
 >multilib lib32-libxvmc
 
-# VMWare Support
+## VMWare Support
 open-vm-tools
 xf86-input-vmmouse
