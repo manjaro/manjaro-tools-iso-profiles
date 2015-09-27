@@ -206,7 +206,7 @@ super + shift + {comma,period}
 # Change window gap
 
 super + g
-    bspc config -d focused window_gap {15,30,65}
+    bspc config -d focused window_gap {$gap,$(($gap+$gap)),$(($gap+$gap+$gap))}
 
 #
 # mouse bindings
@@ -277,7 +277,7 @@ super + space
 	dmouse
 
 super + p
-	dmouse
+	dmenu_recent -h PANEL_HEIGHT
 		
 ## 'terminal' is a wrapper script for urxvt	
 ctrl + alt + t

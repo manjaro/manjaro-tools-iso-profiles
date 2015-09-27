@@ -6,6 +6,7 @@ coreutils
 >systemd cronie
 >openrc cryptsetup-openrc
 >systemd cryptsetup
+>openrc dbus-openrc
 >openrc device-mapper-openrc
 >systemd device-mapper
 >openrc dhcpcd-openrc
