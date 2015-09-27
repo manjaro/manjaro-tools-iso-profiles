@@ -27,11 +27,9 @@ lxappearance
 manjaro-settings-manager
 # pkgcacheclean
 polkit-gnome
->openrc pm-utils
 screenfetch
 scrot
 >openrc timeset
->openrc timeset-gui
 >openrc ntp-openrc
 tree
 rxvt-unicode

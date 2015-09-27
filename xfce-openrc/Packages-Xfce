@@ -92,6 +92,7 @@ tumbler			# for thumbnails
 catfish			# for thunar search
 downgrade
 menulibre
+mugshot
 hexchat
 timeset-gui		# MSM time module does not work with OpenRC
 parole
