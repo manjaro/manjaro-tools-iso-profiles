@@ -35,8 +35,6 @@ bindsym $mod+Shift+q kill
 # start program launcher
 bindsym $mod+d exec --no-startup-id dmenu_recency
 # bindsym $mod+d exec j4-dmenu-desktop --dmenu="dmenu -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333' -i"
-# bindsym $mod+q exec mygtkmenu ~/.mygtkmenu.conf
-# bindsym F1 exec mygtkmenu ~/.mygtkmenu.conf
 
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && exec notify-send 'brightness up'
