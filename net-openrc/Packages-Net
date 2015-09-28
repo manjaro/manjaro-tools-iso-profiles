@@ -30,7 +30,6 @@ openresolv-openrc
 
 ## Base Packages
 gtk2
-pm-utils
 
 ## Packages for Sound and Audio
 alsa-plugins
