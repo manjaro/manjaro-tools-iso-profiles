@@ -64,7 +64,6 @@ xfce4-mixer
 
 ## Base packages
 tlp-pmu			# TLP
-pm-utils
 
 ## Basic Apps
 lightdm

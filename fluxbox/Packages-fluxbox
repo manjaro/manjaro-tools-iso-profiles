@@ -16,7 +16,6 @@ lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
 oblogout-manjaro
->openrc pm-utils # for suspend/hibernate
 polkit-gnome
 screenfetch
 >openrc timeset-gui
