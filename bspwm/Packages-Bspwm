@@ -46,6 +46,7 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 networkmanager-dmenu
+gufw
 
 
 ##Bspwm packages
