@@ -13,6 +13,7 @@ gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gnome-control-center # for switchboard plug : some plug not work fine
 gnome-vfs
+gnome-settings-daemon-compat #for helping to use function key in a notebook
 gvfs # to fix trash in thunar
 file-roller
 p7zip
@@ -25,8 +26,6 @@ tumbler
 ffmpegthumbnailer
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-#lightdm-bzr
-#sddm
 gnome-system-monitor
 hexchat
 gksu
@@ -37,9 +36,9 @@ ido
 libunity
 gtk-theme-elementary-bzr
 
-##Budgie Desktop - needed to use budgie-panel instead wingpanel
-budgie-desktop
-slingscold #instead slingshot-launcher
+##Budgie Desktop - needed to use budgie-panel instead #wingpanel
+#budgie-desktop
+#slingscold #instead slingshot-launcher
 
 ##Pantheon Shell
 plank-bzr
@@ -48,7 +47,7 @@ gala-bzr-manjaro
 #pantheon-default-settings
 pantheon-session-bzr-manjaro
 slingshot-launcher-bzr-manjaro
-wingpanel-rewrite-x11-bzr-manjaro
+wingpanel-bzr-manjaro
 wingpanel-indicator-notifications-bzr-manjaro
 wingpanel-indicator-ayatana-bzr
 wingpanel-indicator-datetime-bzr-manjaro
@@ -69,26 +68,26 @@ plank-theme-pantheon-bzr
 
 ##Pantheon Apps
 #audience-bzr # problem if window is not a full screen 
-mvp # instaed audience
+smplayer # instaed audience
 evince
 contractor-bzr
 elementary-scan-bzr
 #geary-plank-bzr #not work error with a library
-geary
+geary-plank-manjaro #stable and modified for see bullet in a dock
 #lightdm-pantheon-greeter-bzr
 #maya-calendar-bzr
 california 
 #midori-granite-bzr
 firefox
 icedtea-web
-noise-bzr
+#noise-player 
 pantheon-calculator-bzr
 pantheon-files-bzr
 pantheon-print-bzr
 pantheon-terminal-bzr
 scratch-text-editor-bzr
 snap-photobooth-bzr
-pantheon-photos-bzr #replace shotwell
+pantheon-photos #replace shotwell and now stable
 
 
 ##Switchboard
@@ -96,7 +95,7 @@ switchboard-bzr
 switchboard-plug-default-applications-bzr
 switchboard-plug-power-bzr
 switchboard-plug-elementary-tweaks-bzr
-switchboard-plug-pantheon-shell-bzr
+switchboard-plug-desktop-bzr
 switchboard-plug-keyboard-bzr #not work at the moment
 switchboard-plug-about-bzr
 switchboard-plug-display-bzr
@@ -167,7 +166,7 @@ pavucontrol
 pulseaudio-ctl
 
 ## Documentation
-#manjaro-documentation
+manjaro-documentation
 
 ##Access AUR
 autoconf
