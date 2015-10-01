@@ -81,14 +81,15 @@ networkmanager-vpnc
 >systemd syslog-ng
 
 ## Artwork
-awoken-icon-theme
+# awoken-icon-theme
 cantarell-fonts
 fluxbox-theme-manjaro
-menda-circle-icon-theme
+# menda-circle-icon-theme
 menda-themes-dark
+numix-reborn-suite
 xcursor-chameleon-pearl
 xcursor-menda
-xfce-theme-greenbird
+# xfce-theme-greenbird
 
 ## Audio Packages
 gst-libav
