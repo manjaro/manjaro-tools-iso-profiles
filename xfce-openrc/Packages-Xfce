@@ -64,6 +64,7 @@ xfce4-mixer
 
 ## Base packages
 tlp-pmu			# TLP
+light-locker-consolekit	# light-locker
 
 ## Basic Apps
 lightdm
@@ -103,6 +104,7 @@ gst-plugins-good	# for parole, h.264 video in firefox
 xfburn
 thunar-volman		# for usb auto-mounting
 gvfs-mtp		# for mounting smartphones
+dconf-editor		# for viewing dconf settings (light-locker, mousepad, etc)
 
 ## Services
 cups-openrc
