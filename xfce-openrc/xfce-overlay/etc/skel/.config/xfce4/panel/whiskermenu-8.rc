@@ -1,5 +1,6 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop,pamac-manager.desktop
 button-icon=/usr/share/icons/manjaro-logo.png
+button-title=Menu
 show-button-icon=true
 show-button-title=true
 launcher-show-name=true

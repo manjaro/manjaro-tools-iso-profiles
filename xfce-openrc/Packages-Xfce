@@ -44,6 +44,7 @@ conky
 lxappearance
 volumeicon
 orage			# for calender
+python2-xdg		# for autostart of applications in /etc/xdg/autostart
 
 ## Xfce
 xfce4-panel
