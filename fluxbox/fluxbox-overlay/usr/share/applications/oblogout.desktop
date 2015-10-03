@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Oblogout
+Comment=Logout Script
+Icon=lock
+Exec=oblogout
+Terminal=false
+Type=Application
+Categories=Openbox;Application;Utility;

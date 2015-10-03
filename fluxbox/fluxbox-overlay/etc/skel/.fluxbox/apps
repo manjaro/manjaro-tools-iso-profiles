@@ -8,8 +8,10 @@
   [Close]	{yes}
 [end]
 [app] (name=lxterminal) (class=Lxterminal)
-  [Position]	(UPPERLEFT)	{17% 20%}
+  [Dimensions]	{56% 73%}
+  [Position]	(UPPERLEFT)	{22% 13%}
   [Close]	{yes}
+  [Alpha]	{210}
 [end]
 [app] (name=pcmanfm) (class=Pcmanfm)
   [Dimensions]	{54% 68%}

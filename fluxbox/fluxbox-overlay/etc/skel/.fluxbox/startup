@@ -12,7 +12,7 @@ pa-applet &
 cbatticon &
 pamac-tray &
 # sbxkb &
-(sleep 5s && wbar) &
+sleep 5s && wbar &
 
 # exec is for starting Fluxbox itself, do not put an ampersand (&) after this or Fluxbox will exit immediately.
 # exec /usr/bin/fluxbox

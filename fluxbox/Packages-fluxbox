@@ -16,10 +16,11 @@ lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
 oblogout-manjaro
+plank
 polkit-gnome
 screenfetch
 >openrc timeset-gui
-wbar
+# wbar
 xfce4-notifyd
 
 ## Applications
