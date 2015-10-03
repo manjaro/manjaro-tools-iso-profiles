@@ -1,0 +1,11 @@
+edited files:
+
+/var/lib/AccountsService
+/var/lib/AccountsService/icons
+/var/lib/AccountsService/icons/local
+/var/lib/AccountsService/users/manjaro
+/home/manjaro/.local/share/personalization/themes/Custom
+/home/manjaro/.local/share/personalization/themes/Custom/theme.ini
+/home/manjaro/.config
+/home/manjaro/.config/not_first_run_dde
+/etc/skel/.config/not_first_run
