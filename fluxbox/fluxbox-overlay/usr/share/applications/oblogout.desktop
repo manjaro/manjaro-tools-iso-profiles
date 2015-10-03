@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Oblogout
 Comment=Logout Script
-Icon=lock
+Icon=boot
 Exec=oblogout
 Terminal=false
 Type=Application
