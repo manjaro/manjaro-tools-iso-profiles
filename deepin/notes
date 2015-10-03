@@ -1,11 +1,16 @@
 edited files:
 
-/var/lib/AccountsService
-/var/lib/AccountsService/icons
-/var/lib/AccountsService/icons/local
-/var/lib/AccountsService/users/manjaro
+/etc/skel/.config/not_first_run
+
 /home/manjaro/.local/share/personalization/themes/Custom
 /home/manjaro/.local/share/personalization/themes/Custom/theme.ini
 /home/manjaro/.config
 /home/manjaro/.config/not_first_run_dde
-/etc/skel/.config/not_first_run
+
+/usr/share/backgrounds
+/usr/share/glib-2.0/schemas/com.deepin.dde.personalization.gschema.xml
+/usr/share/glib-2.0/schemas/99_deepin-default-gsettings.gschema.override
+/var/lib/AccountsService
+/var/lib/AccountsService/icons
+/var/lib/AccountsService/icons/local
+/var/lib/AccountsService/users/manjaro

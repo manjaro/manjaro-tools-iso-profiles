@@ -67,10 +67,10 @@ gvfs-smb
 libimobiledevice
 # manjaro-welcome
 mousepad
+nautilus
 # palemoon-bin
-pcmanfm
+# pcmanfm
 screenfetch
-tree
 
 ## Network
 networkmanager
