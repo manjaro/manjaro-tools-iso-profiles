@@ -47,9 +47,9 @@
   [Close]	{yes}
 [end]
 [app] (name=mousepad) (class=Mousepad)
-  [Dimensions]	{50% 88%}
-  [Position]	(UPPERLEFT)	{46% 5%}
+  [Position]	(UPPERLEFT)	{11% 0%}
   [Close]	{yes}
+  [Alpha]	{255}
 [end]
 [app] (name=pamac-manager) (class=Pamac-manager)
   [Position]	(UPPERLEFT)	{5% 0%}

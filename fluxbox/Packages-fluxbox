@@ -6,6 +6,7 @@
 accountsservice
 cbatticon
 compton
+fbmenugen
 fluxbox
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault

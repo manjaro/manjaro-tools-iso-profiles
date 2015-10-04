@@ -3,11 +3,13 @@
 
 # In the below commands the ampersand symbol (&) is required on all applications that do not terminate immediately.
 # Failure to provide them will cause Fluxbox not to start.
+
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 nitrogen --restore &
-compton -c &
+compton &
 clipit &
 nm-applet &
+pulseaudio &
 pa-applet &
 cbatticon &
 pamac-tray &
