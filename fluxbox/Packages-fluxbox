@@ -20,7 +20,6 @@ plank
 polkit-gnome
 screenfetch
 >openrc timeset-gui
-# wbar
 xfce4-notifyd
 
 ## Applications
@@ -88,6 +87,10 @@ fluxbox-theme-manjaro
 # menda-circle-icon-theme
 menda-themes-dark
 numix-reborn-suite
+<<<<<<< HEAD
+plymouth-theme-manjaro-extra-elegant
+=======
+>>>>>>> 8e4c942686e9ac9f2bdd1ebca5d7ad6218435d64
 xcursor-chameleon-pearl
 xcursor-menda
 # xfce-theme-greenbird
