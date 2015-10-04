@@ -6,6 +6,7 @@
 accountsservice
 cbatticon
 compton
+dmenu-manjaro
 fbmenugen
 fluxbox
 gconf # fix qt-theme
@@ -87,7 +88,8 @@ cantarell-fonts
 fluxbox-theme-manjaro
 # menda-circle-icon-theme
 menda-themes-dark
-numix-reborn-suite
+numix-reborn-icon-themes
+numix-reborn-wallpapers
 plymouth-theme-manjaro-extra-elegant
 xcursor-chameleon-pearl
 xcursor-menda

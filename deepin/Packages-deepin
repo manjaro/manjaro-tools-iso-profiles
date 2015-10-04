@@ -34,7 +34,7 @@ deepin
 ## other deepin Packages
 accountsservice
 downgrade
-# gksu # needed?
+gksu
 lightdm-deepin-greeter
 #lightdm-gtk-greeter
 #lightdm-gtk-greeter-settings
@@ -67,10 +67,11 @@ gvfs-smb
 libimobiledevice
 # manjaro-welcome
 mousepad
-nautilus
+#nautilus
 # palemoon-bin
-# pcmanfm
+pcmanfm
 screenfetch
+xarchiver
 
 ## Network
 networkmanager

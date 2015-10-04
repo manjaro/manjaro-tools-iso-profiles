@@ -2,6 +2,9 @@
   [Position]	(CENTER)	{0 0}
   [Layer]	{2}
 [end]
+[app] (name=plank) (class=Plank)
+  [Layer]	{8}
+[end]
 [app] (name=hexchat) (class=Hexchat)
   [Dimensions]	{40% 33%}
   [Position]	(UPPERLEFT)	{34% 36%}
@@ -9,13 +12,13 @@
 [end]
 [app] (name=lxterminal) (class=Lxterminal)
   [Dimensions]	{56% 73%}
-  [Position]	(UPPERLEFT)	{22% 13%}
+  [Position]	(UPPERLEFT)	{34% 7%}
   [Close]	{yes}
   [Alpha]	{210}
 [end]
 [app] (name=pcmanfm) (class=Pcmanfm)
-  [Dimensions]	{54% 68%}
-  [Position]	(UPPERLEFT)	{22% 19%}
+  [Dimensions]	{75% 81%}
+  [Position]	(UPPERLEFT)	{16% 9%}
   [Close]	{yes}
 [end]
 [app] (name=lxmusic) (class=Lxmusic)
@@ -27,7 +30,7 @@
   [Close]	{yes}
 [end]
 [app] (name=Navigator) (class=Pale moon) (role=browser)
-  [Position]	(UPPERLEFT)	{5% 0%}
+  [Position]	(UPPERLEFT)	{0% -3%}
   [Close]	{yes}
 [end]
 [app] (name=abiword) (class=Abiword) (role=topLevelWindow)
@@ -47,9 +50,9 @@
   [Close]	{yes}
 [end]
 [app] (name=mousepad) (class=Mousepad)
-  [Position]	(UPPERLEFT)	{11% 0%}
+  [Position]	(UPPERLEFT)	{46% 14%}
   [Close]	{yes}
-  [Alpha]	{255}
+  [Alpha]	{220}
 [end]
 [app] (name=pamac-manager) (class=Pamac-manager)
   [Position]	(UPPERLEFT)	{5% 0%}
@@ -71,6 +74,15 @@
 [app] (name=pavucontrol) (class=Pavucontrol)
   [Dimensions]	{73% 64%}
   [Position]	(UPPERLEFT)	{15% 30%}
+  [Close]	{yes}
+[end]
+[app] (name=system-config-printer.py) (class=System-config-printer.py)
+  [Dimensions]	{53% 51%}
+  [Position]	(UPPERLEFT)	{27% 30%}
+  [Close]	{yes}
+[end]
+[app] (name=xfce4-notifyd-config) (class=Xfce4-notifyd-config)
+  [Position]	(UPPERLEFT)	{49% 18%}
   [Close]	{yes}
 [end]
 [app] (name=system-config-printer.py) (class=System-config-printer.py)
