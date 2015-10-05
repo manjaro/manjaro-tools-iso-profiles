@@ -13,8 +13,8 @@
 [app] (name=lxterminal) (class=Lxterminal)
   [Dimensions]	{56% 73%}
   [Position]	(UPPERLEFT)	{34% 7%}
-  [Close]	{yes}
   [Alpha]	{210}
+  [Close]	{yes}
 [end]
 [app] (name=pcmanfm) (class=Pcmanfm)
   [Dimensions]	{75% 81%}
@@ -26,11 +26,13 @@
   [Close]	{yes}
 [end]
 [app] (name=Pinta) (class=Pinta)
+  [Dimensions]	{95% 93%}
   [Fullscreen]	{no}
   [Close]	{yes}
 [end]
 [app] (name=Navigator) (class=Pale moon) (role=browser)
-  [Position]	(UPPERLEFT)	{10% 10%}
+  [Dimensions]	{93% 85%}
+  [Position]	(UPPERLEFT)	{3% 3%}
   [Close]	{yes}
 [end]
 [app] (name=abiword) (class=Abiword) (role=topLevelWindow)
@@ -38,7 +40,8 @@
   [Close]	{yes}
 [end]
 [app] (name=gnumeric) (class=Gnumeric)
-  [Position]	(UPPERLEFT)	{25% 0%}
+  [Dimensions]	{75% 80%}
+  [Position]	(UPPERLEFT)	{24% 1%}
   [Close]	{yes}
 [end]
 [app] (name=galculator) (class=Galculator)
@@ -47,10 +50,12 @@
 [end]
 [app] (name=vlc) (class=Vlc) (role=vlc-main)
   [Position]	(UPPERLEFT)	{19% 13%}
+  [Alpha]	{210}
   [Close]	{yes}
 [end]
 [app] (name=mousepad) (class=Mousepad)
-  [Position]	(UPPERLEFT)	{46% 14%}
+  [Dimensions]	{63% 68%}
+  [Position]	(UPPERLEFT)	{34% 15%}
   [Close]	{yes}
 [end]
 [app] (name=pamac-manager) (class=Pamac-manager)
@@ -71,8 +76,8 @@
   [Close]	{yes}
 [end]
 [app] (name=pavucontrol) (class=Pavucontrol)
-  [Dimensions]	{73% 64%}
-  [Position]	(UPPERLEFT)	{15% 30%}
+  [Dimensions]	{56% 59%}
+  [Position]	(UPPERLEFT)	{30% 21%}
   [Close]	{yes}
 [end]
 [app] (name=system-config-printer.py) (class=System-config-printer.py)
