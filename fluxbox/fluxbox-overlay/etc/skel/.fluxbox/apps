@@ -30,7 +30,7 @@
   [Close]	{yes}
 [end]
 [app] (name=Navigator) (class=Pale moon) (role=browser)
-  [Position]	(UPPERLEFT)	{0% -3%}
+  [Position]	(UPPERLEFT)	{10% 10%}
   [Close]	{yes}
 [end]
 [app] (name=abiword) (class=Abiword) (role=topLevelWindow)
@@ -52,7 +52,6 @@
 [app] (name=mousepad) (class=Mousepad)
   [Position]	(UPPERLEFT)	{46% 14%}
   [Close]	{yes}
-  [Alpha]	{220}
 [end]
 [app] (name=pamac-manager) (class=Pamac-manager)
   [Position]	(UPPERLEFT)	{5% 0%}
