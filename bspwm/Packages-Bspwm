@@ -105,6 +105,7 @@ xdg-utils
 perl-file-mimeinfo
 hibernator
 delayed-hibernation
+allservers
 
 ## AUR Access
 # base-devel
