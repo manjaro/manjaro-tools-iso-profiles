@@ -40,6 +40,7 @@
 	[exec] (Printer Settings) {system-config-printer}
 	[exec] (lightDM-gtk-greeter) {gksu lightdm-gtk-greeter-settings}
 	[exec] (Manjaro Settings Manager) {gksu manjaro-settings-manager-gui}
+	[exec] (Regenerate menu) {/usr/bin/perl \/usr\/bin\/fbmenugen }
 	[end]
   [submenu] (Fluxbox menu) 
 	[config] (Behaviour)
