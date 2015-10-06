@@ -106,6 +106,8 @@ perl-file-mimeinfo
 hibernator
 delayed-hibernation
 allservers
+i3lock
+downgrade
 
 ## AUR Access
 # base-devel
