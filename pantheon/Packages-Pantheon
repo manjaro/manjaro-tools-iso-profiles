@@ -30,6 +30,7 @@ gnome-system-monitor
 hexchat
 gksu
 xfce4-screenshooter #snapshot program snap-photobooth problem
+xterm #need for use cli installer
 
 ##Deps
 ido

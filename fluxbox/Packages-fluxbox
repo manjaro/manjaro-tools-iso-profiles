@@ -6,6 +6,8 @@
 accountsservice
 cbatticon
 compton
+dmenu-manjaro
+fbmenugen
 fluxbox
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
@@ -87,10 +89,7 @@ fluxbox-theme-manjaro
 # menda-circle-icon-theme
 menda-themes-dark
 numix-reborn-suite
-<<<<<<< HEAD
-plymouth-theme-manjaro-extra-elegant
-=======
->>>>>>> 8e4c942686e9ac9f2bdd1ebca5d7ad6218435d64
+plymouth-theme-manjaro-circle
 xcursor-chameleon-pearl
 xcursor-menda
 # xfce-theme-greenbird
