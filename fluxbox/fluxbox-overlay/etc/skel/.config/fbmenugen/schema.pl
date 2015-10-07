@@ -24,15 +24,16 @@
 require "$ENV{HOME}/.config/fbmenugen/config.pl";
 
 our $SCHEMA = [
-    #COMMAND				LABEL			ICON
-    {item => ['pcmanfm',		'File Manager',		'file-manager']},
-    {item => ['palemoon',		'Web Browser',		'web-browser']},
-    {item => ['claws-mail',		'Mail Client',		'mail-client']},
-    {item => ['fbrun -font cantarell-11','Run command',		'system-run']},
-    {item => ['lxterminal',		'Terminal',		'terminal']},
-    {item => ['gksu lxterminal',	'Root Terminal',	'root-terminal']},
-    {item => ['gksu pcmanfm',		'File Manager Root',	'root-file-manager']},
-
+#COMMAND			LABEL			ICON
+{begin_cat => ['Favourites', ]},
+{item => ['pcmanfm',		'File Manager',		'file-manager']},
+{item => ['palemoon',		'Web Browser',		'web-browser']},
+{item => ['claws-mail',		'Mail Client',		'mail-client']},
+{item => ['fbrun -font cantarell-11','Run command',		'system-run']},
+{item => ['lxterminal',		'Terminal',		'terminal']},
+{item => ['gksu lxterminal',	'Root Terminal',	'root-terminal']},
+{item => ['gksu pcmanfm',		'File Manager Root',	'root-file-manager']},
+{end_cat   => undef},
     {sep => 'undef'},
 
     #          NAME            LABEL                ICON
@@ -42,15 +43,15 @@ our $SCHEMA = [
     {cat => ['audiovideo',  'Multimedia',  'applications-multimedia']},
     {cat => ['network',     'Network',     'applications-internet']},
     {cat => ['office',      'Office',      'applications-office']},
-    {cat => ['other',       'Other',       'applications-other']},
+#   {cat => ['other',       'Other',       'applications-other']},
 
     {sep => 'undef'},
-
+{begin_cat => ['System', ]},
     {cat => ['utility',     'Accessories', 'applications-utilities']},
     {cat => ['system',      'System',      'applications-system']},
     {cat => ['settings',    'Settings',    'applications-accessories']},
-    {cat => ['development', 'Development', 'applications-development']},
-
+#   {cat => ['development', 'Development', 'applications-development']},
+{end_cat   => undef},
     #{cat => ['qt',          'QT Applications',    'qtlogo']},
     #{cat => ['gtk',         'GTK Applications',   'gnome-applications']},
     #{cat => ['x_xfce',      'XFCE Applications',  'applications-other']},
@@ -63,14 +64,19 @@ our $SCHEMA = [
     #{end_cat   => undef},
 
     {sep => 'undef'},
+{begin_cat => ['Screenshot', ]},
+{item => ['fb-screenshot -d', 'full screen', ]},
+{item => ['fb-screenshot -w', 'active window', ]},
+{item => ['fb-screenshot -s', 'select area', ]},
+{end_cat   => undef},
+    {sep => 'undef'},
 
     #                  LABEL               ICON
     {fluxbox    => ['Fluxbox menu', 'preferences-desktop']},
     {fbmenugen  => ['Fbmenugen',    'preferences-desktop']},
-    {regenerate => ['Regenerate menu',     'gtk-refresh']},
 
     {sep       => undef},
 
-    # This options uses the default Fluxbox action "Exit"
+    {regenerate => ['Regenerate menu',     'gtk-refresh']},
     {item	=> ['oblogout',	'exit', 'shutdown/restart']}
 ]
