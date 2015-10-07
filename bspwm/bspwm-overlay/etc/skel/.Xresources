@@ -90,8 +90,8 @@ urxvt*cursorBlink:      true
 
 ! Fonts
 ! URxvt.font: xft:Monospace:size=12
-urxvt*font:        -xos4-terminus-medium-*-*-*-20-*-*-*-*-*-*-*
-urxvt*boldFont:    -xos4-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
+urxvt*font:        -xos4-terminus-medium-*-*-*-18-*-*-*-*-*-*-*
+urxvt*boldFont:    -xos4-terminus-bold-*-*-*-18-*-*-*-*-*-*-*
 URxvt.letterSpace: -1
 
 ! Classic copy/paste by Shift-Ctrl-c|v
