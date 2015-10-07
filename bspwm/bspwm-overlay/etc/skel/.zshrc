@@ -92,7 +92,6 @@ alias cp="cp -i"                        # Confirm before overwriting something
 alias df='df -h'                        # Human-readable sizes
 alias free='free -m'                    # Show sizes in MB
 alias fixit='sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g && sudo pacman -Syyuu && sudo pacman -Suu'
-alias bspwm='startx /usr/bin/bspwm-session'
 alias bspwmrc='nano ~/.config/bspwm/bspwmrc'
 alias sxhkdrc='nano ~/.config/sxhkd/sxhkdrc'
 alias autostart='nano ~/.config/bspwm/autostart'
@@ -130,7 +129,7 @@ cleanse() {
         sudo bleachbit -c --preset
 }
 
-PROMPT="┌─[%n@%m %1~] 
-└─> "
-RPROMPT="%{$fg[red]%}%(?..[%?])%{$reset_color%}"
+PROMPT="┌─[%T]-[%n:%1~]%(!.#.$) 
+└─>>  "
+RPROMPT="%(?.%{$fg[green]%}✓ %{$reset_color%}.%{$fg[red]%}✗ %{$reset_color%})"
 
