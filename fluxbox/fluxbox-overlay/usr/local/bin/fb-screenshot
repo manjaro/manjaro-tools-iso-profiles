@@ -1,6 +1,10 @@
 #!/bin/sh
 # /usr/bin/fb-screenshot
 
+if ! [ -d "$HOME/Screenshots" ]; then
+	mkdir $HOME/Screenshots
+fi
+
 case "$1" in
     --desk|-d)
         scrot -e 'mv $f ~/Screenshots' &&

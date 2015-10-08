@@ -52,6 +52,7 @@ lxterminal
 manjaro-welcome
 mousepad
 nitrogen
+p7zip
 palemoon-bin
 pcmanfm
 pinta
@@ -83,10 +84,8 @@ networkmanager-vpnc
 >systemd syslog-ng
 
 ## Artwork
-# awoken-icon-theme
 cantarell-fonts
 fluxbox-theme-manjaro
-# menda-circle-icon-theme
 menda-themes-dark
 numix-reborn-suite
 plymouth-theme-manjaro-circle

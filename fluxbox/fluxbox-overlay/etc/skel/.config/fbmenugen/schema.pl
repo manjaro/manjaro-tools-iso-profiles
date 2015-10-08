@@ -26,13 +26,19 @@ require "$ENV{HOME}/.config/fbmenugen/config.pl";
 our $SCHEMA = [
 #COMMAND			LABEL			ICON
 {begin_cat => ['Favourites', ]},
-{item => ['pcmanfm',		'File Manager',		'file-manager']},
 {item => ['palemoon',		'Web Browser',		'web-browser']},
 {item => ['claws-mail',		'Mail Client',		'mail-client']},
-{item => ['fbrun -font cantarell-11','Run command',		'system-run']},
+{item => ['pcmanfm',		'File Manager',		'file-manager']},
 {item => ['lxterminal',		'Terminal',		'terminal']},
+{item => ['fbrun -font cantarell-11','Command line',		'system-run']},
+    {sep => 'undef'},
+{item => ['gksu pcmanfm',	'Root File Manager',	'root-file-manager']},
 {item => ['gksu lxterminal',	'Root Terminal',	'root-terminal']},
-{item => ['gksu pcmanfm',		'File Manager Root',	'root-file-manager']},
+    {sep => 'undef'},
+{begin_cat => ['Screenshot', ]},
+{item => ['fb-screenshot -d', 'full screen', ]},
+{item => ['fb-screenshot -w', 'active window', ]},
+{item => ['fb-screenshot -s', 'select area', ]},
 {end_cat   => undef},
     {sep => 'undef'},
 
@@ -63,12 +69,6 @@ our $SCHEMA = [
     #             ... some items ...
     #{end_cat   => undef},
 
-    {sep => 'undef'},
-{begin_cat => ['Screenshot', ]},
-{item => ['fb-screenshot -d', 'full screen', ]},
-{item => ['fb-screenshot -w', 'active window', ]},
-{item => ['fb-screenshot -s', 'select area', ]},
-{end_cat   => undef},
     {sep => 'undef'},
 
     #                  LABEL               ICON
