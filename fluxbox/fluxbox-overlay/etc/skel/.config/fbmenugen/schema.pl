@@ -40,6 +40,7 @@ our $SCHEMA = [
 {item => ['fb-screenshot -w', 'active window', ]},
 {item => ['fb-screenshot -s', 'select area', ]},
 {end_cat   => undef},
+{end_cat   => undef},
     {sep => 'undef'},
 
     #          NAME            LABEL                ICON
@@ -78,5 +79,5 @@ our $SCHEMA = [
     {sep       => undef},
 
     {regenerate => ['Regenerate menu',     'gtk-refresh']},
-    {item	=> ['oblogout',	'exit', 'shutdown/restart']}
+    {item	=> ['oblogout',	'Exit', 'shutdown/restart']}
 ]
