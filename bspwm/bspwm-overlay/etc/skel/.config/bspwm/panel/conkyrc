@@ -13,7 +13,7 @@ TEXT
 ${exec sleep 3}
 C\
 #Battery stuff for possible BAT1
-%{A:networkmenuplacer.sh && nmcli_dmenu:}${execi 4800 update-notifier}${if_up wlp1s0} $else  $endif %{A} \
+%{A:networkmenuplacer.sh && nmcli_dmenu:}${if_up wlp1s0}${execi 4800 update-notifier} $else$endif %{A}\
 %{A:dbright:}\
 ${if_existing /sys/class/power_supply/BAT1/present 1}\
 	${if_match "${acpiacadapter}" == "off-line"}\
@@ -36,7 +36,6 @@ $endif\
 ##Cpu usage
  $cpu% \
 ##Temperature
-# $alignr${hwmon temp 1}°C  \
+# $alignr${hwmon temp 1}°C \
 ##Clock
- ${time %H:%M} \
-
+ ${time %H:%M}\
