@@ -1,0 +1,4 @@
+#!/bin/sh
+# /usr/local/bin/restore
+
+mv ~/.fluxbox/menu_backup ~/.fluxbox/menu

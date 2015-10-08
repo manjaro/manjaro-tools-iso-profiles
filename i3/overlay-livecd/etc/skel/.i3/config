@@ -157,7 +157,7 @@ bindsym $mod+Shift+8 move container to workspace number 8; workspace 8
 # assign [class="Pcmanfm"] 3
 # assign [class="Skype"] 5
 
-# Open specific applications in floating mode
+## Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 2
 for_window [class="Calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
@@ -176,6 +176,7 @@ for_window [class="octopi"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable
+for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
 for_window [class="Thus"] floating enable border normal
