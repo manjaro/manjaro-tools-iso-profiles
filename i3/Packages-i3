@@ -39,6 +39,7 @@ vi
 xarchiver-gtk2
 xautolock
 xfce4-power-manager
+xorg-xkill
 
 ## Applications
 clipit

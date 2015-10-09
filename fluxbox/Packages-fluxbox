@@ -23,6 +23,7 @@ polkit-gnome
 screenfetch
 >openrc timeset-gui
 xfce4-notifyd
+xorg-xkill
 
 ## Applications
 abiword
@@ -92,7 +93,7 @@ numix-reborn-suite
 plymouth-theme-manjaro-circle
 xcursor-chameleon-pearl
 xcursor-menda
-# xfce-theme-greenbird
+xfce-theme-greenbird
 
 ## Audio Packages
 gst-libav
