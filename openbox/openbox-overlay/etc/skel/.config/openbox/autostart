@@ -1,53 +1,30 @@
-## ManjaroBox Autostart File
-##
-## 
-##
-## Note that global autostart .desktop files will also be in 
-## /etc/xdg/openbox/autostart. These will include applications
-## such as the Network Manager and Parcellite
-##
-
-## DPMS - Display Power Management Signaling
-## This is disabled by default to prevent auto-actions when
-## the system is idle, such as screen blanking (10 mins) or
-## suspending (1 hour).
-
-if [ ! -d /bootmnt/manjaro ]; then
-    rm ~/.config/autostart/manjaro-welcome.desktop
-fi
-
-## Ensure that obmenu-generator (a pipe menu) is set to the user.
-## Does this for each session (i.e. ease of use for addtional
-## accounts where created.
-
-obmenu-generator -d &
-
-(sleep 2s && xset -dpms; xset s off) &
-
-sed -i "s,_homedir_,${HOME}," ~/.config/obmenu-generator/schema.pl
-sed -i "s,_homedir_,${HOME}," ~/.config/obmenu-generator/config.pl
-
-
 ## Basic compositing effects
-compton -CGb &
+(sleep 1s && compton -c) &
 
 ## Background
-nitrogen --restore &
+(sleep 1s && nitrogen --restore) &
 
 ## Panel
 (sleep 1s && tint2) &
 
 ## Startup
-(sleep 1s && pnmixer) &
+(sleep 2s && pnmixer) &
 (sleep 3s && conky) &
+#(sleep 4s && numlockx) &
+(sleep 5s && pamac-tray) & 	
+(sleep 6s && clipit) &
 
-## Optionally enable file manager in daemon mode for automounting
-# (sleep 1s && thunar --daemon) &
+## DPMS - Display Power Management Settings
+## These are disabled by default to prevent auto-actions when
+## the system is idle, such as screen blanking (10 mins) or
+## suspending (1 hour).
+xset -dpms; xset s off &
 
-## Optionally enable screensaver
-#(sleep 1s && xautolock -time 15 -locker 'xlock -mode blank') &
+## Polkit agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-## Optionally disable touchpad
-#/usr/bin/synclient TouchpadOff=1 &
+## Start i3lock (slock)
+xautolock -locker "slock" -time 30 -corners 0-00 &
 
-(sleep 3s && obmenu-generator -d) &
+## File manager (daemon mode)
+(sleep 6s && spacefm -d) &
