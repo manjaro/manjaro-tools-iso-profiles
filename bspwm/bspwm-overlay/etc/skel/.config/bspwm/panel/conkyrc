@@ -38,4 +38,4 @@ $endif\
 ##Temperature
 # $alignr${hwmon temp 1}°C \
 ##Clock
- ${time %H:%M}\
+ ${time %H:%M}
