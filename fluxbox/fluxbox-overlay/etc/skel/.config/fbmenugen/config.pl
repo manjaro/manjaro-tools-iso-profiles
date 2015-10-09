@@ -90,7 +90,7 @@ our $CONFIG = {
                              terminalize             => 1,
                              unknown_category_key    => "other",
                            },
-  "menu_title"          => "Fluxbox Menu",
+  "menu_title"          => "Menu",
   "missing_icon"        => "gtk-missing-image",
   "name_keys"           => ["Name"],
   "terminal"            => "lxterminal",
