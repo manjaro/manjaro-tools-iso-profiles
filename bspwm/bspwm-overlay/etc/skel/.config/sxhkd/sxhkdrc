@@ -6,9 +6,7 @@ super + shift + q
 	
 # Toggle panels
 super + shift + space
-#	{pkill xfce4-panel; bspc config top_padding 0 ,\
-#	bspc config top_padding 30; xfce4-panel -d & }
-	{pkill lemonpanel; pkill lemonbar; pkill cat; pkill stalonetray; bspc config top_padding -15 ,\
+	{pkill lemonpanel; pkill lemonbar; pkill cat; pkill stalonetray; bspc config top_padding $((-$gap)) ,\
 	bspc config top_padding $(($PANEL_HEIGHT-$gap)); lemonpanel & }
 
 # Show keybindings
