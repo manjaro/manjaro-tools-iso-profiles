@@ -38,10 +38,11 @@ qpdfview
 qupzilla
 kwrite
 octopi
-partitionmanager
+#partitionmanager # conflicts with calamares-dev
+gparted
 #manjaro-settings-manager
 kcm-msm
-manjaro-welcome
+#manjaro-welcome
 >multilib manjaro-alsa
 
 ## Themes
