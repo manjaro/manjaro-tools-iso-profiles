@@ -6,7 +6,7 @@
   [exec] (File Manager Root) {gksu pcmanfm}
   [submenu] (Internet)
 	[exec] (Web Browser) {palemoon} 
-	[exec] (Mail Reader) {claws-mail} 
+	[exec] (Mail Client) {claws-mail} 
 	[exec] (Hexchat) {hexchat}
 	[end]
   [submenu] (Office) 
