@@ -6,6 +6,8 @@
 >systemd sddm
 >openrc sddm-consolekit
 sddm-kcm
+>openrc networkmanager-openrc
+>openrc syslog-ng-openrc
 
 ## Plasma5
 bluedevil
