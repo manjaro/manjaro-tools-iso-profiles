@@ -98,3 +98,8 @@
   [Position]	(UPPERLEFT)	{49% 18%}
   [Close]	{yes}
 [end]
+[app] (name=xfburn) (class=Xfburn)
+  [Dimensions]  {60% 69%}
+  [Position]    {UPPERLEFT)     {15% 7%}
+  [Close]	{yes}
+[end]
