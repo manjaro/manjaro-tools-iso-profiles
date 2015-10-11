@@ -1,0 +1,58 @@
+[begin] (Application Menu)
+[encoding] {UTF-8} 
+
+  [exec] (Terminal) {lxterminal} 
+  [exec] (File Manager) {pcmanfm} 
+  [exec] (File Manager Root) {gksu pcmanfm}
+  [submenu] (Internet)
+	[exec] (Web Browser) {palemoon} 
+	[exec] (Mail Reader) {claws-mail} 
+	[exec] (Hexchat) {hexchat}
+	[end]
+  [submenu] (Office) 
+	[exec] (Word Processing) {abiword}
+	[exec] (Spreadsheet) {gnumeric}
+	[exec] (Calculator) {galculator}
+	[exec] (Graphics) {pinta}
+	[end]
+  [submenu] (Multimedia) 
+	[exec] (Music) {lxmusic}
+	[exec] (Video) {vlc}
+	[exec] (Sound Mixer) {pavucontrol}
+	[end]
+  [submenu] (Tools)
+	[exec] (Commandline) {fbrun -font cantarell-11}
+	[exec] (Texteditor) {mousepad}
+	[exec] (Package Management) {pamac-manager}
+	[exec] (GParted) {gksu gparted}
+	[exec] (Screenshot - full screen) {scrot -e 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved to ~/Screenshots'}
+	[exec] (Screenshot - active window) {scrot -ue 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved to ~/Screenshots'}
+	[exec] (Screenshot - select area) {notify-send 'selection will be saved to ~/Screenshots' & scrot -se 'mv $f ~/Screenshots' && sleep 1 && notify-send 'screenshot has been saved in ~/Screenshots'}
+	[end]
+
+[separator]
+
+  [submenu] (Configuration)
+	[exec] (Appearance) {lxappearance} 
+	[exec] (Wallpaper) {nitrogen} 
+	[exec] (Notifications) {xfce4-notifyd-config}
+	[exec] (Sound Mixer) {pavucontrol}
+	[exec] (Printer Settings) {system-config-printer}
+	[exec] (lightDM-gtk-greeter) {gksu lightdm-gtk-greeter-settings}
+	[exec] (Manjaro Settings Manager) {gksu manjaro-settings-manager-gui}
+	[exec] (Regenerate menu) {/usr/bin/perl \/usr\/bin\/fbmenugen }
+	[end]
+  [submenu] (Fluxbox menu) 
+	[config] (Behaviour)
+	[workspaces] (Workspace List)
+	[commanddialog] (Fluxbox Command)
+	[reconfig] (Reload config)
+	[restart] (Restart)
+	[end]
+
+[separator]
+
+  [exec] (Exit) {oblogout}
+
+[endencoding]
+[end]

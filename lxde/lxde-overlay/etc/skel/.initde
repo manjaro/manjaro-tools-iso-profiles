@@ -5,4 +5,9 @@ if [ $newname != Desktop ]; then
     cp -d Desktop/* $newname 2>/dev/null
     rm -rf Desktop
 fi
+#cd $newname
+#if [ -e calamares.desktop ]; then
+#    sed -i -e 's?Icon=.*?Icon=/usr/share/icons/hicolor/scalable/apps/calamares.svg?' calamares.desktop
+#fi
+#cd ..
 rm .initde

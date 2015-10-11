@@ -46,6 +46,7 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 networkmanager-dmenu
+gufw
 
 
 ##Bspwm packages
@@ -101,8 +102,12 @@ compton
 mhwd-chroot
 gnome-disk-utility
 xdg-utils
-#perl-file-mimeinfo
-
+perl-file-mimeinfo
+hibernator
+delayed-hibernation
+allservers
+i3lock
+downgrade
 
 ## AUR Access
 # base-devel

@@ -6,6 +6,8 @@
 accountsservice
 cbatticon
 compton
+dmenu-manjaro
+fbmenugen
 fluxbox
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
@@ -16,12 +18,12 @@ lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
 oblogout-manjaro
->openrc pm-utils # for suspend/hibernate
+plank
 polkit-gnome
 screenfetch
 >openrc timeset-gui
-wbar
 xfce4-notifyd
+xorg-xkill
 
 ## Applications
 abiword
@@ -51,12 +53,14 @@ lxterminal
 manjaro-welcome
 mousepad
 nitrogen
+p7zip
 palemoon-bin
 pcmanfm
 pinta
 qpdfview
 sbxkb
 scrot
+simple-scan
 tree
 vi
 vlc
@@ -82,11 +86,11 @@ networkmanager-vpnc
 >systemd syslog-ng
 
 ## Artwork
-awoken-icon-theme
 cantarell-fonts
 fluxbox-theme-manjaro
-menda-circle-icon-theme
 menda-themes-dark
+numix-reborn-suite
+plymouth-theme-manjaro-circle
 xcursor-chameleon-pearl
 xcursor-menda
 xfce-theme-greenbird

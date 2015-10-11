@@ -1,0 +1,4 @@
+#!/bin/sh
+# /usr/local/bin/restore
+
+install -m644 /etc/restore-menu/menu_backup $HOME/.fluxbox/menu

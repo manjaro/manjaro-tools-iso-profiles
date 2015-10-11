@@ -6,7 +6,7 @@
   [exec] (File Manager Root) {gksu pcmanfm}
   [submenu] (Internet)
 	[exec] (Web Browser) {palemoon} 
-	[exec] (Mail Reader) {claws-mail} 
+	[exec] (Mail Client) {claws-mail} 
 	[exec] (Hexchat) {hexchat}
 	[end]
   [submenu] (Office) 
@@ -35,12 +35,12 @@
   [submenu] (Configuration)
 	[exec] (Appearance) {lxappearance} 
 	[exec] (Wallpaper) {nitrogen} 
-	[exec] (wbar) {wbar-config}
 	[exec] (Notifications) {xfce4-notifyd-config}
 	[exec] (Sound Mixer) {pavucontrol}
 	[exec] (Printer Settings) {system-config-printer}
 	[exec] (lightDM-gtk-greeter) {gksu lightdm-gtk-greeter-settings}
 	[exec] (Manjaro Settings Manager) {gksu manjaro-settings-manager-gui}
+	[exec] (Regenerate menu) {/usr/bin/perl \/usr\/bin\/fbmenugen }
 	[end]
   [submenu] (Fluxbox menu) 
 	[config] (Behaviour)

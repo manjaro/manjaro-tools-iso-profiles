@@ -8,8 +8,9 @@ manjaro-documentation
 gtk-engine-murrine	# only to avoid a warning
 
 ## LXDE Main Packages
+lateafternoon-icons
 #faenza-green-icon-theme
-gnome-icon-theme
+gnome-icon-theme-stub
 #shadow-icon-theme
 vibrantly-green
 gamin
@@ -38,10 +39,12 @@ lxrandr
 lxsession
 lxtask
 lxterminal
+obconf
 openbox
 pcmanfm
 ########
 manjaro-settings-manager
+ambiance-graphite
 mediterraneanlxqt
 network-manager-applet
 #python2-xdg
@@ -58,11 +61,14 @@ openresolv
 
 ## Applications
 #catfish
+clementine-lxqt
 #evince
 file-roller
+#firefox
 #fwbuilder
 galculator
 #gedit
+gimp-light
 gparted
 hexchat
 isousb
@@ -70,12 +76,12 @@ isousb
 #midori-bzr
 mlocate
 mousepad
-mpv
+mpv-light
 openssh
 packsize
 palemoon-bin
 qpdfview
-#smplayer
+smplayer-mpv
 #simple-scan
 synapse
 sylpheed
