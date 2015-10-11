@@ -37,7 +37,7 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>MediterraneanLight</name>
+    <name>AmbianceGraphite</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
