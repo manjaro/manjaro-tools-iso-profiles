@@ -50,7 +50,7 @@
 [end]
 [app] (name=vlc) (class=Vlc) (role=vlc-main)
   [Position]	(UPPERLEFT)	{19% 13%}
-  [Alpha]	{210}
+  [Alpha]	{255}
   [Close]	{yes}
 [end]
 [app] (name=mousepad) (class=Mousepad)
@@ -103,3 +103,7 @@
   [Position]    {UPPERLEFT)     {15% 7%}
   [Close]	{yes}
 [end]
+[app] (name=timeset-gui) (class=Timeset-gui)
+  [Position]	{UPPERLEFT}	{35% 13%}
+  [Close]	{yes}
+

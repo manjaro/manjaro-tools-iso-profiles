@@ -83,7 +83,7 @@ our $CONFIG = {
                              keep_unknown_categories => 1,
                              skip_entry              => [
 							{key => 'Name', re => qr/(?:Install|Oblogout|Wallpaper Changer|Manage Printing|Notifications|Bluetooth Adapters|File Manager|Customize Look and Feel|Preferred Applications)/i},
-							{key => 'Exec', re => qr/^clipit|manjaro-settings-manager|lightdm-gtk-greeter-settings/},
+							{key => 'Exec', re => qr/^clipit|manjaro-settings-manager-gtk|lightdm-gtk-greeter-settings/},
 							],
                              skip_filename_re        => qr/^(?:xfce4-about|compton|pcmanfm|oblogout|plank|gnome-terminal|fb-restore-menu)\b/,
                              skip_svg_icons          => 1,

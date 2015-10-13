@@ -52,6 +52,7 @@
   [exec] (Manjaro Welcome) {manjaro-welcome}
   [exec] (Print Settings) {system-config-printer}
   [exec] (Software Update) {pamac-updater}
+  [exec] (Time & Date (OpenRC\)) {gksu timeset-gui}
 [end]
 [submenu] (Settings)
   [exec] (Adobe Flash Player) {flash-player-properties}
