@@ -10,10 +10,19 @@ if_up_strictness address
 
 TEXT
 
-${exec sleep 3}
+${exec sleep 1}
 C\
-#Battery stuff
-%{A:networkmenuplacer.sh && nmcli_dmenu:}${if_up wlp1s0}${execi 4800 update-notifier} $else$endif %{A}\
+#Hide infos button
+${if_existing /tmp/conkytoggle 1}%{A:toggleconky.sh:}- %{A}\
+#Network
+%{A:networkmenuplacer.sh && nmcli_dmenu:}\
+${if_up wlp1s0}${execi 7200 update-notifier}\
+		${if_match ${wireless_link_qual_perc wlp1s0} < 40}▁▃%{F\#ff606060}▅▇%{F\#FF99CC99}${else}\
+			${if_match ${wireless_link_qual_perc wlp1s0} <= 60}▁▃▅%{F\#ff606060}▇%{F\#FF99CC99}${else}\
+		▁▃▅▇${endif}${endif} %{F\#FF99CC99}\
+	${wireless_essid wlp1s0} ${else}\
+%{F\#ff606060} %{F\#FF99CC99}${endif}%{A}\
+#Battery
 %{A:dbright:}\
 ${if_existing /sys/class/power_supply/BAT1/present 1}\
 	${if_match "${acpiacadapter}" == "off-line"}\
@@ -32,13 +41,39 @@ ${if_existing /sys/class/power_supply/BAT1/present 1}\
 	$endif\
 $endif\
 %{A} \
-${if_existing /tmp/conkytoggle 1}%{A:toggleconky.sh:} - %{A}\
 %{A2:smartsplit && terminal -e ranger:}%{A:smartsplit && terminal -e htop:} ${memperc}% %{A}%{A}\
 ##Cpu usage
  $cpu% \
 ##Temperature
  $alignr${hwmon temp 1}°C \
-${else}%{A:toggleconky.sh:} + %{A}\
+${else}%{A:toggleconky.sh:}+ %{A}\
+#Network
+%{A:networkmenuplacer.sh && nmcli_dmenu:}\
+${if_up wlp1s0}${execi 7200 update-notifier}\
+		${if_match ${wireless_link_qual_perc wlp1s0} < 40}▁▃%{F\#ff606060}▅▇%{F\#FF99CC99}${else}\
+			${if_match ${wireless_link_qual_perc wlp1s0} <= 60}▁▃▅%{F\#ff606060}▇%{F\#FF99CC99}${else}\
+		▁▃▅▇${endif}${endif} %{F\#FF99CC99}\
+	${else}\
+%{F\#ff606060} %{F\#FF99CC99}${endif}%{A}\
+#Battery
+%{A:dbright:}\
+${if_existing /sys/class/power_supply/BAT1/present 1}\
+	${if_match "${acpiacadapter}" == "off-line"}\
+		${if_match ${battery_percent BAT1} <= 100}\
+			${if_match ${battery_percent BAT1} <= 70}\
+				${if_match ${battery_percent BAT1} <= 40}\
+					 ${battery_percent BAT1}%\
+				$else \
+					 ${battery_percent BAT1}%\
+				$endif\
+			$else\
+				 ${battery_percent BAT1}%\
+			$endif\
+		$endif\
+		$else  ${battery_percent BAT1}%\
+	$endif\
+$endif\
+%{A} \
 ${endif}\
 ##Clock
  ${time %H:%M}
