@@ -106,4 +106,8 @@
 [app] (name=timeset-gui) (class=Timeset-gui)
   [Position]	{UPPERLEFT}	{35% 13%}
   [Close]	{yes}
+[app] (name=lxrandr) (class=Lxrandr)
+  [Position]	(UPPERLEFT)	{45% 9%}
+  [Close]	{yes}
+[end]
 

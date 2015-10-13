@@ -58,6 +58,8 @@
   [exec] (Adobe Flash Player) {flash-player-properties}
   [exec] (Bluetooth Manager) {blueman-manager}
   [exec] (Firewall Configuration) {gufw}
+  [exec] (Manjaro Settings Manager) {manjaro-settings-manager}
+  [exec] (Monitor Settings) {lxrandr}
   [exec] (Network Connections) {nm-connection-editor}
   [exec] (Print Settings) {system-config-printer}
   [exec] (Privilege granting) {gksu-properties}
