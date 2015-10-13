@@ -14,6 +14,7 @@ pa-applet &
 cbatticon &
 pamac-tray &
 plank &
+# sbxkb &   # keyboard layout switcher for the tray
 
 # exec is for starting Fluxbox itself, do not put an ampersand (&) after this or Fluxbox will exit immediately.
 # exec /usr/bin/fluxbox

@@ -28,6 +28,12 @@
 require "$ENV{HOME}/.config/fbmenugen/config.pl";
 
 our $SCHEMA = [
+{item =>	['sudo calamares',		'Install Manjaro (Calamares)','calamares']},
+{item =>	['sudo thus',			'Install Manjaro (Thus)','thus']},
+{item =>	['sudo lxterminal -e setup',	'Install Manjaro (CLI)',]},
+
+{sep => 'undef'},
+
 {item =>	['lxterminal',			'Terminal',		'terminal']},
 {item =>	['pcmanfm',			'File Manager',		'file-manager']},
 {item =>	['gksu pcmanfm',		'Root File Manager',	'root-file-manager']},
