@@ -174,7 +174,7 @@
     history = ctrl+mod4+h 
     
     # Context menu.
-    context = ctrl+alt+c
+    context = ctrl+mod1+c
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
