@@ -70,8 +70,10 @@ ttf-dejavu-sans-mono-powerline
 ttf-ionicons
 lxappearance-gtk3
 lemonpanel
+limepanel
 bspwm-scripts
 libnotify
+pmenu
 
 ##Applications
 gedit
@@ -92,7 +94,7 @@ sxiv
 sxiv-rifle
 atool
 poppler
-yaourt-gui
+#yaourt-gui
 file-roller
 xlogin
 bdf-zevv-peep
@@ -102,13 +104,13 @@ compton
 mhwd-chroot
 gnome-disk-utility
 xdg-utils
-perl-file-mimeinfo
+#perl-file-mimeinfo
 hibernator
 delayed-hibernation
-allservers
+#allservers
 i3lock
 downgrade
 
 ## AUR Access
 # base-devel
-# yaourt
+yaourt
