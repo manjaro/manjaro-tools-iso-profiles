@@ -1,5 +1,5 @@
 [com.deepin.dde.dock]
-docked-apps=['nautilus','deepin-software-center','deepin-music-player','deepin-movie','google-chrome','dde-control-center']
+docked-apps=['org.gnome.nautilus','deepin-terminal','deepin-music-player','firefox','dde-control-center']
 hide-mode='keep-showing'
 [com.deepin.dde.keybinding.system]
 launcher=['Super','/usr/bin/dde-launcher']
@@ -119,11 +119,11 @@ automount-open=false
 
 [org.gnome.desktop.background]
 show-desktop-icons=true
-picture-uri='file:///usr/share/backgrounds/grey_paper.jpg'
+picture-uri='file:///usr/share/backgrounds/default_background.jpg'
 picture-options='zoom'
 
 [org.gnome.desktop.interface]
-cursor-theme='Chameon-Per Reguar 0.5'
+cursor-theme='Chameleon-Perl-Regular-0.5'
 gtk-key-theme='Default'
 gtk-theme='Deepin'
 icon-theme='Deepin'
