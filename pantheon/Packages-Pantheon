@@ -54,8 +54,10 @@ wingpanel-indicator-ayatana-bzr
 wingpanel-indicator-datetime-bzr-manjaro
 wingpanel-indicator-network-bzr-manjaro
 wingpanel-indicator-power-bzr-manjaro
-wingpanel-indicator-session-bzr-manjaro
-wingpanel-indicator-sound-bzr-manjaro
+#wingpanel-indicator-session-bzr-manjaro -- not available in stable or unstable branch
+wingpanel-indicator-session-bzr
+#wingpanel-indicator-sound-bzr-manjaro -- not available in stable or unstable branch
+wingpanel-indicator-sound-bzr
 wingpanel-indicator-launcher-bzr-manjaro
 #pantheon-session-bzr
 pantheon-default-settings-bzr
