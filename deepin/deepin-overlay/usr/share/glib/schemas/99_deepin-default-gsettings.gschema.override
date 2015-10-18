@@ -119,7 +119,7 @@ automount-open=false
 
 [org.gnome.desktop.background]
 show-desktop-icons=true
-picture-uri='file:///usr/share/backgrounds/default_background.jpg'
+picture-uri='file:///usr/share/backgrounds/grey_paper.jpg'
 picture-options='zoom'
 
 [org.gnome.desktop.interface]
