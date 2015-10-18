@@ -1,0 +1,6 @@
+[User]
+XSession=deepin
+SystemAccount=false
+Icon=/usr/share/icons/round.png
+Background=file:///usr/share/backgrounds/default_background.jpg
+HistoryIcons=/usr/share/icons/round.png

@@ -107,7 +107,6 @@
   [Position]	{UPPERLEFT}	{35% 13%}
   [Close]	{yes}
 [app] (name=lxrandr) (class=Lxrandr)
-  [Position]	(UPPERLEFT)	{45% 9%}
+  [Position]	(UPPERLEFT)	{41% 10%}
   [Close]	{yes}
 [end]
-

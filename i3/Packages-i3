@@ -18,6 +18,7 @@ gufw # firewall
 >openrc ufw-openrc
 hexchat
 htop
+i3config
 i3exit
 i3-wm
 i3status-manjaro
@@ -42,6 +43,7 @@ xfce4-power-manager
 xorg-xkill
 
 ## Applications
+arandr
 clipit
 gksu
 gnome-vfs
@@ -58,6 +60,7 @@ mhwd-chroot
 mousepad
 nitrogen
 palemoon-bin
+perl-file-mimeinfo
 pcmanfm
 pinta
 qpdfview

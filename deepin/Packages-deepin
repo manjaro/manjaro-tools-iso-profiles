@@ -39,6 +39,7 @@ lightdm-deepin-greeter
 #lightdm-gtk-greeter
 #lightdm-gtk-greeter-settings
 manjaro-settings-manager
+manjaro-welcome
 >openrc timeset-gui
 plymouth-theme-manjaro-extra-elegant
 
@@ -54,6 +55,7 @@ deepin-screenshot
 ## deepin-social-sharing
 deepin-terminal
 # deepin-vte
+xarchiver
 
 firefox
 gnome-vfs
@@ -61,7 +63,6 @@ gparted
 gpicview
 gvfs # trash support and mounting volumes
 gvfs-afc
-gvfs-afp
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb

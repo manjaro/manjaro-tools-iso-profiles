@@ -9,6 +9,7 @@ compton
 dmenu-manjaro
 fbmenugen
 fluxbox
+fluxconfig
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gufw # firewall
@@ -16,7 +17,7 @@ gufw # firewall
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
-lxrandr
+# lxrandr
 manjaro-settings-manager
 oblogout-manjaro
 plank
@@ -28,6 +29,7 @@ xorg-xkill
 
 ## Applications
 abiword
+arandr
 claws-mail
 clipit
 downgrade
@@ -56,6 +58,7 @@ nitrogen
 p7zip
 palemoon-bin
 pcmanfm
+perl-file-mimeinfo
 pinta
 qpdfview
 sbxkb
