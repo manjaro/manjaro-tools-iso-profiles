@@ -3,8 +3,7 @@ Name=Installer Calamares
 GenericName=Live Installer
 Comment=Install the operating system to disk
 Exec=/usr/bin/calamares
-Icon=/usr/share/thus/data/images/manjaro/manjaro-icon.png
+Icon=/usr/share/icons/calamares.png
 Terminal=False
 Type=Application
 Categories=System;
-
