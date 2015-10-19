@@ -140,22 +140,22 @@ super + shift + {Left,Down,Up,Right}
 
 #resize windows
 super + ctrl + {d,a}
-	$HOME/scripts/bspwm_resize.sh {-p,-n} -x -s 20
+	bspwm_resize.sh {-p,-n} -x -s 20
 
 super + ctrl + {s,w}
-    $HOME/scripts/bspwm_resize.sh {-p,-n} -y -s 20
+    bspwm_resize.sh {-p,-n} -y -s 20
 
 super + ctrl + {l,h}
-	$HOME/scripts/bspwm_resize.sh {-p,-n} -x -s 20
+	bspwm_resize.sh {-p,-n} -x -s 20
 
 super + ctrl + {j,k}
-    $HOME/scripts/bspwm_resize.sh {-p,-n} -y -s 20
+    bspwm_resize.sh {-p,-n} -y -s 20
 
 super + ctrl + {Right,Left}
-	$HOME/scripts/bspwm_resize.sh {-p,-n} -x -s 20
+	bspwm_resize.sh {-p,-n} -x -s 20
 
 super + ctrl + {Down,Up}
-    $HOME/scripts/bspwm_resize.sh {-p,-n} -y -s 20
+    bspwm_resize.sh {-p,-n} -y -s 20
 
 #
 # Layout manipulation/desktop level controls
