@@ -13,12 +13,13 @@ xrdb merge .Xresources &
 ##adjust ~/scripts/MouseLaunch to use xfdesktops app menu.
 #nitrogen --restore &
 sh ~/.fehbg &
+rootmenu &
 #xfdesktop -D &
 ##compositing. Required for shadows, transparency and stuff. 
 ##Reduces flicker. Disabling saves resources.
 #compton -b &
-##hides mouse when you are not using it
-run_once unclutter &
+##hides mouse when you are not using it. When mouse is hidden, rootmenu considers mouse on desktop, so actions can be triggered.
+#run_once unclutter &
 ##enable local fonts in .fonts directory
 xset +fp /usr/share/fonts/local &
 xset +fp /usr/share/fonts/misc &

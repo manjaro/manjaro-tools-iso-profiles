@@ -74,6 +74,8 @@ limepanel
 bspwm-scripts
 libnotify
 pmenu
+pacli
+rootmenu
 
 ##Applications
 gedit
