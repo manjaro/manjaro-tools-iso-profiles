@@ -25,13 +25,18 @@
 		<item label="Background">
 			<action name="Execute">
 				<execute>nitrogen /usr/share/backgrounds</execute>
-				</action>
-			</item>
-			<item label="Screenshot">
+			</action>
+		</item>
+		<item label="Screenshot">
 			<action name="Execute">
 				<execute>gnome-screenshot</execute>
-				</action>
-			</item>
+			</action>
+		</item>
+		<item id="Editor"
+			<action name="Execute">
+				<execute>sakura -e vim</execute>
+			</action>
+		</item>
 		<separator/>
 		<menu id="Accessories" label="Accessories">
 			<item label="Application Finder">
