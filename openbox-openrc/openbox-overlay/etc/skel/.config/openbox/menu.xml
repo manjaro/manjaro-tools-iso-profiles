@@ -18,7 +18,7 @@
 		</item>
 		<item label="Browser">
 			<action name="Execute">
-				<execute>midori</execute>
+				<execute>palemoon</execute>
 			</action>
 		</item>
 		<menu id="client-list-menu"/>
@@ -110,9 +110,9 @@
 					<execute>/usr/bin/bvnc</execute>
 				</action>
 			</item>
-			<item label="Midori Browser">
+			<item label="Palemoon Browser">
 				<action name="Execute">
-					<execute>midori</execute>
+					<execute>palemoon</execute>
 				</action>
 			</item>
 			<item label="xChat IRC">
