@@ -8,5 +8,7 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 EOF
 chattr +i /etc/resolv.conf
+pacman-mirrors -c United_States
+pacman -Syy
 rm -f /etc/systemd/system/multi-user.target.wants/myinit.service
 rm -f $0

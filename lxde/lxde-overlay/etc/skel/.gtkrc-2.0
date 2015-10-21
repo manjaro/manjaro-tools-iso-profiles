@@ -3,7 +3,7 @@
 
 include "/home/manjaro/.gtkrc-2.0.mine"
 gtk-theme-name="AmbianceGraphite"
-gtk-icon-theme-name="LateAfternoon"
+gtk-icon-theme-name="Plataro"
 gtk-font-name="Sans 12"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=18
