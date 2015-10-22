@@ -81,16 +81,24 @@ our $CONFIG = {
                              icon_dirs_last          => undef,
                              icon_dirs_second        => undef,
                              keep_unknown_categories => 1,
-                             skip_entry              => undef,
-                             skip_filename_re        => qr/^(?:xfce4-about|compton|pcmanfm|oblogout|plank|gnome-terminal)\b/,
+                             skip_entry              => [
+							{key => 'Name', re => qr/(?:Install|Oblogout|Wallpaper Changer|Manage Printing|Notifications|Bluetooth Adapters|File Manager|Customize Look and Feel|Preferred Applications)/i},
+							{key => 'Exec', re => qr/^clipit|lightdm-gtk-greeter-settings/},
+							],
+                             skip_filename_re        => qr/^(?:xfce4-about|compton|manjaro-settings-manager-gtk|pcmanfm|oblogout|plank|gnome-terminal|fb-restore-menu)\b/,
                              skip_svg_icons          => 1,
                              strict_icon_dirs        => undef,
-                             substitutions           => undef,
+                             substitutions           => [
+							{key => 'Name', re => qr/Time Settings/, value => 'Time & Date'},
+							],
                              terminalization_format  => "%s -e '%s'",
                              terminalize             => 1,
                              unknown_category_key    => "other",
+
+
+
                            },
-  "menu_title"          => "Menu",
+  "menu_title"          => "Fluxbox Menu",
   "missing_icon"        => "gtk-missing-image",
   "name_keys"           => ["Name"],
   "terminal"            => "lxterminal",

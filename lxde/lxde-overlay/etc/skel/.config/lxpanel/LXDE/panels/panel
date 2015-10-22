@@ -10,14 +10,14 @@ Global {
     height=35
     transparent=1
     tintcolor=#13351e
-    alpha=133
+    alpha=50
     autohide=0
     heightwhenhidden=2
     setdocktype=1
     setpartialstrut=1
     usefontcolor=1
     fontsize=12
-    fontcolor=#11ec17
+    fontcolor=#8ab6d9
     usefontsize=1
     background=0
     backgroundfile=/usr/share/lxpanel/images/background.png
@@ -49,16 +49,6 @@ Plugin {
             image=gnome-logout
             command=logout
         }
-    }
-}
-
-Plugin {
-    type = wincmd
-    Config {
-        image=window-manager
-        Button1=iconify
-        Button2=shade
-        Toggle=0
     }
 }
 

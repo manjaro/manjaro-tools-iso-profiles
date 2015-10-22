@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Deepin Terminal
+Exec=deepin-terminal
+Icon=/usr/share/icons/Deepin/apps/48/deepin-terminal.png
+Type=Application
+Terminal=false
+StartupNotify=false

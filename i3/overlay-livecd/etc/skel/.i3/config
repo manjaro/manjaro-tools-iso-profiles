@@ -27,7 +27,7 @@ font pango:Cantarell 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -242,6 +242,8 @@ bindsym $mod+9 exec --no-startup-id blurlock
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	status_command i3status
+#	position top
+#	position top
 #	wheel_up_cmd nop
 #	wheel_down_cmd nop
 	font pango:Cantarell,Icons 9

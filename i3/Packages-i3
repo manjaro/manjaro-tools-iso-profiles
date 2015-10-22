@@ -18,6 +18,7 @@ gufw # firewall
 >openrc ufw-openrc
 hexchat
 htop
+i3config
 i3exit
 i3-wm
 i3status-manjaro
@@ -39,8 +40,10 @@ vi
 xarchiver-gtk2
 xautolock
 xfce4-power-manager
+xorg-xkill
 
 ## Applications
+arandr
 clipit
 gksu
 gnome-vfs
@@ -48,7 +51,6 @@ gparted
 gpicview
 gvfs # trash support and mounting volumes
 gvfs-afc
-gvfs-afp
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
@@ -58,6 +60,7 @@ mhwd-chroot
 mousepad
 nitrogen
 palemoon-bin
+perl-file-mimeinfo
 pcmanfm
 pinta
 qpdfview
@@ -87,6 +90,7 @@ networkmanager-vpnc
 ## Artwork
 i3-theme-dark
 i3-theme-dust
+i3-wallpapers
 maia-icon-theme
 xcursor-chameleon-pearl
 xfce-theme-greenbird

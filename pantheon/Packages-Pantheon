@@ -43,20 +43,19 @@ gtk-theme-elementary-bzr
 
 ##Pantheon Shell
 plank-bzr
-mutter-pantheon-manjaro
-gala-bzr-manjaro
+gala-bzr
 #pantheon-default-settings
-pantheon-session-bzr-manjaro
-slingshot-launcher-bzr-manjaro
-wingpanel-bzr-manjaro
-wingpanel-indicator-notifications-bzr-manjaro
+pantheon-session-bzr
+slingshot-launcher-bzr
+wingpanel-bzr
+wingpanel-indicator-notifications-bzr
 wingpanel-indicator-ayatana-bzr
-wingpanel-indicator-datetime-bzr-manjaro
-wingpanel-indicator-network-bzr-manjaro
-wingpanel-indicator-power-bzr-manjaro
-wingpanel-indicator-session-bzr-manjaro
-wingpanel-indicator-sound-bzr-manjaro
-wingpanel-indicator-launcher-bzr-manjaro
+wingpanel-indicator-datetime-bzr
+wingpanel-indicator-network-bzr
+wingpanel-indicator-power-bzr
+wingpanel-indicator-session-bzr
+wingpanel-indicator-sound-bzr
+wingpanel-indicator-launcher-bzr
 #pantheon-session-bzr
 pantheon-default-settings-bzr
 
@@ -183,4 +182,3 @@ make
 patch
 subversion
 yaourt
-

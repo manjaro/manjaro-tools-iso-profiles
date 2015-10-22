@@ -9,6 +9,7 @@ compton
 dmenu-manjaro
 fbmenugen
 fluxbox
+fluxconfig
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gufw # firewall
@@ -16,6 +17,7 @@ gufw # firewall
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
+# lxrandr
 manjaro-settings-manager
 oblogout-manjaro
 plank
@@ -23,9 +25,11 @@ polkit-gnome
 screenfetch
 >openrc timeset-gui
 xfce4-notifyd
+xorg-xkill
 
 ## Applications
 abiword
+arandr
 claws-mail
 clipit
 downgrade
@@ -40,7 +44,6 @@ gpicview
 gnumeric
 gvfs # trash support and mounting volumes
 gvfs-afc
-gvfs-afp
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
@@ -55,6 +58,7 @@ nitrogen
 p7zip
 palemoon-bin
 pcmanfm
+perl-file-mimeinfo
 pinta
 qpdfview
 sbxkb
@@ -87,12 +91,13 @@ networkmanager-vpnc
 ## Artwork
 cantarell-fonts
 fluxbox-theme-manjaro
+fluxbox-wallpapers
 menda-themes-dark
 numix-reborn-suite
 plymouth-theme-manjaro-circle
 xcursor-chameleon-pearl
 xcursor-menda
-# xfce-theme-greenbird
+xfce-theme-greenbird
 
 ## Audio Packages
 gst-libav

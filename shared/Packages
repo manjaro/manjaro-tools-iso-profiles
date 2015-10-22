@@ -53,6 +53,7 @@ sed
 shadow
 sysfsutils
 >openrc eudev-systemdcompat
+>openrc netifrc
 >systemd systemd-sysvcompat
 tar
 texinfo

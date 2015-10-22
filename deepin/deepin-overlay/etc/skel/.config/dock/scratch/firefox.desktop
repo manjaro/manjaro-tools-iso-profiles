@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Firefox
+Exec=firefox %u
+Icon=/usr/share/icons/hicolor/48x48/apps/firefox.png
+Type=Application
+Terminal=false
+StartupNotify=false
