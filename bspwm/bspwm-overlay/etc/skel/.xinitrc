@@ -27,7 +27,7 @@ DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMEN
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export GUI_EDITOR=gedit
 export EDITOR=nano
-
+export TERMINAL_CMD=terminal
 if [ -x /usr/bin/xdg-user-dirs-update ]; then
 
    /usr/bin/xdg-user-dirs-update
