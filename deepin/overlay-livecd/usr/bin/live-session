@@ -4,10 +4,12 @@ xdg=$(xdg-user-dir DESKTOP)
 src='/usr/share/applications'
 
 if [[ -f /usr/bin/thus ]];then
+	cp $src/thus.desktop $xdg/thus.desktop
 	chmod a+x $xdg/thus.desktop
 fi
 
 if [[ -f /usr/bin/calamares ]];then
+	cp $src/calamares.desktop $xdg/calamares.desktop
 	chmod a+x $xdg/calamares.desktop
 fi
 

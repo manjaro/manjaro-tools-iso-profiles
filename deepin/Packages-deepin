@@ -1,63 +1,47 @@
+
 ######################################################
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## group deepin
-deepin
-#dde-account-faces
-#dde-api
-#dde-control-center
-#dde-daemon
-#dde-dock-applets
-#dde-go-dbus-factory
-#dde-qml-dbus-factory
-#dde-workspace
-#deepin-artwork
-#deepin-artwork-themes
-#deepin-compiz
-#deepin-cursor-theme
-#deepin-default-gsettings # replace?
-#deepin-gtk-theme
-#deepin-icon-theme
-#deepin-menu
-#deepin-notifications
-#deepin-qml-widgets
-## grub-theme-deepin
-#libdeepin-webkit
-#lightdm
-#lightdm-deepin-greeter
-#python2-deepin-gsettings
-#python2-deepin-ui
-#python2-deepin-utils
-#startdde
+## group deepi
+dde-account-faces #
+dde-api #
+dde-control-center #
+dde-daemon #
+dde-dock-applets #
+dde-go-dbus-factory #
+dde-qml-dbus-factory #
+dde-workspace #
+deepin-artwork #
+deepin-artwork-themes #
+deepin-compiz #
+deepin-cursor-theme #
+# deepin-default-gsettings #
+deepin-gtk-theme #
+deepin-icon-theme #
+deepin-menu
+deepin-notifications #
+deepin-social-sharing
+# grub-theme-deepin #
+libdeepin-webkit #
+lightdm-deepin-greeter #
+python2-deepin-ui
+python2-deepin-utils
+startdde #
+
+## group deepin-extra (arch)
+deepin-game
+deepin-movie
+deepin-music
+deepin-screenshot
+deepin-terminal
 
 ## other deepin Packages
 accountsservice
+deepin-manjaro-gsettings
 downgrade
-gksu
-lightdm-deepin-greeter
-#lightdm-gtk-greeter
-#lightdm-gtk-greeter-settings
-manjaro-settings-manager
-manjaro-welcome
->openrc timeset-gui
-plymouth-theme-manjaro-extra-elegant
-
-## Applications
-
-## deepin-extra
-#deepin-extra
-## deepin-game-center
-#deepin-movie
-deepin-music
-# deepin-pygtk
-deepin-screenshot
-## deepin-social-sharing
-deepin-terminal
-# deepin-vte
-xarchiver
-
 firefox
+gksu
 gnome-vfs
 gparted
 gpicview
@@ -67,10 +51,15 @@ gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 libimobiledevice
-# manjaro-welcome
+lightdm
+#lightdm-gtk-greeter
+#lightdm-gtk-greeter-settings
+manjaro-settings-manager
+manjaro-welcome
 mousepad
 nautilus
-# palemoon-bin
+>openrc timeset-gui
+plymouth-theme-manjaro-extra-elegant
 screenfetch
 xarchiver
 
@@ -78,19 +67,19 @@ xarchiver
 networkmanager
 
 ## Artwork
-awoken-icon-theme
+cantarell-fonts
 deepin-wallpapers
 ttf-inconsolata
 xcursor-chameleon-pearl
-xfce-theme-greenbird
 
 ## Package management
-# pamac
-octopi
-octopi-notifier-qt4
-octopi-pacmanhelper
+pamac
+# octopi
+# octopi-notifier-qt4
+# octopi-pacmanhelper
 
 ## Printing
+manjaro-printer
 
 ## AUR Access
 autoconf
