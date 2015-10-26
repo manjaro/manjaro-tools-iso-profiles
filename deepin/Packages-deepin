@@ -3,20 +3,17 @@
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## group deepi
+## group deepin
 dde-account-faces #
-dde-api #
-dde-control-center #
-dde-daemon #
+# dde-daemon #
 dde-dock-applets #
-dde-go-dbus-factory #
-dde-qml-dbus-factory #
+# dde-go-dbus-factory #
+# dde-qml-dbus-factory #
 dde-workspace #
 deepin-artwork #
-deepin-artwork-themes #
+# deepin-artwork-themes #
 deepin-compiz #
-deepin-cursor-theme #
-# deepin-default-gsettings #
+## deepin-default-gsettings #
 deepin-gtk-theme #
 deepin-icon-theme #
 deepin-menu
@@ -24,7 +21,6 @@ deepin-notifications #
 deepin-social-sharing
 # grub-theme-deepin #
 libdeepin-webkit #
-lightdm-deepin-greeter #
 python2-deepin-ui
 python2-deepin-utils
 startdde #
@@ -36,8 +32,15 @@ deepin-music
 deepin-screenshot
 deepin-terminal
 
+## group deepin-dev
+# dde-api #
+# deepin-dbus-generator
+
 ## other deepin Packages
 accountsservice
+dde-control-center #
+deepin-icon-theme-pack
+deepin-manjaro-artwork-theme
 deepin-manjaro-gsettings
 downgrade
 firefox
@@ -52,6 +55,7 @@ gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 libimobiledevice
 lightdm
+lightdm-deepin-greeter #
 #lightdm-gtk-greeter
 #lightdm-gtk-greeter-settings
 manjaro-settings-manager
@@ -68,9 +72,11 @@ networkmanager
 
 ## Artwork
 cantarell-fonts
+# deepin-cursor-theme #
 deepin-wallpapers
+gtk-engine-murrine
 ttf-inconsolata
-xcursor-chameleon-pearl
+xcursor-chameleon-pearl-deepin
 
 ## Package management
 pamac
