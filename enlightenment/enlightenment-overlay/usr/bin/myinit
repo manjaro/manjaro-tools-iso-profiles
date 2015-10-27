@@ -1,0 +1,14 @@
+#!/bin/bash
+nbthreads=$(cat /proc/cpuinfo | grep processor | wc -l)
+sed -i "/MAKEFLAGS=/s/.*/MAKEFLAGS=\"-j$nbthreads\"/" /etc/makepkg.conf
+while ! grep -q resolvconf /etc/resolv.conf; do sleep 1; done
+cat > /etc/resolv.conf <<EOF
+# USE chattr -i to unlock this file
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+EOF
+chattr +i /etc/resolv.conf
+pacman-mirrors -c United_States
+pacman -Syy
+rm -f /etc/systemd/system/multi-user.target.wants/myinit.service
+rm -f $0
