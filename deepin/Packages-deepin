@@ -6,12 +6,10 @@
 ## group deepin
 dde-account-faces #
 # dde-daemon #
-dde-dock-applets #
-# dde-go-dbus-factory #
-# dde-qml-dbus-factory #
+## dde-dock-applets #
 dde-workspace #
 deepin-artwork #
-# deepin-artwork-themes #
+## deepin-artwork-themes #
 deepin-compiz #
 ## deepin-default-gsettings #
 deepin-gtk-theme #
@@ -19,7 +17,7 @@ deepin-icon-theme #
 deepin-menu
 deepin-notifications #
 deepin-social-sharing
-# grub-theme-deepin #
+## grub-theme-deepin #
 libdeepin-webkit #
 python2-deepin-ui
 python2-deepin-utils
@@ -38,7 +36,9 @@ deepin-terminal
 
 ## other deepin Packages
 accountsservice
-dde-control-center #
+## dde-control-center #
+deepin-manjaro-control-center
+deepin-manjaro-dock-applets
 downgrade
 evince
 firefox
@@ -52,6 +52,7 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
+# isousb
 libimobiledevice
 # libreoffice-still
 lightdm
