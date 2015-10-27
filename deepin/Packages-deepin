@@ -39,21 +39,21 @@ deepin-terminal
 ## other deepin Packages
 accountsservice
 dde-control-center #
-deepin-icon-theme-pack
-deepin-manjaro-artwork-theme
-deepin-manjaro-gsettings
 downgrade
+evince
 firefox
+galculator
 gksu
 gnome-vfs
 gparted
-gpicview
+gthumb
 gvfs # trash support and mounting volumes
 gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 libimobiledevice
+# libreoffice-still
 lightdm
 lightdm-deepin-greeter #
 #lightdm-gtk-greeter
@@ -63,29 +63,66 @@ manjaro-welcome
 mousepad
 nautilus
 >openrc timeset-gui
+pidgin
 plymouth-theme-manjaro-extra-elegant
 screenfetch
+# thunderbird
 xarchiver
+# xfburn
 
 ## Network
+netctl
 networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
 
 ## Artwork
 cantarell-fonts
 # deepin-cursor-theme #
+deepin-icontheme-pack
+deepin-manjaro-artwork-theme
+deepin-manjaro-gsettings
 deepin-wallpapers
 gtk-engine-murrine
 ttf-inconsolata
 xcursor-chameleon-pearl-deepin
 
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+# flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
 ## Package management
 pamac
+polkit-gnome
 # octopi
 # octopi-notifier-qt4
 # octopi-pacmanhelper
 
+## Games
+# steam-manjaro
+
+## Java
+# jre8-openjdk
+# jre8-openjdk-headless
+# icedtea-web
+
 ## Printing
-manjaro-printer
+# manjaro-printer
+# simple-scan
 
 ## AUR Access
 autoconf
