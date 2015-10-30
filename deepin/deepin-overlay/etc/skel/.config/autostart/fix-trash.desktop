@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=fix-trash
+Comment=create trash folders if not present
+Exec=/usr/bin/fix-trash
+StartupNotify=false
+Terminal=false
+Hidden=false

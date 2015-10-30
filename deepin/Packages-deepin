@@ -5,23 +5,15 @@
 
 ## group deepin
 dde-account-faces #
-# dde-daemon #
-## dde-dock-applets #
-dde-workspace #
 deepin-artwork #
-## deepin-artwork-themes #
 deepin-compiz #
-## deepin-default-gsettings #
 deepin-gtk-theme #
 deepin-icon-theme #
 deepin-menu
 deepin-notifications #
 deepin-social-sharing
-## grub-theme-deepin #
-libdeepin-webkit #
 python2-deepin-ui
 python2-deepin-utils
-startdde #
 
 ## group deepin-extra (arch)
 deepin-game
@@ -30,19 +22,19 @@ deepin-music
 deepin-screenshot
 deepin-terminal
 
-## group deepin-dev
-# dde-api #
-# deepin-dbus-generator
-
 ## other deepin Packages
 accountsservice
-## dde-control-center #
+dde-daemon
 deepin-manjaro-control-center
 deepin-manjaro-dock-applets
+deepin-manjaro-workspace
+deepin-nautilus-properties
+deepin-trash
 downgrade
 evince
 firefox
 galculator
+# gimp
 gksu
 gnome-vfs
 gparted
@@ -52,24 +44,23 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
-# isousb
+isousb
+libdeepin-webkit
 libimobiledevice
 # libreoffice-still
-lightdm
-lightdm-deepin-greeter #
-#lightdm-gtk-greeter
-#lightdm-gtk-greeter-settings
+lightdm-deepin-greeter-manjaro
 manjaro-settings-manager
 manjaro-welcome
 mousepad
 nautilus
 >openrc timeset-gui
 pidgin
-plymouth-theme-manjaro-extra-elegant
+plymouth-theme-manjaro-deepin
 screenfetch
+startdde-manjaro
 # thunderbird
 xarchiver
-# xfburn
+xfburn
 
 ## Network
 netctl
@@ -78,15 +69,9 @@ networkmanager-dispatcher-ntpd
 openresolv
 
 ## Artwork
-cantarell-fonts
-# deepin-cursor-theme #
-deepin-icontheme-pack
 deepin-manjaro-artwork-theme
 deepin-manjaro-gsettings
-deepin-wallpapers
 gtk-engine-murrine
-ttf-inconsolata
-xcursor-chameleon-pearl-deepin
 
 ## Packages for Sound and Audio
 gst-libav
@@ -98,7 +83,7 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-# flashplugin
+flashplugin
 libdvdcss
 manjaro-alsa
 manjaro-pulse
@@ -109,21 +94,19 @@ pulseaudio-zeroconf
 ## Package management
 pamac
 polkit-gnome
-# octopi
-# octopi-notifier-qt4
-# octopi-pacmanhelper
 
 ## Games
 # steam-manjaro
 
 ## Java
-# jre8-openjdk
-# jre8-openjdk-headless
-# icedtea-web
+jre8-openjdk
+jre8-openjdk-headless
+icedtea-web
 
-## Printing
+## Printing / Scanning
 # manjaro-printer
-# simple-scan
+# xsane
+# xsane-gimp
 
 ## AUR Access
 autoconf
@@ -134,7 +117,7 @@ fakeroot
 flex
 gcc
 >multilib gcc-multilib
-git
+# git
 libconfig
 libtool
 m4
