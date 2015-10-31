@@ -50,8 +50,8 @@ gufw
 
 
 ##Bspwm packages
-bspwm-git ##Git version from AUR adds leaf_monocle functionality
-sxhkd-git ##Git version from AUR is needed for clickpasser scripts to work
+bspwm-manjaro
+sxhkd ##Git version from AUR is needed for clickpasser scripts to work
 feh
 numlockx
 unclutter
@@ -63,7 +63,7 @@ lm_sensors
 wmctrl
 xdotool
 wmutils
-xwinfo
+#xwinfo
 conky-cli
 lemonbar-xft-clicky
 ttf-dejavu-sans-mono-powerline
@@ -112,6 +112,7 @@ delayed-hibernation
 #allservers
 i3lock
 downgrade
+mhwd-tui
 
 ## AUR Access
 # base-devel

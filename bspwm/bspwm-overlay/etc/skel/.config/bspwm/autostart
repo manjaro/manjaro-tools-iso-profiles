@@ -1,7 +1,7 @@
 ##run_once is a script in /usr/bin that prevents running script if it is running already
 ##enable pulseaudio
-pulseaudio &
-sleep 2s && volume_status.sh &
+pulseaudio --start &
+#sleep 2s && volume 37 &
 ##Load appearance settings
 xsetroot -cursor_name left_ptr &
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" &

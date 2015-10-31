@@ -28,6 +28,7 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export GUI_EDITOR=gedit
 export EDITOR=nano
 export TERMINAL_CMD=terminal
+export BROWSER=midori
 if [ -x /usr/bin/xdg-user-dirs-update ]; then
 
    /usr/bin/xdg-user-dirs-update

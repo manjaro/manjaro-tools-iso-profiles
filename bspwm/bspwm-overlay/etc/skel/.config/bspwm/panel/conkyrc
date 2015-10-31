@@ -24,7 +24,7 @@ ${if_up wlp1s0}${execi 7200 update-notifier}\
 	${wireless_essid wlp1s0} ${else}\
 %{F\#ff606060} %{F\#FF99CC99}${endif}${endif}%{A}\
 #Battery
-%{A:dbright:} \
+%{A:dbright:}\
 ${if_existing /sys/class/power_supply/BAT1/present 1}\
 	${if_match "${acpiacadapter}" == "off-line"}\
 		${if_match ${battery_percent BAT1} <= 100}\
@@ -58,7 +58,7 @@ ${if_up wlp1s0}${execi 7200 update-notifier}\
 	${else}\
 %{F\#ff606060} %{F\#FF99CC99}${endif}${endif}%{A}\
 #Battery
-%{A:dbright:} \
+%{A:dbright:}\
 ${if_existing /sys/class/power_supply/BAT1/present 1}\
 	${if_match "${acpiacadapter}" == "off-line"}\
 		${if_match ${battery_percent BAT1} <= 100}\
