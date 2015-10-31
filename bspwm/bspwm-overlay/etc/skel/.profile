@@ -9,10 +9,8 @@ export PANEL_FIFO="/tmp/panel-fifo"
 export PATH
 export XDG_CONFIG_HOME="$HOME/.config"
 export BSPWM_SOCKET="/tmp/bspwm-socket"
-export PANEL_HEIGHT=30
-PANEL_FONT_FAMILY="*DejaVu-Sans-Mono for Powerline*"
+export PANEL_HEIGHT=25
 export XDG_CONFIG_DIRS=/usr/etc/xdg:/etc/xdg
-export PANEL_FIFO PANEL_HEIGHT PANEL_FONT_FAMILY
 
 # Load profiles from /etc/profile.d
 if test -d /etc/profile.d/; then

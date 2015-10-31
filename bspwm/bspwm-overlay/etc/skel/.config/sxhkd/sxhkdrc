@@ -6,9 +6,7 @@ super + shift + q
 	
 # Toggle panels
 super + shift + space
-#	{pkill xfce4-panel; bspc config top_padding 0 ,\
-#	bspc config top_padding 30; xfce4-panel -d & }
-	{pkill lemonpanel; pkill lemonbar; pkill cat; pkill stalonetray; bspc config top_padding -15 ,\
+	{pkill lemonpanel; pkill lemonbar; pkill cat; pkill stalonetray; bspc config top_padding $((-$gap)) ,\
 	bspc config top_padding $(($PANEL_HEIGHT-$gap)); lemonpanel & }
 
 # Show keybindings
@@ -90,14 +88,21 @@ super + Return
         bspc window -w last.manual.local; \
     fi 
 
-# go (Shift=move) to desktop 
+# go (Shift=move) to desktop (and focus the monitor that the desktop is located on. Bspwm style)
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,window -d} ^{1-9,10}
-## Alternative: bring desktop to current monitor and hten focus it
-#super + shift + {1-9,0}
-#     summondesktop.sh {1-9,10}
+
+## Alternative: bring nth desktop to current monitor and then focus it (Xmonad style)
 #super + {1-9,0}
-#    bspc desktop -f ^{1-9,10} 
+#     summondesktop.sh {1-9,10}
+#super + shift + {1-9,0}
+#    bspc window -d ^{1-9,10}
+ 
+## Another alternative: focus nth desktop of currently focused monitor (i3 style)
+#super + {1-9}
+#  focusdesktopofthismonitor ^{1-9}
+#super + shift + {1-9,0}
+#    movetodesktopofthismonitor ^{1-9}
 
 # Select previous / next desktop
 super + {m,n}
@@ -113,71 +118,44 @@ super + Tab
 	
 #Focus windows by direction, works with multihead
 super +  {a,s,w,d}
-    bspc config pointer_follows_monitor true; \
-    bspc config pointer_follows_focus true; \
-    dir={left,down,up,right}; \
-        if ! bspc window -f $dir; then \
-    bspc monitor -f $dir; \
-    fi; \
-    bspc config pointer_follows_monitor false; \
-    bspc config pointer_follows_focus false
+    focusmover {left,down,up,right}
 
 super +  {h,j,k,l}
-    bspc config pointer_follows_monitor true; \
-    bspc config pointer_follows_focus true; \
-    dir={left,down,up,right}; \
-        if ! bspc window -f $dir; then \
-    bspc monitor -f $dir; \
-    fi; \
-    bspc config pointer_follows_monitor false; \
-    bspc config pointer_follows_focus false
+    focusmover {left,down,up,right}
 
 super +  {Left,Down,Up,Right}
-    bspc config pointer_follows_monitor true; \
-    bspc config pointer_follows_focus true; \
-    dir={left,down,up,right}; \
-        if ! bspc window -f $dir; then \
-    bspc monitor -f $dir; \
-    fi; \
-    bspc config pointer_follows_monitor false; \
-    bspc config pointer_follows_focus false
+    focusmover {left,down,up,right}
         	
 # Move tiled windows. Moving a tiled window to 
 # preselected one moves into preselection instead. 
 # Moving out of the screen should move the window to next monitor if possible
 super + shift + {a,s,w,d}
-	bspc config pointer_follows_focus true; \
-	swapOrMoveIn.sh {left,down,up,right} || bspc window -m $dir && bspc monitor -f {left,down,up,right}; \
-	bspc config pointer_follows_focus false
+	windowgrabber {left,down,up,right}
 
 super + shift + {h,j,k,l}
-	bspc config pointer_follows_focus true; \
-	swapOrMoveIn.sh {left,down,up,right} || bspc window -m $dir && bspc monitor -f {left,down,up,right}; \
-	bspc config pointer_follows_focus false
+	windowgrabber {left,down,up,right}
 	
 super + shift + {Left,Down,Up,Right}
-	bspc config pointer_follows_focus true; \
-	swapOrMoveIn.sh {left,down,up,right} || bspc window -m $dir && bspc monitor -f {left,down,up,right}; \
-	bspc config pointer_follows_focus false
+	windowgrabber {left,down,up,right}
 
 #resize windows
 super + ctrl + {d,a}
-	$HOME/scripts/bspwm_resize.sh {-p,-n} -x -s 20
+	bspwm_resize.sh {-p,-n} -x -s 20
 
 super + ctrl + {s,w}
-    $HOME/scripts/bspwm_resize.sh {-p,-n} -y -s 20
+    bspwm_resize.sh {-p,-n} -y -s 20
 
 super + ctrl + {l,h}
-	$HOME/scripts/bspwm_resize.sh {-p,-n} -x -s 20
+	bspwm_resize.sh {-p,-n} -x -s 20
 
 super + ctrl + {j,k}
-    $HOME/scripts/bspwm_resize.sh {-p,-n} -y -s 20
+    bspwm_resize.sh {-p,-n} -y -s 20
 
 super + ctrl + {Right,Left}
-	$HOME/scripts/bspwm_resize.sh {-p,-n} -x -s 20
+	bspwm_resize.sh {-p,-n} -x -s 20
 
 super + ctrl + {Down,Up}
-    $HOME/scripts/bspwm_resize.sh {-p,-n} -y -s 20
+    bspwm_resize.sh {-p,-n} -y -s 20
 
 #
 # Layout manipulation/desktop level controls

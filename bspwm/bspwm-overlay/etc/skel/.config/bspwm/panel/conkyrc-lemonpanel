@@ -1,3 +1,4 @@
+
 #out_to_x no
 background no
 out_to_console          yes
@@ -7,10 +8,10 @@ short_units         yes
 pad_percents         2
 times_in_seconds true
 if_up_strictness address
-update_interval 2.0
 
 TEXT
 
+${exec sleep 1}
 C\
 #Hide infos button
 ${if_existing /tmp/conkytoggle 1}%{A:toggleconky.sh:}- %{A}\
@@ -18,9 +19,7 @@ ${if_existing /tmp/conkytoggle 1}%{A:toggleconky.sh:}- %{A}\
 %{A:networkmenuplacer.sh && nmcli_dmenu:}\
 ${if_up enp2s0} ${else}\
 ${if_up wlp1s0}${execi 7200 update-notifier}\
-		${if_match ${wireless_link_qual_perc wlp1s0} < 40}▁▃%{F\#ff606060}▅▇%{F\#FF99CC99}${else}\
-			${if_match ${wireless_link_qual_perc wlp1s0} <= 80}▁▃▅%{F\#ff606060}▇%{F\#FF99CC99}${else}\
-		▁▃▅▇${endif}${endif} %{F\#FF99CC99}\
+	 \
 	${wireless_essid wlp1s0} ${else}\
 %{F\#ff606060} %{F\#FF99CC99}${endif}${endif}%{A}\
 #Battery
@@ -52,9 +51,7 @@ ${else}%{A:toggleconky.sh:}+ %{A}\
 %{A:networkmenuplacer.sh && nmcli_dmenu:}\
 ${if_up enp2s0} ${else}\
 ${if_up wlp1s0}${execi 7200 update-notifier}\
-		${if_match ${wireless_link_qual_perc wlp1s0} < 40}▁▃%{F\#ff606060}▅▇%{F\#FF99CC99}${else}\
-			${if_match ${wireless_link_qual_perc wlp1s0} <= 80}▁▃▅%{F\#ff606060}▇%{F\#FF99CC99}${else}\
-		▁▃▅▇${endif}${endif} %{F\#FF99CC99}\
+		 \
 	${else}\
 %{F\#ff606060} %{F\#FF99CC99}${endif}${endif}%{A}\
 #Battery
