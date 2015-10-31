@@ -106,7 +106,7 @@ compton
 mhwd-chroot
 gnome-disk-utility
 xdg-utils
-#perl-file-mimeinfo
+perl-file-mimeinfo
 hibernator
 delayed-hibernation
 #allservers
