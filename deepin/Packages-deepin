@@ -3,31 +3,17 @@
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## group deepi
+## group deepin
 dde-account-faces #
-dde-api #
-dde-control-center #
-dde-daemon #
-dde-dock-applets #
-dde-go-dbus-factory #
-dde-qml-dbus-factory #
-dde-workspace #
 deepin-artwork #
-deepin-artwork-themes #
 deepin-compiz #
-deepin-cursor-theme #
-# deepin-default-gsettings #
 deepin-gtk-theme #
 deepin-icon-theme #
 deepin-menu
 deepin-notifications #
 deepin-social-sharing
-# grub-theme-deepin #
-libdeepin-webkit #
-lightdm-deepin-greeter #
 python2-deepin-ui
 python2-deepin-utils
-startdde #
 
 ## group deepin-extra (arch)
 deepin-game
@@ -38,48 +24,89 @@ deepin-terminal
 
 ## other deepin Packages
 accountsservice
-deepin-manjaro-gsettings
+dde-daemon
+deepin-manjaro-control-center
+deepin-manjaro-dock-applets
+deepin-manjaro-workspace
+deepin-nautilus-properties
+deepin-trash
 downgrade
+evince
 firefox
+galculator
+# gimp
 gksu
 gnome-vfs
 gparted
-gpicview
+gthumb
 gvfs # trash support and mounting volumes
 gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
+isousb
+libdeepin-webkit
 libimobiledevice
-lightdm
-#lightdm-gtk-greeter
-#lightdm-gtk-greeter-settings
+# libreoffice-still
+lightdm-deepin-greeter-manjaro
 manjaro-settings-manager
 manjaro-welcome
 mousepad
 nautilus
 >openrc timeset-gui
-plymouth-theme-manjaro-extra-elegant
+pidgin
+plymouth-theme-manjaro-deepin
 screenfetch
+startdde-manjaro
+# thunderbird
 xarchiver
+xfburn
 
 ## Network
+netctl
 networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
 
 ## Artwork
-cantarell-fonts
-deepin-wallpapers
-ttf-inconsolata
-xcursor-chameleon-pearl
+deepin-manjaro-artwork-theme
+deepin-manjaro-gsettings
+gtk-engine-murrine
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
 
 ## Package management
 pamac
-# octopi
-# octopi-notifier-qt4
-# octopi-pacmanhelper
+polkit-gnome
 
-## Printing
-manjaro-printer
+## Games
+# steam-manjaro
+
+## Java
+jre8-openjdk
+jre8-openjdk-headless
+icedtea-web
+
+## Printing / Scanning
+# manjaro-printer
+# xsane
+# xsane-gimp
 
 ## AUR Access
 autoconf
@@ -90,7 +117,7 @@ fakeroot
 flex
 gcc
 >multilib gcc-multilib
-git
+# git
 libconfig
 libtool
 m4

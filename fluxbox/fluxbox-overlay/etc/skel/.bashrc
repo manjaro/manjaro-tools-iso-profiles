@@ -31,10 +31,10 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
 alias fixit='sudo rm -f /var/lib/pacman/db.lck'
 alias update='yaourt -Syua'
-alias con='nano ~/.i3/config'
 alias comp='nano .config/compton.conf'
 alias inst='sudo pacman -S'
 alias mirrors='sudo pacman-mirrors -g'
+alias db='sudo pacman -Syy'
 alias printer='system-config-printer'
 
 # ex - archive extractor
