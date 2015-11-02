@@ -16,7 +16,7 @@ python2-deepin-ui
 python2-deepin-utils
 
 ## group deepin-extra (arch)
-deepin-game
+# deepin-game
 deepin-movie
 deepin-music
 deepin-screenshot
@@ -24,6 +24,7 @@ deepin-terminal
 
 ## other deepin Packages
 accountsservice
+dconf-editor
 dde-daemon
 deepin-manjaro-control-center
 deepin-manjaro-dock-applets
@@ -34,7 +35,7 @@ downgrade
 evince
 firefox
 galculator
-# gimp
+gimp
 gksu
 gnome-vfs
 gparted
@@ -47,7 +48,7 @@ gvfs-smb
 isousb
 libdeepin-webkit
 libimobiledevice
-# libreoffice-still
+libreoffice-still
 lightdm-deepin-greeter-manjaro
 manjaro-settings-manager
 manjaro-welcome
@@ -58,7 +59,7 @@ pidgin
 plymouth-theme-manjaro-deepin
 screenfetch
 startdde-manjaro
-# thunderbird
+thunderbird
 xarchiver
 xfburn
 
@@ -104,9 +105,9 @@ jre8-openjdk-headless
 icedtea-web
 
 ## Printing / Scanning
-# manjaro-printer
-# xsane
-# xsane-gimp
+manjaro-printer
+xsane
+xsane-gimp
 
 ## AUR Access
 autoconf
@@ -117,7 +118,7 @@ fakeroot
 flex
 gcc
 >multilib gcc-multilib
-# git
+git
 libconfig
 libtool
 m4
