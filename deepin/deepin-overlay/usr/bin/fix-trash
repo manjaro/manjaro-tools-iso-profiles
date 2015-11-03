@@ -1,0 +1,10 @@
+#!/bin/sh
+
+userid=$(id -u $USER)
+
+if [ ! -d "/.Trash-$userid" ]; then
+  sudo mkdir -p /.Trash-$userid/{expunged,files,info}
+  sudo chown -R $userid /.Trash-1000
+fi
+
+exit 0

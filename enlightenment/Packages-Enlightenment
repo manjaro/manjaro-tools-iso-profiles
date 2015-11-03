@@ -8,8 +8,11 @@ plymouth-theme-manjaro-elegant
 
 ## Enlightenment Main Packages
 enlightenment
-connman
-econnman
+#connman
+#econnman
+networkmanager
+network-manager-applet
+openresolv
 ofono
 gksu
 manjaro-settings-manager
@@ -18,7 +21,8 @@ lxmenu-data
 #mdm-themes
 entrance-git-manjaro
 polkit
-lxpolkit
+#lxpolkit			DANGER !!!!
+gnome-keyring
 pamac
 manjaro-welcome
 enlightenment-manjaro-themes
@@ -32,24 +36,29 @@ zenity
 
 
 ## Applications
+sddm
 terminology
 #ristretto
 ephoto-git
 #mousepad
 ecrire-git
 equate-git
+freetype2-infinality-ultimate
+fontconfig-infinality-ultimate
 gparted
-vlc
+#vlc
+mpv-git
 evince
 firefox
 file-roller
+vi
 
 ## From what i see, everyone installs some FM other than E's default, so:
 udisks2
 udisks
 gvfs
 gvfs-afc
-gvfs-afp
+#gvfs-afp
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
@@ -97,7 +106,7 @@ libdvdcss
 flashplugin
 
 ## Printing
-manjaro-printer
+#manjaro-printer
 
 ## Office
 #libreoffice-still

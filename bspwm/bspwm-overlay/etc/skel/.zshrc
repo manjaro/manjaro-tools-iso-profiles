@@ -121,7 +121,7 @@ cleanse() {
         sudo bleachbit -c --preset
 }
 
-PROMPT="┌─[%T]-[%n@%M:%4~]%(!.#.$) 
+PROMPT="┌─[%n@%M]-[%4~]%(!.#.$) 
 └─>>  "
 RPROMPT="%(?.%{$fg[green]%}✓ %{$reset_color%}.%{$fg[red]%}✗ %{$reset_color%})"
 

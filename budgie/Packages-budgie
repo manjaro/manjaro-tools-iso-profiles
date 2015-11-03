@@ -36,6 +36,7 @@ git
 isousb
 brasero
 p7zip
+ibus
 
 ## Main Packages
 plank
@@ -55,7 +56,7 @@ gimp
 gksu
 gparted
 gvfs-afc
-gvfs-afp
+#gvfs-afp
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
