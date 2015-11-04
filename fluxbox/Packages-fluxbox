@@ -9,7 +9,6 @@ compton
 dmenu-manjaro
 fbmenugen
 fluxbox
-fluxconfig
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
 gufw # firewall
@@ -17,7 +16,6 @@ gufw # firewall
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
-# lxrandr
 manjaro-settings-manager
 oblogout-manjaro
 plank
@@ -49,6 +47,7 @@ gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 hexchat
 htop
+isousb
 libgpod # iPhone/Pod connectivity
 lxmusic
 lxterminal

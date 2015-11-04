@@ -18,9 +18,8 @@ gufw # firewall
 >openrc ufw-openrc
 hexchat
 htop
-i3config
 i3exit
-i3-wm
+i3-gaps
 i3status-manjaro
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
@@ -41,6 +40,7 @@ xarchiver-gtk2
 xautolock
 xfce4-power-manager
 xorg-xkill
+xorg-xprop
 
 ## Applications
 arandr
@@ -54,6 +54,7 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
+isousb
 libgpod # iPhone/Pod connectivity
 manjaro-welcome
 mhwd-chroot
