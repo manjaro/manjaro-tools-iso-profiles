@@ -6,6 +6,8 @@
 >systemd sddm
 >openrc sddm-consolekit
 sddm-kcm
+>openrc networkmanager-openrc
+>openrc syslog-ng-openrc
 
 ## Plasma5
 bluedevil
@@ -38,10 +40,11 @@ qpdfview
 qupzilla
 kwrite
 octopi
-partitionmanager
+#partitionmanager # conflicts with calamares-dev
+gparted
 #manjaro-settings-manager
 kcm-msm
-manjaro-welcome
+manjaro-welcome-dev
 >multilib manjaro-alsa
 
 ## Themes

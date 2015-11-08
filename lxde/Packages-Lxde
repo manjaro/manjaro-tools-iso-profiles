@@ -8,10 +8,12 @@ manjaro-documentation
 gtk-engine-murrine	# only to avoid a warning
 
 ## LXDE Main Packages
+#lateafternoon-icons
 #faenza-green-icon-theme
-gnome-icon-theme
+plataro-icons
+gnome-icon-theme-stub
 #shadow-icon-theme
-vibrantly-green
+#vibrantly-green
 gamin
 gksu
 gnome-keyring
@@ -32,16 +34,17 @@ lxdm
 lxinput
 lxlauncher
 lxmenu-data
-lxmusic
 lxpanel
 lxrandr
 lxsession
 lxtask
 lxterminal
+obconf
 openbox
 pcmanfm
 ########
 manjaro-settings-manager
+ambiance-graphite
 mediterraneanlxqt
 network-manager-applet
 #python2-xdg
@@ -58,24 +61,26 @@ openresolv
 
 ## Applications
 #catfish
+#clementine-lxqt
 #evince
 file-roller
+#firefox
 #fwbuilder
 galculator
 #gedit
+gimp-light
 gparted
 hexchat
-isousb
 #lxmed
 #midori-bzr
 mlocate
 mousepad
-mpv
 openssh
 packsize
 palemoon-bin
 qpdfview
-#smplayer
+qisousb
+scrot
 #simple-scan
 synapse
 sylpheed
@@ -111,19 +116,15 @@ lm_sensors
 xsensors
 
 ## Packages for Sound and Audio
-gst-libav
-gst-plugins-bad
-gst-plugins-good
-gst-plugins-ugly
-gstreamer0.10-bad-plugins
-gstreamer0.10-good-plugins
-gstreamer0.10-ugly-plugins
 flashplugin
 libdvdcss
-manjaro-alsa
+lxmusic
 manjaro-pulse
-pavucontrol
+mpv-git
+pavucontrol-gtk2
 pa-applet
+qmmp
+smplayer-mpv
 
 ## Office
 #libreoffice-still
@@ -137,7 +138,7 @@ abiword-3.x-gtk2
 autoconf
 automake
 binutils
-bison
+#bison
 fakeroot
 flex
 gcc

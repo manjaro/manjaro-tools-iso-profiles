@@ -25,9 +25,6 @@ android-tools
 android-udev
 mtpfs
 
-## Graphical Installer
-thus
-
 ## Network Management
 netctl
 networkmanager
@@ -140,11 +137,6 @@ manjaro-settings-manager
 openssh
 #viewnior
 udisks2
-
-## Turbulence live system configurer
-turbulence
-turbulence-artwork
-
 
 ## Greeter
 manjaro-welcome

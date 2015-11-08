@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+file=$HOME/scrot$(date +%H%M%S).jpg
+[ "$1" = "-s" ] && sleep 0.3
+scrot $file $* && gpicview $file
+rm $file

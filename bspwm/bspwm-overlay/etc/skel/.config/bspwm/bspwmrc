@@ -4,10 +4,10 @@ gap=15
 PANEL_HEIGHT=25
 export gap
 export PANEL_HEIGHT
-FONT_FAMILY='Peep :size=12 :style=regular'
-FONT_FAMILY2='dejavu sans mono for Powerline :size=17 :style=regular'
-FONT_FAMILY3="-*-ionicons-medium-r-normal-*-25-*-*-*-p-*-*-1"
-export FONT_FAMILY FONT_FAMILY2 FONT_FAMILY3
+#FONT_FAMILY='-zevv-*-*-*-*-*-20-*-*-*-*-*-*-*'
+#FONT_FAMILY2='dejavu sans mono for Powerline :size=17 :style=regular'
+#FONT_FAMILY3="-*-ionicons-medium-r-normal-*-25-*-*-*-p-*-*-1"
+#export FONT_FAMILY FONT_FAMILY2 FONT_FAMILY3
 
 #This creates negative padding equal to window gap so that gaps are shown only between windows and not on desktop edges.
 #Leaves padding for top panel on first monitor only.
@@ -107,5 +107,5 @@ bspc config external_rules_command ~/.config/bspwm/pseudo_automatic_mode
 ##Autostart apps
 #Deybindings daemon
 sxhkd &
-#Source autostartfile
-. $HOME/.config/bspwm/autostart
+#Source autostartfile. Uncomment this if you use bspwm-git
+#. $HOME/.config/bspwm/autostart

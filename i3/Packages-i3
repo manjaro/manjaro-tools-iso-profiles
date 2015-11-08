@@ -19,13 +19,13 @@ gufw # firewall
 hexchat
 htop
 i3exit
-i3-wm
+i3-gaps
 i3status-manjaro
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
-# pkgcacheclean
+p7zip
 polkit-gnome
 screenfetch
 scrot
@@ -39,8 +39,11 @@ vi
 xarchiver-gtk2
 xautolock
 xfce4-power-manager
+xorg-xkill
+xorg-xprop
 
 ## Applications
+arandr
 clipit
 gksu
 gnome-vfs
@@ -48,16 +51,17 @@ gparted
 gpicview
 gvfs # trash support and mounting volumes
 gvfs-afc
-gvfs-afp
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
+isousb
 libgpod # iPhone/Pod connectivity
 manjaro-welcome
 mhwd-chroot
 mousepad
 nitrogen
 palemoon-bin
+perl-file-mimeinfo
 pcmanfm
 pinta
 qpdfview
@@ -87,7 +91,7 @@ networkmanager-vpnc
 ## Artwork
 i3-theme-dark
 i3-theme-dust
-# manjaro-artwork
+i3-wallpapers
 maia-icon-theme
 xcursor-chameleon-pearl
 xfce-theme-greenbird
@@ -109,9 +113,6 @@ manjaro-alsa
 volumeicon
 
 ## Package management
-# octopi
-# octopi-notifier-qt4
-# octopi-pacmanhelper
 pamac
 
 ## Printing

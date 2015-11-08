@@ -53,6 +53,7 @@ sed
 shadow
 sysfsutils
 >openrc eudev-systemdcompat
+>openrc netifrc
 >systemd systemd-sysvcompat
 tar
 texinfo
@@ -133,6 +134,8 @@ wireless_tools
 >openrc wpa_supplicant-openrc
 >systemd wpa_supplicant
 zd1211-firmware
+>openrc perl-mail-sendmail
+
 
 ## Power management
 >openrc acpid-openrc

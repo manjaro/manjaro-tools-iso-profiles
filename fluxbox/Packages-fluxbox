@@ -6,6 +6,8 @@
 accountsservice
 cbatticon
 compton
+dmenu-manjaro
+fbmenugen
 fluxbox
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
@@ -16,14 +18,16 @@ lightdm-gtk-greeter-settings
 lxappearance
 manjaro-settings-manager
 oblogout-manjaro
+plank
 polkit-gnome
 screenfetch
 >openrc timeset-gui
-wbar
 xfce4-notifyd
+xorg-xkill
 
 ## Applications
 abiword
+arandr
 claws-mail
 clipit
 downgrade
@@ -38,24 +42,27 @@ gpicview
 gnumeric
 gvfs # trash support and mounting volumes
 gvfs-afc
-gvfs-afp
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 hexchat
 htop
+isousb
 libgpod # iPhone/Pod connectivity
 lxmusic
 lxterminal
 manjaro-welcome
 mousepad
 nitrogen
+p7zip
 palemoon-bin
 pcmanfm
+perl-file-mimeinfo
 pinta
 qpdfview
 sbxkb
 scrot
+simple-scan
 tree
 vi
 vlc
@@ -81,15 +88,15 @@ networkmanager-vpnc
 >systemd syslog-ng
 
 ## Artwork
-# awoken-icon-theme
 cantarell-fonts
 fluxbox-theme-manjaro
-# menda-circle-icon-theme
+fluxbox-wallpapers
 menda-themes-dark
 numix-reborn-suite
+plymouth-theme-manjaro-circle
 xcursor-chameleon-pearl
 xcursor-menda
-# xfce-theme-greenbird
+xfce-theme-greenbird
 
 ## Audio Packages
 gst-libav

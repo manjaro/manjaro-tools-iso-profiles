@@ -1,0 +1,137 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## Basic packages
+dconf
+desktop-file-utils
+tmpwatch		# cleaning /tmp
+ps_mem			# memory usage
+
+## Previously in Packages
+gptfdisk
+parted
+tcpdump
+manjaro-tools-base
+manjaro-documentation
+vi
+
+## Audio Packages
+>openrc alsa-utils-openrc
+>systemd alsa-utils
+alsa-plugins
+
+## Network and bluetooth
+#openresolv-openrc	# AUR
+networkmanager-consolekit
+networkmanager-openrc
+network-manager-applet
+networkmanager-openvpn
+openvpn-openrc		# with networkmanager-openvpn
+bluez-openrc		# bluetooth
+blueman
+
+## Openbox
+openbox
+obconf
+obmenu
+obmenu-generator
+tint2
+lxrandr
+compton
+nitrogen
+conky
+lxappearance
+volumeicon
+orage			# for calender
+python2-xdg		# for autostart of applications in /etc/xdg/autostart
+
+## Xfce
+xfce4-panel
+xfce4-session
+xfce4-terminal
+xfdesktop
+xfwm4
+xfce4-appfinder
+xfce4-settings
+xfce4-notifyd
+xfce4-screenshooter
+xfce4-taskmanager
+xfce4-power-manager
+xfce4-whiskermenu-plugin
+xfce4-clipman-plugin
+xfce4-xkb-plugin
+xfce4-mixer
+
+## Base packages
+tlp-pmu			# TLP
+light-locker-consolekit	# light-locker
+
+## Basic Apps
+lightdm
+lightdm-gtk-greeter
+qpdfview
+xarchiver
+thunar			# file manager
+firefox			# web browser
+mousepad		# text editor
+viewnior		# image viewer
+gparted
+galculator
+
+## More Apps
+gconf			# qt-theme fix
+gnome-keyring		# wlan segfault fix, networkmanager
+gvfs			# to fix trash in thunar
+udisks2			# removable disk management
+manjaro-settings-manager
+pamac
+gksu			# required for octopi
+thunar-archive-plugin
+htop
+tumbler			# for thumbnails
+catfish			# for thunar search
+downgrade
+menulibre
+mugshot
+hexchat
+timeset-gui		# MSM time module does not work with OpenRC
+parole
+mpg123			# for parole
+gst-libav		# for parole, h.264 video in firefox
+gcolor2
+gst-plugins-base	# useful with firefox, parole
+gst-plugins-good	# for parole, h.264 video in firefox
+xfburn
+thunar-volman		# for usb auto-mounting
+gvfs-mtp		# for mounting smartphones
+dconf-editor		# for viewing dconf settings (light-locker, mousepad, etc)
+
+## Services
+cups-openrc
+openssh-openrc
+syslog-ng-openrc
+json-c			# for syslog-ng
+
+## Artwork, icons
+manjaro-artwork
+menda-themes
+maia-xfce-icon-theme
+xcursor-vanilla-dmz-aa
+gnome-themes-standard	# general theme
+xfce-theme-greenbird
+numix-manjaro-themes
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+libtool
+m4
+make
+patch
+yaourt

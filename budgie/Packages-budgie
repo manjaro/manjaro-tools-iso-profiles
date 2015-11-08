@@ -1,0 +1,135 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## Budgie packages 
+
+budgie-desktop
+baobab
+dconf-editor
+hexchat
+evince
+gnome-calculator
+gnome-control-center
+gnome-disk-utility
+gnome-font-viewer
+gnome-keyring
+gnome-screenshot
+gnome-settings-daemon
+gnome-system-log
+gnome-system-monitor
+gnome-terminal
+grilo-plugins
+gucharmap
+mousetweaks
+mutter
+nautilus
+file-roller
+sushi
+smplayer
+tracker
+vino
+xdg-user-dirs-gtk
+yelp
+gedit
+git
+isousb
+brasero
+p7zip
+ibus
+
+## Main Packages
+plank
+plank-config
+gnome-tweak-tool
+gufw # firewall
+manjaro-settings-manager
+lightdm-gtk-greeter   
+lightdm-gtk-greeter-settings
+numlockx
+network-manager-applet 
+
+## Applications
+firefox
+thunderbird
+gimp
+gksu
+gparted
+gvfs-afc
+#gvfs-afp
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+manjaro-welcome
+open-fuse-iso
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+blueman
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+
+## Artwork
+manjaro-artwork
+plymouth-theme-manjaro-extra-elegant
+adwaita-icon-theme
+evopop-icon-theme
+evopop-gtk-theme
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+## Package management
+pamac
+polkit-gnome 
+lxsession
+
+## Games
+#steam-manjaro
+
+## Java
+jre8-openjdk
+jre8-openjdk-headless
+icedtea-web
+
+## Printing
+manjaro-printer
+
+## Office
+libreoffice-still
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+>multilib gcc-multilib
+libtool
+m4
+make
+patch
+subversion
+yaourt
