@@ -1,10 +1,1 @@
->openrc manjaro-livecd-openrc
->systemd manjaro-livecd-systemd
-manjaro-livecd-cli-installer
-# manjaro-tools-base		# recovery chroot tools
-
-calamares			# new GUI installer of manjaro
-# calamares-dev			# new GUI installer of manjaro - kpmcore
-# thus
-# thus-dev
-# gparted
+../shared/Packages-Livecd-Xorg

@@ -44,7 +44,7 @@ octopi
 gparted
 #manjaro-settings-manager
 kcm-msm
-#manjaro-welcome
+manjaro-welcome-dev
 >multilib manjaro-alsa
 
 ## Themes
