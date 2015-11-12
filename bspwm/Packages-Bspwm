@@ -30,18 +30,14 @@ desktop-file-utils
 #alsa-utils
 #alsa-plugins
 manjaro-pulse
-#pavucontrol
+pavucontrol
 pulseaudio-ctl
 
 ## Artwork
-# manjaro-artwork
-## Base Packages
-# gtk2
 xcursor-breeze
 menda-circle-icon-theme
 
 ## Network
-#netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
@@ -63,7 +59,6 @@ lm_sensors
 wmctrl
 xdotool
 wmutils
-#xwinfo
 conky-cli
 lemonbar-xft-clicky
 ttf-dejavu-sans-mono-powerline
@@ -96,7 +91,6 @@ sxiv
 sxiv-rifle
 atool
 poppler
-#yaourt-gui
 file-roller
 xlogin
 bdf-zevv-peep
@@ -109,7 +103,6 @@ xdg-utils
 perl-file-mimeinfo
 hibernator
 delayed-hibernation
-#allservers
 i3lock
 downgrade
 mhwd-tui
