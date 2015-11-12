@@ -22,7 +22,7 @@ vi
 alsa-plugins
 
 ## Network and bluetooth
-openresolv-openrc
+#openresolv-openrc	# AUR
 networkmanager-consolekit
 networkmanager-openrc
 network-manager-applet
@@ -44,6 +44,7 @@ conky
 lxappearance
 volumeicon
 orage			# for calender
+python2-xdg		# for autostart of applications in /etc/xdg/autostart
 
 ## Xfce
 xfce4-panel
@@ -64,6 +65,7 @@ xfce4-mixer
 
 ## Base packages
 tlp-pmu			# TLP
+light-locker-consolekit	# light-locker
 
 ## Basic Apps
 lightdm
@@ -103,6 +105,7 @@ gst-plugins-good	# for parole, h.264 video in firefox
 xfburn
 thunar-volman		# for usb auto-mounting
 gvfs-mtp		# for mounting smartphones
+dconf-editor		# for viewing dconf settings (light-locker, mousepad, etc)
 
 ## Services
 cups-openrc

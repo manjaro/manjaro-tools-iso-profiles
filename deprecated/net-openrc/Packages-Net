@@ -26,7 +26,7 @@ networkmanager-consolekit
 networkmanager-openrc
 networkmanager-openvpn
 openvpn-openrc		# with networkmanager-openvpn
-openresolv-openrc
+#openresolv-openrc	# AUR
 
 ## Base Packages
 gtk2
