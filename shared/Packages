@@ -13,6 +13,8 @@ coreutils
 >systemd dhcpcd
 diffutils
 e2fsprogs
+exfat-utils
+f2fs-tools
 file
 filesystem
 findutils
