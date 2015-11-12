@@ -203,7 +203,7 @@ super + @button{1-3}
 # Needed to focus windows by clicking, if you wish to disable 
 # focus_follows_mouse behavior (required to use menu of xfdesktop, whiskermenu or click java apps)
 ~button1
-	bspc pointer -g focus
+	bspc pointer -g focus && xdo raise $(pfw)
 ## Alternative that allows clicking otherwise problematic stuff
 #button1
 #	bspc pointer -g focus &&clickpasser 1
