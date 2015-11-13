@@ -98,6 +98,10 @@ bspc rule -a tint2 border=off manage=off
 ##windows on the desktop. Using it disables negative window gap.
 #autogap &
 
+##Edge-switcher switches to next workspace when moves moves to the 
+##edge of the monitor (behavior similar to enlightenment)
+#edge-switcher &
+
 ###External rules
 ##Pseudo automatic mode: always splits focused window when opening new window
 bspc config external_rules_command /usr/bin/pseudo_automatic_mode
