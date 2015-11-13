@@ -30,6 +30,10 @@ super + {_,shift +} t
 # Force all windows of the desktop to tile
 super + ctrl + t
 	bspcp tile
+# Force all windows of the desktop to float and arrange them
+super + ctrl + shift + t
+	bspcp float
+	
 # Toggle fullscreen
 super + shift + f 
 	bspc window -t fullscreen	
