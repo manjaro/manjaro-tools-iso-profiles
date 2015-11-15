@@ -5,15 +5,19 @@
 
 ## group deepin
 dde-account-faces #
+# dde-control-center #
+# dde-dock-applets #
+# dde-workspace
 deepin-artwork #
 deepin-compiz #
-deepin-gtk-theme #
-deepin-icon-theme #
+# deepin-gtk-theme #
+# deepin-icon-theme #
 deepin-menu
 deepin-notifications #
 deepin-social-sharing
 python2-deepin-ui
 python2-deepin-utils
+# startdde
 
 ## group deepin-extra (arch)
 # deepin-game
@@ -26,11 +30,7 @@ deepin-terminal
 accountsservice
 dconf-editor
 dde-daemon
-deepin-manjaro-control-center
-deepin-manjaro-dock-applets
-deepin-manjaro-workspace
-deepin-nautilus-properties
-deepin-trash
+# deepin-trash
 downgrade
 evince
 firefox
@@ -71,7 +71,10 @@ openresolv
 
 ## Artwork
 deepin-manjaro-artwork-theme
+# deepin-manjaro-control-center
+# deepin-manjaro-dock-applets
 deepin-manjaro-gsettings
+deepin-manjaro-workspace
 gtk-engine-murrine
 
 ## Packages for Sound and Audio
@@ -118,7 +121,7 @@ fakeroot
 flex
 gcc
 >multilib gcc-multilib
-git
+# git
 libconfig
 libtool
 m4
