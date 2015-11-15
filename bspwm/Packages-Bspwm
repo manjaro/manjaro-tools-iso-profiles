@@ -106,6 +106,7 @@ delayed-hibernation
 i3lock
 downgrade
 mhwd-tui
+dash
 
 ## AUR Access
 # base-devel
