@@ -42,15 +42,15 @@ super + shift + f
 
 # Try to keep size and position of the selected window
 super + o
-	bspc window -t {private,public}
+	bspc window -g {private,public}
 
 # Make window sticky
 super + i
-	bspc window -t {sticky.nonsticky}
+	bspc window -g {sticky.nonsticky}
 
 # Lock a window from closing
 super + Escape
-	bspc window -t {locked,unlocked} 
+	bspc window -g {locked,unlocked} 
 
 ### Map or unmap windows (functional equivalent of "minimize")
 super + c
