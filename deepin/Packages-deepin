@@ -67,7 +67,6 @@ deepin-manjaro-gsettings
 gtk-engine-murrine
 
 ## Packages for Sound and Audio
-flashplugin
 gst-libav
 gst-plugins-bad
 gst-plugins-base
