@@ -3,34 +3,28 @@
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## group deepin
+## deepin packages
 dde-account-faces #
-# dde-control-center #
-# dde-dock-applets #
-# dde-workspace
+dde-daemon #
 deepin-artwork #
 deepin-compiz #
-# deepin-gtk-theme #
-# deepin-icon-theme #
+deepin-manjaro-workspace
 deepin-menu
-deepin-notifications #
-deepin-social-sharing
-python2-deepin-ui
-python2-deepin-utils
-# startdde
-
-## group deepin-extra (arch)
-# deepin-game
 deepin-movie
 deepin-music
+deepin-notifications #
 deepin-screenshot
+deepin-social-sharing
 deepin-terminal
+# deepin-trash
+lightdm-deepin-greeter-manjaro
+python2-deepin-ui
+python2-deepin-utils
+startdde-manjaro
 
 ## other deepin Packages
 accountsservice
 dconf-editor
-dde-daemon
-# deepin-trash
 downgrade
 evince
 firefox
@@ -46,19 +40,17 @@ gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 isousb
-libdeepin-webkit
 libimobiledevice
 libreoffice-still
-lightdm-deepin-greeter-manjaro
 manjaro-settings-manager
-manjaro-welcome
+manjaro-welcome-dev
 mousepad
 nautilus
 >openrc timeset-gui
 pidgin
 plymouth-theme-manjaro-deepin
+polkit-gnome
 screenfetch
-startdde-manjaro
 thunderbird
 xarchiver
 xfburn
@@ -71,13 +63,11 @@ openresolv
 
 ## Artwork
 deepin-manjaro-artwork-theme
-# deepin-manjaro-control-center
-# deepin-manjaro-dock-applets
 deepin-manjaro-gsettings
-deepin-manjaro-workspace
 gtk-engine-murrine
 
 ## Packages for Sound and Audio
+flashplugin
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -87,7 +77,6 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-flashplugin
 libdvdcss
 manjaro-alsa
 manjaro-pulse
@@ -97,9 +86,9 @@ pulseaudio-zeroconf
 
 ## Package management
 pamac
-polkit-gnome
 
 ## Games
+deepin-game
 # steam-manjaro
 
 ## Java
