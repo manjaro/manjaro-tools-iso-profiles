@@ -57,37 +57,36 @@ bspc config split_ratio         0.52
 ###This creates and names desktops for multiple monitors.
 workspaces_multimonitor &
 
-bspc rule -a Screenkey --unmanage
-bspc rule -a Gcolor2 floating=true center=true
-bspc rule -a Lxappearance floating=true center=true
-bspc rule -a Gmrun floating=true center=true
-bspc rule -a Lxterminal floating=true center=true sticky=true
+bspc rule -a screenkey --unmanage
+bspc rule -a gcolor2 floating=true center=true
+bspc rule -a lxappearance floating=true center=true
+bspc rule -a gmrun floating=true center=true
+bspc rule -a lxterminal floating=true center=true sticky=true
 #bspc rule -a urxvt floating=true center=true
-bspc rule -a Viewnior floating=true center=true
-bspc rule -a Feh center=true
-bspc rule -a File-roller floating=true center=true
+bspc rule -a viewnior floating=true center=true
+bspc rule -a feh center=true
+bspc rule -a file-roller floating=true center=true
 bspc rule -a floaterm floating=true center=true
-#bspc rule -a Skype pseudo_tiled=on
-bspc rule -a Spotify pseudo_tiled=on
-#bspc rule -a "Nautilus" pseudo_tiled=on
-#bspc rule -a Skype pseudo_tiled=on
-bspc rule -a File-roller pseudo_tiled=on
-bspc rule -a Transmission-gtk pseudo_tiled=on
-bspc rule -a Conky sticky=on manage=off lower=on
+bspc rule -a spotify pseudo_tiled=on
+#bspc rule -a nautilus pseudo_tiled=on
+#bspc rule -a skype pseudo_tiled=on
+bspc rule -a file-roller pseudo_tiled=on
+bspc rule -a transmission-gtk pseudo_tiled=on
+bspc rule -a conky sticky=on manage=off lower=on
 bspc rule -a astime sticky=on
 bspc rule -a feh floating=on manage=off
 bspc rule -a yad floating=on
 bspc rule -a docky --focus
-bspc rule -a Google-chrome-unstable private=on
-bspc rule -a Google-chrome-stable private=on
-bspc rule -a Chromium private=on
-bspc rule -a Firefox private=on
-bspc rule -a Midori private=on
+bspc rule -a google-chrome-unstable private=on
+bspc rule -a google-chrome-stable private=on
+bspc rule -a chromium private=on
+bspc rule -a firefox private=on
+bspc rule -a midori private=on
 bspc rule -a gnome-pie border=off manage=off
-#bspc rule -a Firefox desktop=I
-#bspc rule -a Calibre desktop=II
-#bspc rule -a Geany desktop=II
-#bspc rule -a Deluge desktop=III
+#bspc rule -a firefox desktop=I
+#bspc rule -a calibre desktop=II
+#bspc rule -a geany desktop=II
+#bspc rule -a deluge desktop=III
 bspc rule -a 9menu border=off manage=off
 bspc rule -a tint2 border=off manage=off
 #bspc desktop I --layout monocle
@@ -97,6 +96,10 @@ bspc rule -a tint2 border=off manage=off
 ##Autogap adjusts windowgap automatically according to the number of
 ##windows on the desktop. Using it disables negative window gap.
 #autogap &
+
+##Edge-switcher switches to next workspace when moves moves to the 
+##edge of the monitor (behavior similar to enlightenment)
+#edge-switcher &
 
 ###External rules
 ##Pseudo automatic mode: always splits focused window when opening new window
