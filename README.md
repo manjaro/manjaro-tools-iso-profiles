@@ -11,6 +11,10 @@ manjaro-tools-iso-profiles
 # possible values: openrc,systemd
 # initsys="systemd"
 
+# edition type
+# accepted value: official, community, sonar, netrunner
+# edition_type="official"
+
 # use multilib packages; x86_64 only
 # multilib="true"
 
