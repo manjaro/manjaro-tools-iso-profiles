@@ -35,6 +35,7 @@ ttf-droid
 
 ## Applications
 inxi
+dmidecode # for inxi -m output
 powertop
 
 ## Sound
