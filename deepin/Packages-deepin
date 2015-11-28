@@ -4,67 +4,71 @@
 ######################################################
 
 ## deepin packages
-dde-account-faces #
-dde-daemon #
-deepin-artwork #
-deepin-compiz #
-deepin-manjaro-workspace
-deepin-menu
-deepin-movie
-deepin-music
-deepin-notifications #
-deepin-screenshot
-deepin-social-sharing
-deepin-terminal
-# deepin-trash
-lightdm-deepin-greeter-manjaro
-python2-deepin-ui
-python2-deepin-utils
-startdde-manjaro
+deepin
+deepin-extra
+#deepin-artwork-themes
+#deepin-account-faces
+#deepin-control-center # < deepin-api
+#deepin-cursor-theme
+#deepin-daemon
+#deepin-dbus-generator
+#deepin-desktop
+#deepin-desktop-schemas
+#deepin-dock
+#deepin-file-manager
+#deepin-launcher
+#deepin-movie
+#deepin-music
+deepin-nautilus-properties
+#deepin-notifications
+#deepin-screenshot
+#deepin-session-ui
+#deepin-social-sharing
+#deepin-sound-theme
+#deepin-terminal
+# deepin-wallpapers
+gtk-engine-murrine
+#python2-deepin-ui
+#python2-deepin-utils
+#startdde
 
 ## other deepin Packages
 accountsservice
 dconf-editor
 downgrade
-evince
-firefox
-galculator
-gimp
+#evince
+chromium
+#galculator
+#gimp
 gksu
 gnome-vfs
-gparted
-gthumb
+#gparted
+#gthumb
 gvfs # trash support and mounting volumes
 gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
-isousb
-libimobiledevice
-libreoffice-still
+#isousb
+#libimobiledevice
+#libreoffice-still
 manjaro-settings-manager
 manjaro-welcome-dev
 mousepad
-nautilus
 >openrc timeset-gui
-pidgin
+#pidgin
 plymouth-theme-manjaro-deepin
 polkit-gnome
 screenfetch
-thunderbird
+#thunderbird
 xarchiver
-xfburn
+#xfburn
 
 ## Network
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-
-## Artwork
-deepin-manjaro-artwork-theme
-deepin-manjaro-gsettings
-gtk-engine-murrine
 
 ## Packages for Sound and Audio
 gst-libav
@@ -96,9 +100,9 @@ jre8-openjdk-headless
 icedtea-web
 
 ## Printing / Scanning
-manjaro-printer
-xsane
-xsane-gimp
+#manjaro-printer
+#xsane
+#xsane-gimp
 
 ## AUR Access
 autoconf
@@ -109,7 +113,7 @@ fakeroot
 flex
 gcc
 >multilib gcc-multilib
-# git
+git
 libconfig
 libtool
 m4
