@@ -90,6 +90,8 @@ pidgin
 #evince
 #raktpdf
 qpdfview
+qpdfview-djvu-plugin
+qpdfview-ps-plugin
 thunderbird
 viewnior
 vlc
