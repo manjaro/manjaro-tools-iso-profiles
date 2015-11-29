@@ -1,0 +1,7 @@
+#
+# /etc/fstab: static file system information.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+#
+# Move /tmp to RAM
+tmpfs /tmp tmpfs defaults,noexec,nosuid 0 0
