@@ -32,7 +32,7 @@ lxtask
 #gnome-keyring
 
 ###DisplayManager###
-lxqt-lightdm-greeter
+lightdm-gtk-greeter
 accountsservice
 
 ###Artwork###
