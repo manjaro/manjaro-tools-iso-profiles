@@ -9,9 +9,9 @@
         <Program label="Explore Files">pcmanfm</Program>
 	<Program label="Browser">palemoon</Program>
           <Menu label="Screenshot">	
-        <Program label="Full Screen">scrot -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
         <Program label="Active Window">scrot -ue 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
         <Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Pictures in 5s' & scrot -ud 5 -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+        <Program label="Full Screen">scrot -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>        
         <Program label="Select Area">notify-send 'Selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
      </Menu>
         <Separator/>
@@ -53,8 +53,8 @@
         <Program label="Pacli Packager">xterm ~/.managers/pacli</Program>
 	<Program label="JWMconf Configure">xterm ~/.managers/jwmconf</Program>
         <Program label="Root PCManFM">gksu pcmanfm</Program>
-        <Program label="Htop Process">xterm -e 'htop'</Program>
-        <Program label="Top Analysis">xterm top</Program>
+        <Program label="Htop Process">sakura -e htop</Program>
+        <Program label="Top Analysis">sakura -e top</Program>
 	<Program label="Hard Info">hardinfo</Program>    
         <Program label="Root Sakura">gksu sakura</Program>
         <Program label="Rofi Run">rofi -show run</Program>
