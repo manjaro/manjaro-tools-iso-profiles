@@ -2,7 +2,7 @@
 
     <!-- Startup for program. -->
     <StartupCommand>nitrogen --restore</StartupCommand>
-    <StartupCommand>sleep 1s && pamac-tray &</StartupCommand>    
+    <StartupCommand>sleep 1s && pamac-tray &</StartupCommand> 
     <StartupCommand>sleep 2s && volumeicon &</StartupCommand>
     <StartupCommand>sleep 3s && nm-applet &</StartupCommand>
     <StartupCommand>sleep 5s && conky &</StartupCommand>
