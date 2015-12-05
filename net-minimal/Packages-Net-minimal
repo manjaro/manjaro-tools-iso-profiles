@@ -3,7 +3,7 @@
 ######################################################
 
 ## Basic packages
-dconf
+# dconf
 desktop-file-utils
 
 ## Packages for Sound and Audio
