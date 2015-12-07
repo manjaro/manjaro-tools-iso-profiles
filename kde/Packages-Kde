@@ -217,7 +217,6 @@ qt5-imageformats  # support for tiff, webp, and more image formats
 
 ## Optional dependency for digikam
 kipi-plugins  # more tools and plugins
-libkgeomap    # Geolocalize tool
 
 ## Applications
 cantata
@@ -226,7 +225,7 @@ firefox-kde
 flashplugin
 #manjaro-settings-manager
 kcm-msm
-manjaro-welcome
+manjaro-welcome-dev
 p7zip
 qbittorrent
 screenfetch
@@ -259,4 +258,5 @@ kmediaplayer
 kactivities-frameworks
 
 # Partition
-gparted
+#gparted
+partitionmanager-dev
