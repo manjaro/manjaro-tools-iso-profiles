@@ -11,10 +11,6 @@ manjaro-tools-iso-profiles
 # possible values: openrc,systemd
 # initsys="systemd"
 
-# edition type
-# accepted value: official, community, sonar, netrunner
-# edition_type="official"
-
 # use multilib packages; x86_64 only
 # multilib="true"
 
@@ -125,6 +121,3 @@ pacman-default.conf
 ~~~
 pacman-multilib.conf
 ~~~
-
-Please review your lists if you use a custom package list and adopt to the changes!
-Profiles that use a custom Package list have been set to use symlinks to shared.
