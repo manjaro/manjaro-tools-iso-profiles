@@ -20,16 +20,10 @@ octopi-repoeditor
 qpdfview
 compton
 kwrite
-gvfs
-gksu
 xarchiver
 network-manager-applet
 tint2
 lxtask
-#kdesu
-#kde-cli-tools
-#compton-conf
-#gnome-keyring
 
 ###DisplayManager###
 lightdm-gtk-greeter
@@ -45,7 +39,6 @@ menda-themes
 ###Openbox###
 openbox
 obmenu-generator
-#obconf-qt-git
 feh
 
 manjaro-settings-manager
