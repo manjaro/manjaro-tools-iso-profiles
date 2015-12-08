@@ -13,6 +13,9 @@ for name in official community community-minimal;do
 				target=$(readlink $f)
 				ln -sf ../$target $f
 			fi
+			if [[ ${f##*/} == profile.conf ]];then
+				sed -e "/^\# edition type/,/^edition_type/d" -i $f
+			fi
 		done
 	done
 done
