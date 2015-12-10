@@ -1,4 +1,4 @@
-# created by KDE, dl. març 9 19:45:27 2015
+# created by KDE, dj. des. 10 08:33:48 2015
 #
 # If you do not want KDE to override your GTK settings, select
 # Appearance -> Colors in the System Settings and disable the checkbox
@@ -19,17 +19,17 @@ style "default"
   base[ACTIVE] = { 0.102, 0.737, 0.612 }
   base[PRELIGHT] = { 0.102, 0.737, 0.612 }
 
-  text[NORMAL] = { 0.161, 0.184, 0.204 }
+  text[NORMAL] = { 0.094, 0.129, 0.157 }
   text[SELECTED] = { 1.000, 1.000, 1.000 }
   text[INSENSITIVE] = { 0.800, 0.800, 0.800 }
   text[ACTIVE] = { 1.000, 1.000, 1.000 }
   text[PRELIGHT] = { 1.000, 1.000, 1.000 }
 
-  fg[NORMAL] = { 0.161, 0.184, 0.204 }
+  fg[NORMAL] = { 0.094, 0.129, 0.157 }
   fg[SELECTED] = { 1.000, 1.000, 1.000 }
   fg[INSENSITIVE] = { 0.800, 0.800, 0.800 }
-  fg[ACTIVE] = { 0.161, 0.184, 0.204 }
-  fg[PRELIGHT] = { 0.161, 0.184, 0.204 }
+  fg[ACTIVE] = { 0.094, 0.129, 0.157 }
+  fg[PRELIGHT] = { 0.094, 0.129, 0.157 }
 }
 
 class "*" style "default"
@@ -38,8 +38,8 @@ style "ToolTip"
 {
   bg[NORMAL] = { 0.969, 0.969, 0.969 }
   base[NORMAL] = { 1.000, 1.000, 1.000 }
-  text[NORMAL] = { 0.161, 0.184, 0.204 }
-  fg[NORMAL] = { 0.161, 0.184, 0.204 }
+  text[NORMAL] = { 0.094, 0.129, 0.157 }
+  fg[NORMAL] = { 0.094, 0.129, 0.157 }
 }
 
 widget "gtk-tooltip" style "ToolTip"
