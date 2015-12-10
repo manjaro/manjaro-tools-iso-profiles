@@ -1,4 +1,4 @@
-button-icon=distributor-logo-manjaro
+button-icon=/usr/share/icons/whiskermenu-manjaro.svg
 launcher-show-name=true
 launcher-show-description=true
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop,exo-mail-reader.desktop,pamac-manager.desktop
