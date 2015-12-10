@@ -9,6 +9,8 @@ lxqt
 >systemd networkmanager
 >openrc syslog-ng-openrc
 >systemd syslog-ng
+>openrc upower-pm-utils
+
 
 ###apps###
 qterminal
