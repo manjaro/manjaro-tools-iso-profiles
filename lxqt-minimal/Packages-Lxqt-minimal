@@ -33,13 +33,13 @@ accountsservice
 cantarell-fonts
 xcursor-menda
 maia-icon-theme
-manjaro-artwork
-menda-themes
+gtk-theme-maia
 
 ###Openbox###
 openbox
 obmenu-generator
 feh
+openbox-themes
 
 manjaro-settings-manager
 manjaro-documentation
