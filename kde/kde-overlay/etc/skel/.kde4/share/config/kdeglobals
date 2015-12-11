@@ -132,11 +132,11 @@ Size=32
 [General]
 ColorScheme=Maia
 Name=Maia
-font=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
-menuFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
+font=Noto Sans,10,-1,5,50,0,0,0,0,0
+menuFont=Noto Sans,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Oxygen-Sans,8,-1,5,50,0,0,0,0,0
-toolBarFont=Oxygen-Sans,9,-1,5,50,0,0,0,0,0
+smallestReadableFont=Noto Sans,8,-1,5,50,0,0,0,0,0
+toolBarFont=Noto Sans,9,-1,5,50,0,0,0,0,0
 widgetStyle=breeze
 
 [Icons]

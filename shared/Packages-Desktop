@@ -57,3 +57,4 @@ nss-mdns # NSS support for mDNS (optdepend for avahi)
 >openrc displaymanager-openrc
 >openrc pm-utils
 >openrc cgmanager-openrc
+manjaro-hotfixes
