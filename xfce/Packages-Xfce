@@ -76,12 +76,11 @@ gparted
 guayadeque
 gvfs
 gvfs-afc
-gvfs-afp
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 hexchat
-manjaro-welcome
+manjaro-welcome-dev
 #midori
 mlocate
 mousepad
@@ -107,6 +106,8 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 blueman
+samba
+thunar-shares-plugin-manjaro
 
 ## Artwork
 menda-circle-icon-theme

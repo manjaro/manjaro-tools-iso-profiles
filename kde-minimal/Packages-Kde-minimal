@@ -41,17 +41,31 @@ qupzilla
 kwrite
 octopi
 #partitionmanager # conflicts with calamares-dev
-gparted
+partitionmanager-dev
+#gparted
 #manjaro-settings-manager
 kcm-msm
 manjaro-welcome-dev
 >multilib manjaro-alsa
 
+## Fonts
+noto-fonts  # default font
+#noto-fonts-cjk  # big package, ~76 mb compressed
+noto-fonts-emoji
+ttf-oxygen  # used for monospaced
+cantarell-fonts
+
 ## Themes
 plasma5-themes-maia
+gnome-icon-theme
 sddm-maia-theme
 >systemd plymouth-theme-manjaro-elegant
-ttf-oxygen
 
 ## GTK Themes
+breeze-gtk
 gnome-themes-standard # Adwaita theme
+gtk-theme-maia
+
+## Support for KDE4 applications theming
+breeze-kde4
+oxygen-kde4

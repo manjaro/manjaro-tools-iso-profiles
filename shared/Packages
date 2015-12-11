@@ -36,7 +36,6 @@ logrotate
 >systemd lvm2
 man-db
 man-pages
-manjaro-hotfixes
 manjaro-system
 >openrc mdadm-openrc
 >systemd mdadm
