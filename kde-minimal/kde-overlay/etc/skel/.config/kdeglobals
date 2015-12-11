@@ -1,6 +1,6 @@
 [General]
 shadeSortColumn=true
-BrowserApplication=firefox
+BrowserApplication=qupzilla
 
 [KDE]
 ChangeCursor=true
