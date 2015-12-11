@@ -39,10 +39,10 @@ immutability=1
 plugin=org.kde.plasma.icon
 
 [Containments][1][Applets][19][Configuration][General]
-applicationName=Firefox
+applicationName=Qupzilla
 genericName=Web Browser
-iconName=firefox
-url=file:///usr/share/applications/firefox.desktop
+iconName=qupzilla
+url=file:///usr/share/applications/qupzilla.desktop
 
 [Containments][1][Applets][2]
 immutability=1
