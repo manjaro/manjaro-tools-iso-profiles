@@ -8,7 +8,6 @@ deepin-account-faces
 deepin-artwork-themes-manjaro
 deepin-control-center
 deepin-daemon
-deepin-dbus-generator
 deepin-desktop
 deepin-desktop-schemas-manjaro
 deepin-dock
@@ -28,6 +27,7 @@ dconf-editor
 downgrade
 evince
 chromium
+deepin-trash
 galculator
 gimp
 gksu
