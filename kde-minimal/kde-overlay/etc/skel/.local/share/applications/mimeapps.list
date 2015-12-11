@@ -1,5 +1,5 @@
 [Added Associations]
-application/pdf=okular.desktop;
+application/pdf=qpdfview.desktop;
 application/x-zerosize=org.kde.kate.desktop;
 text/html=qupzilla.desktop;
 text/plain=org.kde.kate.desktop;
@@ -7,7 +7,7 @@ inode/directory=org.kde.dolphin.desktop;
 application/x-shellscript=org.kde.kate.desktop;
 
 [Default Applications]
-application/pdf=okular.desktop;
+application/pdf=qpdfview.desktop;
 application/x-zerosize=org.kde.kate.desktop;
 text/html=qupzilla.desktop;
 text/plain=org.kde.kate.desktop;
