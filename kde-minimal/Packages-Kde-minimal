@@ -40,7 +40,6 @@ qpdfview
 qupzilla
 kwrite
 octopi
-okular
 #partitionmanager # conflicts with calamares-dev
 partitionmanager-dev
 #gparted
