@@ -65,7 +65,3 @@ sddm-maia-theme
 breeze-gtk
 gnome-themes-standard # Adwaita theme
 gtk-theme-maia
-
-## Support for KDE4 applications theming
-breeze-kde4
-oxygen-kde4
