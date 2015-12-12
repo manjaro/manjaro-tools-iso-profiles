@@ -26,6 +26,7 @@ xarchiver
 network-manager-applet
 tint2
 lxtask
+gvfs
 
 ###DisplayManager###
 lightdm-gtk-greeter
