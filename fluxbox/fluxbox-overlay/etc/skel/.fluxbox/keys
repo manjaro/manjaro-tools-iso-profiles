@@ -68,9 +68,9 @@ Mod4 d :Exec dmenu_recency
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset Master,0 1+
-174 :Exec amixer sset Master,0 1-
-160 :Exec amixer sset Master,0 toggle
+176 :Exec amixer set Master,0 3%+
+174 :Exec amixer set Master,0 3%-
+160 :Exec amixer set Master,0 toggle
 
 # current window commands
 Mod1 F4 :Close

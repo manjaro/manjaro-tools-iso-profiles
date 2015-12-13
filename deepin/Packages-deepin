@@ -3,34 +3,28 @@
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## group deepin
+## deepin packages
 dde-account-faces #
+dde-daemon #
 deepin-artwork #
 deepin-compiz #
-deepin-gtk-theme #
-deepin-icon-theme #
+deepin-manjaro-workspace
 deepin-menu
-deepin-notifications #
-deepin-social-sharing
-python2-deepin-ui
-python2-deepin-utils
-
-## group deepin-extra (arch)
-# deepin-game
 deepin-movie
 deepin-music
+deepin-notifications #
 deepin-screenshot
+deepin-social-sharing
 deepin-terminal
+# deepin-trash
+lightdm-deepin-greeter-manjaro
+python2-deepin-ui
+python2-deepin-utils
+startdde-manjaro
 
 ## other deepin Packages
 accountsservice
 dconf-editor
-dde-daemon
-deepin-manjaro-control-center
-deepin-manjaro-dock-applets
-deepin-manjaro-workspace
-deepin-nautilus-properties
-deepin-trash
 downgrade
 evince
 firefox
@@ -46,19 +40,17 @@ gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
 isousb
-libdeepin-webkit
 libimobiledevice
 libreoffice-still
-lightdm-deepin-greeter-manjaro
 manjaro-settings-manager
-manjaro-welcome
+manjaro-welcome-dev
 mousepad
 nautilus
 >openrc timeset-gui
 pidgin
 plymouth-theme-manjaro-deepin
+polkit-gnome
 screenfetch
-startdde-manjaro
 thunderbird
 xarchiver
 xfburn
@@ -84,7 +76,6 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-flashplugin
 libdvdcss
 manjaro-alsa
 manjaro-pulse
@@ -94,9 +85,9 @@ pulseaudio-zeroconf
 
 ## Package management
 pamac
-polkit-gnome
 
 ## Games
+deepin-game
 # steam-manjaro
 
 ## Java
@@ -118,7 +109,7 @@ fakeroot
 flex
 gcc
 >multilib gcc-multilib
-git
+# git
 libconfig
 libtool
 m4
