@@ -14,7 +14,6 @@ cinnamon-translations
 cinnamon-control-center
 cinnamon-screensaver
 cinnamon-theme-minty
-cinnamon-power-applet
 cinnamon-menus
 cjs
 muffin
@@ -23,31 +22,49 @@ nemo-fileroller
 nemo-preview
 nemo-python
 nemo-share
+ffmpegthumbnailer
+blueberry
+dconf-editor
+
+## polkit
+
+polkit-gnome
+polkit
+gksu
+
+ # java
+jre8-openjdk
+icedtea-web
+jre8-openjdk-headless
 
 ## GNOME related stuf
-#ffmpegthumbnailer
+
+gnome-system-log
 file-roller
-medit
-#glade
-gnome-disk-utility
+gedit
 gnome-keyring
 gnome-system-monitor
-#gnome-terminal
-terminator
+gnome-terminal
+gnome-disk-utility
 gnome-vfs
-#gtksourceview3
 icon-naming-utils
 mousetweaks
-#mutter
 python2-gnomecanvas
 python2-gnomevfs
 python2-libgnome
 xdg-user-dirs-gtk
+evince
+eog
+#eog-plugins
+gnome-screenshot
 
-## polkit
-polkit-gnome
-polkit
-gksu
+#plymouth
+plymouth
+plymouth-theme-manjaro-extra-elegant
+
+# needed
+python2-ptyprocess
+python-ptyprocess
 
 ## Network
 netctl
@@ -56,60 +73,58 @@ networkmanager-dispatcher-ntpd
 openresolv
 net-tools
 
+# internet
+firefox
+thunderbird
+
 ## Extra
-jre8-openjdk
-icedtea-web
+
 vlc
-guayadeque
+npapi-vlc
+pragha
 pidgin
 pidgin-libnotify
 
 ## Theme
-faenza-green-icon-theme
-menda-themes
-menda-themes-dark
-menda-icon-themes
-xfce-theme-greenbird
-gtk-theme-vertex
-
-#plymouth
-#plymouth-theme-manjaro-elegant
+vertex-themes
+xcursor-simpleandsoft
+gnome-themes-maia
+#Fonts
+ttf-droid
+ttf-comfortaa
+cantarell-fonts
 
 ## Other Applications
 gparted
-evince
-firefox
-thunderbird
-imagewriter
-ttf-droid
-#mdm
-#mdm-themes
-lightdm-gtk3-greeter
+isousb
+lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-viewnior
-flashplugin
 numlockx
-#p7zip
+p7zip
 udiskie
 udisks
 udisks2
 gvfs
 gvfs-afc
-gvfs-afp
+gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
-pavucontrol
+libgsf
+#pavucontrol
 openssh
 hexchat
 exfat-utils
 fuse-exfat
 nss
+parcellite
+galculator
 
 ## Package management
 pamac
-manjaro-welcome
+manjaro-welcome-dev
 manjaro-settings-manager
+manjaro-documentation
 
 ## Packages for Sound and Audio
 gst-libav
@@ -121,20 +136,22 @@ gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-ugly-plugins
-flashplugin
 libdvdcss
 manjaro-alsa
 manjaro-pulse
-pavucontrol
 pulseaudio-ctl
-#zscreen # from exeternal repo, aur package
+pulseaudio-bluetooth
+pulseaudio-gconf 
+pulseaudio-zeroconf
 
 ## Printing
 manjaro-printer
+system-config-printer
 
 ## Office
 libreoffice-still
-zim
+#abiword
+#gnumeric
 
 ## AUR Access
 autoconf
@@ -144,6 +161,7 @@ bison
 fakeroot
 flex
 gcc
+>multilib gcc-multilib
 libtool
 m4
 make
