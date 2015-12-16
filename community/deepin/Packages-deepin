@@ -26,6 +26,7 @@ deepin-terminal
 dconf-editor
 downgrade
 evince
+evolution
 chromium
 deepin-trash
 galculator
@@ -39,6 +40,7 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
+htop
 isousb
 libimobiledevice
 libreoffice-still
@@ -49,7 +51,6 @@ pidgin
 plymouth-theme-manjaro-deepin
 polkit-gnome
 screenfetch
-thunderbird
 xarchiver
 xfburn
 
