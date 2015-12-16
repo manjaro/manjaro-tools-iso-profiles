@@ -44,6 +44,7 @@ xorg-xprop
 
 ## Applications
 arandr
+bmenu
 clipit
 gksu
 gnome-vfs
@@ -68,6 +69,7 @@ qpdfview
 open-fuse-iso
 sbxkb
 vlc
+w3m
 
 ## Network
 >openrc bluez-openrc
