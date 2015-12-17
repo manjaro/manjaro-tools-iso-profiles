@@ -87,6 +87,7 @@ lsof
 >openrc rsync-openrc
 >systemd rsync
 wget
+numlockx
 
 ## Compression utils
 lzop
