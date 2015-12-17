@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Install Sonar Linux (cli)
+GenericName=Cli Installer
+Exec=sudo gnome-terminal -e /usr/bin/setup
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=System;
