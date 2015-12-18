@@ -266,4 +266,8 @@ kactivities-frameworks
 
 # Partition
 #gparted
-partitionmanager-dev
+#partitionmanager-dev
+partitionmanager
+
+## Documentation
+manjaro-documentation
