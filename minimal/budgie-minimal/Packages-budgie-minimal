@@ -1,0 +1,147 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## Budgie minimal packages 
+
+budgie-desktop
+baobab
+dconf-editor
+#empathy
+hexchat
+#eog
+#epiphany
+evince
+#gdm
+#gnome-backgrounds
+gnome-calculator
+#gnome-contacts
+gnome-control-center
+#gnome-desktop
+#gnome-dictionary
+gnome-disk-utility
+gnome-font-viewer
+gnome-keyring
+#gnome-screenshot
+#gnome-session
+gnome-settings-daemon
+#gnome-shell
+#gnome-shell-extensions
+gnome-system-log
+gnome-system-monitor
+gnome-terminal
+#gnome-themes-standard
+#gnome-user-docs
+#gnome-user-share
+grilo-plugins
+gucharmap
+mousetweaks
+mutter
+nautilus
+file-roller
+sushi
+#totem
+#mpv
+tracker
+vino
+xdg-user-dirs-gtk
+yelp
+gedit
+
+## Main Packages
+
+#gnome-extra
+gnome-tweak-tool
+gufw # firewall
+manjaro-settings-manager
+lightdm-gtk-greeter   
+lightdm-gtk-greeter-settings
+numlockx
+network-manager-applet 
+
+## Applications
+firefox
+#gimp
+gksu
+gparted
+gvfs-afc
+gvfs-afp
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+manjaro-welcome
+open-fuse-iso
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+blueman
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+
+## Artwork
+manjaro-artwork
+plymouth-theme-manjaro-elegant
+adwaita-icon-theme
+evopop-icon-theme
+evopop-gtk-theme
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+#flashplugin
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+## Package management
+pamac
+polkit-gnome 
+lxsession
+
+## Games
+#steam-manjaro
+
+## Java
+#jre8-openjdk
+#jre8-openjdk-headless
+#icedtea-web
+
+## Printing
+#manjaro-printer
+
+## Office
+#abiword
+#gnumeric
+#libreoffice-installer
+#libreoffice-still
+
+## AUR Access
+#autoconf
+#automake
+#binutils
+#bison
+#fakeroot
+#flex
+#gcc
+#>multilib gcc-multilib
+#libtool
+#m4
+#make
+#patch
+#subversion
+#yaourt
