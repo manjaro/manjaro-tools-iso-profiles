@@ -48,7 +48,7 @@ lightdm-gtk-greeter-settings
 light-locker
 manjaro-settings-manager
 manjaro-welcome-dev
-midori
+midori-gtk2
 mousepad
 pamac
 >i686 parole
@@ -76,3 +76,6 @@ manjaro-artwork
 xcursor-menda
 >i686 xfce-theme-greenbird
 >systemd plymouth-theme-manjaro-elegant
+
+## Documentation
+manjaro-documentation

@@ -1,11 +1,18 @@
 [General]
 shadeSortColumn=true
 BrowserApplication=qupzilla
+ColorScheme=Maia
+Name=Maia
+
+[Icons]
+Theme=maia
 
 [KDE]
 ChangeCursor=true
-contrast=5
+ColorScheme=Maia
+contrast=7
 LookAndFeelPackage=org.kde.maia.desktop
+widgetStyle=breeze
 
 [Paths]
 Trash=$HOME/Desktop/Trash/
