@@ -40,8 +40,11 @@ qpdfview
 qupzilla
 kwrite
 octopi
-#partitionmanager # conflicts with calamares-dev
-partitionmanager-dev
+octopi-notifier-frameworks
+octopi-cachecleaner
+octopi-repoeditor
+partitionmanager # conflicts with calamares-dev
+#partitionmanager-dev
 #gparted
 #manjaro-settings-manager
 kcm-msm
@@ -65,3 +68,6 @@ sddm-maia-theme
 breeze-gtk
 gnome-themes-standard # Adwaita theme
 gtk-theme-maia
+
+## Documentation
+manjaro-documentation
