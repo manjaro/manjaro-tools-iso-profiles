@@ -180,3 +180,6 @@ make
 patch
 subversion
 yaourt
+
+## Documentation
+manjaro-documentation
