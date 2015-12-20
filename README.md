@@ -121,6 +121,3 @@ pacman-default.conf
 ~~~
 pacman-multilib.conf
 ~~~
-
-Please review your lists if you use a custom package list and adopt to the changes!
-Profiles that use a custom Package list have been set to use symlinks to shared.
