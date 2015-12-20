@@ -67,7 +67,7 @@ xfce4-xkb-plugin
 ## Applications
 catfish # needed for desktop search
 engrampa-thunar-plugin
-firefox
+firefox-gtk2
 galculator-gtk2
 gimp
 gksu
@@ -80,7 +80,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 hexchat
-manjaro-welcome-dev
+manjaro-welcome
 #midori
 mlocate
 mousepad

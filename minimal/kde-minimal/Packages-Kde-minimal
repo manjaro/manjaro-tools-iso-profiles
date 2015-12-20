@@ -45,7 +45,7 @@ partitionmanager-dev
 #gparted
 #manjaro-settings-manager
 kcm-msm
-manjaro-welcome-dev
+manjaro-welcome
 >multilib manjaro-alsa
 
 ## Fonts
