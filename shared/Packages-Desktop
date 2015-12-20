@@ -35,6 +35,7 @@ ttf-droid
 
 ## Applications
 inxi
+dmidecode # for inxi -m output
 powertop
 
 ## Sound
@@ -56,3 +57,4 @@ nss-mdns # NSS support for mDNS (optdepend for avahi)
 >openrc displaymanager-openrc
 >openrc pm-utils
 >openrc cgmanager-openrc
+manjaro-hotfixes

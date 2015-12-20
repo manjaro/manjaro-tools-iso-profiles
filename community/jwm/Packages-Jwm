@@ -1,0 +1,96 @@
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+#####################################################
+
+## Sound and Audio
+manjaro-alsa
+volumeicon
+alsa-plugins
+
+## File Management
+pcmanfm
+gvfs		 
+gvfs-afc	 
+gvfs-gphoto2
+gvfs-smb
+xarchiver
+p7zip
+
+## Package Management
+pamac
+
+## Network and bluetooth
+networkmanager
+networkmanager-dispatcher-ntpd
+network-manager-applet
+openresolv
+
+## Polkit
+gksu
+gnome-keyring
+polkit-gnome
+
+## Basic packages
+dconf
+desktop-file-utils
+
+## Display Manager
+slim
+
+## Desktop Display
+dunst
+
+## JWM Core Packages
+jwm
+scrot
+nitrogen
+gmrun 
+clipit
+python2-xdg 	 
+xterm
+i3lock
+xautolock
+lxappearance
+rofi
+prelink
+preload
+oblogout
+pmenu
+downgrade
+
+## Desktop Configuration
+lxinput
+arandr
+
+## Artwork, Icon, Mouse, and Desktop Themes
+awoken-icon-theme
+xcursor-vanilla-dmz-aa
+gtk-engine-murrine
+
+## Applications
+medit
+epdfview
+hardinfo
+htop
+leafpad
+abiword
+gnumeric
+palemoon-bin
+hexchat
+lxmusic
+smplayer
+feh
+cbatticon
+tlp
+manjaro-settings-manager
+sakura
+conky
+screenfetch
+libimobiledevice
+compton
+wbar
+wmctrl
+
+## Fonts
+adobe-source-sans-pro-fonts
+ttf-droid
