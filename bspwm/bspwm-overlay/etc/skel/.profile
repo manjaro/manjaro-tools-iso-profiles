@@ -30,4 +30,4 @@ unset TERMCAP
 
 # Man is much better than us at figuring this out
 unset MANPATH
-BROWSER=/usr/bin/xdg-open
+BROWSER=/usr/bin/midori
