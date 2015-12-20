@@ -6,7 +6,7 @@ manjaro-livecd-cli-installer
 manjaro-tools-base		# recovery chroot tools
 calamares			# new GUI installer of manjaro
 #calamares-dev			# new GUI installer of manjaro - kpmcore
-#thus
+thus
 #thus-dev
 #gparted
 
@@ -65,9 +65,10 @@ KERNEL-r8168
 #>nonfree_multilib lib32-nvidia-utils
 
 ## Virtualbox Drivers
->openrc virtualbox-guest-utils-openrc
->systemd virtualbox-guest-utils
-KERNEL-virtualbox-guest-modules
+# by default disabled
+#>openrc virtualbox-guest-utils-openrc
+#>systemd virtualbox-guest-utils
+#KERNEL-virtualbox-guest-modules
 
 ## Xorg Packages
 libxvmc
