@@ -166,7 +166,6 @@ ark
 digikam
 dolphin
 dolphin-plugins
-ffmpegthumbs
 filelight
 k3b
 kate
@@ -175,7 +174,6 @@ kdebase-kdepasswd
 kdebase-keditbookmarks
 kdebase-kfind
 kdeconnect
-kdegraphics-ksnapshot
 kdegraphics-okular
 kdenetwork-kget
 kdenlive
@@ -183,11 +181,13 @@ kde-servicemenus-rootactions
 kio-extras
 konsole
 konversation
+ksystemlog
 kwalletmanager
 kwrite
 gwenview
 print-manager
 skanlite
+spectacle
 # KDE PIM
 akonadiconsole
 akregator
@@ -225,6 +225,10 @@ qt5-imageformats  # support for tiff, webp, and more image formats
 ## Optional dependency for digikam
 kipi-plugins  # more tools and plugins
 
+## Optional dependency for dolphin
+ruby  # installing new service menus with GHNS
+ffmpegthumbs  # video thumbnails
+
 ## Applications
 cantata
 imagewriter
@@ -232,7 +236,7 @@ firefox-kde
 flashplugin
 #manjaro-settings-manager
 kcm-msm
-manjaro-welcome-dev
+manjaro-welcome
 p7zip
 qbittorrent
 screenfetch
