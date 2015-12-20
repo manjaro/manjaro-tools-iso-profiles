@@ -68,8 +68,7 @@ lemonpanel
 limepanel
 bspwm-scripts
 libnotify
-pmenu
-pacli
+fzf
 rootmenu
 
 ##Applications
@@ -84,7 +83,7 @@ spacefm
 udevil
 midori
 dunst
-command-not-found
+#command-not-found
 ranger
 w3m
 sxiv
@@ -106,6 +105,11 @@ delayed-hibernation
 i3lock
 downgrade
 mhwd-tui
+bmenu
+brandr
+pacli
+dash
+moc
 
 ## AUR Access
 # base-devel
