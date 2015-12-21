@@ -5,4 +5,4 @@ Default login "manjaro" with password "manjaro".
 "root" login has password "manjaro".
 
 You can start the installation with "sudo setup".
-Use "sudo bmenu" for easy access to our tools.
+Use "bmenu" for easy access to our tools.
