@@ -87,6 +87,7 @@ lsof
 >openrc rsync-openrc
 >systemd rsync
 wget
+numlockx
 
 ## Compression utils
 lzop
@@ -147,3 +148,8 @@ zd1211-firmware
 
 ## ucode for new cpus
 intel-ucode
+
+## bmenu
+bmenu
+brandr
+mhwd-tui
