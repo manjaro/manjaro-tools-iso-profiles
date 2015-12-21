@@ -11,6 +11,7 @@ deepin-daemon
 deepin-desktop
 deepin-desktop-schemas-manjaro
 deepin-dock
+deepin-gtk-theme
 deepin-launcher
 deepin-session-ui-manjaro
 deepin-social-sharing
@@ -26,6 +27,7 @@ deepin-terminal
 dconf-editor
 downgrade
 evince
+evolution
 chromium
 deepin-trash
 galculator
@@ -39,17 +41,17 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
+htop
 isousb
 libimobiledevice
 libreoffice-still
 manjaro-settings-manager
-manjaro-welcome-dev
+manjaro-welcome
 mousepad
 pidgin
 plymouth-theme-manjaro-deepin
 polkit-gnome
 screenfetch
-thunderbird
 xarchiver
 xfburn
 
@@ -100,8 +102,6 @@ binutils
 bison
 fakeroot
 flex
-gcc
->multilib gcc-multilib
 git
 libconfig
 libtool
