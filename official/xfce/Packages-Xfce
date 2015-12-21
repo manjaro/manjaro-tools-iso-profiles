@@ -67,7 +67,7 @@ xfce4-xkb-plugin
 ## Applications
 catfish # needed for desktop search
 engrampa-thunar-plugin
-firefox
+firefox-gtk2
 galculator-gtk2
 gimp
 gksu
@@ -80,7 +80,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 hexchat
-manjaro-welcome-dev
+manjaro-welcome
 #midori
 mlocate
 mousepad
@@ -99,6 +99,7 @@ xfburn
 yelp
 open-fuse-iso
 p7zip
+xorg-xkill
 
 ## Network
 netctl
@@ -106,8 +107,8 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 blueman
-samba
-thunar-shares-plugin-manjaro
+#samba
+#thunar-shares-plugin-manjaro
 
 ## Artwork
 menda-circle-icon-theme
@@ -179,3 +180,6 @@ make
 patch
 subversion
 yaourt
+
+## Documentation
+manjaro-documentation
