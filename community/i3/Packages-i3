@@ -27,6 +27,7 @@ lxappearance
 manjaro-settings-manager
 p7zip
 polkit-gnome
+ranger
 screenfetch
 scrot
 >openrc timeset
@@ -59,6 +60,7 @@ isousb
 libgpod # iPhone/Pod connectivity
 manjaro-welcome
 mhwd-chroot
+moc
 mousepad
 nitrogen
 palemoon-bin
@@ -70,6 +72,7 @@ open-fuse-iso
 sbxkb
 vlc
 w3m
+xterm
 
 ## Network
 >openrc bluez-openrc
@@ -128,6 +131,7 @@ binutils
 bison
 fakeroot
 flex
+gcc
 git
 libconfig
 libtool

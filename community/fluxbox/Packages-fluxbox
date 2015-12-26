@@ -132,6 +132,7 @@ binutils
 bison
 fakeroot
 flex
+gcc
 git
 libconfig
 libtool
