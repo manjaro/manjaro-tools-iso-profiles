@@ -36,17 +36,18 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_recency
 # bindsym $mod+d exec j4-dmenu-desktop --dmenu="dmenu -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333' -i"
 
- Screen brightness controls
+# Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
+bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+i exec gksu calamares
-# bindsym $mod+F1 exec thunderbird
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
+# bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
-bindsym $mod+F4 exec libreoffice
+bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
@@ -269,6 +270,8 @@ exec --no-startup-id volumeicon
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+# exec --no-startup-id pulseaudio
+# exec --no-startup-id pa-applet
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id compton -b
