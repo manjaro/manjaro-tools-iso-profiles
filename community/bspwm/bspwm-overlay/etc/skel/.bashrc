@@ -2,7 +2,7 @@ if [[ $- != *i* ]] ; then
 	# Shell is non-interactive.  Be done now!
 	return
 fi
-BROWSER=midori
+
 for sd_cmd in systemctl systemd-analyze systemd-run; do
     alias $sd_cmd='DBUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/dbus/user_bus_socket" '$sd_cmd
 done
@@ -11,8 +11,9 @@ xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
 
+export BROWSER=/usr/bin/midori
 export EDITOR=/usr/bin/nano
-export HISTSIZE=10000
+export HISTSIZE=1000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
 export JAVA_FONTS=/usr/share/fonts/TTF
