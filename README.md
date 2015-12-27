@@ -92,7 +92,7 @@ manjaro-tools-iso-profiles
 >nonfree_multilib
 ~~~
 
-######* Packages
+######* Packages-Root
 * Contains root image packages
 * ideally no xorg
 
@@ -104,8 +104,8 @@ manjaro-tools-iso-profiles
 ######* Packages-Mhwd
 * Contains the MHWD driver packages repo
 
-######* Packages-Livecd
-* Contains packages you only want on livecd but not installed on the target system with installer
+######* Packages-Live
+* Contains packages you only want in live session but not installed on the target system with installer
 * default files are in shared folder and can be symlinked or defined in a real file
 
 ###### optional custom pacman.conf in profile
