@@ -27,6 +27,7 @@ lxappearance
 manjaro-settings-manager
 p7zip
 polkit-gnome
+ranger
 screenfetch
 scrot
 >openrc timeset
@@ -44,6 +45,7 @@ xorg-xprop
 
 ## Applications
 arandr
+bmenu
 clipit
 gksu
 gnome-vfs
@@ -58,6 +60,7 @@ isousb
 libgpod # iPhone/Pod connectivity
 manjaro-welcome
 mhwd-chroot
+moc
 mousepad
 nitrogen
 palemoon-bin
@@ -68,6 +71,8 @@ qpdfview
 open-fuse-iso
 sbxkb
 vlc
+w3m
+xterm
 
 ## Network
 >openrc bluez-openrc

@@ -23,14 +23,14 @@ or type ${color}sudo setup ${color2}in a terminal (CLI)
 open new terminal - ${color}mod+Enter
 ${color2}kill focused - ${color}mod+Shift+q
 ${color2}dmenu - ${color}mod+d
+${color2}bmenu - ${color}mod+Ctrl+b
 ${color2}switch to workspace 1-8 - ${color}mod+1-8
 ${color2}send to workspace 1-8 - ${color}mod+Ctrl+1-8
 ${color2}navigate workspaces - ${color}mod+Ctrl+arrowkeys
 ${color2}toggle floating - ${color}mod+Shift+Space
 ${color2}tile vertically - ${color}mod+v
 ${color2}tile horizontally - ${color}mod+h
-${color2}lock session - ${color}mod+9
-${color2}exit session - ${color}mod+0
+${color2}exit - ${color}mod+0
 
 ${color2}help - ${color}mod+Shift+h
 default mod=<Super>
