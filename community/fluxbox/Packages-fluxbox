@@ -133,7 +133,6 @@ bison
 fakeroot
 flex
 gcc
->multilib gcc-multilib
 git
 libconfig
 libtool
