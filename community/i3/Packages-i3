@@ -59,7 +59,11 @@ gvfs-smb
 isousb
 libgpod # iPhone/Pod connectivity
 manjaro-welcome
-mhwd-chroot
+# manjaro-chroot, part of manjaro-tools-base on live image has very similar features
+# would be nice to have manjaro-chroot tested properly
+#mhwd-chroot
+# eventually add upower-pm-utils; it seems to depend on DE features; take what works default is upower
+#>openrc upower-pm-utils
 moc
 mousepad
 nitrogen
@@ -89,7 +93,6 @@ networkmanager-openvpn
 >systemd networkmanager-pptp
 networkmanager-vpnc
 >systemd openresolv
-# >openrc openresolv-openrc
 >openrc syslog-ng-openrc
 >systemd syslog-ng
 
