@@ -61,11 +61,9 @@ xfburn
 
 ## Network
 >openrc bluez-openrc
-blueman
 >systemd netctl
 >systemd networkmanager
 >openrc networkmanager-openrc
-network-manager-applet
 >openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
 >systemd networkmanager-openconnect
