@@ -51,14 +51,31 @@ pidgin
 plymouth-theme-manjaro-deepin
 polkit-gnome
 screenfetch
+gufw # firewall
+>openrc ufw-openrc
+>openrc timeset
+>openrc ntp-openrc
+>openrc upower-pm-utils
 xarchiver
 xfburn
 
 ## Network
-netctl
-networkmanager
+>openrc bluez-openrc
+blueman
+>systemd netctl
+>systemd networkmanager
+>openrc networkmanager-openrc
+network-manager-applet
+>openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
-openresolv
+>systemd networkmanager-openconnect
+networkmanager-openvpn
+>openrc openvpn-openrc
+>systemd networkmanager-pptp
+networkmanager-vpnc
+>systemd openresolv
+>openrc syslog-ng-openrc
+>systemd syslog-ng
 
 ## Packages for Sound and Audio
 gst-libav
@@ -93,6 +110,7 @@ icedtea-web
 manjaro-printer
 xsane
 xsane-gimp
+>openrc cups-openrc
 
 ## AUR Access
 autoconf
