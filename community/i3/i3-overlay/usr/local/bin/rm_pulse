@@ -1,0 +1,30 @@
+#!/bin/sh -e
+
+i3configfile=$HOME/.i3/config
+
+msg() {
+ALL_OFF="\e[1;0m"
+BOLD="\e[1;1m"
+GREEN="${BOLD}\e[1;32m"
+local mesg=$1; shift
+printf "
+${GREEN}==>${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "$@" >&2
+}
+
+#ramove pulseaudio and friends
+msg "removing pulsaudio packages"
+sudo pacman -Rsn manjaro-pulse pa-applet pavucontrol || exit 1
+
+#comment out unneeded config
+msg "writing configuration"
+sed -i 's/#exec --no-startup-id volumeicon/exec --no-startup-id volumeicon/g' $i3configfile
+sed -i 's/#bindsym \$mod+Ctrl+m exec terminal -e '\''alsamixer'\''/bindsym \$mod+Ctrl+m exec terminal -e '\''alsamixer'\''/g' $i3configfile
+
+#uncomment needed config
+sed -i 's/exec --no-startup-id pulseaudio/#exec --no-startup-id pulseaudio/g' $i3configfile
+sed -i 's/exec --no-startup-id pa-applet/#exec --no-startup-id pa-applet/g' $i3configfile
+sed -i 's/bindsym \$mod+Ctrl+m exec pavucontrol/#bindsym \$mod+Ctrl+m exec pavucontrol/g' $i3configfile
+
+msg "Pulseaudio has been removed from your system. Please re-log now to continue using Alsa only."
+
+exit 0
