@@ -60,6 +60,8 @@ isousb
 libgpod # iPhone/Pod connectivity
 manjaro-welcome
 mhwd-chroot
+# eventually add upower-pm-utils; it seems to depend on DE features; take what works default is upower
+>openrc upower-pm-utils
 moc
 mousepad
 nitrogen
@@ -89,11 +91,11 @@ networkmanager-openvpn
 >systemd networkmanager-pptp
 networkmanager-vpnc
 >systemd openresolv
-# >openrc openresolv-openrc
 >openrc syslog-ng-openrc
 >systemd syslog-ng
 
 ## Artwork
+awoken-icon-theme-light
 i3-theme-dark
 i3-theme-dust
 i3-wallpapers
