@@ -26,13 +26,18 @@
 ################ install ################
 
 # unset defaults to given value
-# kernel="linux319"
+# kernel="linux41"
 
 # unset defaults to given value
 # efi_boot_loader="grub"
 
 # set uefi partition size
 # efi_part_size=31M
+
+# unset defaults to given values
+# set desktop environment like executable="startxfce4" & file="xfce"
+# default_desktop_executable="none"
+# default_desktop_file="none"
 
 # unset defaults to given value
 # plymouth_theme=manjaro-elegant
