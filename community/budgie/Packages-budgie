@@ -4,6 +4,7 @@
 
 ## Budgie packages 
 
+gdm
 budgie-desktop
 baobab
 dconf-editor
@@ -39,19 +40,19 @@ p7zip
 ibus
 
 ## Main Packages
-plank
-plank-config
+#plank
+#plank-config
 gnome-tweak-tool
 gufw # firewall
 manjaro-settings-manager
-lightdm-gtk-greeter   
-lightdm-gtk-greeter-settings
+#lightdm-gtk-greeter   
+#lightdm-gtk-greeter-settings
 numlockx
 network-manager-applet 
 
 ## Applications
 firefox
-thunderbird
+#thunderbird
 gimp
 gksu
 gparted
@@ -116,7 +117,7 @@ icedtea-web
 manjaro-printer
 
 ## Office
-libreoffice-still
+#libreoffice-still
 
 ## AUR Access
 autoconf

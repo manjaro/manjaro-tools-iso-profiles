@@ -1,0 +1,5 @@
+[User]
+Language=
+XSession=budgie-desktop
+Icon=/var/lib/AccountsService/icons/manjaro.png
+SystemAccount=false
