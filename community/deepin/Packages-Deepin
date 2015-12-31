@@ -88,6 +88,7 @@ gstreamer0.10-ugly-plugins
 libdvdcss
 manjaro-alsa
 manjaro-pulse
+>openrc pulseaudio-openrc
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
