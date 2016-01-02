@@ -119,10 +119,11 @@ fuse-exfat
 nss
 parcellite
 galculator
+flashplugin
 
 ## Package management
 pamac
-manjaro-welcome-dev
+manjaro-welcome
 manjaro-settings-manager
 manjaro-documentation
 

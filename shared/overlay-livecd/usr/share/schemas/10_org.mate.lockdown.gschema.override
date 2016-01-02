@@ -1,5 +1,0 @@
-[org.mate.lockdown]
-disable-lock-screen=true
-disable-user-switching=true
-[org.gnome.desktop.screensaver]
-lock-enabled=false
