@@ -1,0 +1,67 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## Display Manager
+>systemd sddm
+>openrc sddm-consolekit
+sddm-kcm
+>openrc networkmanager-openrc
+>openrc syslog-ng-openrc
+
+## Plasma5
+bluedevil
+breeze
+drkonqi
+kde-gtk-config
+kdeplasma-addons
+khelpcenter
+kinfocenter
+kio-extras
+kmenuedit
+kscreen
+ksshaskpass
+ksysguard
+kwin
+kwrited
+milou
+plasma-desktop
+plasma-nm
+plasma-pa
+plasma-workspace
+powerdevil
+systemsettings
+
+## Applications
+dolphin
+konsole
+kate
+qpdfview
+qupzilla
+kwrite
+octopi
+#partitionmanager # conflicts with calamares-dev
+partitionmanager-dev
+#gparted
+#manjaro-settings-manager
+kcm-msm
+manjaro-welcome
+>multilib manjaro-alsa
+
+## Fonts
+noto-fonts  # default font
+#noto-fonts-cjk  # big package, ~76 mb compressed
+noto-fonts-emoji
+ttf-oxygen  # used for monospaced
+cantarell-fonts
+
+## Themes
+plasma5-themes-maia
+gnome-icon-theme
+sddm-maia-theme
+>systemd plymouth-theme-manjaro-elegant
+
+## GTK Themes
+breeze-gtk
+gnome-themes-standard # Adwaita theme
+gtk-theme-maia

@@ -1,0 +1,111 @@
+
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## deepin packages
+deepin-account-faces
+deepin-artwork-themes-manjaro
+deepin-control-center
+deepin-daemon
+deepin-desktop
+deepin-desktop-schemas-manjaro
+deepin-dock
+deepin-gtk-theme
+deepin-launcher
+deepin-session-ui-manjaro
+deepin-social-sharing
+libdeepin-webkit
+
+## deepin-extra packages
+deepin-movie
+deepin-music
+deepin-screenshot
+deepin-terminal
+
+## other deepin Packages
+dconf-editor
+downgrade
+evince
+evolution
+chromium
+deepin-trash
+galculator
+gimp
+gksu
+gnome-vfs
+gparted
+gthumb
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp # for mounting Samsung phones
+gvfs-smb
+htop
+isousb
+libimobiledevice
+libreoffice-still
+manjaro-settings-manager
+manjaro-welcome
+mousepad
+pidgin
+plymouth-theme-manjaro-deepin
+polkit-gnome
+screenfetch
+xarchiver
+xfburn
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+## Package management
+pamac
+
+## Games
+deepin-game
+#steam-manjaro
+
+## Java
+jre8-openjdk
+jre8-openjdk-headless
+icedtea-web
+
+## Printing / Scanning
+manjaro-printer
+xsane
+xsane-gimp
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+git
+libconfig
+libtool
+m4
+make
+patch
+subversion
+yaourt
