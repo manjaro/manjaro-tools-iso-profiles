@@ -189,6 +189,7 @@ for_window [class="Nitrogen"] floating enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [class="Pamac-manager"] floating enable
+for_window [class="Pamac-updater"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable border normal
 for_window [title="sudo"] floating enable
