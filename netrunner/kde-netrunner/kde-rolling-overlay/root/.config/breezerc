@@ -1,0 +1,10 @@
+[Common]
+ShadowSize=50
+ShadowStrength=191
+
+[Style]
+AnimationsEnabled=false
+ViewDrawFocusIndicator=false
+
+[Windeco]
+AnimationsEnabled=false

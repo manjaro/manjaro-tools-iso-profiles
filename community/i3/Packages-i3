@@ -45,10 +45,8 @@ xorg-xprop
 
 ## Applications
 arandr
-# bashmount (AUR)
 bmenu
 clipit
-dfc
 gksu
 gnome-vfs
 gparted
@@ -66,7 +64,6 @@ mhwd-chroot
 >openrc upower-pm-utils
 moc
 mousepad
-ncdu
 nitrogen
 palemoon-bin
 perl-file-mimeinfo
@@ -75,7 +72,6 @@ pinta
 qpdfview
 open-fuse-iso
 sbxkb
-speedtest-cli
 vlc
 w3m
 xterm

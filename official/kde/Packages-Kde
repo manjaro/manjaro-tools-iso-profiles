@@ -49,6 +49,7 @@ gvfs
 open-fuse-iso
 android-tools
 android-udev
+kamera
 
 ## AUR Support/Development
 # Missing base-devel packages
@@ -266,7 +267,7 @@ calligra-krita
 
 ## KDE Frameworks
 kmediaplayer
-kactivities-frameworks
+kactivities
 
 # Partition
 #gparted

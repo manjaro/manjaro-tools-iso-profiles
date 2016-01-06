@@ -47,9 +47,10 @@ gvfs-smb
 gvfs-mtp
 gvfs-afc
 gvfs
-# open-fuse-iso
+open-fuse-iso
 android-tools
 android-udev
+kamera
 
 ## AUR Support/Development
 # Missing base-devel packages
@@ -209,7 +210,6 @@ perl-gtk2-trayicon
 ark
 dolphin
 dolphin-plugins
-ffmpegthumbs
 icoutils
 k3b
 kate
@@ -218,20 +218,22 @@ kcalc
 kdebase-kdepasswd
 kdebase-keditbookmarks
 kdebase-kfind
+kdeconnect
 kdebase-konqueror
-kdegraphics-ksnapshot
 kdegraphics-okular
-kdemultimedia-ffmpegthumbs
 kdenlive
 kde-servicemenus-rootactions
+kio-extras
 konsole
 konversation
+ksystemlog
 kwalletmanager
 ksuperkey
 marble
 gwenview
 print-manager
 skanlite
+spectacle
 ## KDE PIM
 akonadiconsole
 kaddressbook
@@ -268,6 +270,11 @@ movit            # for GPU video processing
 ## Optional dependencies for gwenview
 kimageformats     # support for dds, xcf, exr, psd, and more image formats
 qt5-imageformats  # support for tiff, webp, and more image formats
+
+## Optional dependency for dolphin
+ruby  # installing new service menus with GHNS
+ffmpegthumbs  # video thumbnails
+kdegraphics-thumbnailers
 
 ## Applications
 audacious

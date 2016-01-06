@@ -1,0 +1,28 @@
+[Closed_Window0]
+FullScreen=false
+HistoryItemViewT0_0Buffer=\x00\x00\x00\nsysinfo://\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04ì\x00\x00\x03Aÿÿÿÿÿÿÿÿÿÿÿÿ\x00\x00\x00\x00\x00\x00\x00\x01ÿÿÿÿÿÿÿÿ\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00dÿÿÿÿÿÿÿÿÿÿÿÿ\x00ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+HistoryItemViewT0_0DoPost=false
+HistoryItemViewT0_0LocationBarURL=sysinfo://
+HistoryItemViewT0_0PageReferrer=
+HistoryItemViewT0_0PageSecurity=0
+HistoryItemViewT0_0PostContentType=
+HistoryItemViewT0_0PostData=
+HistoryItemViewT0_0StrServiceName=ksysinfopart
+HistoryItemViewT0_0StrServiceType=application/x-sysinfo
+HistoryItemViewT0_0Title=My Computer
+HistoryItemViewT0_0Url=sysinfo://
+RootItem=Tabs0
+State=AAAA/wAAAAD9AAAAAAAABQAAAAKMAAAABAAAAAQAAAAIAAAACPwAAAACAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHgBsAG8AYwBhAHQAaQBvAG4AVABvAG8AbABCAGEAcgEAAAEg/////wAAAAAAAAAAAAAAAgAAAAEAAAAeAGIAbwBvAGsAbQBhAHIAawBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+Tabs0_Children=ViewT0
+Tabs0_activeChildIndex=0
+ViewT0_CurrentHistoryItem=0
+ViewT0_LinkedView=false
+ViewT0_LockedLocation=false
+ViewT0_NumberOfHistoryItems=1
+ViewT0_PassiveMode=false
+ViewT0_ServiceName=ksysinfopart
+ViewT0_ServiceType=application/x-sysinfo
+ViewT0_ToggleView=false
+XMLUIFile=konqueror.rc
+numTabs=1
+title=My Computer
