@@ -1,0 +1,9 @@
+[Basic Settings]
+Indexing-Enabled=false
+
+[General]
+exclude filters=*~,autom4te,*.loT,*.part,ui_*.h,CTestTestfile.cmake,moc_*.cpp,*.csproj,CMakeFiles,.uic,lzo,CMakeCache.txt,.moc,confstat,core-dumps,po,*.pyc,*.tmp,*.o,*.m4,*.omf,.hg,*.pc,.histfile.*,libtool,*.elc,CMakeTmpQmake,_darcs,*.la,confdefs.h,*.aux,.git,*.moc,qrc_*.cpp,*.po,*.swap,.svn,*.nvram,CMakeTmp,.bzr,.pch,lost+found,*.rcore,*.lo,config.status,*.rej,*.gmo,.xsession-errors*,cmake_install.cmake,Makefile.am,*.orig,*.vm*,.obj,*.class,litmain.sh,conftest,CVS
+exclude filters version=2
+exclude folders[$e]=
+first run=true
+folders[$e]=$HOME/

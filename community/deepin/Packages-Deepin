@@ -51,29 +51,14 @@ pidgin
 plymouth-theme-manjaro-deepin
 polkit-gnome
 screenfetch
-gufw # firewall
->openrc ufw-openrc
->openrc timeset
->openrc ntp-openrc
->openrc upower-pm-utils
 xarchiver
 xfburn
 
 ## Network
->openrc bluez-openrc
->systemd netctl
->systemd networkmanager
->openrc networkmanager-openrc
->openrc networkmanager-consolekit
+netctl
+networkmanager
 networkmanager-dispatcher-ntpd
->systemd networkmanager-openconnect
-networkmanager-openvpn
->openrc openvpn-openrc
->systemd networkmanager-pptp
-networkmanager-vpnc
->systemd openresolv
->openrc syslog-ng-openrc
->systemd syslog-ng
+openresolv
 
 ## Packages for Sound and Audio
 gst-libav
@@ -88,7 +73,6 @@ gstreamer0.10-ugly-plugins
 libdvdcss
 manjaro-alsa
 manjaro-pulse
->openrc pulseaudio-openrc
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
@@ -109,7 +93,6 @@ icedtea-web
 manjaro-printer
 xsane
 xsane-gimp
->openrc cups-openrc
 
 ## AUR Access
 autoconf
@@ -118,6 +101,7 @@ binutils
 bison
 fakeroot
 flex
+gcc
 git
 libconfig
 libtool

@@ -7,11 +7,14 @@ coreutils
 >openrc cryptsetup-openrc
 >systemd cryptsetup
 >openrc device-mapper-openrc
+>openrc device-mapper-openrc
 >systemd device-mapper
 >openrc dhcpcd-openrc
 >systemd dhcpcd
 diffutils
 e2fsprogs
+exfat-utils
+f2fs-tools
 file
 filesystem
 findutils
@@ -33,7 +36,6 @@ logrotate
 # >systemd lvm2
 man-db
 man-pages
-manjaro-hotfixes
 manjaro-system
 # >openrc mdadm-openrc
 # >systemd mdadm
@@ -52,6 +54,7 @@ sed
 shadow
 sysfsutils
 >openrc eudev-systemdcompat
+>openrc netifrc
 >systemd systemd-sysvcompat
 tar
 texinfo
@@ -84,6 +87,7 @@ lsof
 >openrc rsync-openrc
 >systemd rsync
 wget
+numlockx
 
 ## Compression utils
 lzop
@@ -93,11 +97,7 @@ unzip
 xz
 zip
 
-## Encrypt support
-ecryptfs-utils
-
 ## Efi support (only x86_64)
->x86_64 gummiboot
 >x86_64 prebootloader
 >x86_64 refind-efi
 
@@ -119,6 +119,7 @@ testdisk
 
 ## Network
 b43-fwcutter
+crda
 dhclient
 dnsmasq
 ethtool
@@ -135,6 +136,7 @@ wireless_tools
 >openrc wpa_supplicant-openrc
 >systemd wpa_supplicant
 zd1211-firmware
+>openrc perl-mail-sendmail
 
 ## Power management
 >openrc acpid-openrc
@@ -145,3 +147,8 @@ zd1211-firmware
 
 ## ucode for new cpus
 intel-ucode
+
+## bmenu
+# bmenu
+# brandr
+# mhwd-tui

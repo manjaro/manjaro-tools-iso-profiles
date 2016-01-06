@@ -1,0 +1,8 @@
+[$Version]
+update_info=kwallet-4.13.upd:kde4.13
+
+[Wallet]
+Close When Idle=false
+Enabled=false
+First Use=false
+Use One Wallet=true

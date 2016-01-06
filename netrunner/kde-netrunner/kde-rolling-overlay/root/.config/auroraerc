@@ -1,0 +1,13 @@
+[Engine]
+ThemeName=Gnome3
+
+[Carbon]
+ButtonSize=3
+
+[FormaN]
+ButtonSize=2
+
+[Gnome3]
+BorderSize=1
+ButtonSize=0
+CloseOnDoubleClickMenuButton=true
