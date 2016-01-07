@@ -1,0 +1,329 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## Network
+>systemd networkmanager
+>openrc networkmanager-openrc
+networkmanager-dispatcher-ntpd
+>systemd openresolv
+openssh
+samba
+
+## Libraries for Sound/Audio/Video
+ffmpeg
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+libcanberra
+>multilib lib32-libcanberra
+libcanberra-pulse
+>multilib lib32-libcanberra-pulse
+libcanberra-gstreamer
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+phonon-qt5-gstreamer
+phonon-qt4-gstreamer
+python-pyqt4  # For pulseaudio gui
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+qt-gstreamer
+
+## Connect Packages
+udiskie
+udisks
+udisks2
+mtpfs
+gvfs-smb
+gvfs-mtp
+gvfs-afc
+gvfs
+open-fuse-iso
+android-tools
+android-udev
+kamera
+
+## AUR Support/Development
+# Missing base-devel packages
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+>multilib gcc-multilib
+libtool
+m4
+make
+patch
+>multilib lib32-flex
+# Extra packages for AUR support
+git
+patchutils
+svn
+yaourt
+
+## Netrunner repository packages
+audacious-winamp-theme
+aurorae-theme-carbon
+aurorae-theme-forman
+aurorae-theme-gnome3
+# aurorae-theme-metrodark
+# aurorae-theme-win7
+flatzebra
+burgerspace
+# desktop-theme-diamond
+desktop-theme-eclipse
+# desktop-theme-gnome-shell-kde
+# desktop-theme-orange-lighteneng
+# desktop-theme-sevenfield
+gltron
+gmusicbrowser-netrunner
+google-talkplugin
+kinfocenter
+kio-sysinfo
+netrunner-artwork-firefox
+netrunner-artwork-skype
+netrunner-artwork-thunderbird
+# netrunner-flattr-icons
+# netrunner-moka-icons
+netrunner-rolling-default-settings
+netrunner-rolling-wallpapers-extra
+# netrunner-welcome
+netrunner-windows-cursors
+perl-glib-object-introspection
+perl-gtk2-appindicator
+perl-gtk2-notify
+pidgin-indicator
+rar
+samba-mounter-frameworks-git
+simplemenu
+ttf-casper-typeface
+ttf-ms-fonts
+vokoscreen
+zramswap
+
+## Fonts
+noto-fonts  # default font
+#noto-fonts-cjk  # big package, ~76 mb compressed
+noto-fonts-emoji
+ttf-oxygen  # used for monospaced
+cantarell-fonts
+
+## Games
+steam-manjaro
+gnome-chess
+gnuchess
+frozen-bubble
+kbreakout
+kmines
+kpatience
+kdegames-ksnakeduel
+kdegames-kmahjongg
+
+## Package management
+octopi
+discover
+
+## Java
+jdk8-openjdk
+jre8-openjdk-headless
+jre8-openjdk
+icedtea-web
+
+## Printing
+cups
+cups-pdf
+cups-pk-helper
+ghostscript
+gsfonts
+hplip
+python-gobject # optional for hplip
+python-pyqt4   # optional for hplip
+splix
+system-config-printer
+python-pysmbc
+
+## Display manager
+>systemd sddm
+>openrc sddm-consolekit
+sddm-kcm
+
+## Plasma5
+bluedevil
+breeze
+drkonqi
+kde-gtk-config
+kdeplasma-addons
+kgamma5
+khelpcenter
+kinfocenter
+kio-extras
+kmenuedit
+kscreen
+ksshaskpass
+ksysguard
+kwallet-pam
+kwayland-integration
+kwin
+kwrited
+milou
+oxygen
+oxygen-cursors
+plasma-desktop
+plasma-nm
+plasma-pa
+plasma-workspace
+powerdevil
+systemsettings
+# user-manager
+
+## Themes
+gnome-icon-theme
+>systemd plymouth-theme-netrunner
+
+## GTK Themes
+breeze-gtk
+gnome-themes-standard # Adwaita theme
+
+## Support for KDE4 applications theming
+breeze-kde4
+oxygen-kde4
+
+## Better systray/notifications support
+libappindicator-gtk2
+libappindicator-gtk3
+libappindicator-sharp
+perl-gtk2-trayicon
+
+## KDE Applications
+ark
+dolphin
+dolphin-plugins
+icoutils
+k3b
+kate
+kamoso
+kcalc
+kdebase-kdepasswd
+kdebase-keditbookmarks
+kdebase-kfind
+kdeconnect
+kdebase-konqueror
+kdegraphics-okular
+kdenlive
+kde-servicemenus-rootactions
+kio-extras
+konsole
+konversation
+ksystemlog
+kwalletmanager
+ksuperkey
+marble
+gwenview
+print-manager
+skanlite
+spectacle
+## KDE PIM
+akonadiconsole
+kaddressbook
+kalarm
+kmail
+knotes
+konsolekalendar
+kontact
+korganizer
+
+## KDE Telepathy
+telepathy-kde-meta
+telepathy-gabble
+telepathy-haze
+telepathy-idle
+telepathy-rakia
+
+## Optional dependencies for k3b
+cdparanoia    # for cd ripping support
+cdrdao        # for disk-at-once (DAO) mode support
+dvd+rw-tools  # for dvd burning support
+emovix        # for bootable multimedia cd/dvd support
+transcode     # for advanced mpeg conversion support
+vcdimager     # for vcd burning support
+
+## Optional dependencies for kdenlive
+cdrkit           # for creation of DVD ISO images
+dvdauthor        # for creation of DVD
+dvgrab           # for firewire capture
+recordmydesktop  # for screen capture
+xine-ui          # for DVD preview
+movit            # for GPU video processing
+
+## Optional dependencies for gwenview
+kimageformats     # support for dds, xcf, exr, psd, and more image formats
+qt5-imageformats  # support for tiff, webp, and more image formats
+
+## Optional dependency for dolphin
+ruby  # installing new service menus with GHNS
+ffmpegthumbs  # video thumbnails
+kdegraphics-thumbnailers
+
+## Applications
+audacious
+cantata
+gimp
+handbrake
+imagewriter
+firefox-kde
+flashplugin
+grub-customizer
+#manjaro-settings-manager
+kcm-msm
+p7zip
+pidgin
+screenfetch
+skype
+>systemd systemd-kcm
+thunderbird-kde
+transmission-qt
+virtualbox
+virtualbox-guest-iso
+KERNEL-virtualbox-host-modules
+vlc
+yakuake
+
+## Optional dependencis for cantata
+mpd       # playback
+perl-uri  # dynamic playlist
+
+## Office
+libreoffice-fresh
+#calligra-braindump
+#calligra-extras
+#calligra-filters
+#calligra-flow
+#calligra-handbook
+calligra-karbon
+#calligra-kexi
+calligra-krita
+#calligra-plan
+#calligra-plugins
+#calligra-sheets
+#calligra-stage
+#calligra-words
+
+## KDE Frameworks
+kmediaplayer
+kactivities
+
+# Partition
+#gparted
+partitionmanager-dev

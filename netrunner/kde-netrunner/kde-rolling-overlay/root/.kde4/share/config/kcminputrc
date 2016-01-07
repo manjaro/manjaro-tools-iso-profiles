@@ -1,0 +1,9 @@
+[$Version]
+update_info=mouse_cursor_theme.upd:kde3.4.99
+
+[Mouse]
+Acceleration=2
+MouseButtonMapping=RightHanded
+ReverseScrollPolarity=false
+Threshold=4
+cursorTheme=windows
