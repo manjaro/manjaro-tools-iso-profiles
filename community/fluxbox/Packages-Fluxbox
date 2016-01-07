@@ -11,6 +11,7 @@ fbmenugen
 fluxbox
 gconf # fix qt-theme
 gnome-keyring # fix wlan segfault
+gtksourceview3
 gufw # firewall
 >openrc ufw-openrc
 lightdm-gtk-greeter
@@ -35,6 +36,7 @@ ffmpeg
 ffmpegthumbnailer
 flashplugin
 galculator
+gcolor2
 gksu
 gnome-vfs
 gparted
@@ -79,6 +81,8 @@ network-manager-applet
 networkmanager-dispatcher-ntpd
 >systemd networkmanager-openconnect
 networkmanager-openvpn
+>systemd openssh
+>openrc openssh-openrc
 >openrc openvpn-openrc
 >systemd networkmanager-pptp
 networkmanager-vpnc
@@ -86,6 +90,7 @@ networkmanager-vpnc
 # >openrc openresolv-openrc
 >openrc syslog-ng-openrc
 >systemd syslog-ng
+json-c			# for syslog-ng
 
 ## Artwork
 cantarell-fonts
@@ -99,6 +104,9 @@ xcursor-menda
 xfce-theme-greenbird
 
 ## Audio Packages
+alsa-plugins
+>openrc alsa-utils-openrc
+>systemd alsa-utils
 gst-libav
 gst-plugins-bad
 gst-plugins-base
@@ -133,6 +141,7 @@ bison
 fakeroot
 flex
 gcc
+>multilib gcc-multilib
 git
 libconfig
 libtool
