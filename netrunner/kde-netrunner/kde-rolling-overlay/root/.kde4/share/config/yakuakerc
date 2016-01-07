@@ -1,0 +1,23 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Animation]
+Frames=10
+
+[Appearance]
+BackgroundColorOpacity=70
+Translucency=true
+
+[Behavior]
+OpenAfterStart=false
+
+[Dialogs]
+FirstRun=false
+
+[Favorite Profiles]
+Favorites=
+
+[Window]
+Height=60
+KeepOpen=false
+Width=90

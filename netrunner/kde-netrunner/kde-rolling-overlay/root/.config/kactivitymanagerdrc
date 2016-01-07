@@ -1,0 +1,9 @@
+[activities]
+49442035-8f68-4d86-94f9-17d0c6a8e2eb=Netrunner Desktop
+
+[activities-icons]
+49442035-8f68-4d86-94f9-17d0c6a8e2eb=/usr/share/pixmaps/homerun.svgz
+
+[main]
+currentActivity=49442035-8f68-4d86-94f9-17d0c6a8e2eb
+runningActivities=49442035-8f68-4d86-94f9-17d0c6a8e2eb

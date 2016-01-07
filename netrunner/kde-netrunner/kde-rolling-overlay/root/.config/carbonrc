@@ -1,0 +1,9 @@
+[Common]
+UseBackgroundGradient=false
+
+[Style]
+AnimationsEnabled=false
+HighlightFrames=false
+ScrollBarWidth=17
+ViewSelectionHasBorder=false
+WindowDragMode=WD_NONE

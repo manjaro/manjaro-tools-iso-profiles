@@ -1,0 +1,29 @@
+[KSharedDataCache]
+InfoOutput=4
+
+[dolphin]
+InfoOutput=2
+
+[fish]
+InfoOutput=4
+
+[kbuildsycoca4]
+InfoOutput=4
+
+[kdecore (KConfigSkeleton)]
+InfoOutput=2
+
+[kdecore (KLibrary)]
+InfoOutput=2
+
+[kded]
+InfoOutput=4
+
+[kio_trash]
+InfoOutput=4
+
+[knotify]
+InfoOutput=4
+
+[kwalletd]
+InfoOutput=2

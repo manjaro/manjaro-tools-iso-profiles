@@ -1,18 +1,14 @@
-######################################################
+#####################################################
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
-######################################################
+#####################################################
 
 ## Sound and Audio
 manjaro-alsa
 pnmixer
 gnome-alsamixer
 
-
 ## File Management
-#spacefm
-thunar
-thunar-archive-plugin
-thunar-volman
+spacefm
 catfish
 file-roller	 # Archive support
 gvfs		 # Access file system
@@ -25,7 +21,10 @@ android-tools
 android-udev
 mtpfs
 
-## Network Management
+## Package Management
+pamac
+
+## Network and bluetooth
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
@@ -34,74 +33,46 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-midori
 openresolv
-
-## Multimedia Support
-#gst-libav
-#gst-plugins-bad
-#gst-plugins-base
-#gst-plugins-good
-#gst-plugins-ugly
-#gstreamer0.10-bad-plugins
-#gstreamer0.10-base-plugins
-#gstreamer0.10-good-plugins
-#gstreamer0.10-ugly-plugins
-#flashplugin
-#libdvdcss
-
+bluez
+blueman
 
 ## Polkit
 gksu
 gnome-keyring
-lxsession
-#polkit-gnome
+polkit-gnome
 
 ## Basic packages
 dconf
 desktop-file-utils
 
-
-## AUR Access
-#autoconf
-#automake
-#binutils
-#bison
-#fakeroot
-#flex
-#gcc
-#libtool
-#m4
-#make
-#patch
-#yaourt
-
 ## Display Manager
-lxdm
+slim
+slim-themes
 
 ## Desktop Display
 compton
 conky
-xfce4-notifyd
+#xfce4-notifyd
+dunst
 
 ## Openbox Core Packages
-dmenu
+openbox
 gnome-screenshot
-libgnomeui 	 # for qt to find gtk themes
-lxterminal
+libgnomeui 	 
 nitrogen
 openbox
-oblogout
-obmenu-generator
-parcellite
-python2-xdg 	 # Enable use of .desktop files in /etc/xdg
-#synapse
+obmenu
+obkey
+gmrun 
+lxmenu-data
+clipit
+python2-xdg 	 
 tint2
-xlockmore
-xautolock
+sakura
 xterm
-
-
+xautolock
+i3lock
 
 ## Desktop Configuration
 lxappearance-obconf
@@ -110,36 +81,36 @@ lxrandr
 obconf
 tintwizard
 
-
 ## Artwork, Icon, Mouse, and Desktop Themes
-menda-circle-icon-theme
+breeze-snow-cursor-theme
+gtk-engine-murrine
+masalla-icon-theme
 openbox-themes
-menda-themes
-menda-themes-dark
-xcursor-vanilla-dmz-aa
-xcursor-menda
-manjarobox-evolution-themes
 unified-manjaro-themes-openbox
-lxdm-manjaro-theme-openbox
-
+xcursor-vanilla-dmz-aa
 
 ## Applications
-geany
-#evince
+medit
+epdfview
 gparted
-gufw
 hardinfo
 htop
-qpdfview
 leafpad
-#libreoffice-installer
-manjaro-settings-manager
+abiword
+gnumeric
 openssh
-#viewnior
 udisks2
-
-## Greeter
-manjaro-welcome
+midori
+xchat
+lxmusic
+smplayer
+viewnior
+xarchiver
+dmenu-xft
+xfce4-power-manager
+gsimplecal
+xfburn
+manjaro-settings-manager
 
 ## Fonts
 adobe-source-sans-pro-fonts
