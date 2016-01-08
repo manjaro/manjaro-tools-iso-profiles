@@ -36,7 +36,6 @@ udisks2
 mtpfs
 gvfs
 gvfs-afc
-gvfs-afp
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
