@@ -26,7 +26,7 @@ xfce4-notifyd
 xorg-xkill
 
 ## Applications
-abiword
+abiword-gtk2
 arandr
 claws-mail
 clipit
