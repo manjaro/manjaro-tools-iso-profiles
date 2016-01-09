@@ -17,11 +17,8 @@ ofono
 gksu
 manjaro-settings-manager
 lxmenu-data
-#mdm
-#mdm-themes
 entrance-git-manjaro
 polkit
-#lxpolkit			DANGER !!!!
 gnome-keyring
 pamac
 manjaro-welcome
@@ -36,7 +33,7 @@ zenity
 
 
 ## Applications
-sddm
+lightdm-gtk-greeter
 terminology
 #ristretto
 ephoto-git
