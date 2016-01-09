@@ -1,0 +1,7 @@
+[Event/startkde]
+Action=Sound
+Execute=
+KTTS=
+Logfile=
+Sound=/usr/share/sounds/desktop-login.ogg
+TTS=

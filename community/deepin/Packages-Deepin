@@ -33,6 +33,7 @@ deepin-trash
 galculator
 gimp
 gksu
+gnome-system-monitor
 gnome-vfs
 gparted
 gthumb
@@ -51,6 +52,7 @@ pidgin
 plymouth-theme-manjaro-deepin
 polkit-gnome
 screenfetch
+gufw # firewall
 xarchiver
 xfburn
 
@@ -58,7 +60,12 @@ xfburn
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
 openresolv
+syslog-ng
 
 ## Packages for Sound and Audio
 gst-libav
@@ -101,6 +108,7 @@ binutils
 bison
 fakeroot
 flex
+gcc
 git
 libconfig
 libtool

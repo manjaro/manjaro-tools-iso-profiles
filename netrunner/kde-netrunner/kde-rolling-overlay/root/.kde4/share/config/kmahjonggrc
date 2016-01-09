@@ -1,0 +1,15 @@
+State=AAAA/wAAAAD9AAAAAAAABGAAAAIFAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+
+[General]
+Background_file=/usr/share/apps/kmahjongglib/backgrounds/default.desktop
+Layout_file=/usr/share/apps/kmahjongg/layouts/default.desktop
+Tileset_file=/usr/share/apps/kmahjongglib/tilesets/traditional.desktop
+
+[KFileDialog Settings]
+Height 900=510
+Width 1600=816
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAABGAAAAIFAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+StatusBar=Disabled
+ToolBarsMovable=Disabled

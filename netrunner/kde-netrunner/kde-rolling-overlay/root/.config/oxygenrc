@@ -1,0 +1,14 @@
+[ActiveShadow]
+Enabled=false
+
+[Common]
+UseBackgroundGradient=false
+
+[Style]
+AnimationsEnabled=false
+ScrollBarWidth=18
+
+[Windeco]
+AnimationsEnabled=false
+ButtonSize=ButtonDefault
+CloseWindowFromMenuButton=true

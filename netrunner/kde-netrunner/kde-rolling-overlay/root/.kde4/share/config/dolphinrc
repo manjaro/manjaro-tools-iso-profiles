@@ -1,0 +1,56 @@
+[CompactMode]
+FontWeight=50
+PreviewSize=16
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[DetailsMode]
+FontWeight=50
+PreviewSize=16
+
+[Favorite Profiles]
+Favorites=
+
+[General]
+GlobalViewProps=true
+ShowFullPath=true
+ShowSelectionToggle=false
+ShowSpaceInfo=true
+Version=200
+
+[IconsMode]
+FontWeight=50
+IconSize=80
+PreviewSize=80
+
+[KPropertiesDialog]
+Height 900=456
+Width 1600=443
+
+[MainWindow]
+Height 768=769
+Height 900=589
+Height 989=769
+State=AAAA/wAAAAD9AAAAAwAAAAAAAACmAAACMfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAABKAAACMQAAAFABAAADAAAAAQAAALIAAAIx/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAAEoAAAIxAAAA/gEAAAMAAAADAAAE8gAAAL78AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAE8gAAAAoBAAADAAADCQAAAjEAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1024=1025
+Width 1600=1016
+Width 1920=1055
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=32
+
+[PlacesPanel]
+IconSize=22
+
+[PreviewSettings]
+Plugins=imagethumbnail,jpegthumbnail,svgthumbnail,ffmpegthumbs
+
+[SettingsDialog]
+Height 768=349
+Height 900=386
+Height 989=418
+Width 1024=512
+Width 1600=524
+Width 1920=514

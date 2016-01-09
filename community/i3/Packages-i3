@@ -27,6 +27,7 @@ lxappearance
 manjaro-settings-manager
 p7zip
 polkit-gnome
+ranger
 screenfetch
 scrot
 >openrc timeset
@@ -44,7 +45,11 @@ xorg-xprop
 
 ## Applications
 arandr
+# bashmount (AUR)
+bmenu
 clipit
+dfc
+gcolor2
 gksu
 gnome-vfs
 gparted
@@ -57,8 +62,11 @@ gvfs-smb
 isousb
 libgpod # iPhone/Pod connectivity
 manjaro-welcome
-mhwd-chroot
+# eventually add upower-pm-utils; it seems to depend on DE features; take what works default is upower
+>openrc upower-pm-utils
+moc
 mousepad
+ncdu
 nitrogen
 palemoon-bin
 perl-file-mimeinfo
@@ -67,7 +75,10 @@ pinta
 qpdfview
 open-fuse-iso
 sbxkb
+speedtest-cli
 vlc
+w3m
+xterm
 
 ## Network
 >openrc bluez-openrc
@@ -80,15 +91,18 @@ network-manager-applet
 networkmanager-dispatcher-ntpd
 >systemd networkmanager-openconnect
 networkmanager-openvpn
+>systemd openssh
+>openrc openssh-openrc
 >openrc openvpn-openrc
 >systemd networkmanager-pptp
 networkmanager-vpnc
 >systemd openresolv
-# >openrc openresolv-openrc
 >openrc syslog-ng-openrc
 >systemd syslog-ng
+json-c			# for syslog-ng
 
 ## Artwork
+awoken-icon-theme-light
 i3-theme-dark
 i3-theme-dust
 i3-wallpapers
@@ -97,6 +111,8 @@ xcursor-chameleon-pearl
 xfce-theme-greenbird
 
 ## Audio Packages
+>openrc alsa-utils-openrc
+>systemd alsa-utils
 alsa-plugins
 gst-libav
 gst-plugins-bad

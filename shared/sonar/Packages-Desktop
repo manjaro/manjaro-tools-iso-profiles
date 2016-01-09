@@ -90,6 +90,7 @@ python-pysmbc
 #driver packages, how the hell did I miss these
 foomatic-db
 foomatic-db-nonfree
+bluez-cups #for bluetooth printers
 
 #ms word and rtf extractors
 antiword
@@ -222,7 +223,6 @@ gvfs-gphoto2 #camera and media player backend
 gvfs-mtp #android and some media players backend
 gvfs-nfs #nfs, networking filesystem, backend
 gvfs-smb #smb/cifs (windows filesharing) backend
-gvfs-gphoto2
 
 ## Network
 netctl
@@ -298,3 +298,8 @@ pitivi
 gnome-schedule
 #standard terminal emulator
 gnome-terminal
+#standard accounting software
+gnucash #main program
+perl-date-manip #for stock quotes
+perl-finance-quote #for stock quotes
+
