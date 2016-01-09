@@ -66,7 +66,7 @@ hexchat
 isousb
 gnome-keyring
 manjaro-settings-manager
-manjaro-welcome
+manjaro-welcome-dev
 thunderbird
 vlc
 pragha
@@ -111,7 +111,6 @@ pulseaudio-ctl
 pulseaudio-zeroconf
 #python-pyqt4
 npapi-vlc
-flashplugin
 #swftools
 
 ## Package management
