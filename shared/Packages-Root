@@ -148,3 +148,8 @@ zd1211-firmware
 
 ## ucode for new cpus
 intel-ucode
+
+## bmenu
+bmenu
+brandr
+mhwd-tui

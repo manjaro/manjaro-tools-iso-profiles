@@ -1,0 +1,2672 @@
+#! /bin/bash
+#
+# Copyright 2014 Nio Wiklund
+#
+# GPLv3: GNU GPL version 3
+# <http://gnu.org/licenses/gpl.html>.
+#
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+#-----------------------------------------------------------------------------
+# author sudodus alias nio-wiklund at launchpad
+#
+# date        editor   comment
+# 2013-06-25  sudodus  linux installer from tarball of installed system
+# 2013-06-27  sudodus  raring.tar.gz
+# 2013-08-09  sudodus  removed lame logic for wipe as alternative to install
+# 2013-09-22  sudodus  mktst selector introduced in mkusb
+# 2013-09-24  sudodus  help text managed also for text screen
+# 2013-09-26  sudodus  mktst selector tweaked for mkusb
+# 2013-09-26  sudodus  mkusb cleaned, version 4.0
+# 2013-11-17  sudodus  not only check also offer installation of pv
+# 2013-11-22  sudodus  mkusb version 5.0
+# 2014-01-06  sudodus  mkusb version 6.0 calls to sudo removed
+# 2014-01-29  sudodus  identification of 'livedrive' fixed for live session
+# 2014-01-29  sudodus  mkusb version 7.0
+# 2014-01-30  sudodus  more livedrive fixes: CD, cloned iso, grub-n-iso,
+#                      unetbootin, usb-creator-gtk
+# 2014-01-30  sudodus  mkusb version 7.1
+# 2014-03-06  sudodus  fix to recognize debian iso file and work from CD
+# 2014-03-06  sudodus  mkusb version 7.2
+# 2014-03-09  sudodus  second parameter 'all' to start seeing all drives
+#                      usbonly=false
+# 2014-03-09  sudodus  mkusb version 7.3
+# 2014-03-13  sudodus  switch for help window
+# 2014-03-14  sudodus  writing "Done" after installation (for xterm -hold) 
+# 2014-03-14  sudodus  mkusb version 7.4
+# 2014-07-15  sudodus  mkusb version 8.0-RC
+# 2014-07-15  sudodus  text mode menus with dialog ...
+# 2014-07-15  sudodus  function splash # removed in version 9
+# 2014-07-17  sudodus  function mkhelp: help text generator separated
+# 2014-07-17  sudodus  function select_device: borrowed from the OBI
+# 2014-07-17  sudodus  function list_drives: improved drive recognition
+# 2014-07-17  sudodus  rename mktst --> mkcmd_runcmd: existed but modified
+# 2014-07-18  sudodus  mkhelp: improved help text
+# 2014-07-18  sudodus  mkusb8-rc uploaded
+# 2014-07-19  sudodus  outer shell and menu selection of input file
+# 2014-07-19  sudodus  function usage_prep_final (previous main program)
+# 2014-07-19  sudodus  function menu_shell
+# 2014-07-19  sudodus  function special_file_select # removed in version 9
+# 2014-07-19  sudodus  function general_file_select
+# 2014-07-19  sudodus  function select_source
+# 2014-07-21  sudodus  function check_packages
+# 2014-07-21  sudodus  function mkusb_usage detached from main program
+# 2014-07-21  sudodus  uncompressed image files can be used for input
+# 2014-07-21  sudodus  mkusb8-rc2 uploaded
+# 2014-07-25  sudodus  install cannot be selected if no input file
+# 2014-07-25  sudodus  usage message mofified for version 8.0
+# 2014-07-25  sudodus  mkusb version 8.0
+# 2014-07-27  sudodus  list_drives bugfix: sync size with other data
+# 2014-07-27  sudodus  function ch_display # removed in version 9
+# 2014-07-27  sudodus  reduced focus on help text --> advanced help
+# 2014-07-27  sudodus  mkusb version 8.1
+# 2014-07-28  sudodus  zenity file selection menus in graphic mode
+# 2014-07-29  sudodus  LANG: local language except during select_device
+# 2014-07-29  sudodus  mkusb version 8.2
+# 2014-07-30  sudodus  automatic selection of zenity via usage test
+#                      works in text screen and terminal windows
+#                      works locally and remotely via ssh -X
+# 2014-07-30  sudodus  mkusb version 8.3
+# 2014-08.02  sudodus  function list_drives: column count fixed with tr -s
+# 2014-08-02  sudodus  mkusb version 8.4
+# 2014-08-03  sudodus  function init_dialog # removed in version 9
+# 2014-08-03  sudodus  function warning_dialog red bg # removed in version 9
+# 2014-08-03  sudodus  function normal_dialog # removed in version 9
+# 2014-08-03  sudodus  mkusb version 8.5
+# 2014-08-08  sudodus  LANG=C in function mkcmd_runcmd (bugfix)
+# 2014-08-08  sudodus  mkusb version 8.5.1
+# 2014-08-12  sudodus  improved check if the same iso, update iso image
+# 2014-08-13  sudodus  double quote the file name in the command string
+#                      makes file name work with some special characters
+# 2014-08-13  sudodus  function clean_mtab_n_colors_n_zerrlog syncs partitions
+#                      in mtab, cleans color resource files and zenity log file
+# 2014-08-13  sudodus  mkusb version 8.5.2
+# 2014-08-24  sudodus  function zenitytest: usage test of zenity with icon
+#                      which also serves as splash in graphics mode
+#                      imgscr= mkusb24.png stored in file encoded with base64
+# 2014-08-24  sudodus  function scrsizetest detached from splash
+# 2014-08-24  sudodus  sudo -H mkusb recommended (due to graphics)
+#                      but sudo mkusb works (and better via ssh -X)
+# 2014-08-25  sudodus  function select-device's final warning with zenity too
+#                      arrow= arrow1.svg stored in file as svg without encoding
+# 2014-08-25  sudodus  function usage_prep_final's final warning with zenity too
+# 2014-08-26  sudodus  cmdsav made static (declared in the head of the file)
+# 2014-08-26  sudodus  function menu_package_installer
+# 2014-08-26  sudodus  function mkz_msg (make zenity message)
+# 2014-08-26  sudodus  mkusb.desktop using gray xterm login and xterm console
+#                      window with tweaked size, colours and font
+# 2014-08-27  sudodus  mkusb version 8.5.3
+# 2014-08-30  sudodus  bugfix to restore red warning screen in text mode
+# 2014-09-02  sudodus  fork: mkusb only GUI mode, mkusb-nox only text mode
+# 2014-09-02  sudodus  dialog menus abandoned, replaced by zenity
+# 2014-09-02  sudodus  blue colour abandoned to make style fit with menus by
+#                      zenity --list, which are white and grey with black text
+# 2014-09-06  sudodus  function help_menu
+# 2014-09-06  sudodus  function use_url: BROWSER, gnome-open, xdg-open
+# 2014-09-06  sudodus  mkusb version 9.0
+# 2014-09-06  sudodus  wider window for Welcome and Warning
+# 2014-09-06  sudodus  mkusb version 9.0.1
+# 2014-09-07  sudodus  livedrive recognition debugged: grep -m 1 ...
+# 2014-09-07  sudodus  skip if iso diskname matches on livedrive
+# 2014-09-08  sudodus  zenitytest: check environment variables needed for zenity
+# 2014-09-08  sudodus  fix for buggy(?) zenity --list in trusty
+# 2014-09-08  sudodus  use_url: added gnome-www-browser for debian
+# 2014-09-08  sudodus  added png icon for systems that cannot use svg icons
+# 2014-09-08  sudodus  mkusb version 9.0.2
+# 2014-09-10  sudodus  tweaked for Knoppix 7.4: adding to zenity window
+#                      width and height, automatic in zenitytest
+# 2014-09-10  sudodus  function tweak_zws: manual tweak of zenity window
+# 2014-09-10  sudodus  function file_from_parameter for cleaner exit, so
+#                      clean_mtab_n_colors_n_zerrlog called 'only' at the end
+# 2014-09-10  sudodus  mkusb version 9.0.3
+# 2014-09-13  sudodus  fix for Fedora: if [ "${TERM:0:5}" != "xterm" ]
+# 2014-09-13  sudodus  zenity lacks the option --html in Fedora and openSUSE
+# 2014-09-13  sudodus  livedrive recognition fixed for openSUSE (+ mkusb-nox)
+# 2014-09-17  sudodus  function find_distr: better way to identify distro
+# 2014-09-17  sudodus  function final_warning_legacy: used when no --html
+# 2014-09-17  sudodus  function mkz_html: used when -html works
+# 2014-09-17  sudodus  function mkz_legacy: used when no --html
+# 2014-09-17  sudodus  function zenitylegacy: checks zenity with no --html
+# 2014-09-18  sudodus  livedrive recognition for knoppix
+# 2014-09-18  sudodus  find_installer: finds and selects apt-get yum zypper urpmi
+# 2014-09-18  sudodus  tweaks for opensuse (desktop file, manual browsing)
+# 2014-09-18  sudodus  mkusb version 9.0.4
+# 2014-09-25  sudodus  when identifying if iso testing: try to unmount partitions
+#                      except swap partitions, and consider drives with an active
+#                      swap partition busy, 'variable bizz'
+# 2014-09-25  sudodus  function same_iso: separated from usage_prep_final
+# 2014-09-26  sudodus  function sed_mtab: clean mtab
+# 2014-09-26  sudodus  mkusb version 9.0.5
+# 2014-09-28  sudodus  exception for mageia in sed_mtab
+# 2014-09-28  sudodus  opensuse works with zenity -html (bug-fix in zenity)
+# 2014-09-29  sudodus  mkusb version 9.0.6
+# 2014-09-30  sudodus  livedrive recognition for installed fedora 
+# 2014-09-30  sudodus  mkusb version 9.0.7
+# 2014-10-02  sudodus  added zenity window width and height for debian jessie
+# 2014-10-02  sudodus  modprobe loop  # for debian jessie
+# 2014-10-08  sudodus  echoing "pv needs ..." only when pv is not installed
+# 2014-10-08  sudodus  improved text in "Select device - warning and overview" 
+# 2014-10-08  sudodus  mkusb version 9.0.8
+# 2014-10-08  sudodus  zenity --list "Action for ${imagefile##*/}" fix for Trusty
+#                      because the slashes of a full path not accepted after return
+# 2014-10-15  sudodus  function work_flow describes the sequence of zenity windows
+# 2014-10-15  sudodus  and the corresponding manual file is updated
+# 2014-10-15  sudodus  Warning and overview - "Select drive in the next window"
+# 2014-10-16  sudodus  mkusb version 9.1
+# 2014-10-22  sudodus  zenity --window-icon="/usr/share/icons/mkusb.png"
+#                      used in --list windows in 3.12.1
+# 2014-10-22  sudodus  mkusb version 9.1.1
+# 2014-11-19  sudodus  "Please wait for sync (flushing file system buffers
+#                      to the device) until 'Done' is written ..."
+# 2014-11-19  sudodus  mkusb version 9.1.2
+# 2014-11-22  sudodus  cd to source file directory to keep partition mounted
+# 2014-11-22  sudodus  mkusb version 9.1.3
+# 2014-12-07  sudodus  final text for wipe-whole-device improved
+# 2014-12-07  sudodus  mkusb version 9.1.4
+# 2015-04-03  sudodus  current directory changed to that of the source file, so
+#                      source=${source##*/} ... to manage path in parameter
+# 2015-04-03  sudodus  clone a device (typically a CD drive or USB drive)
+# 2015-04-03  sudodus  mkusb version 9.1.5
+# 2015-05-17  sudodus  icons located according to standards.freedesktop.org
+# 2015-05-19  sudodus  zenity --window-icon="/usr/share/icons/hicolor/48x48/apps/mkusb.png"
+#                      used in --list windows in 3.12.1
+# 2015-05-17  sudodus  mkusb version 9.1.6
+# 2015-06-21  sudodus  tries to unmount only usb drives when usbonly
+#                      and does not try to unmount drives in fstab
+# 2015-06-21  sudodus  mkusb version 9.2
+# 2015-06-22  sudodus  removed 2 lines (<img class ...) from arrow=
+# 2015-06-22  sudodus  livedrive=$(df |grep /$|cut -c 5-8)
+# 2015-06-22  sudodus  mkusb version 9.2.1
+
+version="mkusb 9.2.1"
+
+prgnam="${version% *}"
+#echo "$prgnam"
+
+usbonly=true
+startdir="$PWD"
+btitle=
+legacy=false
+declare -a inst_prog=( "" "" )
+pvplug=
+zenityplug=
+splashed=false
+checked_pack=false
+source=
+spec_src=
+cmdsav=
+selected=
+imagefile=
+curlang="$LANG"
+LC_ALL=C
+#LANG=C
+width=
+ch_item=
+wadd=0
+hadd=0
+distr=
+zerrlog=
+imgsrc="\
+<img class='inline-image' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB
+gAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U
+29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAUvSURBVEiJlZVtjF1VFYaftfc5p/Nxb+fjlmZG
+2oZM2tEGJcZOY9IBhNiKQeMUDGgT2jghUhoU/2jQNnzVQgIJxB9CrCQlTOsPQEMmBQItTaxhJtoh6hR
+pbVpbtU6ndDqXGTsz995zzt6LH+fe6eVjGl3JSs45++z33Xut9a4lqsoVzAC9zs/cpWgfos5rMiWqk4
+qZiGzrQTDPA5WFAGQBgs7EXXrUGHNHOR235+ZeaJqYG7QinsgWCE2B0LTT0bR5ZnHUk4hEOw3hbqD0v
+xCsdn728JlLz7WdvbQ7iP1JrAFrBCtgRECyH1WhOfgS1+R/PtcSrkutadgCdvBKBNc7Lb3+1wvbcuNz
+eyW0QmCEwEJQIzBSw8er4hWch1ywji8UXitZaf4a8HZ9jKvm+lI/e2D43O35sdm9Yo1gDQQWQiOEVgg
+DIbIQBXLZrZCU4A+HhzhWvLPRa+l1YPXHCRpTXx44/J+vN14svYkVMnCT3eDEKNx9S8JtPQkn34XICj
+4W9jzl+f43UzZ0Jwz8wjGdHOTE1H05p7OHgc55Ak+ydaI0FBTLQxgRzHy8M6Inf5Lytz8rZ88or73ki
+AJhcR7+flT5yx89LoU16wzWwIXyXhmbea7N+UuP1ggWeR8/NHphR5MAIjUXjAhjZ+Ds6ct58mkWplf2
+eg696ua/r+kVTLUIxmZ/HSDmDsAE4PuL5ZGwWH6HRUGWwJp7Bz/tT5mdgc+sEG78quVH20P2v+R4YFu
+MKtz6bUtPr+G6tQYRRVBK7iTldNw2hyt7TeymNpyeHsh9QgkCw295Th1TghB2/zbisWdCRoY9938vxn
+tY/w3L03tClncJW/sSpoqXt5+be6HJ+Zm7jOKvit3kfF0rVVd4dyQLzYY+Q9fn4MB+xw+3VHAOblxve
+eY3EUfe9vxgU8zREc+2byUUJ7K952cHraJ9BpVCJa0S1Eiqbmx2GhvA79/w3L85Jk3gyzcYnn0xgkB5
+YkdKparff/1DOXHUoyiqDo9zgTVha6V6A6914lFYenW2cfiQcuCVhCTO3oMIdj0QM3rEc/xodktj4cF
+fWnpuFpJUCcICeDcVgFgRU6dMwXmwAq1LMs0WJz7aToYO+fnnMIL7HrRcu0ZY9UVInOIUrLSjopOBII
+PL8hvvnq4cs1qVvRElFTh17DJo+1L4zj2WpR3C+2PKxfeVJR3C+o1Cxwoh9UrqIPWQeiUwBQQzEViT2
+9fV0r/pvYuP5wGcV4wI5/8N+weyk678vPDkPkthaVbnIjJfFF6V2CnOawbuFOeUFfnNM5FtPWiAocag
+0+Wj7vlEn3pP+dmdng8m4JrPwq4BQ3O7kjiInRKnVXeZJy5bS52SeiUX9dC2aG0C5nmThd6/vKrt3hT
+g+Ajs3ALTk7CiGx4ZEBpblKQGWAecEUGcZiRxlejawq45Y6KdQKXWrjtTPzv67Isbl/y4/y1JKrC8G7
+bvgfYlWVettYG6cTBf1l6zxDoP7Q293Lz8jf8GprkDKNXPg9Vj42eOXH/TdTnHDNv3wOL2qqiljqCq8
+hqD1qrPQ0fzLdyw7HelwDRsqg2eTwycc+f/eXB4/LsNccOf+H+sq2WLru381YyVxlupGzifMjJdX+rL
+AxOloWD0wo6mYvmdKwLno25Wtd2brmy954PANH8FOF6/vtDQb/QkW72PHyqWR8LT0wO52E1SSSepuEl
+EDMvyG11XS/9cY9DpVP3Loc0/DIx/HGghgpotAt8fu6kNir8KlYKIbTVirSCD1uT2AUOAXwjgQ+w2nU
+d1pQGqAAAAAElFTkSuQmCC' alt='mkusb24.png' />"
+
+arrow='
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32"
+   height="64"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="Nytt dokument 2">
+  <defs
+     id="defs2987">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible">
+      <path
+         id="path3794"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="19.840889"
+     inkscape:cy="24.891926"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="744"
+     inkscape:window-height="759"
+     inkscape:window-x="472"
+     inkscape:window-y="93"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata2990">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt; \
+        stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1; \
+        stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
+       d="M 28.933437,2.2938363 C 12.729668,18.171797 9.6147411,38.412704 9.2483809,59.569801"
+       id="path4393"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>'
+
+# arrow="arrow1.svg"
+
+#######################################################################
+#######################################################################
+
+function zenitytest {
+
+LANG=C
+
+htmlbody="<html>
+<!-- <body style='background:#b4df02'> -->
+<body style='background:#ebeceb'>
+$imgsrc
+<span style='font-family:arial;font-size:18px;'>
+<sup>- $version</sup>
+</span>
+</body>
+</html>"
+
+if [ "${TERM:0:5}" != "xterm" ]     # fix for Fedora
+then
+ echo " "
+ echo "no X:  $version  needs a graphical desktop environment or window manager"
+ echo "try    mkusb-nox  which runs in text screens 'with no X'"
+ echo " "
+ echo "sudo mkusb-nox <input-file>"
+ echo " "
+ exit
+elif [ "$DISPLAY" == "" ]
+then
+ echo " "
+ echo "[The environment variable DISPLAY is blank]"
+ echo "If you run a server via ssh try to enable X"
+ echo "ssh X user@server"
+ echo "sudo mkusb"
+ echo " "
+ echo "or try  mkusb-nox  which runs in text screens 'with no X'"
+ echo "sudo mkusb-nox <input-file>"
+ echo " "
+ exit
+fi
+
+# tweaks for distros where the default window size does not work
+
+find_distr
+
+if [ "$distr" == "opensuse" ]
+then
+ hadd=60
+ wadd=0
+elif [ "$distr" == "debian" ]  # jessie needs this (default OK for wheezy)
+then
+ hadd=120
+ wadd=100
+fi
+
+ls / | grep KNOPPIX
+if [ $? -eq 0 ]
+then
+ hadd=120
+ wadd=100
+fi
+
+# end tweaks
+
+errout=$(mktemp)
+zerrlog=$(mktemp)
+
+(echo "$htmlbody") | zenity --text-info --html --filename=/dev/stdin \
+--height=$(($hadd+120)) --title "" --timeout 2 2>> "$errout"
+
+exitnr=$?
+grep 'The owner of' "$errout"
+sudoH=$?
+if [ $sudoH -eq 0 ]
+then
+ echo "#####  Use  sudo -H mkusb  #####"
+fi
+
+if [ $exitnr -eq 0 ] || [ $exitnr -eq 5 ]
+then
+ zenityplug=true
+elif [ $exitnr -eq 1 ]
+then
+ if test -s "$errout"
+ then
+  if [ $sudoH -ne 0 ]
+  then
+   zenityplug=false
+  fi
+ fi
+else
+ zenityplug=false
+fi
+
+if $zenityplug
+then
+ splashed=true
+# echo "zenity"
+else
+ echo " "
+ echo "zenity does not work"
+ echo " "
+# echo "exitnr=$exitnr"
+ cat "$errout"
+
+ if [ "$distr" == "fedora" ]
+ then
+  echo " "
+  echo "In Fedora 20, Zenity lacks the option --html,"
+  echo "which is used in many dialogue windows by mkusb 9. Until that"
+  echo "is fixed, only a colourless legacy version of mkusb works."
+  echo " "
+#  read -t 3
+ fi
+fi
+
+LANG="$curlang"
+rm "$errout"
+}
+
+#######################################################################
+#######################################################################
+
+function zenitylegacy {
+
+LANG=C
+
+errout=$(mktemp)
+echo "testing zenity in legacy mode" >> "$errout"
+
+(echo "${version/mkusb/mkusb-legacy}") | zenity --text-info --filename=/dev/stdin \
+--height=$(($hadd+120)) --title "" --timeout 2 2>> "$errout"
+
+exitnr=$?
+grep 'The owner of' "$errout"
+sudoH=$?
+if [ $sudoH -eq 0 ]
+then
+ echo "#####  Use  sudo -H mkusb  #####"
+fi
+
+if [ $exitnr -eq 0 ] || [ $exitnr -eq 5 ]
+then
+ zenityplug=true
+elif [ $exitnr -eq 1 ]
+then
+ if test -s "$errout"
+ then
+  if [ $sudoH -ne 0 ]
+  then
+   zenityplug=false
+  fi
+ fi
+else
+ zenityplug=false
+fi
+
+if $zenityplug
+then
+ splashed=true
+ legacy=true
+ version="${version/mkusb/mkusb-legacy}"
+ echo "legacy mode"
+else
+ echo " "
+ echo "zenity does not work"
+ echo " "
+# echo "exitnr=$exitnr"
+ cat "$errout"
+ read -t 3
+ exit
+fi
+
+LANG="$curlang"
+rm "$errout"
+}
+
+#######################################################################
+#######################################################################
+
+function find_distr {
+
+#distr=$(lsb_release -a 2> /dev/null|grep Description|cut -f2)
+
+distr=$(grep -i ^ID= /etc/*release|sed s/.*ID=//) # general fix found at Fedora
+
+#echo "$distr"
+if [ "$distr" == "" ];then
+ uname -a|grep -i ubuntu;if [ $? -eq 0 ];then distr=ubuntu;fi
+ if [ "$distr" == "" ];then
+  uname -a|grep -i debian;if [ $? -eq 0 ];then distr=debian;fi
+  if [ "$distr" == "" ];then
+   distr="distro_not_found"
+  fi
+ fi
+fi
+distr="${distr%% *}"
+distr="${distr,,}"
+echo "$distr"
+} 
+
+#######################################################################
+#######################################################################
+
+function mkusb_usage {
+
+  echo "Usage:  # New: menus to select source file and target device #"
+  echo "---- Make a USB install device from ISO or image file --------"
+  echo "sudo -H $0"
+  echo "sudo -H $0 file.iso"
+  echo "sudo -H $0 \"quote file name (1) with special characters.iso\""
+  echo "sudo -H $0 file.img"
+  echo "sudo -H $0 file.img.gz"
+  echo "sudo -H $0 file.img.xz"
+  echo "---- Install from 'file.img.xz', show all mass storage devices"
+  echo "sudo -H $0 file.img.xz all"
+  echo "---- Clone a device (typically a CD drive or USB drive) ------"
+  echo "sudo -H $0 /dev/sr0    # example of CD drive"
+  echo "---- Wipe the USB device (may take long time) ----------------"
+  echo "sudo -H $0 wipe-whole-device"
+  echo "---- Wipe the first megabyte (MibiByte), show only USB devices"
+  echo "sudo -H $0 wipe-1"
+  echo "---- Wipe the first megabyte, show all mass storage devices --"
+  echo "sudo -H $0 wipe-1 all"
+  echo "---- Help and Version ----------------------------------------"
+  echo "$0 -h"
+  echo "$0 -v"
+}
+#######################################################################
+#######################################################################
+
+function tweak_zws {
+
+res=1
+while [ $res -ne 0 ]
+do
+ wadd=$(zenity --entry --title="Modify window width" --height=200 \
+ --text="Add width in pixels" --entry-text "$wadd")
+
+ res=$(($wadd +1))
+ res=$?
+done
+res=1
+while [ $res -ne 0 ]
+do
+ hadd=$(zenity --entry --title="Modify window height" --height=300 \
+ --text="Add height in pixels" --entry-text "$hadd")
+
+ res=$(($hadd +1))
+ res=$?
+done
+}
+
+#######################################################################
+#######################################################################
+
+function about {
+
+btitle="About $version"
+
+message=\
+"<center>
+<h1>$version</h1>
+<br>
+mkusb - MaKe USB boot device
+<br>
+author - sudodus alias Nio Wiklund
+<br>
+https://help.ubuntu.com/community/mkusb
+</center>
+<p>
+This is free software: you are free to use, change and redistribute it.
+
+There is NO WARRANTY, to the extent permitted by law.
+</p>"
+
+mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+350))" "--height=$(($hadd+400))" "--cancel-label=man mkusb"
+if [ $? -eq 1 ]
+then
+ if test -s /usr/share/man/man8/mkusb.8.gz
+ then
+  xterm -geometry 90x24 -fa default -fs 10 -bg '#ebeceb' -fg black -T 'man mkusb' -e man mkusb
+ else
+  zenity --info --text=\
+"Install mkusb from the PPA to get the manual page.
+See https://help.ubuntu.com/community/mkusb" 2>> "$zerrlog"
+ fi
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function work_flow {
+
+btitle="$version - Work flow (window sequences)"
+
+message=\
+"<h3>Installing new system - Work flow (window sequence)</h3>
+
+menu: Starter menu (--> select source)<br>
+file selector: Select source file<br>
+menu: Back at Starter menu (--> install)<br>
+Warning and overview<br>
+menu: Select device - and go ahead<br>
+Final warning<br>
+Work done :-)
+
+<h3>'Isotesting' (when automatic identification of target drive)</h3>
+
+{menu: Starter menu (--> select source)<br>
+file selector: Select source file; or use default source file}<br>
+menu: Starter menu (--> install)<br>
+Directly to the final warning<br>
+Recloned :-)
+
+<h3>Wiping</h3>
+
+menu: Starter menu (--> wipe)<br>
+Warning and overview<br>
+menu: Select device - and go ahead<br>
+Final warning<br>
+Work done :-)"
+
+mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+600))" "--height=$(($hadd+560))" "--cancel-label=man mkusb"
+if [ $? -eq 1 ]
+then
+ if test -s /usr/share/man/man8/mkusb.8.gz
+ then
+  xterm -geometry 90x24 -fa default -fs 10 -bg '#ebeceb' -fg black -T 'man mkusb' -e man mkusb
+ else
+  zenity --info --text=\
+"Install mkusb from the PPA to get the manual page.
+See https://help.ubuntu.com/community/mkusb" 2>> "$zerrlog"
+ fi
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function scrsizetest {
+
+lines=$(tput lines)
+cols=$(tput cols)
+
+if [ $cols -lt 80 ] || [ $lines -lt 22 ]
+then
+ xtra="Drag & drop a corner to increase the size of the console"
+message=\
+"mkusb uses a <b>terminal window as console</b> for\n
+output from the engine behind the curtains
+<pre>
+Terminal window size   = ${cols}x${lines} characters,
+while recommended size = 80x22 or larger,
+</pre>
+and increased width will improve the display.<br><br>
+$xtra"
+
+ mkz_msg "$message" "--title=$version - $xtra" \
+ "--width=$(($wadd+500))" "--height=$(($hadd+400))" "--cancel-label=Exit from mkusb"
+ if [ $? -eq 1 ]
+ then
+  clean_mtab_n_colors_n_zerrlog
+  rm "$zerrlog"
+  exit
+ fi
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function mkz_msg {
+
+# Usage: mkz_msg <message> [option1] [option2] [option3]
+# Usage: mkz_msg <message> [option1] [option2] [option3] [option4]
+# mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))" "--cancel-label='Quit'"
+# mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))"
+
+#echo "legacy=$legacy"
+#legacy=true           # for testing legacy mode
+
+if [ $# -eq 6 ]
+then
+ if ! "$legacy"
+ then
+  mkz_html "$1" "$2" "$3" "$4" "$5" "$6"
+ else
+  mkz_legacy "$1" "$2" "$3" "$4" "$5" "$6"
+ fi
+elif [ $# -eq 5 ]
+then
+ if ! "$legacy"
+ then
+  mkz_html "$1" "$2" "$3" "$4" "$5" 
+ else
+  mkz_legacy "$1" "$2" "$3" "$4" "$5" 
+ fi
+else
+ if ! "$legacy"
+ then
+  mkz_html "$1" "$2" "$3" "$4"
+ else
+  mkz_legacy "$1" "$2" "$3" "$4"
+ fi
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function mkz_html {
+
+# Usage: mkz_msg <message> [option1] [option2] [option3]
+# Usage: mkz_msg <message> [option1] [option2] [option3] [option4]
+# mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))" \
+# "--cancel-label='Quit'" "--ok-label='Something Else'"
+# mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))"
+
+message="$1"
+message=${message//\\n/<br>}
+#message=${message//\\Z4/<span style='color:#3262a0;'>}
+message=${message//\\Z4/<span style='color:#2252a0;'>}
+message=${message//\\Z1/<span style='color:#cc0000;'>}
+message=${message//\\Zn/<\/span>}
+
+htmlbody="
+<!-- GREEN <body style='background:#b4df02;'> -->
+<!-- RED   <body style='background:#cc0000;'> -->
+<!-- BLUE  <body style='background:#3262a0;'> -->
+<!-- ZenityGreyStrip <body style='background:#ebebeb;'> -->
+<body style='background:#ebeceb;'>
+
+$imgsrc
+<!--
+<span style='font-family:arial;font-size:20px;'><sup><b>
+- mkusb -
+</b></sup></span>
+-->
+<span style='font-family:arial;background:#ebeceb;color:black;font-size:14px;'>
+<p>
+<br>
+$message
+<br><br>
+</p>
+</span>
+</body>"
+
+if [ "$5" == "" ]
+then
+ (echo "$htmlbody") | zenity --text-info --html --filename=/dev/stdin \
+ --ok-label="OK" \
+ "$2" "$3" "$4" 2>> "$zerrlog"
+elif [ "$6" == "" ]
+then
+ (echo "$htmlbody") | zenity --text-info --html --filename=/dev/stdin \
+ --ok-label="OK" \
+ "$2" "$3" "$4" "$5" 2>> "$zerrlog"
+else
+ (echo "$htmlbody") | zenity --text-info --html --filename=/dev/stdin \
+ --ok-label="OK" \
+ "$2" "$3" "$4" "$5" "$6" 2>> "$zerrlog"
+fi
+
+res=$?
+#echo "$res"
+
+if [ $res -eq 0 ]; then
+# echo "OK"
+ return 0
+elif [ $res -eq 1 ]; then
+# echo "Quit"
+ return 1
+# exit
+else
+ echo "Error"
+# exit
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function mkz_legacy {
+
+# Usage: mkz_msg <message> [option1] [option2] [option3]
+# Usage: mkz_msg <message> [option1] [option2] [option3] [option4]
+# mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))" "--cancel-label='Quit'"
+# mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))"
+
+message="$1"
+message=${message//\\n/}
+message=${message//\\Z4/}
+message=${message//\\Z1/}
+message=${message//\\Zn/}
+message=$(echo "$message"|sed -e 's/<[^<]*>//'g)
+
+if [ "$5" == "" ]
+then
+ (echo "$message") | zenity --text-info --filename=/dev/stdin \
+ --ok-label="OK" \
+ "$2" "$3" "$4" 2>> "$zerrlog"
+elif [ "$6" == "" ]
+then
+ (echo "$message") | zenity --text-info --filename=/dev/stdin \
+ --ok-label="OK" \
+ "$2" "$3" "$4" "$5" 2>> "$zerrlog"
+else
+ (echo "$message") | zenity --text-info --filename=/dev/stdin \
+ --ok-label="OK" \
+ "$2" "$3" "$4" "$5" "$6" 2>> "$zerrlog"
+fi
+
+res=$?
+#echo "$res"
+
+if [ $res -eq 0 ]; then
+# echo "OK"
+ return 0
+elif [ $res -eq 1 ]; then
+# echo "Quit"
+ return 1
+# exit
+else
+ echo "Error"
+# exit
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function mkhelp {
+
+# make help text
+
+# echo "Collecting data for 'Help to select drive'"
+ hlptxt="/tmp/help-mkusb.txt"
+ > "$hlptxt"
+ echo "<b>Put the file name within quotes</b>, if you get the following output:" >> "$hlptxt"
+ echo "<br><code>bash: syntax error near unexpected token '('" >> "$hlptxt"
+ echo "<br><br> " >> "$hlptxt"
+ echo "sudo -H $0 \"quote file name (1) with special characters.iso\"" >> "$hlptxt"
+ echo "</code>" >> "$hlptxt"
+ echo "<pre>_______________________________________________</pre>" >> "$hlptxt"
+ echo " " >> "$hlptxt"
+ echo "<b>Collected data to help select target drive</b>" >> "$hlptxt"
+ echo "<pre>_______________________________________________</pre>" >> "$hlptxt"
+ echo " " >> "$hlptxt"
+ echo "<b>list_drives</b>     # function built into $prgnam" >> "$hlptxt"
+ echo "<pre>" >> "$hlptxt"
+ list_drives >> "$hlptxt"
+ echo "</pre>" >> "$hlptxt"
+ echo "<b>df --sync|grep \"/dev/[^f]d\"|sort</b> #" >> "$hlptxt"
+ echo "<pre>" >> "$hlptxt"
+ df --sync|grep "/dev/[^f]d"|sort >> "$hlptxt"
+ echo "</pre>" >> "$hlptxt"
+ echo "<b>ls -l /dev/disk/by-id| grep [a-z]$|tr -s ' ' ' ' \\" >> "$hlptxt"
+ echo "|cut -d ' ' -f 9,11|sort -k2|grep -e \^a -e \^u \\" >> "$hlptxt"
+ echo "|sed 's#../..#/dev#'</b> # also empty mass storage devices" >> "$hlptxt"
+ echo "<pre>" >> "$hlptxt"
+ ls -l /dev/disk/by-id| grep [a-z]$|tr -s ' ' ' ' \
+ |cut -d ' ' -f 9,11|sort -k2|grep -e \^a -e \^u \
+ |sed 's#../..#/dev#' >> "$hlptxt"
+ echo "</pre>" >> "$hlptxt"
+ echo "<b>lsusb|sort -k 4,4 -k 1</b> #" >> "$hlptxt"
+ echo "<pre>" >> "$hlptxt"
+ lsusb|sort -k 4,4 -k 1 >> "$hlptxt"
+ echo "</pre>" >> "$hlptxt"
+ echo "<b>fdisk -lu 2>/dev/null|grep \"/dev/[^f]d\"|sort</b> #" >> "$hlptxt"
+ echo "<pre>" >> "$hlptxt"
+ fdisk -lu 2>/dev/null|grep "/dev/[^f]d"|sort >> "$hlptxt"
+ echo "</pre>" >> "$hlptxt"
+ echo "<b>parted -ls</b> #" >> "$hlptxt"
+ echo "<pre>" >> "$hlptxt"
+ parted -ls  >> "$hlptxt"
+ echo "</pre>" >> "$hlptxt"
+ echo "<b>blkid|sort</b> #" >> "$hlptxt"
+ echo "<pre>" >> "$hlptxt"
+ blkid|sort >> "$hlptxt"
+ echo "</pre>" >> "$hlptxt"
+ echo "<b>lsblk -f</b> #" >> "$hlptxt"
+ echo "<pre>" >> "$hlptxt"
+ lsblk -f >> "$hlptxt"
+ echo "</pre>" >> "$hlptxt"
+
+ btitlh="$version - Help info to select drive"
+ xtitle="Use Arrow PgUp PgDn Home End keys to scroll this help info"
+
+ message=
+ while read rtmp
+ do
+  message=\
+"$message
+$rtmp"
+ done < "$hlptxt"
+# echo "$message"
+
+ mkz_msg "$message" "--title=$xtitle" "--width=$(($wadd+960))" "--height=$(($hadd+560))" "--cancel-label=About"
+ if [ $? -eq 1 ]
+ then
+  about
+ fi
+}
+
+#######################################################################
+#######################################################################
+
+function list_drives {
+
+# parameter $1 for usbonly (true/false)
+
+cnt1=0
+cnt2=0
+
+tmpfil=$(mktemp)
+ls -l /dev/disk/by-id| grep [a-z]$|tr -s ' ' ' '|cut -d ' ' -f 9,11 \
+|sort -k2|grep -e \^a -e \^u|sed 's#../..#/dev#' > "$tmpfil"
+
+#cat "$tmpfil"
+
+while read name device
+do
+ cnt1=$(($cnt1 + 1))
+ nam1[$cnt1]="${name%_*}"
+nam1[$cnt1]=${nam1[$cnt1]:0:36}
+ dev1[$cnt1]="$device"
+# /bin/echo -e "${nam1[$cnt1]}\0011${dev1[$cnt1]}"
+done < "$tmpfil"
+
+lsblk -db|grep disk|tr -s ' ' ' '| cut -d ' ' -f1-4 |sort > "$tmpfil"
+
+while read device dum1 dum2 bytesize
+do
+ cnt2=$(($cnt2 + 1))
+ dev2[cnt2]="$device"
+ mbsize=$((($bytesize+500000)/1000000))
+ gbsize=$((($bytesize+500000000)/1000000000))
+ if [ $mbsize -lt 32000 ]
+ then
+  prsize[$cnt2]="${mbsize}MB"
+ else
+  prsize[$cnt2]="${gbsize}GB"
+ fi
+ device[$cnt2]="/dev/$device"
+# echo "${device[$cnt2]}" "${prsize[$cnt2]}"
+done < "$tmpfil"
+
+rm "$tmpfil"
+
+if [ $cnt1 -ge $cnt2 ]
+then
+ count=$cnt1
+else
+ count=$cnt2
+fi
+strsize=0
+for (( i=1; i<=$count ; i++ ))
+do
+ if [ ${#nam1[$i]} -gt $strsize ]
+ then
+  strsize=${#nam1[$i]}
+ fi
+done
+#echo $strsize
+for (( i=1; i<=$count ; i++ ))
+do
+ addsize=$(($strsize - ${#nam1[$i]}))
+ blank='                                                    '
+ spacer=${blank:0:$addsize}
+# echo $addsize
+# echo "xxx${blank:0:$addsize}xxx"
+
+ printsize=
+ for (( j=1; j<=$count ; j++ ))
+ do
+#  echo "${dev1[$i]} ?==?  /dev/${dev2[$j]}"
+  if [ "${dev1[$i]}" ==  "/dev/${dev2[$j]}" ]
+  then
+   printsize="${prsize[$j]}"
+#   echo "printsize=$printsize"
+  fi
+ done
+
+ if [ "$printsize" != "" ]
+ then
+  string="Name: ${nam1[$i]}${spacer}  Dev: ${dev1[$i]}  Size: $printsize"
+  if [ "$1" == "true" ]
+  then
+   usbstring="${string/Name\:\ usb\-/USB: }"
+   if [ "$usbstring" != "$string" ]
+   then
+    /bin/echo -e "$usbstring"
+   fi
+  else
+    /bin/echo -e "$string"
+  fi
+ fi
+done
+}
+
+#######################################################################
+#######################################################################
+
+function check_packages {
+
+# check pipe view and offer installation
+
+if ! "$checked_pack"
+then
+ checked_pack=true
+
+ which pv > /dev/null
+ if [ "$?" == "0" ]
+ then
+  pvplug=true
+ else
+  find_installer
+  echo "The program 'pv' can show the progress during the installation."
+  read -p "Do you want to install it? (y/N)" pvi
+  if [ "$pvi" == "y" ]
+  then
+   echo ${inst_prog[@]} pv
+   ${inst_prog[@]} pv
+  fi
+  which pv > /dev/null
+  if [ "$?" == "0" ]
+  then
+   pvplug=true
+  else
+   pvplug=false
+  fi
+ fi
+# echo $pvplug
+
+# check menu packages and offer installation
+
+ menu_package_installer needs zenity "mkusb-nox works without it."
+ menu_package_installer wants xterm "mkusb-legacy.desktop works without it"
+# menu_package_installer wants smartctl "mkusb can work without it." smartmontools
+
+# test if zenity is available
+
+ zenitytest
+
+ if ! $zenityplug
+ then
+  zenitylegacy
+ fi
+
+# test text screen size
+
+ scrsizetest
+
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function find_installer {
+
+which apt-get > /dev/null 2>&1
+if [ $? -eq 0 ];then
+ which pv > /dev/null 2>&1
+ if [ $? -ne 0 ];then
+  echo "pv needs the 'universe' repository"
+ fi
+ inst_prog[1]="apt-get"
+ inst_prog[2]="install"
+else
+ which yum > /dev/null 2>&1
+ if [ $? -eq 0 ];then
+  inst_prog[1]="yum"
+  inst_prog[2]="install"
+ else
+  which zypper > /dev/null 2>&1
+  if [ $? -eq 0 ];then
+   inst_prog[1]="zypper"
+   inst_prog[2]="install"
+  else
+   which urpmi > /dev/null 2>&1
+   if [ $? -eq 0 ];then
+    inst_prog[1]="urpmi"
+    inst_prog[2]=""
+   else
+    which pacman > /dev/null 2>&1
+    if [ $? -eq 0 ];then
+     which pv > /dev/null 2>&1
+     if [ $? -ne 0 ];then
+      echo "pv needs the 'community' repository"
+     fi
+     inst_prog[1]="pacman"
+     inst_prog[2]="-S"
+    fi
+   fi
+  fi
+ fi
+fi
+if [ "${inst_prog[1]}" == "" ];then
+ echo " "
+ echo "Cannot install $2"
+ echo "None of 'apt-get' 'yum' 'zypper' 'urpmi' 'pacman' was found"
+ echo "Try manually to install $2"
+ echo " "
+ read -t 3
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function menu_package_installer {
+
+# $1 "needs" or "wants"
+# $2 program name
+# $3 informative test string
+# $4 package name (if different from program name)
+
+# Example (shows full syntax but smartctl is *not* used by mkusb)
+# menu_package_installer wants smartctl "mkusb can work without it." smartmontools
+
+find_installer
+
+if [ "$4" == "" ]
+then
+ package="$2"
+else
+ package="$4"
+fi
+which "$2" > /dev/null
+if [ "$?" != "0" ]
+then
+ echo "mkusb $1 the program '$2' for the menus."
+ read -p "Do you want to install it? (y/N)" pvi
+ if [ "$pvi" == "y" ]
+ then
+  if [ ${inst_prog[1]} == "apt-get" ]
+  then
+   echo "Prepare by making the system up to date ..."
+   echo "apt-get update && apt-get upgrade"
+   read -t 2
+   apt-get update && apt-get upgrade
+   echo "Install program $2 ... in package $package"
+   echo "apt-get install --no-install-recommends $package"
+   read -t 2
+   apt-get install --no-install-recommends "$package"
+  else
+   echo "Install program $2 ... in package $package"
+   echo ${inst_prog[@]} "$package"
+   ${inst_prog[@]} "$package"
+  fi
+ fi
+
+ which "$2" > /dev/null
+ if [ "$?" != "0" ]
+ then
+  echo "$version $1 $2 but it is not installed."
+  echo "$3"
+  if [ "$1" == "needs" ]
+  then
+   exit
+  else
+   read -t 3
+  fi
+ fi
+fi
+}
+
+#######################################################################
+#######################################################################
+
+# --colors
+#    Interpret embedded "\Z" sequences in the dialog text by the following
+# character, which tells dialog to set colors or video attributes:
+# 0 through 7 are the ANSI used in curses:
+#   0     1     2      3      4       5      6         7
+# black, red, green, yellow, blue, magenta, cyan and white respectively.
+#
+# Bold is set by 'b', reset by 'B'.
+# Reverse is set by 'r', reset by 'R'.
+# Underline is #set by 'u', reset by 'U'.
+# The settings are cumulative, e.g., "\Zb\Z1" makes the following text
+# bold (perhaps #bright) red. Restore normal settings with "\Zn". 
+
+########################################################################
+########################################################################
+
+function clean_mtab_n_colors_n_zerrlog {
+
+LANG=C
+
+cd "$startdir"
+
+tmp1fil=$(mktemp)
+
+grep /dev/[^f]d /etc/mtab|grep /media/|cut -d ' ' -f2|grep -v swap > "$tmp1fil"
+
+while read tmp1str
+do
+ mount --fake "$tmp1str" 2>/dev/null
+done < "$tmp1fil"
+
+sync
+
+for i in $(blkid /dev/[^f]d*|grep -v 'TYPE="swap"'|cut -d ' ' -f 1)
+do mount --fake "$i" 2>/dev/null;done
+#for i in /dev/[^f]d??; do mount --fake "$i" 2>/dev/null; done
+
+for i in $(df 2>&1|grep 'No such file or directory'|sed -e 's/df: `//' -e s/\'.*//)
+do
+# echo umount --fake "$i"
+ umount --fake "$i"
+ sync
+done
+
+sed_mtab
+
+#if test -f "$HOME/.dialogrc"
+#then
+# sed -i 's/screen_color =.*/screen_color = (CYAN,BLUE,ON)/' "$HOME/.dialogrc"
+#fi
+#sed -i 's#^*VT100.color4: .*#*VT100*color4: blue2#' /etc/X11/app-defaults/XTerm-color
+#sed -i 's#^*VT100.color1: .*#*VT100*color1: red3#' /etc/X11/app-defaults/XTerm-color
+#sed -i 's#^*VT100.color7: .*#*VT100*color7: gray90#' /etc/X11/app-defaults/XTerm-color
+
+if test -s "$zerrlog"
+then
+ zenity --question --timeout 3 --text "Check zenity error log?" \
+ --ok-label "No" --cancel-label="Yes" 2>> "$zerrlog"
+ if [ $? -eq 1 ]
+ then
+  sync
+  zenity --text-info --filename="$zerrlog" 2>> /dev/null
+ fi 
+fi
+curlang="$LANG"
+echo "Cleanup after mkusb finished :-)"
+}
+
+#######################################################################
+#######################################################################
+
+function sed_mtab {
+
+if [ "${inst_prog[1]}" == "urpmi" ]  # keep track of mageia's live drive
+then
+ return
+fi
+
+sync
+for i in $(grep ^/dev/[^f]d /etc/mtab|tr -s ' ' ' '|cut -d ' ' -f 1)
+do
+ match=false
+ for j in $(df 2>/dev/null|grep /dev/[^f]d|tr -s ' ' ' '|cut -d ' ' -f 1)
+ do
+  if [ "$i" == "$j" ]
+  then
+   match=true
+#   echo "$i matches"
+  fi
+ done
+ if ! "$match"
+ then
+#  echo sed -i "\%^$i%D" /etc/mtab
+  sed -i "\%^$i%D" /etc/mtab
+ fi
+done
+#cat /etc/mtab
+
+}
+
+#######################################################################
+#######################################################################
+
+function select_device {
+
+# version for mkusb (ported from OBI)
+
+# 1 parameter:
+#echo "in select_device \$1=$1"
+
+p1="$1"
+
+# make command and run command, 'here we go'
+
+ans=-1
+choice=1
+target=
+LC_ALL=C
+LANG=C
+tmpstr=
+
+ltest0=$(grep -m 1 " / " /etc/mtab|cut -d ' ' -f 1)
+if [ "$ltest0" == "/cow" ] || [ "$ltest0" == "aufs" ] || [ "$ltest0" == "rootfs" ]
+then
+ ltest1=$(grep -m 1 ' /isodevice' /etc/mtab|cut -c 5-8)
+ if [ "$ltest1" != "" ]
+ then
+  livedrive=$ltest1
+ else
+  ltest1=$(grep -m 1 ' /cdrom' /etc/mtab|cut -c 5-8)
+  if [ "$ltest1" != "" ]
+  then
+   livedrive=$ltest1
+  else
+   ltest1=$(grep -m 1 ' /livecd' /etc/mtab|cut -c 5-8)
+   if [ "$ltest1" != "" ]
+   then
+    livedrive=$ltest1
+   else
+    ltest1=$(grep -m 1 ' iso9660' /etc/mtab|grep -v ' /media'|grep -v ' /mnt'|cut -c 5-8)
+    if [ "$ltest1" != "" ]
+    then
+     livedrive=$ltest1
+    else
+     ltest1=$(grep -m 1 ' iso9660' /etc/mtab|grep ' /mnt-system'|cut -c 5-8)  # knoppix
+     if [ "$ltest1" != "" ]
+     then
+      livedrive=$ltest1
+     else
+      ltest1=$(df 2>/dev/null|grep -m 1 " /$" |cut -c 5-8)  # mageia
+      if [ "$ltest1" != "" ] && test -b "/dev$ltest1"
+      then
+       livedrive=$ltest1
+      else
+       ltest1=$(lvm pvdisplay|grep 'PV Name'|sed 's/.* //'|cut -c 5-8)  # fedora
+       ltest2=$(df 2>/dev/null|grep -m 1 " /$" |sed 's/ .*//')
+       if [ "$ltest1" != "" ] && [ "$ltest2" == "/dev/mapper/fedora-root" ]
+       then
+        livedrive=$ltest1
+        if ! test -b "/dev$livedrive"
+        then
+         livedrive="not_found"
+        fi
+       fi
+      fi
+     fi
+    fi
+   fi
+  fi
+ fi
+elif [ "${ltest0/\/dev\/[^f]d}" != "" ]
+then
+ livedrive=$(df 2>/dev/null|grep -m 1 /$ |cut -c 5-8)
+else
+ livedrive=$(df 2>/dev/null|grep -m 1 " /$" |cut -c 5-8)
+ if ! test -b "/dev$livedrive"
+ then
+  livedrive="not_found"
+ fi
+fi
+#echo ltest0=$ltest0
+#echo ltest1=$ltest1
+#echo ltest2=$ltest2
+ echo "Booted from: /dev$livedrive"
+
+ if ! $legacy
+ then
+ tmpstart='<table style="width:100%"> <tr>
+ <td>Name:  </td><td>Device:  </td><td>Size:  </td>'
+# tmptbl=$(list_drives|sed 's/$/\<br\>/')
+ tmptbl=$(list_drives|sed -e 's/$/\<br\>/' -e 's#Name:#<tr><td>#g' \
+ -e 's#Dev:#</td><td>#g' -e 's#Size:#</td><td>#g' -e 's#$#</td></tr>#g')
+ tmpend="</table>"
+ tmpstr="$tmpstart
+$tmptbl $tmpend"
+ else 
+  tmpstr="
+$(list_drives)"
+ fi
+#echo $tmpstr
+#read -p "press enter to continue"
+
+# check if all drives should be available at start (not only USB)
+# usbonly default true, can be changed with parameter2 'all'
+
+if [ "$p1" == "all" ] || [ "$p1" == "anh" ]
+then
+ usbonly=false
+else
+ usbonly=true
+fi
+
+tmpstr="$tmpstr\n
+
+Booted from: /dev$livedrive"
+
+ message="$spec_src\n\n
+
+\Z1WARNING: the target drive (device) will be completely overwritten\Zn\n
+Get more help to select (target) drive via the Starter -- Help menu\n
+\Z1Please close any other application/software/terminal\n
+that is accessing and locking the target drive.\Zn\n
+This will ensure that mkusb has exclusive access to it.\n\n
+$tmpstr"
+
+ btitle="$version - Warning and overview"
+
+ mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+560))" \
+ "--cancel-label=Quit" "--ok-label=Select drive in the next window"
+ if [ $? -eq 1 ]
+ then
+  ans=0
+  return 1
+ fi
+
+while [ "$ans" == "u" ] || [ $ans -lt 0 ]
+do
+
+#echo "usbonly=$usbonly"
+
+ if $usbonly; then ufl=usb; else ufl=d;fi
+
+
+ aind=0
+ bind=0
+ unset adev
+ unset atxt
+ unset bvar
+
+#echo "usbonly=$usbonly"
+#list_drives "$usbonly"|tr -s ' ' ' '|cut -d ' ' -f 4
+#read -p 'Press enter to continue at list_drives'
+sync 
+for j in $(list_drives "$usbonly"|tr -s ' ' ' '|cut -d ' ' -f 4)
+ do
+# echo "j=$j"
+  busy=0
+
+  infstb=$(for k in $(grep ^UUID /etc/fstab 2>/dev/null|tr '=' ' '|cut -d ' ' -f2);do blkid|grep $k;done|grep $j)
+  if [ $? -eq 0 ] 
+  then
+   echo "$j is busy; in fstab"
+   busy=1
+#  echo "$infstb"
+  fi
+  if [ $busy -eq 0 ]
+  then
+   for k in $(df --sync 2>/dev/null|grep "$j" |tr -s ' ' '\t'|cut -f1)
+   do umount "$k" 2>/dev/null; if [ "$?" != "0" ];then busy=1;fi ;done
+   if [ $busy -eq 1 ]
+   then
+    echo "$j is busy; cannot be unmounted. Close any program that is using
+this device if you want to select and use it as a target for mkusb (maybe
+change directory if a terminal window is using the partition)!"
+   fi
+  fi
+  tj="$(list_drives $usbonly|grep $j)"
+#  echo "k=$k"
+#  echo "busy=$busy"
+#  echo "${tj:0:7}"
+#  echo "${tj}"
+#  read -p "select-device at Warning and Error"
+  if [ "${tj:1:7}" == "Warning" ] || [ "${tj:1:5}" == "Error" ]
+  then
+    tj=$(fdisk -lu "$j" 2>/dev/null|grep "$j":|sed s/\,\ .*//)
+  fi
+
+  if [ "$j" == "/dev$livedrive" ]
+  then
+   adev[$aind]="q"
+   atxt[$aind]="${tj/Name:/Live:}"
+   aind=$(($aind + 1))
+  elif [ "$busy" == "1" ]
+  then
+   adev[$aind]="q"
+   atxt[$aind]="${tj/Name:/Busy:}"
+   aind=$(($aind + 1))
+  else
+   adev[$aind]="$j"
+   atxt[$aind]="$tj"
+   aind=$(($aind + 1))
+  fi
+ done
+ adev[$aind]="u"
+ if $usbonly
+ then
+  atxt[$aind]="toggle USB-only; show all drives"
+ else
+  atxt[$aind]="toggle USB-only; hide other drives"
+ fi
+ aind=$(($aind + 1))
+ adev[$aind]="q"
+ atxt[$aind]="quit installing"
+ aind=$(($aind + 1))
+ for (( xi=0; xi < $aind ; xi++ ))
+ do
+  if [ "${adev[$xi]}" == "u" ]
+  then
+   bvar[$bind]="u"
+  elif [ "${adev[$xi]}" == "q" ]
+  then
+   bvar[$bind]="q"
+  else
+   bvar[$bind]=$(($xi+1))
+  fi
+  bind=$(($bind + 1))
+  bvar[$bind]="${atxt[$xi]}"
+  bind=$(($bind + 1))
+ done
+
+# select device - the Mkusb button to go
+
+#echo "aind=$aind"
+#echo "${bvar[@]}"
+#read -p 'stop at Go ahead menu'
+
+btitle="$version - Select device - and go ahead"
+
+  ans=$(zenity --list --width=$(($wadd+640)) --height=$(($hadd+400)) --title="$btitle" \
+--window-icon="/usr/share/icons/hicolor/48x48/apps/mkusb.png" \
+--column="Hotkey" --column="Select device or toggle USB-only" \
+"${bvar[@]}" 2>> "$zerrlog")
+
+ ans=${ans:0:1}          # fix for buggy(?) zenity --list in trusty
+
+echo "ans=$ans"
+
+ if [ "$ans" == "u" ]
+ then
+  choice=1
+  if $usbonly
+  then
+   usbonly=false
+  else
+   usbonly=true
+  fi
+ elif [ "$ans" == "q" ] || [ "$ans" == "" ] || [ $ans -lt 0 ]
+ then
+  ans=0
+  return 1
+ else
+  choice=$(($ans - 1))
+  target="${adev[$choice]}"
+  cmdsav="${atxt[$choice]}"
+ fi
+# echo "ans=$ans at end of while loop"
+done
+
+# here we go 'go_on'
+
+if [ "$source" == "/dev/zero" ]
+then
+ doing="wiping\n\n"
+else
+ doing="installing\n\n
+
+the operating system \Z4$system\Zn\n
+to "
+fi
+
+# echo "$system" "$imagefile" "$target"
+# echo "$cmdsav"
+
+cmdsav="${cmdsav/USB\:\ }"
+cmdsav="${cmdsav/Name\:\ usb\-}"
+cmdsav="${cmdsav/Name\:\ ata\-}"
+cmdsav="${cmdsav/Dev\:}"
+cmdsav="${cmdsav/Size\:}"
+cmdsav=$(tr -s ' ' ' ' <<< "$cmdsav")
+cmdsav=$(sed 's/ /  /g' <<< "$cmdsav")
+
+#echo "$cmdsav"
+#read -p 'stop'
+LANG="$curlang"
+
+btitle="$version - Select device - final warning"
+
+if ! $legacy
+then
+ doing=${doing//\\n/<br>}
+ doing=${doing/\\Z4/<span style='color:#2252a0;'>}
+ doing=${doing/\\Zn/<\/span>}
+
+ htmlbody="
+<body style='background:#cc0000;'>
+$imgsrc
+<!--
+<span style='font-family:arial;font-size:20px;'><sup><b>
+- mkusb -
+</b></sup></span>
+-->
+<p style='font-family:arial;background:#d3d7cf;color:black;font-size:14px;'>
+<br>
+$prgnam is prepared to start ${doing}the target
+<span style='color:#2252a0;'>$cmdsav</span>
+<br><br>
+<span style='color:#cc0000;'>
+This is the <b style='background:black;color:white;'> FINAL WARNING </b>  before wiping and installing !!!
+<br>
+Do you really want to wipe and install to this device?
+<br><br>
+</p>
+</span>
+$arrow
+</body>"
+
+ (echo "$htmlbody") | zenity --text-info --html --filename=/dev/stdin \
+--width=$(($wadd+640)) --height=$(($hadd+450)) \
+--title "$btitle" \
+--ok-label="Go" --cancel-label="Quit" \
+--checkbox="Check this box if you are ready to go" 2>> "$zerrlog"
+else
+ doing=${doing//\\n}
+ doing=${doing/\\Z4}
+ doing=${doing/\\Zn}
+
+ final_warning_legacy "$doing"
+fi
+ans=$?
+
+if [ "$ans" != "0" ]
+then
+# clean_mtab_n_colors_n_zerrlog
+ return 1
+fi
+
+swapoff "$target"* 2>/dev/null
+sync
+
+# echo "ans=$ans at end of select_device"
+
+# echo target="$target"
+# echo "at end of select_device"
+#  exit  #-------------------------------------------  skarpt läge
+}
+
+#######################################################################
+#######################################################################
+
+function final_warning_legacy {
+
+
+
+message=\
+"$prgnam is prepared to start $1 the target $cmdsav
+
+This is the FINAL WARNING before wiping and installing !!!
+Do you really want to wipe and install to this device?
+______________________________________________________________________
+Check the box down there if you are ready to go!"
+
+echo "$message"|zenity --text-info --title="$btitle" \
+--checkbox "Check this box if you are ready to go" \
+--ok-label="OK" --cancel-label="Quit" \
+--width=480 --height=350 --filename="/dev/stdin"
+
+if [ $? -ne 0 ] || [ "${ans:0:1}" == "Q" ]
+then
+ ans="1"
+else
+ ans="0"
+fi
+
+echo "Result: ans=$ans"
+return $ans
+}
+
+#######################################################################
+#######################################################################
+
+function mkcmd_runcmd {
+
+# 6 parameters:
+#        mkcmd_runcmd "$1" "$source" "$system" "$cnt" "$doing_this" "$result"
+#echo In mkcmd_runcmd "$1" "$source" "$system" "$cnt" "$doing_this" "$result"
+
+# make command and run command, 'here we go'
+
+ LANG=C
+
+ if [ "$target" == "" ]
+ then
+  echo "No target"
+  exit
+ elif [ "$source" == "" ]
+ then
+  echo "No source"
+  exit
+ else
+  swapoff "$target"* 2>/dev/null
+  sync
+
+# the command line is implemented 
+
+  echo " "
+
+# build target and write 'a first line' to the terminal ...
+
+  if [ "$1" == "wipe-whole-device" ] || [ "$1" == "/dev/zero" ]
+  then
+   doing_this="Wiping the whole device $target ..."
+  elif [ "$1" == "wipe-1" ] || [ "$1" == "wipe1" ]
+  then
+   doing_this="Wiping the first megabyte (MibiByte) of $target ... :"
+  else
+   doing_this="Installing $1 to $target ..."
+  fi
+  echo "$doing_this"
+  echo " "  
+
+# build beginning of command (read the source) and calculate size
+
+# current directory changed to that of the source file, so
+
+  if test -f "$source"
+  then
+   source=${source##*/}
+   ii="${1##*/}"
+  else
+   ii="$1"  
+  fi
+#  echo "source=$source"
+#  echo "ii=$ii"
+
+  if [ "${source%/*}" == "/dev" ]
+  then
+   readsrc="< $source"
+   size=
+  elif [ "$source" == "$ii" ]
+  then
+
+# double quotes makes source file name work with some special characters
+
+   source=\""$source"\"
+
+   if [ "${ii%.iso}" != "$ii" ] || [ "${ii%.img}" != "$ii" ]
+   then
+    size=$(wc -c "$ii"|cut -d ' ' -f 1)
+    readsrc="< $source"
+   elif [ "${ii%.img.[gx]z}" != "$ii" ]
+   then
+    if [ "${ii%.img.gz}.img.gz" == "$ii" ]
+    then
+     size=$(gzip -l "$ii"|grep "${ii/.gz}"|tr -s ' ' ' '|sed s/^\ //|cut -d ' ' -f 2)
+     readsrc="zcat $source |"
+    else
+#     size=$(xz -l "$ii"|grep "${ii/.xz}"|tr -s ' ' ' '|sed s/^\ //|cut -d ' ' -f 5,6| \
+#            sed -e s/\ // -e s/..$//)
+     si10=$(xz -l "$ii"|grep "${ii/.xz}"|tr -s ' ' ' '|sed s/^\ //| \
+            cut -d ' ' -f 5|sed 's/\.//')
+     sitr=$(((${si10}+5)/10))
+     powr=$(xz -l "$ii"|grep "${ii/.xz}"|tr -s ' ' ' '|sed s/^\ //| \
+            cut -d ' ' -f 6|sed -e s/..$//)
+     size=$sitr$powr
+     readsrc="xzcat $source |"
+    fi
+   fi
+   size="-s ${size,,}"
+  else
+   readsrc="< $source"
+   size=
+  fi
+
+# build pvpipe (if available)
+
+  if $pvplug
+  then
+   pvpipe="pv $size |"
+  else
+   pvpipe=
+  fi
+
+#  echo "\$1=$1"
+#  echo "source=$source"
+#  echo "target=$target"
+#  echo "bs=$bs"
+#  echo "cnt=$cnt"
+#  echo "pvplug=$pvplug"
+#  echo "size=$size"
+#  echo "pvpipe=$pvpipe"
+#  echo "readsrc=$readsrc"
+
+  cmdfile=$(mktemp)
+
+  cmdline="$readsrc $pvpipe dd bs=$bs $cnt of=$target"
+
+  echo "$cmdline"|tee $cmdfile
+  echo "Please wait for sync (flushing file system buffers to the device)"
+  echo "until 'Done' is written ..."
+  bash $cmdfile
+  if [ $? -eq 0 ]
+  then
+   result="Done :-)"
+  elif [ "$1" == "wipe-whole-device" ]
+  then
+   result="Done, but you should also
+check for the line 'dd: writing '$target': No space left on device',
+which means that the whole device is wiped. (Look in the terminal window) "
+  else
+   result="Failed :-("
+  fi
+  echo "Syncing the device ..."
+  rm $cmdfile
+  sync
+  echo "$result"
+ fi
+
+ LANG="$curlang"
+}
+
+#######################################################################
+#######################################################################
+
+function usage_prep_final {
+
+#echo "usage_prep_final"
+#echo "\$1=$1"
+#echo "\$#=$#"
+
+bs=4096
+count=256
+cnt=
+target=
+source="$1"
+inversvid="\0033[7m"
+resetvid="\0033[0m"
+string1=
+string2=
+
+
+system="${1%.*}"
+if [ "${system/img}" != "$system" ]
+then
+ system="${system%.*}"
+fi
+#echo "$system"
+
+# print version and usage on demand
+
+if [ "$1" == "-v" ]
+then
+ echo "$version"
+ exit
+elif [ "$1" == "-h" ]
+then
+ mkusb_usage $*
+ exit
+fi 
+
+# usage text
+
+if [ "$(whoami)" != "root" ] || \
+  ( [ $# -ne 1 ] && ( [ "$2" != "all" ] && [ "$2" != "anh" ] || [ $# -ne 2 ] ) )
+then
+ if [ $# -ne 1 ] && ( [ "$2" != "all" ] && [ "$2" != "anh" ] || [ $# -ne 2 ] )
+ then
+  mkusb_usage $*
+ else
+  echo "Usage:"
+  echo "sudo -H $0 $1 $2"
+ fi
+ exit
+fi
+
+# check usage mode and input file extension
+
+if   [ "${1/.iso}.iso" != "$1" ] && \
+     [ "${1/.img}.img" != "$1" ] && \
+     [ "${1/.img.gz}.img.gz" != "$1" ] && \
+     [ "${1/.img.xz}.img.xz" != "$1" ]
+then
+ if [ "$1" == "wipe-whole-device" ] || [ "$1" == "/dev/zero" ]
+ then
+  echo "Wipe the whole device ... :"
+  source="/dev/zero"
+ elif [ "$1" == "wipe-1" ] || [ "$1" == "wipe1" ]
+ then
+  echo "Wipe the first megabyte (MibiByte) ... :"
+  source="/dev/zero"
+  cnt="count=$count"
+ elif [ "${1%/*}" == "/dev" ]
+ then
+  echo "Clone a device ... :"
+ else
+  echo ":-( $1 is neither an iso file, img file nor an img.{gz,xz} file :-("
+  ans=0
+  return 1
+ fi
+elif [ ! -f "$source" ]
+then
+ echo ":-( $source is not found :-("
+# double quotes makes source file name work with some special characters
+ echo "Try quotes around the file name"
+ echo "sudo -H path/mkusb \"$source\""
+ return 1
+fi
+
+# check if all drives should be available at start (not only USB)
+# usbonly default true, can be changed with parameter2 'all'
+
+if [ "$2" == "all" ] || [ "$2" == "anh" ]
+then
+ usbonly=false
+else
+ usbonly=true
+fi
+
+# check  program packages, offer installation and show a splash screen
+
+check_packages
+
+# prepare for questions using zenity
+
+btitle=
+xtitle="***  WARNING: the device will be completely overwritten  ***"
+question=
+
+if [ ${#1} -lt 70 ]
+then
+ width=80
+else
+ width=$(( ${#1} +10 ))
+fi
+
+#echo "width=$width"
+
+# cd to source file directory to keep partition mounted
+
+#if [ "$source" != "/dev/zero" ]
+if test -f "$source"
+then
+ if [ "${source%/*}" != "$source" ]
+ then
+  cd ${source%/*}
+ fi
+ source=${source##*/}
+fi
+#echo "current dir=$PWD"
+
+############################################################## same iso
+
+# check if updating 'the same' iso image
+
+############################################################## same iso
+
+if [ "${1/.iso}.iso" == "$1" ]
+then
+ same_iso
+fi
+
+# update iso image
+
+if [ "$target" != "" ]
+then
+
+# echo "target=$target"
+
+ tgd=$(list_drives|grep "$target")
+ btitle="$version - update iso image (from new iso file)"
+
+ if ! "$legacy"
+ then
+
+question=${question//\\n/<br>}
+question=${question/\\Z4/<span style='color:#2252a0;'>}
+question=${question/\\Zn/<\/span>}
+
+question="Ready to update ISO image<br>
+$question<br><span style='color:#2252a0;'>
+$tgd</span><br><br>
+Install to the device <span style='color:#cc0000;'>${target}</span> ?"
+question="${question//\\n/<br>}"
+
+htmlbody="
+<body style='background:#cc0000;'>
+$imgsrc
+<!--
+<span style='font-family:arial;font-size:20px;'><sup><b>
+- mkusb -
+</b></sup></span>
+-->
+<p style='font-family:arial;background:#d3d7cf;color:black;font-size:14px;'>
+<br>
+<b>ISO testing: <span style='color:#cc0000;'>$xtitle</span></b>
+<br><br>
+$question
+<br><br>
+</p>
+</span>
+$arrow
+</body>"
+
+(echo "$htmlbody") | zenity --text-info --html --filename=/dev/stdin \
+--width=$(($wadd+640)) --height=$(($hadd+400)) \
+--title "$btitle" \
+--ok-label="Go" --cancel-label="Quit" \
+--checkbox="Check this box if you are ready to go" 2>> "$zerrlog"
+ else
+question=${question//\\n}
+question=${question/\\Z4}
+question=${question/\\Zn}
+question="Ready to update ISO image
+$question
+$tgd
+
+Install to the device ${target} ?"
+
+textbody="ISO testing: $xtitle
+
+$question"
+
+(echo "$textbody") | zenity --text-info --filename=/dev/stdin \
+--width=$(($wadd+640)) --height=$(($hadd+400)) \
+--title "$btitle" \
+--ok-label="Go" --cancel-label="Quit" \
+--checkbox="Check this box if you are ready to go" 2>> "$zerrlog"
+
+ fi
+ ans=$?
+
+ if [ "$ans" == "0" ]
+ then
+  busy=0
+  for k in $(df --sync 2>/dev/null|grep "$target" |tr -s ' ' '\t'|cut -f1)
+   do umount "$k"; if [ "$?" != "0" ];then busy=1;fi; done
+#   echo "busy=$busy"
+#   echo "k=$k"
+  if [ "$busy" == "1" ]
+  then
+   echo "Could not unmount $target because file system on device is busy :-("
+   question="Could not unmount $target because file system on device is busy :-("
+
+   mkz_msg "$question" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))" "--cancel-label=Exit from mkusb"
+   if [ $? -eq 1 ]
+   then
+#    clean_mtab_n_colors_n_zerrlog
+#    rm "$zerrlog"
+    ans=q
+    return 1
+   fi
+
+#   clean_mtab_n_colors_n_zerrlog
+   ans=0
+   return 1
+  else
+#   clean_mtab_n_colors_n_zerrlog
+   if $pvplug
+   then
+    echo "pv \"$source\"| dd of=$target bs=$bs ..."
+    pv "$source"| dd of="$target" bs=$bs
+    echo "syncing the drive ..."
+   else
+    echo "dd if=\"$source\" of=$target bs=$bs ..."
+    dd if="$source" of="$target" bs=$bs
+   fi
+   xtitle=
+   echo "The $string1 USB device is re-cloned  :-)"
+   question="The  \Z4$string1\Zn <span style='background:\#b4df02;'> USB device is re-cloned  :-)</span>
+
+\n\n\Z4$tgd\Zn"
+
+   btitle="$version - work done with ${target} :-)"
+
+   mkz_msg "$question" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))" "--cancel-label=Exit from mkusb"
+   if [ $? -eq 1 ]
+   then
+#    clean_mtab_n_colors_n_zerrlog
+#    rm "$zerrlog"
+    ans=q
+    return 1
+   fi
+  fi
+ fi 
+else
+
+# other alternatives: wipe or clone an iso, img.gz, img.xz file
+
+ if [ "$source" == "/dev/zero" ]
+ then
+  btitle="$version - wipe a mass storage device"
+  question="Do you want to wipe a mass storage device (typically USB drive)?"
+ elif [ "${1%/*}" == "/dev" ]
+ then
+  btitle="$version - clone a device"
+  question="Do you want to clone a device (typically a CD drive to a USB drive)?"
+ elif [ "${1/.iso}.iso" == "$1" ]
+ then
+  btitle="$version - install iso file"
+  if [ "$string1" != "" ]
+  then
+   echo "$string1 _not_ in any possible target drive"
+   question="$question but \Z4not\Zn in any possible target drive"
+  fi
+  question="$question \n
+\Z4$1\Zn\n
+Do you want to use it and select the target drive in the next window?"
+ elif [ "${1/.img}.img" == "$1" ]
+ then
+  btitle="$version - install (uncompressed) image file"
+question="Do you want to clone the (uncompressed) image file\n
+\Z4$1\Zn\nto the target drive (to be selected in the next window)?"
+ elif [ "${1/.img.gz}.img.gz" == "$1" ] || [ "${1/.img.xz}.img.xz" == "$1" ]
+ then
+  btitle="$version - install compressed image file"
+question="Do you want to clone the compressed image file\n
+\Z4$1\Zn\nto the target drive (to be selected in the next window)?"
+ else
+  echo "usage_prep_final: bad choice of source file -- exit"
+  ans=0
+  return 1
+ fi
+
+# echo "$width"
+
+spec_src="$question"
+
+# mkz_msg "$question" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))" "--cancel-label=Quit"
+# ans=$? 
+
+ans=0           # added line to continue without getting OK from mkz_msg
+
+ if [ $ans -eq 1 ]
+ then
+  ans=0
+  return 1
+ elif [ $ans -eq 0 ]
+ then
+
+# select target drive, make command and run command
+
+#  echo select_device "$2"
+  select_device "$2"
+  if [ $? -eq 0 ]
+  then
+#  echo mkcmd_runcmd "$1" "$source" "$system" "$cnt" "$doing_this" "$result"
+        mkcmd_runcmd "$1" "$source" "$system" "$cnt" "$doing_this" "$result"
+  else
+   ans=0
+   return 1
+  fi
+
+# final screen
+
+  btitle="$version - work done with ${target} :-)"
+
+  if [ "${result:0:4}" == "Done" ] || true
+  then
+   xtitle=
+   tgd=$(list_drives|grep "$target")
+   final="${question/Do you want/You wanted}"
+   final="${final/\?}"
+   final="$final
+...
+
+ <p style='background:\#b4df02;'>$doing_this\n
+... $result<p>\n\n
+
+
+The target device is unmounted and can be unplugged.\n
+\Z4$tgd\Zn"
+   if [ "$source" == "/dev/zero" ]
+   then
+     final="$final\n
+You may need to \Z1unplug & replug the drive or reboot\Zn \n
+for the kernel to see that the drive is wiped."
+   fi
+   mkz_msg "$final" "--title=$btitle" "--width=$(($wadd+640))" "--height=$(($hadd+400))" "--cancel-label=Exit from mkusb"
+   if [ $? -eq 1 ]
+   then
+#    clean_mtab_n_colors_n_zerrlog
+#    rm "$zerrlog"
+    ans=q
+    return 1
+   fi
+  fi
+ fi
+fi
+#clean_mtab_n_colors_n_zerrlog
+}
+
+#######################################################################
+#######################################################################
+
+function same_iso {
+
+iso=$(mktemp -d)
+drv=$(mktemp -d)
+#echo "$iso"
+#echo "$drv"
+#echo "$source"
+ 
+echo "The iso file SHOULD BE loop mounted on a temporary file READ-ONLY:"
+sleep 0.5
+umount "$iso" >/dev/null 2>&1
+modprobe loop  # for debian jessie
+sync
+mount -o loop -t auto "$source" "$iso"
+
+disk_name_type=""
+
+tmpstr=$(grep -i -e ^default -e label "$iso"/{*,*/*,*/*/*}.cfg 2>/dev/null \
+|sed -e s/.*cfg://|head -n2| tr '\n' '|')
+if [ "$tmpstr" != "" ]
+then
+ disk_name_type="label"
+ string1="$tmpstr"
+fi
+tmpstr=$(grep -i -e title "$iso"/{*,*/*,*/*/*}.cfg 2>/dev/null|sed -e s/.*cfg://|head -n1)
+if [ "$tmpstr" != "" ]
+then
+ disk_name_type="title"
+ string1="$tmpstr"
+fi
+tmpstr=$(grep -i version "$iso"/{*,*/*,*/*/*}.cfg 2>/dev/null|sed -e s/.*cfg://|head -n1)
+if [ "$tmpstr" != "" ]
+then
+ disk_name_type="version"
+ string1="$tmpstr"
+fi
+tmpstr=$(grep -i -e Architectures -e Origin -e suite -e version \
+"$iso"/dists/*/Release 2>/dev/null|head -n4|sed 's/.*: *//'| tr '\n' ' ')
+if [ "$tmpstr" != "" ]
+then
+ disk_name_type="debian"
+ string1="$tmpstr"
+fi
+tmpstr=$(grep 'This is an installation system for Ubuntu' \
+ "$iso"/f1.txt 2>/dev/null|sed -e s/.*Ubuntu/Ubuntu/)
+if [ "$tmpstr" != "" ]
+then
+ disk_name_type="mini"
+ string1="$tmpstr"
+fi
+tmpstr=$(grep DISKNAME "$iso"/README.diskdefines 2>/dev/null|sed -e s/.*DISKNAME\ *//)
+if [ "$tmpstr" != "" ]
+then
+ disk_name_type="desktop"
+ string1="$tmpstr"
+fi
+
+echo "disk_name_type=$disk_name_type"
+# echo "string1=$string1"
+
+if [ "$string1" != "" ]
+then
+ echo "$string1 _found_ in iso-file"
+ question="Source: \Z4$string1\Zn\n\n
+
+found in the iso-file"
+else
+ echo "No disk-name string found in iso-file"
+ question="No disk-name string found in the iso-file"
+fi
+sleep 0.5
+umount "$iso"
+rmdir "$iso"
+sync
+
+# Try to unmount partitions except swap partitions, and consider
+# drives with an active swap partition busy, 'variable bizz'
+
+#echo "usbonly=$usbonly ------------------------------------------"
+
+for i in $(list_drives "$usbonly"|tr -s ' ' ' '|cut -d ' ' -f 4)
+do
+ bizz=false
+
+ infstb=$(for j in $(grep ^UUID /etc/fstab|tr '=' ' '|cut -d ' ' -f2);do blkid|grep $j;done|grep $i)
+ if [ $? -eq 0 ] 
+ then
+#  echo "$i is busy; in fstab"
+  bizz=true
+#  echo "$infstb"
+ fi
+ if ! $bizz
+ then
+  for j in $(blkid ${i}*|grep -v 'TYPE="swap"'|cut -d : -f 1)
+  do
+   umres=$(umount $j 2>&1|grep umount:|sed 's/.*: //')
+#  echo "$j: umres=$umres"
+   if [ "$umres" == "device is busy." ]
+   then
+    bizz=true
+   fi
+  done
+  for j in $(blkid ${i}*|grep 'TYPE="swap"'|cut -d : -f 1)
+  do
+   swpon=$(swapon -s|grep "$j"|cut -d " " -f 1)
+#  echo "$j: swpon=$swpon"
+   if [ "${swpon:0:8}" == "$j" ]
+   then
+    bizz=true
+   fi
+  done
+ fi
+#read -p "pause in do loop"
+
+#echo $bizz 
+ if ! $bizz
+ then
+  mount -t auto "$i" "$drv"  >/dev/null 2>&1
+  if [ $? -eq 0 ]
+  then
+   if [ "$disk_name_type" == "label" ]
+   then
+    string2=$(grep -i -e ^default -e label "$drv"/{*,*/*,*/*/*}.cfg 2>/dev/null \
+    |sed -e s/.*cfg://|head -n2| tr '\n' '|')
+   elif [ "$disk_name_type" == "title" ]
+   then
+    string2=$(grep -i -e title "$drv"/{*,*/*,*/*/*}.cfg 2>/dev/null|sed -e s/.*cfg://|head -n1)
+   elif [ "$disk_name_type" == "version" ]
+   then
+    string2=$(grep -i version "$drv"/{*,*/*,*/*/*}.cfg 2>/dev/null|sed -e s/.*cfg://|head -n1)
+   elif [ "$disk_name_type" == "debian" ]
+   then
+    string2=$(grep -i -e Architectures -e Origin -e suite -e version \
+    "$drv"/dists/*/Release 2>/dev/null|head -n4|sed 's/.*: *//'| tr '\n' ' ')
+   elif [ "$disk_name_type" == "mini" ]
+   then
+    string2=$(grep 'This is an installation system for Ubuntu' \
+    "$drv"/f1.txt 2>/dev/null|sed -e s/.*Ubuntu/Ubuntu/)
+   elif [ "$disk_name_type" == "desktop" ]
+   then
+    string2=$(grep DISKNAME "$drv"/README.diskdefines 2>/dev/null|sed -e s/.*DISKNAME\ *//)
+   else
+    string2="not_$drv"
+   fi
+  else
+   string2="not_$drv"
+  fi
+  sleep 0.5
+  umount "$i" "$drv" 2>/dev/null
+  sync
+ fi
+ if [ "$string2" == "$string1" ]
+ then
+  echo "$string2 _found_ in $i"
+  question="$question and found in $i"
+  umount "$i" "$drv" 2>/dev/null
+  df -h 2>/dev/null | grep "^$i"
+  if [ $? -eq 0 ]
+  then
+   echo "$i matches the disk-name but could not be unmounted. Is it the live drive?"
+  else
+   target="$i"
+  fi
+ fi
+done
+sync
+umount "$drv" >/dev/null 2>&1
+rmdir "$drv"
+sync
+
+# echo "target: $target"
+# exit
+}
+
+#######################################################################
+#######################################################################
+
+function menu_shell {
+
+# check program packages, offer installation and show a splash screen
+
+check_packages
+
+hlptxt="/tmp/help-mkusb.txt"
+selected="selected"
+ans="-1"
+defitem="s"
+
+#echo "$version"
+
+btitle="$version - Welcome and Warning"
+message=\
+"<center><span style='font-size:28px';>Welcome to <b>$version</b></span></center>
+\n
+WARNING  Copy the data you want to keep to another device, for\n
+WARNING  example an external hard disk drive or a cloud service!\n
+WARNING\n
+WARNING  \Z1When you run this installer, a new operating system will\Zn\n
+WARNING  \Z1be installed, so the device will be formatted and\Zn\n
+WARNING\n
+WARNING  \Z1**********       COMPLETELY OVERWRITTEN       *********\Zn\\n
+WARNING\n
+WARNING  There will be no easy way to recover any previous data.\n
+WARNING  Expensive intelligence services might restore some data."
+
+mkz_msg "$message" "--title=$btitle" "--width=$(($wadd+560))" "--height=$(($hadd+400))" "--cancel-label=About"
+ 
+if [ $? -eq 1 ]
+then
+ about
+fi
+
+while [ "$ans" != "q" ]
+do
+ if test -s "$selected"
+ then
+  read imagefile < "$selected"
+  if test -f "$imagefile"
+  then
+   menutitle="Selected: ${imagefile##*/}"
+   ans=$(zenity --list --width=$(($wadd+760)) --height=$(($hadd+250)) \
+--title="$version - $menutitle" --cancel-label="Exit from mkusb" \
+--window-icon="/usr/share/icons/hicolor/48x48/apps/mkusb.png" \
+--column="Hotkey" --column="Action for ${imagefile##*/}" \
+i "Install ==> find target drive and copy, flash, clone ..." \
+s "Select source - iso, img, img.gz or img.xz file" \
+w "Wipe the first megabyte (mibibyte)" \
+h "Help menu" \
+q "Quit from mkusb" 2>> "$zerrlog")
+  else
+   imagefile=
+   menutitle="Starter menu - No image file selected"
+   ans=$(zenity --list --width=$(($wadd+760)) --height=$(($hadd+250)) \
+--title="$version - $menutitle" --cancel-label="Exit from mkusb" \
+--window-icon="/usr/share/icons/hicolor/48x48/apps/mkusb.png" \
+--column="Hotkey" --column="Action" \
+s "Select source - iso, img, img.gz or img.xz file" \
+w "Wipe the first megabyte (mibibyte)" \
+h "Help menu" \
+q "Quit from mkusb" 2>> "$zerrlog")
+  fi
+ else
+  imagefile=
+  menutitle="Starter menu - No image file selected"
+  ans=$(zenity --list --width=$(($wadd+760)) --height=$(($hadd+250)) \
+ --title="$version - $menutitle" --cancel-label="Exit from mkusb" \
+--window-icon="/usr/share/icons/hicolor/48x48/apps/mkusb.png" \
+--column="Hotkey" --column="Action" \
+s "Select source - iso, img, img.gz or img.xz file" \
+w "Wipe the first megabyte (mibibyte)" \
+h "Help menu" \
+q "Quit from mkusb" 2>> "$zerrlog")
+ fi
+
+retval=$?
+
+#echo "retval=$retval"
+#echo "ans=$ans"
+
+ if [ $retval -eq 1 ]
+ then
+  ans=$retval
+ fi
+ ans=${ans:0:1}          # fix for buggy(?) zenity --list in trusty
+
+#echo "ans=$ans"
+#echo "in menu_shell: imagefile=$imagefile"
+#echo "ans=xxx${ans}xxx"
+#read -p "press enter to continue"
+# read -n 1 -s ans
+
+ if [ "$ans" == "s" ]
+ then
+  select_source
+ elif [ "$ans" == "i" ]
+ then
+  echo "imagefile=$imagefile"
+  usage_prep_final "$imagefile"
+ elif [ "$ans" == "d" ]
+ then
+  dl_img
+ elif [ "$ans" == "w" ]
+ then
+  usage_prep_final "wipe-1"
+ elif [ "$ans" == "1" ]
+ then
+  ans="q"
+ elif [ "$ans" == "h" ]
+ then
+  help_menu
+ fi
+done
+}
+
+#######################################################################
+#######################################################################
+
+function use_url {
+
+if [ "$distr" != "opensuse" ]
+then
+
+# Run the browser as your regular user (not as superuser)
+
+usrstr=$(who|grep -m1 -e tty7 -e console -e ':0'|cut -d ' ' -f 1)
+if [ "$usrstr" == "" ]
+then
+ echo ""
+ echo "mkusb found no regular user ID; does not want to browse the internet"
+ echo "automatically with superuser privileges. Please browse manually to"
+ echo ""
+ echo "$1"
+ echo ""
+ exit
+fi
+cmdstr="su $usrstr -c"
+
+if [ -n "$BROWSER" ]; then
+  $cmdstr "$BROWSER $1"
+elif which gnome-open > /dev/null; then
+  $cmdstr "gnome-open $1"
+elif which gnome-www-browser > /dev/null; then
+  $cmdstr "gnome-www-browser $1"
+elif  which xdg-open > /dev/null; then
+  $cmdstr "xdg-open $1"
+else
+  echo "Could not detect a web browser to use"
+fi
+
+else
+
+# Browse manually in opensuse
+
+ echo " "
+ echo "Open your internet browser and browse manually to"
+ echo " "
+ echo "$1"
+ echo " "
+ zenity --info --title="$version - browse manually to" \
+--text="$1"
+fi
+}
+
+#######################################################################
+#######################################################################
+
+function help_menu {
+
+while [ "$ans" != "q" ]
+do
+
+ ans=$(zenity --list --width=$(($wadd+760)) --height=$(($hadd+280)) \
+--title="mkusb 9 - help menu" --cancel-label="Quit" \
+--window-icon="/usr/share/icons/hicolor/48x48/apps/mkusb.png" \
+--column="Hotkey" --column="Action" \
+h "Help to select drive - advanced help text" \
+f "Flow - brief description of work flow" \
+m "Manual page - man mkusb" \
+w "Wiki page - https://help.ubuntu.com/community/mkusb" \
+t "Tweak zenity window size" \
+a "About" \
+q "Quit from this help menu" \
+ 2>> "$zerrlog")
+
+ retval=$?
+ if [ $retval -eq 1 ]
+ then
+  ans=$retval
+ fi
+ ans=${ans:0:1}          # fix for buggy(?) zenity --list in trusty
+
+# echo "ans=xxx${ans}xxx"
+
+ if [ "$ans" == "1" ]
+ then
+  ans="q"
+ elif [ "$ans" == "f" ]
+ then
+  work_flow
+ elif [ "$ans" == "h" ]
+ then
+  mkhelp
+ elif [ "$ans" == "m" ]
+ then
+  if test -s /usr/share/man/man8/mkusb.8.gz
+  then
+   xterm -geometry 90x24 -fa default -fs 10 -bg '#ebeceb' -fg black -T 'man mkusb' -e man mkusb
+  else
+   zenity --info --text=\
+"Install mkusb from the PPA to get the manual page.
+See https://help.ubuntu.com/community/mkusb" 2>> "$zerrlog"
+  fi
+ elif [ "$ans" == "w" ]
+ then
+  use_url "https://help.ubuntu.com/community/mkusb"
+ elif [ "$ans" == "t" ]
+ then
+  tweak_zws
+ elif [ "$ans" == "a" ]
+ then
+  about  
+ fi
+done
+ans=0
+}
+
+#######################################################################
+#######################################################################
+
+function general_file_select {
+
+#echo $imagefile
+if test -f "$imagefile"
+then
+ choice="$imagefile"	
+else
+ choice="$PWD/"
+fi
+
+ans=$(zenity --file-selection --title "$version - Select source file" \
+--filename="$choice" --file-filter=*.{i[sm][og]*,iso,img,img.?z} 2>> "$zerrlog")
+
+imagefile="$ans"
+}
+
+#######################################################################
+#######################################################################
+
+function select_source {
+
+LANG="$curlang"
+
+general_file_select
+
+test -f "$imagefile"
+if [ $? -ne 0 ]
+then
+ imagefile=""
+fi
+
+# write selection
+
+#echo "imagefile=$imagefile in 'select_source'"
+#read -p 'press Enter to continue'
+
+echo "$imagefile" > "$selected"
+
+echo "select_source: imagefile=$imagefile"
+
+ans=""
+#LANG=C
+}
+
+#######################################################################
+#######################################################################
+
+function file_from_parameter {
+
+ usage_prep_final "$1" $2 $3
+}
+
+#######################################################################
+#######################################################################
+#
+# mkusb main program
+#
+#######################################################################
+#######################################################################
+
+#echo "\$1=$1"
+#echo "\$#=$#"
+
+if [ "$(whoami)" == "root" ] && [ $# -eq 0 ]
+then
+ menu_shell
+else
+ file_from_parameter "$1" $2 $3
+fi
+clean_mtab_n_colors_n_zerrlog
+rm "$zerrlog"

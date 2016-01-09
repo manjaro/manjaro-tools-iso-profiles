@@ -4,6 +4,8 @@
 
 ## Budgie packages 
 
+lightdm
+#gnome-session
 budgie-desktop
 baobab
 dconf-editor
@@ -26,7 +28,8 @@ mutter
 nautilus
 file-roller
 sushi
-smplayer
+#smplayer
+lollypop
 tracker
 vino
 xdg-user-dirs-gtk
@@ -37,10 +40,11 @@ isousb
 brasero
 p7zip
 ibus
+alacarte
 
 ## Main Packages
-plank
-plank-config
+#plank
+#plank-config
 gnome-tweak-tool
 gufw # firewall
 manjaro-settings-manager
@@ -80,6 +84,7 @@ plymouth-theme-manjaro-extra-elegant
 adwaita-icon-theme
 evopop-icon-theme
 evopop-gtk-theme
+arc-themes
 
 ## Packages for Sound and Audio
 gst-libav
@@ -101,8 +106,8 @@ pulseaudio-zeroconf
 
 ## Package management
 pamac
-polkit-gnome 
-lxsession
+#polkit-gnome 
+#lxsession
 
 ## Games
 #steam-manjaro
@@ -116,7 +121,7 @@ icedtea-web
 manjaro-printer
 
 ## Office
-libreoffice-still
+#libreoffice-still
 
 ## AUR Access
 autoconf

@@ -26,7 +26,7 @@ xfce4-notifyd
 xorg-xkill
 
 ## Applications
-abiword
+abiword-gtk2
 arandr
 claws-mail
 clipit
@@ -35,6 +35,7 @@ ffmpeg
 ffmpegthumbnailer
 flashplugin
 galculator
+gcolor2
 gksu
 gnome-vfs
 gparted
@@ -79,6 +80,8 @@ network-manager-applet
 networkmanager-dispatcher-ntpd
 >systemd networkmanager-openconnect
 networkmanager-openvpn
+>systemd openssh
+>openrc openssh-openrc
 >openrc openvpn-openrc
 >systemd networkmanager-pptp
 networkmanager-vpnc
@@ -86,6 +89,7 @@ networkmanager-vpnc
 # >openrc openresolv-openrc
 >openrc syslog-ng-openrc
 >systemd syslog-ng
+json-c			# for syslog-ng
 
 ## Artwork
 cantarell-fonts
@@ -99,6 +103,9 @@ xcursor-menda
 xfce-theme-greenbird
 
 ## Audio Packages
+alsa-plugins
+>openrc alsa-utils-openrc
+>systemd alsa-utils
 gst-libav
 gst-plugins-bad
 gst-plugins-base

@@ -36,26 +36,41 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_recency
 # bindsym $mod+d exec j4-dmenu-desktop --dmenu="dmenu -fn "-xos4-terminus-medium-r-*-*-14-*" -nb '#000000' -nf '#FFFFFF' -sb '#2ECC71' -sf '#333333' -i"
 
- Screen brightness controls
+<<<<<<< HEAD:community/i3/overlay-livecd/etc/skel/.i3/config
+=======
+################################################################################################
+## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
+################################################################################################
+
+exec --no-startup-id volumeicon
+bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+#exec --no-startup-id pulseaudio
+#exec --no-startup-id pa-applet
+#bindsym $mod+Ctrl+m exec pavucontrol
+
+################################################################################################
+
+>>>>>>> c8eb2ceecd2264899531fca9dd80d15e4b4cf275:community/i3/live-overlay/etc/skel/.i3/config
+# Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
+bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+i exec gksu calamares
-# bindsym $mod+F1 exec thunderbird
 bindsym $mod+F2 exec palemoon
 bindsym $mod+F3 exec pcmanfm
+# bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
-bindsym $mod+F4 exec libreoffice
+bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec "scrot -e 'mv $f ~/Screenshots'; sleep 1; exec notify-send 'screenshot has been saved to ~/Screenshots'"
 bindsym $mod+Print --release exec "scrot -ue 'mv $f ~/Screenshots'; sleep 1; exec notify-send 'screenshot has been saved to ~/Screenshots'"
 bindsym $mod+Shift+Print --release exec "notify-send 'selection will be saved to ~/Screenshots'; scrot -se 'mv $f ~/Screenshots'"
 bindsym $mod+Shift+h exec qpdfview i3_help.pdf
-bindsym $mod+Ctrl+x exec xkill
+bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
@@ -177,8 +192,10 @@ for_window [class="Nitrogen"] floating enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [class="Pamac-manager"] floating enable
+for_window [class="Pamac-updater"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable border normal
+for_window [title="sudo"] floating enable
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
@@ -265,10 +282,11 @@ bar {
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
-exec --no-startup-id volumeicon
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+# exec --no-startup-id pulseaudio
+# exec --no-startup-id pa-applet
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id compton -b

@@ -107,8 +107,8 @@ networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 blueman
-samba
-thunar-shares-plugin-manjaro
+#samba
+#thunar-shares-plugin-manjaro
 
 ## Artwork
 menda-circle-icon-theme

@@ -1,0 +1,120 @@
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+#####################################################
+
+## Sound and Audio
+manjaro-alsa
+pnmixer
+gnome-alsamixer
+
+## File Management
+spacefm
+catfish
+file-roller	 # Archive support
+gvfs		 # Access file system
+gvfs-mtp
+gvfs-afc	 # Removable media support
+gvfs-smb	 # Samba support
+tumbler		 # Thumbnailing support (images)
+wxgtk2.8         # Needed for 7zip
+android-tools
+android-udev
+mtpfs
+
+## Package Management
+pamac
+
+## Network and bluetooth
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+openresolv
+bluez
+blueman
+
+## Polkit
+gksu
+gnome-keyring
+polkit-gnome
+
+## Basic packages
+dconf
+desktop-file-utils
+
+## Display Manager
+slim
+slim-themes
+
+## Desktop Display
+compton
+conky
+#xfce4-notifyd
+dunst
+
+## Openbox Core Packages
+openbox
+gnome-screenshot
+libgnomeui 	 
+nitrogen
+openbox
+obmenu
+obkey
+gmrun 
+lxmenu-data
+clipit
+python2-xdg 	 
+tint2
+sakura
+xterm
+xautolock
+i3lock
+
+## Desktop Configuration
+lxappearance-obconf
+lxinput
+lxrandr
+obconf
+tintwizard
+
+## Artwork, Icon, Mouse, and Desktop Themes
+breeze-snow-cursor-theme
+gtk-engine-murrine
+masalla-icon-theme
+openbox-themes
+unified-manjaro-themes-openbox
+xcursor-vanilla-dmz-aa
+
+## Applications
+medit
+epdfview
+gparted
+hardinfo
+htop
+leafpad
+abiword
+gnumeric
+openssh
+udisks2
+midori
+xchat
+lxmusic
+smplayer
+viewnior
+xarchiver
+dmenu-xft
+xfce4-power-manager
+gsimplecal
+xfburn
+manjaro-settings-manager
+
+## Fonts
+adobe-source-sans-pro-fonts
+ttf-droid
+
+# Documentaion Guide
+manjaro-documentation
