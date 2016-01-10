@@ -4,6 +4,7 @@
 
 ###lxqt###
 lxqt
+manjaro-lxqt-minimal-settings
 
 >openrc networkmanager-openrc
 >systemd networkmanager
