@@ -257,7 +257,8 @@ orca
 libpeas
 speech-dispatcher
 #sonar specific branch of brltty
-brltty-sonar
+#brltty-sonar # is this still needed, currently broken
+brltty
 eviacam
 open-dyslexic-fonts
 qt-at-spi
