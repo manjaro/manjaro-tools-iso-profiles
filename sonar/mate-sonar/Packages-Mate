@@ -52,6 +52,8 @@ system-tools-backends
 
 network-manager-applet
 ## Applications
+#our desktop settings
+sonar-mate-settings
 isousb
 udiskie
 udisks

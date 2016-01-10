@@ -77,6 +77,8 @@ firewalld # firewall
 gnome-initial-setup
 
 ## Applications
+#our desktop settings
+sonar-gnome-settings
 firefox-theme-adwaita
 #gimp
 #gvfs packages

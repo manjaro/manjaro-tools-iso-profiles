@@ -299,4 +299,6 @@ gnome-terminal
 gnucash #main program
 perl-date-manip #for stock quotes
 perl-finance-quote #for stock quotes
+#our custom backgrounds
+sonar-backgrounds
 
