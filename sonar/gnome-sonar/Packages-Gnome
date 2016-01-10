@@ -80,7 +80,7 @@ gnome-initial-setup
 firefox-theme-adwaita
 #gimp
 #gvfs packages
-gvfs-google #google drive backend 
+gvfs-google #google drive backend
 gvfs-goa #gnome online accounts (goa) backend
 dasher
 #gnome policy kit
@@ -105,4 +105,6 @@ vinagre
 vino
 x2goserver
 x2goclient
+
+manjaro-backgrounds
 
