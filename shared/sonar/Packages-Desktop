@@ -43,8 +43,6 @@ sox
 #command line web browser
 elinks
 
-#espeakup
-espeakup
 
 #some useful cli apps
 screen
