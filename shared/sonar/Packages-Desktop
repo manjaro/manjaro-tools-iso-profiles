@@ -256,8 +256,6 @@ orca
 #library for orca plugins
 libpeas
 speech-dispatcher
-#sonar specific branch of brltty
-#brltty-sonar # is this still needed, currently broken
 brltty
 eviacam
 open-dyslexic-fonts
