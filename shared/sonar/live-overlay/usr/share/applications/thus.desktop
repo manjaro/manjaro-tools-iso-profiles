@@ -2,7 +2,7 @@
 Name=Install Sonar Linux
 GenericName=Live Installer
 Comment=Install the operating system to disk
-Exec=/usr/bin/thus
+Exec=sudo /usr/bin/thus
 Icon=/usr/share/thus/data/images/manjaro/manjaro-icon.png
 Terminal=False
 Type=Application
