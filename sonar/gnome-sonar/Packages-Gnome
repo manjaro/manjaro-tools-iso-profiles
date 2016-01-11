@@ -80,7 +80,7 @@ gnome-initial-setup
 #our desktop settings
 sonar-gnome-settings
 #our installer branding
-sonar-calamares-branding-gnome
+#sonar-calamares-branding-gnome
 firefox-theme-adwaita
 #gimp
 #gvfs packages
