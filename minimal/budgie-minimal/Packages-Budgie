@@ -2,7 +2,7 @@
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## Budgie minimal packages 
+## Budgie minimal packages
 
 budgie-desktop
 baobab
@@ -54,10 +54,11 @@ gedit
 gnome-tweak-tool
 gufw # firewall
 manjaro-settings-manager
-lightdm-gtk-greeter   
+lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 #numlockx
-network-manager-applet 
+network-manager-applet
+manjaro-budgie-minimal-settings
 
 ## Applications
 firefox
@@ -110,7 +111,7 @@ pulseaudio-zeroconf
 
 ## Package management
 pamac
-polkit-gnome 
+polkit-gnome
 lxsession
 
 ## Games
