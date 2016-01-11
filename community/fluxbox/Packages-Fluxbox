@@ -16,6 +16,7 @@ gufw # firewall
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
+manjaro-fluxbox-settings
 manjaro-settings-manager
 oblogout-manjaro
 plank
