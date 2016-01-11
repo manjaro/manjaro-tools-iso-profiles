@@ -156,6 +156,10 @@ soundconverter #for audio formats and video if all you want is the audio
 gnome-software
 
 #standard applications
+#our custom backgrounds
+sonar-backgrounds
+#our isolinux branding
+sonar-isolinux
 firefox
 thunderbird
 bleachbit
@@ -299,6 +303,4 @@ gnome-terminal
 gnucash #main program
 perl-date-manip #for stock quotes
 perl-finance-quote #for stock quotes
-#our custom backgrounds
-sonar-backgrounds
 
