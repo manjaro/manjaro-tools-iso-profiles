@@ -28,6 +28,7 @@ xfce4-clipman-plugin
 xfce4-power-manager
 xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
+manjaro-xfce-minimal-settings
 
 ## Audio Packages
 >multilib manjaro-alsa
@@ -76,3 +77,4 @@ manjaro-artwork
 xcursor-menda
 >i686 xfce-theme-greenbird
 >systemd plymouth-theme-manjaro-elegant
+manjaro-backgrounds

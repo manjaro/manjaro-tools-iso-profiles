@@ -1,9 +1,9 @@
- 
+
 #####################################################
 ### THIS FILE WILL INCLUDE shared/Packages-Custom ###
 #####################################################
 
- 
+
 ### Manjaro Packages Pantheon
 
 ## All file for any DE
@@ -65,9 +65,10 @@ pantheon-backgrounds-bzr
 elementary-add-icon-theme-git #from aur for most icon
 plank-theme-pantheon-bzr
 >systemd plymouth-theme-manjaro-elegant
+manjaro-backgrounds
 
 ##Pantheon Apps
-#audience-bzr # problem if window is not a full screen 
+#audience-bzr # problem if window is not a full screen
 smplayer # instaed audience
 evince
 contractor-bzr
@@ -76,11 +77,11 @@ elementary-scan-bzr
 geary-plank-manjaro #stable and modified for see bullet in a dock
 #lightdm-pantheon-greeter-bzr
 #maya-calendar-bzr
-california 
+california
 #midori-granite-bzr
 firefox
 icedtea-web
-#noise-player 
+#noise-player
 pantheon-calculator-bzr
 pantheon-files-bzr
 pantheon-print-bzr
@@ -133,7 +134,7 @@ gparted
 light-locker
 manjaro-settings-manager
 #manjaro-printer
-manjaro-welcome 
+manjaro-welcome
 #mousepad
 pamac
 #>i686 parole
