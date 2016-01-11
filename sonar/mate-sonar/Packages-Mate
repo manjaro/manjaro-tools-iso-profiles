@@ -54,6 +54,8 @@ network-manager-applet
 ## Applications
 #our desktop settings
 sonar-mate-settings
+#our installer branding
+sonar-calamares-branding-mate
 isousb
 udiskie
 udisks

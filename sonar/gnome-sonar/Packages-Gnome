@@ -79,6 +79,8 @@ gnome-initial-setup
 ## Applications
 #our desktop settings
 sonar-gnome-settings
+#our installer branding
+sonar-calamares-branding-gnome
 firefox-theme-adwaita
 #gimp
 #gvfs packages
