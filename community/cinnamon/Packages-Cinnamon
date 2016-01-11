@@ -141,7 +141,7 @@ manjaro-alsa
 manjaro-pulse
 pulseaudio-ctl
 pulseaudio-bluetooth
-pulseaudio-gconf 
+pulseaudio-gconf
 pulseaudio-zeroconf
 
 ## Printing
@@ -168,3 +168,5 @@ make
 patch
 subversion
 yaourt
+
+manjaro-cinnamon-settings

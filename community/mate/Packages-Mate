@@ -23,7 +23,7 @@ mate-menu
 galculator-gtk2
 xterm
 mate-accountsdialog
-mate-disk-utility 
+mate-disk-utility
 #manjaro
 manjaro-documentation
 manjaro-mate-desktop-settings
@@ -78,11 +78,11 @@ yelp
 exfat-utils
 fuse-exfat
 
-vertex-icons-git 
+vertex-icons-git
 vertex-themes
-moka-icon-theme-git 
+moka-icon-theme-git
 faba-icon-theme-git
-faba-mono-icons-git 
+faba-mono-icons-git
 ## Games
 
 
@@ -122,7 +122,7 @@ ttf-droid
 
 ## Office
 libreoffice-still
-#abiword	
+#abiword
 #gnumeric
 
 
@@ -145,3 +145,4 @@ patch
 subversion
 yaourt
 
+manjaro-mate-settings

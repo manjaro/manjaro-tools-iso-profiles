@@ -2,7 +2,7 @@
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## Budgie packages 
+## Budgie packages
 
 lightdm
 #gnome-session
@@ -48,10 +48,10 @@ alacarte
 gnome-tweak-tool
 gufw # firewall
 manjaro-settings-manager
-lightdm-gtk-greeter   
+lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 numlockx
-network-manager-applet 
+network-manager-applet
 
 ## Applications
 firefox
@@ -106,7 +106,7 @@ pulseaudio-zeroconf
 
 ## Package management
 pamac
-#polkit-gnome 
+#polkit-gnome
 #lxsession
 
 ## Games
@@ -138,3 +138,5 @@ make
 patch
 subversion
 yaourt
+
+manjaro-budgie-settings
