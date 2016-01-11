@@ -1,1 +1,11 @@
-../../shared/Packages-Live
+>openrc manjaro-livecd-openrc
+>systemd manjaro-livecd-systemd
+manjaro-livecd-cli-installer
+manjaro-tools-base		# recovery chroot tools
+calamares			# new GUI installer of manjaro
+sonar-calamares-branding	# sonar branding for calamares
+#calamares-dev			# new GUI installer of manjaro - kpmcore
+#calamares-exp			# new GUI installer of manjaro - experimental version
+thus
+#thus-dev
+#gparted
