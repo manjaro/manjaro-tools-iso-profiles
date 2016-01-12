@@ -1,5 +1,0 @@
-%power  ALL = NOPASSWD: /usr/sbin/pm-hibernate
-%power  All = NOPASSWD: /usr/sbin/pm-powersave
-%power  All = NOPASSWD: /usr/sbin/pm-suspend
-%power  All = NOPASSWD: /usr/sbin/pm-suspend-hybrid
-%power  All = NOPASSWD: /usr/sbin/reboot
