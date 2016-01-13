@@ -104,10 +104,10 @@ networkmanager-vpnc
 json-c			# for syslog-ng
 
 ## Artwork
+artwork-i3
 awoken-icon-theme-light
 i3-theme-dark
 i3-theme-dust
-i3-wallpapers
 maia-icon-theme
 xcursor-chameleon-pearl
 xfce-theme-greenbird
