@@ -93,9 +93,9 @@ networkmanager-vpnc
 json-c			# for syslog-ng
 
 ## Artwork
+artwork-fluxbox
 cantarell-fonts
 fluxbox-theme-manjaro
-fluxbox-wallpapers
 menda-themes-dark
 numix-reborn-suite
 plymouth-theme-manjaro-circle
