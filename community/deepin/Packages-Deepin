@@ -25,6 +25,7 @@ deepin-terminal
 
 ## other deepin Packages
 dconf-editor
+deepin-system-monitor
 downgrade
 evince
 evolution
