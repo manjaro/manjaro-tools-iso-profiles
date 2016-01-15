@@ -250,7 +250,6 @@ fsarchiver
 rsync
 parted
 bash-completion
-testdisk
 
 #accessibility packages
 espeak
@@ -303,4 +302,9 @@ gnome-terminal
 gnucash #main program
 perl-date-manip #for stock quotes
 perl-finance-quote #for stock quotes
+#gui and graphical partition management tools
+gparted #graphical
+gpart #for partition rescue via gparted
+testdisk #command line application for partition recovery
+
 
