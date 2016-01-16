@@ -27,6 +27,7 @@ lightdm-gtk-greeter-settings
 lxappearance
 manjaro-i3-settings
 manjaro-settings-manager
+mlocate
 p7zip
 polkit-gnome
 ranger
@@ -75,6 +76,8 @@ perl-file-mimeinfo
 pcmanfm
 pinta
 qpdfview
+qpdfview-djvu-plugin
+qpdfview-ps-plugin
 open-fuse-iso
 sbxkb
 speedtest-cli
@@ -109,6 +112,7 @@ awoken-icon-theme-light
 i3-theme-dark
 i3-theme-dust
 maia-icon-theme
+solarized-dark-themes
 xcursor-chameleon-pearl
 xfce-theme-greenbird
 

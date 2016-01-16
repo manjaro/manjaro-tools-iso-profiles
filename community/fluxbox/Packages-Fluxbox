@@ -18,6 +18,7 @@ lightdm-gtk-greeter-settings
 lxappearance
 manjaro-fluxbox-settings
 manjaro-settings-manager
+mlocate
 oblogout-manjaro
 plank
 polkit-gnome
@@ -62,6 +63,8 @@ pcmanfm
 perl-file-mimeinfo
 pinta
 qpdfview
+qpdfview-djvu-plugin
+qpdfview-ps-plugin
 sbxkb
 scrot
 simple-scan
