@@ -21,6 +21,7 @@ gnome-settings-daemon
 gnome-system-log
 gnome-system-monitor
 gnome-terminal
+gnome-screensaver
 grilo-plugins
 gucharmap
 mousetweaks

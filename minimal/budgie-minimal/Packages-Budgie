@@ -33,6 +33,7 @@ gnome-terminal
 #gnome-themes-standard
 #gnome-user-docs
 #gnome-user-share
+gnome-screensaver
 grilo-plugins
 gucharmap
 mousetweaks
