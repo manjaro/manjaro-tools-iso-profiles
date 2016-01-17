@@ -34,11 +34,6 @@ lm_sensors
 #media info package
 mediainfo #this package provides lots of audio and video format info to nautilus, format, bit rate, frames per second, etc.
 
-#opus tools and libs
-opus-tools
-opusfile
-#swiss army knife of cli audio file manipulation
-sox
 
 #command line web browser
 elinks
@@ -56,17 +51,6 @@ bluez-plugins
 bluez-hid2hci
 bluez-utils
 ## Packages for Sound and Audio
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-good
-gst-plugins-ugly
-gstreamer0.10-bad-plugins
-gstreamer0.10-base-plugins
-gstreamer0.10-ffmpeg
-gstreamer0.10-good-plugins
-gstreamer0.10-ugly-plugins
-libbluray
 manjaro-alsa
 manjaro-pulse
 pavucontrol
@@ -78,13 +62,14 @@ pulseaudio-equalizer
 pulseaudio-gconf
 pulseaudio-zeroconf
 pulseaudio-lirc
+pulseaudio-xen
 
 #Sound theme support
 sound-theme-freedesktop
 
 ## Printing
 manjaro-printer
-python-pysmbc
+python-pysmbc #for windows shared printers
 #driver packages, how the hell did I miss these
 foomatic-db
 foomatic-db-nonfree
@@ -94,10 +79,6 @@ bluez-cups #for bluetooth printers
 antiword
 unrtf
 
-#opus and vorbis utils
-vorbis-tools
-opusfile
-opus-tools
 
 #mac filesystem utils
 hfsprogs
@@ -117,6 +98,8 @@ dvdbackup
 dvdauthor
 openjpeg2
 rhythmbox #for music management.
+#swiss army knife of cli audio file manipulation
+sox
 atomicparsley #for embedding thumbnails in the m4a format
 libimobiledevice #for apple device support
 libplist #for parsing apple .plist files
@@ -131,6 +114,23 @@ libbluray
 libaacs
 #dvd decryption
 libdvdcss
+
+#codecs
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-ffmpeg
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+#vorbis utils
+vorbis-tools
+#opus tools and libs
+opus-tools
+opusfile
 
 #advanced sound editing
 audacity
@@ -156,6 +156,10 @@ soundconverter #for audio formats and video if all you want is the audio
 gnome-software
 
 #standard applications
+#manjaro provided firmware
+manjaro-firmware
+#manjaro provided hotfixes
+manjaro-hotfixes
 #our custom backgrounds
 sonar-backgrounds
 #our isolinux branding
