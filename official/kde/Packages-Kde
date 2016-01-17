@@ -271,7 +271,6 @@ kactivities
 
 # Partition
 #gparted
-#partitionmanager-dev
 partitionmanager
 
 ## Documentation

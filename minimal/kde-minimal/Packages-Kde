@@ -41,8 +41,7 @@ qpdfview
 qupzilla
 kwrite
 octopi
-partitionmanager # conflicts with calamares-dev
-#partitionmanager-dev
+partitionmanager
 #gparted
 #manjaro-settings-manager
 kcm-msm
