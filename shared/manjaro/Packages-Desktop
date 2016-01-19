@@ -58,3 +58,4 @@ nss-mdns # NSS support for mDNS (optdepend for avahi)
 >openrc pm-utils
 >openrc cgmanager-openrc
 manjaro-hotfixes
+manjaro-base-skel
