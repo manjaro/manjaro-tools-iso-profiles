@@ -2,32 +2,31 @@
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## Artwork
-manjaro-artwork
-
 ## Cinnamon
+blueberry
 cinnamon
+cinnamon-control-center
 cinnamon-desktop
+cinnamon-menus
+cinnamon-screensaver
 cinnamon-session
 cinnamon-settings-daemon
-cinnamon-translations
-cinnamon-control-center
-cinnamon-screensaver
 cinnamon-theme-minty
-cinnamon-menus
+cinnamon-translations
 cjs
+dconf-editor
+ffmpegthumbnailer
+manjaro-cinnamon-settings
+manjaro-firefox-settings
+mousepad
 muffin
 nemo
 nemo-fileroller
 nemo-preview
 nemo-python
 nemo-share
-ffmpegthumbnailer
-blueberry
-dconf-editor
 
 ## polkit
-
 polkit-gnome
 polkit
 gksu
@@ -37,15 +36,18 @@ jre8-openjdk
 icedtea-web
 jre8-openjdk-headless
 
-## GNOME related stuf
-
+## GNOME related stuff
 gnome-system-log
 file-roller
+eog
+#eog-plugins
+evince
 gedit
+gnome-disk-utility
 gnome-keyring
+gnome-screenshot
 gnome-system-monitor
 gnome-terminal
-gnome-disk-utility
 gnome-vfs
 icon-naming-utils
 mousetweaks
@@ -53,78 +55,79 @@ python2-gnomecanvas
 python2-gnomevfs
 python2-libgnome
 xdg-user-dirs-gtk
-evince
-eog
-#eog-plugins
-gnome-screenshot
-
-#plymouth
-plymouth
-plymouth-theme-manjaro-extra-elegant
 
 # needed
-python2-ptyprocess
 python-ptyprocess
+python2-ptyprocess
 
 ## Network
 netctl
+net-tools
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-net-tools
 
 # internet
 firefox
 thunderbird
 
 ## Extra
-
-vlc
 npapi-vlc
-pragha
 pidgin
 pidgin-libnotify
+pragha
+vlc
 
-## Theme
-vertex-themes
-xcursor-simpleandsoft
+## Artwork
+cinnamon-wallpapers
 gnome-themes-maia
+maia-icon-theme
+menda-circle-icon-theme
+menda-themes
+menda-themes-dark
+numix-reborn-icon-themes
+vertex-themes
+xcursor-menda
+xcursor-simpleandsoft
+xfce-theme-numix-reborn
+
 #Fonts
+cantarell-fonts
 ttf-droid
 ttf-comfortaa
-cantarell-fonts
 
 ## Other Applications
+exfat-utils
+fuse-exfat
+galculator
 gparted
-isousb
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-numlockx
-p7zip
-udiskie
-udisks
-udisks2
 gvfs
 gvfs-afc
 gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
-libgsf
-#pavucontrol
-openssh
 hexchat
-exfat-utils
-fuse-exfat
+isousb
+libgsf
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+manjaro-documentation
+manjaro-settings-manager
+manjaro-welcome
 nss
+numlockx
+openssh
+p7zip
 parcellite
-galculator
+pavucontrol
+udiskie
+udisks
+udisks2
 
 ## Package management
 pamac
-manjaro-welcome
-manjaro-settings-manager
-manjaro-documentation
 
 ## Packages for Sound and Audio
 gst-libav
@@ -139,8 +142,8 @@ gstreamer0.10-ugly-plugins
 libdvdcss
 manjaro-alsa
 manjaro-pulse
-pulseaudio-ctl
 pulseaudio-bluetooth
+pulseaudio-ctl
 pulseaudio-gconf
 pulseaudio-zeroconf
 
@@ -150,8 +153,6 @@ system-config-printer
 
 ## Office
 libreoffice-still
-#abiword
-#gnumeric
 
 ## AUR Access
 autoconf
@@ -161,12 +162,11 @@ bison
 fakeroot
 flex
 gcc
->multilib gcc-multilib
+git
+libconfig
 libtool
 m4
 make
 patch
 subversion
 yaourt
-
-manjaro-cinnamon-settings

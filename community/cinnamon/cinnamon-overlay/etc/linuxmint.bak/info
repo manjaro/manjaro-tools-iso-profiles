@@ -1,5 +1,5 @@
-RELEASE=2015
-CODENAME=Bellatrix
+RELEASE=16.03
+CODENAME=Daniella
 EDITION="Cinnamon "
 DESCRIPTION="Manjaro Linux"
 DESKTOP=Gnome
