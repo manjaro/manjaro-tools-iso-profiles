@@ -311,4 +311,5 @@ gparted #graphical
 gpart #for partition rescue via gparted
 testdisk #command line application for partition recovery
 
-
+# sonar docs and special desktop launchers
+sonar-common
