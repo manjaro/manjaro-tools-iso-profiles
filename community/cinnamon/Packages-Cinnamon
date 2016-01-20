@@ -5,31 +5,20 @@
 ## Cinnamon
 blueberry
 cinnamon
-cinnamon-control-center
-cinnamon-desktop
-cinnamon-menus
-cinnamon-screensaver
-cinnamon-session
-cinnamon-settings-daemon
 cinnamon-theme-minty
-cinnamon-translations
-cjs
 dconf-editor
+evince
 ffmpegthumbnailer
+gimp
+gksu
 manjaro-cinnamon-settings
 manjaro-firefox-settings
 mousepad
-muffin
-nemo
 nemo-fileroller
 nemo-preview
 nemo-python
 nemo-share
-
-## polkit
-polkit-gnome
-polkit
-gksu
+xdg-user-dirs-gtk
 
  # java
 jre8-openjdk
@@ -41,7 +30,6 @@ gnome-system-log
 file-roller
 eog
 #eog-plugins
-evince
 gedit
 gnome-disk-utility
 gnome-keyring
@@ -54,7 +42,6 @@ mousetweaks
 python2-gnomecanvas
 python2-gnomevfs
 python2-libgnome
-xdg-user-dirs-gtk
 
 # needed
 python-ptyprocess
@@ -63,7 +50,6 @@ python2-ptyprocess
 ## Network
 netctl
 net-tools
-networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
 
@@ -86,6 +72,8 @@ menda-circle-icon-theme
 menda-themes
 menda-themes-dark
 numix-reborn-icon-themes
+plymouth
+plymouth-theme-manjaro-extra-elegant
 vertex-themes
 xcursor-menda
 xcursor-simpleandsoft
@@ -101,7 +89,6 @@ exfat-utils
 fuse-exfat
 galculator
 gparted
-gvfs
 gvfs-afc
 gvfs-google
 gvfs-gphoto2
@@ -124,7 +111,6 @@ parcellite
 pavucontrol
 udiskie
 udisks
-udisks2
 
 ## Package management
 pamac
