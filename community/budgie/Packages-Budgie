@@ -56,7 +56,8 @@ network-manager-applet
 
 ## Applications
 firefox
-thunderbird
+#thunderbird
+sylpheed 
 gimp
 gksu
 gparted
@@ -85,7 +86,9 @@ plymouth-theme-manjaro-extra-elegant
 adwaita-icon-theme
 evopop-icon-theme
 evopop-gtk-theme
-arc-themes
+#arc-themes
+vertex-themes
+firefox-theme-adwaita
 
 ## Packages for Sound and Audio
 gst-libav
@@ -111,7 +114,7 @@ pamac
 #lxsession
 
 ## Games
-#steam-manjaro
+steam-manjaro
 
 ## Java
 jre8-openjdk

@@ -37,9 +37,6 @@ ido
 libunity
 gtk-theme-elementary-bzr
 
-##Budgie Desktop - needed to use budgie-panel instead #wingpanel
-#budgie-desktop
-#slingscold #instead slingshot-launcher
 
 ##Pantheon Shell
 plank-bzr
@@ -66,6 +63,7 @@ elementary-add-icon-theme-git #from aur for most icon
 plank-theme-pantheon-bzr
 >systemd plymouth-theme-manjaro-elegant
 manjaro-backgrounds
+pantheon-wallpapers 
 
 ##Pantheon Apps
 #audience-bzr # problem if window is not a full screen
@@ -184,4 +182,5 @@ patch
 subversion
 yaourt
 
+#Settings
 manjaro-pantheon-settings
