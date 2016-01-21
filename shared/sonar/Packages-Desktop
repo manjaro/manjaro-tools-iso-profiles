@@ -155,7 +155,7 @@ soundconverter #for audio formats and video if all you want is the audio
 ## Package management
 gnome-software
 
-#standard applications
+#live image specifics
 #manjaro provided firmware
 manjaro-firmware
 #manjaro provided hotfixes
@@ -164,6 +164,9 @@ manjaro-hotfixes
 sonar-backgrounds
 #our isolinux branding
 sonar-isolinux
+#common between all sonar versions
+sonar-common
+#standard applications
 firefox
 thunderbird
 bleachbit

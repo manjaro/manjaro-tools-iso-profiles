@@ -6,6 +6,6 @@ sonar-calamares-branding	# sonar branding for calamares
 #calamares			# new GUI installer of manjaro
 calamares-dev			# new GUI installer of manjaro - kpmcore
 #calamares-exp			# new GUI installer of manjaro - experimental version
-thus
+#thus
 #thus-dev
 #gparted
