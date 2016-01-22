@@ -1,0 +1,158 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## Cinnamon
+blueberry
+cinnamon
+cinnamon-theme-minty
+dconf-editor
+evince
+ffmpegthumbnailer
+gimp
+gksu
+manjaro-cinnamon-settings
+manjaro-firefox-settings
+mousepad
+nemo-fileroller
+nemo-preview
+nemo-python
+nemo-share
+xdg-user-dirs-gtk
+
+ # java
+# jre8-openjdk
+# icedtea-web
+# jre8-openjdk-headless
+
+## GNOME related stuff
+gnome-system-log
+file-roller
+eog
+#eog-plugins
+gedit
+gnome-disk-utility
+gnome-keyring
+gnome-screenshot
+gnome-system-monitor
+gnome-terminal
+gnome-vfs
+icon-naming-utils
+mousetweaks
+python2-gnomecanvas
+python2-gnomevfs
+python2-libgnome
+
+# needed
+# python-ptyprocess
+# python2-ptyprocess
+
+## Network
+netctl
+net-tools
+networkmanager-dispatcher-ntpd
+openresolv
+
+# internet
+# firefox
+# thunderbird
+
+## Extra
+# npapi-vlc
+# pidgin
+# pidgin-libnotify
+# pragha
+# vlc
+
+## Artwork
+cinnamon-wallpapers
+gnome-themes-maia
+maia-icon-theme
+menda-circle-icon-theme
+menda-themes
+menda-themes-dark
+numix-reborn-icon-themes
+plymouth
+plymouth-theme-manjaro-extra-elegant
+vertex-themes
+xcursor-menda
+xcursor-simpleandsoft
+xfce-theme-numix-reborn
+
+#Fonts
+# cantarell-fonts
+# ttf-droid
+# ttf-comfortaa
+
+## Other Applications
+# exfat-utils
+# fuse-exfat
+# galculator
+# gparted
+# gvfs-afc
+# gvfs-google
+# gvfs-gphoto2
+# gvfs-mtp
+# gvfs-smb
+# hexchat
+# isousb
+# libgsf
+# lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+manjaro-documentation
+manjaro-settings-manager
+manjaro-welcome
+# nss
+# numlockx
+# openssh
+# p7zip
+# parcellite
+# pavucontrol
+# udiskie
+# udisks
+
+## Package management
+pamac
+
+## Packages for Sound and Audio
+# gst-libav
+# gst-plugins-bad
+# gst-plugins-base
+# gst-plugins-good
+# gst-plugins-ugly
+# gstreamer0.10-bad-plugins
+# gstreamer0.10-base-plugins
+# gstreamer0.10-good-plugins
+# gstreamer0.10-ugly-plugins
+# libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-gconf
+pulseaudio-zeroconf
+
+## Printing
+# manjaro-printer
+# system-config-printer
+
+## Office
+# libreoffice-still
+
+## AUR Access
+# autoconf
+# automake
+# binutils
+# bison
+# fakeroot
+# flex
+# gcc
+# git
+# libconfig
+# libtool
+# m4
+# make
+# patch
+# subversion
+# yaourt

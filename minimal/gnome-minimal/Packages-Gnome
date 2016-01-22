@@ -1,0 +1,138 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## gnome package group, minus epiphany, because we'll use firefox
+adwaita-icon-theme
+baobab
+dconf-editor
+empathy
+eog
+#epiphany
+evince
+gdm
+gnome-backgrounds
+gnome-calculator
+gnome-contacts
+gnome-control-center
+gnome-desktop
+gnome-dictionary
+gnome-disk-utility
+gnome-font-viewer
+gnome-keyring
+gnome-screenshot
+gnome-session
+gnome-settings-daemon
+gnome-shell
+gnome-shell-extensions
+gnome-system-log
+gnome-system-monitor
+gnome-terminal
+gnome-themes-standard
+gnome-user-docs
+gnome-user-share
+grilo-plugins
+gucharmap
+mousetweaks
+mutter
+nautilus
+sushi
+totem
+tracker
+vino
+xdg-user-dirs-gtk
+yelp
+
+
+## Gnome Main Packages
+gnome-extra
+gnome-tweak-tool
+gufw # firewall
+manjaro-settings-manager
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+#lightdm-gtk-greeter   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
+#lightdm-gtk-greeter-settings   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
+
+## Applications
+#firefox
+#thunderbird ### Gnome has Evolution
+#gimp ### it becomes default app for opening many image types rather than Gnome's image viewer, i cbf'd adding a bunch of mime type overrides. It could be argued that advanced image editing like GIMP's has no place being there OOTB anyway
+gksu
+#gparted
+#gvfs-afc
+#gvfs-gphoto2
+#gvfs-mtp
+#gvfs-smb
+manjaro-welcome
+#open-fuse-iso
+
+## Network
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+blueman
+
+## Artwork
+manjaro-artwork
+plymouth-theme-manjaro-elegant
+
+## Packages for Sound and Audio
+# gst-libav
+# gst-plugins-bad
+# gst-plugins-base
+# gst-plugins-good
+# gst-plugins-ugly
+# gstreamer0.10-bad-plugins
+# gstreamer0.10-base-plugins
+# gstreamer0.10-good-plugins
+# gstreamer0.10-ugly-plugins
+# flashplugin
+# libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+## Package management
+pamac
+polkit-gnome
+
+## Games
+# steam-manjaro
+
+## Java
+# jre8-openjdk
+# jre8-openjdk-headless
+# icedtea-web
+
+## Printing
+# manjaro-printer
+
+## Office
+#abiword
+#gnumeric
+#libreoffice-installer
+# libreoffice-still
+
+## AUR Access
+# autoconf
+# automake
+# binutils
+# bison
+# fakeroot
+# flex
+# gcc
+# >multilib gcc-multilib
+# libtool
+# m4
+# make
+# patch
+# subversion
+# yaourt
+
+manjaro-gnome-settings

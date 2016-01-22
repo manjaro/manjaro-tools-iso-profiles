@@ -1,0 +1,10 @@
+RELEASE=16.03
+CODENAME=Daniella
+EDITION="Cinnamon "
+DESCRIPTION="Manjaro Linux"
+DESKTOP=Gnome
+TOOLKIT=GTK
+NEW_FEATURES_URL=http://www.linuxmint.com/rel_qiana_cinnamon_whatsnew.php
+RELEASE_NOTES_URL=http://www.manjaro.org
+USER_GUIDE_URL=http://wiki.manjaro.org
+GRUB_TITLE=Manjaro Linux Cinnamon
