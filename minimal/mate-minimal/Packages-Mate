@@ -6,51 +6,29 @@
 xcursor-menda
 menda-themes
 menda-themes-dark
-#libgnomeui
-gconf
-gnome-themes-standard
-plymouth-theme-manjaro-elegant
+#plymouth-theme-manjaro-elegant
 dconf-editor
-vertex-themes
-vertex-icons-git
-moka-icon-theme-git
-faba-mono-icons-git
+manjaro-backgrounds
+gtk-theme-maia
+maia-icon-theme
 
 ## MATE Main Packages
-mate
-mate-extra
-mate-menu
-galculator-gtk2
-xterm
-mate-accountsdialog
-mate-disk-utility
+mate-gtk3
+
 #manjaro
 manjaro-documentation
-manjaro-mate-desktop-settings
+manjaro-mate-settings
+
 ## Network
 blueman
-netctl
 modem-manager-gui
 networkmanager
 networkmanager-dispatcher-ntpd
-openresolv
 network-manager-applet
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-
-## Connect Packages
-# udiskie
-# udisks
-# udisks2
-# gvfs
-# gvfs-afc
-# gvfs-gphoto2
-# gvfs-mtp
-# gvfs-smb
-# open-fuse-iso
-# libgsf
 
 ## Display Manager
 lightdm
@@ -58,91 +36,17 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
 ## Applications
-# firefox
 gksu
-# gparted
-# gnome-vfs
-# hexchat
-# isousb
-# gnome-keyring
+
 manjaro-settings-manager
 manjaro-welcome
-# thunderbird
-# vlc
-# pragha
-#gufw
-# accountsservice
-# p7zip
-# mlocate
-# yelp
-# exfat-utils
-# fuse-exfat
 
-# vertex-icons-git
-# vertex-themes
-# moka-icon-theme-git
-# faba-icon-theme-git
-# faba-mono-icons-git
-## Games
-
-
-## Java
-# jdk8-openjdk
-# jre8-openjdk-headless
-# jre8-openjdk
-# icedtea-web
-
-## Packages for Sound and Audio
-# gst-libav
-# gst-plugins-bad
-# gst-plugins-base
-# gst-plugins-good
-# gst-plugins-ugly
-# gstreamer0.10-bad-plugins
-# gstreamer0.10-base-plugins
-# gstreamer0.10-good-plugins
-# gstreamer0.10-ugly-plugins
-# libdvdcss
 manjaro-alsa
 manjaro-pulse
 pavucontrol
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
-#python-pyqt4
-# npapi-vlc
-#swftools
 
 ## Package management
 pamac
-
-## Fonts
-# cantarell-fonts
-# ttf-droid
-
-## Office
-# libreoffice-still
-#abiword
-#gnumeric
-
-
-## Printing
-# manjaro-printer
-
-## AUR Access
-# autoconf
-# automake
-# binutils
-# bison
-# fakeroot
-# flex
-# gcc
-# >multilib gcc-multilib
-# libtool
-# m4
-# make
-# patch
-# subversion
-# yaourt
-#
-# manjaro-mate-settings
