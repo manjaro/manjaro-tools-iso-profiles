@@ -14,10 +14,20 @@ maia-icon-theme
 
 ## MATE Main Packages
 mate-gtk3
+mate-terminal-gtk3
+caja-gtk3
+caja-gksu-gtk3
+pluma-gtk3
+engrampa-gtk3
+atril-gtk3
 
-#manjaro
 manjaro-documentation
-manjaro-mate-settings
+
+#sonar-mate-settings
+#orca
+#brltty-sonar
+#plymouth-theme-sonar-elegant
+#sonar-backgrounds
 
 ## Network
 blueman
@@ -34,9 +44,6 @@ networkmanager-vpnc
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-
-## Applications
-gksu
 
 manjaro-settings-manager
 manjaro-welcome
