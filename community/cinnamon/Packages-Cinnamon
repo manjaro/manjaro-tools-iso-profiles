@@ -3,6 +3,7 @@
 ######################################################
 
 ## Cinnamon
+baobab
 blueberry
 cinnamon
 cinnamon-theme-minty
@@ -72,8 +73,7 @@ menda-circle-icon-theme
 menda-themes
 menda-themes-dark
 numix-reborn-icon-themes
-plymouth
-plymouth-theme-manjaro-extra-elegant
+plymouth-theme-manjaro-cinnamon
 vertex-themes
 xcursor-menda
 xcursor-simpleandsoft
