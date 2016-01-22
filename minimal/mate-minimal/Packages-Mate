@@ -78,11 +78,11 @@ manjaro-welcome
 # exfat-utils
 # fuse-exfat
 
-vertex-icons-git
-vertex-themes
-moka-icon-theme-git
-faba-icon-theme-git
-faba-mono-icons-git
+# vertex-icons-git
+# vertex-themes
+# moka-icon-theme-git
+# faba-icon-theme-git
+# faba-mono-icons-git
 ## Games
 
 
