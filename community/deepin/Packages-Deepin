@@ -42,11 +42,13 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
 gvfs-smb
+hexchat
 htop
 isousb
 libimobiledevice
 libreoffice-still
 manjaro-deepin-settings
+manjaro-documentation
 manjaro-settings-manager
 manjaro-welcome
 mlocate
