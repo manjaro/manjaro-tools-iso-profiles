@@ -53,12 +53,8 @@ manjaro-settings-manager
 manjaro-welcome
 mlocate
 mousepad
-pidgin
 plymouth-theme-manjaro-deepin
 polkit-gnome
-qpdfview
-qpdfview-djvu-plugin
-qpdfview-ps-plugin
 screenfetch
 gufw # firewall
 xarchiver
