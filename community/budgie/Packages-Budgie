@@ -57,7 +57,7 @@ network-manager-applet
 ## Applications
 firefox
 #thunderbird
-sylpheed 
+sylpheed
 gimp
 gksu
 gparted
@@ -144,3 +144,4 @@ subversion
 yaourt
 
 manjaro-budgie-settings
+manjaro-filemanager-addons
