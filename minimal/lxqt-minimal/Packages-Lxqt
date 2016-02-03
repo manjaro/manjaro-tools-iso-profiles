@@ -28,8 +28,9 @@ lxtask
 gvfs
 
 ###DisplayManager###
-lightdm-gtk-greeter
-accountsservice
+>openrc sddm-consolekit
+>systemd sddm
+sddm-maia-theme
 
 ###Artwork###
 cantarell-fonts
