@@ -20,7 +20,11 @@ octopi-cachecleaner
 octopi-repoeditor
 qpdfview
 compton
-kwrite
+
+# bug in pcmanfm with kde apps
+#kwrite
+
+l3afpad
 xarchiver
 network-manager-applet
 tint2
@@ -30,7 +34,6 @@ gvfs
 ###DisplayManager###
 >openrc sddm-consolekit
 >systemd sddm
-sddm-maia-theme
 
 ###Artwork###
 cantarell-fonts
