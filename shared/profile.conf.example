@@ -34,7 +34,7 @@
 ################ install ################
 
 # unset defaults to given value
-# kernel="linux41"
+# kernel="linux44"
 
 # unset defaults to given value
 # efi_boot_loader="grub"
