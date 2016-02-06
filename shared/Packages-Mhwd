@@ -2,6 +2,7 @@
 xf86-video-apm
 xf86-video-ark
 xf86-video-ati
+xf86-video-amdgpu # only works with kernels 4.2+
 xf86-video-chips
 xf86-video-dummy
 xf86-video-fbdev
