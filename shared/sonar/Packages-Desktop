@@ -83,6 +83,8 @@ unrtf
 #mac filesystem utils
 hfsprogs
 
+#zfs filesystem support read only!
+zfs-utils
 #thermal control daemon
 thermald
 
@@ -316,3 +318,6 @@ testdisk #command line application for partition recovery
 
 # sonar docs and special desktop launchers
 sonar-common
+#extra kernel modules
+KERNEL_acpi_call
+
