@@ -61,24 +61,20 @@ thunderbird
 
 ## Extra
 npapi-vlc
-pidgin
 pidgin-libnotify
 pragha
-vlc
 
 ## Artwork
+awoken-icon-theme-light
 cinnamon-wallpapers
-gnome-themes-maia
 maia-icon-theme
 menda-circle-icon-theme
 menda-themes
 menda-themes-dark
-numix-reborn-icon-themes
 plymouth-theme-manjaro-cinnamon
-vertex-themes
+vertex-maia-themes
 xcursor-menda
 xcursor-simpleandsoft
-xfce-theme-numix-reborn
 
 #Fonts
 cantarell-fonts
@@ -98,8 +94,6 @@ gvfs-smb
 hexchat
 isousb
 libgsf
-lightdm
-lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 manjaro-documentation
 manjaro-settings-manager
@@ -139,7 +133,7 @@ manjaro-printer
 system-config-printer
 
 ## Office
-libreoffice-still
+libreoffice-fresh
 
 ## AUR Access
 autoconf
