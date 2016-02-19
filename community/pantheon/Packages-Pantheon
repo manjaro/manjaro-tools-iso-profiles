@@ -180,7 +180,7 @@ m4
 make
 patch
 subversion
-yaourt
+#yaourt > will be installed anyways and gives you error building iso
 
 #Settings
 manjaro-pantheon-settings
