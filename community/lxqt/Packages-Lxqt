@@ -34,7 +34,8 @@ compton-conf-git                # compton configuration tool
 
 #keepassx-qt5-git                # passwords managementdd
 liblxqt				#
-liblxqt-mount			# dependencies and libraries for the following lxqt packages
+#liblxqt-mount			# dependencies and libraries for the following lxqt packages
+solid               # replaces liblxqt-mount
 libqtxdg			#
 libsysstat			#
 
