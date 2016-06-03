@@ -34,6 +34,7 @@ screenfetch
 tree
 urxvt-perls
 vi
+vim
 wmutils
 xarchiver-gtk2
 xautolock
@@ -46,6 +47,7 @@ xorg-xprop
 arandr
 clipit
 dfc
+epdfview
 gcolor2
 gimp
 gksu
@@ -69,8 +71,6 @@ ncdu
 palemoon-bin
 perl-file-mimeinfo
 pcmanfm
-qpdfview-djvu-plugin
-qpdfview-ps-plugin
 poppler-data # CKJ support for pdf
 open-fuse-iso
 sbxkb

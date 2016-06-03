@@ -1,71 +1,19 @@
 ### Sonar mate Packages
 
-uriparser
 #login dm
-#lightdm
-#lightdm-gtk-greeter
-#lightdm-gtk-greeter-settings
-gdm
-
-#mate group
-marco
-mate-backgrounds
-mate-control-center
-mate-desktop
-mate-icon-theme
-mate-menus
-mate-panel
-mate-polkit
-mate-session-manager
-mate-settings-daemon
-mate-themes
-#mate-extra group
-caja-gksu
-caja-image-converter
-caja-open-terminal
-caja-sendto
-caja-share
-mate-notification-daemon
-engrampa
-eom
-galculator-gtk2
-mate-applets
-mate-icon-theme-faenza
-mate-media
-mate-netspeed
-mate-power-manager
-mate-screensaver
-mate-sensors-applet
-mate-system-monitor
-#mate-system-tools
-mate-user-share
-mate-utils
-mozo
-pluma
-#mate applets
-mate-applet-lockkeys
-mate-applet-streamer
-#mate system tools
-#system-tools-backends
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+#gdm
+mate
+mate-extra
 mate-accountsdialog
-network-manager-applet
 
 mate-user-guide #doh!
 ## Applications
 #our desktop settings
 sonar-mate-settings
-gnome-disk-utility
-udiskie
-udisks
-udisks2
 
 
-#yelp tool for reading the help files
-yelp
-
-#gnome keyring and friends
-gnome-keyring
-seahorse
 #bluetooth utils
 blueman
 #iPhone fuse mounter
@@ -73,28 +21,21 @@ ifuse
 
 #gtk iPod gui
 gtkpod
-id3v2
 #I thought I put this on here, but apparently not
 evince
 
-mousetweaks
 
-## Artwork
-adwaita-manjaro-themes
-menda-themes
-menda-circle-icon-theme
-sonar-backgrounds
 
 #standard media playing software.
 parole #replacement for videos
-libgpod #for management of apple iPod, iPhone, etc devices
 #mate tweak tool
 mate-tweak
 
 #standard remote desktop software
 remmina
-freerdp
-libvncserver
-x2goserver
-x2goclient
-nxproxy
+#screensavers
+mate-screensaver
+mate-screensaver-hacks #additional screensavers
+rss-glx #really slick screensavers
+
+

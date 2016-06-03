@@ -1,23 +1,17 @@
 ## Artwork
+sonar-backgrounds
 manjaro-backgrounds
-arc-themes
-breeze-gtk
-breeze-icons
-faenza-green-icon-theme
-numix-manjaro-themes
 vertex-themes
 vertex-maia-themes
-moka-icon-theme
-numix-reborn-suite
-gnome-wallpapers
+vertex-maia-icon-theme
+
+## Misc tools
 #finger print support
 fprintd
 thinkfinger
 #flashrom bios updater
 flashrom
 dmidecode
-#optional command line tool to check hardware
-lshw
 surfraw
 #bash completion package
 bash-completion
@@ -25,8 +19,8 @@ bash-completion
 android-tools
 android-udev
 nss-mdns #optional dep of avahi, providing multicast support
-
 media-player-info #needed by calamares installer, but useful for cli and desktop systems.
+uriparser
 
 #command line battery saving tool
 powertop
@@ -46,6 +40,12 @@ wget
 youtube-viewer
 youtube-dl
 dictd #command line dictionary
+#yelp tool for reading the help files
+yelp
+
+#gnome keyring and friends
+gnome-keyring
+seahorse
 #bluetooth support
 bluez-firmware
 bluez-plugins
@@ -68,8 +68,6 @@ pulseaudio-xen
 #Sound theme support
 sound-theme-freedesktop
 sonar-sound-theme
-
-
 ## Printing
 manjaro-printer
 python-pysmbc #for windows shared printers
@@ -82,7 +80,6 @@ bluez-cups #for bluetooth printers
 antiword
 unrtf
 
-
 #mac filesystem utils
 hfsprogs
 
@@ -93,6 +90,10 @@ thermald
 sane
 sane-gt68xx-firmware
 
+gnome-disk-utility
+udiskie
+udisks
+udisks2
 #standard media playing software
 audacious #for music management.
 audacious-plugins #additional plugins for audacious
@@ -102,6 +103,8 @@ libimobiledevice #for apple device support
 libplist #for parsing apple .plist files
 shairplay #for viewing and playing songs from apple devices over the network
 vlc #for basic file playback, conversion, dvd and bluray playback
+libgpod #for management of apple iPod, iPhone, etc devices
+npapi-vlc #firefox plugin to play files in vlc
 gnome-sound-recorder #for basic sound recording
 #id3 tag libraries
 id3v2
@@ -114,11 +117,15 @@ libaacs
 #dvd decryption
 libdvdcss
 
-#standard dvd ripping software
-handbrake
 #standard cd burning and ripping software
 brasero #for burning, disk copy, etc
+#extra addons for brasero
+libwmf
+dvdbackup
+dvdauthor
+openjpeg2
 asunder #for cd ripping
+handbrake #for dvd ripping
 #codecs
 gst-libav
 gst-plugins-bad
@@ -154,10 +161,9 @@ ocrdesktop
 
 #standard audio and video converters
 transmageddon  #for video formats
-soundconverter #for audio formats and video if all you want is the audio
+soundconverter #for audio formats and video if all you want is the #audio
 
 ## Package management
-#gnome-software
 pamac
 packagekit #for installing software in the help browser
 #live image specifics
@@ -169,8 +175,6 @@ manjaro-hotfixes
 sonar-backgrounds
 #our isolinux branding
 sonar-isolinux
-#our installer branding
-sonar-calamares-branding
 #standard applications
 firefox
 thunderbird
@@ -248,7 +252,6 @@ gvfs-smb #smb/cifs (windows filesharing) backend
 
 ## Network
 modemmanager
-modem-manager-gui
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
@@ -279,7 +282,7 @@ orca
 #library for orca plugins
 libpeas
 speech-dispatcher
-#brltty is now pulled in by manjaro-live-skel, but keeping it hear in case it's needed #again in the future
+#brltty is now pulled in by manjaro-live-skel, but keeping it hear #in case it's needed #again in the future
 #brltty
 eviacam
 open-dyslexic-fonts
@@ -289,7 +292,8 @@ java-access-bridge #for java accessibility
 dasher #on screen keyboard
 ibus #input method support
 ibus-table #needed by some input methods
-ibus-table-extraphrase #extra table phrases, also needed by a few input methods
+ibus-table-extraphrase #extra table phrases, also needed by a few #input methods
+mousetweaks
 ##java
 icedtea-web
 
@@ -318,10 +322,6 @@ libcanberra-gstreamer
 #standard video editor
 pitivi
  frei0r-plugins
-#standard scheduling software
-gnome-schedule
-#standard terminal emulator
-gnome-terminal
 #standard accounting software
 gnucash #main program
 perl-date-manip #for stock quotes
@@ -343,8 +343,8 @@ sonar-common
 #extra kernel modules
 KERNEL-acpi_call
 KERNEL-tp_smapi
-#Kernel-r8168
-#Kernel-vhba-module
+#KERNEL-r8168
+#KERNEL-vhba-module
 
 #dos emulator, used to play old dos games
 dosemu
@@ -354,17 +354,38 @@ xcursor-simpleandsoft
 xcursor-vanilla-dmz-aa
 xcursor-chameleon-pearl
 xcursor-breeze
+xcursor-maia
 #tintin alteraeon soundpack
 tintin-alteraeon
 
-#development tools
-#>x86_64 gcc-multilib
-#>i686 gcc
-#ipython
-#fakeroot
-#make
-#cmake
 #standard file sharing software
 syncthing
 syncthing-gtk #graphical interface
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+>multilib gcc-multilib
+libtool
+m4
+make
+patch
+subversion
+yaourt
+
+#remote access software, libraries only
+freerdp
+libvncserver
+x2goserver
+x2goclient
+nxproxy
+#standard scheduling software
+gnome-schedule
+#downgrade utility
+downgrade
 

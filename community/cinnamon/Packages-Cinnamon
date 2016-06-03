@@ -65,16 +65,8 @@ pidgin-libnotify
 ## Artwork
 cinnamon-wallpapers
 flattr-icon-theme
-gtk-theme-numix-solarized
-menda-circle-icon-theme
-menda-themes
-menda-themes-dark
 plymouth-theme-manjaro-cinnamon
-xcursor-menda
-
-## Fonts
-ttf-droid
-ttf-comfortaa
+xcursor-maia
 
 ## Other Applications
 exfat-utils
@@ -94,6 +86,7 @@ lightdm-gtk-greeter-settings
 manjaro-documentation
 manjaro-settings-manager-notifier
 manjaro-welcome
+mugshot
 nss
 numlockx
 openssh
@@ -126,7 +119,7 @@ pulseaudio-gconf
 pulseaudio-zeroconf
 
 ## Office
-libreoffice-fresh
+libreoffice-still
 manjaro-printer
 system-config-printer
 

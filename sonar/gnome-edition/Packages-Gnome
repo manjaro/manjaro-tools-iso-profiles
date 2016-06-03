@@ -1,50 +1,9 @@
 ### Sonar gnome Packages
 
-## gnome package group, minus epiphany, because we'll use firefox
-adwaita-icon-theme
-baobab
-#empathy
-eog
-#epiphany
-evince
-gdm
-#fingerprint daemon for supported finger print readers
-fprintd
-gnome-backgrounds
-gnome-calculator
-gnome-contacts
-gnome-control-center
-gnome-desktop
-gnome-dictionary
-gnome-disk-utility
-gnome-font-viewer
-gnome-icon-theme
-gnome-icon-theme-extras
-gnome-icon-theme-symbolic
-gnome-keyring
-gnome-screenshot
-gnome-session
-gnome-settings-daemon
-gnome-shell
-gnome-shell-extensions
-gnome-system-monitor
-gnome-terminal
-gnome-themes-standard
-gnome-user-docs
-gnome-user-share
-grilo-plugins
-gucharmap
-mousetweaks
-mutter
-nautilus
-sushi
-totem
-tracker
-xdg-user-dirs-gtk
-yelp
-
 
 ## Gnome Main Packages
+#gnome group
+gnome
 #gnome-extra group
 accerciser
 bijiben
@@ -71,20 +30,20 @@ gnome-tweak-tool
 gnome-weather
 nautilus-sendto
 rygel
-seahorse
-firewalld # firewall
 #setup gui
 gnome-initial-setup
+
+#standard scheduling software
+gnome-schedule
+#standard terminal emulator
+gnome-terminal
 
 ## Applications
 #our desktop settings
 sonar-gnome-settings
-firefox-theme-adwaita
-#gimp
 #gvfs packages
 gvfs-google #google drive backend
 gvfs-goa #gnome online accounts (goa) backend
-dasher
 #gnome policy kit
 polkit-gnome
 #extra addons
@@ -94,31 +53,12 @@ seahorse-nautilus #support for encrypting and unencrypting files and folders in 
 evolution-ews
 
 #simple scanning utility, supposed to be in gnome extra but for some reason isn't
-simple-scan
-#cd burner
-brasero
-#extra addons for brasero
-libwmf
-dvdbackup
-dvdauthor
-openjpeg2
-#cd ripper
-sound-juicer
 
 #samba file sharing support
 nautilus-share
-
-
 #standard remote desktop software
 vinagre
 vino
-x2goserver
-x2goclient
-
-gnome-themes-maia
-vertex-maia-themes
-sonar-backgrounds
-
 #gnome shell extensions
 gnome-shell-extension-mediaplayer #extension that adds media controlls to the top bar when songs and videos are playing
 gnome-shell-extension-openweather #a shell extension which adds weather forecast support to the top bar

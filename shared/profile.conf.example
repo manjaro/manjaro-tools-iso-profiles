@@ -51,6 +51,10 @@
 # unset defaults to given value
 # password="manjaro"
 
+# the login shell
+# defaults to bash
+# login_shell=/bin/bash
+
 # unset defaults to given values
 # addgroups="video,audio,power,disk,storage,optical,network,lp,scanner,wheel"
 

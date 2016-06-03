@@ -47,14 +47,8 @@ KERNEL-r8168
 >nonfree_default KERNEL-catalyst
 >nonfree_default nvidia-utils
 >nonfree_default KERNEL-nvidia
->nonfree_default nvidia-340xx-utils
->nonfree_default KERNEL-nvidia-340xx
->nonfree_default nvidia-304xx-utils
->nonfree_default KERNEL-nvidia-304xx
 >nonfree_multilib lib32-catalyst-utils
 >nonfree_multilib lib32-nvidia-utils
->nonfree_multilib lib32-nvidia-304xx-utils
->nonfree_multilib lib32-nvidia-340xx-utils
 
 ## Virtualbox Drivers
 >openrc virtualbox-guest-utils-openrc

@@ -2,9 +2,11 @@
 >systemd manjaro-live-systemd
 manjaro-cli-installer
 manjaro-live-skel		# live skel
-calamares			# new GUI installer of manjaro
+#calamares			# new GUI installer of manjaro
 #calamares-dev			# new GUI installer of manjaro - kpmcore
 #calamares-exp			# new GUI installer of manjaro - experimental version
+#our installer branding
+sonar-calamares-branding
 thus
 #thus-dev
-gparted
+#gparted

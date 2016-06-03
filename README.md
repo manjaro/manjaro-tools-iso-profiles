@@ -53,6 +53,10 @@ manjaro-tools-iso-profiles
 # unset defaults to given value
 # password="manjaro"
 
+# the login shell
+# defaults to bash
+# login_shell=/bin/bash
+
 # unset defaults to given values
 # addgroups="video,audio,power,disk,storage,optical,network,lp,scanner,wheel"
 
@@ -99,16 +103,12 @@ manjaro-tools-iso-profiles
 * Contains packages you only want in live session but not installed on the target system with installer
 * default files are in shared folder and can be symlinked or defined in a real file
 
-###### optional custom pacman.conf in profile
+######* buildiso can be configured to use custom repos.
 
-* for i686
-
-~~~
-pacman-default.conf
-~~~
-
-* for x86_64
+* create a user-repos.conf
 
 ~~~
-pacman-multilib.conf
+${profile_dir}/user-repos.conf
 ~~~
+
+Add only your repos to user-repos.conf!

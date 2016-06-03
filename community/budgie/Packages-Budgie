@@ -44,6 +44,7 @@ brasero
 p7zip
 ibus
 alacarte
+nautilus-admin
 
 ## Main Packages
 gufw # firewall
@@ -67,6 +68,9 @@ gvfs-mtp
 gvfs-smb
 manjaro-welcome
 open-fuse-iso
+skippy-xd
+brightside
+redshift
 
 ## Network
 netctl

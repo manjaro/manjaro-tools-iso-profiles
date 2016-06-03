@@ -3,30 +3,26 @@
 ######################################################
 
 ## Artwork
-xcursor-menda
-menda-themes
-menda-themes-dark
+xcursor-maia
+vertex-maia-themes
+vertex-maia-icon-theme
+maia-wallpaper
 #libgnomeui
 gconf
 gnome-themes-standard
 plymouth-theme-manjaro-elegant
 dconf-editor
-vertex-themes
-vertex-icons-git
-moka-icon-theme-git
-faba-mono-icons-git
 
 ## MATE Main Packages
 mate
 mate-extra
-mate-menu
 galculator-gtk2
 xterm
 mate-accountsdialog
 mate-disk-utility
 #manjaro
 manjaro-documentation
-manjaro-mate-desktop-settings
+manjaro-mate-settings
 ## Network
 blueman
 netctl
@@ -53,7 +49,6 @@ open-fuse-iso
 libgsf
 
 ## Display Manager
-lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
@@ -78,11 +73,6 @@ yelp
 exfat-utils
 fuse-exfat
 
-vertex-icons-git
-vertex-themes
-moka-icon-theme-git
-faba-icon-theme-git
-faba-mono-icons-git
 ## Games
 
 
@@ -144,5 +134,3 @@ make
 patch
 subversion
 yaourt
-
-manjaro-mate-settings

@@ -3,15 +3,12 @@
 ######################################################
 
 ## deepin packages
-deepin-gtk-theme
-deepin-manjaro
+# deepin-gtk-theme # not gtk3.20 compliant, yet
 deepin-social-sharing
-libdeepin-webkit
 nautilus-empty-file
 
 ## deepin-extra packages
 deepin-movie
-deepin-music
 deepin-screenshot
 deepin-terminal
 # workaround launcher-bug https://github.com/linuxdeepin/dde-launcher/issues/5
@@ -19,12 +16,12 @@ gnome-terminal
 
 ## other deepin Packages
 baobab
+chromium
 dconf-editor
 downgrade
 evince
 poppler-data # CKJ support for pdf
 evolution
-chromium
 galculator
 gimp
 gksu
@@ -40,15 +37,18 @@ hexchat
 htop
 isousb
 libimobiledevice
-libreoffice-fresh
+libreoffice-still
+manjaro-browser-settings
 manjaro-deepin-settings
 manjaro-documentation
 manjaro-settings-manager-notifier
 manjaro-welcome
 mlocate
 mousepad
+plymouth-theme-manjaro-deepin-circle
 polkit-gnome
 screenfetch
+smplayer
 sushi
 gufw # firewall
 xarchiver
@@ -101,4 +101,14 @@ xsane
 xsane-gimp
 
 ## AUR Access
-base-devel
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+libtool
+m4
+make
+patch

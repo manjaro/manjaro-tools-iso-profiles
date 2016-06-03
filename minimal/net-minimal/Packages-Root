@@ -98,7 +98,7 @@ xz
 zip
 
 ## Efi support (only x86_64)
->x86_64 prebootloader
+>x86_64 efitools
 >x86_64 refind-efi
 
 ## Storage and filesystem
