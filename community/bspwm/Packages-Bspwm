@@ -11,6 +11,7 @@ xf86-input-joystick
 xf86-input-keyboard
 xf86-input-mouse
 xf86-input-synaptics
+xf86-input-libinput
 xf86-input-void
 xf86-input-wacom
 xinetd
@@ -19,6 +20,7 @@ xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+xorg-xinput
 
 ## Basic packages
 dconf
@@ -41,10 +43,12 @@ bspwm-wallpapers
 adwaita-maia-gtk3
 
 ## Network
-networkmanager
-networkmanager-dispatcher-ntpd
-openresolv
-networkmanager-dmenu
+#networkmanager
+#networkmanager-dispatcher-ntpd
+#openresolv
+#networkmanager-dmenu
+dhcpd
+wpa_tui
 
 ##Bspwm packages
 manjaro-bspwm-settings
@@ -87,6 +91,8 @@ roxterm
 zsh
 zsh-completions
 zsh-history-substring-search
+fish
+fisherman
 dash
 mpv
 
