@@ -270,12 +270,12 @@ calligra-braindump
 #calligra-handbook
 calligra-karbon
 #calligra-kexi
-calligra-krita
 #calligra-plan
 #calligra-plugins
 #calligra-sheets
 #calligra-stage
 #calligra-words
+krita
 
 ## KDE Frameworks
 kmediaplayer

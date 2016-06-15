@@ -24,7 +24,7 @@ lxappearance
 manjaro-i3-settings
 manjaro-settings-manager-notifier
 mlocate
-# morc_menu
+morc_menu
 p7zip
 polkit-gnome
 ranger
@@ -75,6 +75,7 @@ poppler-data # CKJ support for pdf
 open-fuse-iso
 sbxkb
 speedtest-cli
+transmission-gtk
 viewnior
 vlc
 w3m

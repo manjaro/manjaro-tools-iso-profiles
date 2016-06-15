@@ -51,6 +51,7 @@ nautilus-admin
 gnome-tweak-tool
 gufw # firewall
 manjaro-settings-manager
+gdm3setup
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp

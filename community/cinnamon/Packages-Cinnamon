@@ -20,6 +20,7 @@ nemo-python
 nemo-share
 pragha # musicplayer
 screenfetch
+transmission-gtk
 xdg-user-dirs-gtk
 
 ## java

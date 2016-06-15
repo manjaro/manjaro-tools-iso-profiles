@@ -32,13 +32,13 @@ jfsutils
 less
 licenses
 logrotate
-# >openrc lvm2-openrc
-# >systemd lvm2
+>openrc lvm2-openrc
+>systemd lvm2
 man-db
 man-pages
 manjaro-system
-# >openrc mdadm-openrc
-# >systemd mdadm
+>openrc mdadm-openrc
+>systemd mdadm
 mhwd
 mhwd-db
 nano
@@ -78,7 +78,7 @@ memtest86+
 mkinitcpio-nfs-utils
 >multilib lib32-mesa  # Optional dependency for mhwd
 os-prober
-pkg-config
+#pkg-config
 sudo
 syslinux
 
@@ -87,7 +87,7 @@ lsof
 >openrc rsync-openrc
 >systemd rsync
 wget
-numlockx
+#numlockx
 
 ## Compression utils
 lzop
@@ -128,8 +128,8 @@ ipw2100-fw
 ipw2200-fw
 iw
 nbd
-KERNEL-ndiswrapper
-ndiswrapper-utils
+#KERNEL-ndiswrapper
+#ndiswrapper-utils
 rp-pppoe
 usb_modeswitch
 wireless_tools
@@ -147,7 +147,14 @@ zd1211-firmware
 ## ucode for new cpus
 intel-ucode
 
-## bmenu profiles should add it if required -> issue 119
-#bmenu
-#brandr
-#mhwd-tui
+## Network
+>openrc networkmanager-openrc
+>systemd networkmanager
+>openrc syslog-ng-openrc
+>systemd syslog-ng
+>openrc cronjobs
+
+## Network Support
+KERNEL-broadcom-wl
+KERNEL-rt3562sta
+KERNEL-r8168

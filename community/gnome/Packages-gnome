@@ -10,10 +10,11 @@ empathy
 eog
 #epiphany
 evince
+gedit
 gdm
 gnome-backgrounds
 gnome-calculator
-gnome-contacts
+#gnome-contacts
 gnome-control-center
 gnome-desktop
 gnome-dictionary
@@ -38,17 +39,22 @@ mutter
 nautilus
 sushi
 totem
+lollypop
 tracker
 vino
 xdg-user-dirs-gtk
 yelp
-
+nautilus-admin
 
 ## Gnome Main Packages
-gnome-extra
+manjaro-gnome-settings
+nautilus-empty-file
+gnome-wallpapers
+#gnome-extra
 gnome-tweak-tool
 gufw # firewall
 manjaro-settings-manager
+gdm3setup
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
@@ -58,8 +64,10 @@ networkmanager-vpnc
 
 ## Applications
 firefox
-#thunderbird ### Gnome has Evolution
-#gimp ### it becomes default app for opening many image types rather than Gnome's image viewer, i cbf'd adding a bunch of mime type overrides. It could be argued that advanced image editing like GIMP's has no place being there OOTB anyway
+thunderbird
+uget
+transmission-gtk
+manjaro-browser-settings
 gksu
 gparted
 gvfs-afc
@@ -67,7 +75,9 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 manjaro-welcome
-open-fuse-iso
+isousb
+#open-fuse-iso
+#gnome-shell-extension now set in desktop settings
 
 ## Network
 netctl
@@ -78,7 +88,9 @@ blueman
 
 ## Artwork
 manjaro-artwork
-plymouth-theme-manjaro-elegant
+plymouth-theme-manjaro-gnome
+vertex-maia-icon-theme
+vertex-maia-themes
 
 ## Packages for Sound and Audio
 gst-libav
@@ -135,7 +147,5 @@ patch
 subversion
 yaourt
 
-manjaro-gnome-settings
-nautilus-empty-file
-gnome-wallpapers
+
 

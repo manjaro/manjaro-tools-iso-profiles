@@ -238,6 +238,7 @@ ttf-droid
 ttf-inconsolata
 ttf-liberation
 ttf-ubraille
+ttf-ubuntu-font-family
 adobe-source-sans-pro-fonts
 #firefoxOS fonts
 otf-fira-mono
@@ -288,8 +289,7 @@ eviacam
 open-dyslexic-fonts
 qt-at-spi
 java-atk-wrapper
-java-access-bridge #for java accessibility
-dasher #on screen keyboard
+caribou #on screen keyboard
 ibus #input method support
 ibus-table #needed by some input methods
 ibus-table-extraphrase #extra table phrases, also needed by a few #input methods

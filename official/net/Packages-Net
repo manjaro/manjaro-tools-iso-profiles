@@ -26,3 +26,9 @@ openresolv
 
 ## Image mounting assistant
 open-fuse-iso-term
+
+
+## bmenu profiles should add it if required
+bmenu
+brandr
+mhwd-tui

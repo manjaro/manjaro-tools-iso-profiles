@@ -76,6 +76,7 @@ xf86-input-vmmouse
 #vdpau drivers
 mesa-vdpau
 libva-intel-driver
-libva-vdpau
+libva-mesa-driver
+libva-vdpau-driver
 opencl-mesa
 

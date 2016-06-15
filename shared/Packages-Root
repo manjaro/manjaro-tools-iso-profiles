@@ -146,8 +146,3 @@ zd1211-firmware
 
 ## ucode for new cpus
 intel-ucode
-
-## bmenu profiles should add it if required -> issue 119
-#bmenu
-#brandr
-#mhwd-tui
