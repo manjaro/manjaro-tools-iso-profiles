@@ -1,156 +1,109 @@
-smbclient-stub
 ######################################################
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
-## Basic packages
-dconf
-desktop-file-utils
+## Manjaro
+manjaro-artwork
+manjaro-alsa
+manjaro-pulse
+manjaro-printer
+manjaro-documentation
+manjaro-settings-manager
+manjaro-welcome
+manjaro-lxqt-settings
 
-## Packages for Sound and Audio
-#manjaro-alsa
+
+## Display Manager
+>openrc sddm-consolekit
+>systemd sddm
+
+
+## Window Manager
+compton
+feh
+obconf
+obmenu-generator
+openbox
+openbox-themes
+tint2
+
+
+## LXQT Desktop
+lxqt
+
+
+## GUI Programs
+baka-mplayer
+flashplugin
+gksu
+gnome-keyring
+hexchat
+kwrite
+libreoffice-still
+lxmusic
+lxtask-gtk3
+qpdfview
+qterminal
+qupzilla
+transmission-qt
+xarchiver
+xscreensaver
+
+
+## Network and connect packages
+>openrc networkmanager-openrc
+>openrc networkmanager-consolekit
+>systemd networkmanager
+network-manager-applet
+networkmanager-dispatcher-ntpd
+#modem-manager-gui
+openresolv
+gvfs
+gvfs-afc
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+
+
+## Other
+accountsservice
+dconf
+dconf-editor
+gconf
+yelp
+
 
 ## Artwork
-manjaro-artwork
-
-## Base Packages
-gtk2
-
-## Network
-networkmanager
-network-manager-applet
-openresolv
-# =============================================================================
+andromeda-icon-theme
+andromeda-wallpaper
+menda-circle-icon-theme
+menda-lxqt-panel
+xcursor-breeze
 
 
-# 2) lxqt main packages
-# =====================
-sddm				# default login manager (Qt5) of lxqt
-
-#openbox				# default window manager (GTK2) of lxqt
-
-compton                         # X compositor
-compton-conf-git                # compton configuration tool
-
-#keepassx-qt5-git                # passwords managementdd
-liblxqt				#
-liblxqt-mount			# dependencies and libraries for the following lxqt packages
-libqtxdg			#
-libsysstat			#
-
-lxqt
-lxterminal
-screengrab-git                  # replace screenshot tool of lxqt
-system-tools-backends
-liboobs
-lxqt-globalkeys
-
-pcmanfm-qt			# default lxqt file manager
-
-#qterminal			# recommended terminal for lxqt
-qtermwidget
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+libdvdcss
+pavucontrol
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-gconf
+pulseaudio-zeroconf
 
 
-# 3) System-packages (most of them coming from xfce)
-# ==================================================
-
->x86_64 manjaro-pulse
-#>x86_64 manjaro-printer        # removed, qt4 !
-manjaro-settings-manager
-#manjaro-settings-manager
-
-gvfs				# for mounting file other systems
-gvfs-afc			# enables support for external media (e.g. USB sticks)
-#gvfs-smb                        # SMB/CIFS (Windows client) backend for gvfs
-
-
-# 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
-# ===========================================================================
-gksu				# (GTK2) GUI for su and sudo - no alternative for it in lxqt
-gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
-
-hexchat                         # (GTK2) graphical IRC (chat) client
-leafpad				# default lxde text editor
-#lxtask				# LXDE task manager - qt4 alternative: qps
-
-lxappearance 			# appearance settings of GTK2 themes
-obconf				# openbox appearance settings
-
-
-
-# 5) Icons, theming, etc...
-# =========================
-#lateafternoon-icons
-breeze-lxqt
-#>x86_64 db-silver-icons
-mediterraneanlxqt
-gtk-engine-murrine              # for mediterraneanlxqt
-speedcrunch-git                 # calculator qt5
-ttf-droid-ib                    # care !!! infinality version
-#xcursor-menda			# menda mouse cursor theme - this needs to be activated
-
-#infinality-bundle		# to improve text rendering
-freetype2-infinality-ultimate
-fontconfig-infinality-ultimate
-
-
-
-# 6) Minimal set of tools
-# =======================
-abiword-3.x-gtk2
-#baka-mplayer
-lxtask                           # task manager
-mhwd-chroot
-#mpd                             # server-side application for playing music
-#cantata                         # Qt5 client for the music player daemon (MPD)
-mpv-light			# replace mplayer/mplayer2
-qpdfview			# pdf reader
-vi				# CLI text editor
-
-xarchiver-gtk2			# GUI frontend for many archive file formats
-
-octopi				# Qt5 package manager
-octopi-notifier-qt5
-#octopi-cachecleaner
-#octopi-repoeditor
-
-firefox
-#>i686 qupzilla			# internet browser (Qt5)
-flashplugin			# flash support for internet browser
-gparted				# partitioning program (GTK2)
-#>x86_64 libreoffice-installer	# GUI installer for LibreOffice --> this is outdated and causes problems
-#>x86_64 pinta                   # drawing/editing program
-#>x86_64 meteo-qt                # weather application
-packsize
-qarma-git			# zenity Qt5
-qastools-qt5                    # alsa mixer
-transmission-qt                 # bittorrent client Qt5
-qisousb				# write an ISO on an USB stick
-qlipper-qt5-git                 # clipoard applet
-qtfind				# add a file search to pcmanfm-qt (qt5)
-redshift                        # adjusts the color temperature
-redshiftconf                    # redshift configuration tool
-#xscreensaver			# screensaver and power managment
-xsensors                        # gui for lm_sensors
-
-
-
-# 7) AUR Access
-# =============
-autoconf
-automake
-binutils
-bison
-fakeroot
-flex
-gcc
-libconfig
-libtool
-m4
-make
-patch
-#subversion
-git
+## Package manger and AUR
+base-devel
 yaourt
-
-manjaro-lxqt-settings
+pamac
+git
+#octopi
+#octopi-notifier-qt5
