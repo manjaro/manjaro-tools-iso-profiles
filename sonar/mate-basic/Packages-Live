@@ -4,4 +4,3 @@ manjaro-live-skel		# live skel
 #calamares			# new GUI installer of manjaro
 calamares-dev			# new GUI installer of manjaro - kpmcore
 sonar-calamares-branding
-qt-at-spi

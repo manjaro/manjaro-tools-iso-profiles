@@ -126,3 +126,6 @@ pulseaudio-lirc
 pavucontrol
 pulseaudio-ctl
 pulseaudio-gconf
+
+qt-at-spi
+ibus-qt
