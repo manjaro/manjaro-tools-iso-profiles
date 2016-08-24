@@ -21,7 +21,7 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Noto Sans 10
+font xft:Noto Mono 10
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -288,6 +288,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id xfce4-power-manager
+exec_always --no-startup-id fix_xcursor
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
@@ -299,7 +300,7 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-	font pango:Noto Sans,Icons 10
+	font xft:Noto Sans,Icons 10.5
 	strip_workspace_numbers yes
 
 	colors {
