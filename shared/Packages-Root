@@ -53,7 +53,8 @@ s-nail
 sed
 shadow
 sysfsutils
->openrc eudev-systemdcompat
+>openrc eudev-systemd
+>openrc libeudev-systemd
 >openrc netifrc
 >systemd systemd-sysvcompat
 tar

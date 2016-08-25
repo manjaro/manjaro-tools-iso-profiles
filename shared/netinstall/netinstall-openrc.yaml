@@ -47,7 +47,7 @@
         - sed
         - shadow
         - sysfsutils
-        - eudev-systemdcompat
+        - eudev-systemd
         - tar
         - texinfo
         - udev-openrc
