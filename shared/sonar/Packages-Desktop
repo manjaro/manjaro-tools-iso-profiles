@@ -132,10 +132,4 @@ pulseaudio-gconf
 #accessibility
 qt-at-spi
 ibus-qt
-#codecs
-gst-plugins-bad
-gst-plugins-good
-gst-plugins-ugly
-gstreamer0.10-ugly-plugins
-gstreamer0.10-bad-plugins
-gstreamer0.10-good-plugins
+
