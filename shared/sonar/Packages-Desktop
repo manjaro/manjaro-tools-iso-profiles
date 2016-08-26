@@ -51,7 +51,7 @@ modemmanager
 >openrc networkmanager-consolekit
 >openrc networkmanager-openrc
 >systemd samba
->openrc samba.openrc
+>openrc samba-openrc
 >openrc avahi-openrc
 >systemd avahi
 nss-mdns
