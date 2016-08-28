@@ -39,6 +39,8 @@ xarchiver
 xautolock
 xdotool
 xfce4-power-manager
+xcursor-chameleon-pearl
+xcursor-maia
 xorg-xkill
 xorg-xprop
 
@@ -79,7 +81,6 @@ transmission-gtk
 viewnior
 vlc-nightly
 w3m
-xcursor-chameleon-pearl
 xfburn
 xterm
 
