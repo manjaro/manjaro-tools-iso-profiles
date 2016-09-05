@@ -23,7 +23,7 @@ network-manager-applet
 networkmanager-dispatcher-ntpd
 networkmanager-openvpn
 networkmanager-vpnc
-json-c	
+json-c
 
 ## Polkit
 gksu
@@ -43,7 +43,7 @@ dunst
 ## JWM Core Packages
 clipit
 downgrade
-gmrun 
+gmrun
 i3lock
 jwm
 jwmconf
