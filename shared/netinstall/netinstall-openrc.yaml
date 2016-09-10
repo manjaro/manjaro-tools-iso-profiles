@@ -47,6 +47,7 @@
         - sed
         - shadow
         - sysfsutils
+        - libeudev-systemd
         - eudev-systemd
         - tar
         - texinfo
@@ -64,7 +65,6 @@
         - os-prober
         - intel-ucode
         - sudo
-        - netifrc
         - haveged-openrc
         - rsync-openrc
         - nfs-utils-openrc
