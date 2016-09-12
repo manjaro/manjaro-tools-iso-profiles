@@ -104,6 +104,11 @@
         - util-linux
         - which
 
+- name: "plymouth"
+  description: "Plymouth"
+  packages:
+        - plymouth-theme-manjaro-elegant
+
 - name: "lxqt"
   description: "LXQT Desktop"
   packages:
