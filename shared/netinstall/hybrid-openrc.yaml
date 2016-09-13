@@ -29,9 +29,21 @@
 - name: "util"
   description: "Utilities packages"
   packages:
-        - foo
+        - yaourt
 
 - name: "multimedia"
   description: "Multimedia packages"
   packages:
-        - foo
+        - vlc
+
+- name: "steam"
+  description: "Steam packages"
+  packages:
+        - steam-manjaro
+
+- name: "java"
+  description: "Java packages"
+  packages:
+        - jre8-openjdk
+        - jre8-openjdk-headless
+        - icedtea-web
