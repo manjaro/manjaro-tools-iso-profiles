@@ -2,21 +2,8 @@
 ###### use this file in the profile ######
 ##########################################
 
-# default displaymanager: none
-# supported; lightdm, sddm, gdm, lxdm, mdm
-# displaymanager="none"
-
-# Set to false to disable autologin in the livecd
-# autologin="true"
-
 # use multilib packages; x86_64 only
 # multilib="true"
-
-# nonfree mhwd drivers
-# nonfree_mhwd="true"
-
-# use plymouth
-# plymouth_boot="true"
 
 # use pxe
 # pxe_boot="true"
@@ -31,6 +18,19 @@
 
 ################ install ################
 
+# default displaymanager: none
+# supported; lightdm, sddm, gdm, lxdm, mdm
+# displaymanager="none"
+
+# Set to false to disable autologin in the livecd
+# autologin="true"
+
+# nonfree xorg drivers
+# nonfree_mhwd="true"
+
+# use plymouth
+# plymouth_boot="true"
+
 # possible values: grub;systemd-boot
 # efi_boot_loader="grub"
 
@@ -43,8 +43,8 @@
 # configure calamares to use chrootcfg instead of unpackfs
 # unpackfs="true"
 
-# use geoip for localization
-# geoip='true'
+# use geoip
+# geoip="true"
 
 # unset defaults to given value
 # plymouth_theme=manjaro-elegant
@@ -59,17 +59,16 @@
 # enable_openrc=('acpid' 'bluetooth' 'consolekit' 'cronie' 'cupsd' 'dbus' 'syslog-ng' 'NetworkManager')
 # disable_openrc=()
 
-
-# the login shell
-# login_shell=/bin/bash
-
 # unset defaults to given values
 # addgroups="video,power,disk,storage,optical,network,lp,scanner,wheel"
 
 # the same workgroup name if samba is used
-# smb_workgroup=""
+# smb_workgroup="Manjaro"
 
 ################# live-session #################
+
+# unset defaults to given value
+# hostname="manjaro"
 
 # unset defaults to given value
 # username="manjaro"
@@ -77,10 +76,7 @@
 # unset defaults to given value
 # password="manjaro"
 
-# unset defaults to given value
-# hostname="manjaro"
 # unset defaults to given values
-
 # names must match systemd service names
 # services in enable_systemd array don't need to be listed here
 # enable_systemd_live=('manjaro-live' 'mhwd-live' 'pacman-init' 'mirrors-live')

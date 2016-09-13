@@ -4,6 +4,26 @@ manjaro-tools-iso-profiles
 ######* profile.conf
 
 ~~~
+##########################################
+###### use this file in the profile ######
+##########################################
+
+# use multilib packages; x86_64 only
+# multilib="true"
+
+# use pxe
+# pxe_boot="true"
+
+################ torrent ################
+
+# the torrent tracker urls, comma separated
+# tracker_url='udp://mirror.strits.dk:6969'
+
+# Piece size, 2^n
+# piece_size=21
+
+################ install ################
+
 # default displaymanager: none
 # supported; lightdm, sddm, gdm, lxdm, mdm
 # displaymanager="none"
@@ -11,27 +31,11 @@ manjaro-tools-iso-profiles
 # Set to false to disable autologin in the livecd
 # autologin="true"
 
-# use multilib packages; x86_64 only
-# multilib="true"
-
-# nonfree mhwd drivers
+# nonfree xorg drivers
 # nonfree_mhwd="true"
 
 # use plymouth
 # plymouth_boot="true"
-
-# use pxe
-# pxe_boot="true"
-
-################ torrent ################
-
-# the torrent tracker url
-# tracker_url=""
-
-# Piece size, 2^n
-# piece_size=21
-
-################ install ################
 
 # possible values: grub;systemd-boot
 # efi_boot_loader="grub"
@@ -45,16 +49,27 @@ manjaro-tools-iso-profiles
 # configure calamares to use chrootcfg instead of unpackfs
 # unpackfs="true"
 
+# use geoip
+# geoip="true"
+
 # unset defaults to given value
 # plymouth_theme=manjaro-elegant
 
 # unset defaults to given values
 # names must match systemd service names
 # enable_systemd=('bluetooth' 'cronie' 'ModemManager' 'NetworkManager' 'org.cups.cupsd' 'tlp' 'tlp-sleep')
+# disable_systemd=()
 
 # unset defaults to given values,
 # names must match openrc service names
 # enable_openrc=('acpid' 'bluetooth' 'consolekit' 'cronie' 'cupsd' 'dbus' 'syslog-ng' 'NetworkManager')
+# disable_openrc=()
+
+# unset defaults to given values
+# addgroups="video,power,disk,storage,optical,network,lp,scanner,wheel"
+
+# the same workgroup name if samba is used
+# smb_workgroup="Manjaro"
 
 ################# live-session #################
 
@@ -67,22 +82,15 @@ manjaro-tools-iso-profiles
 # unset defaults to given value
 # password="manjaro"
 
-# the login shell
-# defaults to bash
-# login_shell=/bin/bash
-
-# unset defaults to given values
-# addgroups="video,audio,power,disk,storage,optical,network,lp,scanner,wheel"
-
 # unset defaults to given values
 # names must match systemd service names
 # services in enable_systemd array don't need to be listed here
-# enable_systemd_live=('manjaro-live' 'mhwd-live' 'pacman-init')
+# enable_systemd_live=('manjaro-live' 'mhwd-live' 'pacman-init' 'mirrors-live')
 
 # unset defaults to given values,
 # names must match openrc service names
 # services in enable_openrc array don't need to be listed here
-# enable_openrc_live=('manjaro-live' 'mhwd-live' 'pacman-init')
+# enable_openrc_live=('manjaro-live' 'mhwd-live' 'pacman-init' 'mirrors-live')
 ~~~
 
 ######* New Packagelist tags
