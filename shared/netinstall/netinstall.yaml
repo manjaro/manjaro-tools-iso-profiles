@@ -109,103 +109,19 @@
   packages:
         - plymouth-theme-manjaro-elegant
 
-- name: "lxqt"
-  description: "LXQT Desktop"
-  packages:
-        - lxqt-about
-        - lxqt-common
-        - lxqt-config
-        - lxqt-globalkeys
-        - lxqt-notificationd
-        - lxqt-openssh-askpass
-        - lxqt-panel
-        - lxqt-policykit
-        - lxqt-powermanagement
-        - lxqt-qtplugin
-        - lxqt-runner
-        - lxqt-session
-        - lxqt-sudo
-        - openbox
-        - pcmanfm-qt
-        - manjaro-lxqt-minimal-settings
-        - qterminal
-        - xcursor-breeze
-        - andromeda-icon-theme
-        - andromeda-wallpaper
-        - vertex-maia-themes
-        - obmenu-generator
-        - feh
-        - openbox-themes
-        - tint2
-        - sddm
-        - compton
-        - kwrite
-        - xarchiver
-        - network-manager-applet
-        - lxtask-gtk3
-        - gvfs
-        - qupzilla
-
-- name: "plasma"
-  description: "Plasma5 Desktop"
-  packages:
-        - bluedevil
-        - breeze
-        - breeze-gtk
-        - drkonqi
-        - kactivitymanagerd
-        - kde-cli-tools
-        - kde-gtk-config
-        - kdecoration
-        - kdeplasma-addons
-        - kgamma5
-        - khotkeys
-        - kinfocenter
-        - kmenuedit
-        - kscreen
-        - kscreenlocker
-        - ksshaskpass
-        - ksysguard
-        - kuiserver
-        - kwallet-pam
-        - kwayland-integration
-        - kwin
-        - kwrited
-        - libkscreen
-        - libksysguard
-        - milou
-        - oxygen
-        - plasma-desktop
-        - plasma-gpg-agent
-        - plasma-integration
-        - plasma-mediacenter
-        - plasma-nm
-        - plasma-pa
-        - plasma-sdk
-        - plasma-ssh-agent
-        - plasma-workspace
-        - plasma-workspace-wallpapers
-        - polkit-kde-agent
-        - powerdevil
-        - sddm-kcm
-        - systemsettings
-        - user-manager
-        - plasma5-themes-maia
-        - sddm-maia-theme
-        - ark
-        - dolphin
-        - konsole
-        - kate
-        - kwrite
-        - manjaro-welcome
-        - manjaro-kde-minimal-settings
-
 - name: "xfce"
   description: "XFCE Desktop"
   packages:
         - exo
         - garcon
         - gtk-xfce-engine
+        - lightdm-gtk-greeter
+        - manjaro-welcome
+        - manjaro-xfce-minimal-settings
+        - midori
+        - mousepad
+        - open-fuse-iso
+        - pamac
         - thunar
         - thunar-volman
         - tumbler
@@ -220,75 +136,99 @@
         - xfdesktop
         - xfwm4
         - xfwm4-themes
-        - lightdm-gtk-greeter
+
+- name: "plasma"
+  description: "Plasma5 Desktop"
+  packages:
+        - ark
+        - bluedevil
+        - breeze
+        - breeze-gtk
+        - dolphin
+        - drkonqi
+        - kactivitymanagerd
+        - kate
+        - kde-cli-tools
+        - kde-gtk-config
+        - kdecoration
+        - kdeplasma-addons
+        - kgamma5
+        - khotkeys
+        - kinfocenter
+        - kmenuedit
+        - konsole
+        - kscreen
+        - kscreenlocker
+        - ksshaskpass
+        - ksysguard
+        - kuiserver
+        - kwallet-pam
+        - kwayland-integration
+        - kwin
+        - kwrite
+        - kwrited
+        - libkscreen
+        - libksysguard
+        - manjaro-kde-minimal-settings
         - manjaro-welcome
-        - midori
-        - mousepad
-        - pamac
-        - open-fuse-iso
-        - manjaro-xfce-minimal-settings
-        - lightdm-gtk-greeter
+        - milou
+        - oxygen
+        - plasma5-themes-maia
+        - plasma-desktop
+        - plasma-gpg-agent
+        - plasma-integration
+        - plasma-mediacenter
+        - plasma-nm
+        - plasma-pa
+        - plasma-sdk
+        - plasma-ssh-agent
+        - plasma-workspace
+        - plasma-workspace-wallpapers
+        - polkit-kde-agent
+        - powerdevil
+        - sddm-kcm
+        - sddm-maia-theme
+        - systemsettings
+        - user-manager
 
-- name: 'lxde-gtk3'
-  description: 'LXDE gtk3 Desktop'
+- name: 'deepin'
+  description: 'Deepin Desktop'
   packages:
-       - lxappearance-gtk3
-       - lxappearance-obconf-gtk3
-       - lxde-common
-       - lxde-icon-theme
-       - lxdm-gtk3
-       - lxinput-gtk3
-       - lxmusic-gtk3
-       - lxpanel-gtk3
-       - lxrandr-gtk3
-       - lxsession-gtk3
-       - lxtask-gtk3
-       - lxterminal-gtk3
-       - openbox
-       - pcmanfm-gtk3
-       - lxdm
-
-- name: 'mate-gtk3'
-  description: 'Mate gtk3 Desktop'
-  packages:
-       - caja-gtk3
-       - marco-gtk3
-       - mate-backgrounds
-       - mate-control-center-gtk3
-       - mate-desktop-gtk3
-       - mate-icon-theme
-       - mate-menus
-       - mate-notification-daemon-gtk3
-       - mate-panel-gtk3
-       - mate-polkit-gtk3
-       - mate-session-manager-gtk3
-       - mate-settings-daemon-gtk3
-       - mate-themes
-       - mate-user-guide
-       - atril-gtk3
-       - caja-gksu-gtk3
-       - caja-image-converter-gtk3
-       - caja-open-terminal-gtk3
-       - caja-sendto-gtk3
-       - caja-share-gtk3
-       - caja-wallpaper-gtk3
-       - engrampa-gtk3
-       - eom-gtk3
-       - galculator
-       - mate-applets-gtk3
-       - mate-icon-theme-faenza
-       - mate-media-gtk3
-       - mate-netbook-gtk3
-       - mate-power-manager-gtk3
-       - mate-screensaver-gtk3
-       - mate-sensors-applet-gtk3
-       - mate-system-monitor
-       - mate-terminal-gtk3
-       - mate-user-share-gtk3
-       - mate-utils-gtk3
-       - mozo
-       - pluma-gtk3
-       - mdm
+       - baobab
+       - chromium
+       - dconf-editor
+       - deepin-calendar
+       - deepin-file-manager
+       - deepin-game
+       - deepin-gtk-theme
+       - deepin-movie
+       - deepin-screenshot
+       - deepin-social-sharing
+       - deepin-image-viewer
+       - deepin-terminal
+       - evince
+       - evolution
+       - gedit
+       - gnome-terminal
+       - isousb
+       - manjaro-browser-settings
+       - manjaro-deepin-settings
+       - manjaro-documentation
+       - manjaro-settings-manager-notifier
+       - nautilus-empty-file
+       - pamac
+       - polkit-gnome
+       - poppler-data
+       - qt5ct
+       - qt5-styleplugins
+       - screenfetch
+       - smplayer
+       - sushi
+       - gufw
+       - transmission-gtk
+       - xarchiver
+       - xfburn
+       - xsane-gimp
 
 - name: 'gnome'
   description: 'Gnome Desktop'
@@ -396,50 +336,156 @@
        - tali
        - vinagre
 
-- name: 'deepin'
-  description: 'Deepin Desktop'
-  packages:
-       - deepin-account-faces
-       - deepin-api
-       - deepin-artwork-themes
-       - deepin-calendar
-       - deepin-control-center
-       - deepin-daemon
-       - deepin-desktop
-       - deepin-desktop-base
-       - deepin-desktop-schemas
-       - deepin-dock
-       - deepin-file-manager
-       - deepin-grub2-themes
-       - deepin-gtk-theme
-       - deepin-launcher
-       - deepin-menu
-       - deepin-notifications
-       - deepin-session-ui
-       - deepin-social-sharing
-       - deepin-sound-theme
-       - deepin-wm-switcher
-       - python2-deepin-ui
-       - python2-deepin-utils
-       - startdde
-       - deepin-game
-       - deepin-movie
-       - deepin-music
-       - deepin-screenshot
-       - deepin-terminal
-       - lightdm-gtk-greeter
-
 - name: 'i3'
   description: 'i3 Desktop'
   packages:
-       - i3-wm
-       - i3lock
-       - i3status
-       - artwork-i3
-       - conky-i3
-       - dmenu-manjaro
-       - i3-help
-       - i3exit
-       - i3status-manjaro
+       - alsa-plugins
+       - alsa-utils
+       - arandr
+       - bmenu
+       - clipit
+       - dfc
+       - epdfview
+       - gcolor2
+       - isousb
+       - lightdm-gtk-greeter-settings
+       - lxappearance
+       - manjaro-alsa
+       - manjaro-browser-settings
+       - manjaro-documentation
        - manjaro-i3-settings
-       - lightdm-gtk-greeter
+       - manjaro-settings-manager-notifier
+       - moc
+       - morc_meu
+       - mousepad
+       - ncdu
+       - palemoon-bin
+       - pamac
+       - pcmanfm
+       - perl-file-mimeinfo
+       - poppler-data
+       - qt5ct
+       - qt5-styleplugins
+       - ranger
+       - sbxkb
+       - screenfetch
+       - speedtest-cli
+       - transmission-gtk
+       - tree
+       - upower
+       - urxvt-pearls
+       - vi
+       - viewnior
+       - vim
+       - vlc-nightly
+       - volumeicon
+       - w3m
+       - wmutils
+       - xarchiver
+       - xautolock
+       - xdotool
+       - xfburn
+       - xfce4-power-manager
+       - xorg-xkill
+       - xorg-xprop
+       - xsane-gimp
+       - xterm
+
+- name: 'lxde-gtk3'
+  description: 'LXDE gtk3 Desktop'
+  packages:
+       - lxappearance-gtk3
+       - lxappearance-obconf-gtk3
+       - lxde-common
+       - lxde-icon-theme
+       - lxdm-gtk3
+       - lxinput-gtk3
+       - lxmusic-gtk3
+       - lxpanel-gtk3
+       - lxrandr-gtk3
+       - lxsession-gtk3
+       - lxtask-gtk3
+       - lxterminal-gtk3
+       - openbox
+       - pcmanfm-gtk3
+       - lxdm
+
+- name: "lxqt"
+  description: "LXQT Desktop"
+  packages:
+        - lxqt-about
+        - lxqt-common
+        - lxqt-config
+        - lxqt-globalkeys
+        - lxqt-notificationd
+        - lxqt-openssh-askpass
+        - lxqt-panel
+        - lxqt-policykit
+        - lxqt-powermanagement
+        - lxqt-qtplugin
+        - lxqt-runner
+        - lxqt-session
+        - lxqt-sudo
+        - openbox
+        - pcmanfm-qt
+        - manjaro-lxqt-minimal-settings
+        - qterminal
+        - xcursor-breeze
+        - andromeda-icon-theme
+        - andromeda-wallpaper
+        - vertex-maia-themes
+        - obmenu-generator
+        - feh
+        - openbox-themes
+        - tint2
+        - sddm
+        - compton
+        - kwrite
+        - xarchiver
+        - network-manager-applet
+        - lxtask-gtk3
+        - gvfs
+        - qupzilla
+
+- name: 'mate-gtk3'
+  description: 'Mate gtk3 Desktop'
+  packages:
+       - caja-gtk3
+       - marco-gtk3
+       - mate-backgrounds
+       - mate-control-center-gtk3
+       - mate-desktop-gtk3
+       - mate-icon-theme
+       - mate-menus
+       - mate-notification-daemon-gtk3
+       - mate-panel-gtk3
+       - mate-polkit-gtk3
+       - mate-session-manager-gtk3
+       - mate-settings-daemon-gtk3
+       - mate-themes
+       - mate-user-guide
+       - atril-gtk3
+       - caja-gksu-gtk3
+       - caja-image-converter-gtk3
+       - caja-open-terminal-gtk3
+       - caja-sendto-gtk3
+       - caja-share-gtk3
+       - caja-wallpaper-gtk3
+       - engrampa-gtk3
+       - eom-gtk3
+       - galculator
+       - mate-applets-gtk3
+       - mate-icon-theme-faenza
+       - mate-media-gtk3
+       - mate-netbook-gtk3
+       - mate-power-manager-gtk3
+       - mate-screensaver-gtk3
+       - mate-sensors-applet-gtk3
+       - mate-system-monitor
+       - mate-terminal-gtk3
+       - mate-user-share-gtk3
+       - mate-utils-gtk3
+       - mozo
+       - pluma-gtk3
+       - mdm
+
