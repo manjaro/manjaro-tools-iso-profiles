@@ -25,7 +25,7 @@ pcmanfm-qt
 >openrc syslog-ng-openrc
 >systemd syslog-ng
 >openrc cronjobs
-plymouth-theme-manjaro-elegant
+#plymouth-theme-manjaro-elegant
 
 ###apps###
 qterminal
