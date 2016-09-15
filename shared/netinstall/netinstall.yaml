@@ -3,9 +3,13 @@
   #hidden: true
   selected: true
   packages:
+        - acpid
+        - alsa-utils
+        - avahi
         - bash
         - bzip2
         - coreutils
+        - cpupower
         - cryptsetup
         - device-mapper
         - dhcpcd
@@ -19,23 +23,35 @@
         - gettext
         - glibc
         - grep
+        - grub
         - gzip
+        - haveged
         - inetutils
+        - intel-ucode
+        - inxi
         - iproute2
         - iputils
         - jfsutils
         - less
         - licenses
+        - linux44
         - logrotate
+        - lsb-release
         - lvm2
         - man-db
-        - man-pages
+        - manjaro-hotfixes
         - manjaro-system
+        - man-pages
         - mdadm
+        - memtest86+
         - mhwd
         - mhwd-db
         - nano
         - netctl
+        - networkmanager
+        - nfs-utils
+        - ntp
+        - os-prober
         - pacman
         - pciutils
         - pcmciautils
@@ -43,38 +59,22 @@
         - procps-ng
         - psmisc
         - reiserfsprogs
-        - s-nail
+        - rsync
         - sed
         - shadow
+        - s-nail
+        - sudo
         - sysfsutils
         - systemd-sysvcompat
         - tar
+        - tcp_wrappers
         - texinfo
+        - tlp
         - usbutils
         - util-linux
         - vi
         - which
         - xfsprogs
-        - tcp_wrappers
-        - linux44
-        - grub
-        - lsb-release
-        - memtest86+
-        - os-prober
-        - intel-ucode
-        - sudo
-        - haveged
-        - rsync
-        - nfs-utils
-        - acpid
-        - cpupower
-        - tlp
-        - networkmanager
-        - alsa-utils
-        - ntp
-        - manjaro-hotfixes
-        - avahi
-        - inxi
 
 - name: "base-devel"
   description: "Development packages"
