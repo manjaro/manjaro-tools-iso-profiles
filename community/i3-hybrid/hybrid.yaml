@@ -35,10 +35,20 @@
         - which
         - yaourt
 
-- name: "Chromium"
-  description: "Internet browser Chromium"
+- name: "Browser Firefox"
+  description: "Firefox"
+  packages:
+        - firefox
+  
+- name: "Browser Chromium"
+  description: "Chromium"
   packages:
         - chromium
+        
+- name: "Browser Palemoon"
+  description: "Palemoon"
+  packages:
+        - palemoon-bin
         
 - name: "CLI tools"
   description: "Command line utilities"
@@ -57,11 +67,6 @@
         - vi
         - vim
         - w3m
-
-- name: "Firefox"
-  description: "Internet browser Firefox"
-  packages:
-        - firefox
 
 - name: "Gaming"
   description: "Steam packages"
