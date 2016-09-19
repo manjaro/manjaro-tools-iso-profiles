@@ -1,11 +1,16 @@
-- name: "Artwork"
+- name: "Artwork i3 wallpapers"
+  description: "Manjaro i3 wallpapers"
+  packages:
+        - artwork-i3
+
+- name: "Artwork Manjaro"
   description: "Additional themes and wallpapers"
   packages:
        - manjaro-backgrounds
        - vertex-maia-icon-theme
        - xcursor-chameleon-pearl
        - xcursor-maia
-
+       
 - name: "AUR"
   description: "Tools for building packages from the AUR"
   packages:
@@ -98,7 +103,6 @@
   packages:
         - ffmpeg
         - ffmpegthumbnailer
-        - flashplugin
         - gst-libav
         - gst-plugins-bad
         - gst-plugins-base
@@ -112,17 +116,26 @@
         - libdvdcss
         - vlc-nightly
 
-- name: "Office"
+- name: "Office-suite Libreoffice"
+  description: "Libreoffice-Suite"
+  packages:
+        - libreoffice-fresh
+        
+- name: "Printing"
   description: "A selection of office utilities"
   packages:
-        - epdfview
-        - libreoffice-fresh
         - manjaro-printer
+
+- name: "Scanning"
+  description: "A selection of office utilities"
+  packages:
+        - xsane-gimp
 
 - name: "Utilities"
   description: "GUI tools"
   packages:
         - clipit
+        - galculator
         - gparted
         - isousb
         - xarchiver
