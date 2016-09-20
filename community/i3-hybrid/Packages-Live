@@ -1,8 +1,8 @@
 ### Browser for live-session only
-midori
+palemoon-bin
 
 ### Live packages
-systemd manjaro-live-systemd
+manjaro-live-systemd
 manjaro-live-skel
 
 ### Installer

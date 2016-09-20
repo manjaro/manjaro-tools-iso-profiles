@@ -1,10 +1,10 @@
 ### default packages for live-session only
-firefox
+lightfirefox
 hexchat
 manjaro-documentation
 
 ### Live packages
-systemd manjaro-live-systemd
+manjaro-live-systemd
 manjaro-live-skel
 
 ### Installer
