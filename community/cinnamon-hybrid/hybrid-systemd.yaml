@@ -1,14 +1,14 @@
-- name: "Artwork i3 wallpapers"
-  description: "Manjaro i3 wallpapers"
+- name: "Artwork Cinnamon"
+  description: "Manjaro-Cinnamon wallpapers"
   packages:
-        - artwork-i3
+       - cinnamon-wallpapers
 
 - name: "Artwork Manjaro"
   description: "Additional themes and wallpapers"
   packages:
+       - flattr-icon-theme
        - manjaro-backgrounds
        - vertex-maia-icon-theme
-       - xcursor-chameleon-pearl
        - xcursor-maia
        
 - name: "AUR"
@@ -59,19 +59,13 @@
   description: "Command line utilities"
   packages:
         - bmenu
-        - dfc
         - downgrade
         - htop
-        - moc
-        - ncdu
         - p7zip
-        - ranger
         - screenfetch
-        - speedtest-cli
         - tree
         - vi
         - vim
-        - w3m
 
 - name: "Documentation"
   description: "Manjaro User Guide"
@@ -86,9 +80,10 @@
 - name: "Graphics"
   description: "A selection of graphics tools"
   packages:
+        - eog
+        - eog-plugins
         - gcolor2
         - gimp
-        - viewnior
 
 - name: "Internet"
   description: "Chat and filetransfer"
@@ -102,6 +97,22 @@
         - jre8-openjdk
         - jre8-openjdk-headless
         - icedtea-web
+        
+- name: "Mailclient Claws Mail"
+  description: "Claws Mail"
+  packages:
+        - claws-mail
+        
+- name: "Mailclient/PIM Evolution"
+  description: "Evolution"
+  packages:
+        - evolution
+        
+- name: "Mailclient/PIM Thunderbird"
+  description: "Mozilla Thunderbird"
+  packages:
+        - lightning
+        - thunderbird
         
 - name: "Multimedia"
   description: "Multimedia packages"
@@ -119,6 +130,7 @@
         - gstreamer0.10-ugly-plugins
         - flac
         - libdvdcss
+        - pragha
         - vlc-nightly
 
 - name: "Office-suite Libreoffice"
@@ -139,9 +151,10 @@
 - name: "Utilities"
   description: "GUI tools"
   packages:
-        - clipit
+        - baobab
         - galculator
         - gparted
         - isousb
+        - parcellite
         - xarchiver
         - xfburn

@@ -1,5 +1,7 @@
-### Browser for live-session only
-midori
+### default packages for live-session only
+firefox
+hexchat
+manjaro-documentation
 
 ### Live packages
 systemd manjaro-live-systemd

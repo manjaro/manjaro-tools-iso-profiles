@@ -1,0 +1,90 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## basic Cinnamon packages
+dconf-editor
+evince
+poppler-data # CKJ support for pdf
+gksu
+manjaro-cinnamon-settings
+manjaro-browser-settings
+nemo-fileroller # archiver
+nemo-preview
+nemo-python
+nemo-share
+qt5ct
+qt5-styleplugins
+xdg-user-dirs-gtk
+
+## GNOME related stuff
+gnome-system-log
+gedit
+gnome-disk-utility
+gnome-keyring
+gnome-screenshot
+gnome-system-monitor
+gnome-terminal
+gnome-vfs
+icon-naming-utils
+mousetweaks
+python2-gnomecanvas
+python2-gnomevfs
+python2-libgnome
+
+# needed
+python-ptyprocess
+python2-ptyprocess
+
+## Network
+blueberry
+netctl
+net-tools
+networkmanager-dispatcher-ntpd
+openresolv
+
+## Artwork
+plymouth-theme-manjaro-cinnamon
+
+## Other Applications
+exfat-utils
+fuse-exfat
+galculator
+gvfs-afc
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+libgsf
+lightdm-gtk-greeter-settings
+manjaro-features
+manjaro-settings-manager-notifier
+manjaro-welcome
+mugshot
+nss
+numlockx
+openssh
+pavucontrol
+udiskie
+udisks
+
+## Package management
+pamac
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-gconf
+pulseaudio-zeroconf
