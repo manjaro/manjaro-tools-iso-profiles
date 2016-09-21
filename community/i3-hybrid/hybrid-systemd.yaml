@@ -127,12 +127,12 @@
         - libreoffice-fresh
         
 - name: "Printing"
-  description: "A selection of office utilities"
+  description: "Printer configuration"
   packages:
         - manjaro-printer
 
 - name: "Scanning"
-  description: "A selection of office utilities"
+  description: "Scanning utilities"
   packages:
         - xsane-gimp
 
