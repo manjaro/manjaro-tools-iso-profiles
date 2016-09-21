@@ -5,7 +5,6 @@
 ## basic i3 Packages
 accountsservice
 arandr
-gcc # currently needed for xrdb preprocessing
 gconf # fix qt-theme
 gksu
 gnome-keyring # fix wlan segfault

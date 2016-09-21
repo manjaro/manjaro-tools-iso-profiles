@@ -23,7 +23,6 @@ xorg-xinit
 ## Basic packages
 dconf
 desktop-file-utils
-gcc # needed for xrdb include .extend.Xresources
 
 ## Packages for Sound and Audio
 manjaro-alsa	# containes 32bit libraries
