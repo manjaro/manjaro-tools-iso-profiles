@@ -40,17 +40,6 @@ network-manager-applet
 >openrc sddm-consolekit
 >systemd sddm
 
-###Openbox###
-obmenu-generator
-feh
-openbox-themes
-tint2
-
-###Artwork###
-xcursor-breeze
-andromeda-icon-theme
-andromeda-wallpaper
-
-manjaro-documentation
+#manjaro-documentation
 
 manjaro-lxqt-minimal-settings
