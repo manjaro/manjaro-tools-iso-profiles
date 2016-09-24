@@ -15,24 +15,11 @@ lumina-desktop
 ###apps###
 qterminal
 compton
-kwrite
 
 ###DisplayManager###
 >openrc sddm-consolekit
 >systemd sddm
 
-###Openbox###
-openbox
-obmenu-generator
-feh
-openbox-themes
-tint2
-
-###Artwork###
-#cantarell-fonts
-xcursor-breeze
-andromeda-icon-theme
-andromeda-wallpaper
-vertex-maia-themes
+manjaro-lumina-settings
 
 manjaro-documentation
