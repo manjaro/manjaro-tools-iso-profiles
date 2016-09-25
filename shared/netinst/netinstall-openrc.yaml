@@ -47,6 +47,7 @@
        - s-nail
        - sed
        - shadow
+       - sudo
        - sysfsutils
        - eudev-systemd
        - tar
@@ -111,7 +112,6 @@
         - patch
         - pkg-config
         - sed
-        - sudo
         - texinfo
         - util-linux
         - which
