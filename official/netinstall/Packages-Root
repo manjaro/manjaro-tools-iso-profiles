@@ -92,15 +92,15 @@ btrfs-progs
 dmraid
 dosfstools
 ecryptfs-utils
->openrc nfs-utils-openrc
->systemd nfs-utils
+#>openrc nfs-utils-openrc
+#>systemd nfs-utils
 ntfs-3g
 
 ## Network
 crda
 dhclient
 dnsmasq
-ethtool
+#ethtool
 iptables
 nbd
 >openrc wpa_supplicant-openrc

@@ -78,8 +78,7 @@ KERNEL-rt3562sta
 KERNEL-r8168
 
 ## Virtualbox Drivers
-#>openrc virtualbox-guest-utils-openrc
-#>systemd virtualbox-guest-utils
+virtualbox-guest-utils
 KERNEL-virtualbox-guest-modules
 
 ## VMWare Support
@@ -98,7 +97,7 @@ opencl-mesa
 #ipw2200-fw
 #zd1211-firmware
 #b43-fwcutter
-#linux-firmware
+linux-firmware
 #manjaro-firmware
 
 ## Bumblebee Support
