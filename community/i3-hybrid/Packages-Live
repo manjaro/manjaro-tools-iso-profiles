@@ -1,9 +1,0 @@
-### Browser for live-session only
-palemoon-bin
-
-### Live packages
-manjaro-live-systemd
-manjaro-live-skel
-
-### Installer
-calamares-dev
