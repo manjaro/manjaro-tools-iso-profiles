@@ -17,7 +17,7 @@
 
 nm-applet &
 
-sudo -E calamares &
+sudo -E calamares -d &
 
 feh --bg-scale /usr/share/backgrounds/andromeda.png &
 

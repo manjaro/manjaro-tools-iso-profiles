@@ -18,7 +18,7 @@
 [encoding] {UTF-8}
       [exec] (Install Manjaro Linux) {sudo -E calamares}
       [separator]
-      [exec] (Install Manjaro Linux [Debug-Mode]) {sudo -E calamares -d}
+      [exec] (Install Manjaro Linux [Debug Mode]) {sudo -E calamares -d}
       [exec] (Terminal) {xterm}
       [separator]
       [restart] (Restart)
