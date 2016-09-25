@@ -15,11 +15,11 @@
 # wmsmixer -w &
 # idesk &
 
-feh --bg-scale /usr/share/backgrounds/andromeda.png &
-
 nm-applet &
 
 sudo -E calamares &
+
+feh --bg-scale /usr/share/backgrounds/andromeda.png &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
