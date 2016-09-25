@@ -10,6 +10,8 @@ calamares-dev			# new GUI installer of manjaro - kpmcore
 >systemd sddm
 >openrc sddm-consolekit
 fluxbox-theme-manjaro
+feh
+andromeda-wallpaper
 
 >openrc networkmanager-openrc
 >openrc networkmanager-consolekit
