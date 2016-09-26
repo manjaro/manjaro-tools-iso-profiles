@@ -10,7 +10,7 @@ calamares-dev			# new GUI installer of manjaro - kpmcore
 >systemd sddm
 >openrc sddm-consolekit
 fluxbox-theme-manjaro
-nitrogen
+feh
 andromeda-wallpaper
 xterm
 
