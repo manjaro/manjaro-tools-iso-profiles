@@ -10,7 +10,7 @@ calamares-dev			# new GUI installer of manjaro - kpmcore
 >systemd sddm
 >openrc sddm-consolekit
 fluxbox-theme-manjaro
-feh
+nitrogen
 andromeda-wallpaper
 xterm
 
@@ -18,9 +18,8 @@ xterm
 >openrc networkmanager-consolekit
 >systemd networkmanager
 network-manager-applet
-#xcursor-breeze
+xcursor-breeze
 sudo
-qterminal
 
 ## Misc
 >openrc consolekit-openrc
