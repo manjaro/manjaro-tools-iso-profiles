@@ -91,6 +91,19 @@ Rectangle {
                     horizontalAlignment: Text.AlignHCenter
                 }
 
+                Text {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    color: "black"
+                    verticalAlignment: Text.AlignVCenter
+                    height: text.implicitHeight
+                    width: parent.width
+                    text: qsTr("password for the live session is: manjaro")
+                    wrapMode: Text.WordWrap
+                    font.pixelSize: 14
+                    elide: Text.ElideRight
+                    horizontalAlignment: Text.AlignHCenter
+                }
+
                 Column {
                     width: parent.width
                     spacing: 4
