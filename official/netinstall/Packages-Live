@@ -11,7 +11,7 @@ calamares-dev			# new GUI installer of manjaro - kpmcore
 >openrc sddm-consolekit
 fluxbox-theme-manjaro
 feh
-andromeda-wallpaper
+sddm-andomeda-qt-theme
 qt5ct
 xterm
 
