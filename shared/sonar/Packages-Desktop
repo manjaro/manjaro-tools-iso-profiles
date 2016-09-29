@@ -153,3 +153,7 @@ pidgin-otr #off the record, encrypted and anonymous communication support
 telegram-purple #telegram support
 #additional plugins for pidgin
 purple-plugin-pack
+#partition management
+gparted #main program
+gpart #partition recovery
+gnome-disk-utility #disk and partition management
