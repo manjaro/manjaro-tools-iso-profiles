@@ -42,7 +42,9 @@ mate-user-share
 mate-utils
 mozo
 pluma
-#mate appletsmate-applets
+#individual mate applets
+mate-applet-streamer
+mate-applet-doc
 #
 network-manager-applet
 ## Applications
