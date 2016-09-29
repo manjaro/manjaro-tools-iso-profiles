@@ -47,9 +47,7 @@ pluma
 #mate applets
 mate-applet-lockkeys
 mate-applet-streamer
-#mate system tools
-system-tools-backends
-
+#
 network-manager-applet
 ## Applications
 #our desktop settings
