@@ -3,8 +3,8 @@
 
 uriparser
 #login dm
-#lightdm
-gdm
+lightdm
+#gdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 #mate group
