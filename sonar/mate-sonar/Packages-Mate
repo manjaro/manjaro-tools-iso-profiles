@@ -8,12 +8,12 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 #mate and mate extra groups
-mate-gtk3
-mate-extra-gtk3
-mate-applets-gtk3
+mate
+mate-extra
+mate-applets
 #individual mate applets
-#mate-applet-streamer
-mate-applet-dock
+mate-applet-streamer
+#mate-applet-dock
 
 #network-manager-applet
 ## Applications
