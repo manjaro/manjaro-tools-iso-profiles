@@ -12,7 +12,7 @@ mate-gtk3
 mate-extra-gtk3
 mate-applets-gtk3
 #individual mate applets
-mate-applet-streamer-gtk3
+#mate-applet-streamer
 mate-applet-dock
 
 #network-manager-applet
