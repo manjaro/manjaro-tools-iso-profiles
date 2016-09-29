@@ -100,6 +100,8 @@ ibus
 ibus-table
 ibus-table-extraphrase
 mousetweaks
+#alteraeon sound pack
+tintin-alteraeon
 python-yaml
 vorbis-tools
 ocrdesktop
@@ -131,6 +133,7 @@ pulseaudio-gconf
 #accessibility
 qt-at-spi
 ibus-qt
+
 #audio codecs
 gst-good-plugins
 gst-bad-plugins
@@ -140,3 +143,13 @@ gstreamer0.10-plugins-ugly
 gstreamer0.10-good-plugins
 gstreamer0.10-bad-plugins
 gstreamer0.10-ffmpeg
+#instant messenging software
+pidgin
+#additional protocol support
+purple-hangouts-hg #google hangouts
+purple-skypeweb #cloud skype support
+prpltwtr #twitter support
+pidgin-otr #off the record, encrypted and anonymous communication support
+telegram-purple #telegram support
+#additional plugins for pidgin
+purple-plugin-pack
