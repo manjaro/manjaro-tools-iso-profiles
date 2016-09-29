@@ -44,9 +44,8 @@ mozo
 pluma
 #individual mate applets
 mate-applet-streamer
-mate-applet-doc
-#
-network-manager-applet
+
+#network-manager-applet
 ## Applications
 #our desktop settings
 sonar-mate-settings
