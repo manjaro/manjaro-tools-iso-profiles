@@ -1,7 +1,5 @@
 ### Sonar mate Packages
 
-
-uriparser
 #login dm
 lightdm
 #gdm
@@ -19,13 +17,10 @@ mate-applets
 #our desktop settings
 sonar-mate-settings
 #our installer branding
-#sonar-calamares-branding-mate
-isousb
-udiskie
+sonar-calamares-branding-mate
 udisks
 udisks2
 
-#accessibility
 
 #yelp tool for reading the help files
 yelp
@@ -54,8 +49,6 @@ sonar-backgrounds
 
 #standard media playing software.
 libgpod #for management of apple iPod, iPhone, etc devices
-asunder #lightweight cd ripper
-xfburn #light weight disk burner
 #mate tweak tool
 mate-tweak
 

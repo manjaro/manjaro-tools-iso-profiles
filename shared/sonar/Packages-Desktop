@@ -143,7 +143,15 @@ gstreamer0.10-ugly-plugins
 gstreamer0.10-good-plugins
 gstreamer0.10-bad-plugins
 gstreamer0.10-ffmpeg
-#instant messenging software
+#instant messenging software#media player and audio converter
+audacious #standard media player
+audacious-plugins #additional plugins for audacious
+soundconverter #audio and video file converter using gstreamer
+transmageddon #video file converter
+handbrake #dvd and bd ripper
+asunder #lightweight cd ripper with cddb support
+brasero #dvd, image and bd burner
+
 pidgin
 #additional protocol support
 purple-hangouts-hg #google hangouts
