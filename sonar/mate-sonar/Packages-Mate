@@ -12,7 +12,6 @@ mate
 mate-extra
 mate-applets
 #individual mate applets
-mate-applet-streamer
 #mate-applet-dock
 
 #network-manager-applet
