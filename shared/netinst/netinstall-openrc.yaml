@@ -147,6 +147,7 @@
        - xfwm4-themes
        - displaymanager-openrc
        - lightdm-gtk-greeter
+       - mousepad
 
 - name: 'plasma'
   description: 'plasma'
@@ -195,6 +196,11 @@
        - user-manager
        - displaymanager-openrc
        - sddm-consolekit
+       - konsole
+       - dolphin
+       - kate
+       - ark
+       - khelpcenter
 
 - name: 'lxqt'
   description: 'lxqt'
@@ -219,3 +225,5 @@
        - pcmanfm-qt
        - displaymanager-openrc
        - sddm-consolekit
+       - qterminal
+       - kwrite

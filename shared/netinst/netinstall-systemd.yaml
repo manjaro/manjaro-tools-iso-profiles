@@ -143,6 +143,7 @@
        - xfwm4
        - xfwm4-themes
        - lightdm-gtk-greeter
+       - mousepad
 
 - name: 'plasma'
   description: 'plasma'
@@ -189,6 +190,11 @@
        - sddm-kcm
        - systemsettings
        - user-manager
+       - konsole
+       - dolphin
+       - kate
+       - ark
+       - khelpcenter
 
 - name: 'lxqt'
   description: 'lxqt'
@@ -212,6 +218,8 @@
        - openbox
        - pcmanfm-qt
        - sddm
+       - qterminal
+       - kwrite
 
 - name: 'gnome'
   description: 'gnome'
@@ -265,3 +273,4 @@
        - vino
        - xdg-user-dirs-gtk
        - yelp
+       - gedit
