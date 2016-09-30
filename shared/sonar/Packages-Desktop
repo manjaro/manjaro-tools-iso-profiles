@@ -151,6 +151,11 @@ transmageddon #video file converter
 handbrake #dvd and bd ripper
 asunder #lightweight cd ripper with cddb support
 brasero #dvd, image and bd burner
+#extra addons for brasero
+libwmf
+dvdbackup
+dvdauthor
+openjpeg2
 
 pidgin
 #additional protocol support
