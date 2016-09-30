@@ -1,6 +1,5 @@
 >openrc manjaro-livecd-openrc
 >systemd manjaro-livecd-systemd
-manjaro-livecd-cli-installer
 manjaro-tools-base		# recovery chroot tools
 sonar-calamares-branding	# sonar branding for calamares
 manjaro-live-skel		# live skel
