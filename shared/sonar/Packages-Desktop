@@ -67,12 +67,16 @@ nss-mdns
 manjaro-hotfixes
 
 ## Artwork
+manjaro-artwork
+manjaro-artwork-extra
 sonar-backgrounds
 sonar-common
 vertex-themes
 vertex-maia-themes
 vertex-maia-icon-theme
 
+#screensavers
+rss-glx #really slick screensavers
 #Sound theme support
 sound-theme-freedesktop
 sonar-sound-theme
