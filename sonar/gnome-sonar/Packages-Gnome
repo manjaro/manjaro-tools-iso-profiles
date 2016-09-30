@@ -94,8 +94,6 @@ seahorse-nautilus #support for encrypting and unencrypting files and folders in 
 
 #simple scanning utility, supposed to be in gnome extra but for some reason isn't
 simple-scan
-#cd ripper
-sound-juicer
 
 #samba file sharing support
 nautilus-share
