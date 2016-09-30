@@ -12,7 +12,10 @@ mate-applets
 #individual mate applets
 #mate-applet-dock
 
-#network-manager-applet
+#screensavers
+mate-screensaver
+mate-screensaver-hacks
+network-manager-applet
 ## Applications
 #our desktop settings
 sonar-mate-settings
