@@ -75,7 +75,7 @@ memtest86+
 mkinitcpio-nfs-utils
 mkinitcpio-openswap # needed to be in rootfs by Calamares LUKS support
 os-prober
-syslinux
+# syslinux
 
 ## Misc applications
 >openrc rsync-openrc
@@ -84,8 +84,8 @@ syslinux
 >systemd haveged
 
 ## Efi support (only x86_64)
->x86_64 efitools
->x86_64 refind-efi
+# >x86_64 efitools
+# >x86_64 refind-efi
 
 ## Storage and filesystem
 btrfs-progs
