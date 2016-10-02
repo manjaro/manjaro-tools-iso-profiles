@@ -97,7 +97,7 @@ xfce4-taskmanager
 
 ## Applications
 catfish # needed for desktop search
-engrampa-thunar-plugin
+#engrampa-thunar-plugin
 #firefox
 #galculator-gtk2
 #gimp
@@ -107,7 +107,6 @@ gparted
 #guayadeque
 gvfs
 gvfs-afc
-gvfs-afp
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
@@ -139,7 +138,7 @@ blueman
 ## Artwork
 #menda-circle-icon-theme
 faenza-green-icon-theme
-gtk-theme-ceti
+#gtk-theme-ceti
 menda-themes
 #menda-themes-dark
 gnome-themes-standard
