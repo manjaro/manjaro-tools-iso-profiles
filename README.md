@@ -47,7 +47,7 @@ manjaro-tools-iso-profiles
 # netgroups="https://raw.githubusercontent.com/manjaro/manjaro-tools-iso-profiles/master/shared/netinstall"
 
 # configure calamares to use chrootcfg instead of unpackfs
-# chrootcfg="true"
+# chrootcfg="false"
 
 # use geoip
 # geoip="true"
