@@ -22,6 +22,10 @@ network-manager-applet
 xcursor-breeze
 sudo
 
+syslinux
+>x86_64 efitools
+>x86_64 manjaro-efi-shell
+
 ## Misc
 >openrc consolekit-openrc
 >openrc displaymanager-openrc
