@@ -82,7 +82,7 @@ openresolv
 
 ## Artwork
 manjaro-artwork
-systemd plymouth-theme-manjaro-gnome
+>systemd plymouth-theme-manjaro-gnome
 vertex-maia-icon-theme
 vertex-maia-themes
 gnome-wallpapers
