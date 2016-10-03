@@ -73,8 +73,6 @@ pangox-compat
 ## VMWare Support
 open-vm-tools
 xf86-input-vmmouse
-#libinput xorg driver
-xf86-input-libinput
 #vdpau drivers
 mesa-vdpau
 libva-intel-driver
