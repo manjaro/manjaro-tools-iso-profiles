@@ -79,6 +79,6 @@ libva-intel-driver
 libva-mesa-driver
 libva-vdpau-driver
 opencl-mesa
-#synaptics touchpad driver
-#xf86-input-synaptics
+#libinput xorg driver
+xf86-input-libinput
 
