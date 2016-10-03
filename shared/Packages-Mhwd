@@ -80,6 +80,5 @@ libva-mesa-driver
 libva-vdpau-driver
 opencl-mesa
 #synaptics touchpad driver
-xf86-input-synaptics
-efitools
+#xf86-input-synaptics
 
