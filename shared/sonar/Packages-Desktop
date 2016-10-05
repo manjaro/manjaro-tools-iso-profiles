@@ -163,6 +163,7 @@ openjpeg2
 
 pidgin
 #additional protocol support
+purple-facebook #facebook support
 purple-hangouts-hg #google hangouts
 purple-skypeweb #cloud skype support
 prpltwtr #twitter support
@@ -174,3 +175,6 @@ purple-plugin-pack
 gparted #main program
 gpart #partition recovery
 gnome-disk-utility #disk and partition management
+#bit torrent client
+deluge
+
