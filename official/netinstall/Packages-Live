@@ -25,6 +25,8 @@ sudo
 syslinux
 >x86_64 efitools
 >x86_64 manjaro-efi-shell
+mkinitcpio-nfs-utils
+nbd
 
 ## Misc
 >openrc consolekit-openrc
@@ -78,7 +80,6 @@ xf86-video-vesa
 #xf86-video-vmware
 #xf86-video-voodoo
 
-
 ## Network Support
 KERNEL-broadcom-wl
 KERNEL-rt3562sta
@@ -87,25 +88,18 @@ KERNEL-r8168
 ## Virtualbox Drivers
 virtualbox-guest-utils
 KERNEL-virtualbox-guest-modules
+#KERNEL-ndiswrapper
 
 ## VMWare Support
 open-vm-tools
 #xf86-input-vmmouse
 #vdpau drivers
-mesa-vdpau
+#mesa-vdpau
 #libva-intel-driver
 #libva-mesa-driver
 #libva-vdpau-driver
-opencl-mesa
+#opencl-mesa
 #>multilib lib32-mesa  # Optional dependency for mhwd
-
-## Firmware
-#ipw2100-fw
-#ipw2200-fw
-#zd1211-firmware
-#b43-fwcutter
-#linux-firmware
-#manjaro-firmware
 
 ## Bumblebee Support
 #>systemd bumblebee
@@ -113,9 +107,3 @@ opencl-mesa
 #primus
 #>multilib lib32-primus
 #KERNEL-bbswitch
-
-## Network Support
-#KERNEL-broadcom-wl
-#KERNEL-rt3562sta
-#KERNEL-r8168
-#KERNEL-ndiswrapper

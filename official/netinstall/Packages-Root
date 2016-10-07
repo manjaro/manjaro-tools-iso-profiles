@@ -72,10 +72,8 @@ grub
 lsb-release
 manjaro-release
 memtest86+
-mkinitcpio-nfs-utils
 mkinitcpio-openswap # needed to be in rootfs by Calamares LUKS support
 os-prober
-# syslinux
 
 ## Misc applications
 >openrc rsync-openrc
@@ -92,8 +90,8 @@ btrfs-progs
 dmraid
 dosfstools
 ecryptfs-utils
-#>openrc nfs-utils-openrc
-#>systemd nfs-utils
+>openrc nfs-utils-openrc
+>systemd nfs-utils
 ntfs-3g
 
 ## Network
@@ -102,7 +100,6 @@ dhclient
 dnsmasq
 #ethtool
 iptables
-nbd
 >openrc wpa_supplicant-openrc
 >systemd wpa_supplicant
 
@@ -116,3 +113,11 @@ acpi
 
 ## ucode for new cpus
 intel-ucode
+
+## Firmware
+ipw2100-fw
+ipw2200-fw
+zd1211-firmware
+b43-fwcutter
+linux-firmware
+manjaro-firmware
