@@ -22,7 +22,7 @@ network-manager-applet
 xcursor-breeze
 sudo
 
-syslinux
+#syslinux
 >x86_64 efitools
 >x86_64 manjaro-efi-shell
 mkinitcpio-nfs-utils
