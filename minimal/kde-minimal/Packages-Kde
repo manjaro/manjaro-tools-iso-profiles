@@ -14,7 +14,6 @@
 noto-fonts  # default font
 #noto-fonts-cjk  # big package, ~76 mb compressed
 noto-fonts-emoji
-ttf-oxygen  # used for monospaced
 cantarell-fonts
 
 ## Package management

@@ -81,7 +81,6 @@ yaourt
 noto-fonts  # default font
 #noto-fonts-cjk  # big package, ~76 mb compressed
 noto-fonts-emoji
-ttf-oxygen  # used for monospaced
 cantarell-fonts
 
 ## Games
@@ -246,6 +245,9 @@ python-pysmbc          # SMB browser support
 
 ## Optional dependencies for okular
 poppler-data  # encoding data to display PDF documents containing CJK characters
+
+## Optional dependencies for kdeconnect
+sshfs  # remote filesystem browser 
 
 ## Applications
 cantata
