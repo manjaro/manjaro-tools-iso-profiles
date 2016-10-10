@@ -272,28 +272,6 @@ yakuake
 mpd       # playback
 perl-uri  # dynamic playlist
 
-## Office
-
-
-
-
-#calligra-braindump
-#calligra-extras
-#calligra-filters
-#calligra-flow
-#calligra-handbook
-#calligra-karbon
-#calligra-kexi
-#calligra-plan
-#calligra-plugins
-#calligra-sheets
-#calligra-stage
-#calligra-words
-
-
-## KDE Frameworks
-kmediaplayer
-
 # Partition
 #gparted
 partitionmanager
