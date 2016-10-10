@@ -252,8 +252,11 @@ sshfs  # remote filesystem browser
 ## Applications
 cantata
 imagewriter
+inkscape
+krita
 firefox-kde
 flashplugin
+libreoffice-still
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 manjaro-welcome
@@ -270,20 +273,23 @@ mpd       # playback
 perl-uri  # dynamic playlist
 
 ## Office
-libreoffice-still
-calligra-braindump
+
+
+
+
+#calligra-braindump
 #calligra-extras
 #calligra-filters
 #calligra-flow
 #calligra-handbook
-calligra-karbon
+#calligra-karbon
 #calligra-kexi
 #calligra-plan
 #calligra-plugins
 #calligra-sheets
 #calligra-stage
 #calligra-words
-krita
+
 
 ## KDE Frameworks
 kmediaplayer
