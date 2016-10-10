@@ -21,6 +21,7 @@ mesa-demos
 xdg-user-dirs
 xdg-utils
 xdg-su
+numlockx
 
 ## Fonts
 terminus-font

@@ -76,12 +76,13 @@ lsb-release
 manjaro-firmware
 manjaro-release
 memtest86+
+# ToDo: be removed with mt-0.14+
 mkinitcpio-nfs-utils
 mkinitcpio-openswap # needed to be in rootfs by Calamares LUKS support
 >multilib lib32-mesa  # Optional dependency for mhwd
 os-prober
-pkg-config
 sudo
+# ToDo: be removed with mt-0.14+
 syslinux
 
 ## Misc applications
@@ -89,7 +90,6 @@ lsof
 >openrc rsync-openrc
 >systemd rsync
 wget
-numlockx
 
 ## Compression utils
 lzop
@@ -100,6 +100,7 @@ xz
 zip
 
 ## Efi support (only x86_64)
+# ToDo: be removed with mt-0.14+
 >x86_64 efitools
 >x86_64 refind-efi
 
@@ -129,6 +130,7 @@ iptables
 ipw2100-fw
 ipw2200-fw
 iw
+# ToDo: be removed with mt-0.14+
 nbd
 KERNEL-ndiswrapper
 ndiswrapper-utils

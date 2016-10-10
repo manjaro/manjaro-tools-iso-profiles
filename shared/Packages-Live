@@ -5,3 +5,10 @@ manjaro-live-skel		# live skel
 calamares-dev			# new GUI installer of manjaro - kpmcore
 #calamares-exp			# new GUI installer of manjaro - experimental version
 
+# must be present in live list with mt-0.14+
+#>x86_64 efitools
+#>x86_64 manjaro-efi-shell
+#mkinitcpio-nfs-utils
+#nbd
+#>manjaro manjaro-syslinux-theme
+#>sonar sonar-syslinux-theme
