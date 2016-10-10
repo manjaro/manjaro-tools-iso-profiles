@@ -109,3 +109,100 @@ gnome-themes-maia
 vertex-maia-themes
 sonar-backgrounds
 
+## Artwork
+manjaro-artwork
+manjaro-artwork-extra
+sonar-backgrounds
+sonar-common
+vertex-themes
+vertex-maia-themes
+vertex-maia-icon-theme
+
+#screensavers
+rss-glx #really slick screensavers
+#Sound theme support
+sound-theme-freedesktop
+sonar-sound-theme
+
+#some extra networkmanager plugins
+networkmanager-openvpn
+networkmanager-openconnect
+networkmanager-pptp
+networkmanager-vpnc
+networkmanager-dispatcher-ntpd
+networkmanager-dispatcher-sshd
+
+bash-completion
+>systemd samba
+>openrc samba-openrc
+
+#xcursors
+xcursor-simpleandsoft
+xcursor-vanilla-dmz-aa
+xcursor-chameleon-pearl
+xcursor-breeze
+xcursor-maia
+
+#bluetooth
+bluez-firmware
+bluez-plugins
+bluez-hid2hci
+bluez-utils
+
+#sound
+pulseaudio-bluetooth
+pulseaudio-equalizer
+extra/pulseaudio-alsa
+pulseaudio-zeroconf
+pulseaudio-lirc
+pavucontrol
+pulseaudio-ctl
+pulseaudio-gconf
+
+#accessibility
+#qt-at-spi
+ibus-qt
+
+#audio codecs
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly
+gst-libav
+gstreamer0.10-ugly-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-bad-plugins
+gstreamer0.10-ffmpeg
+
+#media player and audio converter
+audacious #standard media player
+audacious-plugins #additional plugins for audacious
+soundconverter #audio and video file converter using gstreamer
+transmageddon #video file converter
+handbrake #dvd and bd ripper
+asunder #lightweight cd ripper with cddb support
+brasero #dvd, image and bd burner
+#extra addons for brasero
+libwmf
+dvdbackup
+dvdauthor
+openjpeg2
+#video player
+vlc
+#instant messenging software
+pidgin
+#additional protocol support
+purple-facebook #facebook support
+purple-hangouts-hg #google hangouts
+purple-skypeweb #cloud skype support
+prpltwtr #twitter support
+pidgin-otr #off the record, encrypted and anonymous communication support
+telegram-purple #telegram support
+#additional plugins for pidgin
+purple-plugin-pack
+#partition management
+gparted #main program
+gpart #partition recovery
+gnome-disk-utility #disk and partition management
+#bit torrent client
+deluge
+
