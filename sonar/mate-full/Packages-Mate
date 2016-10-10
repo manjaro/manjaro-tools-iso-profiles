@@ -88,6 +88,7 @@ networkmanager-dispatcher-sshd
 bash-completion
 >systemd samba
 >openrc samba-openrc
+gvfs-smb
 
 #xcursors
 xcursor-simpleandsoft

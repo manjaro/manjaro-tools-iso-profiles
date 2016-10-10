@@ -97,7 +97,7 @@ simple-scan
 
 #samba file sharing support
 nautilus-share
-
+gvfs-smb
 
 #standard remote desktop software
 vinagre
