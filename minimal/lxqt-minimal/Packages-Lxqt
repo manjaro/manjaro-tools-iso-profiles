@@ -39,6 +39,7 @@ network-manager-applet
 ###DisplayManager###
 >openrc sddm-consolekit
 >systemd sddm
+sddm-andromeda-qt-theme
 
 #manjaro-documentation
 
