@@ -114,7 +114,7 @@ pulseaudio-ctl
 pulseaudio-gconf
 
 #accessibility
-#qt-at-spi
+qt-at-spi
 ibus-qt
 
 #audio codecs
