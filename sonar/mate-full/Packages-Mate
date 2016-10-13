@@ -134,12 +134,15 @@ soundconverter #audio and video file converter using gstreamer
 transmageddon #video file converter
 handbrake #dvd and bd ripper
 asunder #lightweight cd ripper with cddb support
+audacity #open source audio editor
+pitivi #open source video editor
+shotwell #open source photo manager
 brasero #dvd, image and bd burner
 #extra addons for brasero
-libwmf
-dvdbackup
-dvdauthor
-openjpeg2
+libwmf #windows meta file (wmf) image format support for disc covers
+dvdbackup #dvd backup support
+dvdauthor #create video dvd's, picture cd's and bd's
+openjpeg2 #jpeg image support for disc covers
 #video player
 vlc
 #instant messenging software
@@ -159,3 +162,12 @@ gpart #partition recovery
 gnome-disk-utility #disk and partition management
 #bit torrent client
 deluge
+#youtube viewer and downloader
+youtube-viewer #for playing and watching individual videos
+youtube-dl #for downloading individual videos and playlists
+#command line applications
+fsarchiver #filesystem recovery
+surfraw #search multiple sites from the command line
+finch #command line pidgin
+ffmpeg #audio and video converter and manipulator
+
