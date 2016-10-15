@@ -173,3 +173,8 @@ ffmpeg #audio and video converter and manipulator
 #alteraeon sound pack
 tintin-alteraeon
 
+#splash screen program
+plymouth
+#our plymouth theme
+plymouth-theme-sonar-elegant
+
