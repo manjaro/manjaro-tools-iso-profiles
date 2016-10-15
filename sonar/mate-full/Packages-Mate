@@ -44,11 +44,6 @@ evince
 
 mousetweaks
 
-## Artwork
-adwaita-manjaro-themes
-menda-themes
-menda-circle-icon-theme
-sonar-backgrounds
 
 #standard media playing software.
 libgpod #for management of apple iPod, iPhone, etc devices
@@ -70,6 +65,11 @@ sonar-common
 vertex-themes
 vertex-maia-themes
 vertex-maia-icon-theme
+adwaita-manjaro-themes
+maia-icon-theme
+maia-wallpaper
+menda-themes
+menda-circle-icon-theme
 
 #screensavers
 rss-glx #really slick screensavers
