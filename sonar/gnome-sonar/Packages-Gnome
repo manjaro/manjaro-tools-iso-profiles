@@ -46,8 +46,6 @@ yelp
 
 ## Gnome Main Packages
 #gnome-extra group
-accerciser
-bijiben
 brasero #dvd, image and bd burner
 cheese
 devhelp
@@ -80,12 +78,10 @@ gnome-initial-setup
 sonar-gnome-settings
 #our installer branding
 sonar-calamares-branding
-firefox-theme-adwaita
 #gimp
 #gvfs packages
 gvfs-google #google drive backend
 gvfs-goa #gnome online accounts (goa) backend
-dasher
 #gnome policy kit
 polkit-gnome
 #extra addons
