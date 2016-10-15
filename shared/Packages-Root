@@ -74,7 +74,7 @@ lsb-release
 >openrc haveged-openrc
 >systemd haveged
 manjaro-firmware
-manjaro-release-dev
+manjaro-release
 memtest86+
 mkinitcpio-nfs-utils
 mkinitcpio-openswap # needed to be in rootfs by Calamares LUKS support
