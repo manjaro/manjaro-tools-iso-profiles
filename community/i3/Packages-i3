@@ -4,6 +4,7 @@
 
 ## i3 Packages
 accountsservice
+artwork-i3
 bmenu
 downgrade
 ffmpeg
@@ -31,7 +32,6 @@ screenfetch
 qt5ct
 qt5-styleplugins
 tree
-urxvt-perls
 vi
 vim
 wmutils
