@@ -81,7 +81,6 @@ yaourt
 noto-fonts  # default font
 #noto-fonts-cjk  # big package, ~76 mb compressed
 noto-fonts-emoji
-ttf-oxygen  # used for monospaced
 cantarell-fonts
 
 ## Games
@@ -247,11 +246,17 @@ python-pysmbc          # SMB browser support
 ## Optional dependencies for okular
 poppler-data  # encoding data to display PDF documents containing CJK characters
 
+## Optional dependencies for kdeconnect
+sshfs  # remote filesystem browser 
+
 ## Applications
 cantata
 imagewriter
+inkscape
+krita
 firefox-kde
 flashplugin
+libreoffice-still
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 manjaro-welcome
@@ -266,25 +271,6 @@ yakuake
 ## Optional dependencis for cantata
 mpd       # playback
 perl-uri  # dynamic playlist
-
-## Office
-libreoffice-still
-calligra-braindump
-#calligra-extras
-#calligra-filters
-#calligra-flow
-#calligra-handbook
-calligra-karbon
-#calligra-kexi
-#calligra-plan
-#calligra-plugins
-#calligra-sheets
-#calligra-stage
-#calligra-words
-krita
-
-## KDE Frameworks
-kmediaplayer
 
 # Partition
 #gparted
