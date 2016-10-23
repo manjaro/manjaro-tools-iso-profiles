@@ -4,10 +4,10 @@ componentName:  manjaro-xfce
 strings:
     productName:         Manjaro Linux
     shortProductName:    Manjaro
-    version:             16.10-dev
-    shortVersion:        16.10-dev
-    versionedName:       Manjaro Linux 16.10-dev "Fringilla"
-    shortVersionedName:  Manjaro 16.10-dev
+    version:             16.10-rc2
+    shortVersion:        16.10-rc2
+    versionedName:       Manjaro Linux 16.10-rc2 "Fringilla"
+    shortVersionedName:  Manjaro 16.10-rc2
     bootloaderEntryName: Manjaro
 
 images:

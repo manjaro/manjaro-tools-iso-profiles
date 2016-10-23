@@ -265,7 +265,7 @@ qbittorrent
 screenfetch
 >systemd systemd-kcm
 thunderbird-kde
-vlc
+vlc-nightly
 yakuake
 
 ## Optional dependencis for cantata

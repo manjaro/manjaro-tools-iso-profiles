@@ -64,7 +64,7 @@ xfce4-xkb-plugin
 
 ## Applications
 catfish # needed for desktop search
-engrampa
+engrampa-thunar-plugin
 firefox
 manjaro-browser-settings
 galculator-gtk2
@@ -95,7 +95,7 @@ qpdfview-ps-plugin
 poppler-data  # CKJ support for pdf
 thunderbird
 viewnior
-vlc
+vlc-nightly
 xfburn
 #xnoise
 xorg-xkill
