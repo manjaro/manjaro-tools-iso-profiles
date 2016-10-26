@@ -6,6 +6,10 @@
 >systemd networkmanager
 >openrc networkmanager-openrc
 >openrc networkmanager-consolekit
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc 
 networkmanager-dispatcher-ntpd
 >systemd openresolv
 openssh
@@ -248,6 +252,9 @@ poppler-data  # encoding data to display PDF documents containing CJK characters
 
 ## Optional dependencies for kdeconnect
 sshfs  # remote filesystem browser 
+
+## Optional dependencies for kaccounts-integration
+kaccounts-providers
 
 ## Applications
 cantata
