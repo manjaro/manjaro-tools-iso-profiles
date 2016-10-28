@@ -11,7 +11,10 @@ eog
 #epiphany
 evince
 gedit
-gdm
+#gdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+gnome-backgrounds
 gnome-backgrounds
 gnome-calculator
 #gnome-contacts
@@ -52,7 +55,7 @@ nautilus-empty-file
 gnome-tweak-tool
 gufw # firewall
 manjaro-settings-manager
-#gdm3setup
+#gdm3setup broken
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
