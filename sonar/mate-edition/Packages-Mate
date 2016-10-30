@@ -22,17 +22,16 @@ blueman
 #iPhone fuse mounter
 ifuse
 
+
 #gtk iPod gui
 gtkpod
 #I thought I put this on here, but apparently not
 evince
-
-
-
 #standard media playing software.
 parole #replacement for videos
 #mate tweak tool
 mate-tweak
+
 
 #standard remote desktop software
 remmina
