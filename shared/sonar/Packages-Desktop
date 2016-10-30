@@ -90,3 +90,8 @@ gstreamer0.10-good-plugins
 gstreamer0.10-bad-plugins
 gstreamer0.10-ugly-plugins
 
+#dvd and blu ray playback libraries
+libdvdcss #dvd
+libaacs #blu ray
+libbluray #just in case
+
