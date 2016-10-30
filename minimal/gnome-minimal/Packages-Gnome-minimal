@@ -43,8 +43,9 @@ mousetweaks
 mutter
 nautilus
 sushi
-totem
-lollypop
+#totem
+#lollypop
+brasero
 tracker
 vino
 xdg-user-dirs-gtk
@@ -83,7 +84,6 @@ netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-#blueman
 
 ## Artwork
 manjaro-artwork
@@ -113,17 +113,3 @@ pulseaudio-zeroconf
 ## Package management
 pamac
 polkit-gnome
-
-## Games
-#steam-manjaro
-
-## Java
-#jre8-openjdk
-#jre8-openjdk-headless
-#icedtea-web
-
-## Printing
-#manjaro-printer
-
-## Office
-#libreoffice-still
