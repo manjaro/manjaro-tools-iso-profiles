@@ -6,21 +6,32 @@
 #libgnomeui
 gconf
 gnome-themes-standard
+mate-icon-theme
+mate-themes
+maia-wallpaper
 plymouth-theme-manjaro-elegant
 dconf-editor
+xcursor-breeze
 
 ## MATE Main Packages
-mate
-mate-extra
-galculator-gtk2
-## remove these ^^ and uncomment the following for gtk3 version
-#mate-menu
-#mate-gtk3
-#mate-extra-gtk3
-#galculator
-xterm
+mate-gtk3
+mate-extra-gtk3
+galculator
+marco-gtk3
+mate-menu
+mate-control-center-gtk3
+mate-desktop-gtk3
+mate-terminal
+mate-utils-gtk3
+mate-tweak
+mate-notification-daemon
+mate-media-gtk3
+mate-user-guide
+gnome-disk-utility
 manjaro-documentation
 manjaro-mate-settings
+gtk3-print-backends
+
 ## Network
 blueman
 netctl
