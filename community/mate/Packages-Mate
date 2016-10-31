@@ -4,7 +4,7 @@
 
 ## Artwork
 #libgnomeui
-gconf
+#gconf
 gnome-themes-standard
 mate-icon-theme
 mate-themes
@@ -83,6 +83,7 @@ exfat-utils
 fuse-exfat
 
 ## Games
+steam-manjaro
 
 
 ## Java
