@@ -3,7 +3,7 @@ bash
 bzip2
 coreutils
 >openrc cronie-openrc
->systemd cronie
+#>systemd cronie
 >openrc cryptsetup-openrc
 >systemd cryptsetup
 >openrc dbus-openrc
