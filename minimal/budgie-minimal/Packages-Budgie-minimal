@@ -4,6 +4,7 @@
 
 ## Budgie minimal packages
 lightdm
+lightdm-webkit2-greeter-manjaro
 budgie-desktop
 baobab
 dconf-editor
@@ -45,6 +46,8 @@ manjaro-budgie-settings
 
 ## Applications
 firefox
+isousb
+brasero
 gksu
 gparted
 gvfs-afc
@@ -52,14 +55,13 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
 manjaro-welcome
-open-fuse-iso
+#open-fuse-iso
 
 ## Network
 netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-blueman
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
@@ -69,6 +71,7 @@ networkmanager-vpnc
 plymouth-theme-manjaro-fancy-budgie
 manjaro-browser-settings
 budgie-wallpapers
+moka-icon-theme
 
 ## Packages for Sound and Audio
 gst-libav
