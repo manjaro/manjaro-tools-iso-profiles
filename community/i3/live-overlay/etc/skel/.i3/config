@@ -275,8 +275,6 @@ mode "resize" {
 bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
-## adjustment of i3bar battery reading (only run at the very first login):
-exec --no-startup-id /usr/bin/adjust_i3statusconf
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id start_conky_live_maia
 # exec --no-startup-id blueman
