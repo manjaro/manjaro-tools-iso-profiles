@@ -57,6 +57,11 @@ gvfs-smb
 manjaro-welcome
 #open-fuse-iso
 
+##cli app
+mc # Midnight Commander
+pacli
+mhwd-yui
+
 ## Network
 netctl
 networkmanager

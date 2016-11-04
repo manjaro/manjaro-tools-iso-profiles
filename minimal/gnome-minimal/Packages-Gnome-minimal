@@ -79,6 +79,11 @@ isousb
 #open-fuse-iso
 #gnome-shell-extension now set in desktop settings
 
+##cli app
+mc # Midnight Commander
+pacli
+mhwd-yui
+
 ## Network
 netctl
 networkmanager

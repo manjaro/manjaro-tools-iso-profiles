@@ -32,6 +32,11 @@ manjaro-documentation
 manjaro-mate-settings
 gtk3-print-backends
 
+##cli app
+mc # Midnight Commander
+pacli
+mhwd-yui
+
 ## Network
 blueman
 netctl

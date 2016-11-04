@@ -72,6 +72,11 @@ skippy-xd
 brightside
 redshift
 
+##cli app
+mc # Midnight Commander
+pacli
+mhwd-yui
+
 ## Network
 netctl
 networkmanager
