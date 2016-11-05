@@ -75,7 +75,7 @@ redshift
 ##cli app
 mc # Midnight Commander
 pacli
-mhwd-yui
+mhwd-tui
 
 ## Network
 netctl
@@ -92,8 +92,6 @@ networkmanager-vpnc
 manjaro-artwork
 plymouth-theme-manjaro-fancy-budgie
 adwaita-icon-theme
-arc-themes
-arc-firefox-theme
 manjaro-browser-settings
 budgie-wallpapers
 moka-icon-theme

@@ -35,7 +35,7 @@ gtk3-print-backends
 ##cli app
 mc # Midnight Commander
 pacli
-mhwd-yui
+mhwd-tui
 
 ## Network
 blueman

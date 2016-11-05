@@ -86,7 +86,7 @@ brasero
 ##cli app
 mc # Midnight Commander
 pacli
-mhwd-yui
+mhwd-tui
 
 ## Network
 netctl
