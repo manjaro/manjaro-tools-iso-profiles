@@ -3,7 +3,7 @@
 ######################################################
 
 ## Budgie packages
-lightdm
+lightdm-webkit2-greeter-manjaro
 budgie-desktop
 baobab
 dconf-editor
