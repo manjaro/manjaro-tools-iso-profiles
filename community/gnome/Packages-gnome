@@ -12,6 +12,7 @@ eog
 evince
 gedit
 #gdm
+lightdm-webkit2-greeter-manjaro
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 gnome-backgrounds
@@ -62,8 +63,6 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-#lightdm-gtk-greeter   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
-#lightdm-gtk-greeter-settings   ### Remember to comment gdm above and adjust the DM symlink if using LightDM
 
 ## Applications
 firefox
@@ -99,7 +98,7 @@ blueman
 manjaro-artwork
 plymouth-theme-manjaro-gnome
 vertex-maia-icon-theme
-vertex-maia-themes
+#vertex-maia-themes
 
 ## Packages for Sound and Audio
 gst-libav
@@ -135,9 +134,6 @@ icedtea-web
 manjaro-printer
 
 ## Office
-#abiword
-#gnumeric
-#libreoffice-installer
 libreoffice-still
 
 ## AUR Access
