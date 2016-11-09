@@ -55,6 +55,7 @@ netctl
 net-tools
 networkmanager-dispatcher-ntpd
 openresolv
+openvpn
 
 ## Internet
 firefox
