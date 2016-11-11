@@ -1,0 +1,109 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+## Artwork
+gnome-themes-standard
+maia-wallpaper
+mate-icon-theme
+mate-themes
+plymouth-theme-manjaro-elegant
+dconf-editor
+xcursor-breeze
+
+## MATE Main Packages
+mate-gtk3
+mate-extra-gtk3
+galculator
+marco-gtk3
+mate-menu
+mate-control-center-gtk3
+mate-desktop-gtk3
+mate-terminal
+mate-utils-gtk3
+mate-tweak
+mate-notification-daemon
+mate-media-gtk3
+mate-user-guide
+gnome-disk-utility
+manjaro-documentation
+manjaro-mate-settings
+gtk3-print-backends
+mate-gtk3-manjaro
+
+##cli app
+mc # Midnight Commander
+pacli
+mhwd-tui
+
+## Network
+#blueman
+netctl
+modem-manager-gui
+networkmanager
+networkmanager-dispatcher-ntpd
+openresolv
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+
+## Connect Packages
+udiskie
+udisks
+udisks2
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+open-fuse-iso
+libgsf
+
+## Display Manager
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+
+## Applications
+firefox
+gksu
+gparted
+gnome-vfs
+hexchat
+isousb
+gnome-keyring
+manjaro-settings-manager
+manjaro-welcome
+accountsservice
+p7zip
+mlocate
+yelp
+exfat-utils
+fuse-exfat
+
+## Packages for Sound and Audio
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer0.10-bad-plugins
+gstreamer0.10-base-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-ugly-plugins
+libdvdcss
+manjaro-alsa
+manjaro-pulse
+pavucontrol
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+## Package management
+pamac
+
+## Fonts
+cantarell-fonts
+ttf-droid
+
