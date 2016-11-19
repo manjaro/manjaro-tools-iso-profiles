@@ -3,10 +3,9 @@
 ######################################################
 
 ## Artwork
-gnome-themes-standard
 maia-wallpaper
+mate-wallpapers
 mate-icon-theme
-mate-themes
 plymouth-theme-manjaro-elegant
 dconf-editor
 xcursor-breeze
@@ -58,7 +57,6 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
-open-fuse-iso
 libgsf
 
 ## Display Manager
@@ -73,7 +71,7 @@ gnome-vfs
 hexchat
 isousb
 gnome-keyring
-manjaro-settings-manager
+manjaro-settings-manager-notifier
 manjaro-welcome
 accountsservice
 p7zip
