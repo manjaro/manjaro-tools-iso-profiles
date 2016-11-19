@@ -3,9 +3,8 @@
 ######################################################
 
 ## Artwork
-#libgnomeui
-#gconf
-gnome-themes-standard
+maia-wallpaper
+mate-wallpapers
 mate-icon-theme
 mate-themes
 maia-wallpaper
@@ -31,6 +30,7 @@ gnome-disk-utility
 manjaro-documentation
 manjaro-mate-settings
 gtk3-print-backends
+mate-gtk3-manjaro
 
 ##cli app
 mc # Midnight Commander
@@ -68,18 +68,15 @@ lightdm-gtk-greeter-settings
 
 ## Applications
 firefox
-gksu
 gparted
-gnome-vfs
 hexchat
 isousb
 gnome-keyring
-manjaro-settings-manager
+manjaro-settings-manager-notifier
 manjaro-welcome
 thunderbird
-vlc-nightly
+vlc
 pragha
-#gufw
 accountsservice
 p7zip
 mlocate
@@ -114,9 +111,6 @@ pavucontrol
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
-#python-pyqt4
-npapi-vlc
-#swftools
 
 ## Package management
 pamac
@@ -127,9 +121,6 @@ ttf-droid
 
 ## Office
 libreoffice-still
-#abiword
-#gnumeric
-
 
 ## Printing
 manjaro-printer
