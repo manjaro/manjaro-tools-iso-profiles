@@ -6,8 +6,6 @@
 baobab
 blueberry
 dconf-editor
-evince
-poppler-data # CKJ support for pdf
 ffmpegthumbnailer
 gimp
 gksu
@@ -17,12 +15,17 @@ nemo-fileroller # archiver
 nemo-preview
 nemo-python
 nemo-share
+pix
 pragha # musicplayer
 qt5ct
 qt5-styleplugins
 screenfetch
 transmission-gtk
 xdg-user-dirs-gtk
+xed
+xplayer
+xreader
+xviewer-plugins
 
 ## java
 jre8-openjdk
@@ -31,9 +34,6 @@ jre8-openjdk-headless
 
 ## GNOME related stuff
 gnome-system-log
-eog
-eog-plugins
-gedit
 gnome-disk-utility
 gnome-keyring
 gnome-screenshot
@@ -111,6 +111,7 @@ gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
+gstreamer
 gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-good-plugins
@@ -124,7 +125,7 @@ pulseaudio-gconf
 pulseaudio-zeroconf
 
 ## Office
-libreoffice-still
+libreoffice-fresh
 manjaro-printer
 system-config-printer
 
