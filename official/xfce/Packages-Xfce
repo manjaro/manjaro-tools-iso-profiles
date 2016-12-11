@@ -95,7 +95,9 @@ qpdfview-ps-plugin
 poppler-data  # CKJ support for pdf
 thunderbird
 viewnior
-vlc-nightly
+vlc
+qt4
+#vlc-nightly
 xfburn
 #xnoise
 xorg-xkill
