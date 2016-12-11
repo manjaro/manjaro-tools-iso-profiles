@@ -3,6 +3,7 @@
 >openrc manjaro-live-openrc
 >systemd manjaro-live-systemd
 manjaro-live-skel		# live skel
+thus #older but accessible installer for manjaro
 calamares			# new GUI installer of manjaro
 # calamares-dev			# new GUI installer of manjaro - kpmcore
 # calamares-exp			# new GUI installer of manjaro - experimental version
