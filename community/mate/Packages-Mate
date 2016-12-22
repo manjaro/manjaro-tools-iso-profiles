@@ -3,10 +3,6 @@
 ######################################################
 
 ## Artwork
-xcursor-maia
-vertex-maia-themes
-vertex-maia-icon-theme
-maia-wallpaper
 #libgnomeui
 gconf
 gnome-themes-standard
@@ -17,10 +13,12 @@ dconf-editor
 mate
 mate-extra
 galculator-gtk2
+## remove these ^^ and uncomment the following for gtk3 version
+#mate-menu
+#mate-gtk3
+#mate-extra-gtk3
+#galculator
 xterm
-mate-accountsdialog
-mate-disk-utility
-#manjaro
 manjaro-documentation
 manjaro-mate-settings
 ## Network
@@ -63,7 +61,7 @@ gnome-keyring
 manjaro-settings-manager
 manjaro-welcome
 thunderbird
-vlc
+vlc-nightly
 pragha
 #gufw
 accountsservice

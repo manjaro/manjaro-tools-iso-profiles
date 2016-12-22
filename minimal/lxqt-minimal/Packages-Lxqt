@@ -3,52 +3,44 @@
 ######################################################
 
 ###lxqt###
-lxqt
+lxqt-about
+lxqt-common
+lxqt-config
+lxqt-globalkeys
+lxqt-notificationd
+lxqt-openssh-askpass
+lxqt-panel
+lxqt-policykit
+lxqt-powermanagement
+lxqt-qtplugin
+lxqt-runner
+lxqt-session
+lxqt-sudo
+openbox
+pcmanfm-qt
 
 >openrc networkmanager-openrc
+>openrc networkmanager-consolekit
 >systemd networkmanager
 >openrc syslog-ng-openrc
 >systemd syslog-ng
 >openrc cronjobs
+#plymouth-theme-manjaro-elegant
 
 ###apps###
 qterminal
-qupzilla
-octopi
-octopi-notifier-qt5
-octopi-cachecleaner
-octopi-repoeditor
-qpdfview
 compton
+gvfs
 
-# bug in pcmanfm with kde apps
-#kwrite
-
-l3afpad
+kwrite
 xarchiver
 network-manager-applet
-lxtask-gtk3
-gvfs
 
 ###DisplayManager###
 >openrc sddm-consolekit
 >systemd sddm
+sddm-andromeda-qt-theme
 
-###Openbox###
-openbox
-obmenu-generator
-feh
-openbox-themes
-tint2
-
-###Artwork###
-#cantarell-fonts
-xcursor-breeze
-maia-icon-theme
-maia-wallpaper
-vertex-maia-themes
-
-manjaro-settings-manager
-manjaro-documentation
+#manjaro-documentation
 
 manjaro-lxqt-minimal-settings

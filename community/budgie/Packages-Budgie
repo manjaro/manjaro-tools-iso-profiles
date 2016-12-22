@@ -30,7 +30,8 @@ nautilus
 nautilus-empty-file
 file-roller
 sushi
-#smplayer
+eog
+eog-plugins
 lollypop
 totem
 tracker
@@ -38,7 +39,6 @@ vino
 xdg-user-dirs-gtk
 yelp
 gedit
-git
 isousb
 brasero
 p7zip
@@ -62,10 +62,14 @@ sylpheed
 gimp
 gksu
 gparted
+gvfs
 gvfs-afc
+gvfs-goa
+gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
+gvfs-nfs
 manjaro-welcome
 open-fuse-iso
 skippy-xd
@@ -143,6 +147,4 @@ make
 patch
 subversion
 yaourt
-
-
 

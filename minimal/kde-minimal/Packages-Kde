@@ -5,6 +5,7 @@
 ## Network
 >openrc networkmanager-openrc
 >openrc syslog-ng-openrc
+>openrc networkmanager-consolekit
 
 ## Libraries for Sound/Audio/Video
 >multilib manjaro-alsa
@@ -13,7 +14,6 @@
 noto-fonts  # default font
 #noto-fonts-cjk  # big package, ~76 mb compressed
 noto-fonts-emoji
-ttf-oxygen  # used for monospaced
 cantarell-fonts
 
 ## Package management

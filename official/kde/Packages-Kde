@@ -5,6 +5,7 @@
 ## Network
 >systemd networkmanager
 >openrc networkmanager-openrc
+>openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
 >systemd openresolv
 openssh
@@ -31,7 +32,12 @@ manjaro-alsa
 manjaro-pulse
 phonon-qt5-gstreamer
 phonon-qt4-gstreamer
+pyqt5-common # For hplip
+python-pillow # For hplip
+python-pip # For hplip
 python-pyqt4  # For pulseaudio gui
+python-pyqt5  # For hplip gui
+python-reportlab # For hplip
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
@@ -75,7 +81,6 @@ yaourt
 noto-fonts  # default font
 #noto-fonts-cjk  # big package, ~76 mb compressed
 noto-fonts-emoji
-ttf-oxygen  # used for monospaced
 cantarell-fonts
 
 ## Games
@@ -236,16 +241,22 @@ ruby                      # installing new service menus with GHNS
 ## Optional dependencies for print-manager
 system-config-printer  # auto-detect the printer driver
 cups-pk-helper         # PolicyKit helper to configure cups with fine-grained privileges
-python-pysmbc          # SMB browser support 
+python-pysmbc          # SMB browser support
 
 ## Optional dependencies for okular
 poppler-data  # encoding data to display PDF documents containing CJK characters
 
+## Optional dependencies for kdeconnect
+sshfs  # remote filesystem browser 
+
 ## Applications
 cantata
 imagewriter
+inkscape
+krita
 firefox-kde
 flashplugin
+libreoffice-still
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 manjaro-welcome
@@ -260,25 +271,6 @@ yakuake
 ## Optional dependencis for cantata
 mpd       # playback
 perl-uri  # dynamic playlist
-
-## Office
-libreoffice-still
-calligra-braindump
-#calligra-extras
-#calligra-filters
-#calligra-flow
-#calligra-handbook
-calligra-karbon
-#calligra-kexi
-#calligra-plan
-#calligra-plugins
-#calligra-sheets
-#calligra-stage
-#calligra-words
-krita
-
-## KDE Frameworks
-kmediaplayer
 
 # Partition
 #gparted

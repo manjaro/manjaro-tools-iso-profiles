@@ -1,392 +1,97 @@
-## Artwork
-sonar-backgrounds
-manjaro-backgrounds
-vertex-themes
-vertex-maia-themes
-vertex-maia-icon-theme
+## Xorg Input Drivers
+xf86-input-acecad
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-keyboard
+xf86-input-mouse
+xf86-input-libinput
+xf86-input-synaptics #synaptic mice
+xf86-input-void
 
-## Misc tools
-#finger print support
-fprintd
-thinkfinger
-#flashrom bios updater
-flashrom
-dmidecode
-surfraw
-#bash completion package
-bash-completion
-#android tools
-android-tools
-android-udev
-nss-mdns #optional dep of avahi, providing multicast support
-media-player-info #needed by calamares installer, but useful for cli and desktop systems.
-uriparser
+## Xorg Server and Graphics
+xorg-server
+xorg-server-utils
+xorg-twm
+xorg-utils
+xorg-xinit
+mesa-demos
+>multilib lib32-mesa-demos
 
-#command line battery saving tool
-powertop
-
-#somehow this is missing from gnome images
-openssh
-
-#sensors library and tools
-lm_sensors
-#media info package
-mediainfo #this package provides lots of audio and video format info to nautilus, format, bit rate, frames per second, etc.
-
-
-#some useful cli apps
-screen
-wget
-youtube-viewer
-youtube-dl
-dictd #command line dictionary
-#yelp tool for reading the help files
-yelp
-
-#gnome keyring and friends
-gnome-keyring
-seahorse
-#bluetooth support
-bluez-firmware
-bluez-plugins
-bluez-hid2hci
-bluez-utils
-## Packages for Sound and Audio
-manjaro-alsa
-manjaro-pulse
-pavucontrol
-paprefs
-pulseaudio-ctl
-#extra pulse audio modules not included in main pulse package anymore
-pulseaudio-bluetooth
-pulseaudio-equalizer
-pulseaudio-gconf
-pulseaudio-zeroconf
-pulseaudio-lirc
-pulseaudio-xen
-
-#Sound theme support
-sound-theme-freedesktop
-sonar-sound-theme
-## Printing
-manjaro-printer
-python-pysmbc #for windows shared printers
-#driver packages, how the hell did I miss these
-foomatic-db
-foomatic-db-nonfree
-bluez-cups #for bluetooth printers
-
-#ms word and rtf extractors
-antiword
-unrtf
-
-#mac filesystem utils
-hfsprogs
-
-#thermal control daemon
-thermald
-
-#sane packages
-sane
-sane-gt68xx-firmware
-
-gnome-disk-utility
-udiskie
-udisks
-udisks2
-#standard media playing software
-audacious #for music management.
-audacious-plugins #additional plugins for audacious
-sox #swiss army knife of cli audio file manipulation
-atomicparsley #for embedding thumbnails in the m4a format
-libimobiledevice #for apple device support
-libplist #for parsing apple .plist files
-shairplay #for viewing and playing songs from apple devices over the network
-vlc #for basic file playback, conversion, dvd and bluray playback
-libgpod #for management of apple iPod, iPhone, etc devices
-npapi-vlc #firefox plugin to play files in vlc
-gnome-sound-recorder #for basic sound recording
-#id3 tag libraries
-id3v2
-#audio metadata repair
-easytag
-
-#blu ray decryption
-libbluray
-libaacs
-#dvd decryption
-libdvdcss
-
-#standard cd burning and ripping software
-brasero #for burning, disk copy, etc
-#extra addons for brasero
-libwmf
-dvdbackup
-dvdauthor
-openjpeg2
-asunder #for cd ripping
-handbrake #for dvd ripping
-#codecs
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-good
-gst-plugins-ugly
-gstreamer0.10-bad-plugins
-gstreamer0.10-base-plugins
-gstreamer0.10-ffmpeg
-gstreamer0.10-good-plugins
-gstreamer0.10-ugly-plugins
-#vorbis utils
-vorbis-tools
-#opus tools and libs
-opus-tools
-opusfile
-
-#advanced sound editing
-audacity
-jack2 #preferred audio input/output, compatible with pulse audio
-
-#Standard  photo manager
-shotwell
-
-#standard sip software
-linphone
-
-#standard scanning utility
-simple-scan
-
-#standard ocr software
-ocrdesktop
-
-#standard audio and video converters
-transmageddon  #for video formats
-soundconverter #for audio formats and video if all you want is the #audio
-
-## Package management
-pamac
-packagekit #for installing software in the help browser
-#live image specifics
-#manjaro provided firmware
-manjaro-firmware
-#manjaro provided hotfixes
-manjaro-hotfixes
-#our custom backgrounds
-sonar-backgrounds
-#our isolinux branding
-sonar-isolinux
-#standard applications
-firefox
-thunderbird
-bleachbit
-
-#standard instant messenging software
-pidgin
-
-#extra plugins for pidgin
-#purple-plugin-pack
-pidgin-otr #off the record
-pidgin-sipe #office communicator
-pidgin-encryption #transparently encrypt outgoing messages using nss, similar to off the record
-telegram-purple #telegram protocol support for pidgin
-purple-skypeweb #skype plugin, does not require skype.
-#standard voip software
-mumble
-
-#torrent software
-deluge
-xdg-user-dirs-gtk
-gksu
-
-#standard pdf reader
-evince
-
-## Office
-libreoffice-fresh
-#optional deps for libreoffice
-libwpg #for wordperfect graphics formats
-coin-or-mp #for certain formulas in calc
-libmspub #for microsoft publisher formats
-pstoedit #for converting ps files into other vector formats
-libmythes #for the thesorus
-vigra #for improved c/c++ code editing
-libmspack #for microsoft compression formats
-unixodbc #for some database formats
-libreoffice-extension-writer2latex
-libreoffice-extension-texmaths
-
-#command line document converter
-unoconv
-
-#windows  filesharing packages
-samba
-
-
-#apple filing protocol support
-afpfs-ng
-
-#acpi package
-acpi
+## Desktop Utils
+xdg-user-dirs
+xdg-utils
+xdg-su
+numlockx
 
 ## Fonts
 terminus-font
 ttf-bitstream-vera
 ttf-dejavu
-ttf-indic-otf
-cantarell-fonts
-ttf-droid
 ttf-inconsolata
+ttf-indic-otf
 ttf-liberation
+ttf-droid
 ttf-ubraille
-ttf-ubuntu-font-family
-adobe-source-sans-pro-fonts
-#firefoxOS fonts
-otf-fira-mono
-otf-fira-sans
 
-#gvfs packages
-gvfs-afc #apple mobile devices backend
-gvfs-gphoto2 #camera and media player backend
-gvfs-mtp #android and some media players backend
-gvfs-nfs #nfs, networking filesystem, backend
-gvfs-smb #smb/cifs (windows filesharing) backend
+## Applications
+inxi
+dmidecode # for inxi -m output
+powertop
+
+## Sound
+alsa-firmware
+>openrc alsa-utils-openrc
+>systemd alsa-utils
 
 ## Network
+mobile-broadband-provider-info
 modemmanager
-netctl
-networkmanager
-networkmanager-dispatcher-ntpd
+>systemd networkmanager
+>openrc networkmanager-consolekit
+>openrc networkmanager-openrc
+>openrc avahi-openrc
+>systemd avahi
+nss-mdns
+>systemd ntp
+>openrc ntp-openrc
+>systemd openssh
+>openrc openssh-openrc
 
-#gui firewall
-firewalld
-
-#some extra networkmanager plugins
-networkmanager-openvpn
-networkmanager-openconnect
-networkmanager-pptp
-networkmanager-vpnc
-networkmanager-dispatcher-ntpd
-networkmanager-dispatcher-sshd
-#network diagnostic tools
-traceroute
-nmap
-
-#rescue apps
-fsarchiver
-rsync
-parted
-bash-completion
+## Misc
+>openrc consolekit-openrc
+>openrc displaymanager-openrc
+>openrc pm-utils
+>openrc cgmanager-openrc
+manjaro-hotfixes
 
 #accessibility packages
-espeak
+>systemd espeakup
+>openrc espeakup-openrc
 orca
-#library for orca plugins
-libpeas
-speech-dispatcher
-#brltty is now pulled in by manjaro-live-skel, but keeping it hear #in case it's needed #again in the future
-#brltty
+>systemd brltty
+>openrc brltty-openrc
 eviacam
 open-dyslexic-fonts
-qt-at-spi
-java-atk-wrapper
-caribou #on screen keyboard
-ibus #input method support
-ibus-table #needed by some input methods
-ibus-table-extraphrase #extra table phrases, also needed by a few #input methods
+caribou
+ibus
+ibus-table
+ibus-table-extraphrase
 mousetweaks
-##java
-icedtea-web
+python-yaml
+vorbis-tools
+ocrdesktop
+mumble
+#codecs
+gst-plugins-bad
+gst-plugins-ugly
+gst-plugins-good
+gst-libav
+gstreamer0.10-good-plugins
+gstreamer0.10-bad-plugins
+gstreamer0.10-ugly-plugins
 
-##Plymouth themes
-plymouth-theme-sonar-elegant
-
-#extra archive formats
-unace #license questionable, will remove if not open source
-unarj #license questionable, will remove if not open source
-p7zip
-cabextract
-cpio
-lha
-
-
-#standard backup software
-deja-dup #main backup software
-python2-boto #for amazon s3 backend
-#standard partition imaging and recovery software
-clonezilla
-
-#standard software for desktop sounds
-libcanberra
-libcanberra-pulse
-libcanberra-gstreamer
-#standard video editor
-pitivi
- frei0r-plugins
-#standard accounting software
-gnucash #main program
-perl-date-manip #for stock quotes
-perl-finance-quote #for stock quotes
-#standard full disk encryption software
-veracrypt
-#standard twitter client
-corebird
-#standard graphical partition management tools
-gparted #graphical
-gpart #for partition rescue via gparted
-#extra filesystem packages
-exfat-utils
-f2fs-tools
-testdisk #command line application for partition recovery
-
-# sonar docs and special desktop launchers
-sonar-common
-#extra kernel modules
-KERNEL-acpi_call
-KERNEL-tp_smapi
-#KERNEL-r8168
-#KERNEL-vhba-module
-
-#dos emulator, used to play old dos games
-dosemu
-
-#xcursors
-xcursor-simpleandsoft
-xcursor-vanilla-dmz-aa
-xcursor-chameleon-pearl
-xcursor-breeze
-xcursor-maia
-#tintin alteraeon soundpack
-tintin-alteraeon
-
-#standard file sharing software
-syncthing
-syncthing-gtk #graphical interface
-
-## AUR Access
-autoconf
-automake
-binutils
-bison
-fakeroot
-flex
-gcc
->multilib gcc-multilib
-libtool
-m4
-make
-patch
-subversion
-yaourt
-
-#remote access software, libraries only
-freerdp
-libvncserver
-x2goserver
-x2goclient
-nxproxy
-#standard scheduling software
-gnome-schedule
-#downgrade utility
-downgrade
-
+#dvd and blu ray playback libraries
+libdvdcss #dvd
+libaacs #blu ray
+libbluray #just in case
 

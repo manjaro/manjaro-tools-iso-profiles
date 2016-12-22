@@ -63,6 +63,7 @@ xorg-xkill
 >systemd netctl
 >systemd networkmanager
 >openrc networkmanager-openrc
+>openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
 >systemd openresolv
 >i686 blueman

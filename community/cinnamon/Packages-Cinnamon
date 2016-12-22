@@ -13,12 +13,13 @@ gimp
 gksu
 manjaro-cinnamon-settings
 manjaro-browser-settings
-mousepad
 nemo-fileroller # archiver
 nemo-preview
 nemo-python
 nemo-share
 pragha # musicplayer
+qt5ct
+qt5-styleplugins
 screenfetch
 transmission-gtk
 xdg-user-dirs-gtk
@@ -62,6 +63,7 @@ thunderbird
 ## Extra
 npapi-vlc
 pidgin-libnotify
+vlc-nightly
 
 ## Artwork
 cinnamon-wallpapers
@@ -85,6 +87,7 @@ isousb
 libgsf
 lightdm-gtk-greeter-settings
 manjaro-documentation
+manjaro-features
 manjaro-settings-manager-notifier
 manjaro-welcome
 mugshot

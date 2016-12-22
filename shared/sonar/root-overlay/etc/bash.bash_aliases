@@ -1,2 +1,0 @@
-alias dosemu="dosemu -t"
-

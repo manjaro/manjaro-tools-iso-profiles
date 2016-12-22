@@ -1,0 +1,180 @@
+### Sonar mate Packages
+
+#login dm
+lightdm
+#gdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+#mate and mate extra groups
+mate
+mate-extra
+mate-applets
+#individual mate applets
+#mate-applet-dock
+
+#screensavers
+mate-screensaver
+mate-screensaver-hacks
+network-manager-applet
+## Applications
+#our desktop settings
+sonar-mate-settings
+#our installer branding
+sonar-calamares-branding
+udisks
+udisks2
+
+
+#yelp tool for reading the help files
+yelp
+
+#gnome keyring and friends
+gnome-keyring
+seahorse
+#bluetooth utils
+blueman
+#iPhone fuse mounter
+ifuse
+
+#gtk iPod gui
+gtkpod
+id3v2
+#I thought I put this on here, but apparently not
+evince
+
+mousetweaks
+
+
+#standard media playing software.
+libgpod #for management of apple iPod, iPhone, etc devices
+#mate tweak tool
+mate-tweak
+
+#standard remote desktop software
+remmina
+freerdp
+libvncserver
+x2goserver
+x2goclient
+
+## Artwork
+manjaro-artwork
+manjaro-artwork-extra
+sonar-backgrounds
+sonar-common
+vertex-themes
+vertex-maia-themes
+vertex-maia-icon-theme
+adwaita-manjaro-themes
+maia-icon-theme
+maia-wallpaper
+menda-themes
+menda-circle-icon-theme
+
+#screensavers
+rss-glx #really slick screensavers
+#Sound theme support
+sound-theme-freedesktop
+sonar-sound-theme
+
+#some extra networkmanager plugins
+networkmanager-openvpn
+networkmanager-openconnect
+networkmanager-pptp
+networkmanager-vpnc
+networkmanager-dispatcher-ntpd
+networkmanager-dispatcher-sshd
+
+bash-completion
+>systemd samba
+>openrc samba-openrc
+gvfs-smb
+
+#xcursors
+xcursor-simpleandsoft
+xcursor-vanilla-dmz-aa
+xcursor-chameleon-pearl
+xcursor-breeze
+xcursor-maia
+
+#bluetooth
+bluez-firmware
+bluez-plugins
+bluez-hid2hci
+bluez-utils
+
+#sound
+pulseaudio-bluetooth
+pulseaudio-equalizer
+extra/pulseaudio-alsa
+pulseaudio-zeroconf
+pulseaudio-lirc
+pavucontrol
+pulseaudio-ctl
+pulseaudio-gconf
+
+#accessibility
+qt-at-spi
+ibus-qt
+
+#audio codecs
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly
+gst-libav
+gstreamer0.10-ugly-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-bad-plugins
+gstreamer0.10-ffmpeg
+
+#media player and audio converter
+audacious #standard media player
+audacious-plugins #additional plugins for audacious
+soundconverter #audio and video file converter using gstreamer
+transmageddon #video file converter
+handbrake #dvd and bd ripper
+asunder #lightweight cd ripper with cddb support
+audacity #open source audio editor
+pitivi #open source video editor
+shotwell #open source photo manager
+brasero #dvd, image and bd burner
+#extra addons for brasero
+libwmf #windows meta file (wmf) image format support for disc covers
+dvdbackup #dvd backup support
+dvdauthor #create video dvd's, picture cd's and bd's
+openjpeg2 #jpeg image support for disc covers
+#video player
+vlc
+#instant messenging software
+pidgin
+#additional protocol support
+purple-facebook #facebook support
+purple-hangouts-hg #google hangouts
+purple-skypeweb #cloud skype support
+prpltwtr #twitter support
+pidgin-otr #off the record, encrypted and anonymous communication support
+telegram-purple #telegram support
+#additional plugins for pidgin
+purple-plugin-pack
+#partition management
+gparted #main program
+gpart #partition recovery
+gnome-disk-utility #disk and partition management
+#bit torrent client
+deluge
+#youtube viewer and downloader
+youtube-viewer #for playing and watching individual videos
+youtube-dl #for downloading individual videos and playlists
+#command line applications
+fsarchiver #filesystem recovery
+surfraw #search multiple sites from the command line
+finch #command line pidgin
+ffmpeg #audio and video converter and manipulator
+#alteraeon sound pack
+tintin-alteraeon
+
+#splash screen program
+plymouth
+#our plymouth theme
+plymouth-theme-sonar-elegant
+

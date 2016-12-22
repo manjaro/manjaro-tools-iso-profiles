@@ -3,8 +3,11 @@
 ######################################################
 
 ## deepin packages
-# deepin-gtk-theme # not gtk3.20 compliant, yet
+deepin-calendar
+deepin-file-manager
+deepin-gtk-theme
 deepin-social-sharing
+deepin-image-viewer
 nautilus-empty-file
 
 ## deepin-extra packages
@@ -20,6 +23,7 @@ chromium
 dconf-editor
 downgrade
 evince
+gedit
 poppler-data # CKJ support for pdf
 evolution
 galculator
@@ -28,7 +32,6 @@ gksu
 gnome-system-monitor
 gnome-vfs
 gparted
-gthumb
 gvfs-afc
 gvfs-gphoto2
 gvfs-mtp # for mounting Samsung phones
@@ -41,11 +44,13 @@ libreoffice-still
 manjaro-browser-settings
 manjaro-deepin-settings
 manjaro-documentation
+manjaro-features
 manjaro-settings-manager-notifier
 manjaro-welcome
 mlocate
-mousepad
 polkit-gnome
+qt5ct
+qt5-styleplugins
 screenfetch
 smplayer
 sushi
@@ -101,7 +106,6 @@ icedtea-web
 
 ## Printing / Scanning
 manjaro-printer
-xsane
 xsane-gimp
 
 ## AUR Access

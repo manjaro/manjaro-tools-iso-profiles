@@ -1,0 +1,225 @@
+### Sonar gnome Packages
+
+## gnome package group, minus epiphany, because we'll use firefox
+adwaita-icon-theme
+baobab
+#empathy
+eog
+#epiphany
+evince
+lightdm #main program
+lightdm-gtk-greeter #graphical greeter
+lightdm-gtk-greeter-settings #settings program
+
+#fingerprint daemon for supported finger print readers
+fprintd
+gnome-backgrounds
+gnome-calculator
+gnome-contacts
+gnome-control-center
+gnome-desktop
+gnome-dictionary
+gnome-disk-utility
+gnome-font-viewer
+gnome-icon-theme
+gnome-icon-theme-extras
+gnome-icon-theme-symbolic
+gnome-keyring
+gnome-screenshot
+gnome-session
+gnome-settings-daemon
+gnome-shell
+gnome-shell-extensions
+gnome-system-monitor
+gnome-terminal
+gnome-themes-standard
+gnome-user-docs
+gnome-user-share
+grilo-plugins
+gucharmap
+mousetweaks
+mutter
+nautilus
+sushi
+totem
+tracker
+xdg-user-dirs-gtk
+yelp
+
+
+## Gnome Main Packages
+#gnome-extra group
+brasero #dvd, image and bd burner
+cheese
+devhelp
+file-roller
+gedit
+gedit-code-assistance
+gnome-calendar
+gnome-clocks
+gnome-code-assistance
+gnome-color-manager
+gnome-devel-docs
+gnome-documents
+gnome-getting-started-docs
+gnome-logs
+gnome-maps
+gnome-music
+gnome-nettool
+gnome-photos
+gnome-tweak-tool
+gnome-weather
+nautilus-sendto
+rygel
+seahorse
+firewalld # firewall
+#setup gui
+gnome-initial-setup
+
+## Applications
+#our desktop settings
+sonar-gnome-settings
+#our installer branding
+sonar-calamares-branding
+#gimp
+#gvfs packages
+gvfs-google #google drive backend
+gvfs-goa #gnome online accounts (goa) backend
+#gnome policy kit
+polkit-gnome
+#extra addons
+gedit-plugins
+seahorse-nautilus #support for encrypting and unencrypting files and folders in nautilus using anything seahorse supports
+
+#simple scanning utility, supposed to be in gnome extra but for some reason isn't
+simple-scan
+
+#samba file sharing support
+nautilus-share
+gvfs-smb
+
+#standard remote desktop software
+vinagre
+vino
+x2goserver
+x2goclient
+
+gnome-themes-maia
+vertex-maia-themes
+sonar-backgrounds
+
+## Artwork
+manjaro-artwork
+manjaro-artwork-extra
+sonar-backgrounds
+sonar-common
+vertex-themes
+vertex-maia-themes
+vertex-maia-icon-theme
+maia-wallpaper
+maia-icon-theme
+
+#screensavers
+rss-glx #really slick screensavers
+#Sound theme support
+sound-theme-freedesktop
+sonar-sound-theme
+
+#some extra networkmanager plugins
+networkmanager-openvpn
+networkmanager-openconnect
+networkmanager-pptp
+networkmanager-vpnc
+networkmanager-dispatcher-ntpd
+networkmanager-dispatcher-sshd
+
+bash-completion
+>systemd samba
+>openrc samba-openrc
+
+#xcursors
+xcursor-simpleandsoft
+xcursor-vanilla-dmz-aa
+xcursor-chameleon-pearl
+xcursor-breeze
+xcursor-maia
+
+#bluetooth
+bluez-firmware
+bluez-plugins
+bluez-hid2hci
+bluez-utils
+
+#sound
+pulseaudio-bluetooth
+pulseaudio-equalizer
+extra/pulseaudio-alsa
+pulseaudio-zeroconf
+pulseaudio-lirc
+pavucontrol
+pulseaudio-ctl
+pulseaudio-gconf
+
+#accessibility
+qt-at-spi
+ibus-qt
+
+#audio codecs
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly
+gst-libav
+gstreamer0.10-ugly-plugins
+gstreamer0.10-good-plugins
+gstreamer0.10-bad-plugins
+gstreamer0.10-ffmpeg
+
+#media player and audio converter
+audacious #standard media player
+audacious-plugins #additional plugins for audacious
+soundconverter #audio and video file converter using gstreamer
+transmageddon #video file converter
+handbrake #dvd and bd ripper
+asunder #lightweight cd ripper with cddb support
+audacity #open source audio editor
+pitivi #open source video editor
+shotwell #open source photo manager
+#extra addons for brasero
+libwmf #windows meta file (wmf) image format support for disc covers
+dvdbackup #dvd backup support
+dvdauthor #create video dvd's, picture cd's and bd's
+openjpeg2 #jpeg image support for disc covers
+#video player
+vlc
+#instant messenging software
+pidgin
+#additional protocol support
+purple-facebook #facebook support
+purple-hangouts-hg #google hangouts
+purple-skypeweb #cloud skype support
+prpltwtr #twitter support
+pidgin-otr #off the record, encrypted and anonymous communication support
+telegram-purple #telegram support
+#additional plugins for pidgin
+purple-plugin-pack
+#partition management
+gparted #main program
+gpart #partition recovery
+gnome-disk-utility #disk and partition management
+#bit torrent client
+deluge
+#youtube viewer and downloader
+youtube-viewer #for playing and watching individual videos
+youtube-dl #for downloading individual videos and playlists
+#command line applications
+fsarchiver #filesystem recovery
+surfraw #search multiple sites from the command line
+finch #command line pidgin
+ffmpeg #audio and video converter and manipulator
+#alteraeon sound pack
+tintin-alteraeon
+
+#splash screen software
+plymouth
+#sonar plymouth theme
+plymouth-theme-sonar-elegant

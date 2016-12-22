@@ -1,0 +1,25 @@
+######################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+######################################################
+
+###lumina###
+lumina-desktop
+
+>openrc networkmanager-openrc
+>openrc networkmanager-consolekit
+>systemd networkmanager
+>openrc syslog-ng-openrc
+>systemd syslog-ng
+>openrc cronjobs
+
+###apps###
+qterminal
+compton
+
+###DisplayManager###
+>openrc sddm-consolekit
+>systemd sddm
+
+manjaro-lumina-settings
+
+manjaro-documentation

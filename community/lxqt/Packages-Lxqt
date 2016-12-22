@@ -1,17 +1,23 @@
-smbclient-stub
+>i686 smbclient-stub
 ######################################################
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
 ######################################################
 
 ## Basic packages
 dconf
-desktop-file-utils
+qt5-styleplugins
+qt5ct
 
 ## Packages for Sound and Audio
-#manjaro-alsa
+manjaro-alsa
+>i686 qastools-qt5      # alsa mixer
+>x86_64 manjaro-pulse
+>x86_64 pavucontrol-gtk2
 
 ## Artwork
-manjaro-artwork
+xcursor-simpleandsoft
+xcursor-vanilla-dmz-aa
+xcursor-menda
 
 ## Base Packages
 gtk2
@@ -19,6 +25,7 @@ gtk2
 ## Network
 networkmanager
 network-manager-applet
+networkmanager-openvpn
 openresolv
 # =============================================================================
 
@@ -26,42 +33,51 @@ openresolv
 # 2) lxqt main packages
 # =====================
 sddm				# default login manager (Qt5) of lxqt
+sddm-futuristic-theme
 
-#openbox				# default window manager (GTK2) of lxqt
+compton
+compton-conf-lxqt               # compton configuration tool
 
-compton                         # X compositor
-compton-conf-git                # compton configuration tool
-
-#keepassx-qt5-git                # passwords managementdd
 liblxqt				#
-liblxqt-mount			# dependencies and libraries for the following lxqt packages
 libqtxdg			#
 libsysstat			#
 
-lxqt
-lxterminal
-screengrab-git                  # replace screenshot tool of lxqt
-system-tools-backends
-liboobs
+#lxqt
+lximage-qt
+lxqt-about
+lxqt-common
+lxqt-config
 lxqt-globalkeys
+lxqt-notificationd
+lxqt-openssh-askpass
+lxqt-panel
+lxqt-policykit
+lxqt-powermanagement
+lxqt-qtplugin
+lxqt-runner
+lxqt-session
+lxqt-sudo
+openbox
 
-pcmanfm-qt			# default lxqt file manager
+
+lxterminal
+scrot
+#lxqt-globalkeys
+
+#pcmanfm-qt			# default lxqt file manager
 
 #qterminal			# recommended terminal for lxqt
-qtermwidget
+#qtermwidget
 
 
 # 3) System-packages (most of them coming from xfce)
 # ==================================================
 
->x86_64 manjaro-pulse
 #>x86_64 manjaro-printer        # removed, qt4 !
 manjaro-settings-manager
-#manjaro-settings-manager
 
 gvfs				# for mounting file other systems
 gvfs-afc			# enables support for external media (e.g. USB sticks)
-#gvfs-smb                        # SMB/CIFS (Windows client) backend for gvfs
 
 
 # 4) LXDE packages (mostly GTK2 dependent - there is no good Qt5 alternative)
@@ -70,67 +86,64 @@ gksu				# (GTK2) GUI for su and sudo - no alternative for it in lxqt
 gnome-keyring			# (GTK3) - stores passwords for other applications, e.g. gksu
 
 hexchat                         # (GTK2) graphical IRC (chat) client
+#artoo juffed-qt5-git
 leafpad				# default lxde text editor
 #lxtask				# LXDE task manager - qt4 alternative: qps
 
 lxappearance 			# appearance settings of GTK2 themes
 obconf				# openbox appearance settings
-
-
-
-# 5) Icons, theming, etc...
-# =========================
-#lateafternoon-icons
-breeze-lxqt
-#>x86_64 db-silver-icons
-mediterraneanlxqt
-gtk-engine-murrine              # for mediterraneanlxqt
-speedcrunch-git                 # calculator qt5
-ttf-droid-ib                    # care !!! infinality version
-#xcursor-menda			# menda mouse cursor theme - this needs to be activated
-
-#infinality-bundle		# to improve text rendering
-freetype2-infinality-ultimate
-fontconfig-infinality-ultimate
-
-
-
-# 6) Minimal set of tools
-# =======================
-abiword-3.x-gtk2
-#baka-mplayer
-lxtask                           # task manager
-mhwd-chroot
-#mpd                             # server-side application for playing music
-#cantata                         # Qt5 client for the music player daemon (MPD)
-mpv-light			# replace mplayer/mplayer2
-qpdfview			# pdf reader
-vi				# CLI text editor
-
-xarchiver-gtk2			# GUI frontend for many archive file formats
-
 octopi				# Qt5 package manager
 octopi-notifier-qt5
 #octopi-cachecleaner
 #octopi-repoeditor
 
-firefox
-#>i686 qupzilla			# internet browser (Qt5)
-flashplugin			# flash support for internet browser
-gparted				# partitioning program (GTK2)
-#>x86_64 libreoffice-installer	# GUI installer for LibreOffice --> this is outdated and causes problems
-#>x86_64 pinta                   # drawing/editing program
+
+
+# 5) Icons, theming, etc...
+# =========================
+ffmpegthumbnailer
+noto-fonts
+#infinality-bundle		# to improve text rendering
+freetype2-infinality-ultimate
+fontconfig-infinality-ultimate
+nouvegray-lxqt
+vertex-maia-dark-ob
+
+
+
+# 6) Minimal set of tools
+# =======================
+#clementine-lxqt
+kcalc                           # Qt5 calculator
+lxtask                          # task manager
+mhwd-chroot-extended
+qpdfview			# pdf reader
+vi				# CLI text editor
+xarchiver-gtk2			# GUI frontend for many archive file formats
+
+
+#adobe-flashplugin
+#qupzilla
+#>i686 mtpaint
+otter-browser
+flashplugin
+#>x86_64 gimp
+>x86_64 gparted				# partitioning program (GTK2)
 #>x86_64 meteo-qt                # weather application
+>i686 mpv-light
+>x86_64 mpv
 packsize
-qarma-git			# zenity Qt5
-qastools-qt5                    # alsa mixer
+>x86_64 plank
+#qarma-lxqt    			# zenity Qt5
+>x86_64 smplayer-lxqt                   # smplayer for mpv
+>x86_64 smplayer-skins
+>x86_64 smplayer-themes
 transmission-qt                 # bittorrent client Qt5
-qisousb				# write an ISO on an USB stick
-qlipper-qt5-git                 # clipoard applet
+#qisousb				# write an ISO on an USB stick
+qlipper                         # clipoard applet
 qtfind				# add a file search to pcmanfm-qt (qt5)
-redshift                        # adjusts the color temperature
-redshiftconf                    # redshift configuration tool
-#xscreensaver			# screensaver and power managment
+>i686 i3lock-shiver
+>x86_64 xscreensaver		# screensaver and power managment
 xsensors                        # gui for lm_sensors
 
 
@@ -140,17 +153,16 @@ xsensors                        # gui for lm_sensors
 autoconf
 automake
 binutils
-bison
+>x86_64 bison
 fakeroot
 flex
 gcc
+>multilib gcc-multilib
 libconfig
 libtool
 m4
 make
 patch
-#subversion
+>x86_64 subversion
 git
 yaourt
-
-manjaro-lxqt-settings

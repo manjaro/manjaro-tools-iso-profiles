@@ -69,6 +69,7 @@ poppler-data # CKJ support for pdf
 sbxkb
 scrot
 simple-scan
+transmission-gtk
 tree
 vi
 vlc
@@ -80,6 +81,7 @@ blueman
 >systemd netctl
 >systemd networkmanager
 >openrc networkmanager-openrc
+>openrc networkmanager-consolekit
 network-manager-applet
 >openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd

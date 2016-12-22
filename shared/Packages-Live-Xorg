@@ -3,12 +3,10 @@
 >openrc manjaro-live-openrc
 >systemd manjaro-live-systemd
 manjaro-live-skel		# live skel
-manjaro-cli-installer
-calamares			# new GUI installer of manjaro
-#calamares-dev			# new GUI installer of manjaro - kpmcore
-thus
-#thus-dev
-#gparted
+# calamares				# new GUI installer of manjaro
+calamares-dev			# new GUI installer of manjaro - kpmcore
+# calamares-exp			# new GUI installer of manjaro - experimental version
+# gparted
 
 ### Driver set for fast live-session bootup (optional)
 

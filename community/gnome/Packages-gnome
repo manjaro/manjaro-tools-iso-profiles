@@ -8,11 +8,13 @@ baobab
 dconf-editor
 empathy
 eog
+eog-plugins
 #epiphany
 evince
 gedit
 gdm
 gnome-backgrounds
+gnome-calendar
 gnome-calculator
 #gnome-contacts
 gnome-control-center
@@ -37,20 +39,21 @@ gucharmap
 mousetweaks
 mutter
 nautilus
+nautilus-admin
+nautilus-empty-file
+
 sushi
 totem
 lollypop
 tracker
+file-roller
 vino
 xdg-user-dirs-gtk
 yelp
-nautilus-admin
 
 ## Gnome Main Packages
 manjaro-gnome-settings
-nautilus-empty-file
 gnome-wallpapers
-#gnome-extra
 gnome-tweak-tool
 gufw # firewall
 manjaro-settings-manager
@@ -70,12 +73,17 @@ transmission-gtk
 manjaro-browser-settings
 gksu
 gparted
+gvfs
 gvfs-afc
+gvfs-goa
+gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
+gvfs-nfs
 manjaro-welcome
 isousb
+brasero
 #open-fuse-iso
 #gnome-shell-extension now set in desktop settings
 
@@ -126,9 +134,6 @@ icedtea-web
 manjaro-printer
 
 ## Office
-#abiword
-#gnumeric
-#libreoffice-installer
 libreoffice-still
 
 ## AUR Access
@@ -146,6 +151,4 @@ make
 patch
 subversion
 yaourt
-
-
 
