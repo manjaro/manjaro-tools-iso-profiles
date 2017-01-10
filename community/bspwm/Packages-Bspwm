@@ -1,52 +1,19 @@
-## Xorg Packages
 inxi
 libdnet
 mesa-demos
-# >x86_64 lib32-mesa-demos
 uriparser
-xf86-input-acecad
-xf86-input-aiptek
-xf86-input-evdev
-xf86-input-joystick
-xf86-input-keyboard
-xf86-input-mouse
-xf86-input-synaptics
-xf86-input-void
-xf86-input-wacom
-xinetd
-xorg-server
-xorg-server-utils
-xorg-twm
-xorg-utils
-xorg-xinit
-
-## Basic packages
 dconf
 desktop-file-utils
-
-## Packages for Sound and Audio
-manjaro-alsa	# containes 32bit libraries
-#alsa-lib
-#alsa-utils
-#alsa-plugins
-#manjaro-pulse
-#pavucontrol
-#pulseaudio-ctl
-
-## Artwork
+manjaro-alsa
 xcursor-breeze
 breeze-maia-icon-themes
 console-solarized
 bspwm-wallpapers
 adwaita-maia-gtk3
-
-## Network
 networkmanager
 networkmanager-dispatcher-ntpd
 openresolv
-networkmanager-dmenu
-
-##Bspwm packages
+wpa_tui
 manjaro-bspwm-settings
 bspwm-manjaro
 sxhkd
@@ -63,10 +30,6 @@ libnotify
 compton
 i3lock
 bspwm-ruler
-
-##Applications
-
-##Desktop 
 spacefm
 udevil
 gvfs
@@ -78,19 +41,14 @@ lxappearance-gtk3
 gufw
 zathura-pdf-poppler
 morc_menu
-
-##terminal
-#rxvt-unicode
-#urxvt-perls
-#command-not-found
-roxterm
+st-manjaro
 zsh
 zsh-completions
 zsh-history-substring-search
+fish
+fisherman
 dash
 mpv
-
-##Command line utilities
 downgrade
 mhwd-tui
 bmenu
@@ -102,7 +60,7 @@ bc
 ps_mem
 htop
 mhwd-chroot
-ranger # The rest are ranger optdepends
+ranger
 w3m
 atool
 poppler
@@ -114,7 +72,5 @@ clonezilla
 dfc
 ncdu
 speedtest-cli
-
-## AUR Access
-# base-devel
 yaourt
+tmux
