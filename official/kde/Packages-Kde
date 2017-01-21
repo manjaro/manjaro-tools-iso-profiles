@@ -178,11 +178,10 @@ filelight
 k3b
 kate
 kcalc
-kdebase-kdepasswd
-kdebase-keditbookmarks
-kdebase-kfind
+keditbookmarks
+kfind
 kdeconnect
-kdegraphics-okular
+okular
 kdenetwork-kget
 kdenetwork-filesharing
 kdenlive
