@@ -14,7 +14,6 @@ wmctrl
 dockbarx
 xfce4-dockbarx-plugin
 palemoon-bin
-gstreamer0.10-ffmpeg
 zenity
 
 ## xfce4 package group with omissions for Netbook Edition
@@ -153,10 +152,6 @@ gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
-gstreamer0.10-bad-plugins
-gstreamer0.10-base-plugins
-gstreamer0.10-good-plugins
-gstreamer0.10-ugly-plugins
 #flashplugin
 libdvdcss
 manjaro-alsa
