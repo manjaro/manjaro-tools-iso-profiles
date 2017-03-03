@@ -68,7 +68,8 @@ networkmanager-vpnc
 
 ## Applications
 firefox
-thunderbird
+#thunderbird
+evolution
 uget
 transmission-gtk
 manjaro-browser-settings
